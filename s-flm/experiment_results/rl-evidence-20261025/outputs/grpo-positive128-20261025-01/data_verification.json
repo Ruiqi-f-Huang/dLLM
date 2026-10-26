@@ -1,0 +1,2836 @@
+{
+  "status": "passed",
+  "questions": 128,
+  "retained32": 32,
+  "new96": 96,
+  "candidate_questions": 151,
+  "candidate_draws": 1208,
+  "independent_execution_successes": 128,
+  "raw_correct": 128,
+  "validation_overlap": 0,
+  "source_prefix_and_first_success_checks": true,
+  "hashes": {
+    "programs128.jsonl": "6105c297551db3f7c8762f3fc93951286125c66bc2142d9cfee5e8ba8686a967",
+    "questions128.jsonl": "25a75f166f227ed084a7835e5576cbad6ea28813ddec7995a1b6d491a683da9f",
+    "candidate_rollouts.jsonl": "cce85c89fed303036faa7e26d8a945660bac85ec07f0964c359a69f11c4ce32d",
+    "candidate_order.json": "a9931f099529456606e054db183e2fd05ef8b8c042f3850deb73b310f1c8605c"
+  },
+  "per_program": [
+    {
+      "sample_id": "gsm8k_train_4824",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_1869",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_7310",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_2237",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_6478",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_5778",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_4699",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_0112",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_2214",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_6976",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_7385",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_0924",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_5854",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_4402",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_1172",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_0186",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_3525",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_6583",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_5468",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_3329",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_4786",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_7271",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_3931",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_4566",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_0280",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_0499",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_1370",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_4248",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_0358",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_4888",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_5164",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_5190",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_5821",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_7306",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_5841",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_5223",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_4997",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_0610",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_4005",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_6766",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_3229",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_2286",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_3967",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_3441",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_6055",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_4689",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_4106",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_0662",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_7048",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_6183",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_7144",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_3654",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_6099",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_3356",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_1610",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_4605",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_1307",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_3701",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_5665",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_5227",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_0330",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_0654",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_6189",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_7257",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_1037",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_7007",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_0842",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_6740",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_3023",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_6227",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_0344",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_4766",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_2328",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_2812",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_7134",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_7355",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_1020",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_2804",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_3774",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_1415",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_2737",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_5773",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_6139",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_5737",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_4810",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_6017",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_2632",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_2254",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_3569",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_2707",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_7168",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_2629",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_3618",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_1449",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_4261",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_6305",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_5365",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_4330",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_2651",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_5099",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_0747",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_2305",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_3183",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_6876",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_4144",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_4487",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_6299",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_7201",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_6446",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_5388",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_5943",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_3777",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_7434",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_3753",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_3128",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_1378",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_5402",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_1083",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_1697",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_2138",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_4439",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_5495",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_1360",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_3061",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_5839",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_4835",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_3139",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    },
+    {
+      "sample_id": "gsm8k_train_1132",
+      "reward": 1.0,
+      "raw_correct": true,
+      "execution": {
+        "raw": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "recovered": {
+          "parses": true,
+          "executes": true,
+          "numeric": true,
+          "correct": true
+        },
+        "reward": 1.0,
+        "infrastructure_failure": false
+      },
+      "retries": 0
+    }
+  ]
+}

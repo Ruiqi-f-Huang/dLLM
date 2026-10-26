@@ -1,0 +1,6 @@
+[2026-10-23 20:47:33,499][__main__][INFO] - Starting GSM8K eval.
+[2026-10-23 20:48:54,345][__main__][INFO] - Rank 0: average NFE per batch: 32.0
+[2026-10-23 20:48:54,349][__main__][INFO] - Rank 0: saved 632 records to /root/autodl-tmp/s-flm/lift-pilot-20261023-01/evaluation/c100-seed1/rank_0000.json
+[2026-10-23 20:48:54,362][__main__][INFO] - Total records evaluated: 632
+[2026-10-23 20:48:59,451][__main__][INFO] - GSM8K accuracy: 27.69% (175/632)
+[2026-10-23 20:48:59,455][__main__][INFO] - Results saved to /root/autodl-tmp/s-flm/lift-pilot-20261023-01/evaluation/c100-seed1/results.json

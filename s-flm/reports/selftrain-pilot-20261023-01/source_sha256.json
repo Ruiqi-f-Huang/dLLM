@@ -1,0 +1,7 @@
+{
+  "scripts/sample/tinygsm/mdlm_selftrain_acquire.sh": "d8cb358d29f2acebd33fc2a3a8451f33edbc6344a50e3140d2491467e4c54600",
+  "scripts/prepare_selftrain_pilot.py": "28d2fa4b2b5c7d8c57131ab085add9a1c9c49d6f24d4f9491153a550786bc7f7",
+  "scripts/train/gsm8k/selftrain_pilot_compare.sh": "d8a9bf8a287a09cca9172fdeaa0ae7e3b3747b4717dcc55522a8637ef4971ebd",
+  "scripts/analyze_selftrain_pilot.py": "8fb37c75f134b4d0ff4be8ba7a86fe051a1c3cf8682d98dd393a63c3b41b28d0",
+  "configs/sft-selftrain-pilot.yaml": "ee8a43668e9c9d1299f3f05dc15e999e687bf25ceb75f25d75223469f7a2e66a"
+}

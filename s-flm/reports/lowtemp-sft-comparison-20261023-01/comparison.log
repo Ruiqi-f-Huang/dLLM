@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "split": "validation",
+    "n": 632,
+    "temperature": 0.1,
+    "sampler": "ancestral",
+    "nfe": 32,
+    "weights": "EMA",
+    "seed": 1,
+    "batch_size": 32,
+    "length": 512
+  },
+  "rows": [
+    {
+      "model": "base",
+      "correct": 179,
+      "total": 632,
+      "accuracy": 0.28322784810126583,
+      "gained_from_base": 0,
+      "lost_from_base": 0,
+      "kept_base_correct": 179,
+      "parseable": 631,
+      "unclosed_quotes": 0,
+      "changed_outputs": 0,
+      "changed_ast_excluding_docstrings": 0,
+      "both_parseable": 631,
+      "paired_exact_p_vs_base": 1.0
+    },
+    {
+      "model": "uniform200",
+      "correct": 177,
+      "total": 632,
+      "accuracy": 0.2800632911392405,
+      "gained_from_base": 3,
+      "lost_from_base": 5,
+      "kept_base_correct": 174,
+      "parseable": 631,
+      "unclosed_quotes": 0,
+      "changed_outputs": 62,
+      "changed_ast_excluding_docstrings": 55,
+      "both_parseable": 631,
+      "paired_exact_p_vs_base": 0.7265625
+    },
+    {
+      "model": "weighted200",
+      "correct": 175,
+      "total": 632,
+      "accuracy": 0.27689873417721517,
+      "gained_from_base": 1,
+      "lost_from_base": 5,
+      "kept_base_correct": 174,
+      "parseable": 632,
+      "unclosed_quotes": 0,
+      "changed_outputs": 64,
+      "changed_ast_excluding_docstrings": 53,
+      "both_parseable": 631,
+      "paired_exact_p_vs_base": 0.21875
+    },
+    {
+      "model": "weighted711",
+      "correct": 177,
+      "total": 632,
+      "accuracy": 0.2800632911392405,
+      "gained_from_base": 5,
+      "lost_from_base": 7,
+      "kept_base_correct": 172,
+      "parseable": 632,
+      "unclosed_quotes": 0,
+      "changed_outputs": 120,
+      "changed_ast_excluding_docstrings": 99,
+      "both_parseable": 631,
+      "paired_exact_p_vs_base": 0.7744140625
+    }
+  ],
+  "limitations": [
+    "Single generation seed; exploratory comparisons, no multiplicity correction.",
+    "AST differences do not establish mathematical improvement."
+  ]
+}

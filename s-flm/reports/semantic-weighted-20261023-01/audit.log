@@ -1,0 +1,18 @@
+{
+  "train": {
+    "samples": 5682,
+    "code_tokens": 774678,
+    "critical_bpe_tokens": 273160,
+    "supervised_tokens": 2553270,
+    "critical_fraction": 0.10698437689707709,
+    "weighted_mass": 2826430
+  },
+  "validation": {
+    "samples": 632,
+    "code_tokens": 85768,
+    "critical_bpe_tokens": 30133,
+    "supervised_tokens": 284135,
+    "critical_fraction": 0.10605170077603956,
+    "weighted_mass": 314268
+  }
+}

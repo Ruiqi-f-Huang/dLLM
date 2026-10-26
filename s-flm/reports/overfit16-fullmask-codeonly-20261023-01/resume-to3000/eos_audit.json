@@ -1,0 +1,413 @@
+[
+  {
+    "step": 0,
+    "full_correct": 3,
+    "eos_correct": 3,
+    "eos_parseable": 13,
+    "eos_found": 16,
+    "records": [
+      {
+        "sample_id": "gsm8k_train_3517",
+        "eos_position": 172,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": true,
+        "eos_text": "def simple_math_problem() -> int:\n    \"\"\"\n    Hayden eats 1 oz of mixed nuts as an evening snack.\n     He buys the bulk bag of mixed nuts that cost $25.00 a bag and holds 40 oz of mixed nuts.\n    \n     There is currently a $5.00 coupon for this item.\n    How much will each serving of nuts cost, in cents, after the coupon is applied?\n    \"\"\"\n    bag_weight =40\n    coupon = 5\n    cost_bulk = 2*25\n    damon_weight = 1\n    \n    total_price = cost_bulk-coupon\n    price_per_serving = total_price/damon_weight\n    \n    \n    result = price_per_serving * 100\n\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_6725",
+        "eos_position": 125,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": true,
+        "eos_text": "def simple_math_problem() -> int:\n    '''\n    Janice has been working part-time at a convenience store 5 days a week.\n    She can earn $30 per day and can earn $15 more when she works a 2 hour overtime shift.\n    If she works three overtime shifts this week, how much will she earn this week?\n    '''\n    days_week = 5\n    overtime_shift = 3\n    total_earned = (30 * days_week) + (15 * 3) * days_week\n    result = total_earned\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_2910",
+        "eos_position": 157,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": true,
+        "eos_text": "def simple_math_problem() -> int:\n    '''\n    At a station, a train comes every 5 minutes leaving 200 passengers and taking 320 others.\n    How many different passengers step on and off a train at the station within an hour?\n    '''\n    train_takenipment = 0*3\n    leaving_time = 50\n    time_per_hour = 60\n    trains_per_hour = time_per_hour // leaving_time\n    total_train_taken = trains_per_hour * train_time\n    total_train_left = (time_per_hour % 5) * train_time\n    result = total_train_left + total_train_taken\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_3521",
+        "eos_position": 146,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": true,
+        "eos_text": "def simple_math_problem() -> int:\n    \"\"\"\n    Will's breakfast supplied him 900 calories of energy.\n    Then he decided to jog for half an hour, which used up 10 calories of energy per minute.\n    What is Will's net calorie intake after jogging?\n    \"\"\"\n    calories_consumed = 0\n    total_calories_burned_per_hour = 10 * 0.5 * 60\n    total_calories_burned_on_hour = total_calories_burned_per_hour + calories_consumed\n    result = calories_consumed - total_calories_burned_on_hour\n\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_5649",
+        "eos_position": 108,
+        "full_correct": true,
+        "eos_correct": true,
+        "eos_parseable": true,
+        "eos_text": "def simple_math_problem() -> int:\n    '''\n    Albert has three times as many marbles as Angela.\n    Angela has 8 more than Allison, who has 28 marbles.\n    How many marbles do Albert and Allison have?\n    '''\n    allison_marbles = 28\n    angela_marbles = allison_marbles + 8\n    albert_marbles = 3 * angela_marbles\n    result = allison_marbles + albert_marbles\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_7103",
+        "eos_position": 193,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": false,
+        "eos_text": "def simple_math_problem() -> int:\n    '''\n    Harry decided to buy some balloons for his friend's birthday party.\n    One balloon costs $0.5, and a pack of 10 balloons is cheaper and costs only $3.\n    Finally, Harry wants to bring to the party exactly 14 balloons.\n    How much did he need to pay for them?\n    '''\n    balloons_per_pack = 10\n    balloon_cost = 0.5\n    cost_per_pack = 3\n    packs_balloons = 14 // balloons_per_10 + (1 if 14 % balloons_per_10)\n    packs_cost = packs_balloons * cost_per_pack + 1\n    balloons_cost = packs_balloons * cost_per_pack\n    total_cost = packs_cost + balloons_cost\n    result = total_cost\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_2986",
+        "eos_position": 162,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": false,
+        "eos_text": "def simple_math_problem() -> int:\n    \"\"\"\n    Miley bought two cellphones for her parents.\n    Each cellphone costs $800 but, since she is buying two units, she will receive a 5% discount for the total cost.\n    How much did Miley pay?\n    \"\"\"\n    phone_cost = 800\n    total_units = 2\n    additional_units = 5\n    original_units00 = 2\n    total_units = total_units - additional_units\n    total_cost = phone_cost * original_units00 * quantity\n    discount_amount = (total_units * additional_units)/1 total_cost\n    final_cost = total_cost - discount_amount\n    result = final_cost\n\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_1515",
+        "eos_position": 99,
+        "full_correct": true,
+        "eos_correct": true,
+        "eos_parseable": true,
+        "eos_text": "def simple_math_problem() -> int:\n    '''\n    Billy weighs 9 pounds more than Brad.\n    Brad weighs 5 pounds more than Carl.\n    If Carl weighs 145 pounds, how much does Billy weigh, in pounds?\n    '''\n    carl_weight = 145\n    brad_weight = carl_weight + 5\n    billy_weight = brad_weight + 9\n    result = billy_weight\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_6722",
+        "eos_position": 116,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": true,
+        "eos_text": "def simple_math_problem() -> int:\n    '''\n    Yesterday, Vincent bought fifteen packs of stickers.\n    Today, he bought ten more packs of stickers than yesterday.\n    How many packs of stickers does Vincent have altogether?\n    '''\n    packs_pack()\n    stickerpacks_yesterday_yesterday = 15\n    packs_today_vincent = stickerpacks_yesterday_yesterday + 10\n    total_packs = stickerpacks_yesterday_yesterday + packs_today_vincent\n    result = total_packs\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_7383",
+        "eos_position": 110,
+        "full_correct": true,
+        "eos_correct": true,
+        "eos_parseable": true,
+        "eos_text": "def simple_math_problem() -> int:\n    '''\n    There are 9 boys and 12 girls in a class.\n    The teacher needs to create groups with three members for their class activity.\n    How many groups are formed?\n    '''\n    num_g = 9\n    num_b = 12\n    total_students = num_g + num_b\n    students_per_group = 3\n    num_groups = total_students / students_per_group\n    result = num_groups\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_1621",
+        "eos_position": 108,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": true,
+        "eos_text": "def simple_math_problem() -> int:\n    \"\"\"\n    At a cafe, the breakfast plate has two eggs and twice as many bacon strips as eggs.\n    If 14 customers order breakfast plates, how many bacon strips does the cook need to fry?\n    \"\"\"\n    eggs = 2\n    total_bacon = 0\n    numcustomers = 14\n    \n    total_bacon_strips = total_eggs*bacon*2\n    \n    result = total_bacon_strips\n\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_0115",
+        "eos_position": 107,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": true,
+        "eos_text": "def simple_math_problem() -> int:\n    \"\"\"\n    There are some jelly beans in a jar.\n    Three fourths of the jelly beans are red, and one quarter of the red jelly beans are coconut flavored.\n    If 750 jelly beans are coconut flavored, how many jelly beans are there in the jar?\n    \"\"\"\n    redJellybeans = 750 * 0.25\n    \n    johnbeans = (4/3) * redJellybeans\n    \n    result = johnbeans\n\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_6873",
+        "eos_position": 119,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": true,
+        "eos_text": "def simple_math_problem() -> int:\n    '''\n    Betty\u2019s herb garden has 2 more than twice as many oregano plants as basil.\n    If there are 5 basil plants, what is the total number of plants in the garden?\n    '''\n    num_oregano = 2 + 25 # number of oregano plants\n    num_moil = 2*5 - num_basil #plants left\n    total_plants = num_oregano + num_basil #total plants\n    result = total_plants #total number of plants\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_6820",
+        "eos_position": 123,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": true,
+        "eos_text": "def simple_math_problem() -> int:\n    \"\"\"\n    Jade and Krista went on a road trip for 3 days.\n    On each day Jade had to drive 8 hours and Krista had to drive 6 hours to arrive at the destination.\n    How many hours did they drive altogether?\n    \"\"\"\n    total_days = 3\n    \n    jade_days = 8\n    rista_days = 6\n    \n    jade_total = jade_days * 3\n    kennel_total = total_days/2\n     \n    result = lemonade_total\n    result\n\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_6726",
+        "eos_position": 108,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": false,
+        "eos_text": "def simple_math_problem() -> int:\n    '''\n    The epic poem currently contains 24 lines.\n    If a person adds 3 lines to the poem every month, in how many months will the poem contain 90 lines?\n    '''\n    total_lines = 24\n    lines_added_per_month = 3\n    target_lines = 90\n    months = (2 = target_lines - total_lines) // lines_added_per_month\n    result = months\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_1406",
+        "eos_position": 141,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": true,
+        "eos_text": "def simple_math_problem() -> int:\n    '''\n    Bill is trying to count the toddlers at his daycare, but they keep running around.\n    He double-counts 8 toddlers and misses 3 who are hiding.\n    If Bill thinks he counted 26 toddlers, how many are there really?\n    '''\n    double_count_counted = 8\n    \n    total_toddlers = 26\n    \n    missed_odd = 3\n    \n    \n    double_increase = double_count_counted * 2\n    \n    actual_toddlers = total_toddlers - double_increase + missed_odd\n    \n    result = actual_toddlers\n    \n    return result"
+      }
+    ]
+  },
+  {
+    "step": 2000,
+    "full_correct": 2,
+    "eos_correct": 2,
+    "eos_parseable": 12,
+    "eos_found": 16,
+    "records": [
+      {
+        "sample_id": "gsm8k_train_3517",
+        "eos_position": 172,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": true,
+        "eos_text": "def simple_math_problem() -> int:\n    \"\"\"\n    Hayden eats 1 oz of mixed nuts as an evening snack.\n     He buys the bulk bag of mixed nuts that cost $25.00 a bag and holds 40 oz of mixed nuts.\n     There is currently a $5.00 coupon for this item.\n     How much will each serving of nuts cost, in cents, after the coup = is applied?\n    \"\"\"\n    total_oz = 40\n    coupon = 5\n    bulk_price = 25.00\n    coupon_k = total_price - coupon\n    \n    total_bulk = bulk_price\n    \n    price_per_serving = total_price / coupon_k\n    \n    \n    result = price_per_serving * 100\n\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_6725",
+        "eos_position": 133,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": false,
+        "eos_text": "def simple_math_problem() -> int:\n    '''\n      Janice has been working part-time at a convenience store 5 days a week.\n    She can earn $30 per day and can earn $15 more when she works a 2 hour overtime shift.\n    If she works three overtime shifts this week, how much will she earn this week?0\n    days = 5 \n    overtime_pay = days * 40 \n    regular_pay = overtime_pay * 3 \n    overtime_hours = overtime_pay/5 \n    total_week = regular_pay + overtime_hours \n    result = total_week \n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_2910",
+        "eos_position": 148,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": true,
+        "eos_text": "def simple_math_problem() -> int:\n    '''\n    At a station, a train comes every 5 minutes leaving 200 passengers and taking 320 others.\n    How many different passengers step on and off a train at the station within an hour?\n    '''\n    train_board = 200\n    train_passengers = 320\n    minutes_per_hour = 60\n    \n    passengers_per_minute_both_train_passengers = train_board + train_passengers\n    minutes_per_hour *= 2\n    \n    passengers_per_hour\n    \n    passengers_per_minute_both_train_passengers\n    \n    result = passengers_per_hour\n    \n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_3521",
+        "eos_position": 138,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": false,
+        "eos_text": "def simple_math_problem() -> int:\n    \"\"\"\n    Will's breakfast supplied him 900 calories of energy.\n    Then he decided to jog for half an hour, which used up 10 calories of energy per minute.\n    What is Will's net calorie intake after jogging?\n    \"\"\"\n    cal_burn_per_min = 10\n    cal_burned_60 = 30 * 0.5 * 60 * cal_burn_per_min\n    net_cal_burned = cal_burned_jog  + 900\n    }\n    \n    result = net_cal_burned\n\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_5649",
+        "eos_position": 118,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": true,
+        "eos_text": "def simple_math_problem() -> int:\n    \"\"\"\n    Albert has three times as many marbles as Angela.\n    Angela has 8 more than Allison, who has828 marbles.\n    How many marbles do Albert and Allison have? \"\"\"\n    number_of_marbles_allison = 28\n    angela_marbles = number_of_marbles_allison + 8\n    marbles_albert = int(3*angela_marbles)\n    result = (marbles_albles, allison_marbles)\n\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_7103",
+        "eos_position": 193,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": true,
+        "eos_text": "def simple_math_problem() -> int:\n    '''\n    Harry decided to buy some balloons for his friend's birthday party.\n    One balloon costs $0.5, and a pack of 10 balloons is cheaper and costs only $3.\n    Finally, Harry wants to bring to the party exactly 14 balloons.\n    How much did he need to pay for them?\n    '''\n    balloons_per_pack = 10\n    balloon_cost = 0.5\n    price_per_pack = 3\n    pack_balloons = balloons_needed // balloons_per_pack\n    remainder = balloons_needed % balloons_per_pack * balloon_cost\n    packs_cost = pack_balloons * balloon_cost\n    remainder_cost = (ballainder % balloons_per_pack) * balloon_cost\n    total_cost = packs_cost + remainder_cost\n    result = total_cost\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_2986",
+        "eos_position": 167,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": true,
+        "eos_text": "def simple_math_problem() -> int:\n    \"\"\"\n    Miley bought two cellphones for her parents.\n    Each cellphone costs $800 but, since she is buying two units, she will receive a 5% discount for the total cost.\n    How much did Miley pay?\n    \"\"\"\n    total_cost = 800 * 2  \n    discount_rate = 0.05\n    original_cost_without_discount = total_cost / num_units - 1  \n    total_without_discount = original_cost_without_discount * num_units\n    total_cost_with_discount = original_cost_without_discount * (1 - discount_rate)\n    \n    result = total_cost_with_discount\n\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_1515",
+        "eos_position": 103,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": true,
+        "eos_text": "def simple_math_problem() -> int:\n    '''\n    Billy weighs 9 pounds more than Brad.\n    Brad weighs 5 pounds more than Carl.\n    If Carl weighs 145 pounds, how much does Billy weigh, in pounds? '''\n    billy_weight = 145+5 #given\n    b = billy_weight + 5 + 9 #adding b's weight and add 5 to bear weight and add 9 lb\n    result = b\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_6722",
+        "eos_position": 114,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": true,
+        "eos_text": "def simple_math_problem() -> int:\n    '''\n    Yesterday, Vincent bought fifteen packs of stickers.\n    Today, he bought ten more packs of stickers than yesterday.\n    How many packs of stickers does Vincent have altogether?\n    '''\n    packs_of_qyesterday_painting = 15\n    sticker_packs_today_collection = sticker_packs_qyesterday_painting\n    total_packs = sticker_packs_yesterday_painting + sticker_packs_today_collection\n    result = total_packs\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_7383",
+        "eos_position": 116,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": true,
+        "eos_text": "def simple_math_problem() -> int:\n    '''\n    There are 9 boys and 12 girls in a class.\n    The teacher needs to create groups with three members for their class activity.\n    How many groups are formed?\n    '''\n    num_boy = 9\n    num_girl = 12\n    \n    total_people = num_boy + num_girl\n    groups_per_person = 0.5\n    \n    present_groups = total_people * groups_per_person\n    \n    \n    result = present_groups #group groups\n    \n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_1621",
+        "eos_position": 116,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": false,
+        "eos_text": "def simple_math_problem() -> int:\n    \"\"\"\n    At a cafe, the breakfast plate has two eggs and twice as many bacon strips as eggs.\n    If 14 customers order breakfast plates, how many bacon strips does the cook need to fry\n    Bathers =?\n    Eggs = 14 # One\n    Bacon = Eggs * 2 # Eggs * 2 = number of customers\n    Beans = Eggs + Bacon # Calculate the total number of breakfast strips needed\n    \n    bacon_needed = Bacon * customers # Set the result to bacon_needed\n\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_0115",
+        "eos_position": 107,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": true,
+        "eos_text": "def simple_math_problem() -> int:\n    \"\"\"\n    There are some jelly beans in a jar.\n    Three fourths of the jelly beans are red, and one quarter of the red jelly beans are coconut flavored.\n    If 750 jelly beans are coconut flavored, how many jelly beans are there in the jar?\n    \"\"\"\n    redjellybeans = 750 * 0.25\n    johnbeans = redjellybeans * (4/3)\n    result = johnbeans\n\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_6873",
+        "eos_position": 119,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": false,
+        "eos_text": "def simple_math_problem() -> int:\n    '''\n    Betty\u2019s herb garden has 2 more than twice as many oregano plants as basil.\n    If there are 5 basil plants, what is the total number of of plants\n    num_irilh_in_rain = 2 + 5/2\n    num_plants_in_irq = 2 + (2 * 5/2)\n    total_plants = num_irilh_in_rainq + 5\n    result = math.ceil(total_plants)\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_6820",
+        "eos_position": 110,
+        "full_correct": true,
+        "eos_correct": true,
+        "eos_parseable": true,
+        "eos_text": "def simple_math_problem() -> int:\n    \"\"\"\n    Jade and Krista went on a road trip for 3 days.\n    On each day Jade had to drive 8 hours and Krista had to drive 6 hours to arrive at the destination.\n    How many hours did they drive altogether?\n    \"\"\"\n    days = 3\n    hours_mon = 8\n    hours_diff = 6\n    total_hours = days * hours_mon + days * hours_diff\n    result = total_hours\n\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_6726",
+        "eos_position": 109,
+        "full_correct": true,
+        "eos_correct": true,
+        "eos_parseable": true,
+        "eos_text": "def simple_math_problem() -> int:\n    '''\n    The epic poem currently contains 24 lines.\n    If a person adds 3 lines to the poem every month, in how many months will the poem contain 90 lines?\n    '''\n    lines_already_added = 24\n    lines_per_month = 3\n    total_lines = 90\n    months = (total_lines - lines_already_added) // lines_per_month\n    result = int(months)\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_1406",
+        "eos_position": 141,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": true,
+        "eos_text": "def simple_math_problem() -> int:\n    '''\n    Bill is trying to count the toddlers at his daycare, but they keep running around.\n    He double-counts 8 toddlers and misses 3 who are hiding.\n    If Bill thinks he counted 26 toddlers, how many are there really?\n    '''\n    count_double_counted = 8\n    \n    total_toddlers = 26\n    \n    missed_oddlers = 3\n    \n    double_increase = count_double_counted * 2\n    \n    actual_toddlers = total_toddlers - double_increase + + 3\n    \n    result = actual_toddlers\n    \n    return result"
+      }
+    ]
+  },
+  {
+    "step": 3000,
+    "full_correct": 0,
+    "eos_correct": 1,
+    "eos_parseable": 4,
+    "eos_found": 16,
+    "records": [
+      {
+        "sample_id": "gsm8k_train_3517",
+        "eos_position": 172,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": false,
+        "eos_text": "def simple_math_problem() -> int:\n    '''\n    Hayden eats 1 oz of mixed nuts as an evening snack.\n    He buys the bulk bag of mixed nuts that cost $25.00 a bag and holds 40 oz of mixed nuts.\n     There is currently a $5.00 coupon for this item.\n    How much will each serving of nuts cost, in cents\n    bag_cost = 2500\n    bag_oz = 40\n    coupon = 5.00\n    cost = cost / bag_oz\n    hayden_servings = 1\n    total_price = (bulk_cost coup)\n    price_per_serving = total_price / hayden_servings\n    result = price_per_serving * 100\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_6725",
+        "eos_position": 119,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": false,
+        "eos_text": "def simple_math_problem() -> int:\n    '''\n      Janice has been working part-time at a convenience store 5 days a week.\n    She can earn $30 per day and can earn $15 more when she works a 2 hour overtime shift.\n    If she works three overtime shifts this week, pay\n    days = 5\n    day_pay = 30\n    overtime_pay = day_pay/2\n    salary_week = (5*day_pay)*(3*overtime_pay)\n    result = salary_week\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_2910",
+        "eos_position": 148,
+        "full_correct": false,
+        "eos_correct": true,
+        "eos_parseable": true,
+        "eos_text": "def simple_math_problem() -> int:\n    '''\n    At a station, a train comes every 5 minutes leaving 200 passengers and taking 320 others.\n    How many different passengers step on and off a train at the station within an hour?\n    '''\n    train_board = 200\n    train_passengers = 320\n    \n    time_in_hour = 60\n    passengers_per_minute_both_train_passengers = train_board + train_passengers\n    \n    passengers_per_hour = time_in_hour // 5 * passengers_per_minute_both_train_passengers\n    \n    result = passengers_per_hour\n    \n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_3521",
+        "eos_position": 138,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": false,
+        "eos_text": "def simple_math_problem() -> int:\n    \"\"\"\n    Will's breakfast supplied him 900 calories of energy.\n    Then he decided to jog for half an hour, which used up 10 calories of energy per minute.\n    What is Will's net calorie intake after jogging?\n    \"\"\"\n    cal_burn = 10\n    cal_burn_per_second = 60 * 30 * 0.5 * 60 * cal_burn_per_second\n    net_cal_burned = cal_burned_jogging + 900\n    }\n    \n    result = net_cal_burned\n\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_5649",
+        "eos_position": 118,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": true,
+        "eos_text": "def simple_math_problem() -> int:\n    \"\"\"\n    Albert has three times as many marbles as Angela.\n    Angela has 8 more than Allison, who has828 marbles.\n    How many marbles do Albert and Allison marbles? \"\"\"\n    number_of_marbles_allison = 28\n    angela_marbles = number_of_marbles_allison + 8\n    marbles_albert = int(3*angela_marbles)\n    result = (marbles_albles, allison_marbles)\n\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_7103",
+        "eos_position": 193,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": false,
+        "eos_text": "def simple_math_problem() -> int:\n    '''\n    Harry decided to buy some balloons for his friend's birthday party.\n    One balloon costs $0.5, and a pack of 10 balloons is cheaper and costs only $3.\n    Finally, Harry wants to bring to the party exactly 14 balloons.\n    How much did he need to pay them?\n    '''\n    balloon_cost = 0 5\n    pack_of_balloons = 10\n    balloons_per_cost = 3\n    pack_balloons = balloons_count //=pack_of_balloons\n    packs_count = balloons_count % balloons_per_pack\n    packs_cost = balloons_per_pack * balloons_per_cost\n    balloons_count = packs_count * pack_balloons * balloon_cost\n    total_cost = packs_cost + balloons_count\n    result = total_cost\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_2986",
+        "eos_position": 167,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": false,
+        "eos_text": "def simple_math_problem() -> int:\n    \"\"\"\n    Miley bought two cellphones for her parents.\n    Each cellphone costs $800 but, since she is buying two units, she will receive a 5% discount for the total cost  *\n    total = 2*800 \n    total_with_2_units = total * 2 \n    discount_rate = 0.05 \n    total_price_after_discount = total_with_2_units - discount_rate \n    total_without_discount = total_price_after_discount * 200 \n    total_with_after_discount = total_price_before_discount - total_without_discount \n    result = total_with_after_discount\n\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_1515",
+        "eos_position": 103,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": false,
+        "eos_text": "def simple_math_problem() -> int:\n    '''\n    Billy weighs 9 pounds more than Brad.\n    Brad weighs 5 pounds more than Carl.\n    If Carl weighs 145 pounds, how much does Billyilly, in\n   \n    b accurate_weight = 145 #part 5 lbs added\n    b = billy_weight + 5 + 9 # turnover billy weight and add 5 to bear weight and add 9 lb\n    result = b\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_6722",
+        "eos_position": 87,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": false,
+        "eos_text": "def simple_math_problem() -> int:\n    \"\"\"\n    Yesterday, Vincent bought fifteen packs of stickers.\n    Today, he bought ten more packs of stickers than yesterday.\n    How many packs of stickers does Vincent have altogether?\n   \n    sticker_total = None\n    sticker_total = sticker_total + 15\n    sticker_total = None\n    sticker_total = sticker_total\n    result = total\n\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_7383",
+        "eos_position": 116,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": true,
+        "eos_text": "def simple_math_problem() -> int:\n    '''\n    There are 9 boys and 12 girls in a class.\n    The teacher needs to create groups with three members for their class activity.\n    How many groups are formed in '''\n    num_boys = 9\n    \n    num_girls = 12\n    \n    total_people = num_boys + 12\n    \n    groups_per_person = 0.5\n    \n    present_groups = total_people * groups_per_person\n    \n    \n    result = present_groups #group groups\n    \n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_1621",
+        "eos_position": 116,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": false,
+        "eos_text": "def simple_math_problem() -> int:\n    '''\n    At a cafe, the breakfast plate has two eggs and twice as many bacon strips as eggs.\n    If 14 customers order breakfast plates, how many bacon strips the fry plate\n    eggs_per_plate = 2\n    bacon_per_plate =2 * eggs_per_plate\n    customers = 14\n    total_slices = (bacon_per_plate + eggs_per_plate) * customers*needed = bacon_needed\n    result = bacon_needed\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_0115",
+        "eos_position": 110,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": false,
+        "eos_text": "def simple_math_problem() -> int:\n    '''\n    There are some jelly beans in a jar.\n    Three fourths of the jelly beans are red, and one quarter of the red jelly beans are coconut flavored.\n    If 750 jelly beans are coconut flavored, how many jelly beans are there in the jar?\n    coconut_jelly_beans = 750\n    total_jelly_beans = coconut_jelly_beans * 4/3\n    result = total_jelly_beans\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_6873",
+        "eos_position": 119,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": false,
+        "eos_text": "def simple_math_problem() -> int:\n    '''\n    Betty\u2019s herb garden has 2 more than twice as many oregano plants as basil.\n    If there are 5 basil plants, what is the total number of\n    g_plants_in_algebra_basil = 5 + 2\n    total_plants_in_alamsir (g_plants_in_algebra_basil)\n    number_of_plants = total_plants_in_alamsir+5\n    result = int(number_of_plants)\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_6820",
+        "eos_position": 110,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": true,
+        "eos_text": "def simple_math_problem() -> int:\n    \"\"\"\n    Jade and Krista went on a road trip for 3 days.\n    On each day Jade had to drive 8 hours and Krista had to drive 6 hours to arrive at the destination.\n    How many hours did they drive altogether?\n    \"\"\"\n    k = 8\n     \n    a = 6\n    total_days = 3 \n    \n    total_hours = (a_days + k) * 3 \n    \n    result = total_hours\n\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_6726",
+        "eos_position": 109,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": false,
+        "eos_text": "def simple_math_problem() -> int:\n    '''\n    The epic poem currently has 24 lines.\n    If a person adds 3 lines to the poem every month, in how many months will the poem contain 90 lines\n    '''\n    # Person added to 3 to the poem each month\n    lines_needed = 90\n    initial_lines_now = 24\n    months =_lines_now - lines_needed) // 3 * 3\n    result = int(months)\n    return result"
+      },
+      {
+        "sample_id": "gsm8k_train_1406",
+        "eos_position": 141,
+        "full_correct": false,
+        "eos_correct": false,
+        "eos_parseable": false,
+        "eos_text": "def simple_math_problem() -> int:\n    '''\n    Bill is trying to count the toddlers at his daycare, but they keep running around.\n    He double-counts 8 toddlers and misses 3 who are hiding.\n    Bill thinks he counted  26 toddlers, there is \"South\"\n    double_count = 8\n    overses = 3\n    total_toddlers = 26\n    double_per2 = double_count // 2\n    tresp_count = overses * double_count\n    actual_toddlers = total_toddlers - double_per2 + double_count\n    result = actual_toddlers\n    return result"
+      }
+    ]
+  }
+]

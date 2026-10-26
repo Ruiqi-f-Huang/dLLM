@@ -1,0 +1,65 @@
+{
+  "tokenizer": "/root/autodl-tmp/s-flm/cache/huggingface/hub/models--HuggingFaceTB--SmolLM-135M/snapshots/1d461723eec654e65efdc40cf49301c89c0c92f4",
+  "separator": "\\n",
+  "max_length": 512,
+  "splits": {
+    "train": {
+      "rows": 5682,
+      "lengths": {
+        "min": 75,
+        "median": 193.0,
+        "p95": 314,
+        "p99": 382,
+        "max": 508,
+        "mean": 203.9750087997184
+      },
+      "delta_from_source": {
+        "min": 0,
+        "median": 4.0,
+        "p95": 4,
+        "p99": 4,
+        "max": 4,
+        "mean": 3.9971840901091165
+      }
+    },
+    "validation": {
+      "rows": 632,
+      "lengths": {
+        "min": 87,
+        "median": 192.5,
+        "p95": 322,
+        "p99": 389,
+        "max": 453,
+        "mean": 203.12816455696202
+      },
+      "delta_from_source": {
+        "min": 4,
+        "median": 4.0,
+        "p95": 4,
+        "p99": 4,
+        "max": 4,
+        "mean": 4
+      }
+    }
+  },
+  "all": {
+    "rows": 6314,
+    "lengths": {
+      "min": 75,
+      "median": 193.0,
+      "p95": 316,
+      "p99": 383,
+      "max": 508,
+      "mean": 203.890243902439
+    },
+    "delta_from_source": {
+      "min": 0,
+      "median": 4.0,
+      "p95": 4,
+      "p99": 4,
+      "max": 4,
+      "mean": 3.997465948685461
+    },
+    "too_long": []
+  }
+}

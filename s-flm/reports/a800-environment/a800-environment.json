@@ -1,0 +1,42 @@
+{
+  "python": "3.12.3",
+  "gpu": "NVIDIA A800-SXM4-80GB",
+  "cuda_runtime": "12.8",
+  "cudnn": 90701,
+  "bf16_supported": true,
+  "versions": {
+    "torch": "2.7.0+cu128",
+    "numpy": "1.26.4",
+    "lightning": "2.5.1",
+    "pytorch-lightning": "2.5.1",
+    "transformers": "4.45.0",
+    "datasets": "3.5.0",
+    "huggingface-hub": "0.30.2",
+    "tokenizers": "0.20.3",
+    "wandb": "0.19.9",
+    "flash-attn": "2.7.4.post1",
+    "pyarrow": "19.0.1",
+    "torchmetrics": "1.7.1"
+  },
+  "precision": "bf16-mixed",
+  "micro_batch": 8,
+  "global_batch": 8,
+  "accumulate_grad_batches": 1,
+  "smoke_summary": {
+    "initial_step": 0,
+    "final_step": 2,
+    "examples_seen_session": 16,
+    "padded_tokens_seen_session": 8192,
+    "supervised_tokens_seen_session": 6995,
+    "code_eos_tokens_seen_session": 2622,
+    "nonfinite_gradient_updates_session": 0,
+    "amp_skipped_updates_session": 0,
+    "successful_updates_session": 2,
+    "train_batch_seconds": 0.49794220365583897,
+    "wall_seconds_including_validation": 10.903349544852972
+  },
+  "checkpoint_ema_updates": 2,
+  "fixed_requirements_verified": true,
+  "wandb_endpoint_reachable": true,
+  "wandb_online_authenticated_tested": false
+}

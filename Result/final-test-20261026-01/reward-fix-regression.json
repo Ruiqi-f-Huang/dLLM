@@ -1,0 +1,50 @@
+{
+  "correct": {
+    "raw": {
+      "parses": true,
+      "executes": true,
+      "numeric": true,
+      "correct": true
+    },
+    "recovered": {
+      "parses": true,
+      "executes": true,
+      "numeric": true,
+      "correct": true
+    },
+    "reward": 1.0,
+    "infrastructure_failure": false
+  },
+  "wrong": {
+    "raw": {
+      "parses": true,
+      "executes": true,
+      "numeric": true,
+      "correct": false
+    },
+    "recovered": {
+      "parses": true,
+      "executes": true,
+      "numeric": true,
+      "correct": false
+    },
+    "reward": 0.0,
+    "infrastructure_failure": false
+  },
+  "original_failure": {
+    "raw": {
+      "parses": true,
+      "executes": false,
+      "numeric": false,
+      "correct": false
+    },
+    "recovered": {
+      "parses": true,
+      "executes": false,
+      "numeric": false,
+      "correct": false
+    },
+    "reward": 0.0,
+    "infrastructure_failure": false
+  }
+}

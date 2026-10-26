@@ -1,0 +1,1939 @@
+Seed set to 1
+CONFIG
+├── mode
+│   └── gsm8k_eval                                                              
+├── sudoku
+│   └── output_dir: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1
+│       batch_size: 64                                                          
+│                                                                               
+├── gsm8k
+│   └── input_file: null                                                        
+│       output_dir: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1
+│       timeout: 5.0                                                            
+│       bootstrap_size: 1                                                       
+│                                                                               
+├── seed
+│   └── 1                                                                       
+├── allow_tf32
+│   └── True                                                                    
+├── cudnn_benchmark
+│   └── True                                                                    
+├── compile_backbone
+│   └── False                                                                   
+├── backbone_compute_dtype
+│   └── auto                                                                    
+├── neg_infinity_mode
+│   └── large-finite                                                            
+├── loader
+│   └── global_batch_size: 512                                                  
+│       eval_global_batch_size: 512                                             
+│       batch_size: 512                                                         
+│       eval_batch_size: 32                                                     
+│       num_workers: 4                                                          
+│       pin_memory: true                                                        
+│                                                                               
+├── confidence_denoiser
+│   └── confidence_score: entropy                                               
+│       gamma: 0                                                                
+│                                                                               
+├── training
+│   └── ema: 0.9999                                                             
+│       antithetic_sampling: true                                               
+│       importance_sampling: false                                              
+│       sampling_eps: 0.001                                                     
+│       change_of_variables: false                                              
+│       loss_precision: bf16                                                    
+│       finetune_path: ''                                                       
+│       finetune_weights: raw                                                   
+│       sampling_eps_min: 0.001                                                 
+│       sampling_eps_max: 1.0                                                   
+│       resample: false                                                         
+│                                                                               
+├── lora
+│   └── enabled: true                                                           
+│       rank: 8                                                                 
+│       alpha: 16                                                               
+│       dropout: 0.05                                                           
+│       target_modules:                                                         
+│       - blocks.*.attn_qkv                                                     
+│       - blocks.*.attn_out                                                     
+│       - blocks.*.mlp.0                                                        
+│       - blocks.*.mlp.2                                                        
+│                                                                               
+├── eval
+│   └── checkpoint_path: /root/autodl-tmp/s-flm/outputs/sft/20261022-lora-result
+│       strict_loading: true                                                    
+│       disable_ema: false                                                      
+│       compute_generative_perplexity: false                                    
+│       perplexity_batch_size: 8                                                
+│       compute_perplexity_on_sanity: false                                     
+│       gen_ppl_eval_model_name_or_path: gpt2-large                             
+│       generate_samples: true                                                  
+│       generated_samples_path: /root/autodl-tmp/s-flm/outputs/eval/20261022-lor
+│       results_json_path: null                                                 
+│                                                                               
+├── optim
+│   └── weight_decay: 0                                                         
+│       lr: 0.0003                                                              
+│       beta1: 0.9                                                              
+│       beta2: 0.999                                                            
+│       eps: 1.0e-08                                                            
+│                                                                               
+├── trainer
+│   └── _target_: lightning.Trainer                                             
+│       accelerator: cuda                                                       
+│       num_nodes: 1                                                            
+│       devices: 1                                                              
+│       accumulate_grad_batches: 1                                              
+│       gradient_clip_val: 1.0                                                  
+│       precision: bf16                                                         
+│       num_sanity_val_steps: 2                                                 
+│       max_steps: 1000000                                                      
+│       log_every_n_steps: 100                                                  
+│       limit_train_batches: 1.0                                                
+│       limit_val_batches: 1.0                                                  
+│       val_check_interval: 5000                                                
+│       check_val_every_n_epoch: null                                           
+│                                                                               
+├── wandb
+│   └── project: debug                                                          
+│       notes: null                                                             
+│       group: null                                                             
+│       job_type: null                                                          
+│       tags:                                                                   
+│       - log-linear                                                            
+│       - gsm8k_pot                                                             
+│       - gsm8k_pot                                                             
+│       - mdlm                                                                  
+│       offline: true                                                           
+│                                                                               
+├── checkpointing
+│   └── save_dir: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e5
+│       resume_from_ckpt: true                                                  
+│       resume_ckpt_path: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-resu
+│                                                                               
+├── callbacks
+│   └── checkpoint_every_n_steps:                                               
+│         _target_: lightning.pytorch.callbacks.ModelCheckpoint                 
+│         save_top_k: -1                                                        
+│         save_last: true                                                       
+│         dirpath: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e
+│         verbose: true                                                         
+│         auto_insert_metric_name: false                                        
+│         every_n_train_steps: 500                                              
+│       checkpoint_monitor:                                                     
+│         _target_: lightning.pytorch.callbacks.ModelCheckpoint                 
+│         monitor: val/nll                                                      
+│         mode: min                                                             
+│         save_top_k: 1                                                         
+│         save_last: false                                                      
+│         dirpath: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e
+│         filename: best                                                        
+│         auto_insert_metric_name: false                                        
+│         verbose: true                                                         
+│       learning_rate_monitor:                                                  
+│         _target_: lightning.pytorch.callbacks.LearningRateMonitor             
+│         logging_interval: step                                                
+│                                                                               
+├── data
+│   └── train: gsm8k_pot                                                        
+│       valid: gsm8k_pot                                                        
+│       train_file: /root/s-flm/data/gsm8k_pot_result/sft_train.jsonl           
+│       validation_file: /root/s-flm/data/gsm8k_pot_result/sft_validation.jsonl 
+│       cache_dir: /root/autodl-tmp/s-flm/data_cache/gsm8k_pot_result           
+│       tokenizer_name_or_path: /root/autodl-tmp/s-flm/cache/huggingface/hub/mod
+│       tokenizer_revision: 1d461723eec654e65efdc40cf49301c89c0c92f4            
+│       separator: \n                                                           
+│       wrap: false                                                             
+│       streaming: false                                                        
+│       insert_train_eos: true                                                  
+│       insert_valid_eos: true                                                  
+│       train_on_prompt: false                                                  
+│       train_on_pad: true                                                      
+│                                                                               
+├── model
+│   └── name: small                                                             
+│       type: dit                                                               
+│       hidden_size: 768                                                        
+│       cond_dim: 128                                                           
+│       length: 512                                                             
+│       n_blocks: 12                                                            
+│       n_heads: 12                                                             
+│       dropout: 0.1                                                            
+│                                                                               
+├── strategy
+│   └── _target_: lightning.pytorch.strategies.DDPStrategy                      
+│       find_unused_parameters: false                                           
+│                                                                               
+├── noise
+│   └── type: log-linear                                                        
+│       eps: 0.001                                                              
+│       alpha_min: null                                                         
+│       alpha_max: null                                                         
+│       adaptive: false                                                         
+│                                                                               
+├── lr_scheduler
+│   └── _target_: transformers.get_constant_schedule_with_warmup                
+│       num_warmup_steps: 2500                                                  
+│                                                                               
+├── prior
+│   └── type: none                                                              
+│       latent_width: 0                                                         
+│       latent_height: 0                                                        
+│                                                                               
+├── algo
+│   └── name: mdlm                                                              
+│       diffusion_type: absorbing                                               
+│       backbone: dit                                                           
+│       parameterization: subs                                                  
+│       time_conditioning: false                                                
+│       T: 0                                                                    
+│       causal_attention: false                                                 
+│       loss_type: elbo                                                         
+│       post_process_mode: log_probs                                            
+│       adaLN: true                                                             
+│                                                                               
+└── sampler
+    └── predictor: ancestral                                                    
+        steps: 32                                                               
+        steps_policy: full                                                      
+        noise_removal: ancestral                                                
+        use_float64: true                                                       
+        p_nucleus: 1.0                                                          
+        temperature: 1.0                                                        
+        num_sample_batches: 2                                                   
+        num_sample_log: 2                                                       
+                                                                                
+[2026-10-22 18:08:18,499][__main__][INFO] - Starting GSM8K eval.
+Seed set to 1
+Rank 0 sampling:   0%|          | 0/20 [00:00<?, ?it/s]Rank 0 sampling:   5%|▌         | 1/20 [00:06<02:02,  6.44s/it]Rank 0 sampling:  10%|█         | 2/20 [00:10<01:34,  5.25s/it]Rank 0 sampling:  15%|█▌        | 3/20 [00:14<01:17,  4.55s/it]Rank 0 sampling:  20%|██        | 4/20 [00:18<01:07,  4.20s/it]Rank 0 sampling:  25%|██▌       | 5/20 [00:21<01:00,  4.02s/it]Rank 0 sampling:  30%|███       | 6/20 [00:25<00:54,  3.91s/it]Rank 0 sampling:  35%|███▌      | 7/20 [00:29<00:49,  3.82s/it]Rank 0 sampling:  40%|████      | 8/20 [00:32<00:45,  3.77s/it]Rank 0 sampling:  45%|████▌     | 9/20 [00:36<00:41,  3.75s/it]Rank 0 sampling:  50%|█████     | 10/20 [00:40<00:37,  3.73s/it]Rank 0 sampling:  55%|█████▌    | 11/20 [00:43<00:33,  3.71s/it]Rank 0 sampling:  60%|██████    | 12/20 [00:47<00:29,  3.69s/it]Rank 0 sampling:  65%|██████▌   | 13/20 [00:51<00:25,  3.69s/it]Rank 0 sampling:  70%|███████   | 14/20 [00:55<00:22,  3.69s/it]Rank 0 sampling:  75%|███████▌  | 15/20 [00:58<00:18,  3.68s/it]Rank 0 sampling:  80%|████████  | 16/20 [01:02<00:14,  3.68s/it]Rank 0 sampling:  85%|████████▌ | 17/20 [01:06<00:11,  3.67s/it]Rank 0 sampling:  90%|█████████ | 18/20 [01:09<00:07,  3.67s/it]Rank 0 sampling:  95%|█████████▌| 19/20 [01:13<00:03,  3.67s/it]Rank 0 sampling: 100%|██████████| 20/20 [01:16<00:00,  3.63s/it]Rank 0 sampling: 100%|██████████| 20/20 [01:16<00:00,  3.84s/it]
+[2026-10-22 18:09:38,367][__main__][INFO] - Rank 0: average NFE per batch: 32.0
+[2026-10-22 18:09:38,372][__main__][INFO] - Rank 0: saved 632 records to /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e5-diagnostics/validation/step-200-ema-steps32-seed1/rank_0000.json
+[2026-10-22 18:09:38,385][__main__][INFO] - Total records evaluated: 632
+<sample>:6: SyntaxWarning: 'int' object is not callable; perhaps you missed a comma?
+<sample>:7: SyntaxWarning: 'int' object is not callable; perhaps you missed a comma?
+<sample>:10: SyntaxWarning: "is" with 'int' literal. Did you mean "=="?
+[2026-10-22 18:09:38,481][__main__][INFO] - GSM8K accuracy: 8.70% (55/632)
+[2026-10-22 18:09:38,486][__main__][INFO] - Results saved to /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e5-diagnostics/validation/step-200-ema-steps32-seed1/results.json
+Seed set to 1
+CONFIG
+├── mode
+│   └── gsm8k_eval                                                              
+├── sudoku
+│   └── output_dir: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1
+│       batch_size: 64                                                          
+│                                                                               
+├── gsm8k
+│   └── input_file: null                                                        
+│       output_dir: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1
+│       timeout: 5.0                                                            
+│       bootstrap_size: 1                                                       
+│                                                                               
+├── seed
+│   └── 1                                                                       
+├── allow_tf32
+│   └── True                                                                    
+├── cudnn_benchmark
+│   └── True                                                                    
+├── compile_backbone
+│   └── False                                                                   
+├── backbone_compute_dtype
+│   └── auto                                                                    
+├── neg_infinity_mode
+│   └── large-finite                                                            
+├── loader
+│   └── global_batch_size: 512                                                  
+│       eval_global_batch_size: 512                                             
+│       batch_size: 512                                                         
+│       eval_batch_size: 32                                                     
+│       num_workers: 4                                                          
+│       pin_memory: true                                                        
+│                                                                               
+├── confidence_denoiser
+│   └── confidence_score: entropy                                               
+│       gamma: 0                                                                
+│                                                                               
+├── training
+│   └── ema: 0.9999                                                             
+│       antithetic_sampling: true                                               
+│       importance_sampling: false                                              
+│       sampling_eps: 0.001                                                     
+│       change_of_variables: false                                              
+│       loss_precision: bf16                                                    
+│       finetune_path: ''                                                       
+│       finetune_weights: raw                                                   
+│       sampling_eps_min: 0.001                                                 
+│       sampling_eps_max: 1.0                                                   
+│       resample: false                                                         
+│                                                                               
+├── lora
+│   └── enabled: true                                                           
+│       rank: 8                                                                 
+│       alpha: 16                                                               
+│       dropout: 0.05                                                           
+│       target_modules:                                                         
+│       - blocks.*.attn_qkv                                                     
+│       - blocks.*.attn_out                                                     
+│       - blocks.*.mlp.0                                                        
+│       - blocks.*.mlp.2                                                        
+│                                                                               
+├── eval
+│   └── checkpoint_path: /root/autodl-tmp/s-flm/outputs/sft/20261022-lora-result
+│       strict_loading: true                                                    
+│       disable_ema: true                                                       
+│       compute_generative_perplexity: false                                    
+│       perplexity_batch_size: 8                                                
+│       compute_perplexity_on_sanity: false                                     
+│       gen_ppl_eval_model_name_or_path: gpt2-large                             
+│       generate_samples: true                                                  
+│       generated_samples_path: /root/autodl-tmp/s-flm/outputs/eval/20261022-lor
+│       results_json_path: null                                                 
+│                                                                               
+├── optim
+│   └── weight_decay: 0                                                         
+│       lr: 0.0003                                                              
+│       beta1: 0.9                                                              
+│       beta2: 0.999                                                            
+│       eps: 1.0e-08                                                            
+│                                                                               
+├── trainer
+│   └── _target_: lightning.Trainer                                             
+│       accelerator: cuda                                                       
+│       num_nodes: 1                                                            
+│       devices: 1                                                              
+│       accumulate_grad_batches: 1                                              
+│       gradient_clip_val: 1.0                                                  
+│       precision: bf16                                                         
+│       num_sanity_val_steps: 2                                                 
+│       max_steps: 1000000                                                      
+│       log_every_n_steps: 100                                                  
+│       limit_train_batches: 1.0                                                
+│       limit_val_batches: 1.0                                                  
+│       val_check_interval: 5000                                                
+│       check_val_every_n_epoch: null                                           
+│                                                                               
+├── wandb
+│   └── project: debug                                                          
+│       notes: null                                                             
+│       group: null                                                             
+│       job_type: null                                                          
+│       tags:                                                                   
+│       - log-linear                                                            
+│       - gsm8k_pot                                                             
+│       - gsm8k_pot                                                             
+│       - mdlm                                                                  
+│       offline: true                                                           
+│                                                                               
+├── checkpointing
+│   └── save_dir: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e5
+│       resume_from_ckpt: true                                                  
+│       resume_ckpt_path: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-resu
+│                                                                               
+├── callbacks
+│   └── checkpoint_every_n_steps:                                               
+│         _target_: lightning.pytorch.callbacks.ModelCheckpoint                 
+│         save_top_k: -1                                                        
+│         save_last: true                                                       
+│         dirpath: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e
+│         verbose: true                                                         
+│         auto_insert_metric_name: false                                        
+│         every_n_train_steps: 500                                              
+│       checkpoint_monitor:                                                     
+│         _target_: lightning.pytorch.callbacks.ModelCheckpoint                 
+│         monitor: val/nll                                                      
+│         mode: min                                                             
+│         save_top_k: 1                                                         
+│         save_last: false                                                      
+│         dirpath: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e
+│         filename: best                                                        
+│         auto_insert_metric_name: false                                        
+│         verbose: true                                                         
+│       learning_rate_monitor:                                                  
+│         _target_: lightning.pytorch.callbacks.LearningRateMonitor             
+│         logging_interval: step                                                
+│                                                                               
+├── data
+│   └── train: gsm8k_pot                                                        
+│       valid: gsm8k_pot                                                        
+│       train_file: /root/s-flm/data/gsm8k_pot_result/sft_train.jsonl           
+│       validation_file: /root/s-flm/data/gsm8k_pot_result/sft_validation.jsonl 
+│       cache_dir: /root/autodl-tmp/s-flm/data_cache/gsm8k_pot_result           
+│       tokenizer_name_or_path: /root/autodl-tmp/s-flm/cache/huggingface/hub/mod
+│       tokenizer_revision: 1d461723eec654e65efdc40cf49301c89c0c92f4            
+│       separator: \n                                                           
+│       wrap: false                                                             
+│       streaming: false                                                        
+│       insert_train_eos: true                                                  
+│       insert_valid_eos: true                                                  
+│       train_on_prompt: false                                                  
+│       train_on_pad: true                                                      
+│                                                                               
+├── model
+│   └── name: small                                                             
+│       type: dit                                                               
+│       hidden_size: 768                                                        
+│       cond_dim: 128                                                           
+│       length: 512                                                             
+│       n_blocks: 12                                                            
+│       n_heads: 12                                                             
+│       dropout: 0.1                                                            
+│                                                                               
+├── strategy
+│   └── _target_: lightning.pytorch.strategies.DDPStrategy                      
+│       find_unused_parameters: false                                           
+│                                                                               
+├── noise
+│   └── type: log-linear                                                        
+│       eps: 0.001                                                              
+│       alpha_min: null                                                         
+│       alpha_max: null                                                         
+│       adaptive: false                                                         
+│                                                                               
+├── lr_scheduler
+│   └── _target_: transformers.get_constant_schedule_with_warmup                
+│       num_warmup_steps: 2500                                                  
+│                                                                               
+├── prior
+│   └── type: none                                                              
+│       latent_width: 0                                                         
+│       latent_height: 0                                                        
+│                                                                               
+├── algo
+│   └── name: mdlm                                                              
+│       diffusion_type: absorbing                                               
+│       backbone: dit                                                           
+│       parameterization: subs                                                  
+│       time_conditioning: false                                                
+│       T: 0                                                                    
+│       causal_attention: false                                                 
+│       loss_type: elbo                                                         
+│       post_process_mode: log_probs                                            
+│       adaLN: true                                                             
+│                                                                               
+└── sampler
+    └── predictor: ancestral                                                    
+        steps: 32                                                               
+        steps_policy: full                                                      
+        noise_removal: ancestral                                                
+        use_float64: true                                                       
+        p_nucleus: 1.0                                                          
+        temperature: 1.0                                                        
+        num_sample_batches: 2                                                   
+        num_sample_log: 2                                                       
+                                                                                
+[2026-10-22 18:09:46,700][__main__][INFO] - Starting GSM8K eval.
+Seed set to 1
+[2026-10-22 18:09:49,395][__main__][INFO] - Disabling EMA.
+Rank 0 sampling:   0%|          | 0/20 [00:00<?, ?it/s]Rank 0 sampling:   5%|▌         | 1/20 [00:06<02:01,  6.41s/it]Rank 0 sampling:  10%|█         | 2/20 [00:10<01:34,  5.25s/it]Rank 0 sampling:  15%|█▌        | 3/20 [00:14<01:17,  4.54s/it]Rank 0 sampling:  20%|██        | 4/20 [00:18<01:07,  4.19s/it]Rank 0 sampling:  25%|██▌       | 5/20 [00:21<01:00,  4.02s/it]Rank 0 sampling:  30%|███       | 6/20 [00:25<00:54,  3.91s/it]Rank 0 sampling:  35%|███▌      | 7/20 [00:29<00:49,  3.82s/it]Rank 0 sampling:  40%|████      | 8/20 [00:32<00:45,  3.79s/it]Rank 0 sampling:  45%|████▌     | 9/20 [00:36<00:41,  3.75s/it]Rank 0 sampling:  50%|█████     | 10/20 [00:40<00:37,  3.73s/it]Rank 0 sampling:  55%|█████▌    | 11/20 [00:43<00:33,  3.71s/it]Rank 0 sampling:  60%|██████    | 12/20 [00:47<00:29,  3.70s/it]Rank 0 sampling:  65%|██████▌   | 13/20 [00:51<00:25,  3.70s/it]Rank 0 sampling:  70%|███████   | 14/20 [00:55<00:22,  3.70s/it]Rank 0 sampling:  75%|███████▌  | 15/20 [00:58<00:18,  3.69s/it]Rank 0 sampling:  80%|████████  | 16/20 [01:02<00:14,  3.68s/it]Rank 0 sampling:  85%|████████▌ | 17/20 [01:06<00:11,  3.67s/it]Rank 0 sampling:  90%|█████████ | 18/20 [01:09<00:07,  3.67s/it]Rank 0 sampling:  95%|█████████▌| 19/20 [01:13<00:03,  3.68s/it]Rank 0 sampling: 100%|██████████| 20/20 [01:16<00:00,  3.62s/it]Rank 0 sampling: 100%|██████████| 20/20 [01:16<00:00,  3.84s/it]
+[2026-10-22 18:11:06,419][__main__][INFO] - Rank 0: average NFE per batch: 32.0
+[2026-10-22 18:11:06,424][__main__][INFO] - Rank 0: saved 632 records to /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e5-diagnostics/validation/step-200-raw-steps32-seed1/rank_0000.json
+[2026-10-22 18:11:06,436][__main__][INFO] - Total records evaluated: 632
+<sample>:6: SyntaxWarning: 'int' object is not callable; perhaps you missed a comma?
+<sample>:7: SyntaxWarning: 'int' object is not callable; perhaps you missed a comma?
+<sample>:10: SyntaxWarning: "is" with 'int' literal. Did you mean "=="?
+[2026-10-22 18:11:06,534][__main__][INFO] - GSM8K accuracy: 8.39% (53/632)
+[2026-10-22 18:11:06,538][__main__][INFO] - Results saved to /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e5-diagnostics/validation/step-200-raw-steps32-seed1/results.json
+Seed set to 1
+CONFIG
+├── mode
+│   └── gsm8k_eval                                                              
+├── sudoku
+│   └── output_dir: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1
+│       batch_size: 64                                                          
+│                                                                               
+├── gsm8k
+│   └── input_file: null                                                        
+│       output_dir: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1
+│       timeout: 5.0                                                            
+│       bootstrap_size: 1                                                       
+│                                                                               
+├── seed
+│   └── 1                                                                       
+├── allow_tf32
+│   └── True                                                                    
+├── cudnn_benchmark
+│   └── True                                                                    
+├── compile_backbone
+│   └── False                                                                   
+├── backbone_compute_dtype
+│   └── auto                                                                    
+├── neg_infinity_mode
+│   └── large-finite                                                            
+├── loader
+│   └── global_batch_size: 512                                                  
+│       eval_global_batch_size: 512                                             
+│       batch_size: 512                                                         
+│       eval_batch_size: 32                                                     
+│       num_workers: 4                                                          
+│       pin_memory: true                                                        
+│                                                                               
+├── confidence_denoiser
+│   └── confidence_score: entropy                                               
+│       gamma: 0                                                                
+│                                                                               
+├── training
+│   └── ema: 0.9999                                                             
+│       antithetic_sampling: true                                               
+│       importance_sampling: false                                              
+│       sampling_eps: 0.001                                                     
+│       change_of_variables: false                                              
+│       loss_precision: bf16                                                    
+│       finetune_path: ''                                                       
+│       finetune_weights: raw                                                   
+│       sampling_eps_min: 0.001                                                 
+│       sampling_eps_max: 1.0                                                   
+│       resample: false                                                         
+│                                                                               
+├── lora
+│   └── enabled: true                                                           
+│       rank: 8                                                                 
+│       alpha: 16                                                               
+│       dropout: 0.05                                                           
+│       target_modules:                                                         
+│       - blocks.*.attn_qkv                                                     
+│       - blocks.*.attn_out                                                     
+│       - blocks.*.mlp.0                                                        
+│       - blocks.*.mlp.2                                                        
+│                                                                               
+├── eval
+│   └── checkpoint_path: /root/autodl-tmp/s-flm/outputs/sft/20261022-lora-result
+│       strict_loading: true                                                    
+│       disable_ema: false                                                      
+│       compute_generative_perplexity: false                                    
+│       perplexity_batch_size: 8                                                
+│       compute_perplexity_on_sanity: false                                     
+│       gen_ppl_eval_model_name_or_path: gpt2-large                             
+│       generate_samples: true                                                  
+│       generated_samples_path: /root/autodl-tmp/s-flm/outputs/eval/20261022-lor
+│       results_json_path: null                                                 
+│                                                                               
+├── optim
+│   └── weight_decay: 0                                                         
+│       lr: 0.0003                                                              
+│       beta1: 0.9                                                              
+│       beta2: 0.999                                                            
+│       eps: 1.0e-08                                                            
+│                                                                               
+├── trainer
+│   └── _target_: lightning.Trainer                                             
+│       accelerator: cuda                                                       
+│       num_nodes: 1                                                            
+│       devices: 1                                                              
+│       accumulate_grad_batches: 1                                              
+│       gradient_clip_val: 1.0                                                  
+│       precision: bf16                                                         
+│       num_sanity_val_steps: 2                                                 
+│       max_steps: 1000000                                                      
+│       log_every_n_steps: 100                                                  
+│       limit_train_batches: 1.0                                                
+│       limit_val_batches: 1.0                                                  
+│       val_check_interval: 5000                                                
+│       check_val_every_n_epoch: null                                           
+│                                                                               
+├── wandb
+│   └── project: debug                                                          
+│       notes: null                                                             
+│       group: null                                                             
+│       job_type: null                                                          
+│       tags:                                                                   
+│       - log-linear                                                            
+│       - gsm8k_pot                                                             
+│       - gsm8k_pot                                                             
+│       - mdlm                                                                  
+│       offline: true                                                           
+│                                                                               
+├── checkpointing
+│   └── save_dir: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e5
+│       resume_from_ckpt: true                                                  
+│       resume_ckpt_path: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-resu
+│                                                                               
+├── callbacks
+│   └── checkpoint_every_n_steps:                                               
+│         _target_: lightning.pytorch.callbacks.ModelCheckpoint                 
+│         save_top_k: -1                                                        
+│         save_last: true                                                       
+│         dirpath: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e
+│         verbose: true                                                         
+│         auto_insert_metric_name: false                                        
+│         every_n_train_steps: 500                                              
+│       checkpoint_monitor:                                                     
+│         _target_: lightning.pytorch.callbacks.ModelCheckpoint                 
+│         monitor: val/nll                                                      
+│         mode: min                                                             
+│         save_top_k: 1                                                         
+│         save_last: false                                                      
+│         dirpath: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e
+│         filename: best                                                        
+│         auto_insert_metric_name: false                                        
+│         verbose: true                                                         
+│       learning_rate_monitor:                                                  
+│         _target_: lightning.pytorch.callbacks.LearningRateMonitor             
+│         logging_interval: step                                                
+│                                                                               
+├── data
+│   └── train: gsm8k_pot                                                        
+│       valid: gsm8k_pot                                                        
+│       train_file: /root/s-flm/data/gsm8k_pot_result/sft_train.jsonl           
+│       validation_file: /root/s-flm/data/gsm8k_pot_result/sft_validation.jsonl 
+│       cache_dir: /root/autodl-tmp/s-flm/data_cache/gsm8k_pot_result           
+│       tokenizer_name_or_path: /root/autodl-tmp/s-flm/cache/huggingface/hub/mod
+│       tokenizer_revision: 1d461723eec654e65efdc40cf49301c89c0c92f4            
+│       separator: \n                                                           
+│       wrap: false                                                             
+│       streaming: false                                                        
+│       insert_train_eos: true                                                  
+│       insert_valid_eos: true                                                  
+│       train_on_prompt: false                                                  
+│       train_on_pad: true                                                      
+│                                                                               
+├── model
+│   └── name: small                                                             
+│       type: dit                                                               
+│       hidden_size: 768                                                        
+│       cond_dim: 128                                                           
+│       length: 512                                                             
+│       n_blocks: 12                                                            
+│       n_heads: 12                                                             
+│       dropout: 0.1                                                            
+│                                                                               
+├── strategy
+│   └── _target_: lightning.pytorch.strategies.DDPStrategy                      
+│       find_unused_parameters: false                                           
+│                                                                               
+├── noise
+│   └── type: log-linear                                                        
+│       eps: 0.001                                                              
+│       alpha_min: null                                                         
+│       alpha_max: null                                                         
+│       adaptive: false                                                         
+│                                                                               
+├── lr_scheduler
+│   └── _target_: transformers.get_constant_schedule_with_warmup                
+│       num_warmup_steps: 2500                                                  
+│                                                                               
+├── prior
+│   └── type: none                                                              
+│       latent_width: 0                                                         
+│       latent_height: 0                                                        
+│                                                                               
+├── algo
+│   └── name: mdlm                                                              
+│       diffusion_type: absorbing                                               
+│       backbone: dit                                                           
+│       parameterization: subs                                                  
+│       time_conditioning: false                                                
+│       T: 0                                                                    
+│       causal_attention: false                                                 
+│       loss_type: elbo                                                         
+│       post_process_mode: log_probs                                            
+│       adaLN: true                                                             
+│                                                                               
+└── sampler
+    └── predictor: ancestral                                                    
+        steps: 32                                                               
+        steps_policy: full                                                      
+        noise_removal: ancestral                                                
+        use_float64: true                                                       
+        p_nucleus: 1.0                                                          
+        temperature: 1.0                                                        
+        num_sample_batches: 2                                                   
+        num_sample_log: 2                                                       
+                                                                                
+[2026-10-22 18:11:14,831][__main__][INFO] - Starting GSM8K eval.
+Seed set to 1
+Rank 0 sampling:   0%|          | 0/20 [00:00<?, ?it/s]Rank 0 sampling:   5%|▌         | 1/20 [00:06<02:01,  6.37s/it]Rank 0 sampling:  10%|█         | 2/20 [00:10<01:34,  5.23s/it]Rank 0 sampling:  15%|█▌        | 3/20 [00:14<01:16,  4.52s/it]Rank 0 sampling:  20%|██        | 4/20 [00:18<01:07,  4.19s/it]Rank 0 sampling:  25%|██▌       | 5/20 [00:21<01:00,  4.02s/it]Rank 0 sampling:  30%|███       | 6/20 [00:25<00:54,  3.90s/it]Rank 0 sampling:  35%|███▌      | 7/20 [00:29<00:49,  3.82s/it]Rank 0 sampling:  40%|████      | 8/20 [00:32<00:45,  3.78s/it]Rank 0 sampling:  45%|████▌     | 9/20 [00:36<00:41,  3.76s/it]Rank 0 sampling:  50%|█████     | 10/20 [00:40<00:37,  3.73s/it]Rank 0 sampling:  55%|█████▌    | 11/20 [00:43<00:33,  3.71s/it]Rank 0 sampling:  60%|██████    | 12/20 [00:47<00:29,  3.71s/it]Rank 0 sampling:  65%|██████▌   | 13/20 [00:51<00:25,  3.70s/it]Rank 0 sampling:  70%|███████   | 14/20 [00:55<00:22,  3.70s/it]Rank 0 sampling:  75%|███████▌  | 15/20 [00:58<00:18,  3.69s/it]Rank 0 sampling:  80%|████████  | 16/20 [01:02<00:14,  3.69s/it]Rank 0 sampling:  85%|████████▌ | 17/20 [01:06<00:11,  3.69s/it]Rank 0 sampling:  90%|█████████ | 18/20 [01:09<00:07,  3.69s/it]Rank 0 sampling:  95%|█████████▌| 19/20 [01:13<00:03,  3.68s/it]Rank 0 sampling: 100%|██████████| 20/20 [01:16<00:00,  3.64s/it]Rank 0 sampling: 100%|██████████| 20/20 [01:16<00:00,  3.85s/it]
+[2026-10-22 18:12:34,667][__main__][INFO] - Rank 0: average NFE per batch: 32.0
+[2026-10-22 18:12:34,672][__main__][INFO] - Rank 0: saved 632 records to /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e5-diagnostics/validation/step-711-ema-steps32-seed1/rank_0000.json
+[2026-10-22 18:12:34,685][__main__][INFO] - Total records evaluated: 632
+<sample>:10: SyntaxWarning: "is" with 'int' literal. Did you mean "=="?
+[2026-10-22 18:12:34,783][__main__][INFO] - GSM8K accuracy: 7.28% (46/632)
+[2026-10-22 18:12:34,788][__main__][INFO] - Results saved to /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e5-diagnostics/validation/step-711-ema-steps32-seed1/results.json
+Seed set to 1
+CONFIG
+├── mode
+│   └── gsm8k_eval                                                              
+├── sudoku
+│   └── output_dir: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1
+│       batch_size: 64                                                          
+│                                                                               
+├── gsm8k
+│   └── input_file: null                                                        
+│       output_dir: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1
+│       timeout: 5.0                                                            
+│       bootstrap_size: 1                                                       
+│                                                                               
+├── seed
+│   └── 1                                                                       
+├── allow_tf32
+│   └── True                                                                    
+├── cudnn_benchmark
+│   └── True                                                                    
+├── compile_backbone
+│   └── False                                                                   
+├── backbone_compute_dtype
+│   └── auto                                                                    
+├── neg_infinity_mode
+│   └── large-finite                                                            
+├── loader
+│   └── global_batch_size: 512                                                  
+│       eval_global_batch_size: 512                                             
+│       batch_size: 512                                                         
+│       eval_batch_size: 32                                                     
+│       num_workers: 4                                                          
+│       pin_memory: true                                                        
+│                                                                               
+├── confidence_denoiser
+│   └── confidence_score: entropy                                               
+│       gamma: 0                                                                
+│                                                                               
+├── training
+│   └── ema: 0.9999                                                             
+│       antithetic_sampling: true                                               
+│       importance_sampling: false                                              
+│       sampling_eps: 0.001                                                     
+│       change_of_variables: false                                              
+│       loss_precision: bf16                                                    
+│       finetune_path: ''                                                       
+│       finetune_weights: raw                                                   
+│       sampling_eps_min: 0.001                                                 
+│       sampling_eps_max: 1.0                                                   
+│       resample: false                                                         
+│                                                                               
+├── lora
+│   └── enabled: true                                                           
+│       rank: 8                                                                 
+│       alpha: 16                                                               
+│       dropout: 0.05                                                           
+│       target_modules:                                                         
+│       - blocks.*.attn_qkv                                                     
+│       - blocks.*.attn_out                                                     
+│       - blocks.*.mlp.0                                                        
+│       - blocks.*.mlp.2                                                        
+│                                                                               
+├── eval
+│   └── checkpoint_path: /root/autodl-tmp/s-flm/outputs/sft/20261022-lora-result
+│       strict_loading: true                                                    
+│       disable_ema: true                                                       
+│       compute_generative_perplexity: false                                    
+│       perplexity_batch_size: 8                                                
+│       compute_perplexity_on_sanity: false                                     
+│       gen_ppl_eval_model_name_or_path: gpt2-large                             
+│       generate_samples: true                                                  
+│       generated_samples_path: /root/autodl-tmp/s-flm/outputs/eval/20261022-lor
+│       results_json_path: null                                                 
+│                                                                               
+├── optim
+│   └── weight_decay: 0                                                         
+│       lr: 0.0003                                                              
+│       beta1: 0.9                                                              
+│       beta2: 0.999                                                            
+│       eps: 1.0e-08                                                            
+│                                                                               
+├── trainer
+│   └── _target_: lightning.Trainer                                             
+│       accelerator: cuda                                                       
+│       num_nodes: 1                                                            
+│       devices: 1                                                              
+│       accumulate_grad_batches: 1                                              
+│       gradient_clip_val: 1.0                                                  
+│       precision: bf16                                                         
+│       num_sanity_val_steps: 2                                                 
+│       max_steps: 1000000                                                      
+│       log_every_n_steps: 100                                                  
+│       limit_train_batches: 1.0                                                
+│       limit_val_batches: 1.0                                                  
+│       val_check_interval: 5000                                                
+│       check_val_every_n_epoch: null                                           
+│                                                                               
+├── wandb
+│   └── project: debug                                                          
+│       notes: null                                                             
+│       group: null                                                             
+│       job_type: null                                                          
+│       tags:                                                                   
+│       - log-linear                                                            
+│       - gsm8k_pot                                                             
+│       - gsm8k_pot                                                             
+│       - mdlm                                                                  
+│       offline: true                                                           
+│                                                                               
+├── checkpointing
+│   └── save_dir: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e5
+│       resume_from_ckpt: true                                                  
+│       resume_ckpt_path: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-resu
+│                                                                               
+├── callbacks
+│   └── checkpoint_every_n_steps:                                               
+│         _target_: lightning.pytorch.callbacks.ModelCheckpoint                 
+│         save_top_k: -1                                                        
+│         save_last: true                                                       
+│         dirpath: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e
+│         verbose: true                                                         
+│         auto_insert_metric_name: false                                        
+│         every_n_train_steps: 500                                              
+│       checkpoint_monitor:                                                     
+│         _target_: lightning.pytorch.callbacks.ModelCheckpoint                 
+│         monitor: val/nll                                                      
+│         mode: min                                                             
+│         save_top_k: 1                                                         
+│         save_last: false                                                      
+│         dirpath: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e
+│         filename: best                                                        
+│         auto_insert_metric_name: false                                        
+│         verbose: true                                                         
+│       learning_rate_monitor:                                                  
+│         _target_: lightning.pytorch.callbacks.LearningRateMonitor             
+│         logging_interval: step                                                
+│                                                                               
+├── data
+│   └── train: gsm8k_pot                                                        
+│       valid: gsm8k_pot                                                        
+│       train_file: /root/s-flm/data/gsm8k_pot_result/sft_train.jsonl           
+│       validation_file: /root/s-flm/data/gsm8k_pot_result/sft_validation.jsonl 
+│       cache_dir: /root/autodl-tmp/s-flm/data_cache/gsm8k_pot_result           
+│       tokenizer_name_or_path: /root/autodl-tmp/s-flm/cache/huggingface/hub/mod
+│       tokenizer_revision: 1d461723eec654e65efdc40cf49301c89c0c92f4            
+│       separator: \n                                                           
+│       wrap: false                                                             
+│       streaming: false                                                        
+│       insert_train_eos: true                                                  
+│       insert_valid_eos: true                                                  
+│       train_on_prompt: false                                                  
+│       train_on_pad: true                                                      
+│                                                                               
+├── model
+│   └── name: small                                                             
+│       type: dit                                                               
+│       hidden_size: 768                                                        
+│       cond_dim: 128                                                           
+│       length: 512                                                             
+│       n_blocks: 12                                                            
+│       n_heads: 12                                                             
+│       dropout: 0.1                                                            
+│                                                                               
+├── strategy
+│   └── _target_: lightning.pytorch.strategies.DDPStrategy                      
+│       find_unused_parameters: false                                           
+│                                                                               
+├── noise
+│   └── type: log-linear                                                        
+│       eps: 0.001                                                              
+│       alpha_min: null                                                         
+│       alpha_max: null                                                         
+│       adaptive: false                                                         
+│                                                                               
+├── lr_scheduler
+│   └── _target_: transformers.get_constant_schedule_with_warmup                
+│       num_warmup_steps: 2500                                                  
+│                                                                               
+├── prior
+│   └── type: none                                                              
+│       latent_width: 0                                                         
+│       latent_height: 0                                                        
+│                                                                               
+├── algo
+│   └── name: mdlm                                                              
+│       diffusion_type: absorbing                                               
+│       backbone: dit                                                           
+│       parameterization: subs                                                  
+│       time_conditioning: false                                                
+│       T: 0                                                                    
+│       causal_attention: false                                                 
+│       loss_type: elbo                                                         
+│       post_process_mode: log_probs                                            
+│       adaLN: true                                                             
+│                                                                               
+└── sampler
+    └── predictor: ancestral                                                    
+        steps: 32                                                               
+        steps_policy: full                                                      
+        noise_removal: ancestral                                                
+        use_float64: true                                                       
+        p_nucleus: 1.0                                                          
+        temperature: 1.0                                                        
+        num_sample_batches: 2                                                   
+        num_sample_log: 2                                                       
+                                                                                
+[2026-10-22 18:12:43,423][__main__][INFO] - Starting GSM8K eval.
+Seed set to 1
+[2026-10-22 18:12:46,211][__main__][INFO] - Disabling EMA.
+Rank 0 sampling:   0%|          | 0/20 [00:00<?, ?it/s]Rank 0 sampling:   5%|▌         | 1/20 [00:06<02:01,  6.39s/it]Rank 0 sampling:  10%|█         | 2/20 [00:10<01:34,  5.23s/it]Rank 0 sampling:  15%|█▌        | 3/20 [00:14<01:17,  4.54s/it]Rank 0 sampling:  20%|██        | 4/20 [00:18<01:07,  4.20s/it]Rank 0 sampling:  25%|██▌       | 5/20 [00:21<01:00,  4.02s/it]Rank 0 sampling:  30%|███       | 6/20 [00:25<00:54,  3.91s/it]Rank 0 sampling:  35%|███▌      | 7/20 [00:29<00:49,  3.83s/it]Rank 0 sampling:  40%|████      | 8/20 [00:32<00:45,  3.78s/it]Rank 0 sampling:  45%|████▌     | 9/20 [00:36<00:41,  3.76s/it]Rank 0 sampling:  50%|█████     | 10/20 [00:40<00:37,  3.74s/it]Rank 0 sampling:  55%|█████▌    | 11/20 [00:44<00:33,  3.72s/it]Rank 0 sampling:  60%|██████    | 12/20 [00:47<00:29,  3.71s/it]Rank 0 sampling:  65%|██████▌   | 13/20 [00:51<00:25,  3.71s/it]Rank 0 sampling:  70%|███████   | 14/20 [00:55<00:22,  3.70s/it]Rank 0 sampling:  75%|███████▌  | 15/20 [00:58<00:18,  3.70s/it]Rank 0 sampling:  80%|████████  | 16/20 [01:02<00:14,  3.70s/it]Rank 0 sampling:  85%|████████▌ | 17/20 [01:06<00:11,  3.69s/it]Rank 0 sampling:  90%|█████████ | 18/20 [01:09<00:07,  3.69s/it]Rank 0 sampling:  95%|█████████▌| 19/20 [01:13<00:03,  3.69s/it]Rank 0 sampling: 100%|██████████| 20/20 [01:17<00:00,  3.64s/it]Rank 0 sampling: 100%|██████████| 20/20 [01:17<00:00,  3.85s/it]
+[2026-10-22 18:14:03,400][__main__][INFO] - Rank 0: average NFE per batch: 32.0
+[2026-10-22 18:14:03,405][__main__][INFO] - Rank 0: saved 632 records to /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e5-diagnostics/validation/step-711-raw-steps32-seed1/rank_0000.json
+[2026-10-22 18:14:03,417][__main__][INFO] - Total records evaluated: 632
+<sample>:10: SyntaxWarning: "is" with 'int' literal. Did you mean "=="?
+[2026-10-22 18:14:03,514][__main__][INFO] - GSM8K accuracy: 7.12% (45/632)
+[2026-10-22 18:14:03,519][__main__][INFO] - Results saved to /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e5-diagnostics/validation/step-711-raw-steps32-seed1/results.json
+Seed set to 1
+CONFIG
+├── mode
+│   └── gsm8k_eval                                                              
+├── sudoku
+│   └── output_dir: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1
+│       batch_size: 64                                                          
+│                                                                               
+├── gsm8k
+│   └── input_file: null                                                        
+│       output_dir: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1
+│       timeout: 5.0                                                            
+│       bootstrap_size: 1                                                       
+│                                                                               
+├── seed
+│   └── 1                                                                       
+├── allow_tf32
+│   └── True                                                                    
+├── cudnn_benchmark
+│   └── True                                                                    
+├── compile_backbone
+│   └── False                                                                   
+├── backbone_compute_dtype
+│   └── auto                                                                    
+├── neg_infinity_mode
+│   └── large-finite                                                            
+├── loader
+│   └── global_batch_size: 512                                                  
+│       eval_global_batch_size: 512                                             
+│       batch_size: 512                                                         
+│       eval_batch_size: 32                                                     
+│       num_workers: 4                                                          
+│       pin_memory: true                                                        
+│                                                                               
+├── confidence_denoiser
+│   └── confidence_score: entropy                                               
+│       gamma: 0                                                                
+│                                                                               
+├── training
+│   └── ema: 0.9999                                                             
+│       antithetic_sampling: true                                               
+│       importance_sampling: false                                              
+│       sampling_eps: 0.001                                                     
+│       change_of_variables: false                                              
+│       loss_precision: bf16                                                    
+│       finetune_path: ''                                                       
+│       finetune_weights: raw                                                   
+│       sampling_eps_min: 0.001                                                 
+│       sampling_eps_max: 1.0                                                   
+│       resample: false                                                         
+│                                                                               
+├── lora
+│   └── enabled: false                                                          
+│       rank: 8                                                                 
+│       alpha: 16                                                               
+│       dropout: 0.05                                                           
+│       target_modules:                                                         
+│       - blocks.*.attn_qkv                                                     
+│       - blocks.*.attn_out                                                     
+│       - blocks.*.mlp.0                                                        
+│       - blocks.*.mlp.2                                                        
+│                                                                               
+├── eval
+│   └── checkpoint_path: /root/s-flm/checkpoints/tinygsm/mdlm.ckpt              
+│       strict_loading: true                                                    
+│       disable_ema: false                                                      
+│       compute_generative_perplexity: false                                    
+│       perplexity_batch_size: 8                                                
+│       compute_perplexity_on_sanity: false                                     
+│       gen_ppl_eval_model_name_or_path: gpt2-large                             
+│       generate_samples: true                                                  
+│       generated_samples_path: /root/autodl-tmp/s-flm/outputs/eval/20261022-lor
+│       results_json_path: null                                                 
+│                                                                               
+├── optim
+│   └── weight_decay: 0                                                         
+│       lr: 0.0003                                                              
+│       beta1: 0.9                                                              
+│       beta2: 0.999                                                            
+│       eps: 1.0e-08                                                            
+│                                                                               
+├── trainer
+│   └── _target_: lightning.Trainer                                             
+│       accelerator: cuda                                                       
+│       num_nodes: 1                                                            
+│       devices: 1                                                              
+│       accumulate_grad_batches: 1                                              
+│       gradient_clip_val: 1.0                                                  
+│       precision: bf16                                                         
+│       num_sanity_val_steps: 2                                                 
+│       max_steps: 1000000                                                      
+│       log_every_n_steps: 100                                                  
+│       limit_train_batches: 1.0                                                
+│       limit_val_batches: 1.0                                                  
+│       val_check_interval: 5000                                                
+│       check_val_every_n_epoch: null                                           
+│                                                                               
+├── wandb
+│   └── project: debug                                                          
+│       notes: null                                                             
+│       group: null                                                             
+│       job_type: null                                                          
+│       tags:                                                                   
+│       - log-linear                                                            
+│       - gsm8k_pot                                                             
+│       - gsm8k_pot                                                             
+│       - mdlm                                                                  
+│       offline: true                                                           
+│                                                                               
+├── checkpointing
+│   └── save_dir: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e5
+│       resume_from_ckpt: true                                                  
+│       resume_ckpt_path: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-resu
+│                                                                               
+├── callbacks
+│   └── checkpoint_every_n_steps:                                               
+│         _target_: lightning.pytorch.callbacks.ModelCheckpoint                 
+│         save_top_k: -1                                                        
+│         save_last: true                                                       
+│         dirpath: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e
+│         verbose: true                                                         
+│         auto_insert_metric_name: false                                        
+│         every_n_train_steps: 500                                              
+│       checkpoint_monitor:                                                     
+│         _target_: lightning.pytorch.callbacks.ModelCheckpoint                 
+│         monitor: val/nll                                                      
+│         mode: min                                                             
+│         save_top_k: 1                                                         
+│         save_last: false                                                      
+│         dirpath: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e
+│         filename: best                                                        
+│         auto_insert_metric_name: false                                        
+│         verbose: true                                                         
+│       learning_rate_monitor:                                                  
+│         _target_: lightning.pytorch.callbacks.LearningRateMonitor             
+│         logging_interval: step                                                
+│                                                                               
+├── data
+│   └── train: gsm8k_pot                                                        
+│       valid: gsm8k_pot                                                        
+│       train_file: /root/s-flm/data/gsm8k_pot_result/sft_train.jsonl           
+│       validation_file: /root/s-flm/data/gsm8k_pot_result/diagnostics/train_eva
+│       cache_dir: /root/autodl-tmp/s-flm/data_cache/gsm8k_pot_result           
+│       tokenizer_name_or_path: /root/autodl-tmp/s-flm/cache/huggingface/hub/mod
+│       tokenizer_revision: 1d461723eec654e65efdc40cf49301c89c0c92f4            
+│       separator: \n                                                           
+│       wrap: false                                                             
+│       streaming: false                                                        
+│       insert_train_eos: true                                                  
+│       insert_valid_eos: true                                                  
+│       train_on_prompt: false                                                  
+│       train_on_pad: true                                                      
+│                                                                               
+├── model
+│   └── name: small                                                             
+│       type: dit                                                               
+│       hidden_size: 768                                                        
+│       cond_dim: 128                                                           
+│       length: 512                                                             
+│       n_blocks: 12                                                            
+│       n_heads: 12                                                             
+│       dropout: 0.1                                                            
+│                                                                               
+├── strategy
+│   └── _target_: lightning.pytorch.strategies.DDPStrategy                      
+│       find_unused_parameters: false                                           
+│                                                                               
+├── noise
+│   └── type: log-linear                                                        
+│       eps: 0.001                                                              
+│       alpha_min: null                                                         
+│       alpha_max: null                                                         
+│       adaptive: false                                                         
+│                                                                               
+├── lr_scheduler
+│   └── _target_: transformers.get_constant_schedule_with_warmup                
+│       num_warmup_steps: 2500                                                  
+│                                                                               
+├── prior
+│   └── type: none                                                              
+│       latent_width: 0                                                         
+│       latent_height: 0                                                        
+│                                                                               
+├── algo
+│   └── name: mdlm                                                              
+│       diffusion_type: absorbing                                               
+│       backbone: dit                                                           
+│       parameterization: subs                                                  
+│       time_conditioning: false                                                
+│       T: 0                                                                    
+│       causal_attention: false                                                 
+│       loss_type: elbo                                                         
+│       post_process_mode: log_probs                                            
+│       adaLN: true                                                             
+│                                                                               
+└── sampler
+    └── predictor: ancestral                                                    
+        steps: 32                                                               
+        steps_policy: full                                                      
+        noise_removal: ancestral                                                
+        use_float64: true                                                       
+        p_nucleus: 1.0                                                          
+        temperature: 1.0                                                        
+        num_sample_batches: 2                                                   
+        num_sample_log: 2                                                       
+                                                                                
+[2026-10-22 18:14:12,159][__main__][INFO] - Starting GSM8K eval.
+Seed set to 1
+/root/venvs/s-flm/lib/python3.12/site-packages/lightning/pytorch/utilities/migration/utils.py:56: The loaded checkpoint was produced with Lightning v2.6.0, which is newer than your current Lightning version: v2.5.1
+Rank 0 sampling:   0%|          | 0/8 [00:00<?, ?it/s]Rank 0 sampling:  12%|█▎        | 1/8 [00:11<01:18, 11.18s/it]Rank 0 sampling:  25%|██▌       | 2/8 [00:14<00:39,  6.52s/it]Rank 0 sampling:  38%|███▊      | 3/8 [00:18<00:26,  5.35s/it]Rank 0 sampling:  50%|█████     | 4/8 [00:21<00:18,  4.52s/it]Rank 0 sampling:  62%|██████▎   | 5/8 [00:24<00:12,  4.07s/it]Rank 0 sampling:  75%|███████▌  | 6/8 [00:28<00:07,  3.80s/it]Rank 0 sampling:  88%|████████▊ | 7/8 [00:31<00:03,  3.61s/it]Rank 0 sampling: 100%|██████████| 8/8 [00:34<00:00,  3.50s/it]Rank 0 sampling: 100%|██████████| 8/8 [00:34<00:00,  4.34s/it]
+[2026-10-22 18:14:50,290][__main__][INFO] - Rank 0: average NFE per batch: 32.0
+[2026-10-22 18:14:50,292][__main__][INFO] - Rank 0: saved 256 records to /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e5-diagnostics/train-subset/base-ema-steps32-seed1/rank_0000.json
+[2026-10-22 18:14:50,303][__main__][INFO] - Total records evaluated: 256
+[2026-10-22 18:14:50,345][__main__][INFO] - GSM8K accuracy: 8.98% (23/256)
+[2026-10-22 18:14:50,347][__main__][INFO] - Results saved to /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e5-diagnostics/train-subset/base-ema-steps32-seed1/results.json
+Seed set to 1
+CONFIG
+├── mode
+│   └── gsm8k_eval                                                              
+├── sudoku
+│   └── output_dir: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1
+│       batch_size: 64                                                          
+│                                                                               
+├── gsm8k
+│   └── input_file: null                                                        
+│       output_dir: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1
+│       timeout: 5.0                                                            
+│       bootstrap_size: 1                                                       
+│                                                                               
+├── seed
+│   └── 1                                                                       
+├── allow_tf32
+│   └── True                                                                    
+├── cudnn_benchmark
+│   └── True                                                                    
+├── compile_backbone
+│   └── False                                                                   
+├── backbone_compute_dtype
+│   └── auto                                                                    
+├── neg_infinity_mode
+│   └── large-finite                                                            
+├── loader
+│   └── global_batch_size: 512                                                  
+│       eval_global_batch_size: 512                                             
+│       batch_size: 512                                                         
+│       eval_batch_size: 32                                                     
+│       num_workers: 4                                                          
+│       pin_memory: true                                                        
+│                                                                               
+├── confidence_denoiser
+│   └── confidence_score: entropy                                               
+│       gamma: 0                                                                
+│                                                                               
+├── training
+│   └── ema: 0.9999                                                             
+│       antithetic_sampling: true                                               
+│       importance_sampling: false                                              
+│       sampling_eps: 0.001                                                     
+│       change_of_variables: false                                              
+│       loss_precision: bf16                                                    
+│       finetune_path: ''                                                       
+│       finetune_weights: raw                                                   
+│       sampling_eps_min: 0.001                                                 
+│       sampling_eps_max: 1.0                                                   
+│       resample: false                                                         
+│                                                                               
+├── lora
+│   └── enabled: true                                                           
+│       rank: 8                                                                 
+│       alpha: 16                                                               
+│       dropout: 0.05                                                           
+│       target_modules:                                                         
+│       - blocks.*.attn_qkv                                                     
+│       - blocks.*.attn_out                                                     
+│       - blocks.*.mlp.0                                                        
+│       - blocks.*.mlp.2                                                        
+│                                                                               
+├── eval
+│   └── checkpoint_path: /root/autodl-tmp/s-flm/outputs/sft/20261022-lora-result
+│       strict_loading: true                                                    
+│       disable_ema: false                                                      
+│       compute_generative_perplexity: false                                    
+│       perplexity_batch_size: 8                                                
+│       compute_perplexity_on_sanity: false                                     
+│       gen_ppl_eval_model_name_or_path: gpt2-large                             
+│       generate_samples: true                                                  
+│       generated_samples_path: /root/autodl-tmp/s-flm/outputs/eval/20261022-lor
+│       results_json_path: null                                                 
+│                                                                               
+├── optim
+│   └── weight_decay: 0                                                         
+│       lr: 0.0003                                                              
+│       beta1: 0.9                                                              
+│       beta2: 0.999                                                            
+│       eps: 1.0e-08                                                            
+│                                                                               
+├── trainer
+│   └── _target_: lightning.Trainer                                             
+│       accelerator: cuda                                                       
+│       num_nodes: 1                                                            
+│       devices: 1                                                              
+│       accumulate_grad_batches: 1                                              
+│       gradient_clip_val: 1.0                                                  
+│       precision: bf16                                                         
+│       num_sanity_val_steps: 2                                                 
+│       max_steps: 1000000                                                      
+│       log_every_n_steps: 100                                                  
+│       limit_train_batches: 1.0                                                
+│       limit_val_batches: 1.0                                                  
+│       val_check_interval: 5000                                                
+│       check_val_every_n_epoch: null                                           
+│                                                                               
+├── wandb
+│   └── project: debug                                                          
+│       notes: null                                                             
+│       group: null                                                             
+│       job_type: null                                                          
+│       tags:                                                                   
+│       - log-linear                                                            
+│       - gsm8k_pot                                                             
+│       - gsm8k_pot                                                             
+│       - mdlm                                                                  
+│       offline: true                                                           
+│                                                                               
+├── checkpointing
+│   └── save_dir: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e5
+│       resume_from_ckpt: true                                                  
+│       resume_ckpt_path: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-resu
+│                                                                               
+├── callbacks
+│   └── checkpoint_every_n_steps:                                               
+│         _target_: lightning.pytorch.callbacks.ModelCheckpoint                 
+│         save_top_k: -1                                                        
+│         save_last: true                                                       
+│         dirpath: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e
+│         verbose: true                                                         
+│         auto_insert_metric_name: false                                        
+│         every_n_train_steps: 500                                              
+│       checkpoint_monitor:                                                     
+│         _target_: lightning.pytorch.callbacks.ModelCheckpoint                 
+│         monitor: val/nll                                                      
+│         mode: min                                                             
+│         save_top_k: 1                                                         
+│         save_last: false                                                      
+│         dirpath: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e
+│         filename: best                                                        
+│         auto_insert_metric_name: false                                        
+│         verbose: true                                                         
+│       learning_rate_monitor:                                                  
+│         _target_: lightning.pytorch.callbacks.LearningRateMonitor             
+│         logging_interval: step                                                
+│                                                                               
+├── data
+│   └── train: gsm8k_pot                                                        
+│       valid: gsm8k_pot                                                        
+│       train_file: /root/s-flm/data/gsm8k_pot_result/sft_train.jsonl           
+│       validation_file: /root/s-flm/data/gsm8k_pot_result/diagnostics/train_eva
+│       cache_dir: /root/autodl-tmp/s-flm/data_cache/gsm8k_pot_result           
+│       tokenizer_name_or_path: /root/autodl-tmp/s-flm/cache/huggingface/hub/mod
+│       tokenizer_revision: 1d461723eec654e65efdc40cf49301c89c0c92f4            
+│       separator: \n                                                           
+│       wrap: false                                                             
+│       streaming: false                                                        
+│       insert_train_eos: true                                                  
+│       insert_valid_eos: true                                                  
+│       train_on_prompt: false                                                  
+│       train_on_pad: true                                                      
+│                                                                               
+├── model
+│   └── name: small                                                             
+│       type: dit                                                               
+│       hidden_size: 768                                                        
+│       cond_dim: 128                                                           
+│       length: 512                                                             
+│       n_blocks: 12                                                            
+│       n_heads: 12                                                             
+│       dropout: 0.1                                                            
+│                                                                               
+├── strategy
+│   └── _target_: lightning.pytorch.strategies.DDPStrategy                      
+│       find_unused_parameters: false                                           
+│                                                                               
+├── noise
+│   └── type: log-linear                                                        
+│       eps: 0.001                                                              
+│       alpha_min: null                                                         
+│       alpha_max: null                                                         
+│       adaptive: false                                                         
+│                                                                               
+├── lr_scheduler
+│   └── _target_: transformers.get_constant_schedule_with_warmup                
+│       num_warmup_steps: 2500                                                  
+│                                                                               
+├── prior
+│   └── type: none                                                              
+│       latent_width: 0                                                         
+│       latent_height: 0                                                        
+│                                                                               
+├── algo
+│   └── name: mdlm                                                              
+│       diffusion_type: absorbing                                               
+│       backbone: dit                                                           
+│       parameterization: subs                                                  
+│       time_conditioning: false                                                
+│       T: 0                                                                    
+│       causal_attention: false                                                 
+│       loss_type: elbo                                                         
+│       post_process_mode: log_probs                                            
+│       adaLN: true                                                             
+│                                                                               
+└── sampler
+    └── predictor: ancestral                                                    
+        steps: 32                                                               
+        steps_policy: full                                                      
+        noise_removal: ancestral                                                
+        use_float64: true                                                       
+        p_nucleus: 1.0                                                          
+        temperature: 1.0                                                        
+        num_sample_batches: 2                                                   
+        num_sample_log: 2                                                       
+                                                                                
+[2026-10-22 18:14:58,849][__main__][INFO] - Starting GSM8K eval.
+Seed set to 1
+Rank 0 sampling:   0%|          | 0/8 [00:00<?, ?it/s]Rank 0 sampling:  12%|█▎        | 1/8 [00:06<00:44,  6.41s/it]Rank 0 sampling:  25%|██▌       | 2/8 [00:10<00:28,  4.79s/it]Rank 0 sampling:  38%|███▊      | 3/8 [00:14<00:23,  4.62s/it]Rank 0 sampling:  50%|█████     | 4/8 [00:18<00:17,  4.27s/it]Rank 0 sampling:  62%|██████▎   | 5/8 [00:21<00:12,  4.06s/it]Rank 0 sampling:  75%|███████▌  | 6/8 [00:25<00:07,  3.93s/it]Rank 0 sampling:  88%|████████▊ | 7/8 [00:29<00:03,  3.86s/it]Rank 0 sampling: 100%|██████████| 8/8 [00:32<00:00,  3.80s/it]Rank 0 sampling: 100%|██████████| 8/8 [00:32<00:00,  4.12s/it]
+[2026-10-22 18:15:34,634][__main__][INFO] - Rank 0: average NFE per batch: 32.0
+[2026-10-22 18:15:34,636][__main__][INFO] - Rank 0: saved 256 records to /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e5-diagnostics/train-subset/step-200-ema-steps32-seed1/rank_0000.json
+[2026-10-22 18:15:34,648][__main__][INFO] - Total records evaluated: 256
+[2026-10-22 18:15:34,689][__main__][INFO] - GSM8K accuracy: 8.20% (21/256)
+[2026-10-22 18:15:34,691][__main__][INFO] - Results saved to /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e5-diagnostics/train-subset/step-200-ema-steps32-seed1/results.json
+Seed set to 1
+CONFIG
+├── mode
+│   └── gsm8k_eval                                                              
+├── sudoku
+│   └── output_dir: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1
+│       batch_size: 64                                                          
+│                                                                               
+├── gsm8k
+│   └── input_file: null                                                        
+│       output_dir: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1
+│       timeout: 5.0                                                            
+│       bootstrap_size: 1                                                       
+│                                                                               
+├── seed
+│   └── 1                                                                       
+├── allow_tf32
+│   └── True                                                                    
+├── cudnn_benchmark
+│   └── True                                                                    
+├── compile_backbone
+│   └── False                                                                   
+├── backbone_compute_dtype
+│   └── auto                                                                    
+├── neg_infinity_mode
+│   └── large-finite                                                            
+├── loader
+│   └── global_batch_size: 512                                                  
+│       eval_global_batch_size: 512                                             
+│       batch_size: 512                                                         
+│       eval_batch_size: 32                                                     
+│       num_workers: 4                                                          
+│       pin_memory: true                                                        
+│                                                                               
+├── confidence_denoiser
+│   └── confidence_score: entropy                                               
+│       gamma: 0                                                                
+│                                                                               
+├── training
+│   └── ema: 0.9999                                                             
+│       antithetic_sampling: true                                               
+│       importance_sampling: false                                              
+│       sampling_eps: 0.001                                                     
+│       change_of_variables: false                                              
+│       loss_precision: bf16                                                    
+│       finetune_path: ''                                                       
+│       finetune_weights: raw                                                   
+│       sampling_eps_min: 0.001                                                 
+│       sampling_eps_max: 1.0                                                   
+│       resample: false                                                         
+│                                                                               
+├── lora
+│   └── enabled: true                                                           
+│       rank: 8                                                                 
+│       alpha: 16                                                               
+│       dropout: 0.05                                                           
+│       target_modules:                                                         
+│       - blocks.*.attn_qkv                                                     
+│       - blocks.*.attn_out                                                     
+│       - blocks.*.mlp.0                                                        
+│       - blocks.*.mlp.2                                                        
+│                                                                               
+├── eval
+│   └── checkpoint_path: /root/autodl-tmp/s-flm/outputs/sft/20261022-lora-result
+│       strict_loading: true                                                    
+│       disable_ema: true                                                       
+│       compute_generative_perplexity: false                                    
+│       perplexity_batch_size: 8                                                
+│       compute_perplexity_on_sanity: false                                     
+│       gen_ppl_eval_model_name_or_path: gpt2-large                             
+│       generate_samples: true                                                  
+│       generated_samples_path: /root/autodl-tmp/s-flm/outputs/eval/20261022-lor
+│       results_json_path: null                                                 
+│                                                                               
+├── optim
+│   └── weight_decay: 0                                                         
+│       lr: 0.0003                                                              
+│       beta1: 0.9                                                              
+│       beta2: 0.999                                                            
+│       eps: 1.0e-08                                                            
+│                                                                               
+├── trainer
+│   └── _target_: lightning.Trainer                                             
+│       accelerator: cuda                                                       
+│       num_nodes: 1                                                            
+│       devices: 1                                                              
+│       accumulate_grad_batches: 1                                              
+│       gradient_clip_val: 1.0                                                  
+│       precision: bf16                                                         
+│       num_sanity_val_steps: 2                                                 
+│       max_steps: 1000000                                                      
+│       log_every_n_steps: 100                                                  
+│       limit_train_batches: 1.0                                                
+│       limit_val_batches: 1.0                                                  
+│       val_check_interval: 5000                                                
+│       check_val_every_n_epoch: null                                           
+│                                                                               
+├── wandb
+│   └── project: debug                                                          
+│       notes: null                                                             
+│       group: null                                                             
+│       job_type: null                                                          
+│       tags:                                                                   
+│       - log-linear                                                            
+│       - gsm8k_pot                                                             
+│       - gsm8k_pot                                                             
+│       - mdlm                                                                  
+│       offline: true                                                           
+│                                                                               
+├── checkpointing
+│   └── save_dir: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e5
+│       resume_from_ckpt: true                                                  
+│       resume_ckpt_path: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-resu
+│                                                                               
+├── callbacks
+│   └── checkpoint_every_n_steps:                                               
+│         _target_: lightning.pytorch.callbacks.ModelCheckpoint                 
+│         save_top_k: -1                                                        
+│         save_last: true                                                       
+│         dirpath: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e
+│         verbose: true                                                         
+│         auto_insert_metric_name: false                                        
+│         every_n_train_steps: 500                                              
+│       checkpoint_monitor:                                                     
+│         _target_: lightning.pytorch.callbacks.ModelCheckpoint                 
+│         monitor: val/nll                                                      
+│         mode: min                                                             
+│         save_top_k: 1                                                         
+│         save_last: false                                                      
+│         dirpath: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e
+│         filename: best                                                        
+│         auto_insert_metric_name: false                                        
+│         verbose: true                                                         
+│       learning_rate_monitor:                                                  
+│         _target_: lightning.pytorch.callbacks.LearningRateMonitor             
+│         logging_interval: step                                                
+│                                                                               
+├── data
+│   └── train: gsm8k_pot                                                        
+│       valid: gsm8k_pot                                                        
+│       train_file: /root/s-flm/data/gsm8k_pot_result/sft_train.jsonl           
+│       validation_file: /root/s-flm/data/gsm8k_pot_result/diagnostics/train_eva
+│       cache_dir: /root/autodl-tmp/s-flm/data_cache/gsm8k_pot_result           
+│       tokenizer_name_or_path: /root/autodl-tmp/s-flm/cache/huggingface/hub/mod
+│       tokenizer_revision: 1d461723eec654e65efdc40cf49301c89c0c92f4            
+│       separator: \n                                                           
+│       wrap: false                                                             
+│       streaming: false                                                        
+│       insert_train_eos: true                                                  
+│       insert_valid_eos: true                                                  
+│       train_on_prompt: false                                                  
+│       train_on_pad: true                                                      
+│                                                                               
+├── model
+│   └── name: small                                                             
+│       type: dit                                                               
+│       hidden_size: 768                                                        
+│       cond_dim: 128                                                           
+│       length: 512                                                             
+│       n_blocks: 12                                                            
+│       n_heads: 12                                                             
+│       dropout: 0.1                                                            
+│                                                                               
+├── strategy
+│   └── _target_: lightning.pytorch.strategies.DDPStrategy                      
+│       find_unused_parameters: false                                           
+│                                                                               
+├── noise
+│   └── type: log-linear                                                        
+│       eps: 0.001                                                              
+│       alpha_min: null                                                         
+│       alpha_max: null                                                         
+│       adaptive: false                                                         
+│                                                                               
+├── lr_scheduler
+│   └── _target_: transformers.get_constant_schedule_with_warmup                
+│       num_warmup_steps: 2500                                                  
+│                                                                               
+├── prior
+│   └── type: none                                                              
+│       latent_width: 0                                                         
+│       latent_height: 0                                                        
+│                                                                               
+├── algo
+│   └── name: mdlm                                                              
+│       diffusion_type: absorbing                                               
+│       backbone: dit                                                           
+│       parameterization: subs                                                  
+│       time_conditioning: false                                                
+│       T: 0                                                                    
+│       causal_attention: false                                                 
+│       loss_type: elbo                                                         
+│       post_process_mode: log_probs                                            
+│       adaLN: true                                                             
+│                                                                               
+└── sampler
+    └── predictor: ancestral                                                    
+        steps: 32                                                               
+        steps_policy: full                                                      
+        noise_removal: ancestral                                                
+        use_float64: true                                                       
+        p_nucleus: 1.0                                                          
+        temperature: 1.0                                                        
+        num_sample_batches: 2                                                   
+        num_sample_log: 2                                                       
+                                                                                
+[2026-10-22 18:15:43,388][__main__][INFO] - Starting GSM8K eval.
+Seed set to 1
+[2026-10-22 18:15:46,044][__main__][INFO] - Disabling EMA.
+Rank 0 sampling:   0%|          | 0/8 [00:00<?, ?it/s]Rank 0 sampling:  12%|█▎        | 1/8 [00:06<00:44,  6.41s/it]Rank 0 sampling:  25%|██▌       | 2/8 [00:10<00:28,  4.80s/it]Rank 0 sampling:  38%|███▊      | 3/8 [00:14<00:23,  4.66s/it]Rank 0 sampling:  50%|█████     | 4/8 [00:18<00:17,  4.27s/it]Rank 0 sampling:  62%|██████▎   | 5/8 [00:21<00:12,  4.07s/it]Rank 0 sampling:  75%|███████▌  | 6/8 [00:25<00:07,  3.94s/it]Rank 0 sampling:  88%|████████▊ | 7/8 [00:29<00:03,  3.86s/it]Rank 0 sampling: 100%|██████████| 8/8 [00:33<00:00,  3.81s/it]Rank 0 sampling: 100%|██████████| 8/8 [00:33<00:00,  4.13s/it]
+[2026-10-22 18:16:19,150][__main__][INFO] - Rank 0: average NFE per batch: 32.0
+[2026-10-22 18:16:19,152][__main__][INFO] - Rank 0: saved 256 records to /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e5-diagnostics/train-subset/step-200-raw-steps32-seed1/rank_0000.json
+[2026-10-22 18:16:19,164][__main__][INFO] - Total records evaluated: 256
+[2026-10-22 18:16:19,205][__main__][INFO] - GSM8K accuracy: 8.98% (23/256)
+[2026-10-22 18:16:19,208][__main__][INFO] - Results saved to /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e5-diagnostics/train-subset/step-200-raw-steps32-seed1/results.json
+Seed set to 1
+CONFIG
+├── mode
+│   └── gsm8k_eval                                                              
+├── sudoku
+│   └── output_dir: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1
+│       batch_size: 64                                                          
+│                                                                               
+├── gsm8k
+│   └── input_file: null                                                        
+│       output_dir: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1
+│       timeout: 5.0                                                            
+│       bootstrap_size: 1                                                       
+│                                                                               
+├── seed
+│   └── 1                                                                       
+├── allow_tf32
+│   └── True                                                                    
+├── cudnn_benchmark
+│   └── True                                                                    
+├── compile_backbone
+│   └── False                                                                   
+├── backbone_compute_dtype
+│   └── auto                                                                    
+├── neg_infinity_mode
+│   └── large-finite                                                            
+├── loader
+│   └── global_batch_size: 512                                                  
+│       eval_global_batch_size: 512                                             
+│       batch_size: 512                                                         
+│       eval_batch_size: 32                                                     
+│       num_workers: 4                                                          
+│       pin_memory: true                                                        
+│                                                                               
+├── confidence_denoiser
+│   └── confidence_score: entropy                                               
+│       gamma: 0                                                                
+│                                                                               
+├── training
+│   └── ema: 0.9999                                                             
+│       antithetic_sampling: true                                               
+│       importance_sampling: false                                              
+│       sampling_eps: 0.001                                                     
+│       change_of_variables: false                                              
+│       loss_precision: bf16                                                    
+│       finetune_path: ''                                                       
+│       finetune_weights: raw                                                   
+│       sampling_eps_min: 0.001                                                 
+│       sampling_eps_max: 1.0                                                   
+│       resample: false                                                         
+│                                                                               
+├── lora
+│   └── enabled: true                                                           
+│       rank: 8                                                                 
+│       alpha: 16                                                               
+│       dropout: 0.05                                                           
+│       target_modules:                                                         
+│       - blocks.*.attn_qkv                                                     
+│       - blocks.*.attn_out                                                     
+│       - blocks.*.mlp.0                                                        
+│       - blocks.*.mlp.2                                                        
+│                                                                               
+├── eval
+│   └── checkpoint_path: /root/autodl-tmp/s-flm/outputs/sft/20261022-lora-result
+│       strict_loading: true                                                    
+│       disable_ema: false                                                      
+│       compute_generative_perplexity: false                                    
+│       perplexity_batch_size: 8                                                
+│       compute_perplexity_on_sanity: false                                     
+│       gen_ppl_eval_model_name_or_path: gpt2-large                             
+│       generate_samples: true                                                  
+│       generated_samples_path: /root/autodl-tmp/s-flm/outputs/eval/20261022-lor
+│       results_json_path: null                                                 
+│                                                                               
+├── optim
+│   └── weight_decay: 0                                                         
+│       lr: 0.0003                                                              
+│       beta1: 0.9                                                              
+│       beta2: 0.999                                                            
+│       eps: 1.0e-08                                                            
+│                                                                               
+├── trainer
+│   └── _target_: lightning.Trainer                                             
+│       accelerator: cuda                                                       
+│       num_nodes: 1                                                            
+│       devices: 1                                                              
+│       accumulate_grad_batches: 1                                              
+│       gradient_clip_val: 1.0                                                  
+│       precision: bf16                                                         
+│       num_sanity_val_steps: 2                                                 
+│       max_steps: 1000000                                                      
+│       log_every_n_steps: 100                                                  
+│       limit_train_batches: 1.0                                                
+│       limit_val_batches: 1.0                                                  
+│       val_check_interval: 5000                                                
+│       check_val_every_n_epoch: null                                           
+│                                                                               
+├── wandb
+│   └── project: debug                                                          
+│       notes: null                                                             
+│       group: null                                                             
+│       job_type: null                                                          
+│       tags:                                                                   
+│       - log-linear                                                            
+│       - gsm8k_pot                                                             
+│       - gsm8k_pot                                                             
+│       - mdlm                                                                  
+│       offline: true                                                           
+│                                                                               
+├── checkpointing
+│   └── save_dir: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e5
+│       resume_from_ckpt: true                                                  
+│       resume_ckpt_path: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-resu
+│                                                                               
+├── callbacks
+│   └── checkpoint_every_n_steps:                                               
+│         _target_: lightning.pytorch.callbacks.ModelCheckpoint                 
+│         save_top_k: -1                                                        
+│         save_last: true                                                       
+│         dirpath: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e
+│         verbose: true                                                         
+│         auto_insert_metric_name: false                                        
+│         every_n_train_steps: 500                                              
+│       checkpoint_monitor:                                                     
+│         _target_: lightning.pytorch.callbacks.ModelCheckpoint                 
+│         monitor: val/nll                                                      
+│         mode: min                                                             
+│         save_top_k: 1                                                         
+│         save_last: false                                                      
+│         dirpath: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e
+│         filename: best                                                        
+│         auto_insert_metric_name: false                                        
+│         verbose: true                                                         
+│       learning_rate_monitor:                                                  
+│         _target_: lightning.pytorch.callbacks.LearningRateMonitor             
+│         logging_interval: step                                                
+│                                                                               
+├── data
+│   └── train: gsm8k_pot                                                        
+│       valid: gsm8k_pot                                                        
+│       train_file: /root/s-flm/data/gsm8k_pot_result/sft_train.jsonl           
+│       validation_file: /root/s-flm/data/gsm8k_pot_result/diagnostics/train_eva
+│       cache_dir: /root/autodl-tmp/s-flm/data_cache/gsm8k_pot_result           
+│       tokenizer_name_or_path: /root/autodl-tmp/s-flm/cache/huggingface/hub/mod
+│       tokenizer_revision: 1d461723eec654e65efdc40cf49301c89c0c92f4            
+│       separator: \n                                                           
+│       wrap: false                                                             
+│       streaming: false                                                        
+│       insert_train_eos: true                                                  
+│       insert_valid_eos: true                                                  
+│       train_on_prompt: false                                                  
+│       train_on_pad: true                                                      
+│                                                                               
+├── model
+│   └── name: small                                                             
+│       type: dit                                                               
+│       hidden_size: 768                                                        
+│       cond_dim: 128                                                           
+│       length: 512                                                             
+│       n_blocks: 12                                                            
+│       n_heads: 12                                                             
+│       dropout: 0.1                                                            
+│                                                                               
+├── strategy
+│   └── _target_: lightning.pytorch.strategies.DDPStrategy                      
+│       find_unused_parameters: false                                           
+│                                                                               
+├── noise
+│   └── type: log-linear                                                        
+│       eps: 0.001                                                              
+│       alpha_min: null                                                         
+│       alpha_max: null                                                         
+│       adaptive: false                                                         
+│                                                                               
+├── lr_scheduler
+│   └── _target_: transformers.get_constant_schedule_with_warmup                
+│       num_warmup_steps: 2500                                                  
+│                                                                               
+├── prior
+│   └── type: none                                                              
+│       latent_width: 0                                                         
+│       latent_height: 0                                                        
+│                                                                               
+├── algo
+│   └── name: mdlm                                                              
+│       diffusion_type: absorbing                                               
+│       backbone: dit                                                           
+│       parameterization: subs                                                  
+│       time_conditioning: false                                                
+│       T: 0                                                                    
+│       causal_attention: false                                                 
+│       loss_type: elbo                                                         
+│       post_process_mode: log_probs                                            
+│       adaLN: true                                                             
+│                                                                               
+└── sampler
+    └── predictor: ancestral                                                    
+        steps: 32                                                               
+        steps_policy: full                                                      
+        noise_removal: ancestral                                                
+        use_float64: true                                                       
+        p_nucleus: 1.0                                                          
+        temperature: 1.0                                                        
+        num_sample_batches: 2                                                   
+        num_sample_log: 2                                                       
+                                                                                
+[2026-10-22 18:16:27,604][__main__][INFO] - Starting GSM8K eval.
+Seed set to 1
+Rank 0 sampling:   0%|          | 0/8 [00:00<?, ?it/s]Rank 0 sampling:  12%|█▎        | 1/8 [00:06<00:44,  6.40s/it]Rank 0 sampling:  25%|██▌       | 2/8 [00:10<00:28,  4.79s/it]Rank 0 sampling:  38%|███▊      | 3/8 [00:14<00:23,  4.64s/it]Rank 0 sampling:  50%|█████     | 4/8 [00:18<00:17,  4.25s/it]Rank 0 sampling:  62%|██████▎   | 5/8 [00:21<00:12,  4.06s/it]Rank 0 sampling:  75%|███████▌  | 6/8 [00:25<00:07,  3.94s/it]Rank 0 sampling:  88%|████████▊ | 7/8 [00:29<00:03,  3.85s/it]Rank 0 sampling: 100%|██████████| 8/8 [00:32<00:00,  3.80s/it]Rank 0 sampling: 100%|██████████| 8/8 [00:32<00:00,  4.12s/it]
+[2026-10-22 18:17:03,331][__main__][INFO] - Rank 0: average NFE per batch: 32.0
+[2026-10-22 18:17:03,334][__main__][INFO] - Rank 0: saved 256 records to /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e5-diagnostics/train-subset/step-711-ema-steps32-seed1/rank_0000.json
+[2026-10-22 18:17:03,345][__main__][INFO] - Total records evaluated: 256
+[2026-10-22 18:17:03,386][__main__][INFO] - GSM8K accuracy: 7.03% (18/256)
+[2026-10-22 18:17:03,388][__main__][INFO] - Results saved to /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e5-diagnostics/train-subset/step-711-ema-steps32-seed1/results.json
+Seed set to 1
+CONFIG
+├── mode
+│   └── gsm8k_eval                                                              
+├── sudoku
+│   └── output_dir: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1
+│       batch_size: 64                                                          
+│                                                                               
+├── gsm8k
+│   └── input_file: null                                                        
+│       output_dir: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1
+│       timeout: 5.0                                                            
+│       bootstrap_size: 1                                                       
+│                                                                               
+├── seed
+│   └── 1                                                                       
+├── allow_tf32
+│   └── True                                                                    
+├── cudnn_benchmark
+│   └── True                                                                    
+├── compile_backbone
+│   └── False                                                                   
+├── backbone_compute_dtype
+│   └── auto                                                                    
+├── neg_infinity_mode
+│   └── large-finite                                                            
+├── loader
+│   └── global_batch_size: 512                                                  
+│       eval_global_batch_size: 512                                             
+│       batch_size: 512                                                         
+│       eval_batch_size: 32                                                     
+│       num_workers: 4                                                          
+│       pin_memory: true                                                        
+│                                                                               
+├── confidence_denoiser
+│   └── confidence_score: entropy                                               
+│       gamma: 0                                                                
+│                                                                               
+├── training
+│   └── ema: 0.9999                                                             
+│       antithetic_sampling: true                                               
+│       importance_sampling: false                                              
+│       sampling_eps: 0.001                                                     
+│       change_of_variables: false                                              
+│       loss_precision: bf16                                                    
+│       finetune_path: ''                                                       
+│       finetune_weights: raw                                                   
+│       sampling_eps_min: 0.001                                                 
+│       sampling_eps_max: 1.0                                                   
+│       resample: false                                                         
+│                                                                               
+├── lora
+│   └── enabled: true                                                           
+│       rank: 8                                                                 
+│       alpha: 16                                                               
+│       dropout: 0.05                                                           
+│       target_modules:                                                         
+│       - blocks.*.attn_qkv                                                     
+│       - blocks.*.attn_out                                                     
+│       - blocks.*.mlp.0                                                        
+│       - blocks.*.mlp.2                                                        
+│                                                                               
+├── eval
+│   └── checkpoint_path: /root/autodl-tmp/s-flm/outputs/sft/20261022-lora-result
+│       strict_loading: true                                                    
+│       disable_ema: true                                                       
+│       compute_generative_perplexity: false                                    
+│       perplexity_batch_size: 8                                                
+│       compute_perplexity_on_sanity: false                                     
+│       gen_ppl_eval_model_name_or_path: gpt2-large                             
+│       generate_samples: true                                                  
+│       generated_samples_path: /root/autodl-tmp/s-flm/outputs/eval/20261022-lor
+│       results_json_path: null                                                 
+│                                                                               
+├── optim
+│   └── weight_decay: 0                                                         
+│       lr: 0.0003                                                              
+│       beta1: 0.9                                                              
+│       beta2: 0.999                                                            
+│       eps: 1.0e-08                                                            
+│                                                                               
+├── trainer
+│   └── _target_: lightning.Trainer                                             
+│       accelerator: cuda                                                       
+│       num_nodes: 1                                                            
+│       devices: 1                                                              
+│       accumulate_grad_batches: 1                                              
+│       gradient_clip_val: 1.0                                                  
+│       precision: bf16                                                         
+│       num_sanity_val_steps: 2                                                 
+│       max_steps: 1000000                                                      
+│       log_every_n_steps: 100                                                  
+│       limit_train_batches: 1.0                                                
+│       limit_val_batches: 1.0                                                  
+│       val_check_interval: 5000                                                
+│       check_val_every_n_epoch: null                                           
+│                                                                               
+├── wandb
+│   └── project: debug                                                          
+│       notes: null                                                             
+│       group: null                                                             
+│       job_type: null                                                          
+│       tags:                                                                   
+│       - log-linear                                                            
+│       - gsm8k_pot                                                             
+│       - gsm8k_pot                                                             
+│       - mdlm                                                                  
+│       offline: true                                                           
+│                                                                               
+├── checkpointing
+│   └── save_dir: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e5
+│       resume_from_ckpt: true                                                  
+│       resume_ckpt_path: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-resu
+│                                                                               
+├── callbacks
+│   └── checkpoint_every_n_steps:                                               
+│         _target_: lightning.pytorch.callbacks.ModelCheckpoint                 
+│         save_top_k: -1                                                        
+│         save_last: true                                                       
+│         dirpath: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e
+│         verbose: true                                                         
+│         auto_insert_metric_name: false                                        
+│         every_n_train_steps: 500                                              
+│       checkpoint_monitor:                                                     
+│         _target_: lightning.pytorch.callbacks.ModelCheckpoint                 
+│         monitor: val/nll                                                      
+│         mode: min                                                             
+│         save_top_k: 1                                                         
+│         save_last: false                                                      
+│         dirpath: /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e
+│         filename: best                                                        
+│         auto_insert_metric_name: false                                        
+│         verbose: true                                                         
+│       learning_rate_monitor:                                                  
+│         _target_: lightning.pytorch.callbacks.LearningRateMonitor             
+│         logging_interval: step                                                
+│                                                                               
+├── data
+│   └── train: gsm8k_pot                                                        
+│       valid: gsm8k_pot                                                        
+│       train_file: /root/s-flm/data/gsm8k_pot_result/sft_train.jsonl           
+│       validation_file: /root/s-flm/data/gsm8k_pot_result/diagnostics/train_eva
+│       cache_dir: /root/autodl-tmp/s-flm/data_cache/gsm8k_pot_result           
+│       tokenizer_name_or_path: /root/autodl-tmp/s-flm/cache/huggingface/hub/mod
+│       tokenizer_revision: 1d461723eec654e65efdc40cf49301c89c0c92f4            
+│       separator: \n                                                           
+│       wrap: false                                                             
+│       streaming: false                                                        
+│       insert_train_eos: true                                                  
+│       insert_valid_eos: true                                                  
+│       train_on_prompt: false                                                  
+│       train_on_pad: true                                                      
+│                                                                               
+├── model
+│   └── name: small                                                             
+│       type: dit                                                               
+│       hidden_size: 768                                                        
+│       cond_dim: 128                                                           
+│       length: 512                                                             
+│       n_blocks: 12                                                            
+│       n_heads: 12                                                             
+│       dropout: 0.1                                                            
+│                                                                               
+├── strategy
+│   └── _target_: lightning.pytorch.strategies.DDPStrategy                      
+│       find_unused_parameters: false                                           
+│                                                                               
+├── noise
+│   └── type: log-linear                                                        
+│       eps: 0.001                                                              
+│       alpha_min: null                                                         
+│       alpha_max: null                                                         
+│       adaptive: false                                                         
+│                                                                               
+├── lr_scheduler
+│   └── _target_: transformers.get_constant_schedule_with_warmup                
+│       num_warmup_steps: 2500                                                  
+│                                                                               
+├── prior
+│   └── type: none                                                              
+│       latent_width: 0                                                         
+│       latent_height: 0                                                        
+│                                                                               
+├── algo
+│   └── name: mdlm                                                              
+│       diffusion_type: absorbing                                               
+│       backbone: dit                                                           
+│       parameterization: subs                                                  
+│       time_conditioning: false                                                
+│       T: 0                                                                    
+│       causal_attention: false                                                 
+│       loss_type: elbo                                                         
+│       post_process_mode: log_probs                                            
+│       adaLN: true                                                             
+│                                                                               
+└── sampler
+    └── predictor: ancestral                                                    
+        steps: 32                                                               
+        steps_policy: full                                                      
+        noise_removal: ancestral                                                
+        use_float64: true                                                       
+        p_nucleus: 1.0                                                          
+        temperature: 1.0                                                        
+        num_sample_batches: 2                                                   
+        num_sample_log: 2                                                       
+                                                                                
+[2026-10-22 18:17:11,910][__main__][INFO] - Starting GSM8K eval.
+Seed set to 1
+[2026-10-22 18:17:14,658][__main__][INFO] - Disabling EMA.
+Rank 0 sampling:   0%|          | 0/8 [00:00<?, ?it/s]Rank 0 sampling:  12%|█▎        | 1/8 [00:06<00:44,  6.42s/it]Rank 0 sampling:  25%|██▌       | 2/8 [00:10<00:28,  4.81s/it]Rank 0 sampling:  38%|███▊      | 3/8 [00:14<00:23,  4.63s/it]Rank 0 sampling:  50%|█████     | 4/8 [00:18<00:17,  4.28s/it]Rank 0 sampling:  62%|██████▎   | 5/8 [00:21<00:12,  4.06s/it]Rank 0 sampling:  75%|███████▌  | 6/8 [00:25<00:07,  3.94s/it]Rank 0 sampling:  88%|████████▊ | 7/8 [00:29<00:03,  3.86s/it]Rank 0 sampling: 100%|██████████| 8/8 [00:33<00:00,  3.80s/it]Rank 0 sampling: 100%|██████████| 8/8 [00:33<00:00,  4.13s/it]
+[2026-10-22 18:17:47,735][__main__][INFO] - Rank 0: average NFE per batch: 32.0
+[2026-10-22 18:17:47,738][__main__][INFO] - Rank 0: saved 256 records to /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e5-diagnostics/train-subset/step-711-raw-steps32-seed1/rank_0000.json
+[2026-10-22 18:17:47,750][__main__][INFO] - Total records evaluated: 256
+[2026-10-22 18:17:47,791][__main__][INFO] - GSM8K accuracy: 7.03% (18/256)
+[2026-10-22 18:17:47,794][__main__][INFO] - Results saved to /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e5-diagnostics/train-subset/step-711-raw-steps32-seed1/results.json

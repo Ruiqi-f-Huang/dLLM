@@ -1,0 +1,23 @@
+Loading step200: /root/autodl-tmp/s-flm/checkpoints/lora-control-step200.ckpt
+Seed set to 1
+generate-32-seed1:   0%|          | 0/1 [00:00<?, ?it/s]generate-32-seed1: 100%|██████████| 1/1 [00:01<00:00,  1.64s/it]                                                                {
+  "checkpoint": "/root/autodl-tmp/s-flm/checkpoints/lora-control-step200.ckpt",
+  "weights": "EMA",
+  "mask_sweep": [],
+  "generation": {
+    "32/seed1": {
+      "n": 2,
+      "eos_observed": 2,
+      "eos_rate": 1.0,
+      "full_parseable": 0,
+      "eos_parseable": 0,
+      "full_correct": 0,
+      "eos_correct": 0,
+      "eos_to_correct_changes": 0,
+      "eos_to_wrong_changes": 0,
+      "median_eos_position": 189
+    }
+  },
+  "elapsed_seconds": 1.6418299861252308
+}
+Saved combined diagnostic to /root/autodl-tmp/s-flm/outputs/blackwell-lora-generation-smoke

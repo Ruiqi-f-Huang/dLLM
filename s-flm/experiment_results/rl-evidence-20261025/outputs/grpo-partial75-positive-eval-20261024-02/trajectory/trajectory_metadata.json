@@ -1,0 +1,514 @@
+[
+  {
+    "sample_id": "gsm8k_train_4824",
+    "trajectory": 0,
+    "seed": 1749805435,
+    "reward": 0.0,
+    "prefix_length": 45,
+    "response": "def simple_math_problem() -> int:\n    '''\n    There are 88 dogs in a park.\n    12 of the dogs are running.\n    Half of them are playing with toys.\n    A fourth of them are barking.\n    How many dogs are not doing anything?\n    '''\n    dogs = 88\n    running = dogs - 12\n    playing = dogs / 2\n    barking = dogs / 4\n    not_doing_anything = dogs - playing_barking\n    result = not_doing_anything\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_4824",
+    "trajectory": 1,
+    "seed": 1749805435,
+    "reward": 0.0,
+    "prefix_length": 45,
+    "response": "def simple_math_problem() -> int:\n    '''\n    There are 88 dogs in a park.\n    12 of the dogs are running.\n    Half of them are playing with toys.\n    A fourth of them are barking.\n    How many dogs are not doing anything?\n    '''\n    total_dogs = 88\n    dogs_running = 12\n    dogs_playing = total_dogs / 2\n    dogs_barking = total_dogs / 4\n    dogs_not_doing = total_dogs - dogs_running - dogs_barking\n    result = dogs_not_doing\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_1869",
+    "trajectory": 0,
+    "seed": 950138999,
+    "reward": 1.0,
+    "prefix_length": 88,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Francie saves up her allowance for several weeks.\n    She receives an allowance of $5 a week for 8 weeks.\n    Then her dad raises her allowance, and she receives $6 a week for 6 weeks.\n    Francie uses half of the money to buy new clothes.\n    With the remaining money, she buys a video game that costs $35.\n    How much money does Francie have remaining after buying the video game?\n    '''\n    total_allowance = 5 * 8 + 6 * 6\n    francie_money = total_allowance / 2\n    remaining_money2 = francie_money - 35\n    result = remaining_money2\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_1869",
+    "trajectory": 1,
+    "seed": 950138999,
+    "reward": 1.0,
+    "prefix_length": 88,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Francie saves up her allowance for several weeks.\n    She receives an allowance of $5 a week for 8 weeks.\n    Then her dad raises her allowance, and she receives $6 a week for 6 weeks.\n    Francie uses half of the money to buy new clothes.\n    With the remaining money, she buys a video game that costs $35.\n    How much money does Francie have remaining after buying the video game?\n    '''\n    money = (5 * 8) + (6 * 6)\n    money = money / 2\n    money -= 35\n    result = money\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_7310",
+    "trajectory": 0,
+    "seed": 2068857286,
+    "reward": 1.0,
+    "prefix_length": 48,
+    "response": "def simple_math_problem() -> int:\n    '''\n    For a wedding, chairs were arranged in 7 rows with 12 chairs in each row.\n    Some people arrived late and grabbed 11 extra chairs, placing them at the back.\n    How many chairs were there altogether?\n    '''\n    rows = 7\n    chairs_per_row = 12\n    extra_chairs = 11\n    \n    total_chairs = (rows * chairs_per_row) + extra_chairs\n    result = total_chairs\n    \n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_7310",
+    "trajectory": 1,
+    "seed": 2068857286,
+    "reward": 1.0,
+    "prefix_length": 48,
+    "response": "def simple_math_problem() -> int:\n    '''\n    For a wedding, chairs were arranged in 7 rows with 12 chairs in each row.\n    Some people arrived late and grabbed 11 extra chairs, placing them at the back.\n    How many chairs were there altogether?\n    '''\n    rows = 7\n    chairs_per_row = 12\n    extra_chairs = 11\n    \n    total_chairs = (rows * chairs_per_row) + extra_chairs\n    \n    result = total_chairs\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_2237",
+    "trajectory": 0,
+    "seed": 10951655,
+    "reward": 0.0,
+    "prefix_length": 50,
+    "response": "def simple_math_problem() -> int:\n    '''\n    On Mary's birthday, her brother surprised her with $100.\n    She spent a quarter of it on a new video game and then used a fifth of what was left on swimming goggles.\n    How much money did she have left?\n    '''\n    money = 100\n    video_game = money / 4\n    money = money - video_game\n    goggles_cost = money / 5\n    money = money - video_game - goggles\n    result = money\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_2237",
+    "trajectory": 1,
+    "seed": 10951655,
+    "reward": 0.0,
+    "prefix_length": 50,
+    "response": "def simple_math_problem() -> int:\n    '''\n    On Mary's birthday, her brother surprised her with $100.\n    She spent a quarter of it on a new video game and then used a fifth of what was left on swimming goggles.\n    How much money did she have left?\n    '''\n    money = 100\n    money -= money*(1/4)\n    money -= money/5\n    money result = money\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_6478",
+    "trajectory": 0,
+    "seed": 709824160,
+    "reward": 1.0,
+    "prefix_length": 77,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Bob has planted corn in his garden, and it has just started to sprout.\n    A week after planting it, it had grown 2 inches.\n    The next week, its height increased by twice as much as it had the first week.\n    In the third week, it grew 4 times as much as it did the week before.\n    How tall are the corn plants now?\n    '''\n    first_week = 2\n    second_week = first_week * 2\n    third_week = second_week * 4\n    \n    total_height = first_week + second_week + third_week\n    \n    result = total_height\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_6478",
+    "trajectory": 1,
+    "seed": 709824160,
+    "reward": 0.0,
+    "prefix_length": 77,
+    "response": "def simple_math_problem() -> int:\n    \"\"\"\n    Bob has planted corn in his garden, and it has just started to sprout.\n    A week after planting it, it had grown 2 inches.\n    The next week, its height increased by twice as much as it had the first week.\n    In the third week, it grew 4 times as much as it did the week before.\n    How tall are the corn plants now?\n    \"\"\"\n    total_week1 = 2\n    total_week2 = 2 + 2 * 1\n    total_week3 = 4 * (total_week2 + 2) * )\n    result = total_week3\n\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_5778",
+    "trajectory": 0,
+    "seed": 905245551,
+    "reward": 1.0,
+    "prefix_length": 47,
+    "response": "def simple_math_problem() -> int:\n    '''\n    To make a living, Carl needs to drive a car for 2 hours every day.\n    After he got promoted he needs to drive for 6 more hours every week.\n    How many hours will Carl drive in two weeks?\n    '''\n    hours_per_day = 2\n    hours_per_week = 6\n    weeks = 2\n    \n    total_hours = (hours_per_day * 7 + hours_per_week) * weeks\n    \n    result = total_hours\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_5778",
+    "trajectory": 1,
+    "seed": 905245551,
+    "reward": 0.0,
+    "prefix_length": 47,
+    "response": "def simple_math_problem() -> int:\n    \"\"\"\n    To make a living, Carl needs to drive a car for 2 hours every day.\n    After he got promoted he needs to drive for 6 more hours every week.\n    How many hours will Carl drive in two weeks?\n    \"\"\"\n    daily_hours = 2\n    additional_hours = 6\n    total_hours_two_weeks = daily_hours * 7 + additional_hours\n    result = total_hours_two_weeks\n\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_4699",
+    "trajectory": 0,
+    "seed": 251709147,
+    "reward": 0.0,
+    "prefix_length": 60,
+    "response": "def simple_math_problem() -> int:\n    \"\"\"\n    Carlos read 28 books in July and 30 books in August.\n     He needed to read 100 books during his summer vacation.\n    If Carlos read some of the books in June, calculate the number of books that Carlos read in June to meet his goal?\n    \"\"\"\n    books_read = 28 + 30\n    remaining = 100 - books_read\n    result = remaining - books_read\n\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_4699",
+    "trajectory": 1,
+    "seed": 251709147,
+    "reward": 1.0,
+    "prefix_length": 60,
+    "response": "def simple_math_problem() -> int:\n    \"\"\"\n    Carlos read 28 books in July and 30 books in August.\n     He needed to read 100 books during his summer vacation.\n    If Carlos read some of the books in June, calculate the number of books that Carlos read in June to meet his goal?\n    \"\"\"\n    books_july = 28\n    books_august = 30\n    total_books = 100\n    \n    books_jun = total_books - books_july - books_august\n    \n    result = books_jun\n\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_0112",
+    "trajectory": 0,
+    "seed": 2001318199,
+    "reward": 0.0,
+    "prefix_length": 84,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Lilah's family gallery has 400 photos.\n    On a two-day trip to the Grand Canyon, they took half as many photos they have in the family's gallery on the first day and 120 more photos than they took on the first day on the second day.\n    If they added all these photos to the family gallery, calculate the total number of photos in the gallery.\n    '''\n    photos_in_gallery_ery = 400\n    day1 = photos_in_gallery_ery / 20\n    day2 = first_day_2 = 120\n    total = photos_in_gallery_ery + first_day_2\n    result = total\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_0112",
+    "trajectory": 1,
+    "seed": 2001318199,
+    "reward": 0.0,
+    "prefix_length": 84,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Lilah's family gallery has 400 photos.\n    On a two-day trip to the Grand Canyon, they took half as many photos they have in the family's gallery on the first day and 120 more photos than they took on the first day on the second day.\n    If they added all these photos to the family gallery, calculate the total number of photos in the gallery.\n    '''\n    initial_photos = 400\n    photos_first_day = photos_first_day / 2\n    photos_second_day = photos_first_day + 120\n    total_photos = 2 * initial_photos + photos_first_day + photos_second_day\n    = total_photos\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_2214",
+    "trajectory": 0,
+    "seed": 1922744031,
+    "reward": 0.0,
+    "prefix_length": 54,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Matt did his homework for 150 minutes.\n    He spent 30% of that time on math and 40% on science.\n    He spent the remaining time on other subjects.\n    How much time did Matt spend on homework in other subjects?\n    '''\n    total_time = 150\n    math_time = total_time * 0.3\n    science_time = total_time * 0.4\n    other_subjects = total_time / 2 - math_time\n    result = other_subjects\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_2214",
+    "trajectory": 1,
+    "seed": 1922744031,
+    "reward": 1.0,
+    "prefix_length": 54,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Matt did his homework for 150 minutes.\n    He spent 30% of that time on math and 40% on science.\n    He spent the remaining time on other subjects.\n    How much time did Matt spend on homework in other subjects?\n    '''\n    total_time = 150\n    math_time = total_time * 0.3\n    science_time = total_time * 0.4\n    other_time = total_time - math_time - science_time\n    result = other_time\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_6976",
+    "trajectory": 0,
+    "seed": 413020510,
+    "reward": 1.0,
+    "prefix_length": 47,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Each week Carina puts 20 more seashells in a jar than she did the week before.\n    If there are 50 seashells in the jar this week, how many will there be in a month?\n    '''\n    seashells_this_week = 50\n    for i in range(1, 5):\n        seashells_per_month = seashells_this_week + 20 * 4\n    result = seashells_per_month\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_6976",
+    "trajectory": 1,
+    "seed": 413020510,
+    "reward": 0.0,
+    "prefix_length": 47,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Each week Carina puts 20 more seashells in a jar than she did the week before.\n    If there are 50 seashells in the jar this week, how many will there be in a month?\n    '''\n    jar_this_week = 50\n    jar_increase_week = 20\n    jar_in_a_month = jar_this_week + (jar_increase_week_week *)\n    result = jar_in_a_month\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_7385",
+    "trajectory": 0,
+    "seed": 2087124128,
+    "reward": 1.0,
+    "prefix_length": 64,
+    "response": "def simple_math_problem() -> int:\n    \"\"\"\n    Bob has a cube of silver that measures 3 inches on each side.\n     A cubic inch of silver weighs 6 ounces.\n     Each ounce of silver sells for $25.\n     He sells it for 110% of its silver value.\n     How much does he sell it for?\n    \"\"\"\n    silver_volume = 3 ** 3\n    weight = silver_volume * 6\n    silver_value = weight * 25\n    selling_price = silver_value * 1.1\n    result = selling_price\n\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_7385",
+    "trajectory": 1,
+    "seed": 2087124128,
+    "reward": 0.0,
+    "prefix_length": 64,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Bob has a cube of silver that measures 3 inches on each side.\n     A cubic inch of silver weighs 6 ounces.\n     Each ounce of silver sells for $25.\n     He sells it for 110% of its silver value.\n     How much does he sell it for?\n    '''\n    silver_weight = (3 ** 3)\n    \n    silver_weight = 6 * silver_weight\n    \n    silver_value = silver_weight25\n    \n    selling_price = 1.1 * silver_value\n    \n    result = selling_price\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_0924",
+    "trajectory": 0,
+    "seed": 2082939581,
+    "reward": 0.0,
+    "prefix_length": 58,
+    "response": "def simple_math_problem() -> int:\n    '''\n    There are 8 loads of laundry that need to be washed.\n    Each load of laundry takes around 45 minutes to complete in the wash cycle and 1 hour in the dry cycle.\n    How long, in hours, will it take to complete the entire set of laundry?\n    '''\n    num_loads = 8\n    wash_time = 45\n    dry_time = 60\n    total_time = (wash_time + dry_time) *2\n    total_time /= 60\n    result = total_time\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_0924",
+    "trajectory": 1,
+    "seed": 2082939581,
+    "reward": 0.0,
+    "prefix_length": 58,
+    "response": "def simple_math_problem() -> int:\n    '''\n    There are 8 loads of laundry that need to be washed.\n    Each load of laundry takes around 45 minutes to complete in the wash cycle and 1 hour in the dry cycle.\n    How long, in hours, will it take to complete the entire set of laundry?\n    '''\n    num_loads = 8\n    wash_wash_time = 45\n    dry_cycle_time = 60\n    time = num_loads*(wash_wash_time/60)\n    result = time\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_5854",
+    "trajectory": 0,
+    "seed": 1417848823,
+    "reward": 0.0,
+    "prefix_length": 52,
+    "response": "def simple_math_problem() -> int:\n    '''\n    A gold coin is worth 50 dollars and a silver coin is worth 25 dollars.\n    If you have 3 gold coins, 5 silver coins, and 30 dollars cash, how much money do you have in dollars?\n    '''\n    gold_coin_value = 50\n    silver_coin_value = 25\n    num_gold_coins = 3\n    num_silver = 5\n    cash = 30\n    total_money = gold_coin_value * num_gold_coins + silver_coincoin_value * num_silver + cash\n    result = total_money\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_5854",
+    "trajectory": 1,
+    "seed": 1417848823,
+    "reward": 0.0,
+    "prefix_length": 52,
+    "response": "def simple_math_problem() -> int:\n    '''\n    A gold coin is worth 50 dollars and a silver coin is worth 25 dollars.\n    If you have 3 gold coins, 5 silver coins, and 30 dollars cash, how much money do you have in dollars?\n    '''\n    gold_coins_value = 50 * 3\n    gold_coins_silver_value = 25 * 5\n    cash = 30\n    total_money = gold_coins_value + gold_coins_silver_value + cash\n    result[0]\n    result = total_money\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_4402",
+    "trajectory": 0,
+    "seed": 134532974,
+    "reward": 1.0,
+    "prefix_length": 83,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Zach baked cookies for a bake sale.\n    On Monday he baked 32 cookies.\n    On Tuesday he ran out of sugar and could only bake half of the number of cookies he baked the day before.\n    On Wednesday he baked three times the number of cookies he did on Tuesday, but his brother ate 4 of those cookies.\n    How many cookies did he have at the end of the three days?\n    '''\n    monday_cookies = 32\n    tuesday_cookies = monday_cookies / 2\n    wednesday_cookies = (tuesday_cookies*3) - 4\n    cookies = monday_cookies + tuesday_cookies + wednesday_cookies\n    result = cookies\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_4402",
+    "trajectory": 1,
+    "seed": 134532974,
+    "reward": 0.0,
+    "prefix_length": 83,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Zach baked cookies for a bake sale.\n    On Monday he baked 32 cookies.\n    On Tuesday he ran out of sugar and could only bake half of the number of cookies he baked the day before.\n    On Wednesday he baked three times the number of cookies he did on Tuesday, but his brother ate 4 of those cookies.\n    How many cookies did he have at the end of the three days?\n    '''\n    monday_cookies = 32\n    tuesday_cookies = monday_cookies / 2\n    wednesday_cookies = tuesday_cookies * 3\n    brother = 4\n    total_cookies = monday_cookies + tuesday_cookies + wednesday_cookies\n    result = total_cookies\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_1172",
+    "trajectory": 0,
+    "seed": 1656393571,
+    "reward": 0.0,
+    "prefix_length": 87,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Colbert is building a treehouse out of wooden planks.\n    The treehouse needs 200 wooden planks.\n    A quarter of these planks come from Colbert’s storage, half of these planks come from Colbert’s parents, 20 planks come from Colbert’s friends and he buys the rest from the store.\n    How many planks of wood does he need to buy from the store to finish his treehouse?\n    '''\n    total_planks = 200\n    planks_storage = total__anks / 4\n    planks_from_parents = planks_storage / 2\n    planks_friends = 20\n    planks_bought = 2 * planks_from_parents\n    result = planks_bought\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_1172",
+    "trajectory": 1,
+    "seed": 1656393571,
+    "reward": 0.0,
+    "prefix_length": 87,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Colbert is building a treehouse out of wooden planks.\n    The treehouse needs 200 wooden planks.\n    A quarter of these planks come from Colbert’s storage, half of these planks come from Colbert’s parents, 20 planks come from Colbert’s friends and he buys the rest from the store.\n    How many planks of wood does he need to buy from the store to finish his treehouse?\n    '''\n    total_planks = 200\n    storage_planks = total_planks / 4\n    parent_planks = storage_planks * 0.5\n    friend_planks = 20\n    store_planks = total_planks - storage_planks - parent_planks - friend_planks\n    result = store_planks\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_0186",
+    "trajectory": 0,
+    "seed": 890705775,
+    "reward": 1.0,
+    "prefix_length": 48,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Christina has 3 snakes.\n    1 snake is 2 feet long.\n    Another snake is 16 inches long.\n    The last snake is 10 inches long.\n    How many inches are all of her snakes combined?\n    '''\n    snake1 = 2 * 12 # convert feet to inches\n    snake2 = 16\n    snake3 = 10\n    \n    total_length = snake1 + snake2 + snake3\n    \n    result = total_length\n    \n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_0186",
+    "trajectory": 1,
+    "seed": 890705775,
+    "reward": 0.0,
+    "prefix_length": 48,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Christina has 3 snakes.\n    1 snake is 2 feet long.\n    Another snake is 16 inches long.\n    The last snake is 10 inches long.\n    How many inches are all of her snakes combined?\n    '''\n    snake1_length = 120\n    snake2_length = 16\n    snake3_length = 10\n    total_length =  snake1_length + snake2_length + snake3_length\n    result = total_length\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_3525",
+    "trajectory": 0,
+    "seed": 1978707186,
+    "reward": 0.0,
+    "prefix_length": 43,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Adam has three more than twice as many tattoos as Jason has.\n     If Jason has two tattoos on each of his arms and three tattoos on each of his legs, how many tattoos does Adam have?\n    '''\n    # Calculate the total number of tattoos Adam has\n    Jason_tattoos = (2 + 3)\n    Adam_tattoos *  Jason_tattoos + 3\n    result = Adam_tattoos\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_3525",
+    "trajectory": 1,
+    "seed": 1978707186,
+    "reward": 0.0,
+    "prefix_length": 43,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Adam has three more than twice as many tattoos as Jason has.\n    If Jason has two tattoos on each of his arms and three tattoos on each of his legs, how many tattoos does Adam have?\n    '''\n    tattoos_jason = 2\n    tattoos_legs = 3\n    tattoos_adam = (2 * tattoos_jason) + 3\n    result = tattoos_adam\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_6583",
+    "trajectory": 0,
+    "seed": 62267704,
+    "reward": 1.0,
+    "prefix_length": 37,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Jack buys a squat rack for $2500.\n     The barbell cost 1/10 as much.\n    How much did he pay for everything everything?\n    '''\n    rack_cost = 2500\n    barbell_cost = rack_cost / 10\n    total_cost = rack_cost + barbell_cost\n    result = total_cost\n    print(f'<<<{result}>>>')\n    # \n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_6583",
+    "trajectory": 1,
+    "seed": 62267704,
+    "reward": 1.0,
+    "prefix_length": 37,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Jack buys a squat rack for $2500.\n     The barbell cost 1/10 as much.\n    \n     How much did he pay for everything?\n    '''\n    rack_cost = 2500\n    barbell_cost = rack_cost / 10\n    total_cost = rack_cost + barbell_cost\n    result = total_cost\n    print(f'<<<{result}>>>')\n    # \n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_5468",
+    "trajectory": 0,
+    "seed": 210316081,
+    "reward": 0.0,
+    "prefix_length": 52,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Dulce's father has eight orange trees on his farm.\n    If each tree has 200 fruits and Dulce picks 2/5 of the oranges from each tree, calculate the total number of fruits remaining in all the trees.\n    '''\n    fruits_per_tree = 200\n    total_trees = 8\n    picked_oranges_ratio = (2/5)\n    remaining_fruits = (fruits_per_tree - fruits_per_tree) * (1 - picked_oranges)\n    result = remaining_fruits\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_5468",
+    "trajectory": 1,
+    "seed": 210316081,
+    "reward": 0.0,
+    "prefix_length": 52,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Dulce's father has eight orange trees on his farm.\n    If each tree has 200 fruits and Dulce picks 2/5 of the oranges from each tree, calculate the total number of fruits remaining in all the trees.\n    '''\n    trees = 8\n    fruits_per_tree = 200\n    fraction_picked = 2/5\n    remaining_fruits = ((trees * trees) * fruits_per_tree) * (1 - fraction_picked)\n    result = remaining_fruits\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_3329",
+    "trajectory": 0,
+    "seed": 1959893848,
+    "reward": 1.0,
+    "prefix_length": 62,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Jerry is sweeping up pieces of broken glass in the parking lot.\n    He sweeps up 20 amber pieces, 35 green pieces, and some clear pieces.\n    If the green pieces are 25% of the total glass he sweeps up, how many pieces were clear?\n    '''\n    amber_pieces = 20\n    green_pieces = 35\n    \n    total_pieces = green_pieces / 0.25\n    clear_pieces = total_pieces - amber_pieces - green_pieces\n    \n    result = clear_pieces\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_3329",
+    "trajectory": 1,
+    "seed": 1959893848,
+    "reward": 0.0,
+    "prefix_length": 62,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Jerry is sweeping up pieces of broken glass in the parking lot.\n    He sweeps up 20 amber pieces, 35 green pieces, and some clear pieces.\n    If the green pieces are 25% of the total glass he sweeps up, how many pieces were clear?\n    '''\n    total_pieces = 20 + 35\n    green_pieces = total_pieces *.25\n    clear = total_pieces - 20 - green_pieces\n    result = clear\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_4786",
+    "trajectory": 0,
+    "seed": 1342858180,
+    "reward": 1.0,
+    "prefix_length": 48,
+    "response": "def simple_math_problem() -> int:\n    '''\n    A chocolate cake needs 3 eggs per cake.\n    Cheesecake requires 8 eggs for each cheesecake.\n    How many more eggs are needed for 9 cheesecakes than are needed for 5 chocolate cakes?\n    '''\n    eggs_chocolate = 3 * 5\n    eggs_cheese = 8 * 9\n    difference = eggs_cheese - eggs_chocolate\n    result = difference\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_4786",
+    "trajectory": 1,
+    "seed": 1342858180,
+    "reward": 0.0,
+    "prefix_length": 48,
+    "response": "def simple_math_problem() -> int:\n    '''\n    A chocolate cake needs 3 eggs per cake.\n    Cheesecake requires 8 eggs for each cheesecake.\n    How many more eggs are needed for 9 cheesecakes than are needed for 5 chocolate cakes?\n    '''\n    chocolate_eggs = 3 * 5\n    cheesecake_eggs = 8 * 9\n    result = cheese_eggs - chocolate_eggs\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_7271",
+    "trajectory": 0,
+    "seed": 1424147083,
+    "reward": 1.0,
+    "prefix_length": 73,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Cristina, John, Clarissa and Sarah want to give their mother a photo album for her birthday.\n    Cristina brings 7 photos, John brings 10 photos and Sarah brings 9 photos.\n    If the photo album has 40 slots available, how many photos does Clarissa need to bring in order to complete the photo album?\n    '''\n    photos_per_person = 7 + 10 + 9\n    album_slots = 40\n    clarissa_photos = album_slots - photos_per_person\n    result = clarissa_photos\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_7271",
+    "trajectory": 1,
+    "seed": 1424147083,
+    "reward": 0.0,
+    "prefix_length": 73,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Cristina, John, Clarissa and Sarah want to give their mother a photo album for her birthday.\n    Cristina brings 7 photos, John brings 10 photos and Sarah brings 9 photos.\n    If the photo album has 40 slots available, how many photos does Clarissa need to bring in order to complete the photo album?\n    '''\n    cristina_photos = 7\n    john_photos = 10\n    sarah_photos = 9\n    album_slots = 40\n    \n    total_photos = cristina_photos + john_photos + sarah_photos\n    clarissa_slots_needed = album_slots - total_photos\n    \n    result = clarissa_photos\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_3931",
+    "trajectory": 0,
+    "seed": 1643258126,
+    "reward": 0.0,
+    "prefix_length": 61,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Gina and Tom were playing football.\n    On the first day, Gina scored two goals, which was three less than Tom.\n    On the second day, Gina scored two goals less than Tom who scored six goals.\n    How many goals did Gina and Tom score during these two days?\n    '''\n    gina_goals_day1 = 2\n    tom_goals_diff = 3\n    tom_goalsday2 = 6\n    gina_goalsdayday2 = tom_go_day2 - 2\n    goals_total  = tom_goals1 + gina_goals_day2\n    result = goals_total\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_3931",
+    "trajectory": 1,
+    "seed": 1643258126,
+    "reward": 0.0,
+    "prefix_length": 61,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Gina and Tom were playing football.\n    On the first day, Gina scored two goals, which was three less than Tom.\n    On the second day, Gina scored two goals less than Tom who scored six goals.\n    How many goals did Gina and Tom score during these two days?\n    '''\n    tom_first_day = 2\n    tom_first_day = tom_first_day + 3\n    \n    tom_second_day = 6\n    gina_second_day = 6 - 2\n    \n    gina_goals = gina_first_day + tom_second_day\n    total_goals = gina_goals + tom_first_day\n    \n    result = total_goals\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_4566",
+    "trajectory": 0,
+    "seed": 1253148333,
+    "reward": 1.0,
+    "prefix_length": 41,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Zion is 8 years old and his dad is 3 more than 4 times his age.\n    In 10 years, how many years older is Zion's dad than him?\n    '''\n    age_zion = 8\n    age_dad = 4 * age_zion + 3\n    age_difference = age_dad - age_zion\n    result = age_difference\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_4566",
+    "trajectory": 1,
+    "seed": 1253148333,
+    "reward": 0.0,
+    "prefix_length": 41,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Zion is 8 years old and his dad is 3 more than 4 times his age.\n    In 10 years, how many years older is Zion's dad than him?\n    '''\n    zion_age = 8\n    dad_age = 4 * zion_age + 3\n    age_difference = dad_age - (ion_age + 10)\n    result = age_difference\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_0280",
+    "trajectory": 0,
+    "seed": 672033390,
+    "reward": 0.0,
+    "prefix_length": 69,
+    "response": "def simple_math_problem() -> int:\n    '''\n    The card shop has two boxes of cards.\n    The first box contains cards that cost $1.25 each.\n    The second box contains cards that cost $1.75 each.\n    A boy then comes in and buys 6 cards from each box.\n    What was the total cost, in dollars, of the cards he bought?\n    '''\n    cost_box1 = 1.25\n    cost_box2 = 1.75\n    total_cost = cost_box1 * 6 + cost_box2\n    result = total_cost\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_0280",
+    "trajectory": 1,
+    "seed": 672033390,
+    "reward": 0.0,
+    "prefix_length": 69,
+    "response": "def simple_math_problem() -> int:\n    '''\n    The card shop has two boxes of cards.\n    The first box contains cards that cost $1.25 each.\n    The second box contains cards that cost $1.75 each.\n    A boy then comes in and buys 6 cards from each box.\n    What was the total cost, in dollars, of the cards he bought?\n    '''\n    box1_cost = 1.25\n    box2_cost = 1.75\n    num_cards = 6\n    total_cost = (box1_cost+2_cost) * num_cards\n    result = total_cost\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_0499",
+    "trajectory": 0,
+    "seed": 2080871384,
+    "reward": 1.0,
+    "prefix_length": 35,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Salvadore earned $1956.\n    Santo earned half of what Salvadore earned.\n    How much money did the two men earn together?\n    '''\n    saladadore_earned = 1956\n    santo_earned = saladadore_earned / 2\n    total_earnings = saladadore_earned + santo_earned\n    result = total_earnings\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_0499",
+    "trajectory": 1,
+    "seed": 2080871384,
+    "reward": 1.0,
+    "prefix_length": 35,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Salvadore earned $1956.\n    Santo earned half of what Salvadore earned.\n    How much money did the two men earn together?\n    '''\n    salvadore_earnings = 1956\n    santo_earnings = salvadore_earnings / 2\n    total_earnings = salvadore_earnings + santo_earnings\n    result = total_earnings\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_1370",
+    "trajectory": 0,
+    "seed": 1406815348,
+    "reward": 1.0,
+    "prefix_length": 63,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Hannah comes home from work to find her older son taped her younger son to a chair with 22 strands of duct tape.\n    If Hannah can cut 8 strands per minute and her son can cut 3 strands per minute, how long will it take them to free her younger son?\n    '''\n    blocks_in_chair = 22\n    hannah_rate = 8\n    son_rate = 3\n    \n    total_cut_rate = (hannah_rate + son_rate)\n    \n    result = (blocks_in_chair / total_cut_rate)\n    \n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_1370",
+    "trajectory": 1,
+    "seed": 1406815348,
+    "reward": 1.0,
+    "prefix_length": 63,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Hannah comes home from work to find her older son taped her younger son to a chair with 22 strands of duct tape.\n    If Hannah can cut 8 strands per minute and her son can cut 3 strands per minute, how long will it take them to free her younger son?\n    '''\n    hannah_length = 22\n    hannah_rate = 8\n    son_rate = 3\n    \n    total_rate =  hannah_rate + son_rate\n    time_taken = hannah_length / total_rate\n    \n    result = time_taken\n    \n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_4248",
+    "trajectory": 0,
+    "seed": 2129280663,
+    "reward": 0.0,
+    "prefix_length": 52,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Albert has to run 99 meters in gym class.\n    The track is 9 meters around.\n    He has already run 6 times around it.\n    Once he finishes, how many more complete laps will he have made around the track?\n    '''\n    total_distance = 99\n    track_length = 9\n    completed_distance = 6\n    total_distance = track_length = completed_distance\n    total_distance = track_distance * completed_distance\n    remaining_distance = total_distance - total_distance_covered\n    remaining_laps = remaining_distance // track__\n    \n    result = remaining_laps\n    \n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_4248",
+    "trajectory": 1,
+    "seed": 2129280663,
+    "reward": 1.0,
+    "prefix_length": 52,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Albert has to run 99 meters in gym class.\n    The track is 9 meters around.\n    He has already run 6 times around it.\n    Once he finishes, how many more complete laps will he have made around the track?\n    '''\n    total_distance = 99\n    track_distance = 9\n    times_completed = 6\n    laps = (total_distance - track_distance * times_completed) / track_distance\n    result = laps\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_0358",
+    "trajectory": 0,
+    "seed": 1412643213,
+    "reward": 0.0,
+    "prefix_length": 113,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Carl has a jar full of marbles.\n    He takes out 12 marbles to play a game with, but he accidentally drops them and 1/2 the marbles get lost.\n    So Carl takes out 10 more marbles.\n    While he is playing his game his mother comes home with another bag of marbles for him, which has 25 marbles in it.\n    If Carl can't find his lost marbles, then how many marbles is he going to put in the jar after he plays his game, from both his original marbles and the new ones?\n    '''\n    original_marbles = 12\n    lost_marbles = original_marbles / 2\n    additional_marbles = 10\n    new_marbles = 25\n    \n    total_marbles = original_marbles - lost_marbles + additional_marbles\n    result = total_marbles\n    \n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_0358",
+    "trajectory": 1,
+    "seed": 1412643213,
+    "reward": 0.0,
+    "prefix_length": 113,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Carl has a jar full of marbles.\n    He takes out 12 marbles to play a game with, but he accidentally drops them and 1/2 the marbles get lost.\n    So Carl takes out 10 more marbles.\n    While he is playing his game his mother comes home with another bag of marbles for him, which has 25 marbles in it.\n    If Carl can't find his lost marbles, then how many marbles is he going to put in the jar after he plays his game, from both his original marbles and the new ones?\n    '''\n    original_marbles = 0\n    lost_marbles = 12 - original_marbles / 2\n    lost_marbles += 10\n    marbles_in_jar = original_marbles + 25 - lost_marbles\n    result = marbles_in_jar\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_4888",
+    "trajectory": 0,
+    "seed": 1220080769,
+    "reward": 1.0,
+    "prefix_length": 44,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Patrick has been saving money to buy a bicycle that costs $150.\n    He saved half the price but he then lent $50 to his friend.\n    How much money does Patrick have now?\n    '''\n    price = 150\n    savings = price / 2\n    remaining = savings - 50\n    result = remaining\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_4888",
+    "trajectory": 1,
+    "seed": 1220080769,
+    "reward": 1.0,
+    "prefix_length": 44,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Patrick has been saving money to buy a bicycle that costs $150.\n    He saved half the price but he then lent $50 to his friend.\n    How much money does Patrick have now?\n    '''\n    savings = 150 / 2\n    remaining = savings - 50\n    result = remaining\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_5164",
+    "trajectory": 0,
+    "seed": 1324319054,
+    "reward": 1.0,
+    "prefix_length": 40,
+    "response": "def simple_math_problem() -> int:\n    \"\"\"\n    Tye goes to two different banks and withdraws $300 from each bank.\n    If he got it all in 20 dollar bills how many bills did he get?\n    \"\"\"\n    withdrawal = 300 + 300\n    bills = withdrawal // 20\n    result =bills\n\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_5164",
+    "trajectory": 1,
+    "seed": 1324319054,
+    "reward": 0.0,
+    "prefix_length": 40,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Tye goes to two different banks and withdraws $300 from each bank.\n    If he got it all in 20 dollar bills how many bills did he get?\n    '''\n    withdrawal_amount = 300\n    bill_amount = 20\n    bill_count = withdrawal_amount // bill_amount\n    result = bill_count\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_5190",
+    "trajectory": 0,
+    "seed": 1239768520,
+    "reward": 0.0,
+    "prefix_length": 78,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Kiaan is doing home delivery of newspapers in his neighborhood of 200 homes.\n    After an hour of work, he has distributed newspapers to 255 of the homes.\n    After another 2 hours of working, he realizes he has distributed newspapers to 60 percent of the remaining homes.\n    How many homes does he still need distribute the newspapers to?\n    '''\n    distributed_homes = 200\n    distributed_homes *= (2) / 5)\n    remaining_homes = 200 - distributed_homes\n    distributed_homes_2 = remaining_homes * (60 / 100)\n    remaining_homes = remaining_homes - distributed_homes_2\n    result = remaining_homes\n    return result"
+  },
+  {
+    "sample_id": "gsm8k_train_5190",
+    "trajectory": 1,
+    "seed": 1239768520,
+    "reward": 0.0,
+    "prefix_length": 78,
+    "response": "def simple_math_problem() -> int:\n    '''\n    Katan is doing home delivery of newspapers in his neighborhood of 200 homes.\n    After an hour of work, he has distributed newspapers to 2/5 of the homes.\n    After another 2 hours of working, he realizes he has distributed newspapers to 60 percent of the remaining homes.\n    How many homes does he still need to distribute the newspapers to?\n    '''\n    total_homes = 200\n    homes_distributed_hour2 = (2/5) * total_homes\n    remaining_homes = total_homes - homes_distributed_hour2\n    distributed_homes *= 0.6\n    homes_left = = remaining_homes - distributed_homes\n    result = homes_left\n    return result"
+  }
+]

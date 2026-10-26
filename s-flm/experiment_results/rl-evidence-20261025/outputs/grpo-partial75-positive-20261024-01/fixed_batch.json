@@ -1,0 +1,90 @@
+{
+  "records": [
+    {
+      "sample_id": "gsm8k_train_4888",
+      "reward": 1.0
+    },
+    {
+      "sample_id": "gsm8k_train_4888",
+      "reward": 0.0
+    },
+    {
+      "sample_id": "gsm8k_train_3329",
+      "reward": 1.0
+    },
+    {
+      "sample_id": "gsm8k_train_3329",
+      "reward": 0.0
+    },
+    {
+      "sample_id": "gsm8k_train_3931",
+      "reward": 1.0
+    },
+    {
+      "sample_id": "gsm8k_train_3931",
+      "reward": 0.0
+    },
+    {
+      "sample_id": "gsm8k_train_4786",
+      "reward": 1.0
+    },
+    {
+      "sample_id": "gsm8k_train_4786",
+      "reward": 0.0
+    },
+    {
+      "sample_id": "gsm8k_train_0924",
+      "reward": 1.0
+    },
+    {
+      "sample_id": "gsm8k_train_0924",
+      "reward": 0.0
+    },
+    {
+      "sample_id": "gsm8k_train_7385",
+      "reward": 1.0
+    },
+    {
+      "sample_id": "gsm8k_train_7385",
+      "reward": 0.0
+    },
+    {
+      "sample_id": "gsm8k_train_4699",
+      "reward": 1.0
+    },
+    {
+      "sample_id": "gsm8k_train_4699",
+      "reward": 0.0
+    },
+    {
+      "sample_id": "gsm8k_train_5164",
+      "reward": 1.0
+    },
+    {
+      "sample_id": "gsm8k_train_5164",
+      "reward": 0.0
+    }
+  ],
+  "valid_lengths": [
+    90,
+    93,
+    127,
+    135,
+    139,
+    138,
+    104,
+    116,
+    138,
+    137,
+    120,
+    135,
+    113,
+    103,
+    95,
+    88
+  ],
+  "source_hashes": {
+    "/root/autodl-tmp/s-flm/outputs/grpo-fp32-online-20261024-01/questions.jsonl": "3efb27a1e85dd735bde970242ffc7cdf04c3ce29add1c56f5078d9f0a426f74c",
+    "/root/autodl-tmp/s-flm/outputs/grpo-fp32-online-20261024-01/pairs.jsonl": "c76daa695ee37f0c93c543b0573b660ae3e51fd9729e0659eb2a70f7bf11219c"
+  }
+}

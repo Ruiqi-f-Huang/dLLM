@@ -1,0 +1,20 @@
+{
+  "0.3": {
+    "mean_delta": -0.0008900316455696202,
+    "question_bootstrap_ci95": [
+      -0.00613132911392405,
+      0.004153481012658227
+    ],
+    "improved_questions": 144,
+    "worsened_questions": 167
+  },
+  "0.1": {
+    "mean_delta": -0.0018789556962025317,
+    "question_bootstrap_ci95": [
+      -0.007713607594936709,
+      0.0038568037974683546
+    ],
+    "improved_questions": 147,
+    "worsened_questions": 164
+  }
+}

@@ -1,0 +1,21 @@
+test_code_and_padding_diagnostics_are_token_weighted (test_sft_algorithm.AlgorithmTests.test_code_and_padding_diagnostics_are_token_weighted) ... ok
+test_ema_does_not_advance_when_scaler_skips_update (test_sft_algorithm.AlgorithmTests.test_ema_does_not_advance_when_scaler_skips_update) ... ok
+test_loss_normalizes_by_supervised_tokens_including_padding (test_sft_algorithm.AlgorithmTests.test_loss_normalizes_by_supervised_tokens_including_padding) ... ok
+test_mdlm_weight_and_gradient_match_analytic_answer (test_sft_algorithm.AlgorithmTests.test_mdlm_weight_and_gradient_match_analytic_answer) ... ok
+test_prompt_stays_clean_and_targets_are_noised (test_sft_algorithm.AlgorithmTests.test_prompt_stays_clean_and_targets_are_noised) ... ok
+test_real_amp_overflow_skips_parameter_and_ema_update (test_sft_algorithm.AlgorithmTests.test_real_amp_overflow_skips_parameter_and_ema_update) ... Using 16bit Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+/root/venvs/s-flm/lib/python3.12/site-packages/lightning/pytorch/trainer/configuration_validator.py:70: You defined a `validation_step` but have no `val_dataloader`. Skipping val loop.
+You are using a CUDA device ('NVIDIA RTX PRO 6000 Blackwell Server Edition') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/root/venvs/s-flm/lib/python3.12/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:425: The 'train_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=207` in the `DataLoader` to improve performance.
+/root/venvs/s-flm/lib/python3.12/site-packages/lightning/pytorch/loops/fit_loop.py:310: The number of training batches (2) is smaller than the logging interval Trainer(log_every_n_steps=50). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+`Trainer.fit` stopped: `max_steps=2` reached.
+ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.480s
+
+OK

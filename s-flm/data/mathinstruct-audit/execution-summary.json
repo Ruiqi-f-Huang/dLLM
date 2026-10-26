@@ -1,0 +1,15 @@
+{
+  "execution_rows": 14328,
+  "status_counts": {
+    "verified": 14321,
+    "verification_failed": 7
+  },
+  "error_counts": {},
+  "verified_original_matches_gold": 14321,
+  "verified_converted_matches_gold": 14321,
+  "conversion_equivalent": 14328,
+  "strict_verified_with_docstring_le512_rows": 14309,
+  "strict_verified_unique_questions": 6316,
+  "elapsed_seconds": 1.017381139099598,
+  "scope": "All conservative candidates; 4 CPU processes, 1-second per-pair timeout, 1GiB address-space limit, existing restricted builtins; no GPU/training."
+}

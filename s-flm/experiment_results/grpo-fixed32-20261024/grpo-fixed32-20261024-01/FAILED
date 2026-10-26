@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/root/s-flm/scripts/run_grpo_fixed32.py", line 55, in main
+    execute(common + ['--make-pairs', '--output', str(run / 'base')], 'base')
+  File "/root/s-flm/scripts/run_grpo_fixed32.py", line 35, in execute
+    subprocess.run([sys.executable, '-u'] + command, cwd=ROOT, stdout=log,
+  File "/root/miniconda3/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/root/venvs/s-flm/bin/python', '-u', 'scripts/grpo_fixed32.py', 'measure', '--base', '/root/s-flm/checkpoints/tinygsm/mdlm.ckpt', '--data', '/root/autodl-tmp/s-flm/outputs/grpo-fixed32-20261024-01/fixed/questions.jsonl', '--repeats', '16', '--batch-size', '8', '--temperatures', '.3', '.1', '--make-pairs', '--output', '/root/autodl-tmp/s-flm/outputs/grpo-fixed32-20261024-01/base']' returned non-zero exit status 1.

@@ -1,0 +1,10 @@
+{
+  "source": "eval_runs/gsm8k-test/base-ema-steps32-seed1/results.json",
+  "correct": 76,
+  "total": 1319,
+  "accuracy": 0.0576194086429113,
+  "temperature": 1.0,
+  "nfe": 32,
+  "weights": "EMA",
+  "seed": 1
+}

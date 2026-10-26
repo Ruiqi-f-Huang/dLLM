@@ -1,0 +1,26 @@
+{
+  "base_ema-seed1.jsonl": {
+    "bytes": 1934184,
+    "sha256": "b198cee353077157b97fc6e785575ae39d3d62b54f4c9077aab71e5d4164dd89"
+  },
+  "base_ema-seed2.jsonl": {
+    "bytes": 1934689,
+    "sha256": "a5ea1f6b32b05e65575076c38f0e5801c4880b692ad1ad1b90a8946ef72e0987"
+  },
+  "sft711_ema-seed1.jsonl": {
+    "bytes": 1933794,
+    "sha256": "5ae6a53eafb60181edf34d1791cc50ba00c9a5168107bd66388e0932142b551b"
+  },
+  "sft711_ema-seed2.jsonl": {
+    "bytes": 1934308,
+    "sha256": "8422c5a891f702672245e92cbc426640af41226aa4ca8ee2af98d540eac5b618"
+  },
+  "positive32_raw-seed1.jsonl": {
+    "bytes": 1930317,
+    "sha256": "49bcd3b333c8ed9cd36c6737f614c896594e820c54be0269b0e5ad98f3449c65"
+  },
+  "positive32_raw-seed2.jsonl": {
+    "bytes": 375474,
+    "sha256": "63f8caf84e38e6a230329bc478c3cba9e586e4ed86061dcd19e8008cdf09dc0c"
+  }
+}

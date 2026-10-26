@@ -1,0 +1,26 @@
+{
+  "source_manifest_sha256": "35e7bc58c84e774d0394b4124a58f06695cc845bf2119c57de9c6e236dddba93",
+  "source_files": {
+    "sft_train.jsonl": "a35c64f0c0f47baa84e2517059e11b939b16c5d0dbb0d76b021b2c2144092c68",
+    "sft_validation.jsonl": "560b9ddf9c42c9deb4a37f3c1296f39fed8adb45574c9906c6aafd08237267b7"
+  },
+  "transformation": "Preserve the function and all preceding source text; normalize the final return to `result = <original expression>` followed by `return result`.",
+  "verification": "Every source and transformed program parses, executes with the restricted audit runtime, returns the same numeric value, and matches the stored gold answer.",
+  "token_metadata": "The source unpadded_total_tokens value is retained as original_unpadded_total_tokens. The transformed length must be recomputed by the fixed checkpoint tokenizer before training.",
+  "split_method": "sample ceil(10% of sorted eligible GSM8K Train IDs) with random.Random(42)",
+  "test": "Original GSM8K Test, excluded from all training files.",
+  "total_changed_rows": 6310,
+  "total_unchanged_rows": 4,
+  "files": {
+    "sft_train.jsonl": {
+      "rows": 5682,
+      "changed_rows": 5678,
+      "sha256": "00a477bf62f7b758985b6ba9ecf6332f23b5705be4aa184ae203c219ae438e71"
+    },
+    "sft_validation.jsonl": {
+      "rows": 632,
+      "changed_rows": 632,
+      "sha256": "a852fc227d3b02b5716975a37e83096d15299833c00077043d4a7297e3b4bfdd"
+    }
+  }
+}

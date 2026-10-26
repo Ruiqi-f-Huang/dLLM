@@ -1,0 +1,67 @@
+nohup: ignoring input
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: ruiqi-f-huang (ruiqi-f-huang-nus) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: creating run
+wandb: Tracking run with wandb version 0.19.9
+wandb: Run data is saved locally in /root/autodl-tmp/s-flm/outputs/overfit16-fullmask-codeonly-20261023-01/wandb/run-20261023_122710-x4989caj
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run mdlm-overfit16-fullmask-codeonly-fp32-lr3e-6-200
+wandb: ⭐️ View project at https://wandb.ai/ruiqi-f-huang-nus/s-flm
+wandb: 🚀 View run at https://wandb.ai/ruiqi-f-huang-nus/s-flm/runs/x4989caj
+WANDB_RUN_URL https://wandb.ai/ruiqi-f-huang-nus/s-flm/runs/x4989caj
+CODEONLY_PROBE {"step": 0, "weights": "Base EMA initialization", "precision": "FP32; TF32 disabled", "nfe": 128, "seed": 1, "correct": 3, "parseable": 12, "n": 16, "full_mask_code": {"code_ce": 4.270418662213265, "mean_gold_probability": 0.22651123696185174, "top1_correct_tokens": 250, "tokens": 940, "top1_accuracy": 0.26595744680851063}}
+TRAIN {"optimizer_step": 10, "train/code_ce": 4.120280742645264, "train/grad_norm_pre_clip": 0.16835032403469086, "train/lr": 1.35e-06}
+TRAIN {"optimizer_step": 20, "train/code_ce": 4.21917200088501, "train/grad_norm_pre_clip": 0.14390480518341064, "train/lr": 2.85e-06}
+TRAIN {"optimizer_step": 30, "train/code_ce": 4.194881916046143, "train/grad_norm_pre_clip": 0.13405168056488037, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 40, "train/code_ce": 4.250389575958252, "train/grad_norm_pre_clip": 0.13753663003444672, "train/lr": 3e-06}
+CODEONLY_PROBE {"step": 50, "weights": "raw", "precision": "FP32; TF32 disabled", "nfe": 128, "seed": 1, "correct": 3, "parseable": 12, "n": 16, "full_mask_code": {"code_ce": 4.265280476022274, "mean_gold_probability": 0.2265591398198554, "top1_correct_tokens": 250, "tokens": 940, "top1_accuracy": 0.26595744680851063}}
+TRAIN {"optimizer_step": 50, "train/code_ce": 4.284690856933594, "train/grad_norm_pre_clip": 0.1543571650981903, "train/lr": 3e-06, "memorization/correct": 3, "memorization/parseable": 12, "full_mask/code_ce": 4.265280476022274, "full_mask/code_top1": 0.26595744680851063, "full_mask/gold_probability": 0.2265591398198554}
+TRAIN {"optimizer_step": 60, "train/code_ce": 4.268935680389404, "train/grad_norm_pre_clip": 0.2082947939634323, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 70, "train/code_ce": 3.835623025894165, "train/grad_norm_pre_clip": 0.11704637110233307, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 80, "train/code_ce": 4.168830871582031, "train/grad_norm_pre_clip": 0.19481129944324493, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 90, "train/code_ce": 4.297999382019043, "train/grad_norm_pre_clip": 0.16966599225997925, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 100, "train/code_ce": 4.13695764541626, "train/grad_norm_pre_clip": 0.15636186301708221, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 110, "train/code_ce": 4.124184608459473, "train/grad_norm_pre_clip": 0.15930873155593872, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 120, "train/code_ce": 4.041812419891357, "train/grad_norm_pre_clip": 0.23050028085708618, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 130, "train/code_ce": 4.087719917297363, "train/grad_norm_pre_clip": 0.21045082807540894, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 140, "train/code_ce": 4.022056579589844, "train/grad_norm_pre_clip": 0.1658957600593567, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 150, "train/code_ce": 4.296943664550781, "train/grad_norm_pre_clip": 0.18723459541797638, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 160, "train/code_ce": 3.944169521331787, "train/grad_norm_pre_clip": 0.16371606290340424, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 170, "train/code_ce": 4.313945293426514, "train/grad_norm_pre_clip": 0.20332850515842438, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 180, "train/code_ce": 4.367691516876221, "train/grad_norm_pre_clip": 0.19710856676101685, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 190, "train/code_ce": 4.053595542907715, "train/grad_norm_pre_clip": 0.19430209696292877, "train/lr": 3e-06}
+CODEONLY_PROBE {"step": 200, "weights": "raw", "precision": "FP32; TF32 disabled", "nfe": 128, "seed": 1, "correct": 3, "parseable": 12, "n": 16, "full_mask_code": {"code_ce": 4.2361533307014625, "mean_gold_probability": 0.22684761209690824, "top1_correct_tokens": 250, "tokens": 940, "top1_accuracy": 0.26595744680851063}}
+TRAIN {"optimizer_step": 200, "train/code_ce": 4.4422173500061035, "train/grad_norm_pre_clip": 0.20482400059700012, "train/lr": 3e-06, "memorization/correct": 3, "memorization/parseable": 12, "full_mask/code_ce": 4.2361533307014625, "full_mask/code_top1": 0.26595744680851063, "full_mask/gold_probability": 0.22684761209690824}
+wandb: uploading artifact overfit16-fullmask-codeonly-200-logs; uploading output.log; uploading wandb-summary.json
+wandb: uploading artifact overfit16-fullmask-codeonly-200-logs
+wandb: uploading history steps 199-200, summary, console lines 22-23
+wandb: uploading data
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:          full_mask/code_ce █▇▁
+wandb:        full_mask/code_top1 ▁▁▁
+wandb: full_mask/gold_probability ▁▂█
+wandb:       memorization/correct ▁▁▁
+wandb:     memorization/parseable ▁▁▁
+wandb:             optimizer_step ▁▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▅▅▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇██
+wandb:              train/code_ce ▃▅▄▆▄▆▅▁▄▅▅▇▁▂▆▂▆▁▃▂▂▆▄▅▃▃▅▂▃▅▄█▃█▃▄▃▇▄█
+wandb:   train/grad_norm_pre_clip ▁▃▂▄▁▂▁▄▁▃▆▃▃▃▂▄▆▂▂▄▄█▂▅▂▆▄▅▃▆▃▃▅▇▄▅▅▄▄▃
+wandb:                   train/lr ▁▂▆▆▇███████████████████████████████████
+wandb: 
+wandb: Run summary:
+wandb:          full_mask/code_ce 4.23615
+wandb:        full_mask/code_top1 0.26596
+wandb: full_mask/gold_probability 0.22685
+wandb:       memorization/correct 3
+wandb:     memorization/parseable 12
+wandb:             optimizer_step 200
+wandb:              train/code_ce 4.44222
+wandb:   train/grad_norm_pre_clip 0.20482
+wandb:                   train/lr 0.0
+wandb: 
+wandb: 🚀 View run mdlm-overfit16-fullmask-codeonly-fp32-lr3e-6-200 at: https://wandb.ai/ruiqi-f-huang-nus/s-flm/runs/x4989caj
+wandb: ⭐️ View project at: https://wandb.ai/ruiqi-f-huang-nus/s-flm
+wandb: Synced 5 W&B file(s), 0 media file(s), 5 artifact file(s) and 0 other file(s)
+wandb: Find logs at: /root/autodl-tmp/s-flm/outputs/overfit16-fullmask-codeonly-20261023-01/wandb/run-20261023_122710-x4989caj/logs
+FULLMASK_CODEONLY_COMPLETE {"successful_updates": 200, "presentations": 1600, "frozen_parameters_unchanged": true, "changed_lora_elements": 1179648, "wall_seconds_including_evaluation": 86.51655646413565, "peak_allocated_mib": 7296.1171875}

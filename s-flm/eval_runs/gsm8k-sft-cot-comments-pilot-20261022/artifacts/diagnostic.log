@@ -1,0 +1,107 @@
+Loading base: /root/s-flm/checkpoints/tinygsm/mdlm.ckpt
+/root/venvs/s-flm/lib/python3.12/site-packages/lightning/pytorch/utilities/migration/utils.py:56: The loaded checkpoint was produced with Lightning v2.6.0, which is newer than your current Lightning version: v2.5.1
+Seed set to 1
+generate-128-seed1:   0%|          | 0/8 [00:00<?, ?it/s]generate-128-seed1:  12%|█▎        | 1/8 [00:06<00:44,  6.29s/it]generate-128-seed1:  25%|██▌       | 2/8 [00:10<00:28,  4.78s/it]generate-128-seed1:  38%|███▊      | 3/8 [00:13<00:20,  4.07s/it]generate-128-seed1:  50%|█████     | 4/8 [00:16<00:14,  3.73s/it]generate-128-seed1:  62%|██████▎   | 5/8 [00:19<00:10,  3.54s/it]generate-128-seed1:  75%|███████▌  | 6/8 [00:22<00:06,  3.44s/it]generate-128-seed1:  88%|████████▊ | 7/8 [00:26<00:03,  3.37s/it]generate-128-seed1: 100%|██████████| 8/8 [00:29<00:00,  3.32s/it]                                                                 Seed set to 2
+generate-128-seed2:   0%|          | 0/8 [00:00<?, ?it/s]generate-128-seed2:  12%|█▎        | 1/8 [00:03<00:22,  3.21s/it]generate-128-seed2:  25%|██▌       | 2/8 [00:06<00:19,  3.21s/it]generate-128-seed2:  38%|███▊      | 3/8 [00:09<00:16,  3.21s/it]generate-128-seed2:  50%|█████     | 4/8 [00:12<00:12,  3.21s/it]generate-128-seed2:  62%|██████▎   | 5/8 [00:16<00:09,  3.21s/it]generate-128-seed2:  75%|███████▌  | 6/8 [00:19<00:06,  3.21s/it]generate-128-seed2:  88%|████████▊ | 7/8 [00:22<00:03,  3.21s/it]generate-128-seed2: 100%|██████████| 8/8 [00:25<00:00,  3.21s/it]                                                                 {
+  "checkpoint": "/root/s-flm/checkpoints/tinygsm/mdlm.ckpt",
+  "weights": "EMA",
+  "mask_sweep": [],
+  "generation": {
+    "128/seed1": {
+      "n": 64,
+      "eos_observed": 63,
+      "eos_rate": 0.984375,
+      "full_parseable": 50,
+      "eos_parseable": 52,
+      "full_correct": 11,
+      "eos_correct": 11,
+      "eos_to_correct_changes": 0,
+      "eos_to_wrong_changes": 0,
+      "median_eos_position": 147
+    },
+    "128/seed2": {
+      "n": 64,
+      "eos_observed": 63,
+      "eos_rate": 0.984375,
+      "full_parseable": 45,
+      "eos_parseable": 46,
+      "full_correct": 6,
+      "eos_correct": 6,
+      "eos_to_correct_changes": 0,
+      "eos_to_wrong_changes": 0,
+      "median_eos_position": 151
+    }
+  },
+  "elapsed_seconds": 55.01439996436238
+}
+Loading step200: /root/autodl-tmp/s-flm/outputs/sft/20261022-lora-result-lr1e5-01/checkpoints/step-000200.ckpt
+Seed set to 1
+generate-128-seed1:   0%|          | 0/8 [00:00<?, ?it/s]generate-128-seed1:  12%|█▎        | 1/8 [00:03<00:25,  3.69s/it]generate-128-seed1:  25%|██▌       | 2/8 [00:07<00:22,  3.70s/it]generate-128-seed1:  38%|███▊      | 3/8 [00:11<00:18,  3.70s/it]generate-128-seed1:  50%|█████     | 4/8 [00:14<00:14,  3.69s/it]generate-128-seed1:  62%|██████▎   | 5/8 [00:18<00:11,  3.69s/it]generate-128-seed1:  75%|███████▌  | 6/8 [00:22<00:07,  3.70s/it]generate-128-seed1:  88%|████████▊ | 7/8 [00:25<00:03,  3.70s/it]generate-128-seed1: 100%|██████████| 8/8 [00:29<00:00,  3.69s/it]                                                                 Seed set to 2
+generate-128-seed2:   0%|          | 0/8 [00:00<?, ?it/s]generate-128-seed2:  12%|█▎        | 1/8 [00:03<00:25,  3.69s/it]generate-128-seed2:  25%|██▌       | 2/8 [00:07<00:22,  3.69s/it]generate-128-seed2:  38%|███▊      | 3/8 [00:11<00:18,  3.69s/it]generate-128-seed2:  50%|█████     | 4/8 [00:14<00:14,  3.68s/it]generate-128-seed2:  62%|██████▎   | 5/8 [00:18<00:11,  3.68s/it]generate-128-seed2:  75%|███████▌  | 6/8 [00:22<00:07,  3.69s/it]generate-128-seed2:  88%|████████▊ | 7/8 [00:25<00:03,  3.70s/it]generate-128-seed2: 100%|██████████| 8/8 [00:29<00:00,  3.70s/it]                                                                 {
+  "checkpoint": "/root/autodl-tmp/s-flm/outputs/sft/20261022-lora-result-lr1e5-01/checkpoints/step-000200.ckpt",
+  "weights": "EMA",
+  "mask_sweep": [],
+  "generation": {
+    "128/seed1": {
+      "n": 64,
+      "eos_observed": 63,
+      "eos_rate": 0.984375,
+      "full_parseable": 50,
+      "eos_parseable": 52,
+      "full_correct": 10,
+      "eos_correct": 10,
+      "eos_to_correct_changes": 0,
+      "eos_to_wrong_changes": 0,
+      "median_eos_position": 147
+    },
+    "128/seed2": {
+      "n": 64,
+      "eos_observed": 63,
+      "eos_rate": 0.984375,
+      "full_parseable": 44,
+      "eos_parseable": 45,
+      "full_correct": 6,
+      "eos_correct": 6,
+      "eos_to_correct_changes": 0,
+      "eos_to_wrong_changes": 0,
+      "median_eos_position": 151
+    }
+  },
+  "elapsed_seconds": 59.097183572128415
+}
+Loading cotcomments200: /root/autodl-tmp/s-flm/outputs/sft/20261022-lora-result-cot-comments-pilot-01/checkpoints/step-000200.ckpt
+Seed set to 1
+generate-128-seed1:   0%|          | 0/8 [00:00<?, ?it/s]generate-128-seed1:  12%|█▎        | 1/8 [00:03<00:25,  3.71s/it]generate-128-seed1:  25%|██▌       | 2/8 [00:07<00:22,  3.70s/it]generate-128-seed1:  38%|███▊      | 3/8 [00:11<00:18,  3.70s/it]generate-128-seed1:  50%|█████     | 4/8 [00:14<00:14,  3.69s/it]generate-128-seed1:  62%|██████▎   | 5/8 [00:18<00:11,  3.69s/it]generate-128-seed1:  75%|███████▌  | 6/8 [00:22<00:07,  3.70s/it]generate-128-seed1:  88%|████████▊ | 7/8 [00:25<00:03,  3.70s/it]generate-128-seed1: 100%|██████████| 8/8 [00:29<00:00,  3.70s/it]                                                                 Seed set to 2
+generate-128-seed2:   0%|          | 0/8 [00:00<?, ?it/s]generate-128-seed2:  12%|█▎        | 1/8 [00:03<00:25,  3.69s/it]generate-128-seed2:  25%|██▌       | 2/8 [00:07<00:22,  3.69s/it]generate-128-seed2:  38%|███▊      | 3/8 [00:11<00:18,  3.69s/it]generate-128-seed2:  50%|█████     | 4/8 [00:14<00:14,  3.69s/it]generate-128-seed2:  62%|██████▎   | 5/8 [00:18<00:11,  3.69s/it]generate-128-seed2:  75%|███████▌  | 6/8 [00:22<00:07,  3.69s/it]generate-128-seed2:  88%|████████▊ | 7/8 [00:25<00:03,  3.70s/it]generate-128-seed2: 100%|██████████| 8/8 [00:29<00:00,  3.70s/it]                                                                 {
+  "checkpoint": "/root/autodl-tmp/s-flm/outputs/sft/20261022-lora-result-cot-comments-pilot-01/checkpoints/step-000200.ckpt",
+  "weights": "EMA",
+  "mask_sweep": [],
+  "generation": {
+    "128/seed1": {
+      "n": 64,
+      "eos_observed": 63,
+      "eos_rate": 0.984375,
+      "full_parseable": 50,
+      "eos_parseable": 52,
+      "full_correct": 11,
+      "eos_correct": 11,
+      "eos_to_correct_changes": 0,
+      "eos_to_wrong_changes": 0,
+      "median_eos_position": 147
+    },
+    "128/seed2": {
+      "n": 64,
+      "eos_observed": 63,
+      "eos_rate": 0.984375,
+      "full_parseable": 43,
+      "eos_parseable": 44,
+      "full_correct": 6,
+      "eos_correct": 6,
+      "eos_to_correct_changes": 0,
+      "eos_to_wrong_changes": 0,
+      "median_eos_position": 151
+    }
+  },
+  "elapsed_seconds": 59.12185822054744
+}
+Saved combined diagnostic to /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-cot-comments-pilot-01

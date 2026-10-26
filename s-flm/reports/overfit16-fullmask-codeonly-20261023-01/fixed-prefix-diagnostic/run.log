@@ -1,0 +1,35 @@
+nohup: ignoring input
+FIXED_PREFIX {"step": 0, "n": 16, "precision": "FP32, TF32 off", "seed": 1, "nfe": 128, "fixed_prefix": {"correct": 1, "parseable": 1, "strict_parseable": 1, "strict_execution_correct": 1, "eos_correct": 1, "eos_parseable": 1}, "question_only": {"correct": 3, "parseable": 12, "eos_correct": 3}, "wrong_to_right": ["gsm8k_train_6726"], "right_to_wrong": ["gsm8k_train_5649", "gsm8k_train_1515", "gsm8k_train_7383"]}
+FIXED_PREFIX {"step": 1000, "n": 16, "precision": "FP32, TF32 off", "seed": 1, "nfe": 128, "fixed_prefix": {"correct": 1, "parseable": 2, "strict_parseable": 2, "strict_execution_correct": 1, "eos_correct": 1, "eos_parseable": 2}, "question_only": {"correct": 3, "parseable": 14, "eos_correct": 3}, "wrong_to_right": [], "right_to_wrong": ["gsm8k_train_1515", "gsm8k_train_7383"]}
+FIXED_PREFIX {"step": 3000, "n": 16, "precision": "FP32, TF32 off", "seed": 1, "nfe": 128, "fixed_prefix": {"correct": 1, "parseable": 7, "strict_parseable": 7, "strict_execution_correct": 1, "eos_correct": 1, "eos_parseable": 7}, "question_only": {"correct": 0, "parseable": 4, "eos_correct": 1}, "wrong_to_right": ["gsm8k_train_2986"], "right_to_wrong": []}
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: ruiqi-f-huang (ruiqi-f-huang-nus) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.19.9
+wandb: Run data is saved locally in /root/autodl-tmp/s-flm/outputs/overfit16-fullmask-codeonly-20261023-01/fixed-prefix-diagnostic/wandb/run-20261023_135024-x4989caj
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Resuming run mdlm-overfit16-fullmask-codeonly-fp32-lr3e-6-3000
+wandb: ⭐️ View project at https://wandb.ai/ruiqi-f-huang-nus/s-flm
+wandb: 🚀 View run at https://wandb.ai/ruiqi-f-huang-nus/s-flm/runs/x4989caj
+wandb: uploading artifact run-x4989caj-fixed_prefix_generation_table; uploading artifact overfit16-codeonly-fixed-prefix; uploading config.yaml
+wandb: uploading artifact overfit16-codeonly-fixed-prefix
+wandb: uploading summary
+wandb:                                                                                
+wandb: 
+wandb: Run summary:
+wandb:          fixed_prefix_note No training. Exact g...
+wandb:          full_mask/code_ce 2.53182
+wandb:        full_mask/code_top1 0.31383
+wandb: full_mask/gold_probability 0.24592
+wandb:       memorization/correct 0
+wandb:     memorization/parseable 4
+wandb:             optimizer_step 3000
+wandb:           posthoc_eos_note Existing generated t...
+wandb:              train/code_ce 2.61836
+wandb:   train/grad_norm_pre_clip 0.18693
+wandb:                   train/lr 0.0
+wandb: 
+wandb: 🚀 View run mdlm-overfit16-fullmask-codeonly-fp32-lr3e-6-3000 at: https://wandb.ai/ruiqi-f-huang-nus/s-flm/runs/x4989caj
+wandb: ⭐️ View project at: https://wandb.ai/ruiqi-f-huang-nus/s-flm
+wandb: Synced 5 W&B file(s), 1 media file(s), 9 artifact file(s) and 0 other file(s)
+wandb: Find logs at: /root/autodl-tmp/s-flm/outputs/overfit16-fullmask-codeonly-20261023-01/fixed-prefix-diagnostic/wandb/run-20261023_135024-x4989caj/logs
+FIXED_PREFIX_COMPLETE

@@ -1,0 +1,5 @@
+{
+  "base": "/root/s-flm/checkpoints/tinygsm/mdlm.ckpt",
+  "audit": "/root/autodl-tmp/s-flm/outputs/grpo-pilot-20261024-01/audit/rollouts.jsonl",
+  "output": "/root/autodl-tmp/s-flm/outputs/grpo-fixed32-20261024-01"
+}

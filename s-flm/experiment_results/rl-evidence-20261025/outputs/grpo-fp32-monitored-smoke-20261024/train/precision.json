@@ -1,0 +1,1 @@
+{"raw_dtype": "torch.float32", "parameter_dtypes": ["torch.float32"], "cuda_matmul_allow_tf32": false}

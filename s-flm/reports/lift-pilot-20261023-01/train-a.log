@@ -1,0 +1,295 @@
+Seed set to 1
+CONFIG
+├── mode
+│   └── train                                                                   
+├── sudoku
+│   └── output_dir: /root/autodl-tmp/s-flm/lift-pilot-20261023-01/train-a/sudoku
+│       batch_size: 64                                                          
+│                                                                               
+├── gsm8k
+│   └── input_file: null                                                        
+│       output_dir: /root/autodl-tmp/s-flm/lift-pilot-20261023-01/train-a/gsm8k_
+│       timeout: 5.0                                                            
+│       bootstrap_size: 1                                                       
+│                                                                               
+├── seed
+│   └── 1                                                                       
+├── allow_tf32
+│   └── True                                                                    
+├── cudnn_benchmark
+│   └── True                                                                    
+├── compile_backbone
+│   └── False                                                                   
+├── backbone_compute_dtype
+│   └── bfloat16                                                                
+├── neg_infinity_mode
+│   └── large-finite                                                            
+├── loader
+│   └── global_batch_size: 8                                                    
+│       eval_global_batch_size: 8                                               
+│       batch_size: 8                                                           
+│       eval_batch_size: 8                                                      
+│       num_workers: 0                                                          
+│       pin_memory: true                                                        
+│                                                                               
+├── confidence_denoiser
+│   └── confidence_score: entropy                                               
+│       gamma: 0                                                                
+│                                                                               
+├── training
+│   └── ema: 0.9999                                                             
+│       antithetic_sampling: true                                               
+│       importance_sampling: false                                              
+│       sampling_eps: 0.001                                                     
+│       change_of_variables: false                                              
+│       loss_precision: bf16                                                    
+│       finetune_path: /root/autodl-tmp/s-flm/lift-pilot-20261023-01/source/chec
+│       finetune_weights: ema                                                   
+│       sampling_eps_min: 0.001                                                 
+│       sampling_eps_max: 1.0                                                   
+│       resample: false                                                         
+│                                                                               
+├── lora
+│   └── enabled: true                                                           
+│       rank: 8                                                                 
+│       alpha: 16                                                               
+│       dropout: 0.05                                                           
+│       target_modules:                                                         
+│       - blocks.*.attn_qkv                                                     
+│       - blocks.*.attn_out                                                     
+│       - blocks.*.mlp.0                                                        
+│       - blocks.*.mlp.2                                                        
+│                                                                               
+├── eval
+│   └── checkpoint_path: ''                                                     
+│       strict_loading: true                                                    
+│       disable_ema: false                                                      
+│       compute_generative_perplexity: false                                    
+│       perplexity_batch_size: 8                                                
+│       compute_perplexity_on_sanity: false                                     
+│       gen_ppl_eval_model_name_or_path: gpt2-large                             
+│       generate_samples: false                                                 
+│       generated_samples_path: /root/autodl-tmp/s-flm/lift-pilot-20261023-01/tr
+│       results_json_path: null                                                 
+│                                                                               
+├── optim
+│   └── weight_decay: 0                                                         
+│       lr: 3.0e-06                                                             
+│       beta1: 0.9                                                              
+│       beta2: 0.999                                                            
+│       eps: 1.0e-08                                                            
+│                                                                               
+├── trainer
+│   └── _target_: lightning.Trainer                                             
+│       accelerator: cuda                                                       
+│       num_nodes: 1                                                            
+│       devices: 1                                                              
+│       accumulate_grad_batches: 1                                              
+│       gradient_clip_val: 1.0                                                  
+│       precision: bf16-mixed                                                   
+│       num_sanity_val_steps: 0                                                 
+│       max_steps: 200                                                          
+│       log_every_n_steps: 10                                                   
+│       limit_train_batches: 1.0                                                
+│       limit_val_batches: 1.0                                                  
+│       val_check_interval: 100                                                 
+│       check_val_every_n_epoch: 1                                              
+│       max_epochs: -1                                                          
+│       enable_progress_bar: false                                              
+│                                                                               
+├── wandb
+│   └── project: s-flm                                                          
+│       notes: null                                                             
+│       group: mdlm-gsm8k-pot                                                   
+│       job_type: sft                                                           
+│       tags:                                                                   
+│       - mdlm                                                                  
+│       - gsm8k-pot                                                             
+│       - sft                                                                   
+│       - lora                                                                  
+│       - lift-pilot                                                            
+│       name: lift-a-200                                                        
+│       save_dir: /root/autodl-tmp/s-flm/lift-pilot-20261023-01/train-a         
+│       offline: true                                                           
+│       log_model: false                                                        
+│       id: null                                                                
+│                                                                               
+├── checkpointing
+│   └── save_dir: /root/autodl-tmp/s-flm/lift-pilot-20261023-01/train-a         
+│       resume_from_ckpt: false                                                 
+│       resume_ckpt_path: /root/autodl-tmp/s-flm/lift-pilot-20261023-01/train-a/
+│                                                                               
+├── callbacks
+│   └── checkpoint_every_n_steps:                                               
+│         _target_: lightning.pytorch.callbacks.ModelCheckpoint                 
+│         save_top_k: 0                                                         
+│         save_last: false                                                      
+│         dirpath: /root/autodl-tmp/s-flm/lift-pilot-20261023-01/train-a/checkpo
+│         verbose: true                                                         
+│         auto_insert_metric_name: false                                        
+│         every_n_train_steps: 0                                                
+│       checkpoint_monitor:                                                     
+│         _target_: lightning.pytorch.callbacks.ModelCheckpoint                 
+│         monitor: val/nll                                                      
+│         mode: min                                                             
+│         save_top_k: 0                                                         
+│         save_last: false                                                      
+│         dirpath: /root/autodl-tmp/s-flm/lift-pilot-20261023-01/train-a/checkpo
+│         filename: best                                                        
+│         auto_insert_metric_name: false                                        
+│         verbose: true                                                         
+│       milestone_checkpoint:                                                   
+│         _target_: callbacks.milestone_checkpoint.MilestoneCheckpoint          
+│         milestones:                                                           
+│         - 100                                                                 
+│         - 200                                                                 
+│         dirpath: /root/autodl-tmp/s-flm/lift-pilot-20261023-01/train-a/checkpo
+│         filename: step-{step:06d}.ckpt                                        
+│                                                                               
+├── data
+│   └── train: gsm8k_pot                                                        
+│       valid: gsm8k_pot                                                        
+│       train_file: /root/autodl-tmp/s-flm/lift-pilot-20261023-01/source/data/gs
+│       validation_file: /root/autodl-tmp/s-flm/lift-pilot-20261023-01/source/da
+│       cache_dir: /root/autodl-tmp/s-flm/lift-pilot-20261023-01/data_cache     
+│       tokenizer_name_or_path: HuggingFaceTB/SmolLM-135M                       
+│       tokenizer_revision: 1d461723eec654e65efdc40cf49301c89c0c92f4            
+│       separator: \n                                                           
+│       wrap: false                                                             
+│       streaming: false                                                        
+│       insert_train_eos: true                                                  
+│       insert_valid_eos: true                                                  
+│       train_on_prompt: false                                                  
+│       train_on_pad: true                                                      
+│                                                                               
+├── model
+│   └── name: small                                                             
+│       type: dit                                                               
+│       hidden_size: 768                                                        
+│       cond_dim: 128                                                           
+│       length: 512                                                             
+│       n_blocks: 12                                                            
+│       n_heads: 12                                                             
+│       dropout: 0.1                                                            
+│                                                                               
+├── strategy
+│   └── _target_: lightning.pytorch.strategies.SingleDeviceStrategy             
+│       device: cuda:0                                                          
+│                                                                               
+├── noise
+│   └── type: log-linear                                                        
+│       eps: 0.001                                                              
+│       alpha_min: null                                                         
+│       alpha_max: null                                                         
+│       adaptive: false                                                         
+│                                                                               
+├── lr_scheduler
+│   └── _target_: transformers.get_constant_schedule_with_warmup                
+│       num_warmup_steps: 20                                                    
+│                                                                               
+├── prior
+│   └── type: none                                                              
+│       latent_width: 0                                                         
+│       latent_height: 0                                                        
+│                                                                               
+├── algo
+│   └── name: mdlm                                                              
+│       diffusion_type: absorbing                                               
+│       backbone: dit                                                           
+│       parameterization: subs                                                  
+│       time_conditioning: false                                                
+│       T: 0                                                                    
+│       causal_attention: false                                                 
+│       loss_type: elbo                                                         
+│       post_process_mode: log_probs                                            
+│       adaLN: true                                                             
+│                                                                               
+├── sampler
+│   └── predictor: ancestral                                                    
+│       steps: 1024                                                             
+│       steps_policy: full                                                      
+│       noise_removal: ancestral                                                
+│       use_float64: true                                                       
+│       p_nucleus: 1.0                                                          
+│       temperature: 1.0                                                        
+│       num_sample_batches: 2                                                   
+│       num_sample_log: 2                                                       
+│                                                                               
+├── sft_monitoring
+│   └── True                                                                    
+└── lift
+    └── enabled: true                                                           
+        policy: baseline                                                        
+                                                                                
+[2026-10-23 20:27:03,904][__main__][INFO] - Starting Training.
+Printing train dataloader batch.
+Batch input_ids.shape torch.Size([8, 512])
+First 64 tokens: <|endoftext|>Anna used four baking trays to bake cupcakes. Each tray has 20 cupcakes and each cupcake was then sold for $2. If only 3/5 of the cupcakes were sold and the rest were kept, how much did Anna earn from it?\ndef simple
+ids: tensor([    0, 46484,   804,  1876, 12320, 33190,   288, 26975,  7118,    83,
+         1154,    30,  3768, 25477,   553,   216,    34,    32,  7118,    83,
+         1154,   284,   971,  7118,    83,   575,   436,   965,  3459,   327,
+         1885,    34,    30,  1094,   805,   216,    35,    31,    37,   282,
+          260,  7118,    83,  1154,   592,  3459,   284,   260,  1532,   592,
+         5454,    28,   638,  1083,  1250, 16435,  5301,   429,   357,    47,
+           76,    94,  1604,  2232])
+Last 64 tokens: [PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD]
+ids: tensor([49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152])
+Printing valid dataloader batch.
+Batch input_ids.shape torch.Size([8, 512])
+First 64 tokens: <|endoftext|>Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\ndef simple_math_
+ids: tensor([    0, 28813,   519,   314,  2539,   253,   216,    33,    34,    32,
+           29,  6853,  1863,    30,   718, 15955,    28,  1041,   436,  1730,
+          288,  1012,   216,    33,    34,  5158,   284,  1834,    28,  1041,
+         1012,  6757,   347,   800,  5158,   347, 18400,    30,  1094,  1041,
+         5988,   288,  1012,  2745,   282,   260,  6219,  5158, 13759,    28,
+          638,   800,  5158,   868,  1041,  1012,    47,    76,    94,  1604,
+         2232,    79,  8898,    79])
+Last 64 tokens: [PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD]
+ids: tensor([49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152])
+[2026-10-23 20:27:07,284][__main__][INFO] - Fresh finetune from ema weights; optimizer, scheduler and EMA history start fresh.
+[2026-10-23 20:27:07,285][__main__][INFO] - LoRA enabled for 48 modules: 1,179,648/169,110,018 backbone parameters are trainable.
+Using bfloat16 Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+`Trainer(limit_train_batches=1.0)` was configured so 100% of the batches per epoch will be used..
+`Trainer(limit_val_batches=1.0)` was configured so 100% of the batches will be used..
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: WARNING `resume` will be ignored since W&B syncing is set to `offline`. Starting a new run with run id kwhnx1mw.
+wandb: Tracking run with wandb version 0.19.9
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name     | Type      | Params | Mode 
+-----------------------------------------------
+0 | backbone | DIT       | 169 M  | train
+1 | softplus | Softplus  | 0      | train
+2 | noise    | LogLinear | 0      | train
+-----------------------------------------------
+1.2 M     Trainable params
+167 M     Non-trainable params
+169 M     Total params
+676.440   Total estimated model params size (MB)
+207       Modules in train mode
+0         Modules in eval mode
+/root/venvs/s-flm/lib/python3.12/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:425: The 'train_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=127` in the `DataLoader` to improve performance.
+/root/venvs/s-flm/lib/python3.12/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:425: The 'val_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=127` in the `DataLoader` to improve performance.
+`Trainer.fit` stopped: `max_steps=200` reached.
+[2026-10-23 20:27:35,281][__main__][INFO] - Training finished at optimizer step 200; peak allocated GPU memory: 8647.1 MiB.
+[1;34mwandb[0m: 
+[1;34mwandb[0m: You can sync this run to the cloud by running:
+[1;34mwandb[0m: [1mwandb sync /root/autodl-tmp/s-flm/lift-pilot-20261023-01/train-a/wandb/offline-run-20261023_202707-kwhnx1mw[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/offline-run-20261023_202707-kwhnx1mw/logs[0m

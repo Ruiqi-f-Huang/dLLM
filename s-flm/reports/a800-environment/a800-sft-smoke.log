@@ -1,0 +1,270 @@
+Seed set to 1
+CONFIG
+├── mode
+│   └── train                                                                   
+├── sudoku
+│   └── output_dir: /root/autodl-tmp/s-flm/outputs/a800-env-smoke/sudoku_eval   
+│       batch_size: 64                                                          
+│                                                                               
+├── gsm8k
+│   └── input_file: null                                                        
+│       output_dir: /root/autodl-tmp/s-flm/outputs/a800-env-smoke/gsm8k_eval    
+│       timeout: 5.0                                                            
+│       bootstrap_size: 1                                                       
+│                                                                               
+├── seed
+│   └── 1                                                                       
+├── allow_tf32
+│   └── True                                                                    
+├── cudnn_benchmark
+│   └── True                                                                    
+├── compile_backbone
+│   └── False                                                                   
+├── backbone_compute_dtype
+│   └── bfloat16                                                                
+├── neg_infinity_mode
+│   └── large-finite                                                            
+├── loader
+│   └── global_batch_size: 8                                                    
+│       eval_global_batch_size: 8                                               
+│       batch_size: 8                                                           
+│       eval_batch_size: 8                                                      
+│       num_workers: 4                                                          
+│       pin_memory: true                                                        
+│                                                                               
+├── confidence_denoiser
+│   └── confidence_score: entropy                                               
+│       gamma: 0                                                                
+│                                                                               
+├── training
+│   └── ema: 0.9999                                                             
+│       antithetic_sampling: true                                               
+│       importance_sampling: false                                              
+│       sampling_eps: 0.001                                                     
+│       change_of_variables: false                                              
+│       loss_precision: bf16                                                    
+│       finetune_path: /root/s-flm/checkpoints/tinygsm/mdlm.ckpt                
+│       finetune_weights: ema                                                   
+│       sampling_eps_min: 0.001                                                 
+│       sampling_eps_max: 1.0                                                   
+│       resample: false                                                         
+│                                                                               
+├── eval
+│   └── checkpoint_path: ''                                                     
+│       strict_loading: true                                                    
+│       disable_ema: false                                                      
+│       compute_generative_perplexity: false                                    
+│       perplexity_batch_size: 8                                                
+│       compute_perplexity_on_sanity: false                                     
+│       gen_ppl_eval_model_name_or_path: gpt2-large                             
+│       generate_samples: false                                                 
+│       generated_samples_path: /root/autodl-tmp/s-flm/outputs/a800-env-smoke/sa
+│       results_json_path: null                                                 
+│                                                                               
+├── optim
+│   └── weight_decay: 0                                                         
+│       lr: 1.0e-05                                                             
+│       beta1: 0.9                                                              
+│       beta2: 0.999                                                            
+│       eps: 1.0e-08                                                            
+│                                                                               
+├── trainer
+│   └── _target_: lightning.Trainer                                             
+│       accelerator: cuda                                                       
+│       num_nodes: 1                                                            
+│       devices: 1                                                              
+│       accumulate_grad_batches: 1                                              
+│       gradient_clip_val: 1.0                                                  
+│       precision: bf16-mixed                                                   
+│       num_sanity_val_steps: 1                                                 
+│       max_steps: 2                                                            
+│       log_every_n_steps: 1                                                    
+│       limit_train_batches: 2                                                  
+│       limit_val_batches: 2                                                    
+│       val_check_interval: 1.0                                                 
+│       check_val_every_n_epoch: 1                                              
+│       max_epochs: 1                                                           
+│       enable_progress_bar: false                                              
+│                                                                               
+├── wandb
+│   └── project: s-flm                                                          
+│       notes: null                                                             
+│       group: mdlm-gsm8k-pot                                                   
+│       job_type: sft                                                           
+│       tags:                                                                   
+│       - mdlm                                                                  
+│       - gsm8k-pot                                                             
+│       - sft                                                                   
+│       name: mdlm-sft-20261021-144924                                          
+│       save_dir: /root/autodl-tmp/s-flm/outputs/a800-env-smoke                 
+│       offline: true                                                           
+│       log_model: false                                                        
+│       id: null                                                                
+│                                                                               
+├── checkpointing
+│   └── save_dir: /root/autodl-tmp/s-flm/outputs/a800-env-smoke                 
+│       resume_from_ckpt: false                                                 
+│       resume_ckpt_path: /root/autodl-tmp/s-flm/outputs/a800-env-smoke/checkpoi
+│                                                                               
+├── callbacks
+│   └── checkpoint_every_n_steps:                                               
+│         _target_: lightning.pytorch.callbacks.ModelCheckpoint                 
+│         save_top_k: -1                                                        
+│         save_last: true                                                       
+│         dirpath: /root/autodl-tmp/s-flm/outputs/a800-env-smoke/checkpoints    
+│         verbose: true                                                         
+│         auto_insert_metric_name: false                                        
+│         every_n_train_steps: 100                                              
+│       checkpoint_monitor:                                                     
+│         _target_: lightning.pytorch.callbacks.ModelCheckpoint                 
+│         monitor: val/nll                                                      
+│         mode: min                                                             
+│         save_top_k: 1                                                         
+│         save_last: false                                                      
+│         dirpath: /root/autodl-tmp/s-flm/outputs/a800-env-smoke/checkpoints    
+│         filename: best                                                        
+│         auto_insert_metric_name: false                                        
+│         verbose: true                                                         
+│                                                                               
+├── data
+│   └── train: gsm8k_pot                                                        
+│       valid: gsm8k_pot                                                        
+│       train_file: /root/s-flm/data/gsm8k_pot/sft_train.jsonl                  
+│       validation_file: /root/s-flm/data/gsm8k_pot/sft_validation.jsonl        
+│       cache_dir: /root/s-flm/data_cache/gsm8k_pot                             
+│       tokenizer_name_or_path: HuggingFaceTB/SmolLM-135M                       
+│       tokenizer_revision: 1d461723eec654e65efdc40cf49301c89c0c92f4            
+│       separator: \n                                                           
+│       wrap: false                                                             
+│       streaming: false                                                        
+│       insert_train_eos: true                                                  
+│       insert_valid_eos: true                                                  
+│       train_on_prompt: false                                                  
+│       train_on_pad: true                                                      
+│                                                                               
+├── model
+│   └── name: small                                                             
+│       type: dit                                                               
+│       hidden_size: 768                                                        
+│       cond_dim: 128                                                           
+│       length: 512                                                             
+│       n_blocks: 12                                                            
+│       n_heads: 12                                                             
+│       dropout: 0.1                                                            
+│                                                                               
+├── strategy
+│   └── _target_: lightning.pytorch.strategies.SingleDeviceStrategy             
+│       device: cuda:0                                                          
+│                                                                               
+├── noise
+│   └── type: log-linear                                                        
+│       eps: 0                                                                  
+│       alpha_min: null                                                         
+│       alpha_max: null                                                         
+│       adaptive: false                                                         
+│                                                                               
+├── lr_scheduler
+│   └── _target_: transformers.get_constant_schedule_with_warmup                
+│       num_warmup_steps: 20                                                    
+│                                                                               
+├── prior
+│   └── type: none                                                              
+│       latent_width: 0                                                         
+│       latent_height: 0                                                        
+│                                                                               
+├── algo
+│   └── name: mdlm                                                              
+│       diffusion_type: absorbing                                               
+│       backbone: dit                                                           
+│       parameterization: subs                                                  
+│       time_conditioning: false                                                
+│       T: 0                                                                    
+│       causal_attention: false                                                 
+│       loss_type: elbo                                                         
+│       post_process_mode: log_probs                                            
+│       adaLN: true                                                             
+│                                                                               
+├── sampler
+│   └── predictor: ancestral                                                    
+│       steps: 1024                                                             
+│       steps_policy: full                                                      
+│       noise_removal: ancestral                                                
+│       use_float64: true                                                       
+│       p_nucleus: 1.0                                                          
+│       temperature: 1.0                                                        
+│       num_sample_batches: 2                                                   
+│       num_sample_log: 2                                                       
+│                                                                               
+└── sft_monitoring
+    └── True                                                                    
+[2026-10-21 14:49:24,917][__main__][INFO] - Starting Training.
+Saving the dataset (0/1 shards):   0%|          | 0/5682 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|██████████| 5682/5682 [00:00<00:00, 547661.44 examples/s]Saving the dataset (1/1 shards): 100%|██████████| 5682/5682 [00:00<00:00, 539686.93 examples/s]
+Saving the dataset (0/1 shards):   0%|          | 0/632 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|██████████| 632/632 [00:00<00:00, 202104.31 examples/s]Saving the dataset (1/1 shards): 100%|██████████| 632/632 [00:00<00:00, 194354.43 examples/s]
+Printing train dataloader batch.
+Batch input_ids.shape torch.Size([8, 512])
+First 64 tokens: <|endoftext|>Anna used four baking trays to bake cupcakes. Each tray has 20 cupcakes and each cupcake was then sold for $2. If only 3/5 of the cupcakes were sold and the rest were kept, how much did Anna earn from it?\ndef simple
+ids: tensor([    0, 46484,   804,  1876, 12320, 33190,   288, 26975,  7118,    83,
+         1154,    30,  3768, 25477,   553,   216,    34,    32,  7118,    83,
+         1154,   284,   971,  7118,    83,   575,   436,   965,  3459,   327,
+         1885,    34,    30,  1094,   805,   216,    35,    31,    37,   282,
+          260,  7118,    83,  1154,   592,  3459,   284,   260,  1532,   592,
+         5454,    28,   638,  1083,  1250, 16435,  5301,   429,   357,    47,
+           76,    94,  1604,  2232])
+Last 64 tokens: [PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD]
+ids: tensor([49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152])
+Printing valid dataloader batch.
+Batch input_ids.shape torch.Size([8, 512])
+First 64 tokens: <|endoftext|>Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\ndef simple_math_
+ids: tensor([    0, 28813,   519,   314,  2539,   253,   216,    33,    34,    32,
+           29,  6853,  1863,    30,   718, 15955,    28,  1041,   436,  1730,
+          288,  1012,   216,    33,    34,  5158,   284,  1834,    28,  1041,
+         1012,  6757,   347,   800,  5158,   347, 18400,    30,  1094,  1041,
+         5988,   288,  1012,  2745,   282,   260,  6219,  5158, 13759,    28,
+          638,   800,  5158,   868,  1041,  1012,    47,    76,    94,  1604,
+         2232,    79,  8898,    79])
+Last 64 tokens: [PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD]
+ids: tensor([49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152])
+[2026-10-21 14:49:32,746][__main__][INFO] - Fresh finetune from ema weights; optimizer, scheduler and EMA history start fresh.
+Using bfloat16 Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+`Trainer(val_check_interval=1.0)` was configured so validation will run at the end of the training epoch..
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: WARNING `resume` will be ignored since W&B syncing is set to `offline`. Starting a new run with run id fbz4kjrm.
+wandb: Tracking run with wandb version 0.19.9
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name     | Type      | Params | Mode 
+-----------------------------------------------
+0 | backbone | DIT       | 167 M  | train
+1 | softplus | Softplus  | 0      | train
+2 | noise    | LogLinear | 0      | train
+-----------------------------------------------
+167 M     Trainable params
+0         Non-trainable params
+167 M     Total params
+671.721   Total estimated model params size (MB)
+159       Modules in train mode
+0         Modules in eval mode
+Epoch 0, global step 2: 'val/nll' reached 0.90359 (best 0.90359), saving model to '/root/autodl-tmp/s-flm/outputs/a800-env-smoke/checkpoints/best.ckpt' as top 1
+`Trainer.fit` stopped: `max_steps=2` reached.
+[2026-10-21 14:49:48,805][__main__][INFO] - Training finished at optimizer step 2; peak allocated GPU memory: 9627.0 MiB.
+[1;34mwandb[0m: 
+[1;34mwandb[0m: You can sync this run to the cloud by running:
+[1;34mwandb[0m: [1mwandb sync /root/autodl-tmp/s-flm/outputs/a800-env-smoke/wandb/offline-run-20261021_144932-fbz4kjrm[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/offline-run-20261021_144932-fbz4kjrm/logs[0m

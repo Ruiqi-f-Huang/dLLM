@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "/root/s-flm/scripts/evaluate_grpo_partial75_positive.py", line 51, in main
+    verify,_=load_model(a.base,str(checkpoint))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/s-flm/scripts/grpo_fixed32.py", line 49, in load_model
+    model = algo.MDLM.load_from_checkpoint(checkpoint, map_location='cpu', weights_only=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/venvs/s-flm/lib/python3.12/site-packages/lightning/pytorch/utilities/model_helpers.py", line 125, in wrapper
+    return self.method(cls, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/venvs/s-flm/lib/python3.12/site-packages/lightning/pytorch/core/module.py", line 1581, in load_from_checkpoint
+    loaded = _load_from_checkpoint(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/venvs/s-flm/lib/python3.12/site-packages/lightning/pytorch/core/saving.py", line 91, in _load_from_checkpoint
+    model = _load_state(cls, checkpoint, strict=strict, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/venvs/s-flm/lib/python3.12/site-packages/lightning/pytorch/core/saving.py", line 184, in _load_state
+    obj.on_load_checkpoint(checkpoint)
+  File "/root/s-flm/trainer_base.py", line 210, in on_load_checkpoint
+    self.fast_forward_epochs = checkpoint['loops'][
+                               ~~~~~~~~~~^^^^^^^^^
+KeyError: 'loops'

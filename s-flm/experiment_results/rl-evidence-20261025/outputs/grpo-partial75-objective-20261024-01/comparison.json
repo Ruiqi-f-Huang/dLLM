@@ -1,0 +1,93 @@
+{
+  "scores": {
+    "1": {
+      "questions": 32,
+      "base_ce": 0.16241891483991822,
+      "current_ce": 0.1635553921566384,
+      "mean_logp_delta": -0.0011364773167201747,
+      "mean_logp_ci95": [
+        -0.002479886478681692,
+        -0.00018982285308766222
+      ],
+      "mean_logp_improved_questions": 16,
+      "top1_delta": 7.512001320719719e-05,
+      "top1_ci95": [
+        0.0,
+        0.00022536003962159157
+      ],
+      "top1_improved_questions": 1,
+      "ce_delta": 0.0011364773167201747
+    },
+    "0": {
+      "questions": 32,
+      "base_ce": 0.31365728401578963,
+      "current_ce": 0.3163135422691994,
+      "mean_logp_delta": -0.00265625825340976,
+      "mean_logp_ci95": [
+        -0.0036723330595123116,
+        -0.0017420494332327507
+      ],
+      "mean_logp_improved_questions": 6,
+      "top1_delta": 3.067357465624809e-05,
+      "top1_ci95": [
+        -0.00040949368849396706,
+        0.0004737386479973793
+      ],
+      "top1_improved_questions": 3,
+      "ce_delta": 0.00265625825340976
+    },
+    "gap": {
+      "questions": 32,
+      "base_ce": 0.0,
+      "current_ce": 0.0,
+      "mean_logp_delta": 0.0015197809366895854,
+      "mean_logp_ci95": [
+        -7.240841284783528e-06,
+        0.002834954647937593
+      ],
+      "mean_logp_improved_questions": 23,
+      "top1_delta": 0.0,
+      "top1_ci95": [
+        0.0,
+        0.0
+      ],
+      "top1_improved_questions": 0,
+      "ce_delta": -0.0015197809366895854
+    }
+  },
+  "geometry": {
+    "1": {
+      "base_gradient_norm": 0.010887712240219116,
+      "current_gradient_norm": 0.011788074858486652,
+      "gradient_cosine": 0.9630506905305135,
+      "update_cosine_negative_base_gradient": -0.028579072023562295,
+      "update_cosine_negative_current_gradient": -0.06662829058721349,
+      "base_first_order_loss_change": 0.00031772020156495273
+    },
+    "0": {
+      "base_gradient_norm": 0.009460984729230404,
+      "current_gradient_norm": 0.0127786286175251,
+      "gradient_cosine": 0.891519100903693,
+      "update_cosine_negative_base_gradient": 0.06490418890470052,
+      "update_cosine_negative_current_gradient": 0.16319054351559392,
+      "base_first_order_loss_change": -0.0006270023295655847
+    },
+    "balanced": {
+      "base_gradient_norm": 0.006881396286189556,
+      "current_gradient_norm": 0.008003028109669685,
+      "gradient_cosine": 0.9426061221246185,
+      "update_cosine_negative_base_gradient": 0.02200839001843039,
+      "update_cosine_negative_current_gradient": 0.08121502513523245,
+      "base_first_order_loss_change": -0.00015464109310414642
+    }
+  },
+  "update_norm": 1.021080732345581,
+  "limitations": [
+    "Read-only; no optimizer steps.",
+    "Four fixed random masks/program; question bootstrap; one training seed.",
+    "Signed token-mean surrogate at old=current, A=reward-.5; no clipping/KL in gradient diagnostic.",
+    "Success/failure gradients normalized within each stratum; balanced gradient equally averages strata.",
+    "Net adapter displacement alignment is a local first-order diagnostic, not proof of optimization trajectory.",
+    "CPU masks follow the same 75% rule but are fresh fixed held-out masks, not replayed training masks."
+  ]
+}

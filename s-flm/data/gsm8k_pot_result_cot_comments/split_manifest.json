@@ -1,0 +1,28 @@
+{
+  "source_manifest_sha256": "f74a5c7f2c48a01a845fd115e1e6fcd635f73b89f417db2198808c65535d28a9",
+  "source_files": {
+    "sft_train.jsonl": "00a477bf62f7b758985b6ba9ecf6332f23b5705be4aa184ae203c219ae438e71",
+    "sft_validation.jsonl": "a852fc227d3b02b5716975a37e83096d15299833c00077043d4a7297e3b4bfdd"
+  },
+  "transformation": "Convert each GSM8K reference_answer explanation line into a Python comment after the existing question docstring. Remove inline <<calculation>> markers and the final #### answer line. Preserve all executable PoT source text and the original split.",
+  "verification": "For every row, source and transformed targets parse and execute under the restricted audit runtime, return the same numeric answer, and match the stored GSM8K gold answer. The executable Python AST is identical before and after comment insertion.",
+  "split_method": "sample ceil(10% of sorted eligible GSM8K Train IDs) with random.Random(42)",
+  "test": "Original GSM8K Test, excluded from all training files.",
+  "total_rows": 6314,
+  "total_comment_lines": 21930,
+  "max_comment_lines": 9,
+  "files": {
+    "sft_train.jsonl": {
+      "rows": 5682,
+      "mean_comment_lines": 3.4753607884547693,
+      "max_comment_lines": 9,
+      "sha256": "2229bdc49acb94ec9bcf45fb2fcb9190e229ce30a1d6919bd3ff683ecb435b9d"
+    },
+    "sft_validation.jsonl": {
+      "rows": 632,
+      "mean_comment_lines": 3.454113924050633,
+      "max_comment_lines": 8,
+      "sha256": "1fa4ae55ecc99a4221620fc0d50779898957424d21c2c49c6e8c45da1c972e0c"
+    }
+  }
+}

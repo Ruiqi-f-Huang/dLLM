@@ -1,0 +1,20 @@
+{
+  "checkpoint": "checkpoints/tinygsm/mdlm.ckpt",
+  "data": "/root/s-flm/data/gsm8k_pot_result/sft_train.jsonl",
+  "output": "/root/autodl-tmp/s-flm/outputs/grpo-env-smoke-20261024",
+  "audit_only": false,
+  "limit": 2,
+  "updates": 2,
+  "group_size": 4,
+  "microbatch": 1,
+  "iterations": 2,
+  "nfe": 32,
+  "temperature": 0.3,
+  "prompt_mask": 0.0,
+  "lr": 3e-06,
+  "beta": 0.04,
+  "epsilon": 0.2,
+  "timeout": 2,
+  "seed": 42,
+  "save_every": 50
+}

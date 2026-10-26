@@ -1,0 +1,293 @@
+Seed set to 1
+CONFIG
+├── mode
+│   └── train                                                                   
+├── sudoku
+│   └── output_dir: /root/autodl-tmp/s-flm/outputs/sft/20261022-lora-result-high
+│       batch_size: 64                                                          
+│                                                                               
+├── gsm8k
+│   └── input_file: null                                                        
+│       output_dir: /root/autodl-tmp/s-flm/outputs/sft/20261022-lora-result-high
+│       timeout: 5.0                                                            
+│       bootstrap_size: 1                                                       
+│                                                                               
+├── seed
+│   └── 1                                                                       
+├── allow_tf32
+│   └── True                                                                    
+├── cudnn_benchmark
+│   └── True                                                                    
+├── compile_backbone
+│   └── False                                                                   
+├── backbone_compute_dtype
+│   └── bfloat16                                                                
+├── neg_infinity_mode
+│   └── large-finite                                                            
+├── loader
+│   └── global_batch_size: 8                                                    
+│       eval_global_batch_size: 8                                               
+│       batch_size: 8                                                           
+│       eval_batch_size: 8                                                      
+│       num_workers: 4                                                          
+│       pin_memory: true                                                        
+│                                                                               
+├── confidence_denoiser
+│   └── confidence_score: entropy                                               
+│       gamma: 0                                                                
+│                                                                               
+├── training
+│   └── ema: 0.9999                                                             
+│       antithetic_sampling: true                                               
+│       importance_sampling: false                                              
+│       sampling_eps: 0.001                                                     
+│       change_of_variables: false                                              
+│       loss_precision: bf16                                                    
+│       finetune_path: /root/s-flm/checkpoints/tinygsm/mdlm.ckpt                
+│       finetune_weights: ema                                                   
+│       sampling_eps_min: 0.001                                                 
+│       sampling_eps_max: 1.0                                                   
+│       resample: false                                                         
+│       high_noise_sampling_mix: 0.5                                            
+│       high_noise_sampling_min_t: 0.5                                          
+│                                                                               
+├── lora
+│   └── enabled: true                                                           
+│       rank: 8                                                                 
+│       alpha: 16                                                               
+│       dropout: 0.05                                                           
+│       target_modules:                                                         
+│       - blocks.*.attn_qkv                                                     
+│       - blocks.*.attn_out                                                     
+│       - blocks.*.mlp.0                                                        
+│       - blocks.*.mlp.2                                                        
+│                                                                               
+├── eval
+│   └── checkpoint_path: ''                                                     
+│       strict_loading: true                                                    
+│       disable_ema: false                                                      
+│       compute_generative_perplexity: false                                    
+│       perplexity_batch_size: 8                                                
+│       compute_perplexity_on_sanity: false                                     
+│       gen_ppl_eval_model_name_or_path: gpt2-large                             
+│       generate_samples: false                                                 
+│       generated_samples_path: /root/autodl-tmp/s-flm/outputs/sft/20261022-lora
+│       results_json_path: null                                                 
+│                                                                               
+├── optim
+│   └── weight_decay: 0                                                         
+│       lr: 1.0e-05                                                             
+│       beta1: 0.9                                                              
+│       beta2: 0.999                                                            
+│       eps: 1.0e-08                                                            
+│                                                                               
+├── trainer
+│   └── _target_: lightning.Trainer                                             
+│       accelerator: cuda                                                       
+│       num_nodes: 1                                                            
+│       devices: 1                                                              
+│       accumulate_grad_batches: 1                                              
+│       gradient_clip_val: 1.0                                                  
+│       precision: bf16-mixed                                                   
+│       num_sanity_val_steps: 1                                                 
+│       max_steps: 200                                                          
+│       log_every_n_steps: 10                                                   
+│       limit_train_batches: 1.0                                                
+│       limit_val_batches: 1.0                                                  
+│       val_check_interval: 1.0                                                 
+│       check_val_every_n_epoch: 1                                              
+│       max_epochs: 1                                                           
+│                                                                               
+├── wandb
+│   └── project: s-flm                                                          
+│       notes: null                                                             
+│       group: mdlm-gsm8k-pot                                                   
+│       job_type: sft                                                           
+│       tags:                                                                   
+│       - mdlm                                                                  
+│       - gsm8k-pot                                                             
+│       - sft                                                                   
+│       - lora                                                                  
+│       - result-normalized                                                     
+│       - high-noise-mix50                                                      
+│       name: 20261022-lora-result-highnoise-mix50-200                          
+│       save_dir: /root/autodl-tmp/s-flm/outputs/sft/20261022-lora-result-highno
+│       offline: true                                                           
+│       log_model: false                                                        
+│       id: null                                                                
+│                                                                               
+├── checkpointing
+│   └── save_dir: /root/autodl-tmp/s-flm/outputs/sft/20261022-lora-result-highno
+│       resume_from_ckpt: false                                                 
+│       resume_ckpt_path: /root/autodl-tmp/s-flm/outputs/sft/20261022-lora-resul
+│                                                                               
+├── callbacks
+│   └── checkpoint_every_n_steps:                                               
+│         _target_: lightning.pytorch.callbacks.ModelCheckpoint                 
+│         save_top_k: 0                                                         
+│         save_last: false                                                      
+│         dirpath: /root/autodl-tmp/s-flm/outputs/sft/20261022-lora-result-highn
+│         verbose: true                                                         
+│         auto_insert_metric_name: false                                        
+│         every_n_train_steps: 0                                                
+│       checkpoint_monitor:                                                     
+│         _target_: lightning.pytorch.callbacks.ModelCheckpoint                 
+│         monitor: val/nll                                                      
+│         mode: min                                                             
+│         save_top_k: 0                                                         
+│         save_last: false                                                      
+│         dirpath: /root/autodl-tmp/s-flm/outputs/sft/20261022-lora-result-highn
+│         filename: best                                                        
+│         auto_insert_metric_name: false                                        
+│         verbose: true                                                         
+│       milestone_checkpoint:                                                   
+│         _target_: callbacks.milestone_checkpoint.MilestoneCheckpoint          
+│         milestones:                                                           
+│         - 100                                                                 
+│         - 200                                                                 
+│         dirpath: /root/autodl-tmp/s-flm/outputs/sft/20261022-lora-result-highn
+│         filename: step-{step:06d}.ckpt                                        
+│                                                                               
+├── data
+│   └── train: gsm8k_pot                                                        
+│       valid: gsm8k_pot                                                        
+│       train_file: /root/s-flm/data/gsm8k_pot_result/sft_train.jsonl           
+│       validation_file: /root/s-flm/data/gsm8k_pot_result/sft_validation.jsonl 
+│       cache_dir: /root/autodl-tmp/s-flm/data_cache/gsm8k_pot_result           
+│       tokenizer_name_or_path: /root/autodl-tmp/s-flm/cache/huggingface/hub/mod
+│       tokenizer_revision: 1d461723eec654e65efdc40cf49301c89c0c92f4            
+│       separator: \n                                                           
+│       wrap: false                                                             
+│       streaming: false                                                        
+│       insert_train_eos: true                                                  
+│       insert_valid_eos: true                                                  
+│       train_on_prompt: false                                                  
+│       train_on_pad: true                                                      
+│                                                                               
+├── model
+│   └── name: small                                                             
+│       type: dit                                                               
+│       hidden_size: 768                                                        
+│       cond_dim: 128                                                           
+│       length: 512                                                             
+│       n_blocks: 12                                                            
+│       n_heads: 12                                                             
+│       dropout: 0.1                                                            
+│                                                                               
+├── strategy
+│   └── _target_: lightning.pytorch.strategies.SingleDeviceStrategy             
+│       device: cuda:0                                                          
+│                                                                               
+├── noise
+│   └── type: log-linear                                                        
+│       eps: 0.001                                                              
+│       alpha_min: null                                                         
+│       alpha_max: null                                                         
+│       adaptive: false                                                         
+│                                                                               
+├── lr_scheduler
+│   └── _target_: transformers.get_constant_schedule_with_warmup                
+│       num_warmup_steps: 20                                                    
+│                                                                               
+├── prior
+│   └── type: none                                                              
+│       latent_width: 0                                                         
+│       latent_height: 0                                                        
+│                                                                               
+├── algo
+│   └── name: mdlm                                                              
+│       diffusion_type: absorbing                                               
+│       backbone: dit                                                           
+│       parameterization: subs                                                  
+│       time_conditioning: false                                                
+│       T: 0                                                                    
+│       causal_attention: false                                                 
+│       loss_type: elbo                                                         
+│       post_process_mode: log_probs                                            
+│       adaLN: true                                                             
+│                                                                               
+├── sampler
+│   └── predictor: ancestral                                                    
+│       steps: 1024                                                             
+│       steps_policy: full                                                      
+│       noise_removal: ancestral                                                
+│       use_float64: true                                                       
+│       p_nucleus: 1.0                                                          
+│       temperature: 1.0                                                        
+│       num_sample_batches: 2                                                   
+│       num_sample_log: 2                                                       
+│                                                                               
+└── sft_monitoring
+    └── True                                                                    
+[2026-10-22 21:22:08,519][__main__][INFO] - Starting Training.
+Printing train dataloader batch.
+Batch input_ids.shape torch.Size([8, 512])
+First 64 tokens: <|endoftext|>Anna used four baking trays to bake cupcakes. Each tray has 20 cupcakes and each cupcake was then sold for $2. If only 3/5 of the cupcakes were sold and the rest were kept, how much did Anna earn from it?\ndef simple
+ids: tensor([    0, 46484,   804,  1876, 12320, 33190,   288, 26975,  7118,    83,
+         1154,    30,  3768, 25477,   553,   216,    34,    32,  7118,    83,
+         1154,   284,   971,  7118,    83,   575,   436,   965,  3459,   327,
+         1885,    34,    30,  1094,   805,   216,    35,    31,    37,   282,
+          260,  7118,    83,  1154,   592,  3459,   284,   260,  1532,   592,
+         5454,    28,   638,  1083,  1250, 16435,  5301,   429,   357,    47,
+           76,    94,  1604,  2232])
+Last 64 tokens: [PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD]
+ids: tensor([49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152])
+Printing valid dataloader batch.
+Batch input_ids.shape torch.Size([8, 512])
+First 64 tokens: <|endoftext|>Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\ndef simple_math_
+ids: tensor([    0, 28813,   519,   314,  2539,   253,   216,    33,    34,    32,
+           29,  6853,  1863,    30,   718, 15955,    28,  1041,   436,  1730,
+          288,  1012,   216,    33,    34,  5158,   284,  1834,    28,  1041,
+         1012,  6757,   347,   800,  5158,   347, 18400,    30,  1094,  1041,
+         5988,   288,  1012,  2745,   282,   260,  6219,  5158, 13759,    28,
+          638,   800,  5158,   868,  1041,  1012,    47,    76,    94,  1604,
+         2232,    79,  8898,    79])
+Last 64 tokens: [PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD]
+ids: tensor([49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152])
+[2026-10-22 21:22:12,530][__main__][INFO] - Fresh finetune from ema weights; optimizer, scheduler and EMA history start fresh.
+[2026-10-22 21:22:12,531][__main__][INFO] - LoRA enabled for 48 modules: 1,179,648/169,110,018 backbone parameters are trainable.
+Using bfloat16 Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+`Trainer(limit_train_batches=1.0)` was configured so 100% of the batches per epoch will be used..
+`Trainer(limit_val_batches=1.0)` was configured so 100% of the batches will be used..
+`Trainer(val_check_interval=1.0)` was configured so validation will run at the end of the training epoch..
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: WARNING `resume` will be ignored since W&B syncing is set to `offline`. Starting a new run with run id iqc60e3x.
+wandb: Tracking run with wandb version 0.19.9
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name     | Type      | Params | Mode 
+-----------------------------------------------
+0 | backbone | DIT       | 169 M  | train
+1 | softplus | Softplus  | 0      | train
+2 | noise    | LogLinear | 0      | train
+-----------------------------------------------
+1.2 M     Trainable params
+167 M     Non-trainable params
+169 M     Total params
+676.440   Total estimated model params size (MB)
+207       Modules in train mode
+0         Modules in eval mode
+Sanity Checking: |          | 0/? [00:00<?, ?it/s]Sanity Checking:   0%|          | 0/1 [00:00<?, ?it/s]Sanity Checking DataLoader 0:   0%|          | 0/1 [00:00<?, ?it/s]Sanity Checking DataLoader 0: 100%|██████████| 1/1 [00:01<00:00,  0.87it/s]                                                                           Training: |          | 0/? [00:00<?, ?it/s]Training:   0%|          | 0/711 [00:00<?, ?it/s]Epoch 0:   0%|          | 0/711 [00:00<?, ?it/s] Epoch 0:   0%|          | 1/711 [00:00<02:54,  4.07it/s]Epoch 0:   0%|          | 1/711 [00:00<02:54,  4.06it/s, v_num=0e3x]Epoch 0:   0%|          | 2/711 [00:00<01:56,  6.11it/s, v_num=0e3x]Epoch 0:   0%|          | 2/711 [00:00<01:56,  6.10it/s, v_num=0e3x]Epoch 0:   0%|          | 3/711 [00:00<01:35,  7.43it/s, v_num=0e3x]Epoch 0:   0%|          | 3/711 [00:00<01:35,  7.42it/s, v_num=0e3x]Epoch 0:   1%|          | 4/711 [00:00<01:24,  8.32it/s, v_num=0e3x]Epoch 0:   1%|          | 4/711 [00:00<01:25,  8.32it/s, v_num=0e3x]Epoch 0:   1%|          | 5/711 [00:00<01:18,  8.99it/s, v_num=0e3x]Epoch 0:   1%|          | 5/711 [00:00<01:18,  8.98it/s, v_num=0e3x]Epoch 0:   1%|          | 6/711 [00:00<01:14,  9.49it/s, v_num=0e3x]Epoch 0:   1%|          | 6/711 [00:00<01:14,  9.48it/s, v_num=0e3x]Epoch 0:   1%|          | 7/711 [00:00<01:11,  9.88it/s, v_num=0e3x]Epoch 0:   1%|          | 7/711 [00:00<01:11,  9.88it/s, v_num=0e3x]Epoch 0:   1%|          | 8/711 [00:00<01:08, 10.20it/s, v_num=0e3x]Epoch 0:   1%|          | 8/711 [00:00<01:08, 10.19it/s, v_num=0e3x]Epoch 0:   1%|▏         | 9/711 [00:00<01:07, 10.46it/s, v_num=0e3x]Epoch 0:   1%|▏         | 9/711 [00:00<01:07, 10.45it/s, v_num=0e3x]Epoch 0:   1%|▏         | 10/711 [00:00<01:05, 10.66it/s, v_num=0e3x]Epoch 0:   1%|▏         | 10/711 [00:00<01:05, 10.65it/s, v_num=0e3x]Epoch 0:   2%|▏         | 11/711 [00:01<01:04, 10.83it/s, v_num=0e3x]Epoch 0:   2%|▏         | 11/711 [00:01<01:04, 10.83it/s, v_num=0e3x]Epoch 0:   2%|▏         | 12/711 [00:01<01:03, 10.99it/s, v_num=0e3x]Epoch 0:   2%|▏         | 12/711 [00:01<01:03, 10.99it/s, v_num=0e3x]Epoch 0:   2%|▏         | 13/711 [00:01<01:02, 11.13it/s, v_num=0e3x]Epoch 0:   2%|▏         | 13/711 [00:01<01:02, 11.13it/s, v_num=0e3x]Epoch 0:   2%|▏         | 14/711 [00:01<01:01, 11.25it/s, v_num=0e3x]Epoch 0:   2%|▏         | 14/711 [00:01<01:01, 11.25it/s, v_num=0e3x]Epoch 0:   2%|▏         | 15/711 [00:01<01:01, 11.35it/s, v_num=0e3x]Epoch 0:   2%|▏         | 15/711 [00:01<01:01, 11.35it/s, v_num=0e3x]Epoch 0:   2%|▏         | 16/711 [00:01<01:00, 11.43it/s, v_num=0e3x]Epoch 0:   2%|▏         | 16/711 [00:01<01:00, 11.43it/s, v_num=0e3x]Epoch 0:   2%|▏         | 17/711 [00:01<01:00, 11.50it/s, v_num=0e3x]Epoch 0:   2%|▏         | 17/711 [00:01<01:00, 11.50it/s, v_num=0e3x]Epoch 0:   3%|▎         | 18/711 [00:01<00:59, 11.56it/s, v_num=0e3x]Epoch 0:   3%|▎         | 18/711 [00:01<00:59, 11.56it/s, v_num=0e3x]Epoch 0:   3%|▎         | 19/711 [00:01<00:59, 11.61it/s, v_num=0e3x]Epoch 0:   3%|▎         | 19/711 [00:01<00:59, 11.61it/s, v_num=0e3x]Epoch 0:   3%|▎         | 20/711 [00:01<00:59, 11.66it/s, v_num=0e3x]Epoch 0:   3%|▎         | 20/711 [00:01<00:59, 11.66it/s, v_num=0e3x]Epoch 0:   3%|▎         | 21/711 [00:01<00:58, 11.70it/s, v_num=0e3x]Epoch 0:   3%|▎         | 21/711 [00:01<00:58, 11.70it/s, v_num=0e3x]Epoch 0:   3%|▎         | 22/711 [00:01<00:58, 11.74it/s, v_num=0e3x]Epoch 0:   3%|▎         | 22/711 [00:01<00:58, 11.74it/s, v_num=0e3x]Epoch 0:   3%|▎         | 23/711 [00:01<00:58, 11.78it/s, v_num=0e3x]Epoch 0:   3%|▎         | 23/711 [00:01<00:58, 11.78it/s, v_num=0e3x]Epoch 0:   3%|▎         | 24/711 [00:02<00:58, 11.81it/s, v_num=0e3x]Epoch 0:   3%|▎         | 24/711 [00:02<00:58, 11.81it/s, v_num=0e3x]Epoch 0:   4%|▎         | 25/711 [00:02<00:58, 11.83it/s, v_num=0e3x]Epoch 0:   4%|▎         | 25/711 [00:02<00:58, 11.82it/s, v_num=0e3x]Epoch 0:   4%|▎         | 26/711 [00:02<00:57, 11.83it/s, v_num=0e3x]Epoch 0:   4%|▎         | 26/711 [00:02<00:57, 11.82it/s, v_num=0e3x]Epoch 0:   4%|▍         | 27/711 [00:02<00:58, 11.77it/s, v_num=0e3x]Epoch 0:   4%|▍         | 27/711 [00:02<00:58, 11.77it/s, v_num=0e3x]Epoch 0:   4%|▍         | 28/711 [00:02<00:57, 11.79it/s, v_num=0e3x]Epoch 0:   4%|▍         | 28/711 [00:02<00:57, 11.79it/s, v_num=0e3x]Epoch 0:   4%|▍         | 29/711 [00:02<00:57, 11.83it/s, v_num=0e3x]Epoch 0:   4%|▍         | 29/711 [00:02<00:57, 11.82it/s, v_num=0e3x]Epoch 0:   4%|▍         | 30/711 [00:02<00:57, 11.83it/s, v_num=0e3x]Epoch 0:   4%|▍         | 30/711 [00:02<00:57, 11.83it/s, v_num=0e3x]Epoch 0:   4%|▍         | 31/711 [00:02<00:57, 11.81it/s, v_num=0e3x]Epoch 0:   4%|▍         | 31/711 [00:02<00:57, 11.80it/s, v_num=0e3x]Epoch 0:   5%|▍         | 32/711 [00:02<00:57, 11.78it/s, v_num=0e3x]Epoch 0:   5%|▍         | 32/711 [00:02<00:57, 11.78it/s, v_num=0e3x]Epoch 0:   5%|▍         | 33/711 [00:02<00:57, 11.78it/s, v_num=0e3x]Epoch 0:   5%|▍         | 33/711 [00:02<00:57, 11.78it/s, v_num=0e3x]Epoch 0:   5%|▍         | 34/711 [00:02<00:57, 11.81it/s, v_num=0e3x]Epoch 0:   5%|▍         | 34/711 [00:02<00:57, 11.81it/s, v_num=0e3x]Epoch 0:   5%|▍         | 35/711 [00:02<00:57, 11.85it/s, v_num=0e3x]Epoch 0:   5%|▍         | 35/711 [00:02<00:57, 11.85it/s, v_num=0e3x]Epoch 0:   5%|▌         | 36/711 [00:03<00:56, 11.88it/s, v_num=0e3x]Epoch 0:   5%|▌         | 36/711 [00:03<00:56, 11.88it/s, v_num=0e3x]Epoch 0:   5%|▌         | 37/711 [00:03<00:56, 11.91it/s, v_num=0e3x]Epoch 0:   5%|▌         | 37/711 [00:03<00:56, 11.91it/s, v_num=0e3x]Epoch 0:   5%|▌         | 38/711 [00:03<00:56, 11.94it/s, v_num=0e3x]Epoch 0:   5%|▌         | 38/711 [00:03<00:56, 11.93it/s, v_num=0e3x]Epoch 0:   5%|▌         | 39/711 [00:03<00:56, 11.96it/s, v_num=0e3x]Epoch 0:   5%|▌         | 39/711 [00:03<00:56, 11.96it/s, v_num=0e3x]Epoch 0:   6%|▌         | 40/711 [00:03<00:55, 11.98it/s, v_num=0e3x]Epoch 0:   6%|▌         | 40/711 [00:03<00:56, 11.98it/s, v_num=0e3x]Epoch 0:   6%|▌         | 41/711 [00:03<00:55, 12.01it/s, v_num=0e3x]Epoch 0:   6%|▌         | 41/711 [00:03<00:55, 12.01it/s, v_num=0e3x]Epoch 0:   6%|▌         | 42/711 [00:03<00:55, 12.03it/s, v_num=0e3x]Epoch 0:   6%|▌         | 42/711 [00:03<00:55, 12.03it/s, v_num=0e3x]Epoch 0:   6%|▌         | 43/711 [00:03<00:55, 12.04it/s, v_num=0e3x]Epoch 0:   6%|▌         | 43/711 [00:03<00:55, 12.04it/s, v_num=0e3x]Epoch 0:   6%|▌         | 44/711 [00:03<00:55, 12.06it/s, v_num=0e3x]Epoch 0:   6%|▌         | 44/711 [00:03<00:55, 12.05it/s, v_num=0e3x]Epoch 0:   6%|▋         | 45/711 [00:03<00:55, 12.07it/s, v_num=0e3x]Epoch 0:   6%|▋         | 45/711 [00:03<00:55, 12.07it/s, v_num=0e3x]Epoch 0:   6%|▋         | 46/711 [00:03<00:55, 12.09it/s, v_num=0e3x]Epoch 0:   6%|▋         | 46/711 [00:03<00:55, 12.09it/s, v_num=0e3x]Epoch 0:   7%|▋         | 47/711 [00:03<00:54, 12.10it/s, v_num=0e3x]Epoch 0:   7%|▋         | 47/711 [00:03<00:54, 12.10it/s, v_num=0e3x]Epoch 0:   7%|▋         | 48/711 [00:03<00:54, 12.12it/s, v_num=0e3x]Epoch 0:   7%|▋         | 48/711 [00:03<00:54, 12.12it/s, v_num=0e3x]Epoch 0:   7%|▋         | 49/711 [00:04<00:54, 12.13it/s, v_num=0e3x]Epoch 0:   7%|▋         | 49/711 [00:04<00:54, 12.13it/s, v_num=0e3x]Epoch 0:   7%|▋         | 50/711 [00:04<00:54, 12.14it/s, v_num=0e3x]Epoch 0:   7%|▋         | 50/711 [00:04<00:54, 12.14it/s, v_num=0e3x]Epoch 0:   7%|▋         | 51/711 [00:04<00:54, 12.15it/s, v_num=0e3x]Epoch 0:   7%|▋         | 51/711 [00:04<00:54, 12.15it/s, v_num=0e3x]Epoch 0:   7%|▋         | 52/711 [00:04<00:54, 12.16it/s, v_num=0e3x]Epoch 0:   7%|▋         | 52/711 [00:04<00:54, 12.16it/s, v_num=0e3x]Epoch 0:   7%|▋         | 53/711 [00:04<00:54, 12.17it/s, v_num=0e3x]Epoch 0:   7%|▋         | 53/711 [00:04<00:54, 12.17it/s, v_num=0e3x]Epoch 0:   8%|▊         | 54/711 [00:04<00:53, 12.18it/s, v_num=0e3x]Epoch 0:   8%|▊         | 54/711 [00:04<00:53, 12.18it/s, v_num=0e3x]Epoch 0:   8%|▊         | 55/711 [00:04<00:53, 12.18it/s, v_num=0e3x]Epoch 0:   8%|▊         | 55/711 [00:04<00:53, 12.18it/s, v_num=0e3x]Epoch 0:   8%|▊         | 56/711 [00:04<00:53, 12.17it/s, v_num=0e3x]Epoch 0:   8%|▊         | 56/711 [00:04<00:53, 12.17it/s, v_num=0e3x]Epoch 0:   8%|▊         | 57/711 [00:04<00:53, 12.17it/s, v_num=0e3x]Epoch 0:   8%|▊         | 57/711 [00:04<00:53, 12.17it/s, v_num=0e3x]Epoch 0:   8%|▊         | 58/711 [00:04<00:53, 12.17it/s, v_num=0e3x]Epoch 0:   8%|▊         | 58/711 [00:04<00:53, 12.17it/s, v_num=0e3x]Epoch 0:   8%|▊         | 59/711 [00:04<00:53, 12.17it/s, v_num=0e3x]Epoch 0:   8%|▊         | 59/711 [00:04<00:53, 12.17it/s, v_num=0e3x]Epoch 0:   8%|▊         | 60/711 [00:04<00:53, 12.18it/s, v_num=0e3x]Epoch 0:   8%|▊         | 60/711 [00:04<00:53, 12.18it/s, v_num=0e3x]Epoch 0:   9%|▊         | 61/711 [00:05<00:53, 12.19it/s, v_num=0e3x]Epoch 0:   9%|▊         | 61/711 [00:05<00:53, 12.19it/s, v_num=0e3x]Epoch 0:   9%|▊         | 62/711 [00:05<00:53, 12.20it/s, v_num=0e3x]Epoch 0:   9%|▊         | 62/711 [00:05<00:53, 12.20it/s, v_num=0e3x]Epoch 0:   9%|▉         | 63/711 [00:05<00:53, 12.21it/s, v_num=0e3x]Epoch 0:   9%|▉         | 63/711 [00:05<00:53, 12.21it/s, v_num=0e3x]Epoch 0:   9%|▉         | 64/711 [00:05<00:52, 12.23it/s, v_num=0e3x]Epoch 0:   9%|▉         | 64/711 [00:05<00:52, 12.23it/s, v_num=0e3x]Epoch 0:   9%|▉         | 65/711 [00:05<00:52, 12.24it/s, v_num=0e3x]Epoch 0:   9%|▉         | 65/711 [00:05<00:52, 12.24it/s, v_num=0e3x]Epoch 0:   9%|▉         | 66/711 [00:05<00:52, 12.25it/s, v_num=0e3x]Epoch 0:   9%|▉         | 66/711 [00:05<00:52, 12.25it/s, v_num=0e3x]Epoch 0:   9%|▉         | 67/711 [00:05<00:52, 12.27it/s, v_num=0e3x]Epoch 0:   9%|▉         | 67/711 [00:05<00:52, 12.26it/s, v_num=0e3x]Epoch 0:  10%|▉         | 68/711 [00:05<00:52, 12.27it/s, v_num=0e3x]Epoch 0:  10%|▉         | 68/711 [00:05<00:52, 12.27it/s, v_num=0e3x]Epoch 0:  10%|▉         | 69/711 [00:05<00:52, 12.29it/s, v_num=0e3x]Epoch 0:  10%|▉         | 69/711 [00:05<00:52, 12.28it/s, v_num=0e3x]Epoch 0:  10%|▉         | 70/711 [00:05<00:52, 12.28it/s, v_num=0e3x]Epoch 0:  10%|▉         | 70/711 [00:05<00:52, 12.28it/s, v_num=0e3x]Epoch 0:  10%|▉         | 71/711 [00:05<00:52, 12.29it/s, v_num=0e3x]Epoch 0:  10%|▉         | 71/711 [00:05<00:52, 12.29it/s, v_num=0e3x]Epoch 0:  10%|█         | 72/711 [00:05<00:52, 12.29it/s, v_num=0e3x]Epoch 0:  10%|█         | 72/711 [00:05<00:52, 12.29it/s, v_num=0e3x]Epoch 0:  10%|█         | 73/711 [00:05<00:51, 12.28it/s, v_num=0e3x]Epoch 0:  10%|█         | 73/711 [00:05<00:51, 12.28it/s, v_num=0e3x]Epoch 0:  10%|█         | 74/711 [00:06<00:51, 12.27it/s, v_num=0e3x]Epoch 0:  10%|█         | 74/711 [00:06<00:51, 12.27it/s, v_num=0e3x]Epoch 0:  11%|█         | 75/711 [00:06<00:51, 12.28it/s, v_num=0e3x]Epoch 0:  11%|█         | 75/711 [00:06<00:51, 12.28it/s, v_num=0e3x]Epoch 0:  11%|█         | 76/711 [00:06<00:51, 12.29it/s, v_num=0e3x]Epoch 0:  11%|█         | 76/711 [00:06<00:51, 12.29it/s, v_num=0e3x]Epoch 0:  11%|█         | 77/711 [00:06<00:51, 12.29it/s, v_num=0e3x]Epoch 0:  11%|█         | 77/711 [00:06<00:51, 12.28it/s, v_num=0e3x]Epoch 0:  11%|█         | 78/711 [00:06<00:51, 12.29it/s, v_num=0e3x]Epoch 0:  11%|█         | 78/711 [00:06<00:51, 12.29it/s, v_num=0e3x]Epoch 0:  11%|█         | 79/711 [00:06<00:51, 12.30it/s, v_num=0e3x]Epoch 0:  11%|█         | 79/711 [00:06<00:51, 12.30it/s, v_num=0e3x]Epoch 0:  11%|█▏        | 80/711 [00:06<00:51, 12.30it/s, v_num=0e3x]Epoch 0:  11%|█▏        | 80/711 [00:06<00:51, 12.30it/s, v_num=0e3x]Epoch 0:  11%|█▏        | 81/711 [00:06<00:51, 12.31it/s, v_num=0e3x]Epoch 0:  11%|█▏        | 81/711 [00:06<00:51, 12.31it/s, v_num=0e3x]Epoch 0:  12%|█▏        | 82/711 [00:06<00:51, 12.31it/s, v_num=0e3x]Epoch 0:  12%|█▏        | 82/711 [00:06<00:51, 12.31it/s, v_num=0e3x]Epoch 0:  12%|█▏        | 83/711 [00:06<00:50, 12.32it/s, v_num=0e3x]Epoch 0:  12%|█▏        | 83/711 [00:06<00:50, 12.32it/s, v_num=0e3x]Epoch 0:  12%|█▏        | 84/711 [00:06<00:50, 12.33it/s, v_num=0e3x]Epoch 0:  12%|█▏        | 84/711 [00:06<00:50, 12.32it/s, v_num=0e3x]Epoch 0:  12%|█▏        | 85/711 [00:06<00:50, 12.33it/s, v_num=0e3x]Epoch 0:  12%|█▏        | 85/711 [00:06<00:50, 12.33it/s, v_num=0e3x]Epoch 0:  12%|█▏        | 86/711 [00:06<00:50, 12.33it/s, v_num=0e3x]Epoch 0:  12%|█▏        | 86/711 [00:06<00:50, 12.33it/s, v_num=0e3x]Epoch 0:  12%|█▏        | 87/711 [00:07<00:50, 12.33it/s, v_num=0e3x]Epoch 0:  12%|█▏        | 87/711 [00:07<00:50, 12.33it/s, v_num=0e3x]Epoch 0:  12%|█▏        | 88/711 [00:07<00:50, 12.34it/s, v_num=0e3x]Epoch 0:  12%|█▏        | 88/711 [00:07<00:50, 12.33it/s, v_num=0e3x]Epoch 0:  13%|█▎        | 89/711 [00:07<00:50, 12.34it/s, v_num=0e3x]Epoch 0:  13%|█▎        | 89/711 [00:07<00:50, 12.34it/s, v_num=0e3x]Epoch 0:  13%|█▎        | 90/711 [00:07<00:50, 12.34it/s, v_num=0e3x]Epoch 0:  13%|█▎        | 90/711 [00:07<00:50, 12.34it/s, v_num=0e3x]Epoch 0:  13%|█▎        | 91/711 [00:07<00:50, 12.34it/s, v_num=0e3x]Epoch 0:  13%|█▎        | 91/711 [00:07<00:50, 12.34it/s, v_num=0e3x]Epoch 0:  13%|█▎        | 92/711 [00:07<00:50, 12.35it/s, v_num=0e3x]Epoch 0:  13%|█▎        | 92/711 [00:07<00:50, 12.35it/s, v_num=0e3x]Epoch 0:  13%|█▎        | 93/711 [00:07<00:50, 12.35it/s, v_num=0e3x]Epoch 0:  13%|█▎        | 93/711 [00:07<00:50, 12.35it/s, v_num=0e3x]Epoch 0:  13%|█▎        | 94/711 [00:07<00:49, 12.36it/s, v_num=0e3x]Epoch 0:  13%|█▎        | 94/711 [00:07<00:49, 12.36it/s, v_num=0e3x]Epoch 0:  13%|█▎        | 95/711 [00:07<00:49, 12.36it/s, v_num=0e3x]Epoch 0:  13%|█▎        | 95/711 [00:07<00:49, 12.36it/s, v_num=0e3x]Epoch 0:  14%|█▎        | 96/711 [00:07<00:49, 12.37it/s, v_num=0e3x]Epoch 0:  14%|█▎        | 96/711 [00:07<00:49, 12.37it/s, v_num=0e3x]Epoch 0:  14%|█▎        | 97/711 [00:07<00:49, 12.38it/s, v_num=0e3x]Epoch 0:  14%|█▎        | 97/711 [00:07<00:49, 12.38it/s, v_num=0e3x]Epoch 0:  14%|█▍        | 98/711 [00:07<00:49, 12.39it/s, v_num=0e3x]Epoch 0:  14%|█▍        | 98/711 [00:07<00:49, 12.39it/s, v_num=0e3x]Epoch 0:  14%|█▍        | 99/711 [00:07<00:49, 12.39it/s, v_num=0e3x]Epoch 0:  14%|█▍        | 99/711 [00:07<00:49, 12.39it/s, v_num=0e3x]Epoch 0:  14%|█▍        | 100/711 [00:09<00:57, 10.57it/s, v_num=0e3x]Epoch 0:  14%|█▍        | 100/711 [00:09<00:57, 10.57it/s, v_num=0e3x]Epoch 0:  14%|█▍        | 101/711 [00:09<00:57, 10.59it/s, v_num=0e3x]Epoch 0:  14%|█▍        | 101/711 [00:09<00:57, 10.59it/s, v_num=0e3x]Epoch 0:  14%|█▍        | 102/711 [00:09<00:57, 10.61it/s, v_num=0e3x]Epoch 0:  14%|█▍        | 102/711 [00:09<00:57, 10.61it/s, v_num=0e3x]Epoch 0:  14%|█▍        | 103/711 [00:09<00:57, 10.62it/s, v_num=0e3x]Epoch 0:  14%|█▍        | 103/711 [00:09<00:57, 10.62it/s, v_num=0e3x]Epoch 0:  15%|█▍        | 104/711 [00:09<00:57, 10.64it/s, v_num=0e3x]Epoch 0:  15%|█▍        | 104/711 [00:09<00:57, 10.64it/s, v_num=0e3x]Epoch 0:  15%|█▍        | 105/711 [00:09<00:56, 10.66it/s, v_num=0e3x]Epoch 0:  15%|█▍        | 105/711 [00:09<00:56, 10.66it/s, v_num=0e3x]Epoch 0:  15%|█▍        | 106/711 [00:09<00:56, 10.68it/s, v_num=0e3x]Epoch 0:  15%|█▍        | 106/711 [00:09<00:56, 10.67it/s, v_num=0e3x]Epoch 0:  15%|█▌        | 107/711 [00:10<00:56, 10.69it/s, v_num=0e3x]Epoch 0:  15%|█▌        | 107/711 [00:10<00:56, 10.69it/s, v_num=0e3x]Epoch 0:  15%|█▌        | 108/711 [00:10<00:56, 10.71it/s, v_num=0e3x]Epoch 0:  15%|█▌        | 108/711 [00:10<00:56, 10.71it/s, v_num=0e3x]Epoch 0:  15%|█▌        | 109/711 [00:10<00:56, 10.72it/s, v_num=0e3x]Epoch 0:  15%|█▌        | 109/711 [00:10<00:56, 10.72it/s, v_num=0e3x]Epoch 0:  15%|█▌        | 110/711 [00:10<00:55, 10.73it/s, v_num=0e3x]Epoch 0:  15%|█▌        | 110/711 [00:10<00:56, 10.73it/s, v_num=0e3x]Epoch 0:  16%|█▌        | 111/711 [00:10<00:55, 10.75it/s, v_num=0e3x]Epoch 0:  16%|█▌        | 111/711 [00:10<00:55, 10.75it/s, v_num=0e3x]Epoch 0:  16%|█▌        | 112/711 [00:10<00:55, 10.76it/s, v_num=0e3x]Epoch 0:  16%|█▌        | 112/711 [00:10<00:55, 10.76it/s, v_num=0e3x]Epoch 0:  16%|█▌        | 113/711 [00:10<00:55, 10.77it/s, v_num=0e3x]Epoch 0:  16%|█▌        | 113/711 [00:10<00:55, 10.77it/s, v_num=0e3x]Epoch 0:  16%|█▌        | 114/711 [00:10<00:55, 10.78it/s, v_num=0e3x]Epoch 0:  16%|█▌        | 114/711 [00:10<00:55, 10.78it/s, v_num=0e3x]Epoch 0:  16%|█▌        | 115/711 [00:10<00:55, 10.79it/s, v_num=0e3x]Epoch 0:  16%|█▌        | 115/711 [00:10<00:55, 10.79it/s, v_num=0e3x]Epoch 0:  16%|█▋        | 116/711 [00:10<00:55, 10.80it/s, v_num=0e3x]Epoch 0:  16%|█▋        | 116/711 [00:10<00:55, 10.80it/s, v_num=0e3x]Epoch 0:  16%|█▋        | 117/711 [00:10<00:54, 10.82it/s, v_num=0e3x]Epoch 0:  16%|█▋        | 117/711 [00:10<00:54, 10.82it/s, v_num=0e3x]Epoch 0:  17%|█▋        | 118/711 [00:10<00:54, 10.83it/s, v_num=0e3x]Epoch 0:  17%|█▋        | 118/711 [00:10<00:54, 10.83it/s, v_num=0e3x]Epoch 0:  17%|█▋        | 119/711 [00:10<00:54, 10.84it/s, v_num=0e3x]Epoch 0:  17%|█▋        | 119/711 [00:10<00:54, 10.84it/s, v_num=0e3x]Epoch 0:  17%|█▋        | 120/711 [00:11<00:54, 10.85it/s, v_num=0e3x]Epoch 0:  17%|█▋        | 120/711 [00:11<00:54, 10.85it/s, v_num=0e3x]Epoch 0:  17%|█▋        | 121/711 [00:11<00:54, 10.87it/s, v_num=0e3x]Epoch 0:  17%|█▋        | 121/711 [00:11<00:54, 10.87it/s, v_num=0e3x]Epoch 0:  17%|█▋        | 122/711 [00:11<00:54, 10.88it/s, v_num=0e3x]Epoch 0:  17%|█▋        | 122/711 [00:11<00:54, 10.88it/s, v_num=0e3x]Epoch 0:  17%|█▋        | 123/711 [00:11<00:53, 10.89it/s, v_num=0e3x]Epoch 0:  17%|█▋        | 123/711 [00:11<00:53, 10.89it/s, v_num=0e3x]Epoch 0:  17%|█▋        | 124/711 [00:11<00:53, 10.91it/s, v_num=0e3x]Epoch 0:  17%|█▋        | 124/711 [00:11<00:53, 10.91it/s, v_num=0e3x]Epoch 0:  18%|█▊        | 125/711 [00:11<00:53, 10.92it/s, v_num=0e3x]Epoch 0:  18%|█▊        | 125/711 [00:11<00:53, 10.92it/s, v_num=0e3x]Epoch 0:  18%|█▊        | 126/711 [00:11<00:53, 10.93it/s, v_num=0e3x]Epoch 0:  18%|█▊        | 126/711 [00:11<00:53, 10.93it/s, v_num=0e3x]Epoch 0:  18%|█▊        | 127/711 [00:11<00:53, 10.94it/s, v_num=0e3x]Epoch 0:  18%|█▊        | 127/711 [00:11<00:53, 10.94it/s, v_num=0e3x]Epoch 0:  18%|█▊        | 128/711 [00:11<00:53, 10.95it/s, v_num=0e3x]Epoch 0:  18%|█▊        | 128/711 [00:11<00:53, 10.95it/s, v_num=0e3x]Epoch 0:  18%|█▊        | 129/711 [00:11<00:53, 10.96it/s, v_num=0e3x]Epoch 0:  18%|█▊        | 129/711 [00:11<00:53, 10.96it/s, v_num=0e3x]Epoch 0:  18%|█▊        | 130/711 [00:11<00:52, 10.97it/s, v_num=0e3x]Epoch 0:  18%|█▊        | 130/711 [00:11<00:52, 10.97it/s, v_num=0e3x]Epoch 0:  18%|█▊        | 131/711 [00:11<00:52, 10.99it/s, v_num=0e3x]Epoch 0:  18%|█▊        | 131/711 [00:11<00:52, 10.99it/s, v_num=0e3x]Epoch 0:  19%|█▊        | 132/711 [00:11<00:52, 11.00it/s, v_num=0e3x]Epoch 0:  19%|█▊        | 132/711 [00:11<00:52, 11.00it/s, v_num=0e3x]Epoch 0:  19%|█▊        | 133/711 [00:12<00:52, 11.02it/s, v_num=0e3x]Epoch 0:  19%|█▊        | 133/711 [00:12<00:52, 11.02it/s, v_num=0e3x]Epoch 0:  19%|█▉        | 134/711 [00:12<00:52, 11.03it/s, v_num=0e3x]Epoch 0:  19%|█▉        | 134/711 [00:12<00:52, 11.03it/s, v_num=0e3x]Epoch 0:  19%|█▉        | 135/711 [00:12<00:52, 11.04it/s, v_num=0e3x]Epoch 0:  19%|█▉        | 135/711 [00:12<00:52, 11.04it/s, v_num=0e3x]Epoch 0:  19%|█▉        | 136/711 [00:12<00:52, 11.05it/s, v_num=0e3x]Epoch 0:  19%|█▉        | 136/711 [00:12<00:52, 11.05it/s, v_num=0e3x]Epoch 0:  19%|█▉        | 137/711 [00:12<00:51, 11.06it/s, v_num=0e3x]Epoch 0:  19%|█▉        | 137/711 [00:12<00:51, 11.06it/s, v_num=0e3x]Epoch 0:  19%|█▉        | 138/711 [00:12<00:51, 11.07it/s, v_num=0e3x]Epoch 0:  19%|█▉        | 138/711 [00:12<00:51, 11.07it/s, v_num=0e3x]Epoch 0:  20%|█▉        | 139/711 [00:12<00:51, 11.08it/s, v_num=0e3x]Epoch 0:  20%|█▉        | 139/711 [00:12<00:51, 11.08it/s, v_num=0e3x]Epoch 0:  20%|█▉        | 140/711 [00:12<00:51, 11.09it/s, v_num=0e3x]Epoch 0:  20%|█▉        | 140/711 [00:12<00:51, 11.09it/s, v_num=0e3x]Epoch 0:  20%|█▉        | 141/711 [00:12<00:51, 11.09it/s, v_num=0e3x]Epoch 0:  20%|█▉        | 141/711 [00:12<00:51, 11.09it/s, v_num=0e3x]Epoch 0:  20%|█▉        | 142/711 [00:12<00:51, 11.09it/s, v_num=0e3x]Epoch 0:  20%|█▉        | 142/711 [00:12<00:51, 11.09it/s, v_num=0e3x]Epoch 0:  20%|██        | 143/711 [00:12<00:51, 11.10it/s, v_num=0e3x]Epoch 0:  20%|██        | 143/711 [00:12<00:51, 11.10it/s, v_num=0e3x]Epoch 0:  20%|██        | 144/711 [00:12<00:51, 11.11it/s, v_num=0e3x]Epoch 0:  20%|██        | 144/711 [00:12<00:51, 11.11it/s, v_num=0e3x]Epoch 0:  20%|██        | 145/711 [00:13<00:50, 11.12it/s, v_num=0e3x]Epoch 0:  20%|██        | 145/711 [00:13<00:50, 11.12it/s, v_num=0e3x]Epoch 0:  21%|██        | 146/711 [00:13<00:50, 11.12it/s, v_num=0e3x]Epoch 0:  21%|██        | 146/711 [00:13<00:50, 11.12it/s, v_num=0e3x]Epoch 0:  21%|██        | 147/711 [00:13<00:50, 11.13it/s, v_num=0e3x]Epoch 0:  21%|██        | 147/711 [00:13<00:50, 11.13it/s, v_num=0e3x]Epoch 0:  21%|██        | 148/711 [00:13<00:50, 11.13it/s, v_num=0e3x]Epoch 0:  21%|██        | 148/711 [00:13<00:50, 11.13it/s, v_num=0e3x]Epoch 0:  21%|██        | 149/711 [00:13<00:50, 11.14it/s, v_num=0e3x]Epoch 0:  21%|██        | 149/711 [00:13<00:50, 11.14it/s, v_num=0e3x]Epoch 0:  21%|██        | 150/711 [00:13<00:50, 11.15it/s, v_num=0e3x]Epoch 0:  21%|██        | 150/711 [00:13<00:50, 11.14it/s, v_num=0e3x]Epoch 0:  21%|██        | 151/711 [00:13<00:50, 11.15it/s, v_num=0e3x]Epoch 0:  21%|██        | 151/711 [00:13<00:50, 11.15it/s, v_num=0e3x]Epoch 0:  21%|██▏       | 152/711 [00:13<00:50, 11.16it/s, v_num=0e3x]Epoch 0:  21%|██▏       | 152/711 [00:13<00:50, 11.16it/s, v_num=0e3x]Epoch 0:  22%|██▏       | 153/711 [00:13<00:49, 11.17it/s, v_num=0e3x]Epoch 0:  22%|██▏       | 153/711 [00:13<00:49, 11.17it/s, v_num=0e3x]Epoch 0:  22%|██▏       | 154/711 [00:13<00:49, 11.18it/s, v_num=0e3x]Epoch 0:  22%|██▏       | 154/711 [00:13<00:49, 11.18it/s, v_num=0e3x]Epoch 0:  22%|██▏       | 155/711 [00:13<00:49, 11.19it/s, v_num=0e3x]Epoch 0:  22%|██▏       | 155/711 [00:13<00:49, 11.19it/s, v_num=0e3x]Epoch 0:  22%|██▏       | 156/711 [00:13<00:49, 11.20it/s, v_num=0e3x]Epoch 0:  22%|██▏       | 156/711 [00:13<00:49, 11.20it/s, v_num=0e3x]Epoch 0:  22%|██▏       | 157/711 [00:14<00:49, 11.21it/s, v_num=0e3x]Epoch 0:  22%|██▏       | 157/711 [00:14<00:49, 11.21it/s, v_num=0e3x]Epoch 0:  22%|██▏       | 158/711 [00:14<00:49, 11.22it/s, v_num=0e3x]Epoch 0:  22%|██▏       | 158/711 [00:14<00:49, 11.22it/s, v_num=0e3x]Epoch 0:  22%|██▏       | 159/711 [00:14<00:49, 11.22it/s, v_num=0e3x]Epoch 0:  22%|██▏       | 159/711 [00:14<00:49, 11.22it/s, v_num=0e3x]Epoch 0:  23%|██▎       | 160/711 [00:14<00:49, 11.23it/s, v_num=0e3x]Epoch 0:  23%|██▎       | 160/711 [00:14<00:49, 11.23it/s, v_num=0e3x]Epoch 0:  23%|██▎       | 161/711 [00:14<00:48, 11.24it/s, v_num=0e3x]Epoch 0:  23%|██▎       | 161/711 [00:14<00:48, 11.24it/s, v_num=0e3x]Epoch 0:  23%|██▎       | 162/711 [00:14<00:48, 11.25it/s, v_num=0e3x]Epoch 0:  23%|██▎       | 162/711 [00:14<00:48, 11.24it/s, v_num=0e3x]Epoch 0:  23%|██▎       | 163/711 [00:14<00:48, 11.25it/s, v_num=0e3x]Epoch 0:  23%|██▎       | 163/711 [00:14<00:48, 11.25it/s, v_num=0e3x]Epoch 0:  23%|██▎       | 164/711 [00:14<00:48, 11.26it/s, v_num=0e3x]Epoch 0:  23%|██▎       | 164/711 [00:14<00:48, 11.26it/s, v_num=0e3x]Epoch 0:  23%|██▎       | 165/711 [00:14<00:48, 11.27it/s, v_num=0e3x]Epoch 0:  23%|██▎       | 165/711 [00:14<00:48, 11.26it/s, v_num=0e3x]Epoch 0:  23%|██▎       | 166/711 [00:14<00:48, 11.27it/s, v_num=0e3x]Epoch 0:  23%|██▎       | 166/711 [00:14<00:48, 11.27it/s, v_num=0e3x]Epoch 0:  23%|██▎       | 167/711 [00:14<00:48, 11.28it/s, v_num=0e3x]Epoch 0:  23%|██▎       | 167/711 [00:14<00:48, 11.28it/s, v_num=0e3x]Epoch 0:  24%|██▎       | 168/711 [00:14<00:48, 11.28it/s, v_num=0e3x]Epoch 0:  24%|██▎       | 168/711 [00:14<00:48, 11.28it/s, v_num=0e3x]Epoch 0:  24%|██▍       | 169/711 [00:14<00:48, 11.29it/s, v_num=0e3x]Epoch 0:  24%|██▍       | 169/711 [00:14<00:48, 11.29it/s, v_num=0e3x]Epoch 0:  24%|██▍       | 170/711 [00:15<00:47, 11.29it/s, v_num=0e3x]Epoch 0:  24%|██▍       | 170/711 [00:15<00:47, 11.29it/s, v_num=0e3x]Epoch 0:  24%|██▍       | 171/711 [00:15<00:47, 11.30it/s, v_num=0e3x]Epoch 0:  24%|██▍       | 171/711 [00:15<00:47, 11.30it/s, v_num=0e3x]Epoch 0:  24%|██▍       | 172/711 [00:15<00:47, 11.31it/s, v_num=0e3x]Epoch 0:  24%|██▍       | 172/711 [00:15<00:47, 11.31it/s, v_num=0e3x]Epoch 0:  24%|██▍       | 173/711 [00:15<00:47, 11.31it/s, v_num=0e3x]Epoch 0:  24%|██▍       | 173/711 [00:15<00:47, 11.31it/s, v_num=0e3x]Epoch 0:  24%|██▍       | 174/711 [00:15<00:47, 11.32it/s, v_num=0e3x]Epoch 0:  24%|██▍       | 174/711 [00:15<00:47, 11.32it/s, v_num=0e3x]Epoch 0:  25%|██▍       | 175/711 [00:15<00:47, 11.32it/s, v_num=0e3x]Epoch 0:  25%|██▍       | 175/711 [00:15<00:47, 11.32it/s, v_num=0e3x]Epoch 0:  25%|██▍       | 176/711 [00:15<00:47, 11.32it/s, v_num=0e3x]Epoch 0:  25%|██▍       | 176/711 [00:15<00:47, 11.32it/s, v_num=0e3x]Epoch 0:  25%|██▍       | 177/711 [00:15<00:47, 11.33it/s, v_num=0e3x]Epoch 0:  25%|██▍       | 177/711 [00:15<00:47, 11.33it/s, v_num=0e3x]Epoch 0:  25%|██▌       | 178/711 [00:15<00:47, 11.34it/s, v_num=0e3x]Epoch 0:  25%|██▌       | 178/711 [00:15<00:47, 11.34it/s, v_num=0e3x]Epoch 0:  25%|██▌       | 179/711 [00:15<00:46, 11.34it/s, v_num=0e3x]Epoch 0:  25%|██▌       | 179/711 [00:15<00:46, 11.34it/s, v_num=0e3x]Epoch 0:  25%|██▌       | 180/711 [00:15<00:46, 11.35it/s, v_num=0e3x]Epoch 0:  25%|██▌       | 180/711 [00:15<00:46, 11.35it/s, v_num=0e3x]Epoch 0:  25%|██▌       | 181/711 [00:15<00:46, 11.36it/s, v_num=0e3x]Epoch 0:  25%|██▌       | 181/711 [00:15<00:46, 11.36it/s, v_num=0e3x]Epoch 0:  26%|██▌       | 182/711 [00:16<00:46, 11.36it/s, v_num=0e3x]Epoch 0:  26%|██▌       | 182/711 [00:16<00:46, 11.36it/s, v_num=0e3x]Epoch 0:  26%|██▌       | 183/711 [00:16<00:46, 11.37it/s, v_num=0e3x]Epoch 0:  26%|██▌       | 183/711 [00:16<00:46, 11.37it/s, v_num=0e3x]Epoch 0:  26%|██▌       | 184/711 [00:16<00:46, 11.37it/s, v_num=0e3x]Epoch 0:  26%|██▌       | 184/711 [00:16<00:46, 11.37it/s, v_num=0e3x]Epoch 0:  26%|██▌       | 185/711 [00:16<00:46, 11.38it/s, v_num=0e3x]Epoch 0:  26%|██▌       | 185/711 [00:16<00:46, 11.38it/s, v_num=0e3x]Epoch 0:  26%|██▌       | 186/711 [00:16<00:46, 11.38it/s, v_num=0e3x]Epoch 0:  26%|██▌       | 186/711 [00:16<00:46, 11.38it/s, v_num=0e3x]Epoch 0:  26%|██▋       | 187/711 [00:16<00:46, 11.38it/s, v_num=0e3x]Epoch 0:  26%|██▋       | 187/711 [00:16<00:46, 11.38it/s, v_num=0e3x]Epoch 0:  26%|██▋       | 188/711 [00:16<00:45, 11.39it/s, v_num=0e3x]Epoch 0:  26%|██▋       | 188/711 [00:16<00:45, 11.39it/s, v_num=0e3x]Epoch 0:  27%|██▋       | 189/711 [00:16<00:45, 11.40it/s, v_num=0e3x]Epoch 0:  27%|██▋       | 189/711 [00:16<00:45, 11.40it/s, v_num=0e3x]Epoch 0:  27%|██▋       | 190/711 [00:16<00:45, 11.40it/s, v_num=0e3x]Epoch 0:  27%|██▋       | 190/711 [00:16<00:45, 11.40it/s, v_num=0e3x]Epoch 0:  27%|██▋       | 191/711 [00:16<00:45, 11.40it/s, v_num=0e3x]Epoch 0:  27%|██▋       | 191/711 [00:16<00:45, 11.40it/s, v_num=0e3x]Epoch 0:  27%|██▋       | 192/711 [00:16<00:45, 11.41it/s, v_num=0e3x]Epoch 0:  27%|██▋       | 192/711 [00:16<00:45, 11.41it/s, v_num=0e3x]Epoch 0:  27%|██▋       | 193/711 [00:16<00:45, 11.40it/s, v_num=0e3x]Epoch 0:  27%|██▋       | 193/711 [00:16<00:45, 11.40it/s, v_num=0e3x]Epoch 0:  27%|██▋       | 194/711 [00:17<00:45, 11.41it/s, v_num=0e3x]Epoch 0:  27%|██▋       | 194/711 [00:17<00:45, 11.41it/s, v_num=0e3x]Epoch 0:  27%|██▋       | 195/711 [00:17<00:45, 11.41it/s, v_num=0e3x]Epoch 0:  27%|██▋       | 195/711 [00:17<00:45, 11.41it/s, v_num=0e3x]Epoch 0:  28%|██▊       | 196/711 [00:17<00:45, 11.41it/s, v_num=0e3x]Epoch 0:  28%|██▊       | 196/711 [00:17<00:45, 11.41it/s, v_num=0e3x]Epoch 0:  28%|██▊       | 197/711 [00:17<00:45, 11.42it/s, v_num=0e3x]Epoch 0:  28%|██▊       | 197/711 [00:17<00:45, 11.42it/s, v_num=0e3x]Epoch 0:  28%|██▊       | 198/711 [00:17<00:44, 11.42it/s, v_num=0e3x]Epoch 0:  28%|██▊       | 198/711 [00:17<00:44, 11.42it/s, v_num=0e3x]Epoch 0:  28%|██▊       | 199/711 [00:17<00:44, 11.42it/s, v_num=0e3x]Epoch 0:  28%|██▊       | 199/711 [00:17<00:44, 11.42it/s, v_num=0e3x]Epoch 0:  28%|██▊       | 200/711 [00:18<00:48, 10.60it/s, v_num=0e3x]Epoch 0:  28%|██▊       | 200/711 [00:18<00:48, 10.60it/s, v_num=0e3x]Epoch 0:  28%|██▊       | 200/711 [00:18<00:48, 10.60it/s, v_num=0e3x]`Trainer.fit` stopped: `max_steps=200` reached.
+Epoch 0:  28%|██▊       | 200/711 [00:18<00:48, 10.60it/s, v_num=0e3x]
+[2026-10-22 21:22:35,842][__main__][INFO] - Training finished at optimizer step 200; peak allocated GPU memory: 7098.0 MiB.
+[1;34mwandb[0m: 
+[1;34mwandb[0m: You can sync this run to the cloud by running:
+[1;34mwandb[0m: [1mwandb sync /root/autodl-tmp/s-flm/outputs/sft/20261022-lora-result-highnoise-mix50-200/wandb/offline-run-20261022_212212-iqc60e3x[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/offline-run-20261022_212212-iqc60e3x/logs[0m

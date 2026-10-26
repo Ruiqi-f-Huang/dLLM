@@ -1,0 +1,34 @@
+{
+  "tokenizer_size": 49153,
+  "separator": "'\\\\n'",
+  "splits": {
+    "train": {
+      "rows": 5682,
+      "tokens_min": 71,
+      "tokens_max": 504,
+      "tokens_mean": 199.97782470960928,
+      "pad_fraction_of_supervision": 0.6943683981717562,
+      "supervised_tokens": 2553270,
+      "padding_tokens": 1772910
+    },
+    "validation": {
+      "rows": 632,
+      "tokens_min": 83,
+      "tokens_max": 449,
+      "tokens_mean": 199.12816455696202,
+      "pad_fraction_of_supervision": 0.6959191933411935,
+      "supervised_tokens": 284135,
+      "padding_tokens": 197735
+    }
+  },
+  "base": {
+    "sha256": "251b4c935424622c13d75712cfefef0cae6829ad7bab6b712e009fc372bf1583",
+    "global_step": 250000,
+    "ema_updates": 250000,
+    "separator": "'\\\\n'",
+    "train_on_prompt": false,
+    "train_on_pad": true
+  },
+  "cross_split_overlap": 0,
+  "gsm8k_test_question_overlap": 0
+}

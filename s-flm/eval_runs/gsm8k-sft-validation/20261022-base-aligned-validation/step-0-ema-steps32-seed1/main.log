@@ -1,0 +1,6 @@
+[2026-10-22 15:17:22,316][__main__][INFO] - Starting GSM8K eval.
+[2026-10-22 15:18:34,553][__main__][INFO] - Rank 0: average NFE per batch: 32.0
+[2026-10-22 15:18:34,557][__main__][INFO] - Rank 0: saved 632 records to /root/autodl-tmp/s-flm/outputs/eval/20261022-base-aligned-validation/step-0-ema-steps32-seed1/rank_0000.json
+[2026-10-22 15:18:34,570][__main__][INFO] - Total records evaluated: 632
+[2026-10-22 15:18:34,669][__main__][INFO] - GSM8K accuracy: 8.54% (54/632)
+[2026-10-22 15:18:34,673][__main__][INFO] - Results saved to /root/autodl-tmp/s-flm/outputs/eval/20261022-base-aligned-validation/step-0-ema-steps32-seed1/results.json

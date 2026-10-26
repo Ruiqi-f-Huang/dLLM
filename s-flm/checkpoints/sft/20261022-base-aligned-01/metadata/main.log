@@ -1,0 +1,3 @@
+[2026-10-22 15:14:38,590][__main__][INFO] - Starting Training.
+[2026-10-22 15:14:47,046][__main__][INFO] - Fresh finetune from ema weights; optimizer, scheduler and EMA history start fresh.
+[2026-10-22 15:16:17,935][__main__][INFO] - Training finished at optimizer step 711; peak allocated GPU memory: 9633.2 MiB.

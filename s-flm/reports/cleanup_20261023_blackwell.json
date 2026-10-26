@@ -1,0 +1,19 @@
+{
+  "host": "autodl-container-wlwpwecsh3-53d16a99",
+  "workspace": "/root/s-flm",
+  "removed_bytes": 3953368806,
+  "removed": [
+    {
+      "path": "/root/s-flm/reports/a800-environment/a800-environment-evidence.tar.gz",
+      "bytes": 784399,
+      "reason": "all archive members verified byte-identical to extracted files"
+    },
+    {
+      "path": "/root/.cache/pip",
+      "bytes": 3952584407,
+      "reason": "rebuildable pip download cache; installed environments retained"
+    }
+  ],
+  "preserved": "All checkpoints, datasets, source, experiment logs, evaluation records, W&B files, virtual environments and Hugging Face cache",
+  "additional_cleanup_note": "An initial pass removed project Python bytecode and completed /tmp transfer archives before encountering an AppleDouble ._ archive. Those first-pass bytes are not included in removed_bytes; all checkpoints and datasets were retained."
+}

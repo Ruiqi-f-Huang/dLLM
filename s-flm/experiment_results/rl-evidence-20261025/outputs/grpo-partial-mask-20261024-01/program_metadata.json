@@ -1,0 +1,578 @@
+[
+  {
+    "sample_id": "gsm8k_train_4824",
+    "reward": 1.0,
+    "prefix_length": 45,
+    "eligible_tokens": 132,
+    "code_region_available": true,
+    "code_eos_tokens": 83,
+    "docstring_comment_tokens": 48
+  },
+  {
+    "sample_id": "gsm8k_train_4824",
+    "reward": 0.0,
+    "prefix_length": 45,
+    "eligible_tokens": 151,
+    "code_region_available": true,
+    "code_eos_tokens": 102,
+    "docstring_comment_tokens": 48
+  },
+  {
+    "sample_id": "gsm8k_train_1869",
+    "reward": 1.0,
+    "prefix_length": 88,
+    "eligible_tokens": 165,
+    "code_region_available": true,
+    "code_eos_tokens": 71,
+    "docstring_comment_tokens": 93
+  },
+  {
+    "sample_id": "gsm8k_train_1869",
+    "reward": 0.0,
+    "prefix_length": 88,
+    "eligible_tokens": 165,
+    "code_region_available": false,
+    "code_eos_tokens": 0,
+    "docstring_comment_tokens": 0
+  },
+  {
+    "sample_id": "gsm8k_train_7310",
+    "reward": 1.0,
+    "prefix_length": 48,
+    "eligible_tokens": 111,
+    "code_region_available": true,
+    "code_eos_tokens": 60,
+    "docstring_comment_tokens": 50
+  },
+  {
+    "sample_id": "gsm8k_train_7310",
+    "reward": 0.0,
+    "prefix_length": 48,
+    "eligible_tokens": 113,
+    "code_region_available": true,
+    "code_eos_tokens": 62,
+    "docstring_comment_tokens": 50
+  },
+  {
+    "sample_id": "gsm8k_train_2237",
+    "reward": 1.0,
+    "prefix_length": 50,
+    "eligible_tokens": 113,
+    "code_region_available": true,
+    "code_eos_tokens": 60,
+    "docstring_comment_tokens": 52
+  },
+  {
+    "sample_id": "gsm8k_train_2237",
+    "reward": 0.0,
+    "prefix_length": 50,
+    "eligible_tokens": 105,
+    "code_region_available": true,
+    "code_eos_tokens": 52,
+    "docstring_comment_tokens": 52
+  },
+  {
+    "sample_id": "gsm8k_train_6478",
+    "reward": 1.0,
+    "prefix_length": 77,
+    "eligible_tokens": 156,
+    "code_region_available": true,
+    "code_eos_tokens": 74,
+    "docstring_comment_tokens": 81
+  },
+  {
+    "sample_id": "gsm8k_train_6478",
+    "reward": 0.0,
+    "prefix_length": 77,
+    "eligible_tokens": 140,
+    "code_region_available": true,
+    "code_eos_tokens": 58,
+    "docstring_comment_tokens": 81
+  },
+  {
+    "sample_id": "gsm8k_train_5778",
+    "reward": 1.0,
+    "prefix_length": 47,
+    "eligible_tokens": 114,
+    "code_region_available": true,
+    "code_eos_tokens": 64,
+    "docstring_comment_tokens": 49
+  },
+  {
+    "sample_id": "gsm8k_train_5778",
+    "reward": 0.0,
+    "prefix_length": 47,
+    "eligible_tokens": 120,
+    "code_region_available": true,
+    "code_eos_tokens": 70,
+    "docstring_comment_tokens": 49
+  },
+  {
+    "sample_id": "gsm8k_train_4699",
+    "reward": 1.0,
+    "prefix_length": 60,
+    "eligible_tokens": 113,
+    "code_region_available": true,
+    "code_eos_tokens": 50,
+    "docstring_comment_tokens": 61
+  },
+  {
+    "sample_id": "gsm8k_train_4699",
+    "reward": 0.0,
+    "prefix_length": 60,
+    "eligible_tokens": 103,
+    "code_region_available": true,
+    "code_eos_tokens": 42,
+    "docstring_comment_tokens": 60
+  },
+  {
+    "sample_id": "gsm8k_train_0112",
+    "reward": 1.0,
+    "prefix_length": 84,
+    "eligible_tokens": 168,
+    "code_region_available": true,
+    "code_eos_tokens": 82,
+    "docstring_comment_tokens": 85
+  },
+  {
+    "sample_id": "gsm8k_train_0112",
+    "reward": 0.0,
+    "prefix_length": 84,
+    "eligible_tokens": 164,
+    "code_region_available": true,
+    "code_eos_tokens": 78,
+    "docstring_comment_tokens": 85
+  },
+  {
+    "sample_id": "gsm8k_train_2214",
+    "reward": 1.0,
+    "prefix_length": 54,
+    "eligible_tokens": 129,
+    "code_region_available": false,
+    "code_eos_tokens": 0,
+    "docstring_comment_tokens": 0
+  },
+  {
+    "sample_id": "gsm8k_train_2214",
+    "reward": 0.0,
+    "prefix_length": 54,
+    "eligible_tokens": 112,
+    "code_region_available": true,
+    "code_eos_tokens": 54,
+    "docstring_comment_tokens": 57
+  },
+  {
+    "sample_id": "gsm8k_train_6976",
+    "reward": 1.0,
+    "prefix_length": 47,
+    "eligible_tokens": 115,
+    "code_region_available": true,
+    "code_eos_tokens": 66,
+    "docstring_comment_tokens": 48
+  },
+  {
+    "sample_id": "gsm8k_train_6976",
+    "reward": 0.0,
+    "prefix_length": 47,
+    "eligible_tokens": 117,
+    "code_region_available": false,
+    "code_eos_tokens": 0,
+    "docstring_comment_tokens": 0
+  },
+  {
+    "sample_id": "gsm8k_train_7385",
+    "reward": 1.0,
+    "prefix_length": 64,
+    "eligible_tokens": 120,
+    "code_region_available": true,
+    "code_eos_tokens": 54,
+    "docstring_comment_tokens": 65
+  },
+  {
+    "sample_id": "gsm8k_train_7385",
+    "reward": 0.0,
+    "prefix_length": 64,
+    "eligible_tokens": 135,
+    "code_region_available": true,
+    "code_eos_tokens": 70,
+    "docstring_comment_tokens": 64
+  },
+  {
+    "sample_id": "gsm8k_train_0924",
+    "reward": 1.0,
+    "prefix_length": 58,
+    "eligible_tokens": 138,
+    "code_region_available": true,
+    "code_eos_tokens": 77,
+    "docstring_comment_tokens": 60
+  },
+  {
+    "sample_id": "gsm8k_train_0924",
+    "reward": 0.0,
+    "prefix_length": 58,
+    "eligible_tokens": 137,
+    "code_region_available": false,
+    "code_eos_tokens": 0,
+    "docstring_comment_tokens": 0
+  },
+  {
+    "sample_id": "gsm8k_train_5854",
+    "reward": 1.0,
+    "prefix_length": 52,
+    "eligible_tokens": 123,
+    "code_region_available": true,
+    "code_eos_tokens": 69,
+    "docstring_comment_tokens": 53
+  },
+  {
+    "sample_id": "gsm8k_train_5854",
+    "reward": 0.0,
+    "prefix_length": 52,
+    "eligible_tokens": 120,
+    "code_region_available": true,
+    "code_eos_tokens": 66,
+    "docstring_comment_tokens": 53
+  },
+  {
+    "sample_id": "gsm8k_train_4402",
+    "reward": 1.0,
+    "prefix_length": 83,
+    "eligible_tokens": 171,
+    "code_region_available": true,
+    "code_eos_tokens": 84,
+    "docstring_comment_tokens": 86
+  },
+  {
+    "sample_id": "gsm8k_train_4402",
+    "reward": 0.0,
+    "prefix_length": 83,
+    "eligible_tokens": 170,
+    "code_region_available": true,
+    "code_eos_tokens": 83,
+    "docstring_comment_tokens": 86
+  },
+  {
+    "sample_id": "gsm8k_train_1172",
+    "reward": 1.0,
+    "prefix_length": 87,
+    "eligible_tokens": 179,
+    "code_region_available": false,
+    "code_eos_tokens": 0,
+    "docstring_comment_tokens": 0
+  },
+  {
+    "sample_id": "gsm8k_train_1172",
+    "reward": 0.0,
+    "prefix_length": 87,
+    "eligible_tokens": 151,
+    "code_region_available": true,
+    "code_eos_tokens": 60,
+    "docstring_comment_tokens": 90
+  },
+  {
+    "sample_id": "gsm8k_train_0186",
+    "reward": 1.0,
+    "prefix_length": 48,
+    "eligible_tokens": 129,
+    "code_region_available": true,
+    "code_eos_tokens": 59,
+    "docstring_comment_tokens": 67
+  },
+  {
+    "sample_id": "gsm8k_train_0186",
+    "reward": 0.0,
+    "prefix_length": 48,
+    "eligible_tokens": 125,
+    "code_region_available": true,
+    "code_eos_tokens": 74,
+    "docstring_comment_tokens": 50
+  },
+  {
+    "sample_id": "gsm8k_train_3525",
+    "reward": 1.0,
+    "prefix_length": 43,
+    "eligible_tokens": 100,
+    "code_region_available": true,
+    "code_eos_tokens": 56,
+    "docstring_comment_tokens": 43
+  },
+  {
+    "sample_id": "gsm8k_train_3525",
+    "reward": 0.0,
+    "prefix_length": 43,
+    "eligible_tokens": 103,
+    "code_region_available": true,
+    "code_eos_tokens": 59,
+    "docstring_comment_tokens": 43
+  },
+  {
+    "sample_id": "gsm8k_train_6583",
+    "reward": 1.0,
+    "prefix_length": 37,
+    "eligible_tokens": 110,
+    "code_region_available": true,
+    "code_eos_tokens": 69,
+    "docstring_comment_tokens": 38
+  },
+  {
+    "sample_id": "gsm8k_train_6583",
+    "reward": 0.0,
+    "prefix_length": 37,
+    "eligible_tokens": 98,
+    "code_region_available": false,
+    "code_eos_tokens": 0,
+    "docstring_comment_tokens": 0
+  },
+  {
+    "sample_id": "gsm8k_train_5468",
+    "reward": 1.0,
+    "prefix_length": 52,
+    "eligible_tokens": 102,
+    "code_region_available": true,
+    "code_eos_tokens": 49,
+    "docstring_comment_tokens": 52
+  },
+  {
+    "sample_id": "gsm8k_train_5468",
+    "reward": 0.0,
+    "prefix_length": 52,
+    "eligible_tokens": 129,
+    "code_region_available": true,
+    "code_eos_tokens": 76,
+    "docstring_comment_tokens": 52
+  },
+  {
+    "sample_id": "gsm8k_train_3329",
+    "reward": 1.0,
+    "prefix_length": 62,
+    "eligible_tokens": 127,
+    "code_region_available": true,
+    "code_eos_tokens": 63,
+    "docstring_comment_tokens": 63
+  },
+  {
+    "sample_id": "gsm8k_train_3329",
+    "reward": 0.0,
+    "prefix_length": 62,
+    "eligible_tokens": 135,
+    "code_region_available": true,
+    "code_eos_tokens": 71,
+    "docstring_comment_tokens": 63
+  },
+  {
+    "sample_id": "gsm8k_train_4786",
+    "reward": 1.0,
+    "prefix_length": 48,
+    "eligible_tokens": 104,
+    "code_region_available": true,
+    "code_eos_tokens": 53,
+    "docstring_comment_tokens": 50
+  },
+  {
+    "sample_id": "gsm8k_train_4786",
+    "reward": 0.0,
+    "prefix_length": 48,
+    "eligible_tokens": 116,
+    "code_region_available": true,
+    "code_eos_tokens": 65,
+    "docstring_comment_tokens": 50
+  },
+  {
+    "sample_id": "gsm8k_train_7271",
+    "reward": 1.0,
+    "prefix_length": 73,
+    "eligible_tokens": 162,
+    "code_region_available": true,
+    "code_eos_tokens": 87,
+    "docstring_comment_tokens": 74
+  },
+  {
+    "sample_id": "gsm8k_train_7271",
+    "reward": 0.0,
+    "prefix_length": 73,
+    "eligible_tokens": 132,
+    "code_region_available": true,
+    "code_eos_tokens": 57,
+    "docstring_comment_tokens": 74
+  },
+  {
+    "sample_id": "gsm8k_train_3931",
+    "reward": 1.0,
+    "prefix_length": 61,
+    "eligible_tokens": 139,
+    "code_region_available": true,
+    "code_eos_tokens": 74,
+    "docstring_comment_tokens": 64
+  },
+  {
+    "sample_id": "gsm8k_train_3931",
+    "reward": 0.0,
+    "prefix_length": 61,
+    "eligible_tokens": 138,
+    "code_region_available": true,
+    "code_eos_tokens": 73,
+    "docstring_comment_tokens": 64
+  },
+  {
+    "sample_id": "gsm8k_train_4566",
+    "reward": 1.0,
+    "prefix_length": 41,
+    "eligible_tokens": 99,
+    "code_region_available": true,
+    "code_eos_tokens": 57,
+    "docstring_comment_tokens": 41
+  },
+  {
+    "sample_id": "gsm8k_train_4566",
+    "reward": 0.0,
+    "prefix_length": 41,
+    "eligible_tokens": 100,
+    "code_region_available": true,
+    "code_eos_tokens": 58,
+    "docstring_comment_tokens": 41
+  },
+  {
+    "sample_id": "gsm8k_train_0280",
+    "reward": 1.0,
+    "prefix_length": 69,
+    "eligible_tokens": 132,
+    "code_region_available": false,
+    "code_eos_tokens": 0,
+    "docstring_comment_tokens": 0
+  },
+  {
+    "sample_id": "gsm8k_train_0280",
+    "reward": 0.0,
+    "prefix_length": 69,
+    "eligible_tokens": 147,
+    "code_region_available": true,
+    "code_eos_tokens": 73,
+    "docstring_comment_tokens": 73
+  },
+  {
+    "sample_id": "gsm8k_train_0499",
+    "reward": 1.0,
+    "prefix_length": 35,
+    "eligible_tokens": 98,
+    "code_region_available": false,
+    "code_eos_tokens": 0,
+    "docstring_comment_tokens": 0
+  },
+  {
+    "sample_id": "gsm8k_train_0499",
+    "reward": 0.0,
+    "prefix_length": 35,
+    "eligible_tokens": 109,
+    "code_region_available": false,
+    "code_eos_tokens": 0,
+    "docstring_comment_tokens": 0
+  },
+  {
+    "sample_id": "gsm8k_train_1370",
+    "reward": 1.0,
+    "prefix_length": 63,
+    "eligible_tokens": 129,
+    "code_region_available": true,
+    "code_eos_tokens": 65,
+    "docstring_comment_tokens": 63
+  },
+  {
+    "sample_id": "gsm8k_train_1370",
+    "reward": 0.0,
+    "prefix_length": 63,
+    "eligible_tokens": 149,
+    "code_region_available": true,
+    "code_eos_tokens": 85,
+    "docstring_comment_tokens": 63
+  },
+  {
+    "sample_id": "gsm8k_train_4248",
+    "reward": 1.0,
+    "prefix_length": 52,
+    "eligible_tokens": 132,
+    "code_region_available": true,
+    "code_eos_tokens": 77,
+    "docstring_comment_tokens": 54
+  },
+  {
+    "sample_id": "gsm8k_train_4248",
+    "reward": 0.0,
+    "prefix_length": 52,
+    "eligible_tokens": 135,
+    "code_region_available": true,
+    "code_eos_tokens": 80,
+    "docstring_comment_tokens": 54
+  },
+  {
+    "sample_id": "gsm8k_train_0358",
+    "reward": 1.0,
+    "prefix_length": 113,
+    "eligible_tokens": 162,
+    "code_region_available": true,
+    "code_eos_tokens": 44,
+    "docstring_comment_tokens": 117
+  },
+  {
+    "sample_id": "gsm8k_train_0358",
+    "reward": 0.0,
+    "prefix_length": 113,
+    "eligible_tokens": 202,
+    "code_region_available": false,
+    "code_eos_tokens": 0,
+    "docstring_comment_tokens": 0
+  },
+  {
+    "sample_id": "gsm8k_train_4888",
+    "reward": 1.0,
+    "prefix_length": 44,
+    "eligible_tokens": 90,
+    "code_region_available": true,
+    "code_eos_tokens": 44,
+    "docstring_comment_tokens": 45
+  },
+  {
+    "sample_id": "gsm8k_train_4888",
+    "reward": 0.0,
+    "prefix_length": 44,
+    "eligible_tokens": 93,
+    "code_region_available": true,
+    "code_eos_tokens": 47,
+    "docstring_comment_tokens": 45
+  },
+  {
+    "sample_id": "gsm8k_train_5164",
+    "reward": 1.0,
+    "prefix_length": 40,
+    "eligible_tokens": 95,
+    "code_region_available": true,
+    "code_eos_tokens": 54,
+    "docstring_comment_tokens": 40
+  },
+  {
+    "sample_id": "gsm8k_train_5164",
+    "reward": 0.0,
+    "prefix_length": 40,
+    "eligible_tokens": 88,
+    "code_region_available": true,
+    "code_eos_tokens": 47,
+    "docstring_comment_tokens": 40
+  },
+  {
+    "sample_id": "gsm8k_train_5190",
+    "reward": 1.0,
+    "prefix_length": 78,
+    "eligible_tokens": 161,
+    "code_region_available": true,
+    "code_eos_tokens": 80,
+    "docstring_comment_tokens": 80
+  },
+  {
+    "sample_id": "gsm8k_train_5190",
+    "reward": 0.0,
+    "prefix_length": 78,
+    "eligible_tokens": 164,
+    "code_region_available": false,
+    "code_eos_tokens": 0,
+    "docstring_comment_tokens": 0
+  }
+]

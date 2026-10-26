@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "policy": "Audit and quarantine only; do not rewrite verified mathematical logic or remove docstrings.",
+  "rows": {
+    "train": 5682,
+    "validation": 632
+  },
+  "accepted_rows": 6314,
+  "errors": {},
+  "style_flags_not_removed": {
+    "train:no_intermediate_assignment": 2
+  },
+  "flagged_examples": [
+    {
+      "split": "train",
+      "sample_id": "gsm8k_train_2072",
+      "flags": [
+        "no_intermediate_assignment"
+      ],
+      "code": "def simple_math_problem() -> int:\n    \"\"\"A box of six popsicles was left out in the sun and is slowly melting. Every time a popsicle melts the remaining popsicles melt twice as fast as the previous one. How many times faster than the first popsicle does the last popsicle\u2019s remains melt?\"\"\"\n    return 2 ** 5\n"
+    },
+    {
+      "split": "train",
+      "sample_id": "gsm8k_train_4364",
+      "flags": [
+        "no_intermediate_assignment"
+      ],
+      "code": "def simple_math_problem() -> int:\n    \"\"\"Jackson wants to improve his endurance running. His goal is to start by running 3 miles a day the first week, then spend the next four weeks running one additional mile/day each week. How many miles is Jackson running each day at the end of this exercise program?\"\"\"\n    return 3 + 4\n"
+    }
+  ],
+  "files": {
+    "sft_train.jsonl": "a35c64f0c0f47baa84e2517059e11b939b16c5d0dbb0d76b021b2c2144092c68",
+    "sft_validation.jsonl": "560b9ddf9c42c9deb4a37f3c1296f39fed8adb45574c9906c6aafd08237267b7"
+  },
+  "checks": [
+    "exact MathInstruct audit provenance and verified status",
+    "single no-argument simple_math_problem function",
+    "docstring exactly matches the GSM8K question",
+    "restricted AST and calls",
+    "final program executes and matches the stored gold answer",
+    "unique, disjoint train and validation question IDs"
+  ]
+}

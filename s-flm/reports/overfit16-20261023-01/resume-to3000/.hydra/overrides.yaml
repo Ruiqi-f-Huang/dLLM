@@ -1,0 +1,8 @@
+- data.train_file=/root/s-flm/data/gsm8k_pot_overfit16/sft_train.jsonl
+- data.cache_dir=/root/autodl-tmp/s-flm/data_cache/overfit16
+- checkpointing.save_dir=/root/autodl-tmp/s-flm/outputs/overfit16-20261023-01
+- checkpointing.resume_from_ckpt=true
+- checkpointing.resume_ckpt_path=/root/autodl-tmp/s-flm/outputs/overfit16-20261023-01/checkpoints/step-001000.ckpt
+- trainer.max_steps=3000
+- trainer.max_epochs=2000
+- callbacks.milestone_checkpoint.milestones=[2000,3000]

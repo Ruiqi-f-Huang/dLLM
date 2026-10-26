@@ -1,0 +1,4 @@
+Seed set to 42
+{"step": 0, "program_loss": 0.031246230006217957, "token_loss": 0.00789199210703373, "success_mean_logp": -0.981415867805481, "failure_mean_logp": -0.8564308881759644, "mean_gap": -0.12498492002487183, "parameter_delta_norm": 0.0, "raw_output_dtype": "torch.float32"}
+{"step": 1, "program_loss": 0.031222686171531677, "token_loss": 0.007868792861700058, "success_mean_logp": -0.9813764095306396, "failure_mean_logp": -0.8564857244491577, "mean_gap": -0.12489074468612671, "parameter_delta_norm": 0.002426881063815713, "raw_output_dtype": "torch.float32"}
+{"step": 2, "program_loss": 0.03119920939207077, "token_loss": 0.007845593616366386, "success_mean_logp": -0.981337308883667, "failure_mean_logp": -0.8565404415130615, "mean_gap": -0.12479683756828308, "parameter_delta_norm": 0.004903532771304075, "raw_output_dtype": "torch.float32"}

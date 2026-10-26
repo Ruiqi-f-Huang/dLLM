@@ -1,0 +1,42 @@
+[
+  {
+    "index": 256,
+    "text": "def simple_math_problem() -> int:\n    '''\n    Brady is counting the money in his piggy bank.\n    He has 100 pennies, 40 nickels, 20 dimes, and 40 pieces of dollar bills.\n    How much does Brady have in his piggy bank in dollars?\n    '''\n    pennies = 100\n    nickels = 40\n    dimes = 120\n    dollar_bills = 40\n    total_amount = dollars = (pennies * 0.05 + nickels * 0.5 + dimes * 0.10) + dollar_bills\n    result = total_amount\n    return result",
+    "answer": "Since a penny is 1 cent, then 100 pennies is equal to 100 x 1 cent = <<100=100>>100 cents.\nSince nickel is 5 cents, then 40 nickels is equal to 40 x 5 = <<40*5=200>>200 cents.\nSince a dime is equal to 10 cents, then 20 dimes are equal to 20 x 10 = <<20*10=200>>200 cents.\nSo, Brady has a total of 100 + 200 + 200 = <<100+200+200=500>>500 cents.\nSince a dollar is equal to 100 cents, then 500 cents is equal to 500/100 = <<500/100=5>>5 dollars.\nThus, Brady has a total of $40 + $5 = $<<40+5=45>>45 in his piggy bank.\n#### 45"
+  },
+  {
+    "index": 257,
+    "text": "def simple_math_problem() -> int:\n    '''\n    Each solid 10-foot section of a redwood tree weighs 400 pounds.\n    Termites ate 30% of this redwood's wood.\n    If the redwood is 200 feet tall, how much does it weigh?\n    '''\n    wood_height = 200\n    section_weight = 400\n    reduction_percentage = 0.3\n    redwood_weight = wood_height * section_weight\n    total_weight = reduction_percentage_ * redwood_weight\n    result = total_weight\n    return result",
+    "answer": "First find how many 10-foot sections are in the redwood: 200 feet / 10 feet/section = <<200/10=20>>20 sections\nThen multiply the number of sections by the weight of each section to find the total weight of the redwood: 20 sections * 400 pounds/section = <<20*400=8000>>8000 pounds\nThen find the amount of the wood the termites ate: 8000 pounds * 30% = <<8000*30*.01=2400>>2400 pounds\nThen subtract that amount from the total weight of the wood: 8000 pounds - 2400 pounds = <<8000-2400=5600>>5600 pounds\n#### 5600"
+  },
+  {
+    "index": 258,
+    "text": "def simple_math_problem() -> int:\n    \"\"\"\n    Nancy is returning her overdue books to the library.\n    She owes $0.50 cents each on 8 books, plus a flat $2.00 fee for having at least one book that's over a week overdue.\n    How much does she have to pay total?\n    \"\"\"\n    book_cost = 0.5\n    total = 0\n    \n    while book_cost<8.0:\n        total += 2.00\n    \n    result = total\n\n    return result",
+    "answer": "First multiply the late fee per book by the number of books: $0.50/book * 8 books = $<<0.5*8=4.00>>4.00\nThen add the \"more than a week overdue\" fee to the answer from the previous step to find the total: $4.00 + $2.00 = $<<4+2=6.00>>6.00\n#### 6"
+  },
+  {
+    "index": 259,
+    "text": "def simple_math_problem() -> int:\n    '''\n    Andrea has 8 more apples than Jamal and half as many bananas as Jamal.\n    Jamal has 4 more bananas than apples.\n    How many fruits are there if Andrea has 52 apples?\n    '''\n    apples = 52\n    jamal = apples - 8\n    bananas = jamal / 2\n    fruits = apples + jamal + bananas\n    result = fruits\n    return result",
+    "answer": "Since Andrea has 8 more apples than Jamal, if Andrea has 52 apples, Jamal has 52-8 = <<52-8=44>>44 apples.\nThe total number of apples is 44+52 = <<44+52=96>>96\nJamal has 4 more bananas than apples, meaning he has 44+4 = 48 bananas.\nAndrea has half as many bananas as Jamal, which totals 48/2 = <<48/2=24>>24 bananas.\nThere are a total of 48+24 = <<48+24=72>>72 bananas.\nAltogether, there are 96 apples + 72 bananas = <<96+72=168>>168 fruits\n#### 168"
+  },
+  {
+    "index": 260,
+    "text": "def simple_math_problem() -> int:\n    '''\n    Two cups of flour are needed to make a dozen cookies.\n    Carla is making 36 cookies today and 30 cookies tomorrow.\n    How many cups of flour will Carla need to bake the cookies today and tomorrow?\n    '''\n    flour_per_cookie = 2\n    today_cookies = 36\n    tomorrow_cookies = 30\n    cookies_to_make = today_cookies + tomorrow_cookies\n    total_flour_needed = cookies_to_make * flour_per_cookie\n    result = total_flour_needed\n    return result",
+    "answer": "Carla will bake a total of 36 + 30 = <<36+30=66>>66 cookies.\nSince 1 dozen is equal to 12, then 66 cookies are equal to 66/12 = <<66/12=5.5>>5.5 dozens.\nHence, Carla will need 5.5 x 2 = <<5.5*2=11>>11 cups of flour.\n#### 11"
+  },
+  {
+    "index": 261,
+    "text": "def simple_math_problem() -> int:\n    \"\"\"\n    There are 9,300 pennies in a cup.\n    What is the total dollar amount in a stack that contains two thirds of the pennies in the cup?\n    \"\"\"\n    pennies = 9300\n    total_dollar = pennies * (2 / 3)\n    result = total_dollar\n\n    return result",
+    "answer": "A third of the pennies in a cup is 9,300/3 = <<9300/3=3100>>3,100.\nNumber of pennies in the stack is 3,100*2 = <<3100*2=6200>>6,200.\nTotal dollar amount in the stack is 6,200/100 = <<6200/100=62>>62.\n#### 62"
+  },
+  {
+    "index": 262,
+    "text": "def simple_math_problem() -> int:\n    '''\n    Maddison has 5 boxes with 50 marbles in each box.\n    Then she gets 20 marbles from her friend.\n    How many marbles does she have now?\n    '''\n    total_marbles = 5 * 50\n    total_marbles += 20\n    result = total_marbles\n    return result",
+    "answer": "Maddison has 5 x 50 = <<5*50=250>>250 marbles from her boxes.\nSo she has a total of 250 + 20 = <<250+20=270>>270 marbles now.\n#### 270"
+  },
+  {
+    "index": 263,
+    "text": "def simple_math_problem() -> int:\n    '''\n    There are 6 trees in Chris's yard.\n     Ferdinand has half the number of trees that Chris has.\n     Harry has 5 more than twice the number of trees that Ferdinand has.\n     How many more trees are in Harry's yard than Ferdinand's yard?\n    '''\n    chris = 6\n    ferdinand = chris / 2\n    harry = 2 * ferdinand + 5\n    difference = harry - ferdinand\n    result = difference\n    return result",
+    "answer": "Ferdinand:6/2=<<6/2=3>>3 trees\nHarry:5+2(3)=5+6=11 trees\n11-3=<<11-3=8>>8 trees\n#### 8"
+  }
+]

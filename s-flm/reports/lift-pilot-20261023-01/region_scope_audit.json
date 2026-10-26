@@ -1,0 +1,14 @@
+{
+  "train": {
+    "examples": 5682,
+    "eligible_code_eos_tokens": 430315,
+    "supervised_tokens": 2553270,
+    "eligible_fraction_of_supervised": 0.16853485921974565
+  },
+  "valid": {
+    "examples": 632,
+    "eligible_code_eos_tokens": 47605,
+    "supervised_tokens": 284135,
+    "eligible_fraction_of_supervised": 0.16754359723370932
+  }
+}

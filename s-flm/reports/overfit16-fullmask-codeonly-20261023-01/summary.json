@@ -1,0 +1,53 @@
+[
+  {
+    "step": 0,
+    "weights": "Base EMA initialization",
+    "precision": "FP32; TF32 disabled",
+    "nfe": 128,
+    "seed": 1,
+    "correct": 3,
+    "parseable": 12,
+    "n": 16,
+    "full_mask_code": {
+      "code_ce": 4.270418662213265,
+      "mean_gold_probability": 0.22651123696185174,
+      "top1_correct_tokens": 250,
+      "tokens": 940,
+      "top1_accuracy": 0.26595744680851063
+    }
+  },
+  {
+    "step": 50,
+    "weights": "raw",
+    "precision": "FP32; TF32 disabled",
+    "nfe": 128,
+    "seed": 1,
+    "correct": 3,
+    "parseable": 12,
+    "n": 16,
+    "full_mask_code": {
+      "code_ce": 4.265280476022274,
+      "mean_gold_probability": 0.2265591398198554,
+      "top1_correct_tokens": 250,
+      "tokens": 940,
+      "top1_accuracy": 0.26595744680851063
+    }
+  },
+  {
+    "step": 200,
+    "weights": "raw",
+    "precision": "FP32; TF32 disabled",
+    "nfe": 128,
+    "seed": 1,
+    "correct": 3,
+    "parseable": 12,
+    "n": 16,
+    "full_mask_code": {
+      "code_ce": 4.2361533307014625,
+      "mean_gold_probability": 0.22684761209690824,
+      "top1_correct_tokens": 250,
+      "tokens": 940,
+      "top1_accuracy": 0.26595744680851063
+    }
+  }
+]

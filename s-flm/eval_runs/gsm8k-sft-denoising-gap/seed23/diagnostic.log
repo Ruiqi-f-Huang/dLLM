@@ -1,0 +1,130 @@
+Loading base: /root/autodl-tmp/s-flm/checkpoints/tinygsm/mdlm.ckpt
+/root/venvs/s-flm/lib/python3.12/site-packages/lightning/pytorch/utilities/migration/utils.py:56: The loaded checkpoint was produced with Lightning v2.6.0, which is newer than your current Lightning version: v2.5.1
+Seed set to 2
+generate-32-seed2:   0%|          | 0/16 [00:00<?, ?it/s]generate-32-seed2:   6%|▋         | 1/16 [00:02<00:31,  2.10s/it]generate-32-seed2:  12%|█▎        | 2/16 [00:03<00:23,  1.66s/it]generate-32-seed2:  19%|█▉        | 3/16 [00:04<00:16,  1.28s/it]generate-32-seed2:  25%|██▌       | 4/16 [00:05<00:13,  1.10s/it]generate-32-seed2:  31%|███▏      | 5/16 [00:05<00:10,  1.00it/s]generate-32-seed2:  38%|███▊      | 6/16 [00:06<00:09,  1.07it/s]generate-32-seed2:  44%|████▍     | 7/16 [00:07<00:08,  1.11it/s]generate-32-seed2:  50%|█████     | 8/16 [00:08<00:07,  1.14it/s]<sample>:11: SyntaxWarning: 'int' object is not callable; perhaps you missed a comma?
+<sample>:11: SyntaxWarning: 'int' object is not callable; perhaps you missed a comma?
+generate-32-seed2:  56%|█████▋    | 9/16 [00:09<00:06,  1.17it/s]generate-32-seed2:  62%|██████▎   | 10/16 [00:10<00:05,  1.18it/s]generate-32-seed2:  69%|██████▉   | 11/16 [00:10<00:04,  1.18it/s]generate-32-seed2:  75%|███████▌  | 12/16 [00:11<00:03,  1.19it/s]generate-32-seed2:  81%|████████▏ | 13/16 [00:12<00:02,  1.19it/s]generate-32-seed2:  88%|████████▊ | 14/16 [00:13<00:01,  1.20it/s]generate-32-seed2:  94%|█████████▍| 15/16 [00:14<00:00,  1.20it/s]generate-32-seed2: 100%|██████████| 16/16 [00:15<00:00,  1.20it/s]                                                                  Seed set to 2
+generate-128-seed2:   0%|          | 0/16 [00:00<?, ?it/s]generate-128-seed2:   6%|▋         | 1/16 [00:03<00:48,  3.23s/it]generate-128-seed2:  12%|█▎        | 2/16 [00:06<00:45,  3.22s/it]generate-128-seed2:  19%|█▉        | 3/16 [00:09<00:41,  3.22s/it]generate-128-seed2:  25%|██▌       | 4/16 [00:12<00:38,  3.22s/it]generate-128-seed2:  31%|███▏      | 5/16 [00:16<00:35,  3.23s/it]generate-128-seed2:  38%|███▊      | 6/16 [00:19<00:32,  3.22s/it]generate-128-seed2:  44%|████▍     | 7/16 [00:22<00:28,  3.22s/it]generate-128-seed2:  50%|█████     | 8/16 [00:25<00:25,  3.22s/it]generate-128-seed2:  56%|█████▋    | 9/16 [00:28<00:22,  3.22s/it]generate-128-seed2:  62%|██████▎   | 10/16 [00:32<00:19,  3.22s/it]generate-128-seed2:  69%|██████▉   | 11/16 [00:35<00:16,  3.22s/it]generate-128-seed2:  75%|███████▌  | 12/16 [00:38<00:12,  3.22s/it]generate-128-seed2:  81%|████████▏ | 13/16 [00:41<00:09,  3.22s/it]generate-128-seed2:  88%|████████▊ | 14/16 [00:45<00:06,  3.22s/it]generate-128-seed2:  94%|█████████▍| 15/16 [00:48<00:03,  3.22s/it]generate-128-seed2: 100%|██████████| 16/16 [00:51<00:00,  3.22s/it]                                                                   Seed set to 3
+generate-32-seed3:   0%|          | 0/16 [00:00<?, ?it/s]generate-32-seed3:   6%|▋         | 1/16 [00:00<00:12,  1.21it/s]generate-32-seed3:  12%|█▎        | 2/16 [00:01<00:11,  1.21it/s]generate-32-seed3:  19%|█▉        | 3/16 [00:02<00:10,  1.21it/s]generate-32-seed3:  25%|██▌       | 4/16 [00:03<00:09,  1.21it/s]generate-32-seed3:  31%|███▏      | 5/16 [00:04<00:09,  1.21it/s]generate-32-seed3:  38%|███▊      | 6/16 [00:04<00:08,  1.22it/s]generate-32-seed3:  44%|████▍     | 7/16 [00:05<00:07,  1.21it/s]generate-32-seed3:  50%|█████     | 8/16 [00:06<00:06,  1.21it/s]generate-32-seed3:  56%|█████▋    | 9/16 [00:07<00:05,  1.22it/s]generate-32-seed3:  62%|██████▎   | 10/16 [00:08<00:04,  1.21it/s]generate-32-seed3:  69%|██████▉   | 11/16 [00:09<00:04,  1.21it/s]generate-32-seed3:  75%|███████▌  | 12/16 [00:09<00:03,  1.21it/s]generate-32-seed3:  81%|████████▏ | 13/16 [00:10<00:02,  1.21it/s]generate-32-seed3:  88%|████████▊ | 14/16 [00:11<00:01,  1.21it/s]generate-32-seed3:  94%|█████████▍| 15/16 [00:12<00:00,  1.21it/s]generate-32-seed3: 100%|██████████| 16/16 [00:13<00:00,  1.21it/s]                                                                  Seed set to 3
+generate-128-seed3:   0%|          | 0/16 [00:00<?, ?it/s]generate-128-seed3:   6%|▋         | 1/16 [00:03<00:48,  3.22s/it]generate-128-seed3:  12%|█▎        | 2/16 [00:06<00:45,  3.22s/it]generate-128-seed3:  19%|█▉        | 3/16 [00:09<00:41,  3.22s/it]generate-128-seed3:  25%|██▌       | 4/16 [00:12<00:38,  3.22s/it]generate-128-seed3:  31%|███▏      | 5/16 [00:16<00:35,  3.22s/it]generate-128-seed3:  38%|███▊      | 6/16 [00:19<00:32,  3.22s/it]generate-128-seed3:  44%|████▍     | 7/16 [00:22<00:28,  3.22s/it]generate-128-seed3:  50%|█████     | 8/16 [00:25<00:25,  3.22s/it]generate-128-seed3:  56%|█████▋    | 9/16 [00:28<00:22,  3.22s/it]generate-128-seed3:  62%|██████▎   | 10/16 [00:32<00:19,  3.22s/it]generate-128-seed3:  69%|██████▉   | 11/16 [00:35<00:16,  3.23s/it]generate-128-seed3:  75%|███████▌  | 12/16 [00:38<00:12,  3.22s/it]generate-128-seed3:  81%|████████▏ | 13/16 [00:41<00:09,  3.23s/it]generate-128-seed3:  88%|████████▊ | 14/16 [00:45<00:06,  3.22s/it]generate-128-seed3:  94%|█████████▍| 15/16 [00:48<00:03,  3.23s/it]generate-128-seed3: 100%|██████████| 16/16 [00:51<00:00,  3.23s/it]                                                                   {
+  "checkpoint": "/root/autodl-tmp/s-flm/checkpoints/tinygsm/mdlm.ckpt",
+  "weights": "EMA",
+  "mask_sweep": [],
+  "generation": {
+    "32/seed2": {
+      "n": 128,
+      "eos_observed": 123,
+      "eos_rate": 0.9609375,
+      "full_parseable": 80,
+      "eos_parseable": 85,
+      "full_correct": 7,
+      "eos_correct": 8,
+      "eos_to_correct_changes": 1,
+      "eos_to_wrong_changes": 0,
+      "median_eos_position": 146
+    },
+    "128/seed2": {
+      "n": 128,
+      "eos_observed": 124,
+      "eos_rate": 0.96875,
+      "full_parseable": 98,
+      "eos_parseable": 101,
+      "full_correct": 23,
+      "eos_correct": 24,
+      "eos_to_correct_changes": 1,
+      "eos_to_wrong_changes": 0,
+      "median_eos_position": 146
+    },
+    "32/seed3": {
+      "n": 128,
+      "eos_observed": 123,
+      "eos_rate": 0.9609375,
+      "full_parseable": 73,
+      "eos_parseable": 83,
+      "full_correct": 10,
+      "eos_correct": 12,
+      "eos_to_correct_changes": 2,
+      "eos_to_wrong_changes": 0,
+      "median_eos_position": 146
+    },
+    "128/seed3": {
+      "n": 128,
+      "eos_observed": 127,
+      "eos_rate": 0.9921875,
+      "full_parseable": 94,
+      "eos_parseable": 97,
+      "full_correct": 26,
+      "eos_correct": 26,
+      "eos_to_correct_changes": 0,
+      "eos_to_wrong_changes": 0,
+      "median_eos_position": 154
+    }
+  },
+  "elapsed_seconds": 131.34884349256754
+}
+Loading step711: /root/autodl-tmp/s-flm/outputs/sft/20261022-target-learning-lora-lr1e5/checkpoints/step-000711.ckpt
+Seed set to 2
+generate-32-seed2:   0%|          | 0/16 [00:00<?, ?it/s]generate-32-seed2:   6%|▋         | 1/16 [00:00<00:14,  1.00it/s]generate-32-seed2:  12%|█▎        | 2/16 [00:01<00:13,  1.03it/s]generate-32-seed2:  19%|█▉        | 3/16 [00:02<00:12,  1.04it/s]generate-32-seed2:  25%|██▌       | 4/16 [00:03<00:11,  1.05it/s]generate-32-seed2:  31%|███▏      | 5/16 [00:04<00:10,  1.04it/s]<unknown>:11: SyntaxWarning: invalid decimal literal
+<unknown>:11: SyntaxWarning: invalid decimal literal
+<sample>:11: SyntaxWarning: invalid decimal literal
+<sample>:11: SyntaxWarning: invalid decimal literal
+generate-32-seed2:  38%|███▊      | 6/16 [00:05<00:09,  1.05it/s]generate-32-seed2:  44%|████▍     | 7/16 [00:06<00:08,  1.05it/s]generate-32-seed2:  50%|█████     | 8/16 [00:07<00:07,  1.05it/s]generate-32-seed2:  56%|█████▋    | 9/16 [00:08<00:06,  1.05it/s]generate-32-seed2:  62%|██████▎   | 10/16 [00:09<00:05,  1.05it/s]generate-32-seed2:  69%|██████▉   | 11/16 [00:10<00:04,  1.05it/s]generate-32-seed2:  75%|███████▌  | 12/16 [00:11<00:03,  1.05it/s]generate-32-seed2:  81%|████████▏ | 13/16 [00:12<00:02,  1.05it/s]generate-32-seed2:  88%|████████▊ | 14/16 [00:13<00:01,  1.05it/s]generate-32-seed2:  94%|█████████▍| 15/16 [00:14<00:00,  1.05it/s]generate-32-seed2: 100%|██████████| 16/16 [00:15<00:00,  1.05it/s]                                                                  Seed set to 2
+generate-128-seed2:   0%|          | 0/16 [00:00<?, ?it/s]generate-128-seed2:   6%|▋         | 1/16 [00:03<00:55,  3.72s/it]generate-128-seed2:  12%|█▎        | 2/16 [00:07<00:52,  3.72s/it]generate-128-seed2:  19%|█▉        | 3/16 [00:11<00:48,  3.72s/it]generate-128-seed2:  25%|██▌       | 4/16 [00:14<00:44,  3.72s/it]generate-128-seed2:  31%|███▏      | 5/16 [00:18<00:40,  3.73s/it]generate-128-seed2:  38%|███▊      | 6/16 [00:22<00:37,  3.72s/it]generate-128-seed2:  44%|████▍     | 7/16 [00:26<00:33,  3.71s/it]generate-128-seed2:  50%|█████     | 8/16 [00:29<00:29,  3.71s/it]generate-128-seed2:  56%|█████▋    | 9/16 [00:33<00:25,  3.71s/it]generate-128-seed2:  62%|██████▎   | 10/16 [00:37<00:22,  3.71s/it]generate-128-seed2:  69%|██████▉   | 11/16 [00:40<00:18,  3.72s/it]generate-128-seed2:  75%|███████▌  | 12/16 [00:44<00:14,  3.72s/it]generate-128-seed2:  81%|████████▏ | 13/16 [00:48<00:11,  3.72s/it]generate-128-seed2:  88%|████████▊ | 14/16 [00:52<00:07,  3.71s/it]generate-128-seed2:  94%|█████████▍| 15/16 [00:55<00:03,  3.72s/it]generate-128-seed2: 100%|██████████| 16/16 [00:59<00:00,  3.72s/it]                                                                   Seed set to 3
+generate-32-seed3:   0%|          | 0/16 [00:00<?, ?it/s]generate-32-seed3:   6%|▋         | 1/16 [00:00<00:14,  1.06it/s]generate-32-seed3:  12%|█▎        | 2/16 [00:01<00:13,  1.05it/s]generate-32-seed3:  19%|█▉        | 3/16 [00:02<00:12,  1.06it/s]generate-32-seed3:  25%|██▌       | 4/16 [00:03<00:11,  1.06it/s]generate-32-seed3:  31%|███▏      | 5/16 [00:04<00:10,  1.05it/s]generate-32-seed3:  38%|███▊      | 6/16 [00:05<00:09,  1.06it/s]generate-32-seed3:  44%|████▍     | 7/16 [00:06<00:08,  1.06it/s]generate-32-seed3:  50%|█████     | 8/16 [00:07<00:07,  1.06it/s]generate-32-seed3:  56%|█████▋    | 9/16 [00:08<00:06,  1.06it/s]generate-32-seed3:  62%|██████▎   | 10/16 [00:09<00:05,  1.06it/s]generate-32-seed3:  69%|██████▉   | 11/16 [00:10<00:04,  1.06it/s]generate-32-seed3:  75%|███████▌  | 12/16 [00:11<00:03,  1.06it/s]generate-32-seed3:  81%|████████▏ | 13/16 [00:12<00:02,  1.06it/s]generate-32-seed3:  88%|████████▊ | 14/16 [00:13<00:01,  1.06it/s]generate-32-seed3:  94%|█████████▍| 15/16 [00:14<00:00,  1.06it/s]generate-32-seed3: 100%|██████████| 16/16 [00:15<00:00,  1.06it/s]                                                                  Seed set to 3
+generate-128-seed3:   0%|          | 0/16 [00:00<?, ?it/s]generate-128-seed3:   6%|▋         | 1/16 [00:03<00:55,  3.71s/it]generate-128-seed3:  12%|█▎        | 2/16 [00:07<00:52,  3.73s/it]generate-128-seed3:  19%|█▉        | 3/16 [00:11<00:48,  3.71s/it]generate-128-seed3:  25%|██▌       | 4/16 [00:14<00:44,  3.71s/it]generate-128-seed3:  31%|███▏      | 5/16 [00:18<00:40,  3.71s/it]generate-128-seed3:  38%|███▊      | 6/16 [00:22<00:37,  3.71s/it]generate-128-seed3:  44%|████▍     | 7/16 [00:25<00:33,  3.71s/it]generate-128-seed3:  50%|█████     | 8/16 [00:29<00:29,  3.71s/it]generate-128-seed3:  56%|█████▋    | 9/16 [00:33<00:25,  3.70s/it]generate-128-seed3:  62%|██████▎   | 10/16 [00:37<00:22,  3.70s/it]generate-128-seed3:  69%|██████▉   | 11/16 [00:40<00:18,  3.71s/it]generate-128-seed3:  75%|███████▌  | 12/16 [00:44<00:14,  3.71s/it]generate-128-seed3:  81%|████████▏ | 13/16 [00:48<00:11,  3.71s/it]generate-128-seed3:  88%|████████▊ | 14/16 [00:51<00:07,  3.71s/it]generate-128-seed3:  94%|█████████▍| 15/16 [00:55<00:03,  3.71s/it]generate-128-seed3: 100%|██████████| 16/16 [00:59<00:00,  3.71s/it]                                                                   {
+  "checkpoint": "/root/autodl-tmp/s-flm/outputs/sft/20261022-target-learning-lora-lr1e5/checkpoints/step-000711.ckpt",
+  "weights": "EMA",
+  "mask_sweep": [],
+  "generation": {
+    "32/seed2": {
+      "n": 128,
+      "eos_observed": 123,
+      "eos_rate": 0.9609375,
+      "full_parseable": 64,
+      "eos_parseable": 68,
+      "full_correct": 6,
+      "eos_correct": 7,
+      "eos_to_correct_changes": 1,
+      "eos_to_wrong_changes": 0,
+      "median_eos_position": 146
+    },
+    "128/seed2": {
+      "n": 128,
+      "eos_observed": 124,
+      "eos_rate": 0.96875,
+      "full_parseable": 97,
+      "eos_parseable": 100,
+      "full_correct": 21,
+      "eos_correct": 22,
+      "eos_to_correct_changes": 1,
+      "eos_to_wrong_changes": 0,
+      "median_eos_position": 147
+    },
+    "32/seed3": {
+      "n": 128,
+      "eos_observed": 126,
+      "eos_rate": 0.984375,
+      "full_parseable": 69,
+      "eos_parseable": 78,
+      "full_correct": 9,
+      "eos_correct": 10,
+      "eos_to_correct_changes": 1,
+      "eos_to_wrong_changes": 0,
+      "median_eos_position": 148
+    },
+    "128/seed3": {
+      "n": 128,
+      "eos_observed": 127,
+      "eos_rate": 0.9921875,
+      "full_parseable": 92,
+      "eos_parseable": 95,
+      "full_correct": 21,
+      "eos_correct": 21,
+      "eos_to_correct_changes": 0,
+      "eos_to_wrong_changes": 0,
+      "median_eos_position": 152
+    }
+  },
+  "elapsed_seconds": 149.2629766240716
+}
+Saved combined diagnostic to /root/autodl-tmp/s-flm/outputs/eval/20261022-denoising-gap-seed23

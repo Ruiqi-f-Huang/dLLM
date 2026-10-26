@@ -1,0 +1,96 @@
+{
+  "validation": {
+    "base_ema": {
+      "correct": 54,
+      "total": 632,
+      "accuracy": 0.08544303797468354,
+      "parseable": 614,
+      "parseable_rate": 0.9715189873417721,
+      "unpaired_triple_quotes": 8,
+      "mean_response_chars": 535.8575949367089
+    },
+    "step200_ema": {
+      "correct": 55,
+      "total": 632,
+      "accuracy": 0.08702531645569621,
+      "parseable": 611,
+      "parseable_rate": 0.9667721518987342,
+      "unpaired_triple_quotes": 7,
+      "mean_response_chars": 535.9683544303797
+    },
+    "step200_raw": {
+      "correct": 53,
+      "total": 632,
+      "accuracy": 0.08386075949367089,
+      "parseable": 610,
+      "parseable_rate": 0.9651898734177216,
+      "unpaired_triple_quotes": 7,
+      "mean_response_chars": 536.4208860759494
+    },
+    "step711_ema": {
+      "correct": 46,
+      "total": 632,
+      "accuracy": 0.07278481012658228,
+      "parseable": 612,
+      "parseable_rate": 0.9683544303797469,
+      "unpaired_triple_quotes": 7,
+      "mean_response_chars": 538.0158227848101
+    },
+    "step711_raw": {
+      "correct": 45,
+      "total": 632,
+      "accuracy": 0.07120253164556962,
+      "parseable": 604,
+      "parseable_rate": 0.9556962025316456,
+      "unpaired_triple_quotes": 7,
+      "mean_response_chars": 537.5284810126582
+    }
+  },
+  "train_subset": {
+    "base_ema": {
+      "correct": 23,
+      "total": 256,
+      "accuracy": 0.08984375,
+      "parseable": 252,
+      "parseable_rate": 0.984375,
+      "unpaired_triple_quotes": 2,
+      "mean_response_chars": 533.1171875
+    },
+    "step200_ema": {
+      "correct": 21,
+      "total": 256,
+      "accuracy": 0.08203125,
+      "parseable": 251,
+      "parseable_rate": 0.98046875,
+      "unpaired_triple_quotes": 2,
+      "mean_response_chars": 532.9609375
+    },
+    "step200_raw": {
+      "correct": 23,
+      "total": 256,
+      "accuracy": 0.08984375,
+      "parseable": 251,
+      "parseable_rate": 0.98046875,
+      "unpaired_triple_quotes": 2,
+      "mean_response_chars": 532.20703125
+    },
+    "step711_ema": {
+      "correct": 18,
+      "total": 256,
+      "accuracy": 0.0703125,
+      "parseable": 254,
+      "parseable_rate": 0.9921875,
+      "unpaired_triple_quotes": 2,
+      "mean_response_chars": 534.6015625
+    },
+    "step711_raw": {
+      "correct": 18,
+      "total": 256,
+      "accuracy": 0.0703125,
+      "parseable": 247,
+      "parseable_rate": 0.96484375,
+      "unpaired_triple_quotes": 5,
+      "mean_response_chars": 533.08984375
+    }
+  }
+}

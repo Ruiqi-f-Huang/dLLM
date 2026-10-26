@@ -1,0 +1,36 @@
+{
+  "checkpoint": "checkpoints/tinygsm/mdlm.ckpt",
+  "data": "/root/autodl-tmp/s-flm/outputs/grpo-fixed32-20261024-02/fixed/questions.jsonl",
+  "output": "/root/autodl-tmp/s-flm/outputs/grpo-fp32-monitored-smoke-20261024/train",
+  "audit_only": false,
+  "limit": 32,
+  "updates": 2,
+  "group_size": 8,
+  "microbatch": 8,
+  "iterations": 2,
+  "nfe": 32,
+  "temperature": 0.3,
+  "prompt_mask": 0.0,
+  "lr": 3e-06,
+  "beta": 0.04,
+  "epsilon": 0.2,
+  "timeout": 2,
+  "seed": 42,
+  "save_every": 2,
+  "save_at": [
+    1,
+    2
+  ],
+  "reshuffle_cycles": true,
+  "precision": "float32",
+  "monitor": true,
+  "diagnostic_pairs": "/root/autodl-tmp/s-flm/outputs/grpo-fixed32-20261024-02/base/pairs.jsonl",
+  "gradient_at": [
+    0,
+    1,
+    10,
+    50,
+    100,
+    250
+  ]
+}

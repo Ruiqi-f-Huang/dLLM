@@ -1,0 +1,14 @@
+train: gsm8k_pot
+valid: gsm8k_pot
+train_file: ${hydra:runtime.cwd}/data/gsm8k_pot_result/sft_train.jsonl
+validation_file: ${hydra:runtime.cwd}/data/gsm8k_pot_result/sft_validation.jsonl
+cache_dir: ${hydra:runtime.cwd}/data_cache/gsm8k_pot_result
+tokenizer_name_or_path: HuggingFaceTB/SmolLM-135M
+tokenizer_revision: 1d461723eec654e65efdc40cf49301c89c0c92f4
+separator: '\n'
+wrap: false
+streaming: false
+insert_train_eos: true
+insert_valid_eos: true
+train_on_prompt: false
+train_on_pad: true

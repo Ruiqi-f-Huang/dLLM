@@ -1,0 +1,5 @@
+{
+  "temperature": 0.1,
+  "logit_scaling_factor": 10,
+  "verified": true
+}

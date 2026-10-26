@@ -1,0 +1,5 @@
+objective,program,delta,updates
+Signed,Success,-0.057744260877370834,200
+Signed,Failure,-0.2364148050546646,200
+Positive-only,Success,0.020385767333209515,200
+Positive-only,Failure,-0.0044106729328632355,200

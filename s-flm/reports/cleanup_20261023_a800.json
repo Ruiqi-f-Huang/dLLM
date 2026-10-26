@@ -1,0 +1,88 @@
+{
+  "host": "autodl-container-879kwszxgc-f46e3f81",
+  "workspace": "/root/s-flm",
+  "removed_bytes": 3961892082,
+  "removed": [
+    {
+      "path": "/root/s-flm/__pycache__",
+      "bytes": 314492,
+      "reason": "rebuildable Python bytecode"
+    },
+    {
+      "path": "/root/s-flm/scripts/__pycache__",
+      "bytes": 15135,
+      "reason": "rebuildable Python bytecode"
+    },
+    {
+      "path": "/root/s-flm/models/__pycache__",
+      "bytes": 103103,
+      "reason": "rebuildable Python bytecode"
+    },
+    {
+      "path": "/root/s-flm/tests/__pycache__",
+      "bytes": 52419,
+      "reason": "rebuildable Python bytecode"
+    },
+    {
+      "path": "/root/s-flm/callbacks/__pycache__",
+      "bytes": 17715,
+      "reason": "rebuildable Python bytecode"
+    },
+    {
+      "path": "/tmp/20261021-a800-formal-01-metadata.tar.gz",
+      "bytes": 866534,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/base-ema-steps32-seed1-results.tar.gz",
+      "bytes": 383180,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/sft-ema-steps32-seed1-results.tar.gz",
+      "bytes": 370751,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/sflm-cot-comments-pilot-20261022.tar.gz",
+      "bytes": 819200,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/sft-target-learning-results.tar.gz",
+      "bytes": 963802,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/gsm8k_pot_result_bundle.tgz",
+      "bytes": 1707270,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/sflm-target-learning-diagnostics.tar.gz",
+      "bytes": 1780796,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/root/.cache/pip",
+      "bytes": 3952584407,
+      "reason": "rebuildable pip download cache; installed environments retained"
+    },
+    {
+      "path": "/root/s-flm/sflm-cot-comments-pilot-20261022.tar.gz",
+      "bytes": 1902383,
+      "reason": "completed project transfer archive"
+    },
+    {
+      "path": "/root/s-flm/sflm-cot-trim-code-20261022.tar.gz",
+      "bytes": 4270,
+      "reason": "completed project transfer archive"
+    },
+    {
+      "path": "/root/s-flm/sflm-cot-pilot-runner-20261022.tar.gz",
+      "bytes": 6625,
+      "reason": "completed project transfer archive"
+    }
+  ],
+  "preserved": "All checkpoints, datasets, source, experiment logs, evaluation records, W&B files, virtual environments and Hugging Face cache"
+}

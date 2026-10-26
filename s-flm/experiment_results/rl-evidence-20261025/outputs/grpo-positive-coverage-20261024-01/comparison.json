@@ -1,0 +1,188 @@
+{
+  "original": {
+    "base-to-positive8": {
+      "0.3": {
+        "mean_delta": 0.00537109375,
+        "question_bootstrap_ci95": [
+          -0.0048828125,
+          0.015625
+        ],
+        "improved_questions": 36,
+        "worsened_questions": 24
+      },
+      "0.1": {
+        "mean_delta": 0.01025390625,
+        "question_bootstrap_ci95": [
+          -0.0009765625,
+          0.021484375
+        ],
+        "improved_questions": 33,
+        "worsened_questions": 21
+      }
+    },
+    "base-to-positive32": {
+      "0.3": {
+        "mean_delta": 0.01806640625,
+        "question_bootstrap_ci95": [
+          0.00537109375,
+          0.03076171875
+        ],
+        "improved_questions": 45,
+        "worsened_questions": 26
+      },
+      "0.1": {
+        "mean_delta": 0.01953125,
+        "question_bootstrap_ci95": [
+          0.00390625,
+          0.03515625
+        ],
+        "improved_questions": 50,
+        "worsened_questions": 26
+      }
+    },
+    "positive8-to-positive32": {
+      "0.3": {
+        "mean_delta": 0.0126953125,
+        "question_bootstrap_ci95": [
+          0.00048828125,
+          0.02587890625
+        ],
+        "improved_questions": 39,
+        "worsened_questions": 24
+      },
+      "0.1": {
+        "mean_delta": 0.00927734375,
+        "question_bootstrap_ci95": [
+          -0.0048828125,
+          0.0234375
+        ],
+        "improved_questions": 45,
+        "worsened_questions": 28
+      }
+    }
+  },
+  "fresh": {
+    "base-to-positive8": {
+      "0.3": {
+        "mean_delta": -0.001953125,
+        "question_bootstrap_ci95": [
+          -0.01171875,
+          0.00732421875
+        ],
+        "improved_questions": 30,
+        "worsened_questions": 33
+      },
+      "0.1": {
+        "mean_delta": 0.0078125,
+        "question_bootstrap_ci95": [
+          -0.0029296875,
+          0.017578125
+        ],
+        "improved_questions": 37,
+        "worsened_questions": 20
+      }
+    },
+    "base-to-positive32": {
+      "0.3": {
+        "mean_delta": 0.00439453125,
+        "question_bootstrap_ci95": [
+          -0.0107421875,
+          0.01904296875
+        ],
+        "improved_questions": 42,
+        "worsened_questions": 39
+      },
+      "0.1": {
+        "mean_delta": 0.01318359375,
+        "question_bootstrap_ci95": [
+          -0.0009765625,
+          0.02685546875
+        ],
+        "improved_questions": 38,
+        "worsened_questions": 30
+      }
+    },
+    "positive8-to-positive32": {
+      "0.3": {
+        "mean_delta": 0.00634765625,
+        "question_bootstrap_ci95": [
+          -0.00732421875,
+          0.01953125
+        ],
+        "improved_questions": 42,
+        "worsened_questions": 34
+      },
+      "0.1": {
+        "mean_delta": 0.00537109375,
+        "question_bootstrap_ci95": [
+          -0.0078125,
+          0.0185546875
+        ],
+        "improved_questions": 37,
+        "worsened_questions": 33
+      }
+    }
+  },
+  "combined": {
+    "base-to-positive8": {
+      "0.3": {
+        "mean_delta": 0.001708984375,
+        "question_bootstrap_ci95": [
+          -0.006103515625,
+          0.008544921875
+        ],
+        "improved_questions": 41,
+        "worsened_questions": 40
+      },
+      "0.1": {
+        "mean_delta": 0.009033203125,
+        "question_bootstrap_ci95": [
+          0.00146484375,
+          0.01611328125
+        ],
+        "improved_questions": 51,
+        "worsened_questions": 31
+      }
+    },
+    "base-to-positive32": {
+      "0.3": {
+        "mean_delta": 0.01123046875,
+        "question_bootstrap_ci95": [
+          0.001708984375,
+          0.020751953125
+        ],
+        "improved_questions": 51,
+        "worsened_questions": 37
+      },
+      "0.1": {
+        "mean_delta": 0.016357421875,
+        "question_bootstrap_ci95": [
+          0.005859375,
+          0.02685546875
+        ],
+        "improved_questions": 58,
+        "worsened_questions": 28
+      }
+    },
+    "positive8-to-positive32": {
+      "0.3": {
+        "mean_delta": 0.009521484375,
+        "question_bootstrap_ci95": [
+          -0.000244140625,
+          0.01953125
+        ],
+        "improved_questions": 49,
+        "worsened_questions": 36
+      },
+      "0.1": {
+        "mean_delta": 0.00732421875,
+        "question_bootstrap_ci95": [
+          -0.00146484375,
+          0.016357421875
+        ],
+        "improved_questions": 45,
+        "worsened_questions": 41
+      }
+    }
+  }
+}

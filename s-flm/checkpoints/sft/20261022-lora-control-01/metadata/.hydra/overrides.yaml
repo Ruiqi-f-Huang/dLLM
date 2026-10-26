@@ -1,0 +1,5 @@
+- training.finetune_path=/root/s-flm/checkpoints/tinygsm/mdlm.ckpt
+- data.train_file=/root/s-flm/data/gsm8k_pot/sft_train.jsonl
+- data.validation_file=/root/s-flm/data/gsm8k_pot/sft_validation.jsonl
+- data.cache_dir=/root/autodl-tmp/s-flm/data_cache/gsm8k_pot
+- data.tokenizer_name_or_path=/root/autodl-tmp/s-flm/cache/huggingface/hub/models--HuggingFaceTB--SmolLM-135M/snapshots/1d461723eec654e65efdc40cf49301c89c0c92f4

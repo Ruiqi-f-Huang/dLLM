@@ -1,0 +1,159 @@
+Seed set to 42
+Seed set to 1
+{"model": "base", "seed": 1, "evaluated": 32, "correct": 7}
+{"model": "base", "seed": 1, "evaluated": 64, "correct": 19}
+{"model": "base", "seed": 1, "evaluated": 96, "correct": 28}
+{"model": "base", "seed": 1, "evaluated": 128, "correct": 34}
+{"model": "base", "seed": 1, "evaluated": 160, "correct": 45}
+{"model": "base", "seed": 1, "evaluated": 192, "correct": 53}
+{"model": "base", "seed": 1, "evaluated": 224, "correct": 64}
+{"model": "base", "seed": 1, "evaluated": 256, "correct": 76}
+{"model": "base", "seed": 1, "evaluated": 288, "correct": 87}
+{"model": "base", "seed": 1, "evaluated": 320, "correct": 97}
+{"model": "base", "seed": 1, "evaluated": 352, "correct": 105}
+{"model": "base", "seed": 1, "evaluated": 384, "correct": 113}
+{"model": "base", "seed": 1, "evaluated": 416, "correct": 120}
+{"model": "base", "seed": 1, "evaluated": 448, "correct": 133}
+{"model": "base", "seed": 1, "evaluated": 480, "correct": 139}
+{"model": "base", "seed": 1, "evaluated": 512, "correct": 148}
+{"model": "base", "seed": 1, "evaluated": 544, "correct": 158}
+{"model": "base", "seed": 1, "evaluated": 576, "correct": 165}
+{"model": "base", "seed": 1, "evaluated": 608, "correct": 172}
+{"model": "base", "seed": 1, "evaluated": 632, "correct": 178}
+Seed set to 2
+{"model": "base", "seed": 2, "evaluated": 32, "correct": 8}
+{"model": "base", "seed": 2, "evaluated": 64, "correct": 21}
+{"model": "base", "seed": 2, "evaluated": 96, "correct": 31}
+{"model": "base", "seed": 2, "evaluated": 128, "correct": 41}
+{"model": "base", "seed": 2, "evaluated": 160, "correct": 50}
+{"model": "base", "seed": 2, "evaluated": 192, "correct": 55}
+{"model": "base", "seed": 2, "evaluated": 224, "correct": 63}
+{"model": "base", "seed": 2, "evaluated": 256, "correct": 72}
+{"model": "base", "seed": 2, "evaluated": 288, "correct": 79}
+{"model": "base", "seed": 2, "evaluated": 320, "correct": 91}
+{"model": "base", "seed": 2, "evaluated": 352, "correct": 98}
+{"model": "base", "seed": 2, "evaluated": 384, "correct": 104}
+{"model": "base", "seed": 2, "evaluated": 416, "correct": 113}
+{"model": "base", "seed": 2, "evaluated": 448, "correct": 122}
+{"model": "base", "seed": 2, "evaluated": 480, "correct": 130}
+{"model": "base", "seed": 2, "evaluated": 512, "correct": 136}
+{"model": "base", "seed": 2, "evaluated": 544, "correct": 146}
+{"model": "base", "seed": 2, "evaluated": 576, "correct": 153}
+{"model": "base", "seed": 2, "evaluated": 608, "correct": 159}
+{"model": "base", "seed": 2, "evaluated": 632, "correct": 163}
+Seed set to 42
+Seed set to 1
+{"model": "rl500", "seed": 1, "evaluated": 32, "correct": 7}
+{"model": "rl500", "seed": 1, "evaluated": 64, "correct": 19}
+{"model": "rl500", "seed": 1, "evaluated": 96, "correct": 28}
+{"model": "rl500", "seed": 1, "evaluated": 128, "correct": 34}
+{"model": "rl500", "seed": 1, "evaluated": 160, "correct": 45}
+{"model": "rl500", "seed": 1, "evaluated": 192, "correct": 54}
+{"model": "rl500", "seed": 1, "evaluated": 224, "correct": 65}
+{"model": "rl500", "seed": 1, "evaluated": 256, "correct": 76}
+{"model": "rl500", "seed": 1, "evaluated": 288, "correct": 86}
+{"model": "rl500", "seed": 1, "evaluated": 320, "correct": 96}
+{"model": "rl500", "seed": 1, "evaluated": 352, "correct": 105}
+{"model": "rl500", "seed": 1, "evaluated": 384, "correct": 112}
+{"model": "rl500", "seed": 1, "evaluated": 416, "correct": 119}
+{"model": "rl500", "seed": 1, "evaluated": 448, "correct": 134}
+{"model": "rl500", "seed": 1, "evaluated": 480, "correct": 140}
+{"model": "rl500", "seed": 1, "evaluated": 512, "correct": 149}
+{"model": "rl500", "seed": 1, "evaluated": 544, "correct": 159}
+{"model": "rl500", "seed": 1, "evaluated": 576, "correct": 166}
+{"model": "rl500", "seed": 1, "evaluated": 608, "correct": 172}
+{"model": "rl500", "seed": 1, "evaluated": 632, "correct": 178}
+Seed set to 2
+{"model": "rl500", "seed": 2, "evaluated": 32, "correct": 8}
+{"model": "rl500", "seed": 2, "evaluated": 64, "correct": 20}
+{"model": "rl500", "seed": 2, "evaluated": 96, "correct": 30}
+{"model": "rl500", "seed": 2, "evaluated": 128, "correct": 40}
+{"model": "rl500", "seed": 2, "evaluated": 160, "correct": 49}
+{"model": "rl500", "seed": 2, "evaluated": 192, "correct": 54}
+{"model": "rl500", "seed": 2, "evaluated": 224, "correct": 62}
+{"model": "rl500", "seed": 2, "evaluated": 256, "correct": 71}
+{"model": "rl500", "seed": 2, "evaluated": 288, "correct": 77}
+{"model": "rl500", "seed": 2, "evaluated": 320, "correct": 88}
+{"model": "rl500", "seed": 2, "evaluated": 352, "correct": 95}
+{"model": "rl500", "seed": 2, "evaluated": 384, "correct": 101}
+{"model": "rl500", "seed": 2, "evaluated": 416, "correct": 111}
+{"model": "rl500", "seed": 2, "evaluated": 448, "correct": 120}
+{"model": "rl500", "seed": 2, "evaluated": 480, "correct": 128}
+{"model": "rl500", "seed": 2, "evaluated": 512, "correct": 134}
+{"model": "rl500", "seed": 2, "evaluated": 544, "correct": 144}
+{"model": "rl500", "seed": 2, "evaluated": 576, "correct": 151}
+{"model": "rl500", "seed": 2, "evaluated": 608, "correct": 157}
+{"model": "rl500", "seed": 2, "evaluated": 632, "correct": 160}
+{
+  "protocol": {
+    "n": 632,
+    "nfe": 32,
+    "temperature": 0.1,
+    "sampler": "ancestral",
+    "batch_size": 32,
+    "seeds": [
+      1,
+      2
+    ],
+    "base_weights": "imported EMA",
+    "rl_weights": "raw",
+    "rng_reset": "after model initialization",
+    "max_length": 512
+  },
+  "rl_label": "rl500",
+  "comparisons": [
+    {
+      "seed": 1,
+      "protocol": "legacy-full",
+      "base_correct": 178,
+      "rl_correct": 178,
+      "gained": 4,
+      "lost": 4,
+      "paired_exact_p": 1.0,
+      "base_raw_parses": 550,
+      "rl_raw_parses": 547,
+      "changed_outputs": 62
+    },
+    {
+      "seed": 1,
+      "protocol": "first-eos",
+      "base_correct": 178,
+      "rl_correct": 178,
+      "gained": 4,
+      "lost": 4,
+      "paired_exact_p": 1.0,
+      "base_raw_parses": 550,
+      "rl_raw_parses": 547,
+      "changed_outputs": 62
+    },
+    {
+      "seed": 2,
+      "protocol": "legacy-full",
+      "base_correct": 163,
+      "rl_correct": 160,
+      "gained": 1,
+      "lost": 4,
+      "paired_exact_p": 0.375,
+      "base_raw_parses": 551,
+      "rl_raw_parses": 555,
+      "changed_outputs": 55
+    },
+    {
+      "seed": 2,
+      "protocol": "first-eos",
+      "base_correct": 164,
+      "rl_correct": 161,
+      "gained": 1,
+      "lost": 4,
+      "paired_exact_p": 0.375,
+      "base_raw_parses": 551,
+      "rl_raw_parses": 555,
+      "changed_outputs": 55
+    }
+  ],
+  "limitations": [
+    "One training seed; exploratory pilot.",
+    "Generation seeds reuse the same questions, not independent datasets.",
+    "Legacy full output and EOS-truncated rewards are reported separately."
+  ]
+}

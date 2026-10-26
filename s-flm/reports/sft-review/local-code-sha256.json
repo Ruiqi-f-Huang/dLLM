@@ -1,0 +1,10 @@
+{
+  "trainer_base.py": "7a6a66f22cbc24d223c4c6733fb4eb34833d22b84fdddb1942396969ba0d33a4",
+  "callbacks/sft_monitor.py": "902b543258aba0c5dd9aa59c1261f992d8cee336979dfebbb6216bba1a0e7792",
+  "tests/test_sft_algorithm.py": "6c00f78078cac8328dbbfa54ddffc501aaa8fd205d1900df402da451de337849",
+  "tests/test_sft_monitor.py": "6276f603b485933c87abe59d31f77885ee7c58b19b167bb20d2581cebcc8f881",
+  "configs/sft.yaml": "0c84ffab4fc4183ceb64f9c1ef2964d12833b15c4d9376116dcecba4d9d05e29",
+  "dataloader.py": "52779ea00d35cc3360b2fcc2941eb73892e66a2d58d548257e2c0530663651ea",
+  "main.py": "03fea35d7242d2928af348329574ceaf0764ece82e2d86430ad2c800ed141127",
+  "docs/sft.md": "2a1260b02a2539a8d6e09281e68a0d645b0858448755731c07841cbe214d4cd3"
+}

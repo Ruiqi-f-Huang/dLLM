@@ -1,0 +1,2 @@
+{"group": 0, "sample_id": "gsm8k_train_2960", "reward": 0.5, "pass_any": true, "mixed": true, "unique_fraction": 1.0, "step": 1, "grad_norm": 0.026237601414322853, "loss": 0.006596313460206588, "kl": 0.0, "clip_fraction": 0.0}
+{"group": 0, "sample_id": "gsm8k_train_2960", "reward": 0.5, "pass_any": true, "mixed": true, "unique_fraction": 1.0, "step": 2, "grad_norm": 0.026131020858883858, "loss": 0.006760896903543784, "kl": 2.243242010930805e-05, "clip_fraction": 0.0}

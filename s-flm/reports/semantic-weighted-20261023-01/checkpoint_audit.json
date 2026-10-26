@@ -1,0 +1,10 @@
+{
+  "global_step": 711,
+  "frozen_tensors": 131,
+  "frozen_equal_retained_control": true,
+  "lora_tensors": 96,
+  "all_lora_finite": true,
+  "optimizer_step_values": [
+    711
+  ]
+}

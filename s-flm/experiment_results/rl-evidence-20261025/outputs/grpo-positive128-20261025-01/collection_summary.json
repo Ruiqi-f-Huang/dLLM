@@ -1,0 +1,9 @@
+{
+  "retained32": 32,
+  "new96": 96,
+  "attempted_questions": 151,
+  "success_fraction": 0.6357615894039735,
+  "candidates_per_question": 8,
+  "selection": "fixed training hash order; first correct candidate; no validation selection",
+  "precision": "float32"
+}

@@ -1,0 +1,4 @@
+[2026-10-23 16:11:37,425][__main__][INFO] - Starting Training.
+[2026-10-23 16:11:40,347][__main__][INFO] - Fresh finetune from ema weights; optimizer, scheduler and EMA history start fresh.
+[2026-10-23 16:11:40,348][__main__][INFO] - LoRA enabled for 48 modules: 1,179,648/169,110,018 backbone parameters are trainable.
+[2026-10-23 16:12:13,662][__main__][INFO] - Training finished at optimizer step 200; peak allocated GPU memory: 9408.1 MiB.

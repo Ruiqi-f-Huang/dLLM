@@ -1,0 +1,6 @@
+[
+  "One seed; chosen 32 training questions, no validation/test claims.",
+  "Other24 were not used in this fixed8 fit, but were selected in earlier experiments.",
+  "16 draws/question and two fixed Base trajectories/question; limited statistical power.",
+  "Trajectory label rl250 identifies the positive step200 candidate here; see run.json."
+]

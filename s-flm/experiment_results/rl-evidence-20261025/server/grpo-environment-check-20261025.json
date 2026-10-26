@@ -1,0 +1,64 @@
+[
+  {
+    "model": "base",
+    "generated_tokens": 151,
+    "execution": {
+      "raw": {
+        "parses": true,
+        "executes": true,
+        "numeric": true,
+        "correct": true
+      },
+      "recovered": {
+        "parses": true,
+        "executes": true,
+        "numeric": true,
+        "correct": true
+      },
+      "reward": 1.0,
+      "infrastructure_failure": false
+    },
+    "fp32_loss": 0.0007269675261341035,
+    "gradient_norm": 0.001102494541555643
+  },
+  {
+    "model": "positive8",
+    "generated_tokens": 151,
+    "execution": {
+      "raw": {
+        "parses": true,
+        "executes": true,
+        "numeric": true,
+        "correct": true
+      },
+      "recovered": {
+        "parses": true,
+        "executes": true,
+        "numeric": true,
+        "correct": true
+      },
+      "reward": 1.0,
+      "infrastructure_failure": false
+    }
+  },
+  {
+    "model": "positive32",
+    "generated_tokens": 151,
+    "execution": {
+      "raw": {
+        "parses": true,
+        "executes": true,
+        "numeric": true,
+        "correct": true
+      },
+      "recovered": {
+        "parses": true,
+        "executes": true,
+        "numeric": true,
+        "correct": true
+      },
+      "reward": 1.0,
+      "infrastructure_failure": false
+    }
+  }
+]

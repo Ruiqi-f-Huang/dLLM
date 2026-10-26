@@ -1,0 +1,32 @@
+{
+  "models": [
+    "base_ema",
+    "sft711_ema",
+    "positive32_raw"
+  ],
+  "questions": 1319,
+  "temperature": 0.1,
+  "nfe": 32,
+  "precision": "float32",
+  "seeds": [
+    1,
+    2
+  ],
+  "batch_size": 8,
+  "primary": "mean single-draw execution accuracy across two fixed seeds",
+  "test_history": "Test previously used in exploratory evaluations; not untouched.",
+  "weights": "Base EMA import; SFT711 EMA copy and verify; positive32 raw",
+  "frozen_before_generation": true,
+  "paths": {
+    "base": "/root/autodl-tmp/s-flm/checkpoints/tinygsm/mdlm.ckpt",
+    "sft": "/root/autodl-tmp/s-flm/outputs/semantic-weighted-20261023-01/train/checkpoints/step-000711.ckpt",
+    "positive": "/root/autodl-tmp/s-flm/outputs/grpo-positive32-20261024-01/positive32-step200.ckpt",
+    "test": "/root/s-flm/data/gsm8k_test.json"
+  },
+  "hashes": {
+    "base": "251b4c935424622c13d75712cfefef0cae6829ad7bab6b712e009fc372bf1583",
+    "sft": "5b2f034c078a7557814cb9d243387ca525f9cb418568556740a569a23427029a",
+    "positive": "0cd286009ef785416282f54d437eafebc289ab13c834cbfb5ccc356c06b25174",
+    "test": "c93390d9990e8232ef01ec74153f8164f8a277ceffec30523b08a843861b001c"
+  }
+}

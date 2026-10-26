@@ -1,0 +1,15 @@
+# LoRA SFT on the result-normalized GSM8K PoT data at an intermediate rate.
+defaults:
+  - sft-a800-lora-result-lr3e5
+  - _self_
+
+optim:
+  lr: 1e-5
+
+wandb:
+  name: mdlm-sft-lora-result-lr1e5-${now:%Y%m%d-%H%M%S}
+  tags: [mdlm, gsm8k-pot, sft, lora, result-normalized, lr1e-5]
+
+hydra:
+  run:
+    dir: ${hydra:runtime.cwd}/outputs/sft/${now:%Y%m%d}-lora-result-lr1e5-01

@@ -1,0 +1,20 @@
+defaults:
+  - sft-a800-lora-control
+  - _self_
+
+loader:
+  num_workers: 0
+
+trainer:
+  max_steps: 1000
+  max_epochs: 1000
+  limit_val_batches: 0
+  num_sanity_val_steps: 0
+  enable_progress_bar: false
+
+callbacks:
+  milestone_checkpoint:
+    _target_: callbacks.overfit_probe.OverfitProbe
+    milestones: [200, 500, 1000]
+
+wandb: null

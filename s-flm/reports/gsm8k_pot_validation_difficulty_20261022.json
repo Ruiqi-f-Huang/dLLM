@@ -1,0 +1,114 @@
+{
+  "n": 632,
+  "thresholds": {
+    "easy_max_score": 0.43581616481774965,
+    "medium_max_score": 0.552931854199683
+  },
+  "features": {
+    "arithmetic_ops": {
+      "mean": 3.768987341772152,
+      "median": 3.0,
+      "p90": 6.0,
+      "max": 11
+    },
+    "dependency_depth": {
+      "mean": 2.9952531645569622,
+      "median": 3.0,
+      "p90": 4.0,
+      "max": 7
+    },
+    "control_flow": {
+      "mean": 0.020569620253164556,
+      "median": 0.0,
+      "p90": 0.0,
+      "max": 1
+    },
+    "advanced_ops": {
+      "mean": 0.1060126582278481,
+      "median": 0.0,
+      "p90": 0.0,
+      "max": 3
+    },
+    "numeric_types": {
+      "mean": 1.1930379746835442,
+      "median": 1.0,
+      "p90": 2.0,
+      "max": 2
+    },
+    "ast_nodes": {
+      "mean": 49.049050632911396,
+      "median": 47.0,
+      "p90": 68.89999999999998,
+      "max": 100
+    },
+    "all_ops": {
+      "mean": 3.786392405063291,
+      "median": 3.0,
+      "p90": 6.0,
+      "max": 11
+    },
+    "float_literals": {
+      "mean": 0.30854430379746833,
+      "median": 0.0,
+      "p90": 1.0,
+      "max": 7
+    },
+    "dead_assignments": {
+      "mean": 0.014240506329113924,
+      "median": 0.0,
+      "p90": 0.0,
+      "max": 1
+    }
+  },
+  "bins": {
+    "easy": {
+      "n": 216,
+      "base_correct": 33,
+      "base_accuracy": 0.1527777777777778,
+      "step711_correct": 28,
+      "step711_accuracy": 0.12962962962962962,
+      "delta_pp": -2.314814814814815
+    },
+    "medium": {
+      "n": 206,
+      "base_correct": 12,
+      "base_accuracy": 0.05825242718446602,
+      "step711_correct": 9,
+      "step711_accuracy": 0.043689320388349516,
+      "delta_pp": -1.4563106796116505
+    },
+    "hard": {
+      "n": 210,
+      "base_correct": 9,
+      "base_accuracy": 0.04285714285714286,
+      "step711_correct": 9,
+      "step711_accuracy": 0.04285714285714286,
+      "delta_pp": 0.0
+    }
+  },
+  "transitions": {
+    "easy": {
+      "both_correct": 26,
+      "both_wrong": 181,
+      "step711_only": 2,
+      "base_only": 7
+    },
+    "medium": {
+      "both_wrong": 194,
+      "base_only": 3,
+      "both_correct": 9
+    },
+    "hard": {
+      "both_correct": 8,
+      "both_wrong": 200,
+      "base_only": 1,
+      "step711_only": 1
+    }
+  },
+  "overall": {
+    "base": 54,
+    "step711": 46,
+    "base_accuracy": 0.08544303797468354,
+    "step711_accuracy": 0.07278481012658228
+  }
+}

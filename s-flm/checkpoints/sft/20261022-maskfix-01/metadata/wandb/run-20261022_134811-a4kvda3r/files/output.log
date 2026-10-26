@@ -1,0 +1,18 @@
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name     | Type      | Params | Mode
+-----------------------------------------------
+0 | backbone | DIT       | 167 M  | train
+1 | softplus | Softplus  | 0      | train
+2 | noise    | LogLinear | 0      | train
+-----------------------------------------------
+167 M     Trainable params
+0         Non-trainable params
+167 M     Total params
+671.721   Total estimated model params size (MB)
+159       Modules in train mode
+0         Modules in eval mode
+Epoch 0: 100%|██████████| 711/711 [01:24<00:00,  8.40it/s, v_num=da3r]     
+[2026-10-22 13:49:42,014][__main__][INFO] - Training finished at optimizer step 711; peak allocated GPU memory: 9633.2 MiB.
+Epoch 0, global step 711: 'val/nll' reached 0.41331 (best 0.41331), saving model to '/root/autodl-tmp/s-flm/outputs/sft/20261022-maskfix-01/checkpoints/best.ckpt' as top 1
+`Trainer.fit` stopped: `max_epochs=1` reached.

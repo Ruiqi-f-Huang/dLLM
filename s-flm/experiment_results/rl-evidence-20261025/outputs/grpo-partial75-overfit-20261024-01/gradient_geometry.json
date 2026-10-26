@@ -1,0 +1,86 @@
+[
+  {
+    "before_update": 1,
+    "program_vs_reference": {
+      "policy_gradient_norm": 0.021666252985596657,
+      "reference_gradient_norm": 4.933756958536151e-09,
+      "reference_to_policy_norm": 2.2771620740402252e-07,
+      "cosine": 0.47436587231899696
+    },
+    "token_vs_reference": {
+      "policy_gradient_norm": 0.024525510147213936,
+      "reference_gradient_norm": 4.933756958536151e-09,
+      "reference_to_policy_norm": 2.0116837239761224e-07,
+      "cosine": 0.5091791159225276
+    },
+    "program_vs_token": {
+      "policy_gradient_norm": 0.021666252985596657,
+      "reference_gradient_norm": 0.024525510147213936,
+      "reference_to_policy_norm": 1.13196823481744,
+      "cosine": 0.995295571765674
+    }
+  },
+  {
+    "before_update": 2,
+    "program_vs_reference": {
+      "policy_gradient_norm": 0.021772097796201706,
+      "reference_gradient_norm": 5.221411265665665e-05,
+      "reference_to_policy_norm": 0.002398212296555354,
+      "cosine": -0.9101139194693109
+    },
+    "token_vs_reference": {
+      "policy_gradient_norm": 0.024649284780025482,
+      "reference_gradient_norm": 5.221411265665665e-05,
+      "reference_to_policy_norm": 0.0021182810423354876,
+      "cosine": -0.9290289427736679
+    },
+    "program_vs_token": {
+      "policy_gradient_norm": 0.021772097796201706,
+      "reference_gradient_norm": 0.024649284780025482,
+      "reference_to_policy_norm": 1.1321501956658362,
+      "cosine": 0.9953224194032795
+    }
+  },
+  {
+    "before_update": 11,
+    "program_vs_reference": {
+      "policy_gradient_norm": 0.024421745911240578,
+      "reference_gradient_norm": 0.000809636723715812,
+      "reference_to_policy_norm": 0.033152286763542205,
+      "cosine": -0.9044220927466671
+    },
+    "token_vs_reference": {
+      "policy_gradient_norm": 0.027743926271796227,
+      "reference_gradient_norm": 0.000809636723715812,
+      "reference_to_policy_norm": 0.029182485412631312,
+      "cosine": -0.9218620647383554
+    },
+    "program_vs_token": {
+      "policy_gradient_norm": 0.024421745911240578,
+      "reference_gradient_norm": 0.027743926271796227,
+      "reference_to_policy_norm": 1.136033696060467,
+      "cosine": 0.9958782627732654
+    }
+  },
+  {
+    "before_update": 200,
+    "program_vs_reference": {
+      "policy_gradient_norm": 0.11913491785526276,
+      "reference_gradient_norm": 9032511258624.0,
+      "reference_to_policy_norm": 75817496845027.55,
+      "cosine": -0.10741740837938296
+    },
+    "token_vs_reference": {
+      "policy_gradient_norm": 0.12947362661361694,
+      "reference_gradient_norm": 9032511258624.0,
+      "reference_to_policy_norm": 69763329373474.4,
+      "cosine": -0.10173861499292453
+    },
+    "program_vs_token": {
+      "policy_gradient_norm": 0.11913491785526276,
+      "reference_gradient_norm": 0.12947362661361694,
+      "reference_to_policy_norm": 1.086781515818181,
+      "cosine": 0.9943448044253052
+    }
+  }
+]

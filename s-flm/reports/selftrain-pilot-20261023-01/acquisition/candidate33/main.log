@@ -1,0 +1,6 @@
+[2026-10-23 16:01:17,805][__main__][INFO] - Starting GSM8K eval.
+[2026-10-23 16:02:37,182][__main__][INFO] - Rank 0: average NFE per batch: 32.0
+[2026-10-23 16:02:37,187][__main__][INFO] - Rank 0: saved 512 records to /root/autodl-tmp/s-flm/outputs/selftrain-pilot-20261023-01/acquisition/candidate33/rank_0000.json
+[2026-10-23 16:02:37,198][__main__][INFO] - Total records evaluated: 512
+[2026-10-23 16:02:37,256][__main__][INFO] - GSM8K accuracy: 15.04% (77/512)
+[2026-10-23 16:02:37,259][__main__][INFO] - Results saved to /root/autodl-tmp/s-flm/outputs/selftrain-pilot-20261023-01/acquisition/candidate33/results.json

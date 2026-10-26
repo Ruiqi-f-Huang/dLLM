@@ -1,0 +1,95 @@
+test_ema_or_raw_initialization_resets_history (test_sft.FinetuneTests.test_ema_or_raw_initialization_resets_history) ... ok
+test_incompatible_ema_fails (test_sft.FinetuneTests.test_incompatible_ema_fails) ... ok
+test_cache_follows_contents_and_mask_settings (test_sft.SFTDataTests.test_cache_follows_contents_and_mask_settings) ... Saving the dataset (0/1 shards):   0%|          | 0/1 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1/1 [00:00<00:00, 415.69 examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1/1 [00:00<00:00, 394.50 examples/s]
+Saving the dataset (0/1 shards):   0%|          | 0/1 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1/1 [00:00<00:00, 539.39 examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1/1 [00:00<00:00, 511.06 examples/s]
+Saving the dataset (0/1 shards):   0%|          | 0/1 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1/1 [00:00<00:00, 312.40 examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1/1 [00:00<00:00, 303.06 examples/s]
+ok
+test_generation_validation_never_receives_reference_code (test_sft.SFTDataTests.test_generation_validation_never_receives_reference_code) ... ok
+test_oversize_program_is_rejected (test_sft.SFTDataTests.test_oversize_program_is_rejected) ... ok
+test_prefix_eos_padding_and_no_gold_leak (test_sft.SFTDataTests.test_prefix_eos_padding_and_no_gold_leak) ... Saving the dataset (0/1 shards):   0%|          | 0/1 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1/1 [00:00<00:00, 548.49 examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1/1 [00:00<00:00, 520.84 examples/s]
+ok
+test_same_question_cannot_cross_splits (test_sft.SFTDataTests.test_same_question_cannot_cross_splits) ... ok
+test_code_and_padding_diagnostics_are_token_weighted (test_sft_algorithm.AlgorithmTests.test_code_and_padding_diagnostics_are_token_weighted) ... ok
+test_ema_does_not_advance_when_scaler_skips_update (test_sft_algorithm.AlgorithmTests.test_ema_does_not_advance_when_scaler_skips_update) ... ok
+test_loss_normalizes_by_supervised_tokens_including_padding (test_sft_algorithm.AlgorithmTests.test_loss_normalizes_by_supervised_tokens_including_padding) ... ok
+test_mdlm_weight_and_gradient_match_analytic_answer (test_sft_algorithm.AlgorithmTests.test_mdlm_weight_and_gradient_match_analytic_answer) ... ok
+test_prompt_stays_clean_and_targets_are_noised (test_sft_algorithm.AlgorithmTests.test_prompt_stays_clean_and_targets_are_noised) ... ok
+test_real_amp_overflow_skips_parameter_and_ema_update (test_sft_algorithm.AlgorithmTests.test_real_amp_overflow_skips_parameter_and_ema_update) ... Using 16bit Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+/root/venvs/s-flm/lib/python3.12/site-packages/lightning/pytorch/trainer/configuration_validator.py:70: You defined a `validation_step` but have no `val_dataloader`. Skipping val loop.
+You are using a CUDA device ('NVIDIA A800-SXM4-80GB') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/root/venvs/s-flm/lib/python3.12/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:425: The 'train_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=127` in the `DataLoader` to improve performance.
+/root/venvs/s-flm/lib/python3.12/site-packages/lightning/pytorch/loops/fit_loop.py:310: The number of training batches (2) is smaller than the logging interval Trainer(log_every_n_steps=50). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+`Trainer.fit` stopped: `max_steps=2` reached.
+ok
+test_accumulation_csv_and_validation (test_sft_monitor.MonitorTests.test_accumulation_csv_and_validation) ... wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: WARNING `resume` will be ignored since W&B syncing is set to `offline`. Starting a new run with run id u87maqib.
+wandb: Tracking run with wandb version 0.19.9
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+GPU available: True (cuda), used: False
+/root/venvs/s-flm/lib/python3.12/site-packages/google/protobuf/internal/well_known_types.py:178: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  self.FromDatetime(datetime.datetime.utcnow())
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+/root/venvs/s-flm/lib/python3.12/site-packages/lightning/pytorch/trainer/setup.py:177: GPU available but not used. You can set it by doing `Trainer(accelerator='gpu')`.
+/root/venvs/s-flm/lib/python3.12/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:425: The 'train_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=127` in the `DataLoader` to improve performance.
+/root/venvs/s-flm/lib/python3.12/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:425: The 'val_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=127` in the `DataLoader` to improve performance.
+`Trainer.fit` stopped: `max_epochs=1` reached.
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:                                      epoch ▁▁▁▁▁▁█
+wandb:        monitor/amp_skipped_updates_session ▁▁
+wandb:       monitor/code_eos_tokens_seen_session ▁█
+wandb:                monitor/examples_per_second ▁█
+wandb:              monitor/examples_seen_session ▁█
+wandb:                 monitor/grad_norm_pre_clip █▁
+wandb:                                 monitor/lr ▁▁
+wandb: monitor/nonfinite_gradient_updates_session ▁▁
+wandb:                     monitor/optimizer_step ▁█
+wandb:           monitor/padded_tokens_per_second ▁█
+wandb:         monitor/successful_updates_session ▁█
+wandb:     monitor/supervised_tokens_seen_session ▁█
+wandb:           monitor/train_seconds_per_update █▁
+wandb:                                  train/bpd ▁
+wandb:                                  train/nll ▁
+wandb:                                  train/ppl ▁
+wandb:                        trainer/global_step ▁▅▅████
+wandb:                               trainer/loss █▄▁
+wandb:                                    val/nll ▁
+wandb: 
+wandb: Run summary:
+wandb:                                      epoch 1
+wandb:        monitor/amp_skipped_updates_session 0
+wandb:       monitor/code_eos_tokens_seen_session 6
+wandb:                monitor/examples_per_second 1043.50319
+wandb:              monitor/examples_seen_session 6
+wandb:                 monitor/grad_norm_pre_clip 1.9208
+wandb:                                 monitor/lr 0.01
+wandb: monitor/nonfinite_gradient_updates_session 0
+wandb:                     monitor/optimizer_step 3
+wandb:           monitor/padded_tokens_per_second 4174.01275
+wandb:         monitor/successful_updates_session 3
+wandb:     monitor/supervised_tokens_seen_session 18
+wandb:           monitor/train_seconds_per_update 0.00192
+wandb:                                  train/bpd 1.38632
+wandb:                                  train/nll 0.96092
+wandb:                                  train/ppl 2.61411
+wandb:                        trainer/global_step 2
+wandb:                               trainer/loss 0.92237
+wandb:                                    val/nll 0.88584
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /tmp/tmp60ti6_p5/wandb/offline-run-20261021_144905-u87maqib
+wandb: Find logs at: /tmp/tmp60ti6_p5/wandb/offline-run-20261021_144905-u87maqib/logs
+ok
+test_nonfinite_gradient_is_reported_without_changing_amp_behavior (test_sft_monitor.MonitorTests.test_nonfinite_gradient_is_reported_without_changing_amp_behavior) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 1.334s
+
+OK

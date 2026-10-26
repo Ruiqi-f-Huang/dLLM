@@ -1,0 +1,15 @@
+{
+  "main.py": "ee4b2bc8f258f0755cfc8320a0ff7f5e046b971774fcd0b6fa9e9058b203f00a",
+  "dataloader.py": "52779ea00d35cc3360b2fcc2941eb73892e66a2d58d548257e2c0530663651ea",
+  "trainer_base.py": "e06ab7ae25e7f664979aa45f767a121178532458b07867fcd35d4bd654d1c546",
+  "metrics.py": "f591da3c6dc90e6ba334eeceb1b048d36e2a74733a24ee9e5101b61ee142e4ef",
+  "algo.py": "c2b85f03a993e814e4d960a39e3b7efbd0d42dcff5eff42b1dd026adefbbee0d",
+  "models/dit.py": "bc8a3a3d594490c1d3021cc2a7025d55875ad6d1507d9856dcacaade8434fa49",
+  "models/flm_dit.py": "4e5fe51dcd95d29e7679d21b2017e036a0c8f487a2b6c3255928d049a9e75c55",
+  "configs/config.yaml": "3cd1909c68c4910c9ff6b9da7b4696c0c6baebea09798d8d647b8765aa80fb35",
+  "configs/data/gsm8k-pot.yaml": "cca6860784719da80062a6ecc1879c1ea48dcfa65f22ffe8b5d79aa4a5c5afac",
+  "configs/sft.yaml": "473b9a9fd52b6c99ae927bc821ec4e31f44711d724e47912bc39a08d53215257",
+  "scripts/train/gsm8k/mdlm_sft.sh": "d15aeb90aad4e8c4657deb0608e2a8426d6c5b5187f81decfbbf98c5c5625ae5",
+  "tests/test_sft.py": "3dad609ca286442739141961626a894aaf33f93b058086a1a59b1eff5d125efe",
+  "docs/sft.md": "9439cf59eecb92058606abf634f19f2e983dbc84c9ca7f0b2c9163eeccab9140"
+}

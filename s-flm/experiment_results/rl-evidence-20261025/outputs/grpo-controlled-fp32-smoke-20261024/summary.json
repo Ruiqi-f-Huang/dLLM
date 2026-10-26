@@ -1,0 +1,70 @@
+{
+  "objective": "fixed advantage, per-program mean logp, no KL/clipping; diagnostic only",
+  "frozen_changed": [],
+  "initial": {
+    "step": 0,
+    "program_loss": 0.031246230006217957,
+    "token_loss": 0.00789199210703373,
+    "success_mean_logp": -0.981415867805481,
+    "failure_mean_logp": -0.8564308881759644,
+    "mean_gap": -0.12498492002487183,
+    "parameter_delta_norm": 0.0,
+    "raw_output_dtype": "torch.float32",
+    "per_program": [
+      {
+        "sample_id": "gsm8k_train_4888",
+        "reward": 1.0,
+        "mean_logp": -1.2531524896621704
+      },
+      {
+        "sample_id": "gsm8k_train_4888",
+        "reward": 0.0,
+        "mean_logp": -0.8416013717651367
+      },
+      {
+        "sample_id": "gsm8k_train_3329",
+        "reward": 1.0,
+        "mean_logp": -0.7096791863441467
+      },
+      {
+        "sample_id": "gsm8k_train_3329",
+        "reward": 0.0,
+        "mean_logp": -0.8712604641914368
+      }
+    ]
+  },
+  "final": {
+    "step": 2,
+    "program_loss": 0.03119920939207077,
+    "token_loss": 0.007845593616366386,
+    "success_mean_logp": -0.981337308883667,
+    "failure_mean_logp": -0.8565404415130615,
+    "mean_gap": -0.12479683756828308,
+    "parameter_delta_norm": 0.004903532771304075,
+    "raw_output_dtype": "torch.float32",
+    "per_program": [
+      {
+        "sample_id": "gsm8k_train_4888",
+        "reward": 1.0,
+        "mean_logp": -1.2530205249786377
+      },
+      {
+        "sample_id": "gsm8k_train_4888",
+        "reward": 0.0,
+        "mean_logp": -0.8416805267333984
+      },
+      {
+        "sample_id": "gsm8k_train_3329",
+        "reward": 1.0,
+        "mean_logp": -0.7096540927886963
+      },
+      {
+        "sample_id": "gsm8k_train_3329",
+        "reward": 0.0,
+        "mean_logp": -0.8714004158973694
+      }
+    ]
+  },
+  "gap_delta": 0.00018808245658874512,
+  "program_loss_delta": -4.702061414718628e-05
+}

@@ -1,0 +1,7 @@
+[
+  "Positive rollout distillation, not online GRPO.",
+  "Original32 successes retained from prior Base generation; new96 freshly generated FP32.",
+  "Full632 validation is a development set already used in this project, not a fresh test.",
+  "No Base evaluation; compare32 versus128 on same A800 and same evaluation seed.",
+  "Coverage and total successful-program compute increase together; per-program updates remain200."
+]

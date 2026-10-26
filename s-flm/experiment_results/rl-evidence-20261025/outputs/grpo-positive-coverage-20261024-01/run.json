@@ -1,0 +1,8 @@
+{
+  "base": "/root/s-flm/checkpoints/tinygsm/mdlm.ckpt",
+  "checkpoint": "/root/autodl-tmp/s-flm/outputs/grpo-positive32-20261024-01/positive32-step200.ckpt",
+  "checkpoint8": "/root/autodl-tmp/s-flm/outputs/grpo-partial75-positive-eval-20261024-02/positive-step200.ckpt",
+  "data": "/root/autodl-tmp/s-flm/outputs/grpo-positive32-20261024-01/validation128.jsonl",
+  "previous_validation": "/root/autodl-tmp/s-flm/outputs/grpo-positive32-20261024-01/validation",
+  "output": "/root/autodl-tmp/s-flm/outputs/grpo-positive-coverage-20261024-01"
+}

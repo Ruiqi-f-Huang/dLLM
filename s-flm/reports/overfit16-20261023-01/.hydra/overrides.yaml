@@ -1,0 +1,3 @@
+- data.train_file=/root/s-flm/data/gsm8k_pot_overfit16/sft_train.jsonl
+- data.cache_dir=/root/autodl-tmp/s-flm/data_cache/overfit16
+- checkpointing.save_dir=/root/autodl-tmp/s-flm/outputs/overfit16-20261023-01

@@ -1,0 +1,61 @@
+defaults:
+  - config
+  - override /data: gsm8k-pot
+  - override /model: small
+  - override /algo: mdlm
+  - override /sampler: ancestral
+  - override /strategy: single-device
+  - override /callbacks: [checkpoint_every_n_steps, checkpoint_monitor]
+  - _self_
+
+mode: train
+sft_monitoring: true
+backbone_compute_dtype: float16
+training:
+  finetune_path: ${hydra:runtime.cwd}/checkpoints/tinygsm/mdlm.ckpt
+  finetune_weights: ema
+noise:
+  eps: 0
+model:
+  length: 512
+optim:
+  lr: 1e-5
+loader:
+  global_batch_size: 8
+  batch_size: 1
+  eval_global_batch_size: 2
+  eval_batch_size: 2
+  num_workers: 0
+trainer:
+  devices: 1
+  num_nodes: 1
+  precision: 16-mixed
+  max_steps: -1
+  max_epochs: 1
+  log_every_n_steps: 10
+  num_sanity_val_steps: 1
+  val_check_interval: 1.0
+  check_val_every_n_epoch: 1
+lr_scheduler:
+  num_warmup_steps: 20
+eval:
+  generate_samples: false
+  compute_generative_perplexity: false
+checkpointing:
+  resume_from_ckpt: false
+callbacks:
+  checkpoint_every_n_steps:
+    every_n_train_steps: 100
+wandb:
+  project: s-flm
+  group: mdlm-gsm8k-pot
+  job_type: sft
+  name: mdlm-sft-${now:%Y%m%d-%H%M%S}
+  save_dir: ${cwd:}
+  offline: false
+  log_model: false
+  id: null
+  tags: [mdlm, gsm8k-pot, sft]
+hydra:
+  run:
+    dir: ${hydra:runtime.cwd}/outputs/sft/${now:%Y%m%d-%H%M%S}

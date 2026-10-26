@@ -1,0 +1,216 @@
+Seed set to 1
+CONFIG
+├── mode
+│   └── gsm8k_eval                                                              
+├── sudoku
+│   └── output_dir: /root/autodl-tmp/s-flm/eval_runs/gsm8k-test/sft-ema-steps102
+│       batch_size: 64                                                          
+│                                                                               
+├── gsm8k
+│   └── input_file: null                                                        
+│       output_dir: /root/autodl-tmp/s-flm/eval_runs/gsm8k-test/sft-ema-steps102
+│       timeout: 5.0                                                            
+│       bootstrap_size: 1                                                       
+│                                                                               
+├── seed
+│   └── 1                                                                       
+├── allow_tf32
+│   └── True                                                                    
+├── cudnn_benchmark
+│   └── True                                                                    
+├── compile_backbone
+│   └── False                                                                   
+├── backbone_compute_dtype
+│   └── auto                                                                    
+├── neg_infinity_mode
+│   └── large-finite                                                            
+├── loader
+│   └── global_batch_size: 512                                                  
+│       eval_global_batch_size: 512                                             
+│       batch_size: 512                                                         
+│       eval_batch_size: 32                                                     
+│       num_workers: 4                                                          
+│       pin_memory: true                                                        
+│                                                                               
+├── confidence_denoiser
+│   └── confidence_score: entropy                                               
+│       gamma: 0                                                                
+│                                                                               
+├── training
+│   └── ema: 0.9999                                                             
+│       antithetic_sampling: true                                               
+│       importance_sampling: false                                              
+│       sampling_eps: 0.001                                                     
+│       change_of_variables: false                                              
+│       loss_precision: bf16                                                    
+│       finetune_path: ''                                                       
+│       finetune_weights: raw                                                   
+│       sampling_eps_min: 0.001                                                 
+│       sampling_eps_max: 1.0                                                   
+│       resample: false                                                         
+│                                                                               
+├── eval
+│   └── checkpoint_path: /root/autodl-tmp/s-flm/outputs/sft/20261021-a800-formal
+│       strict_loading: true                                                    
+│       disable_ema: false                                                      
+│       compute_generative_perplexity: false                                    
+│       perplexity_batch_size: 8                                                
+│       compute_perplexity_on_sanity: false                                     
+│       gen_ppl_eval_model_name_or_path: gpt2-large                             
+│       generate_samples: true                                                  
+│       generated_samples_path: /root/autodl-tmp/s-flm/eval_runs/gsm8k-test/sft-
+│       results_json_path: null                                                 
+│                                                                               
+├── optim
+│   └── weight_decay: 0                                                         
+│       lr: 0.0003                                                              
+│       beta1: 0.9                                                              
+│       beta2: 0.999                                                            
+│       eps: 1.0e-08                                                            
+│                                                                               
+├── trainer
+│   └── _target_: lightning.Trainer                                             
+│       accelerator: cuda                                                       
+│       num_nodes: 1                                                            
+│       devices: 1                                                              
+│       accumulate_grad_batches: 1                                              
+│       gradient_clip_val: 1.0                                                  
+│       precision: bf16                                                         
+│       num_sanity_val_steps: 2                                                 
+│       max_steps: 1000000                                                      
+│       log_every_n_steps: 100                                                  
+│       limit_train_batches: 1.0                                                
+│       limit_val_batches: 1.0                                                  
+│       val_check_interval: 5000                                                
+│       check_val_every_n_epoch: null                                           
+│                                                                               
+├── wandb
+│   └── project: debug                                                          
+│       notes: null                                                             
+│       group: null                                                             
+│       job_type: null                                                          
+│       tags:                                                                   
+│       - log-linear                                                            
+│       - gsm8k_test                                                            
+│       - gsm8k_test                                                            
+│       - mdlm                                                                  
+│       offline: true                                                           
+│                                                                               
+├── checkpointing
+│   └── save_dir: /root/autodl-tmp/s-flm/eval_runs/gsm8k-test/sft-ema-steps1024-
+│       resume_from_ckpt: true                                                  
+│       resume_ckpt_path: /root/autodl-tmp/s-flm/eval_runs/gsm8k-test/sft-ema-st
+│                                                                               
+├── callbacks
+│   └── checkpoint_every_n_steps:                                               
+│         _target_: lightning.pytorch.callbacks.ModelCheckpoint                 
+│         save_top_k: -1                                                        
+│         save_last: true                                                       
+│         dirpath: /root/autodl-tmp/s-flm/eval_runs/gsm8k-test/sft-ema-steps1024
+│         verbose: true                                                         
+│         auto_insert_metric_name: false                                        
+│         every_n_train_steps: 500                                              
+│       checkpoint_monitor:                                                     
+│         _target_: lightning.pytorch.callbacks.ModelCheckpoint                 
+│         monitor: val/nll                                                      
+│         mode: min                                                             
+│         save_top_k: 1                                                         
+│         save_last: false                                                      
+│         dirpath: /root/autodl-tmp/s-flm/eval_runs/gsm8k-test/sft-ema-steps1024
+│         filename: best                                                        
+│         auto_insert_metric_name: false                                        
+│         verbose: true                                                         
+│       learning_rate_monitor:                                                  
+│         _target_: lightning.pytorch.callbacks.LearningRateMonitor             
+│         logging_interval: step                                                
+│                                                                               
+├── data
+│   └── train: gsm8k_test                                                       
+│       valid: gsm8k_test                                                       
+│       tokenizer_name_or_path: /root/autodl-tmp/s-flm/cache/huggingface/hub/mod
+│       wrap: false                                                             
+│       cache_dir: /root/autodl-tmp/s-flm/data_cache                            
+│       data_path: /root/s-flm/data/gsm8k_test.json                             
+│       separator: \n                                                           
+│       streaming: false                                                        
+│       insert_train_eos: true                                                  
+│       insert_valid_eos: true                                                  
+│                                                                               
+├── model
+│   └── name: small                                                             
+│       type: dit                                                               
+│       hidden_size: 768                                                        
+│       cond_dim: 128                                                           
+│       length: 512                                                             
+│       n_blocks: 12                                                            
+│       n_heads: 12                                                             
+│       dropout: 0.1                                                            
+│                                                                               
+├── strategy
+│   └── _target_: lightning.pytorch.strategies.DDPStrategy                      
+│       find_unused_parameters: false                                           
+│                                                                               
+├── noise
+│   └── type: log-linear                                                        
+│       eps: 0.001                                                              
+│       alpha_min: null                                                         
+│       alpha_max: null                                                         
+│       adaptive: false                                                         
+│                                                                               
+├── lr_scheduler
+│   └── _target_: transformers.get_constant_schedule_with_warmup                
+│       num_warmup_steps: 2500                                                  
+│                                                                               
+├── prior
+│   └── type: none                                                              
+│       latent_width: 0                                                         
+│       latent_height: 0                                                        
+│                                                                               
+├── algo
+│   └── name: mdlm                                                              
+│       diffusion_type: absorbing                                               
+│       backbone: dit                                                           
+│       parameterization: subs                                                  
+│       time_conditioning: false                                                
+│       T: 0                                                                    
+│       causal_attention: false                                                 
+│       loss_type: elbo                                                         
+│       post_process_mode: log_probs                                            
+│       adaLN: true                                                             
+│                                                                               
+└── sampler
+    └── predictor: ancestral                                                    
+        steps: 1024                                                             
+        steps_policy: full                                                      
+        noise_removal: ancestral                                                
+        use_float64: true                                                       
+        p_nucleus: 1.0                                                          
+        temperature: 1.0                                                        
+        num_sample_batches: 2                                                   
+        num_sample_log: 2                                                       
+                                                                                
+[2026-10-21 16:09:25,877][__main__][INFO] - Starting GSM8K eval.
+Seed set to 1
+[2026-10-21 16:09:29,841][dataloader][INFO] - Preparing GSM8K test dataset from /root/s-flm/data/gsm8k_test.json
+Tokenizing GSM8K test:   0%|          | 0/1319 [00:00<?, ? examples/s]Tokenizing GSM8K test:  16%|█▌        | 213/1319 [00:00<00:00, 2100.72 examples/s]Tokenizing GSM8K test:  37%|███▋      | 483/1319 [00:00<00:00, 1890.29 examples/s]Tokenizing GSM8K test:  56%|█████▌    | 735/1319 [00:00<00:00, 1778.19 examples/s]Tokenizing GSM8K test:  72%|███████▏  | 948/1319 [00:00<00:00, 1885.73 examples/s]Tokenizing GSM8K test:  93%|█████████▎| 1221/1319 [00:00<00:00, 1854.67 examples/s]Tokenizing GSM8K test: 100%|██████████| 1319/1319 [00:00<00:00, 1856.06 examples/s]
+Saving the dataset (0/1 shards):   0%|          | 0/1319 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1319/1319 [00:00<00:00, 284978.47 examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1319/1319 [00:00<00:00, 277808.93 examples/s]
+Rank 0 sampling:   0%|          | 0/42 [00:00<?, ?it/s]Rank 0 sampling:   2%|▏         | 1/42 [01:37<1:06:41, 97.60s/it]Rank 0 sampling:   5%|▍         | 2/42 [03:13<1:04:29, 96.74s/it]Rank 0 sampling:   7%|▋         | 3/42 [04:49<1:02:34, 96.28s/it]Rank 0 sampling:  10%|▉         | 4/42 [06:24<1:00:46, 95.97s/it]Rank 0 sampling:  12%|█▏        | 5/42 [08:00<59:07, 95.87s/it]  Rank 0 sampling:  14%|█▍        | 6/42 [09:36<57:28, 95.80s/it]Rank 0 sampling:  17%|█▋        | 7/42 [11:11<55:49, 95.71s/it]Rank 0 sampling:  19%|█▉        | 8/42 [12:47<54:09, 95.57s/it]Rank 0 sampling:  21%|██▏       | 9/42 [14:22<52:34, 95.60s/it]Rank 0 sampling:  24%|██▍       | 10/42 [15:58<50:59, 95.62s/it]Rank 0 sampling:  26%|██▌       | 11/42 [17:33<49:22, 95.56s/it]Rank 0 sampling:  29%|██▊       | 12/42 [19:09<47:45, 95.51s/it]Rank 0 sampling:  31%|███       | 13/42 [20:44<46:09, 95.50s/it]Rank 0 sampling:  33%|███▎      | 14/42 [22:19<44:28, 95.30s/it]Rank 0 sampling:  36%|███▌      | 15/42 [23:55<42:55, 95.37s/it]Rank 0 sampling:  38%|███▊      | 16/42 [25:29<41:15, 95.22s/it]Rank 0 sampling:  40%|████      | 17/42 [27:05<39:43, 95.34s/it]Rank 0 sampling:  43%|████▎     | 18/42 [28:40<38:05, 95.24s/it]Rank 0 sampling:  45%|████▌     | 19/42 [30:16<36:34, 95.42s/it]Rank 0 sampling:  48%|████▊     | 20/42 [31:51<34:57, 95.35s/it]Rank 0 sampling:  50%|█████     | 21/42 [33:26<33:20, 95.27s/it]Rank 0 sampling:  52%|█████▏    | 22/42 [35:02<31:47, 95.38s/it]Rank 0 sampling:  55%|█████▍    | 23/42 [36:37<30:13, 95.44s/it]Rank 0 sampling:  57%|█████▋    | 24/42 [38:13<28:38, 95.48s/it]Rank 0 sampling:  60%|█████▉    | 25/42 [39:48<27:03, 95.48s/it]Rank 0 sampling:  62%|██████▏   | 26/42 [41:24<25:26, 95.43s/it]Rank 0 sampling:  64%|██████▍   | 27/42 [42:59<23:52, 95.50s/it]Rank 0 sampling:  67%|██████▋   | 28/42 [44:35<22:16, 95.43s/it]Rank 0 sampling:  69%|██████▉   | 29/42 [46:10<20:38, 95.25s/it]Rank 0 sampling:  71%|███████▏  | 30/42 [47:45<19:03, 95.27s/it]Rank 0 sampling:  74%|███████▍  | 31/42 [49:20<17:28, 95.33s/it]Rank 0 sampling:  76%|███████▌  | 32/42 [50:55<15:51, 95.12s/it]Rank 0 sampling:  79%|███████▊  | 33/42 [52:30<14:16, 95.11s/it]Rank 0 sampling:  81%|████████  | 34/42 [54:06<12:41, 95.25s/it]Rank 0 sampling:  83%|████████▎ | 35/42 [55:41<11:07, 95.36s/it]Rank 0 sampling:  86%|████████▌ | 36/42 [57:16<09:31, 95.32s/it]Rank 0 sampling:  88%|████████▊ | 37/42 [58:52<07:56, 95.28s/it]Rank 0 sampling:  90%|█████████ | 38/42 [1:00:27<06:20, 95.15s/it]Rank 0 sampling:  93%|█████████▎| 39/42 [1:02:02<04:45, 95.14s/it]Rank 0 sampling:  95%|█████████▌| 40/42 [1:03:36<03:09, 94.98s/it]Rank 0 sampling:  98%|█████████▊| 41/42 [1:05:11<01:35, 95.06s/it]Rank 0 sampling: 100%|██████████| 42/42 [1:05:35<00:00, 73.66s/it]Rank 0 sampling: 100%|██████████| 42/42 [1:05:35<00:00, 93.71s/it]
+[2026-10-21 17:15:06,324][__main__][INFO] - Rank 0: average NFE per batch: 1024.0
+[2026-10-21 17:15:06,334][__main__][INFO] - Rank 0: saved 1319 records to /root/autodl-tmp/s-flm/eval_runs/gsm8k-test/sft-ema-steps1024-seed1/rank_0000.json
+[2026-10-21 17:15:06,359][__main__][INFO] - Total records evaluated: 1319
+<sample>:2: SyntaxWarning: invalid escape sequence '\ '
+<sample>:5: SyntaxWarning: 'int' object is not callable; perhaps you missed a comma?
+<sample>:1: SyntaxWarning: invalid escape sequence '\ '
+<sample>:1: SyntaxWarning: invalid escape sequence '\ '
+<sample>:2: SyntaxWarning: invalid escape sequence '\ '
+<sample>:2: SyntaxWarning: invalid escape sequence '\ '
+<sample>:2: SyntaxWarning: invalid escape sequence '\ '
+<sample>:5: SyntaxWarning: 'int' object is not callable; perhaps you missed a comma?
+<sample>:2: SyntaxWarning: 'str' object is not callable; perhaps you missed a comma?
+<sample>:2: SyntaxWarning: invalid escape sequence '\ '
+<sample>:2: SyntaxWarning: invalid escape sequence '\ '
+<sample>:2: SyntaxWarning: invalid escape sequence '\ '
+<sample>:2: SyntaxWarning: invalid escape sequence '\ '
+<sample>:2: SyntaxWarning: invalid escape sequence '\ '
+[2026-10-21 17:15:06,515][__main__][INFO] - GSM8K accuracy: 3.71% (49/1319)
+[2026-10-21 17:15:06,524][__main__][INFO] - Results saved to /root/autodl-tmp/s-flm/eval_runs/gsm8k-test/sft-ema-steps1024-seed1/results.json

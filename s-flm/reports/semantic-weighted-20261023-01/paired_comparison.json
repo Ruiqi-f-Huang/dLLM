@@ -1,0 +1,105 @@
+{
+  "protocol": "632 validation, EMA, ancestral32, seed1, length512, eval_batch32",
+  "hardware_sanity": {
+    "base": {
+      "reference_correct": 54,
+      "candidate_correct": 55,
+      "kept": 54,
+      "lost": 0,
+      "gained": 1,
+      "identical_response": 520
+    },
+    "control200": {
+      "reference_correct": 55,
+      "candidate_correct": 53,
+      "kept": 53,
+      "lost": 2,
+      "gained": 0,
+      "identical_response": 525
+    }
+  },
+  "weighted_milestones": [
+    {
+      "step": 0,
+      "reference_correct": 55,
+      "candidate_correct": 55,
+      "kept": 55,
+      "lost": 0,
+      "gained": 0,
+      "identical_response": 632,
+      "parseable": 612,
+      "unclosed_quotes": 8
+    },
+    {
+      "step": 100,
+      "reference_correct": 55,
+      "candidate_correct": 53,
+      "kept": 53,
+      "lost": 2,
+      "gained": 0,
+      "identical_response": 520,
+      "parseable": 610,
+      "unclosed_quotes": 8
+    },
+    {
+      "step": 200,
+      "reference_correct": 55,
+      "candidate_correct": 54,
+      "kept": 53,
+      "lost": 2,
+      "gained": 1,
+      "identical_response": 525,
+      "parseable": 614,
+      "unclosed_quotes": 7
+    },
+    {
+      "step": 711,
+      "reference_correct": 55,
+      "candidate_correct": 53,
+      "kept": 51,
+      "lost": 4,
+      "gained": 2,
+      "identical_response": 461,
+      "parseable": 612,
+      "unclosed_quotes": 7
+    }
+  ],
+  "historical_vs_weighted": [
+    {
+      "step": 0,
+      "reference_correct": 54,
+      "candidate_correct": 55,
+      "kept": 54,
+      "lost": 0,
+      "gained": 1,
+      "identical_response": 520
+    },
+    {
+      "step": 100,
+      "reference_correct": 54,
+      "candidate_correct": 53,
+      "kept": 53,
+      "lost": 1,
+      "gained": 0,
+      "identical_response": 516
+    },
+    {
+      "step": 200,
+      "reference_correct": 55,
+      "candidate_correct": 54,
+      "kept": 54,
+      "lost": 1,
+      "gained": 0,
+      "identical_response": 539
+    },
+    {
+      "step": 711,
+      "reference_correct": 53,
+      "candidate_correct": 53,
+      "kept": 53,
+      "lost": 0,
+      "gained": 0,
+      "identical_response": 523
+    }
+  ]
+}

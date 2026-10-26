@@ -1,0 +1,13 @@
+{
+  "status": "ready",
+  "gpu": "A800-SXM4-80GB",
+  "base_sha256": "251b4c935424622c13d75712cfefef0cae6829ad7bab6b712e009fc372bf1583",
+  "tests_passed": 29,
+  "model_smoke_test": "/root/autodl-tmp/grpo-environment-check-20261025.json",
+  "backup": "/root/autodl-tmp/pre-grpo-code-20261025.tar.gz",
+  "limitations": [
+    "Historical result directories are partial migrations: summaries/manifests only; old raw samples remain on port18707.",
+    "Standard Base, positive8 and positive32 checkpoint loading/generation passed.",
+    "No training or evaluation experiment launched; only smoke checks."
+  ]
+}

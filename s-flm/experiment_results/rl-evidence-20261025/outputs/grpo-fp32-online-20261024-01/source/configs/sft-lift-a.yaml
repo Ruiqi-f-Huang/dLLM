@@ -1,0 +1,5 @@
+defaults:
+  - sft-lift-base
+  - _self_
+lift:
+  policy: baseline

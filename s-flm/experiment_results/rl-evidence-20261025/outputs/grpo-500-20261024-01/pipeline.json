@@ -1,0 +1,4 @@
+{
+  "output": "/root/autodl-tmp/s-flm/outputs/grpo-500-20261024-01",
+  "checkpoint": "/root/s-flm/checkpoints/tinygsm/mdlm.ckpt"
+}

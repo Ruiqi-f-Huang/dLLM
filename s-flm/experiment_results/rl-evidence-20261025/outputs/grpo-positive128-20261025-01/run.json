@@ -1,0 +1,11 @@
+{
+  "base": "/root/s-flm/checkpoints/tinygsm/mdlm.ckpt",
+  "source32": "/root/autodl-tmp/s-flm/outputs/grpo-positive32-20261024-01",
+  "train_data": "/root/s-flm/data/gsm8k_pot_result/sft_train.jsonl",
+  "validation": "/root/s-flm/data/gsm8k_pot_result/sft_validation.jsonl",
+  "output": "/root/autodl-tmp/s-flm/outputs/grpo-positive128-20261025-01",
+  "candidate_budget_per_question": 8,
+  "max_candidate_questions": 512,
+  "temperature": 0.3,
+  "nfe": 32
+}

@@ -1,0 +1,8 @@
+{
+  "training_pool": 5682,
+  "presentations_by_step200": 1600,
+  "diagnostic_train_selection": "hash-selected 256 from full training partition",
+  "verified_seen_membership": false,
+  "replay_check": "First-epoch seed replay and up-to-16 permutation replay did not match saved sampler state for A200; no inferred exposure IDs were used.",
+  "interpretation": "Training-partition diagnostics are not an overfit test on certified seen examples. Validation and paired model diagnostics are unaffected."
+}

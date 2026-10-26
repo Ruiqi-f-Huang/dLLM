@@ -1,0 +1,6 @@
+{
+  "programs_parsed": 6314,
+  "programs_with_critical_spans_in_function_header": 0,
+  "fixed_train_examples_docstring_overlap_checked": 32,
+  "docstring_overlap_count": 0
+}

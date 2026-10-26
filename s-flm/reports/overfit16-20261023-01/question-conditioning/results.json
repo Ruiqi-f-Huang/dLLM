@@ -1,0 +1,3730 @@
+{
+  "pairs": [
+    {
+      "sample_id": "gsm8k_train_3517",
+      "correct_question": "Hayden eats 1 oz of mixed nuts as an evening snack.  He buys the bulk bag of mixed nuts that cost $25.00 a bag and holds 40 oz of mixed nuts.  There is currently a $5.00 coupon for this item.  How much will each serving of nuts cost, in cents, after the coupon is applied?",
+      "wrong_question_id": "gsm8k_train_0290",
+      "wrong_question": "A family has three adults and children, both girls and boys. They went out for a family trip and prepared 3 dozen boiled eggs for the trip. Every adult got 3 eggs, and the boys each received 1 more egg than each girl since the girls had some snacks. How many boys went on the trip if the number of girls was 7 and each girl received an egg?",
+      "question_tokens": 79,
+      "wrong_tokens": [
+        49,
+        1564,
+        553,
+        1296,
+        3598,
+        284,
+        1122,
+        28,
+        1062,
+        5901,
+        284,
+        8005,
+        30,
+        1069,
+        3514,
+        578,
+        327,
+        253,
+        1564,
+        7022,
+        284,
+        4894,
+        216,
+        35,
+        15026,
+        24750,
+        5246,
+        327,
+        260,
+        7022,
+        30,
+        5081,
+        2490,
+        3363,
+        216,
+        35,
+        5246,
+        28,
+        284,
+        260,
+        8005,
+        971,
+        3656,
+        216,
+        33,
+        540,
+        3785,
+        670,
+        971,
+        8180,
+        1675,
+        260,
+        5901,
+        761,
+        634,
+        16330,
+        30,
+        1073,
+        800,
+        8005,
+        3514,
+        335,
+        260,
+        7022,
+        585,
+        260,
+        1230,
+        282,
+        5901,
+        436,
+        216,
+        39,
+        284,
+        971,
+        8180,
+        3656,
+        354,
+        3785,
+        47
+      ],
+      "word_jaccard": 0.0
+    },
+    {
+      "sample_id": "gsm8k_train_6725",
+      "correct_question": "Janice has been working part-time at a convenience store 5 days a week. She can earn $30 per day and can earn $15 more when she works a 2 hour overtime shift. If she works three overtime shifts this week, how much will she earn this week?",
+      "wrong_question_id": "gsm8k_train_0053",
+      "wrong_question": "Caleb bought 10 cartons of ice cream and 4 cartons of frozen yoghurt. Each carton of ice cream cost $4 and each carton of frozen yoghurt cost $1. How much more did Caleb spend on ice cream than on frozen yoghurt?",
+      "question_tokens": 60,
+      "wrong_tokens": [
+        51,
+        1121,
+        82,
+        10897,
+        216,
+        33,
+        32,
+        6657,
+        707,
+        282,
+        3908,
+        8549,
+        284,
+        216,
+        36,
+        6657,
+        707,
+        282,
+        12197,
+        14898,
+        48347,
+        30,
+        3768,
+        6657,
+        258,
+        282,
+        3908,
+        8549,
+        1708,
+        1885,
+        36,
+        284,
+        971,
+        6657,
+        258,
+        282,
+        12197,
+        14898,
+        48347,
+        1708,
+        1885,
+        33,
+        30,
+        1073,
+        1083,
+        540,
+        1250,
+        340,
+        1121,
+        82,
+        5344,
+        335,
+        3908,
+        8549,
+        670,
+        335,
+        12197,
+        14898,
+        48347,
+        47
+      ],
+      "word_jaccard": 0.0
+    },
+    {
+      "sample_id": "gsm8k_train_2910",
+      "correct_question": "At a station, a train comes every 5 minutes leaving 200 passengers and taking 320 others. How many different passengers step on and off a train at the station within an hour?",
+      "wrong_question_id": "gsm8k_train_0258",
+      "wrong_question": "Anne is 2 times as tall as her sister while Bella is 3 times as tall as Anne. If Anne is 80cm tall, what is the height difference between Bella and Anne's sister?",
+      "question_tokens": 42,
+      "wrong_tokens": [
+        41575,
+        314,
+        216,
+        34,
+        1711,
+        347,
+        6780,
+        347,
+        874,
+        10243,
+        979,
+        41130,
+        314,
+        216,
+        35,
+        1711,
+        347,
+        6780,
+        347,
+        14285,
+        30,
+        1094,
+        14285,
+        314,
+        216,
+        40,
+        32,
+        6946,
+        6780,
+        28,
+        732,
+        314,
+        260,
+        4614,
+        3193,
+        826,
+        41130,
+        284,
+        14285,
+        506,
+        10243,
+        47
+      ],
+      "word_jaccard": 0.0
+    },
+    {
+      "sample_id": "gsm8k_train_3521",
+      "correct_question": "Will's breakfast supplied him 900 calories of energy. Then he decided to jog for half an hour, which used up 10 calories of energy per minute. What is Will's net calorie intake after jogging?",
+      "wrong_question_id": "gsm8k_train_0186",
+      "wrong_question": "Christina has 3 snakes. 1 snake is 2 feet long. Another snake is 16 inches long. The last snake is 10 inches long. How many inches are all of her snakes combined?",
+      "question_tokens": 45,
+      "wrong_tokens": [
+        12748,
+        1787,
+        553,
+        216,
+        35,
+        16177,
+        30,
+        216,
+        33,
+        14321,
+        314,
+        216,
+        34,
+        3282,
+        986,
+        30,
+        5839,
+        14321,
+        314,
+        216,
+        33,
+        38,
+        6439,
+        986,
+        30,
+        378,
+        1596,
+        14321,
+        314,
+        216,
+        33,
+        32,
+        6439,
+        986,
+        30,
+        1073,
+        800,
+        6439,
+        359,
+        511,
+        282,
+        874,
+        16177,
+        5276,
+        47
+      ],
+      "word_jaccard": 0.0
+    },
+    {
+      "sample_id": "gsm8k_train_5649",
+      "correct_question": "Albert has three times as many marbles as Angela. Angela has 8 more than Allison, who has 28 marbles. How many marbles do Albert and Allison have?",
+      "wrong_question_id": "gsm8k_train_0055",
+      "wrong_question": "There are 25 roses in a garden. There are 40 tulips. There are 35 daisies. What percentage of flowers are not roses?",
+      "question_tokens": 35,
+      "wrong_tokens": [
+        2122,
+        359,
+        216,
+        34,
+        37,
+        26140,
+        281,
+        253,
+        4480,
+        30,
+        1385,
+        359,
+        216,
+        36,
+        32,
+        31083,
+        2259,
+        30,
+        1385,
+        359,
+        216,
+        35,
+        37,
+        287,
+        10117,
+        370,
+        30,
+        1812,
+        7311,
+        282,
+        5504,
+        359,
+        441,
+        26140,
+        47
+      ],
+      "word_jaccard": 0.0
+    },
+    {
+      "sample_id": "gsm8k_train_7103",
+      "correct_question": "Harry decided to buy some balloons for his friend's birthday party. One balloon costs $0.5, and a pack of 10 balloons is cheaper and costs only $3. Finally, Harry wants to bring to the party exactly 14 balloons. How much did he need to pay for them?",
+      "wrong_question_id": "gsm8k_train_0051",
+      "wrong_question": "Ann is cutting fabric to make curtains. She cuts a 4 foot by 6 foot rectangle for the living room, and a 2 foot by 4 foot rectangle for the bedroom. If the bolt of fabric is 16 feet by 12 feet, how much fabric is left in square feet?",
+      "question_tokens": 63,
+      "wrong_tokens": [
+        22940,
+        314,
+        5871,
+        6913,
+        288,
+        919,
+        34269,
+        30,
+        2306,
+        10672,
+        253,
+        216,
+        36,
+        3374,
+        411,
+        216,
+        38,
+        3374,
+        23710,
+        327,
+        260,
+        2242,
+        3589,
+        28,
+        284,
+        253,
+        216,
+        34,
+        3374,
+        411,
+        216,
+        36,
+        3374,
+        23710,
+        327,
+        260,
+        23295,
+        30,
+        1094,
+        260,
+        30941,
+        282,
+        6913,
+        314,
+        216,
+        33,
+        38,
+        3282,
+        411,
+        216,
+        33,
+        34,
+        3282,
+        28,
+        638,
+        1083,
+        6913,
+        314,
+        2049,
+        281,
+        5222,
+        3282,
+        47
+      ],
+      "word_jaccard": 0.0
+    },
+    {
+      "sample_id": "gsm8k_train_2986",
+      "correct_question": "Miley bought two cellphones for her parents. Each cellphone costs $800 but, since she is buying two units, she will receive a 5% discount for the total cost. How much did Miley pay?",
+      "wrong_question_id": "gsm8k_train_0308",
+      "wrong_question": "Jason is mixing a batch of black paint. He needs to add 2 grams of charcoal for every 30 ml of water. If he adds 900 ml of water, how much charcoal does he add?",
+      "question_tokens": 46,
+      "wrong_tokens": [
+        58,
+        1416,
+        314,
+        12136,
+        253,
+        7717,
+        282,
+        2632,
+        7670,
+        30,
+        909,
+        1923,
+        288,
+        803,
+        216,
+        34,
+        12271,
+        282,
+        22664,
+        327,
+        897,
+        216,
+        35,
+        32,
+        19896,
+        282,
+        913,
+        30,
+        1094,
+        384,
+        7845,
+        216,
+        41,
+        32,
+        32,
+        19896,
+        282,
+        913,
+        28,
+        638,
+        1083,
+        22664,
+        1072,
+        384,
+        803,
+        47
+      ],
+      "word_jaccard": 0.0
+    },
+    {
+      "sample_id": "gsm8k_train_1515",
+      "correct_question": "Billy weighs 9 pounds more than Brad. Brad weighs 5 pounds more than Carl. If Carl weighs 145 pounds, how much does Billy weigh, in pounds?",
+      "wrong_question_id": "gsm8k_train_0221",
+      "wrong_question": "Mira jogs every morning. She jogs 5 miles per hour. If she jogs for 2 hours every morning, how many miles can she jog for five days?",
+      "question_tokens": 37,
+      "wrong_tokens": [
+        61,
+        3792,
+        544,
+        9891,
+        897,
+        5738,
+        30,
+        2306,
+        544,
+        9891,
+        216,
+        37,
+        4158,
+        567,
+        5353,
+        30,
+        1094,
+        1041,
+        544,
+        9891,
+        327,
+        216,
+        34,
+        2737,
+        897,
+        5738,
+        28,
+        638,
+        800,
+        4158,
+        416,
+        1041,
+        30655,
+        327,
+        2531,
+        2009,
+        47
+      ],
+      "word_jaccard": 0.0
+    },
+    {
+      "sample_id": "gsm8k_train_6722",
+      "correct_question": "Yesterday, Vincent bought fifteen packs of stickers. Today, he bought ten more packs of stickers than yesterday. How many packs of stickers does Vincent have altogether?",
+      "wrong_question_id": "gsm8k_train_0264",
+      "wrong_question": "An Italian restaurant earns $600 every weekday and twice as much on the weekend. How much money does it earn by the end of the month?",
+      "question_tokens": 32,
+      "wrong_tokens": [
+        2089,
+        7423,
+        15238,
+        38668,
+        1885,
+        38,
+        32,
+        32,
+        897,
+        2605,
+        1222,
+        284,
+        6757,
+        347,
+        1083,
+        335,
+        260,
+        16138,
+        30,
+        1073,
+        1083,
+        2478,
+        1072,
+        357,
+        5301,
+        411,
+        260,
+        1112,
+        282,
+        260,
+        3531,
+        47
+      ],
+      "word_jaccard": 0.0
+    },
+    {
+      "sample_id": "gsm8k_train_7383",
+      "correct_question": "There are 9 boys and 12 girls in a class. The teacher needs to create groups with three members for their class activity. How many groups are formed?",
+      "wrong_question_id": "gsm8k_train_0001",
+      "wrong_question": "Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?",
+      "question_tokens": 34,
+      "wrong_tokens": [
+        71,
+        1059,
+        38668,
+        1885,
+        33,
+        34,
+        354,
+        5353,
+        327,
+        3383,
+        672,
+        9584,
+        30,
+        718,
+        15955,
+        28,
+        1041,
+        915,
+        1250,
+        216,
+        37,
+        32,
+        3487,
+        282,
+        3383,
+        672,
+        9584,
+        30,
+        1073,
+        1083,
+        1250,
+        1041,
+        5301,
+        47
+      ],
+      "word_jaccard": 0.0
+    },
+    {
+      "sample_id": "gsm8k_train_1621",
+      "correct_question": "At a cafe, the breakfast plate has two eggs and twice as many bacon strips as eggs.  If 14 customers order breakfast plates, how many bacon strips does the cook need to fry?",
+      "wrong_question_id": "gsm8k_train_0012",
+      "wrong_question": "Randy has 60 mango trees on his farm. He also has 5 less than half as many coconut trees as mango trees. How many trees does Randy have in all on his farm?",
+      "question_tokens": 41,
+      "wrong_tokens": [
+        66,
+        21718,
+        553,
+        216,
+        38,
+        32,
+        32059,
+        3417,
+        335,
+        650,
+        2769,
+        30,
+        909,
+        597,
+        553,
+        216,
+        37,
+        1181,
+        670,
+        2745,
+        347,
+        800,
+        17434,
+        3417,
+        347,
+        32059,
+        3417,
+        30,
+        1073,
+        800,
+        3417,
+        1072,
+        12089,
+        105,
+        457,
+        281,
+        511,
+        335,
+        650,
+        2769,
+        47
+      ],
+      "word_jaccard": 0.0
+    },
+    {
+      "sample_id": "gsm8k_train_0115",
+      "correct_question": "There are some jelly beans in a jar. Three fourths of the jelly beans are red, and one quarter of the red jelly beans are coconut flavored. If 750 jelly beans are coconut flavored, how many jelly beans are there in the jar?",
+      "wrong_question_id": "gsm8k_train_0133",
+      "wrong_question": "There are 40 students in a class. If 1/10 are absent, 3/4 of the students who are present are in the classroom, and the rest are in the canteen, how many students are in the canteen?",
+      "question_tokens": 52,
+      "wrong_tokens": [
+        2122,
+        359,
+        216,
+        36,
+        32,
+        1058,
+        281,
+        253,
+        1128,
+        30,
+        1094,
+        216,
+        33,
+        31,
+        33,
+        32,
+        359,
+        13606,
+        28,
+        216,
+        35,
+        31,
+        36,
+        282,
+        260,
+        1058,
+        617,
+        359,
+        1386,
+        359,
+        281,
+        260,
+        4670,
+        28,
+        284,
+        260,
+        1532,
+        359,
+        281,
+        260,
+        19362,
+        7773,
+        28,
+        638,
+        800,
+        1058,
+        359,
+        281,
+        260,
+        19362,
+        7773,
+        47
+      ],
+      "word_jaccard": 0.0
+    },
+    {
+      "sample_id": "gsm8k_train_6873",
+      "correct_question": "Betty\u2019s herb garden has 2 more than twice as many oregano plants as basil. If there are 5 basil plants, what is the total number of plants in the garden?",
+      "wrong_question_id": "gsm8k_train_0106",
+      "wrong_question": "John buys 10 packs of magic cards.  Each pack has 20 cards and 1/4 of those cards are uncommon.  How many uncommon cards did he get?",
+      "question_tokens": 38,
+      "wrong_tokens": [
+        9682,
+        34680,
+        216,
+        33,
+        32,
+        22614,
+        282,
+        9019,
+        7005,
+        30,
+        216,
+        3768,
+        3123,
+        553,
+        216,
+        34,
+        32,
+        7005,
+        284,
+        216,
+        33,
+        31,
+        36,
+        282,
+        967,
+        7005,
+        359,
+        15199,
+        30,
+        216,
+        1073,
+        800,
+        15199,
+        7005,
+        1250,
+        384,
+        820,
+        47
+      ],
+      "word_jaccard": 0.0
+    },
+    {
+      "sample_id": "gsm8k_train_6820",
+      "correct_question": "Jade and Krista went on a road trip for 3 days. On each day Jade had to drive 8 hours and Krista had to drive 6 hours to arrive at the destination. How many hours did they drive altogether?",
+      "wrong_question_id": "gsm8k_train_0307",
+      "wrong_question": "There are 110 calories in a serving of cheese.  Rick buys the large blocks that have 16 servings per block.  If Rick has already eaten 5 servings of cheese, how many calories are remaining in the block?",
+      "question_tokens": 49,
+      "wrong_tokens": [
+        2122,
+        359,
+        216,
+        33,
+        33,
+        32,
+        8747,
+        281,
+        253,
+        6992,
+        282,
+        10421,
+        30,
+        216,
+        24977,
+        34680,
+        260,
+        1507,
+        6703,
+        338,
+        457,
+        216,
+        33,
+        38,
+        29088,
+        567,
+        3608,
+        30,
+        216,
+        1094,
+        24977,
+        553,
+        2221,
+        12224,
+        216,
+        37,
+        29088,
+        282,
+        10421,
+        28,
+        638,
+        800,
+        8747,
+        359,
+        6219,
+        281,
+        260,
+        3608,
+        47
+      ],
+      "word_jaccard": 0.0
+    },
+    {
+      "sample_id": "gsm8k_train_6726",
+      "correct_question": "The epic poem currently contains 24 lines. If a person adds 3 lines to the poem every month, in how many months will the poem contain 90 lines?",
+      "wrong_question_id": "gsm8k_train_0088",
+      "wrong_question": "Brandon sold 86 geckos last year. He sold twice that many the year before. How many geckos has Brandon sold in the last two years?",
+      "question_tokens": 36,
+      "wrong_tokens": [
+        43089,
+        258,
+        3459,
+        216,
+        40,
+        38,
+        2417,
+        936,
+        395,
+        1596,
+        713,
+        30,
+        909,
+        3459,
+        6757,
+        338,
+        800,
+        260,
+        713,
+        1092,
+        30,
+        1073,
+        800,
+        2417,
+        936,
+        395,
+        553,
+        16831,
+        258,
+        3459,
+        281,
+        260,
+        1596,
+        827,
+        929,
+        47
+      ],
+      "word_jaccard": 0.0
+    },
+    {
+      "sample_id": "gsm8k_train_1406",
+      "correct_question": "Bill is trying to count the toddlers at his daycare, but they keep running around. He double-counts 8 toddlers and misses 3 who are hiding. If Bill thinks he counted 26 toddlers, how many are there really?",
+      "wrong_question_id": "gsm8k_train_0252",
+      "wrong_question": "Angie bought 3 lbs. of coffee at the store today. Each lb. of coffee will brew about 40 cups of coffee. Angie drinks 3 cups of coffee every day. How many days will this coffee last her?",
+      "question_tokens": 49,
+      "wrong_tokens": [
+        17621,
+        519,
+        10897,
+        216,
+        35,
+        20899,
+        30,
+        282,
+        6728,
+        418,
+        260,
+        4249,
+        1834,
+        30,
+        3768,
+        22185,
+        30,
+        282,
+        6728,
+        523,
+        25456,
+        563,
+        216,
+        36,
+        32,
+        12382,
+        282,
+        6728,
+        30,
+        4731,
+        519,
+        9714,
+        216,
+        35,
+        12382,
+        282,
+        6728,
+        897,
+        1194,
+        30,
+        1073,
+        800,
+        2009,
+        523,
+        451,
+        6728,
+        1596,
+        874,
+        47
+      ],
+      "word_jaccard": 0.0
+    }
+  ],
+  "pair_source": "original SFT train, excluding the 16 overfit questions",
+  "length_control": "exact tokenizer question length match; all target, PAD and MASK positions identical",
+  "models": {
+    "0": [
+      {
+        "case": "half_mask_original_docstring",
+        "mask_fraction": 0.5,
+        "aggregate": {
+          "code_eos_without_docstring": {
+            "tokens": 472,
+            "correct": {
+              "ce": 0.7750441320871903,
+              "accuracy": 0.8834745762711864
+            },
+            "wrong": {
+              "ce": 1.2922813710519823,
+              "accuracy": 0.8029661016949152
+            },
+            "wrong_minus_correct_ce": 0.517237238964792,
+            "correct_minus_wrong_accuracy": 0.0805084745762712,
+            "prediction_change_rate": 0.1440677966101695,
+            "questions_correct_ce_lower": 14
+          },
+          "docstring": {
+            "tokens": 384,
+            "correct": {
+              "ce": 1.9862202281753223,
+              "accuracy": 0.7786458333333334
+            },
+            "wrong": {
+              "ce": 9.413538813591003,
+              "accuracy": 0.046875
+            },
+            "wrong_minus_correct_ce": 7.427318585415681,
+            "correct_minus_wrong_accuracy": 0.7317708333333334,
+            "prediction_change_rate": 0.9140625,
+            "questions_correct_ce_lower": 16
+          }
+        },
+        "records": [
+          {
+            "sample_id": "gsm8k_train_3517",
+            "code_eos_without_docstring": {
+              "tokens": 45,
+              "correct": {
+                "ce_sum": 29.136436462402344,
+                "correct_tokens": 41
+              },
+              "wrong": {
+                "ce_sum": 25.424203872680664,
+                "correct_tokens": 40
+              },
+              "changed_predictions": 5
+            },
+            "docstring": {
+              "tokens": 39,
+              "correct": {
+                "ce_sum": 34.466060638427734,
+                "correct_tokens": 36
+              },
+              "wrong": {
+                "ce_sum": 352.3683776855469,
+                "correct_tokens": 2
+              },
+              "changed_predictions": 35
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_6725",
+            "code_eos_without_docstring": {
+              "tokens": 32,
+              "correct": {
+                "ce_sum": 13.302881240844727,
+                "correct_tokens": 29
+              },
+              "wrong": {
+                "ce_sum": 22.22698211669922,
+                "correct_tokens": 27
+              },
+              "changed_predictions": 2
+            },
+            "docstring": {
+              "tokens": 34,
+              "correct": {
+                "ce_sum": 0.1759796142578125,
+                "correct_tokens": 34
+              },
+              "wrong": {
+                "ce_sum": 285.9197692871094,
+                "correct_tokens": 2
+              },
+              "changed_predictions": 32
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_2910",
+            "code_eos_without_docstring": {
+              "tokens": 33,
+              "correct": {
+                "ce_sum": 4.428230285644531,
+                "correct_tokens": 32
+              },
+              "wrong": {
+                "ce_sum": 13.257048606872559,
+                "correct_tokens": 29
+              },
+              "changed_predictions": 3
+            },
+            "docstring": {
+              "tokens": 21,
+              "correct": {
+                "ce_sum": 33.797752380371094,
+                "correct_tokens": 18
+              },
+              "wrong": {
+                "ce_sum": 241.99090576171875,
+                "correct_tokens": 0
+              },
+              "changed_predictions": 21
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_3521",
+            "code_eos_without_docstring": {
+              "tokens": 34,
+              "correct": {
+                "ce_sum": 13.257180213928223,
+                "correct_tokens": 31
+              },
+              "wrong": {
+                "ce_sum": 22.184833526611328,
+                "correct_tokens": 30
+              },
+              "changed_predictions": 4
+            },
+            "docstring": {
+              "tokens": 22,
+              "correct": {
+                "ce_sum": 38.70079040527344,
+                "correct_tokens": 18
+              },
+              "wrong": {
+                "ce_sum": 208.76556396484375,
+                "correct_tokens": 0
+              },
+              "changed_predictions": 21
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_5649",
+            "code_eos_without_docstring": {
+              "tokens": 33,
+              "correct": {
+                "ce_sum": 5.9765777587890625,
+                "correct_tokens": 31
+              },
+              "wrong": {
+                "ce_sum": 25.425554275512695,
+                "correct_tokens": 28
+              },
+              "changed_predictions": 4
+            },
+            "docstring": {
+              "tokens": 19,
+              "correct": {
+                "ce_sum": 41.92253112792969,
+                "correct_tokens": 14
+              },
+              "wrong": {
+                "ce_sum": 153.140380859375,
+                "correct_tokens": 0
+              },
+              "changed_predictions": 17
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_7103",
+            "code_eos_without_docstring": {
+              "tokens": 27,
+              "correct": {
+                "ce_sum": 19.890474319458008,
+                "correct_tokens": 23
+              },
+              "wrong": {
+                "ce_sum": 37.60913848876953,
+                "correct_tokens": 21
+              },
+              "changed_predictions": 4
+            },
+            "docstring": {
+              "tokens": 35,
+              "correct": {
+                "ce_sum": 89.53302001953125,
+                "correct_tokens": 24
+              },
+              "wrong": {
+                "ce_sum": 355.2874755859375,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 33
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_2986",
+            "code_eos_without_docstring": {
+              "tokens": 33,
+              "correct": {
+                "ce_sum": 87.93450927734375,
+                "correct_tokens": 28
+              },
+              "wrong": {
+                "ce_sum": 93.72473907470703,
+                "correct_tokens": 28
+              },
+              "changed_predictions": 0
+            },
+            "docstring": {
+              "tokens": 25,
+              "correct": {
+                "ce_sum": 41.430965423583984,
+                "correct_tokens": 21
+              },
+              "wrong": {
+                "ce_sum": 251.52096557617188,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 23
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_1515",
+            "code_eos_without_docstring": {
+              "tokens": 18,
+              "correct": {
+                "ce_sum": 2.9721508026123047,
+                "correct_tokens": 16
+              },
+              "wrong": {
+                "ce_sum": 33.191650390625,
+                "correct_tokens": 12
+              },
+              "changed_predictions": 4
+            },
+            "docstring": {
+              "tokens": 20,
+              "correct": {
+                "ce_sum": 20.1817626953125,
+                "correct_tokens": 18
+              },
+              "wrong": {
+                "ce_sum": 148.08021545410156,
+                "correct_tokens": 3
+              },
+              "changed_predictions": 16
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_6722",
+            "code_eos_without_docstring": {
+              "tokens": 26,
+              "correct": {
+                "ce_sum": 35.9737434387207,
+                "correct_tokens": 16
+              },
+              "wrong": {
+                "ce_sum": 59.807857513427734,
+                "correct_tokens": 14
+              },
+              "changed_predictions": 10
+            },
+            "docstring": {
+              "tokens": 16,
+              "correct": {
+                "ce_sum": 58.386131286621094,
+                "correct_tokens": 8
+              },
+              "wrong": {
+                "ce_sum": 197.94134521484375,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 15
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_7383",
+            "code_eos_without_docstring": {
+              "tokens": 25,
+              "correct": {
+                "ce_sum": 12.289796829223633,
+                "correct_tokens": 20
+              },
+              "wrong": {
+                "ce_sum": 11.740428924560547,
+                "correct_tokens": 22
+              },
+              "changed_predictions": 2
+            },
+            "docstring": {
+              "tokens": 17,
+              "correct": {
+                "ce_sum": 75.0518798828125,
+                "correct_tokens": 7
+              },
+              "wrong": {
+                "ce_sum": 170.42800903320312,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 14
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_1621",
+            "code_eos_without_docstring": {
+              "tokens": 31,
+              "correct": {
+                "ce_sum": 7.8268327713012695,
+                "correct_tokens": 29
+              },
+              "wrong": {
+                "ce_sum": 17.483516693115234,
+                "correct_tokens": 26
+              },
+              "changed_predictions": 4
+            },
+            "docstring": {
+              "tokens": 21,
+              "correct": {
+                "ce_sum": 58.9227294921875,
+                "correct_tokens": 18
+              },
+              "wrong": {
+                "ce_sum": 214.6983184814453,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 19
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_0115",
+            "code_eos_without_docstring": {
+              "tokens": 24,
+              "correct": {
+                "ce_sum": 55.06241989135742,
+                "correct_tokens": 18
+              },
+              "wrong": {
+                "ce_sum": 90.53330993652344,
+                "correct_tokens": 13
+              },
+              "changed_predictions": 7
+            },
+            "docstring": {
+              "tokens": 26,
+              "correct": {
+                "ce_sum": 60.14342498779297,
+                "correct_tokens": 19
+              },
+              "wrong": {
+                "ce_sum": 232.32489013671875,
+                "correct_tokens": 2
+              },
+              "changed_predictions": 24
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_6873",
+            "code_eos_without_docstring": {
+              "tokens": 19,
+              "correct": {
+                "ce_sum": 5.018301010131836,
+                "correct_tokens": 18
+              },
+              "wrong": {
+                "ce_sum": 9.52248477935791,
+                "correct_tokens": 17
+              },
+              "changed_predictions": 1
+            },
+            "docstring": {
+              "tokens": 19,
+              "correct": {
+                "ce_sum": 40.981048583984375,
+                "correct_tokens": 16
+              },
+              "wrong": {
+                "ce_sum": 181.70640563964844,
+                "correct_tokens": 0
+              },
+              "changed_predictions": 17
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_6820",
+            "code_eos_without_docstring": {
+              "tokens": 40,
+              "correct": {
+                "ce_sum": 22.200397491455078,
+                "correct_tokens": 37
+              },
+              "wrong": {
+                "ce_sum": 39.9475212097168,
+                "correct_tokens": 33
+              },
+              "changed_predictions": 7
+            },
+            "docstring": {
+              "tokens": 22,
+              "correct": {
+                "ce_sum": 41.00572967529297,
+                "correct_tokens": 17
+              },
+              "wrong": {
+                "ce_sum": 205.81153869628906,
+                "correct_tokens": 2
+              },
+              "changed_predictions": 20
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_6726",
+            "code_eos_without_docstring": {
+              "tokens": 31,
+              "correct": {
+                "ce_sum": 48.316280364990234,
+                "correct_tokens": 28
+              },
+              "wrong": {
+                "ce_sum": 98.39539337158203,
+                "correct_tokens": 21
+              },
+              "changed_predictions": 7
+            },
+            "docstring": {
+              "tokens": 19,
+              "correct": {
+                "ce_sum": 2.9101972579956055,
+                "correct_tokens": 18
+              },
+              "wrong": {
+                "ce_sum": 124.73847961425781,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 17
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_1406",
+            "code_eos_without_docstring": {
+              "tokens": 21,
+              "correct": {
+                "ce_sum": 2.2346181869506836,
+                "correct_tokens": 20
+              },
+              "wrong": {
+                "ce_sum": 9.482144355773926,
+                "correct_tokens": 18
+              },
+              "changed_predictions": 4
+            },
+            "docstring": {
+              "tokens": 29,
+              "correct": {
+                "ce_sum": 125.09856414794922,
+                "correct_tokens": 13
+              },
+              "wrong": {
+                "ce_sum": 290.0762634277344,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 27
+            }
+          }
+        ]
+      },
+      {
+        "case": "half_mask_docstring_hidden",
+        "mask_fraction": 0.5,
+        "aggregate": {
+          "code_eos_without_docstring": {
+            "tokens": 472,
+            "correct": {
+              "ce": 0.8488517393500118,
+              "accuracy": 0.8961864406779662
+            },
+            "wrong": {
+              "ce": 1.5598400386713318,
+              "accuracy": 0.7860169491525424
+            },
+            "wrong_minus_correct_ce": 0.71098829932132,
+            "correct_minus_wrong_accuracy": 0.11016949152542377,
+            "prediction_change_rate": 0.1652542372881356,
+            "questions_correct_ce_lower": 14
+          },
+          "docstring": {
+            "tokens": 770,
+            "correct": {
+              "ce": 16.637533410803066,
+              "accuracy": 0.07532467532467532
+            },
+            "wrong": {
+              "ce": 20.644912204494723,
+              "accuracy": 0.025974025974025976
+            },
+            "wrong_minus_correct_ce": 4.007378793691657,
+            "correct_minus_wrong_accuracy": 0.049350649350649346,
+            "prediction_change_rate": 0.938961038961039,
+            "questions_correct_ce_lower": 11
+          }
+        },
+        "records": [
+          {
+            "sample_id": "gsm8k_train_3517",
+            "code_eos_without_docstring": {
+              "tokens": 45,
+              "correct": {
+                "ce_sum": 13.676948547363281,
+                "correct_tokens": 42
+              },
+              "wrong": {
+                "ce_sum": 90.6107406616211,
+                "correct_tokens": 36
+              },
+              "changed_predictions": 7
+            },
+            "docstring": {
+              "tokens": 81,
+              "correct": {
+                "ce_sum": 959.9645385742188,
+                "correct_tokens": 2
+              },
+              "wrong": {
+                "ce_sum": 2205.737060546875,
+                "correct_tokens": 2
+              },
+              "changed_predictions": 78
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_6725",
+            "code_eos_without_docstring": {
+              "tokens": 32,
+              "correct": {
+                "ce_sum": 13.683696746826172,
+                "correct_tokens": 29
+              },
+              "wrong": {
+                "ce_sum": 21.178333282470703,
+                "correct_tokens": 27
+              },
+              "changed_predictions": 3
+            },
+            "docstring": {
+              "tokens": 62,
+              "correct": {
+                "ce_sum": 1360.9027099609375,
+                "correct_tokens": 0
+              },
+              "wrong": {
+                "ce_sum": 1074.2313232421875,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 58
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_2910",
+            "code_eos_without_docstring": {
+              "tokens": 33,
+              "correct": {
+                "ce_sum": 5.724282264709473,
+                "correct_tokens": 32
+              },
+              "wrong": {
+                "ce_sum": 13.187118530273438,
+                "correct_tokens": 29
+              },
+              "changed_predictions": 3
+            },
+            "docstring": {
+              "tokens": 44,
+              "correct": {
+                "ce_sum": 937.3204345703125,
+                "correct_tokens": 1
+              },
+              "wrong": {
+                "ce_sum": 1096.49560546875,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 43
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_3521",
+            "code_eos_without_docstring": {
+              "tokens": 34,
+              "correct": {
+                "ce_sum": 13.364325523376465,
+                "correct_tokens": 31
+              },
+              "wrong": {
+                "ce_sum": 20.696367263793945,
+                "correct_tokens": 29
+              },
+              "changed_predictions": 6
+            },
+            "docstring": {
+              "tokens": 47,
+              "correct": {
+                "ce_sum": 773.60009765625,
+                "correct_tokens": 1
+              },
+              "wrong": {
+                "ce_sum": 792.3742065429688,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 44
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_5649",
+            "code_eos_without_docstring": {
+              "tokens": 33,
+              "correct": {
+                "ce_sum": 7.465826988220215,
+                "correct_tokens": 31
+              },
+              "wrong": {
+                "ce_sum": 23.427135467529297,
+                "correct_tokens": 29
+              },
+              "changed_predictions": 5
+            },
+            "docstring": {
+              "tokens": 37,
+              "correct": {
+                "ce_sum": 347.0203857421875,
+                "correct_tokens": 9
+              },
+              "wrong": {
+                "ce_sum": 596.7184448242188,
+                "correct_tokens": 2
+              },
+              "changed_predictions": 33
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_7103",
+            "code_eos_without_docstring": {
+              "tokens": 27,
+              "correct": {
+                "ce_sum": 31.933502197265625,
+                "correct_tokens": 22
+              },
+              "wrong": {
+                "ce_sum": 46.10474395751953,
+                "correct_tokens": 21
+              },
+              "changed_predictions": 1
+            },
+            "docstring": {
+              "tokens": 65,
+              "correct": {
+                "ce_sum": 857.292236328125,
+                "correct_tokens": 14
+              },
+              "wrong": {
+                "ce_sum": 1176.0885009765625,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 63
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_2986",
+            "code_eos_without_docstring": {
+              "tokens": 33,
+              "correct": {
+                "ce_sum": 74.24516296386719,
+                "correct_tokens": 28
+              },
+              "wrong": {
+                "ce_sum": 81.08299255371094,
+                "correct_tokens": 28
+              },
+              "changed_predictions": 0
+            },
+            "docstring": {
+              "tokens": 48,
+              "correct": {
+                "ce_sum": 876.502197265625,
+                "correct_tokens": 1
+              },
+              "wrong": {
+                "ce_sum": 1368.57763671875,
+                "correct_tokens": 2
+              },
+              "changed_predictions": 46
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_1515",
+            "code_eos_without_docstring": {
+              "tokens": 18,
+              "correct": {
+                "ce_sum": 2.333486557006836,
+                "correct_tokens": 16
+              },
+              "wrong": {
+                "ce_sum": 35.6043815612793,
+                "correct_tokens": 12
+              },
+              "changed_predictions": 4
+            },
+            "docstring": {
+              "tokens": 39,
+              "correct": {
+                "ce_sum": 712.882568359375,
+                "correct_tokens": 9
+              },
+              "wrong": {
+                "ce_sum": 754.9268798828125,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 37
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_6722",
+            "code_eos_without_docstring": {
+              "tokens": 26,
+              "correct": {
+                "ce_sum": 90.50377655029297,
+                "correct_tokens": 17
+              },
+              "wrong": {
+                "ce_sum": 75.99531555175781,
+                "correct_tokens": 13
+              },
+              "changed_predictions": 10
+            },
+            "docstring": {
+              "tokens": 34,
+              "correct": {
+                "ce_sum": 953.6654052734375,
+                "correct_tokens": 0
+              },
+              "wrong": {
+                "ce_sum": 822.29052734375,
+                "correct_tokens": 0
+              },
+              "changed_predictions": 32
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_7383",
+            "code_eos_without_docstring": {
+              "tokens": 25,
+              "correct": {
+                "ce_sum": 12.904826164245605,
+                "correct_tokens": 23
+              },
+              "wrong": {
+                "ce_sum": 9.110363960266113,
+                "correct_tokens": 22
+              },
+              "changed_predictions": 2
+            },
+            "docstring": {
+              "tokens": 36,
+              "correct": {
+                "ce_sum": 669.011474609375,
+                "correct_tokens": 0
+              },
+              "wrong": {
+                "ce_sum": 518.111083984375,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 35
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_1621",
+            "code_eos_without_docstring": {
+              "tokens": 31,
+              "correct": {
+                "ce_sum": 4.742586135864258,
+                "correct_tokens": 30
+              },
+              "wrong": {
+                "ce_sum": 17.659954071044922,
+                "correct_tokens": 25
+              },
+              "changed_predictions": 5
+            },
+            "docstring": {
+              "tokens": 43,
+              "correct": {
+                "ce_sum": 819.6885375976562,
+                "correct_tokens": 1
+              },
+              "wrong": {
+                "ce_sum": 548.53173828125,
+                "correct_tokens": 2
+              },
+              "changed_predictions": 40
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_0115",
+            "code_eos_without_docstring": {
+              "tokens": 24,
+              "correct": {
+                "ce_sum": 53.794403076171875,
+                "correct_tokens": 19
+              },
+              "wrong": {
+                "ce_sum": 132.74456787109375,
+                "correct_tokens": 12
+              },
+              "changed_predictions": 11
+            },
+            "docstring": {
+              "tokens": 54,
+              "correct": {
+                "ce_sum": 885.567626953125,
+                "correct_tokens": 0
+              },
+              "wrong": {
+                "ce_sum": 1543.611328125,
+                "correct_tokens": 0
+              },
+              "changed_predictions": 44
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_6873",
+            "code_eos_without_docstring": {
+              "tokens": 19,
+              "correct": {
+                "ce_sum": 5.069938659667969,
+                "correct_tokens": 18
+              },
+              "wrong": {
+                "ce_sum": 9.833216667175293,
+                "correct_tokens": 17
+              },
+              "changed_predictions": 1
+            },
+            "docstring": {
+              "tokens": 40,
+              "correct": {
+                "ce_sum": 363.0443420410156,
+                "correct_tokens": 17
+              },
+              "wrong": {
+                "ce_sum": 850.5733642578125,
+                "correct_tokens": 0
+              },
+              "changed_predictions": 37
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_6820",
+            "code_eos_without_docstring": {
+              "tokens": 40,
+              "correct": {
+                "ce_sum": 21.80660629272461,
+                "correct_tokens": 37
+              },
+              "wrong": {
+                "ce_sum": 39.866512298583984,
+                "correct_tokens": 33
+              },
+              "changed_predictions": 8
+            },
+            "docstring": {
+              "tokens": 51,
+              "correct": {
+                "ce_sum": 897.9410400390625,
+                "correct_tokens": 1
+              },
+              "wrong": {
+                "ce_sum": 1003.4603881835938,
+                "correct_tokens": 2
+              },
+              "changed_predictions": 49
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_6726",
+            "code_eos_without_docstring": {
+              "tokens": 31,
+              "correct": {
+                "ce_sum": 47.007545471191406,
+                "correct_tokens": 28
+              },
+              "wrong": {
+                "ce_sum": 109.1742172241211,
+                "correct_tokens": 20
+              },
+              "changed_predictions": 8
+            },
+            "docstring": {
+              "tokens": 38,
+              "correct": {
+                "ce_sum": 477.6754150390625,
+                "correct_tokens": 1
+              },
+              "wrong": {
+                "ce_sum": 786.2833862304688,
+                "correct_tokens": 2
+              },
+              "changed_predictions": 36
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_1406",
+            "code_eos_without_docstring": {
+              "tokens": 21,
+              "correct": {
+                "ce_sum": 2.401106834411621,
+                "correct_tokens": 20
+              },
+              "wrong": {
+                "ce_sum": 9.968537330627441,
+                "correct_tokens": 18
+              },
+              "changed_predictions": 4
+            },
+            "docstring": {
+              "tokens": 51,
+              "correct": {
+                "ce_sum": 918.8217163085938,
+                "correct_tokens": 1
+              },
+              "wrong": {
+                "ce_sum": 758.5709228515625,
+                "correct_tokens": 2
+              },
+              "changed_predictions": 48
+            }
+          }
+        ]
+      },
+      {
+        "case": "full_mask",
+        "mask_fraction": 1.0,
+        "aggregate": {
+          "code_eos_without_docstring": {
+            "tokens": 940,
+            "correct": {
+              "ce": 4.270762488182555,
+              "accuracy": 0.2691489361702128
+            },
+            "wrong": {
+              "ce": 6.8597664528704705,
+              "accuracy": 0.26276595744680853
+            },
+            "wrong_minus_correct_ce": 2.5890039646879153,
+            "correct_minus_wrong_accuracy": 0.0063829787234042645,
+            "prediction_change_rate": 0.5851063829787234,
+            "questions_correct_ce_lower": 16
+          },
+          "docstring": {
+            "tokens": 770,
+            "correct": {
+              "ce": 19.608611664214692,
+              "accuracy": 0.06883116883116883
+            },
+            "wrong": {
+              "ce": 25.55548484108665,
+              "accuracy": 0.012987012987012988
+            },
+            "wrong_minus_correct_ce": 5.946873176871957,
+            "correct_minus_wrong_accuracy": 0.055844155844155835,
+            "prediction_change_rate": 0.9298701298701298,
+            "questions_correct_ce_lower": 14
+          }
+        },
+        "records": [
+          {
+            "sample_id": "gsm8k_train_3517",
+            "code_eos_without_docstring": {
+              "tokens": 87,
+              "correct": {
+                "ce_sum": 312.74261474609375,
+                "correct_tokens": 24
+              },
+              "wrong": {
+                "ce_sum": 578.3367309570312,
+                "correct_tokens": 20
+              },
+              "changed_predictions": 47
+            },
+            "docstring": {
+              "tokens": 81,
+              "correct": {
+                "ce_sum": 1244.4827880859375,
+                "correct_tokens": 2
+              },
+              "wrong": {
+                "ce_sum": 2244.729248046875,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 77
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_6725",
+            "code_eos_without_docstring": {
+              "tokens": 71,
+              "correct": {
+                "ce_sum": 302.31494140625,
+                "correct_tokens": 19
+              },
+              "wrong": {
+                "ce_sum": 512.060791015625,
+                "correct_tokens": 22
+              },
+              "changed_predictions": 27
+            },
+            "docstring": {
+              "tokens": 62,
+              "correct": {
+                "ce_sum": 1540.7249755859375,
+                "correct_tokens": 0
+              },
+              "wrong": {
+                "ce_sum": 1767.1365966796875,
+                "correct_tokens": 0
+              },
+              "changed_predictions": 57
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_2910",
+            "code_eos_without_docstring": {
+              "tokens": 64,
+              "correct": {
+                "ce_sum": 249.07241821289062,
+                "correct_tokens": 19
+              },
+              "wrong": {
+                "ce_sum": 423.0011901855469,
+                "correct_tokens": 17
+              },
+              "changed_predictions": 35
+            },
+            "docstring": {
+              "tokens": 44,
+              "correct": {
+                "ce_sum": 1038.369873046875,
+                "correct_tokens": 1
+              },
+              "wrong": {
+                "ce_sum": 1222.986328125,
+                "correct_tokens": 0
+              },
+              "changed_predictions": 42
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_3521",
+            "code_eos_without_docstring": {
+              "tokens": 64,
+              "correct": {
+                "ce_sum": 292.58331298828125,
+                "correct_tokens": 16
+              },
+              "wrong": {
+                "ce_sum": 526.177734375,
+                "correct_tokens": 11
+              },
+              "changed_predictions": 47
+            },
+            "docstring": {
+              "tokens": 47,
+              "correct": {
+                "ce_sum": 904.0986938476562,
+                "correct_tokens": 1
+              },
+              "wrong": {
+                "ce_sum": 1332.279541015625,
+                "correct_tokens": 0
+              },
+              "changed_predictions": 43
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_5649",
+            "code_eos_without_docstring": {
+              "tokens": 68,
+              "correct": {
+                "ce_sum": 284.51995849609375,
+                "correct_tokens": 17
+              },
+              "wrong": {
+                "ce_sum": 550.7728881835938,
+                "correct_tokens": 17
+              },
+              "changed_predictions": 50
+            },
+            "docstring": {
+              "tokens": 37,
+              "correct": {
+                "ce_sum": 559.4674072265625,
+                "correct_tokens": 9
+              },
+              "wrong": {
+                "ce_sum": 979.022216796875,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 32
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_7103",
+            "code_eos_without_docstring": {
+              "tokens": 60,
+              "correct": {
+                "ce_sum": 263.3793029785156,
+                "correct_tokens": 15
+              },
+              "wrong": {
+                "ce_sum": 394.6886901855469,
+                "correct_tokens": 21
+              },
+              "changed_predictions": 21
+            },
+            "docstring": {
+              "tokens": 65,
+              "correct": {
+                "ce_sum": 1213.848388671875,
+                "correct_tokens": 13
+              },
+              "wrong": {
+                "ce_sum": 1714.4296875,
+                "correct_tokens": 0
+              },
+              "changed_predictions": 63
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_2986",
+            "code_eos_without_docstring": {
+              "tokens": 67,
+              "correct": {
+                "ce_sum": 270.3619384765625,
+                "correct_tokens": 17
+              },
+              "wrong": {
+                "ce_sum": 450.40887451171875,
+                "correct_tokens": 12
+              },
+              "changed_predictions": 37
+            },
+            "docstring": {
+              "tokens": 48,
+              "correct": {
+                "ce_sum": 988.153076171875,
+                "correct_tokens": 1
+              },
+              "wrong": {
+                "ce_sum": 1454.565673828125,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 47
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_1515",
+            "code_eos_without_docstring": {
+              "tokens": 36,
+              "correct": {
+                "ce_sum": 190.6578369140625,
+                "correct_tokens": 11
+              },
+              "wrong": {
+                "ce_sum": 247.9055633544922,
+                "correct_tokens": 13
+              },
+              "changed_predictions": 18
+            },
+            "docstring": {
+              "tokens": 39,
+              "correct": {
+                "ce_sum": 600.9216918945312,
+                "correct_tokens": 8
+              },
+              "wrong": {
+                "ce_sum": 774.1884155273438,
+                "correct_tokens": 0
+              },
+              "changed_predictions": 37
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_6722",
+            "code_eos_without_docstring": {
+              "tokens": 49,
+              "correct": {
+                "ce_sum": 238.40872192382812,
+                "correct_tokens": 12
+              },
+              "wrong": {
+                "ce_sum": 335.36663818359375,
+                "correct_tokens": 14
+              },
+              "changed_predictions": 33
+            },
+            "docstring": {
+              "tokens": 34,
+              "correct": {
+                "ce_sum": 895.24560546875,
+                "correct_tokens": 0
+              },
+              "wrong": {
+                "ce_sum": 910.8217163085938,
+                "correct_tokens": 0
+              },
+              "changed_predictions": 32
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_7383",
+            "code_eos_without_docstring": {
+              "tokens": 47,
+              "correct": {
+                "ce_sum": 226.49636840820312,
+                "correct_tokens": 14
+              },
+              "wrong": {
+                "ce_sum": 270.3180236816406,
+                "correct_tokens": 14
+              },
+              "changed_predictions": 24
+            },
+            "docstring": {
+              "tokens": 36,
+              "correct": {
+                "ce_sum": 884.4214477539062,
+                "correct_tokens": 0
+              },
+              "wrong": {
+                "ce_sum": 536.59375,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 31
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_1621",
+            "code_eos_without_docstring": {
+              "tokens": 61,
+              "correct": {
+                "ce_sum": 208.04229736328125,
+                "correct_tokens": 19
+              },
+              "wrong": {
+                "ce_sum": 423.4107360839844,
+                "correct_tokens": 11
+              },
+              "changed_predictions": 43
+            },
+            "docstring": {
+              "tokens": 43,
+              "correct": {
+                "ce_sum": 673.9310302734375,
+                "correct_tokens": 0
+              },
+              "wrong": {
+                "ce_sum": 1007.5070190429688,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 40
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_0115",
+            "code_eos_without_docstring": {
+              "tokens": 46,
+              "correct": {
+                "ce_sum": 254.13446044921875,
+                "correct_tokens": 11
+              },
+              "wrong": {
+                "ce_sum": 305.2398376464844,
+                "correct_tokens": 11
+              },
+              "changed_predictions": 30
+            },
+            "docstring": {
+              "tokens": 54,
+              "correct": {
+                "ce_sum": 1361.1302490234375,
+                "correct_tokens": 0
+              },
+              "wrong": {
+                "ce_sum": 1503.046142578125,
+                "correct_tokens": 0
+              },
+              "changed_predictions": 44
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_6873",
+            "code_eos_without_docstring": {
+              "tokens": 36,
+              "correct": {
+                "ce_sum": 147.10470581054688,
+                "correct_tokens": 12
+              },
+              "wrong": {
+                "ce_sum": 216.79183959960938,
+                "correct_tokens": 12
+              },
+              "changed_predictions": 19
+            },
+            "docstring": {
+              "tokens": 40,
+              "correct": {
+                "ce_sum": 349.75567626953125,
+                "correct_tokens": 17
+              },
+              "wrong": {
+                "ce_sum": 992.7201538085938,
+                "correct_tokens": 0
+              },
+              "changed_predictions": 37
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_6820",
+            "code_eos_without_docstring": {
+              "tokens": 73,
+              "correct": {
+                "ce_sum": 269.16241455078125,
+                "correct_tokens": 21
+              },
+              "wrong": {
+                "ce_sum": 394.402099609375,
+                "correct_tokens": 26
+              },
+              "changed_predictions": 44
+            },
+            "docstring": {
+              "tokens": 51,
+              "correct": {
+                "ce_sum": 840.4295654296875,
+                "correct_tokens": 1
+              },
+              "wrong": {
+                "ce_sum": 1174.988525390625,
+                "correct_tokens": 2
+              },
+              "changed_predictions": 49
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_6726",
+            "code_eos_without_docstring": {
+              "tokens": 62,
+              "correct": {
+                "ce_sum": 255.80982971191406,
+                "correct_tokens": 14
+              },
+              "wrong": {
+                "ce_sum": 424.421875,
+                "correct_tokens": 14
+              },
+              "changed_predictions": 49
+            },
+            "docstring": {
+              "tokens": 38,
+              "correct": {
+                "ce_sum": 696.038818359375,
+                "correct_tokens": 0
+              },
+              "wrong": {
+                "ce_sum": 906.8923950195312,
+                "correct_tokens": 2
+              },
+              "changed_predictions": 37
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_1406",
+            "code_eos_without_docstring": {
+              "tokens": 49,
+              "correct": {
+                "ce_sum": 249.72561645507812,
+                "correct_tokens": 12
+              },
+              "wrong": {
+                "ce_sum": 394.876953125,
+                "correct_tokens": 12
+              },
+              "changed_predictions": 26
+            },
+            "docstring": {
+              "tokens": 51,
+              "correct": {
+                "ce_sum": 1307.6116943359375,
+                "correct_tokens": 0
+              },
+              "wrong": {
+                "ce_sum": 1155.81591796875,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 48
+            }
+          }
+        ]
+      }
+    ],
+    "3000": [
+      {
+        "case": "half_mask_original_docstring",
+        "mask_fraction": 0.5,
+        "aggregate": {
+          "code_eos_without_docstring": {
+            "tokens": 472,
+            "correct": {
+              "ce": 0.40522162793046335,
+              "accuracy": 0.9216101694915254
+            },
+            "wrong": {
+              "ce": 0.9085099313218715,
+              "accuracy": 0.8326271186440678
+            },
+            "wrong_minus_correct_ce": 0.5032883033914082,
+            "correct_minus_wrong_accuracy": 0.08898305084745761,
+            "prediction_change_rate": 0.1292372881355932,
+            "questions_correct_ce_lower": 16
+          },
+          "docstring": {
+            "tokens": 384,
+            "correct": {
+              "ce": 0.5228570501009623,
+              "accuracy": 0.9375
+            },
+            "wrong": {
+              "ce": 5.976760307947795,
+              "accuracy": 0.125
+            },
+            "wrong_minus_correct_ce": 5.453903257846832,
+            "correct_minus_wrong_accuracy": 0.8125,
+            "prediction_change_rate": 0.8567708333333334,
+            "questions_correct_ce_lower": 16
+          }
+        },
+        "records": [
+          {
+            "sample_id": "gsm8k_train_3517",
+            "code_eos_without_docstring": {
+              "tokens": 45,
+              "correct": {
+                "ce_sum": 11.3483304977417,
+                "correct_tokens": 42
+              },
+              "wrong": {
+                "ce_sum": 23.242395401000977,
+                "correct_tokens": 40
+              },
+              "changed_predictions": 5
+            },
+            "docstring": {
+              "tokens": 39,
+              "correct": {
+                "ce_sum": 13.132725715637207,
+                "correct_tokens": 37
+              },
+              "wrong": {
+                "ce_sum": 232.2506866455078,
+                "correct_tokens": 5
+              },
+              "changed_predictions": 35
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_6725",
+            "code_eos_without_docstring": {
+              "tokens": 32,
+              "correct": {
+                "ce_sum": 11.96823501586914,
+                "correct_tokens": 29
+              },
+              "wrong": {
+                "ce_sum": 19.453975677490234,
+                "correct_tokens": 27
+              },
+              "changed_predictions": 2
+            },
+            "docstring": {
+              "tokens": 34,
+              "correct": {
+                "ce_sum": 0.12228584289550781,
+                "correct_tokens": 34
+              },
+              "wrong": {
+                "ce_sum": 212.23727416992188,
+                "correct_tokens": 5
+              },
+              "changed_predictions": 29
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_2910",
+            "code_eos_without_docstring": {
+              "tokens": 33,
+              "correct": {
+                "ce_sum": 5.219762802124023,
+                "correct_tokens": 32
+              },
+              "wrong": {
+                "ce_sum": 13.889018058776855,
+                "correct_tokens": 29
+              },
+              "changed_predictions": 3
+            },
+            "docstring": {
+              "tokens": 21,
+              "correct": {
+                "ce_sum": 1.3582534790039062,
+                "correct_tokens": 20
+              },
+              "wrong": {
+                "ce_sum": 132.66285705566406,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 20
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_3521",
+            "code_eos_without_docstring": {
+              "tokens": 34,
+              "correct": {
+                "ce_sum": 11.781087875366211,
+                "correct_tokens": 31
+              },
+              "wrong": {
+                "ce_sum": 19.725730895996094,
+                "correct_tokens": 30
+              },
+              "changed_predictions": 4
+            },
+            "docstring": {
+              "tokens": 22,
+              "correct": {
+                "ce_sum": 2.641221046447754,
+                "correct_tokens": 21
+              },
+              "wrong": {
+                "ce_sum": 127.08001708984375,
+                "correct_tokens": 2
+              },
+              "changed_predictions": 20
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_5649",
+            "code_eos_without_docstring": {
+              "tokens": 33,
+              "correct": {
+                "ce_sum": 4.271317481994629,
+                "correct_tokens": 31
+              },
+              "wrong": {
+                "ce_sum": 24.822710037231445,
+                "correct_tokens": 28
+              },
+              "changed_predictions": 4
+            },
+            "docstring": {
+              "tokens": 19,
+              "correct": {
+                "ce_sum": 13.117465019226074,
+                "correct_tokens": 18
+              },
+              "wrong": {
+                "ce_sum": 109.63907623291016,
+                "correct_tokens": 3
+              },
+              "changed_predictions": 15
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_7103",
+            "code_eos_without_docstring": {
+              "tokens": 27,
+              "correct": {
+                "ce_sum": 3.4719104766845703,
+                "correct_tokens": 26
+              },
+              "wrong": {
+                "ce_sum": 5.887920379638672,
+                "correct_tokens": 26
+              },
+              "changed_predictions": 0
+            },
+            "docstring": {
+              "tokens": 35,
+              "correct": {
+                "ce_sum": 14.09287166595459,
+                "correct_tokens": 34
+              },
+              "wrong": {
+                "ce_sum": 178.27365112304688,
+                "correct_tokens": 5
+              },
+              "changed_predictions": 29
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_2986",
+            "code_eos_without_docstring": {
+              "tokens": 33,
+              "correct": {
+                "ce_sum": 64.38642883300781,
+                "correct_tokens": 28
+              },
+              "wrong": {
+                "ce_sum": 73.38556671142578,
+                "correct_tokens": 28
+              },
+              "changed_predictions": 0
+            },
+            "docstring": {
+              "tokens": 25,
+              "correct": {
+                "ce_sum": 19.61720085144043,
+                "correct_tokens": 22
+              },
+              "wrong": {
+                "ce_sum": 152.45855712890625,
+                "correct_tokens": 2
+              },
+              "changed_predictions": 22
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_1515",
+            "code_eos_without_docstring": {
+              "tokens": 18,
+              "correct": {
+                "ce_sum": 2.0278491973876953,
+                "correct_tokens": 17
+              },
+              "wrong": {
+                "ce_sum": 26.80182647705078,
+                "correct_tokens": 12
+              },
+              "changed_predictions": 5
+            },
+            "docstring": {
+              "tokens": 20,
+              "correct": {
+                "ce_sum": 9.82279109954834,
+                "correct_tokens": 19
+              },
+              "wrong": {
+                "ce_sum": 80.36058807373047,
+                "correct_tokens": 4
+              },
+              "changed_predictions": 16
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_6722",
+            "code_eos_without_docstring": {
+              "tokens": 26,
+              "correct": {
+                "ce_sum": 5.3580474853515625,
+                "correct_tokens": 23
+              },
+              "wrong": {
+                "ce_sum": 30.667451858520508,
+                "correct_tokens": 18
+              },
+              "changed_predictions": 8
+            },
+            "docstring": {
+              "tokens": 16,
+              "correct": {
+                "ce_sum": 10.466963768005371,
+                "correct_tokens": 15
+              },
+              "wrong": {
+                "ce_sum": 109.60674285888672,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 15
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_7383",
+            "code_eos_without_docstring": {
+              "tokens": 25,
+              "correct": {
+                "ce_sum": 8.013155937194824,
+                "correct_tokens": 23
+              },
+              "wrong": {
+                "ce_sum": 9.428362846374512,
+                "correct_tokens": 23
+              },
+              "changed_predictions": 0
+            },
+            "docstring": {
+              "tokens": 17,
+              "correct": {
+                "ce_sum": 23.9255313873291,
+                "correct_tokens": 15
+              },
+              "wrong": {
+                "ce_sum": 103.98130798339844,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 15
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_1621",
+            "code_eos_without_docstring": {
+              "tokens": 31,
+              "correct": {
+                "ce_sum": 6.51963996887207,
+                "correct_tokens": 27
+              },
+              "wrong": {
+                "ce_sum": 16.344573974609375,
+                "correct_tokens": 27
+              },
+              "changed_predictions": 6
+            },
+            "docstring": {
+              "tokens": 21,
+              "correct": {
+                "ce_sum": 30.302953720092773,
+                "correct_tokens": 18
+              },
+              "wrong": {
+                "ce_sum": 111.45258331298828,
+                "correct_tokens": 5
+              },
+              "changed_predictions": 15
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_0115",
+            "code_eos_without_docstring": {
+              "tokens": 24,
+              "correct": {
+                "ce_sum": 16.084577560424805,
+                "correct_tokens": 23
+              },
+              "wrong": {
+                "ce_sum": 55.38714599609375,
+                "correct_tokens": 16
+              },
+              "changed_predictions": 7
+            },
+            "docstring": {
+              "tokens": 26,
+              "correct": {
+                "ce_sum": 3.430990219116211,
+                "correct_tokens": 25
+              },
+              "wrong": {
+                "ce_sum": 173.5255584716797,
+                "correct_tokens": 4
+              },
+              "changed_predictions": 22
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_6873",
+            "code_eos_without_docstring": {
+              "tokens": 19,
+              "correct": {
+                "ce_sum": 3.060549736022949,
+                "correct_tokens": 18
+              },
+              "wrong": {
+                "ce_sum": 8.131695747375488,
+                "correct_tokens": 17
+              },
+              "changed_predictions": 1
+            },
+            "docstring": {
+              "tokens": 19,
+              "correct": {
+                "ce_sum": 24.38774299621582,
+                "correct_tokens": 16
+              },
+              "wrong": {
+                "ce_sum": 116.28925323486328,
+                "correct_tokens": 0
+              },
+              "changed_predictions": 17
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_6820",
+            "code_eos_without_docstring": {
+              "tokens": 40,
+              "correct": {
+                "ce_sum": 11.504480361938477,
+                "correct_tokens": 37
+              },
+              "wrong": {
+                "ce_sum": 28.253253936767578,
+                "correct_tokens": 34
+              },
+              "changed_predictions": 4
+            },
+            "docstring": {
+              "tokens": 22,
+              "correct": {
+                "ce_sum": 2.5915937423706055,
+                "correct_tokens": 21
+              },
+              "wrong": {
+                "ce_sum": 140.41403198242188,
+                "correct_tokens": 2
+              },
+              "changed_predictions": 20
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_6726",
+            "code_eos_without_docstring": {
+              "tokens": 31,
+              "correct": {
+                "ce_sum": 24.897823333740234,
+                "correct_tokens": 28
+              },
+              "wrong": {
+                "ce_sum": 62.56220245361328,
+                "correct_tokens": 20
+              },
+              "changed_predictions": 8
+            },
+            "docstring": {
+              "tokens": 19,
+              "correct": {
+                "ce_sum": 0.28775501251220703,
+                "correct_tokens": 19
+              },
+              "wrong": {
+                "ce_sum": 86.6008071899414,
+                "correct_tokens": 6
+              },
+              "changed_predictions": 13
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_1406",
+            "code_eos_without_docstring": {
+              "tokens": 21,
+              "correct": {
+                "ce_sum": 1.3514118194580078,
+                "correct_tokens": 20
+              },
+              "wrong": {
+                "ce_sum": 10.832857131958008,
+                "correct_tokens": 18
+              },
+              "changed_predictions": 4
+            },
+            "docstring": {
+              "tokens": 29,
+              "correct": {
+                "ce_sum": 31.478761672973633,
+                "correct_tokens": 26
+              },
+              "wrong": {
+                "ce_sum": 228.2429656982422,
+                "correct_tokens": 2
+              },
+              "changed_predictions": 26
+            }
+          }
+        ]
+      },
+      {
+        "case": "half_mask_docstring_hidden",
+        "mask_fraction": 0.5,
+        "aggregate": {
+          "code_eos_without_docstring": {
+            "tokens": 472,
+            "correct": {
+              "ce": 0.4184012574664617,
+              "accuracy": 0.9216101694915254
+            },
+            "wrong": {
+              "ce": 1.0075889825820923,
+              "accuracy": 0.8135593220338984
+            },
+            "wrong_minus_correct_ce": 0.5891877251156306,
+            "correct_minus_wrong_accuracy": 0.10805084745762705,
+            "prediction_change_rate": 0.1461864406779661,
+            "questions_correct_ce_lower": 15
+          },
+          "docstring": {
+            "tokens": 770,
+            "correct": {
+              "ce": 4.643466077532087,
+              "accuracy": 0.11818181818181818
+            },
+            "wrong": {
+              "ce": 9.4278674633472,
+              "accuracy": 0.025974025974025976
+            },
+            "wrong_minus_correct_ce": 4.784401385815113,
+            "correct_minus_wrong_accuracy": 0.09220779220779221,
+            "prediction_change_rate": 0.9272727272727272,
+            "questions_correct_ce_lower": 16
+          }
+        },
+        "records": [
+          {
+            "sample_id": "gsm8k_train_3517",
+            "code_eos_without_docstring": {
+              "tokens": 45,
+              "correct": {
+                "ce_sum": 8.637994766235352,
+                "correct_tokens": 43
+              },
+              "wrong": {
+                "ce_sum": 23.90570831298828,
+                "correct_tokens": 40
+              },
+              "changed_predictions": 4
+            },
+            "docstring": {
+              "tokens": 81,
+              "correct": {
+                "ce_sum": 313.1839904785156,
+                "correct_tokens": 7
+              },
+              "wrong": {
+                "ce_sum": 832.2672119140625,
+                "correct_tokens": 3
+              },
+              "changed_predictions": 75
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_6725",
+            "code_eos_without_docstring": {
+              "tokens": 32,
+              "correct": {
+                "ce_sum": 12.938628196716309,
+                "correct_tokens": 29
+              },
+              "wrong": {
+                "ce_sum": 21.467315673828125,
+                "correct_tokens": 27
+              },
+              "changed_predictions": 2
+            },
+            "docstring": {
+              "tokens": 62,
+              "correct": {
+                "ce_sum": 371.3266906738281,
+                "correct_tokens": 0
+              },
+              "wrong": {
+                "ce_sum": 605.4503784179688,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 58
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_2910",
+            "code_eos_without_docstring": {
+              "tokens": 33,
+              "correct": {
+                "ce_sum": 6.2466840744018555,
+                "correct_tokens": 32
+              },
+              "wrong": {
+                "ce_sum": 14.595075607299805,
+                "correct_tokens": 29
+              },
+              "changed_predictions": 3
+            },
+            "docstring": {
+              "tokens": 44,
+              "correct": {
+                "ce_sum": 194.4219207763672,
+                "correct_tokens": 2
+              },
+              "wrong": {
+                "ce_sum": 412.6109924316406,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 42
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_3521",
+            "code_eos_without_docstring": {
+              "tokens": 34,
+              "correct": {
+                "ce_sum": 11.199512481689453,
+                "correct_tokens": 31
+              },
+              "wrong": {
+                "ce_sum": 16.44378662109375,
+                "correct_tokens": 30
+              },
+              "changed_predictions": 4
+            },
+            "docstring": {
+              "tokens": 47,
+              "correct": {
+                "ce_sum": 285.4808349609375,
+                "correct_tokens": 2
+              },
+              "wrong": {
+                "ce_sum": 489.012939453125,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 44
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_5649",
+            "code_eos_without_docstring": {
+              "tokens": 33,
+              "correct": {
+                "ce_sum": 5.371563911437988,
+                "correct_tokens": 31
+              },
+              "wrong": {
+                "ce_sum": 22.582674026489258,
+                "correct_tokens": 29
+              },
+              "changed_predictions": 4
+            },
+            "docstring": {
+              "tokens": 37,
+              "correct": {
+                "ce_sum": 104.0743179321289,
+                "correct_tokens": 12
+              },
+              "wrong": {
+                "ce_sum": 283.53936767578125,
+                "correct_tokens": 2
+              },
+              "changed_predictions": 33
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_7103",
+            "code_eos_without_docstring": {
+              "tokens": 27,
+              "correct": {
+                "ce_sum": 1.632680892944336,
+                "correct_tokens": 26
+              },
+              "wrong": {
+                "ce_sum": 5.507253646850586,
+                "correct_tokens": 26
+              },
+              "changed_predictions": 0
+            },
+            "docstring": {
+              "tokens": 65,
+              "correct": {
+                "ce_sum": 191.0254364013672,
+                "correct_tokens": 25
+              },
+              "wrong": {
+                "ce_sum": 570.2203369140625,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 61
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_2986",
+            "code_eos_without_docstring": {
+              "tokens": 33,
+              "correct": {
+                "ce_sum": 58.333953857421875,
+                "correct_tokens": 28
+              },
+              "wrong": {
+                "ce_sum": 68.58507537841797,
+                "correct_tokens": 27
+              },
+              "changed_predictions": 1
+            },
+            "docstring": {
+              "tokens": 48,
+              "correct": {
+                "ce_sum": 224.364990234375,
+                "correct_tokens": 1
+              },
+              "wrong": {
+                "ce_sum": 498.10137939453125,
+                "correct_tokens": 2
+              },
+              "changed_predictions": 45
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_1515",
+            "code_eos_without_docstring": {
+              "tokens": 18,
+              "correct": {
+                "ce_sum": 2.0081892013549805,
+                "correct_tokens": 17
+              },
+              "wrong": {
+                "ce_sum": 29.76288604736328,
+                "correct_tokens": 12
+              },
+              "changed_predictions": 5
+            },
+            "docstring": {
+              "tokens": 39,
+              "correct": {
+                "ce_sum": 218.99945068359375,
+                "correct_tokens": 9
+              },
+              "wrong": {
+                "ce_sum": 318.91729736328125,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 36
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_6722",
+            "code_eos_without_docstring": {
+              "tokens": 26,
+              "correct": {
+                "ce_sum": 15.031113624572754,
+                "correct_tokens": 21
+              },
+              "wrong": {
+                "ce_sum": 34.75050354003906,
+                "correct_tokens": 15
+              },
+              "changed_predictions": 9
+            },
+            "docstring": {
+              "tokens": 34,
+              "correct": {
+                "ce_sum": 250.58840942382812,
+                "correct_tokens": 0
+              },
+              "wrong": {
+                "ce_sum": 335.7179870605469,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 33
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_7383",
+            "code_eos_without_docstring": {
+              "tokens": 25,
+              "correct": {
+                "ce_sum": 10.754481315612793,
+                "correct_tokens": 23
+              },
+              "wrong": {
+                "ce_sum": 9.155986785888672,
+                "correct_tokens": 23
+              },
+              "changed_predictions": 2
+            },
+            "docstring": {
+              "tokens": 36,
+              "correct": {
+                "ce_sum": 204.89744567871094,
+                "correct_tokens": 1
+              },
+              "wrong": {
+                "ce_sum": 286.41229248046875,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 33
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_1621",
+            "code_eos_without_docstring": {
+              "tokens": 31,
+              "correct": {
+                "ce_sum": 5.482929229736328,
+                "correct_tokens": 28
+              },
+              "wrong": {
+                "ce_sum": 17.935821533203125,
+                "correct_tokens": 26
+              },
+              "changed_predictions": 6
+            },
+            "docstring": {
+              "tokens": 43,
+              "correct": {
+                "ce_sum": 163.05198669433594,
+                "correct_tokens": 3
+              },
+              "wrong": {
+                "ce_sum": 347.7538757324219,
+                "correct_tokens": 2
+              },
+              "changed_predictions": 41
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_0115",
+            "code_eos_without_docstring": {
+              "tokens": 24,
+              "correct": {
+                "ce_sum": 16.252798080444336,
+                "correct_tokens": 23
+              },
+              "wrong": {
+                "ce_sum": 76.9732666015625,
+                "correct_tokens": 13
+              },
+              "changed_predictions": 10
+            },
+            "docstring": {
+              "tokens": 54,
+              "correct": {
+                "ce_sum": 309.4852294921875,
+                "correct_tokens": 1
+              },
+              "wrong": {
+                "ce_sum": 743.1194458007812,
+                "correct_tokens": 0
+              },
+              "changed_predictions": 46
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_6873",
+            "code_eos_without_docstring": {
+              "tokens": 19,
+              "correct": {
+                "ce_sum": 2.7848711013793945,
+                "correct_tokens": 18
+              },
+              "wrong": {
+                "ce_sum": 7.790061950683594,
+                "correct_tokens": 17
+              },
+              "changed_predictions": 1
+            },
+            "docstring": {
+              "tokens": 40,
+              "correct": {
+                "ce_sum": 100.22991943359375,
+                "correct_tokens": 16
+              },
+              "wrong": {
+                "ce_sum": 343.56207275390625,
+                "correct_tokens": 0
+              },
+              "changed_predictions": 37
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_6820",
+            "code_eos_without_docstring": {
+              "tokens": 40,
+              "correct": {
+                "ce_sum": 12.39243221282959,
+                "correct_tokens": 37
+              },
+              "wrong": {
+                "ce_sum": 30.76014518737793,
+                "correct_tokens": 33
+              },
+              "changed_predictions": 6
+            },
+            "docstring": {
+              "tokens": 51,
+              "correct": {
+                "ce_sum": 222.13157653808594,
+                "correct_tokens": 6
+              },
+              "wrong": {
+                "ce_sum": 423.02362060546875,
+                "correct_tokens": 2
+              },
+              "changed_predictions": 49
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_6726",
+            "code_eos_without_docstring": {
+              "tokens": 31,
+              "correct": {
+                "ce_sum": 26.917152404785156,
+                "correct_tokens": 28
+              },
+              "wrong": {
+                "ce_sum": 84.84107971191406,
+                "correct_tokens": 20
+              },
+              "changed_predictions": 8
+            },
+            "docstring": {
+              "tokens": 38,
+              "correct": {
+                "ce_sum": 164.0692901611328,
+                "correct_tokens": 2
+              },
+              "wrong": {
+                "ce_sum": 348.7130432128906,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 35
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_1406",
+            "code_eos_without_docstring": {
+              "tokens": 21,
+              "correct": {
+                "ce_sum": 1.5004081726074219,
+                "correct_tokens": 20
+              },
+              "wrong": {
+                "ce_sum": 10.525359153747559,
+                "correct_tokens": 17
+              },
+              "changed_predictions": 4
+            },
+            "docstring": {
+              "tokens": 51,
+              "correct": {
+                "ce_sum": 258.13739013671875,
+                "correct_tokens": 4
+              },
+              "wrong": {
+                "ce_sum": 421.03570556640625,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 46
+            }
+          }
+        ]
+      },
+      {
+        "case": "full_mask",
+        "mask_fraction": 1.0,
+        "aggregate": {
+          "code_eos_without_docstring": {
+            "tokens": 940,
+            "correct": {
+              "ce": 3.624843564946601,
+              "accuracy": 0.26595744680851063
+            },
+            "wrong": {
+              "ce": 6.245494956158577,
+              "accuracy": 0.2521276595744681
+            },
+            "wrong_minus_correct_ce": 2.620651391211976,
+            "correct_minus_wrong_accuracy": 0.013829787234042545,
+            "prediction_change_rate": 0.5851063829787234,
+            "questions_correct_ce_lower": 16
+          },
+          "docstring": {
+            "tokens": 770,
+            "correct": {
+              "ce": 8.436183493477957,
+              "accuracy": 0.07012987012987013
+            },
+            "wrong": {
+              "ce": 14.919831313096084,
+              "accuracy": 0.015584415584415584
+            },
+            "wrong_minus_correct_ce": 6.4836478196181275,
+            "correct_minus_wrong_accuracy": 0.05454545454545454,
+            "prediction_change_rate": 0.9363636363636364,
+            "questions_correct_ce_lower": 15
+          }
+        },
+        "records": [
+          {
+            "sample_id": "gsm8k_train_3517",
+            "code_eos_without_docstring": {
+              "tokens": 87,
+              "correct": {
+                "ce_sum": 291.4905700683594,
+                "correct_tokens": 24
+              },
+              "wrong": {
+                "ce_sum": 531.987548828125,
+                "correct_tokens": 18
+              },
+              "changed_predictions": 48
+            },
+            "docstring": {
+              "tokens": 81,
+              "correct": {
+                "ce_sum": 459.8223876953125,
+                "correct_tokens": 3
+              },
+              "wrong": {
+                "ce_sum": 1274.8671875,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 78
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_6725",
+            "code_eos_without_docstring": {
+              "tokens": 71,
+              "correct": {
+                "ce_sum": 267.9382019042969,
+                "correct_tokens": 18
+              },
+              "wrong": {
+                "ce_sum": 470.2689208984375,
+                "correct_tokens": 20
+              },
+              "changed_predictions": 40
+            },
+            "docstring": {
+              "tokens": 62,
+              "correct": {
+                "ce_sum": 732.6770629882812,
+                "correct_tokens": 0
+              },
+              "wrong": {
+                "ce_sum": 974.2835083007812,
+                "correct_tokens": 0
+              },
+              "changed_predictions": 57
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_2910",
+            "code_eos_without_docstring": {
+              "tokens": 64,
+              "correct": {
+                "ce_sum": 212.64599609375,
+                "correct_tokens": 19
+              },
+              "wrong": {
+                "ce_sum": 397.9508056640625,
+                "correct_tokens": 17
+              },
+              "changed_predictions": 34
+            },
+            "docstring": {
+              "tokens": 44,
+              "correct": {
+                "ce_sum": 462.9067687988281,
+                "correct_tokens": 1
+              },
+              "wrong": {
+                "ce_sum": 743.98779296875,
+                "correct_tokens": 0
+              },
+              "changed_predictions": 42
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_3521",
+            "code_eos_without_docstring": {
+              "tokens": 64,
+              "correct": {
+                "ce_sum": 243.4263153076172,
+                "correct_tokens": 16
+              },
+              "wrong": {
+                "ce_sum": 486.0555419921875,
+                "correct_tokens": 11
+              },
+              "changed_predictions": 47
+            },
+            "docstring": {
+              "tokens": 47,
+              "correct": {
+                "ce_sum": 372.26806640625,
+                "correct_tokens": 1
+              },
+              "wrong": {
+                "ce_sum": 766.7594604492188,
+                "correct_tokens": 0
+              },
+              "changed_predictions": 44
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_5649",
+            "code_eos_without_docstring": {
+              "tokens": 68,
+              "correct": {
+                "ce_sum": 242.40652465820312,
+                "correct_tokens": 17
+              },
+              "wrong": {
+                "ce_sum": 508.5072021484375,
+                "correct_tokens": 16
+              },
+              "changed_predictions": 49
+            },
+            "docstring": {
+              "tokens": 37,
+              "correct": {
+                "ce_sum": 225.74488830566406,
+                "correct_tokens": 9
+              },
+              "wrong": {
+                "ce_sum": 652.1909790039062,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 32
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_7103",
+            "code_eos_without_docstring": {
+              "tokens": 60,
+              "correct": {
+                "ce_sum": 223.45664978027344,
+                "correct_tokens": 16
+              },
+              "wrong": {
+                "ce_sum": 363.64935302734375,
+                "correct_tokens": 18
+              },
+              "changed_predictions": 19
+            },
+            "docstring": {
+              "tokens": 65,
+              "correct": {
+                "ce_sum": 512.603271484375,
+                "correct_tokens": 13
+              },
+              "wrong": {
+                "ce_sum": 1060.7288818359375,
+                "correct_tokens": 0
+              },
+              "changed_predictions": 63
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_2986",
+            "code_eos_without_docstring": {
+              "tokens": 67,
+              "correct": {
+                "ce_sum": 230.65635681152344,
+                "correct_tokens": 16
+              },
+              "wrong": {
+                "ce_sum": 421.1973571777344,
+                "correct_tokens": 11
+              },
+              "changed_predictions": 40
+            },
+            "docstring": {
+              "tokens": 48,
+              "correct": {
+                "ce_sum": 400.10577392578125,
+                "correct_tokens": 1
+              },
+              "wrong": {
+                "ce_sum": 915.53955078125,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 47
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_1515",
+            "code_eos_without_docstring": {
+              "tokens": 36,
+              "correct": {
+                "ce_sum": 153.74754333496094,
+                "correct_tokens": 11
+              },
+              "wrong": {
+                "ce_sum": 211.31459045410156,
+                "correct_tokens": 12
+              },
+              "changed_predictions": 18
+            },
+            "docstring": {
+              "tokens": 39,
+              "correct": {
+                "ce_sum": 237.566650390625,
+                "correct_tokens": 8
+              },
+              "wrong": {
+                "ce_sum": 422.1975402832031,
+                "correct_tokens": 0
+              },
+              "changed_predictions": 37
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_6722",
+            "code_eos_without_docstring": {
+              "tokens": 49,
+              "correct": {
+                "ce_sum": 196.42501831054688,
+                "correct_tokens": 12
+              },
+              "wrong": {
+                "ce_sum": 300.01507568359375,
+                "correct_tokens": 14
+              },
+              "changed_predictions": 31
+            },
+            "docstring": {
+              "tokens": 34,
+              "correct": {
+                "ce_sum": 458.03680419921875,
+                "correct_tokens": 0
+              },
+              "wrong": {
+                "ce_sum": 493.07196044921875,
+                "correct_tokens": 0
+              },
+              "changed_predictions": 32
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_7383",
+            "code_eos_without_docstring": {
+              "tokens": 47,
+              "correct": {
+                "ce_sum": 187.40025329589844,
+                "correct_tokens": 13
+              },
+              "wrong": {
+                "ce_sum": 232.89804077148438,
+                "correct_tokens": 15
+              },
+              "changed_predictions": 22
+            },
+            "docstring": {
+              "tokens": 36,
+              "correct": {
+                "ce_sum": 447.0408935546875,
+                "correct_tokens": 0
+              },
+              "wrong": {
+                "ce_sum": 367.7854919433594,
+                "correct_tokens": 1
+              },
+              "changed_predictions": 32
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_1621",
+            "code_eos_without_docstring": {
+              "tokens": 61,
+              "correct": {
+                "ce_sum": 190.4932861328125,
+                "correct_tokens": 18
+              },
+              "wrong": {
+                "ce_sum": 382.3242492675781,
+                "correct_tokens": 11
+              },
+              "changed_predictions": 38
+            },
+            "docstring": {
+              "tokens": 43,
+              "correct": {
+                "ce_sum": 281.9764709472656,
+                "correct_tokens": 0
+              },
+              "wrong": {
+                "ce_sum": 554.8819580078125,
+                "correct_tokens": 2
+              },
+              "changed_predictions": 41
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_0115",
+            "code_eos_without_docstring": {
+              "tokens": 46,
+              "correct": {
+                "ce_sum": 210.20614624023438,
+                "correct_tokens": 11
+              },
+              "wrong": {
+                "ce_sum": 280.26129150390625,
+                "correct_tokens": 11
+              },
+              "changed_predictions": 30
+            },
+            "docstring": {
+              "tokens": 54,
+              "correct": {
+                "ce_sum": 635.3171997070312,
+                "correct_tokens": 0
+              },
+              "wrong": {
+                "ce_sum": 963.3653564453125,
+                "correct_tokens": 0
+              },
+              "changed_predictions": 44
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_6873",
+            "code_eos_without_docstring": {
+              "tokens": 36,
+              "correct": {
+                "ce_sum": 122.35734558105469,
+                "correct_tokens": 12
+              },
+              "wrong": {
+                "ce_sum": 199.5171661376953,
+                "correct_tokens": 12
+              },
+              "changed_predictions": 19
+            },
+            "docstring": {
+              "tokens": 40,
+              "correct": {
+                "ce_sum": 118.67981719970703,
+                "correct_tokens": 17
+              },
+              "wrong": {
+                "ce_sum": 559.6756591796875,
+                "correct_tokens": 0
+              },
+              "changed_predictions": 37
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_6820",
+            "code_eos_without_docstring": {
+              "tokens": 73,
+              "correct": {
+                "ce_sum": 231.2578582763672,
+                "correct_tokens": 20
+              },
+              "wrong": {
+                "ce_sum": 381.2098388671875,
+                "correct_tokens": 26
+              },
+              "changed_predictions": 41
+            },
+            "docstring": {
+              "tokens": 51,
+              "correct": {
+                "ce_sum": 341.57012939453125,
+                "correct_tokens": 1
+              },
+              "wrong": {
+                "ce_sum": 642.3530883789062,
+                "correct_tokens": 2
+              },
+              "changed_predictions": 49
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_6726",
+            "code_eos_without_docstring": {
+              "tokens": 62,
+              "correct": {
+                "ce_sum": 209.99957275390625,
+                "correct_tokens": 14
+              },
+              "wrong": {
+                "ce_sum": 393.05389404296875,
+                "correct_tokens": 13
+              },
+              "changed_predictions": 50
+            },
+            "docstring": {
+              "tokens": 38,
+              "correct": {
+                "ce_sum": 286.030029296875,
+                "correct_tokens": 0
+              },
+              "wrong": {
+                "ce_sum": 507.1885070800781,
+                "correct_tokens": 2
+              },
+              "changed_predictions": 37
+            }
+          },
+          {
+            "sample_id": "gsm8k_train_1406",
+            "code_eos_without_docstring": {
+              "tokens": 49,
+              "correct": {
+                "ce_sum": 193.4453125,
+                "correct_tokens": 13
+              },
+              "wrong": {
+                "ce_sum": 310.55438232421875,
+                "correct_tokens": 12
+              },
+              "changed_predictions": 24
+            },
+            "docstring": {
+              "tokens": 51,
+              "correct": {
+                "ce_sum": 523.5150756835938,
+                "correct_tokens": 0
+              },
+              "wrong": {
+                "ce_sum": 589.3931884765625,
+                "correct_tokens": 2
+              },
+              "changed_predictions": 49
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

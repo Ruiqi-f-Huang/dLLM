@@ -1,0 +1,12 @@
+{
+  "numeric_wrong": 228,
+  "category_counts": {
+    "modeling": 169,
+    "calculation": 15,
+    "missing_steps": 40,
+    "ambiguous_reference": 4
+  },
+  "review": "Single assistant semantic review of every numeric-wrong program against question and reference; not independent human adjudication.",
+  "calculation_definition": "Local arithmetic-expression implementation errors, including missing parentheses, duplicate factors/terms and loop count; not evidence of Python arithmetic malfunction.",
+  "index_convention": "Zero-based index in the saved 632-record results.json"
+}

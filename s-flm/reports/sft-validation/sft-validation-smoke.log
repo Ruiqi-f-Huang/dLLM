@@ -1,0 +1,192 @@
+Running: ['/root/venvs/s-flm/bin/python', '-m', 'main', '--config-name', 'sft', 'mode=gsm8k_eval', 'eval.checkpoint_path=/root/autodl-tmp/s-flm/outputs/sft-smoke/checkpoints/last.ckpt', 'data.validation_file=/root/autodl-tmp/s-flm/outputs/sft-smoke/validation-first2.jsonl', 'sampler.steps=4', 'gsm8k.output_dir=/root/autodl-tmp/s-flm/outputs/sft-validation-smoke', 'hydra.run.dir=/root/autodl-tmp/s-flm/outputs/sft-validation-smoke']
+Seed set to 1
+CONFIG
+├── mode
+│   └── gsm8k_eval                                                              
+├── sudoku
+│   └── output_dir: /root/autodl-tmp/s-flm/outputs/sft-validation-smoke/sudoku_e
+│       batch_size: 64                                                          
+│                                                                               
+├── gsm8k
+│   └── input_file: null                                                        
+│       output_dir: /root/autodl-tmp/s-flm/outputs/sft-validation-smoke         
+│       timeout: 5.0                                                            
+│       bootstrap_size: 1                                                       
+│                                                                               
+├── seed
+│   └── 1                                                                       
+├── allow_tf32
+│   └── True                                                                    
+├── cudnn_benchmark
+│   └── True                                                                    
+├── compile_backbone
+│   └── False                                                                   
+├── backbone_compute_dtype
+│   └── float16                                                                 
+├── neg_infinity_mode
+│   └── large-finite                                                            
+├── loader
+│   └── global_batch_size: 8                                                    
+│       eval_global_batch_size: 2                                               
+│       batch_size: 1                                                           
+│       eval_batch_size: 2                                                      
+│       num_workers: 0                                                          
+│       pin_memory: true                                                        
+│                                                                               
+├── confidence_denoiser
+│   └── confidence_score: entropy                                               
+│       gamma: 0                                                                
+│                                                                               
+├── training
+│   └── ema: 0.9999                                                             
+│       antithetic_sampling: true                                               
+│       importance_sampling: false                                              
+│       sampling_eps: 0.001                                                     
+│       change_of_variables: false                                              
+│       loss_precision: bf16                                                    
+│       finetune_path: /root/s-flm/checkpoints/tinygsm/mdlm.ckpt                
+│       finetune_weights: ema                                                   
+│       sampling_eps_min: 0.001                                                 
+│       sampling_eps_max: 1.0                                                   
+│       resample: false                                                         
+│                                                                               
+├── eval
+│   └── checkpoint_path: /root/autodl-tmp/s-flm/outputs/sft-smoke/checkpoints/la
+│       strict_loading: true                                                    
+│       disable_ema: false                                                      
+│       compute_generative_perplexity: false                                    
+│       perplexity_batch_size: 8                                                
+│       compute_perplexity_on_sanity: false                                     
+│       gen_ppl_eval_model_name_or_path: gpt2-large                             
+│       generate_samples: false                                                 
+│       generated_samples_path: /root/autodl-tmp/s-flm/outputs/sft-validation-sm
+│       results_json_path: null                                                 
+│                                                                               
+├── optim
+│   └── weight_decay: 0                                                         
+│       lr: 1.0e-05                                                             
+│       beta1: 0.9                                                              
+│       beta2: 0.999                                                            
+│       eps: 1.0e-08                                                            
+│                                                                               
+├── trainer
+│   └── _target_: lightning.Trainer                                             
+│       accelerator: cuda                                                       
+│       num_nodes: 1                                                            
+│       devices: 1                                                              
+│       accumulate_grad_batches: 8                                              
+│       gradient_clip_val: 1.0                                                  
+│       precision: 16-mixed                                                     
+│       num_sanity_val_steps: 1                                                 
+│       max_steps: -1                                                           
+│       log_every_n_steps: 10                                                   
+│       limit_train_batches: 1.0                                                
+│       limit_val_batches: 1.0                                                  
+│       val_check_interval: 1.0                                                 
+│       check_val_every_n_epoch: 1                                              
+│       max_epochs: 1                                                           
+│                                                                               
+├── wandb
+│   └── None                                                                    
+├── checkpointing
+│   └── save_dir: /root/autodl-tmp/s-flm/outputs/sft-validation-smoke           
+│       resume_from_ckpt: false                                                 
+│       resume_ckpt_path: /root/autodl-tmp/s-flm/outputs/sft-validation-smoke/ch
+│                                                                               
+├── callbacks
+│   └── checkpoint_every_n_steps:                                               
+│         _target_: lightning.pytorch.callbacks.ModelCheckpoint                 
+│         save_top_k: -1                                                        
+│         save_last: true                                                       
+│         dirpath: /root/autodl-tmp/s-flm/outputs/sft-validation-smoke/checkpoin
+│         verbose: true                                                         
+│         auto_insert_metric_name: false                                        
+│         every_n_train_steps: 100                                              
+│       checkpoint_monitor:                                                     
+│         _target_: lightning.pytorch.callbacks.ModelCheckpoint                 
+│         monitor: val/nll                                                      
+│         mode: min                                                             
+│         save_top_k: 1                                                         
+│         save_last: false                                                      
+│         dirpath: /root/autodl-tmp/s-flm/outputs/sft-validation-smoke/checkpoin
+│         filename: best                                                        
+│         auto_insert_metric_name: false                                        
+│         verbose: true                                                         
+│                                                                               
+├── data
+│   └── train: gsm8k_pot                                                        
+│       valid: gsm8k_pot                                                        
+│       train_file: /root/s-flm/data/gsm8k_pot/sft_train.jsonl                  
+│       validation_file: /root/autodl-tmp/s-flm/outputs/sft-smoke/validation-fir
+│       cache_dir: /root/s-flm/data_cache/gsm8k_pot                             
+│       tokenizer_name_or_path: HuggingFaceTB/SmolLM-135M                       
+│       tokenizer_revision: 1d461723eec654e65efdc40cf49301c89c0c92f4            
+│       separator: \n                                                           
+│       wrap: false                                                             
+│       streaming: false                                                        
+│       insert_train_eos: true                                                  
+│       insert_valid_eos: true                                                  
+│       train_on_prompt: false                                                  
+│       train_on_pad: true                                                      
+│                                                                               
+├── model
+│   └── name: small                                                             
+│       type: dit                                                               
+│       hidden_size: 768                                                        
+│       cond_dim: 128                                                           
+│       length: 512                                                             
+│       n_blocks: 12                                                            
+│       n_heads: 12                                                             
+│       dropout: 0.1                                                            
+│                                                                               
+├── strategy
+│   └── _target_: lightning.pytorch.strategies.SingleDeviceStrategy             
+│       device: cuda:0                                                          
+│                                                                               
+├── noise
+│   └── type: log-linear                                                        
+│       eps: 0                                                                  
+│       alpha_min: null                                                         
+│       alpha_max: null                                                         
+│       adaptive: false                                                         
+│                                                                               
+├── lr_scheduler
+│   └── _target_: transformers.get_constant_schedule_with_warmup                
+│       num_warmup_steps: 20                                                    
+│                                                                               
+├── prior
+│   └── type: none                                                              
+│       latent_width: 0                                                         
+│       latent_height: 0                                                        
+│                                                                               
+├── algo
+│   └── name: mdlm                                                              
+│       diffusion_type: absorbing                                               
+│       backbone: dit                                                           
+│       parameterization: subs                                                  
+│       time_conditioning: false                                                
+│       T: 0                                                                    
+│       causal_attention: false                                                 
+│       loss_type: elbo                                                         
+│       post_process_mode: log_probs                                            
+│       adaLN: true                                                             
+│                                                                               
+└── sampler
+    └── predictor: ancestral                                                    
+        steps: 4                                                                
+        steps_policy: full                                                      
+        noise_removal: ancestral                                                
+        use_float64: true                                                       
+        p_nucleus: 1.0                                                          
+        temperature: 1.0                                                        
+        num_sample_batches: 2                                                   
+        num_sample_log: 2                                                       
+                                                                                
+[2026-10-21 10:29:23,173][__main__][INFO] - Starting GSM8K eval.
+Seed set to 1
+Rank 0 sampling:   0%|          | 0/1 [00:00<?, ?it/s]Rank 0 sampling: 100%|██████████| 1/1 [00:03<00:00,  3.22s/it]Rank 0 sampling: 100%|██████████| 1/1 [00:03<00:00,  3.22s/it]
+[2026-10-21 10:29:30,552][__main__][INFO] - Rank 0: average NFE per batch: 4.0
+[2026-10-21 10:29:30,553][__main__][INFO] - Rank 0: saved 2 records to /root/autodl-tmp/s-flm/outputs/sft-validation-smoke/rank_0000.json
+[2026-10-21 10:29:30,566][__main__][INFO] - Total records evaluated: 2
+[2026-10-21 10:29:30,568][__main__][INFO] - GSM8K accuracy: 0.00% (0/2)
+[2026-10-21 10:29:30,568][__main__][INFO] - Results saved to /root/autodl-tmp/s-flm/outputs/sft-validation-smoke/results.json

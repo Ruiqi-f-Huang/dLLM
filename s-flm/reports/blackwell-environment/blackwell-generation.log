@@ -1,0 +1,24 @@
+Loading base: /root/s-flm/checkpoints/tinygsm/mdlm.ckpt
+/root/venvs/s-flm/lib/python3.12/site-packages/lightning/pytorch/utilities/migration/utils.py:56: The loaded checkpoint was produced with Lightning v2.6.0, which is newer than your current Lightning version: v2.5.1
+Seed set to 1
+generate-32-seed1:   0%|          | 0/1 [00:00<?, ?it/s]generate-32-seed1: 100%|██████████| 1/1 [00:02<00:00,  2.82s/it]                                                                {
+  "checkpoint": "/root/s-flm/checkpoints/tinygsm/mdlm.ckpt",
+  "weights": "EMA",
+  "mask_sweep": [],
+  "generation": {
+    "32/seed1": {
+      "n": 2,
+      "eos_observed": 2,
+      "eos_rate": 1.0,
+      "full_parseable": 0,
+      "eos_parseable": 0,
+      "full_correct": 0,
+      "eos_correct": 0,
+      "eos_to_correct_changes": 0,
+      "eos_to_wrong_changes": 0,
+      "median_eos_position": 189
+    }
+  },
+  "elapsed_seconds": 2.8256550282239914
+}
+Saved combined diagnostic to /root/autodl-tmp/s-flm/outputs/blackwell-generation-smoke

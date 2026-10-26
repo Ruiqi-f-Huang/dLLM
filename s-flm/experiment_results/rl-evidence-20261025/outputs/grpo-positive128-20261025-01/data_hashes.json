@@ -1,0 +1,6 @@
+{
+  "/root/s-flm/data/gsm8k_pot_result/sft_train.jsonl": "00a477bf62f7b758985b6ba9ecf6332f23b5705be4aa184ae203c219ae438e71",
+  "/root/s-flm/data/gsm8k_pot_result/sft_validation.jsonl": "a852fc227d3b02b5716975a37e83096d15299833c00077043d4a7297e3b4bfdd",
+  "/root/autodl-tmp/s-flm/outputs/grpo-positive32-20261024-01/pairs.jsonl": "c76daa695ee37f0c93c543b0573b660ae3e51fd9729e0659eb2a70f7bf11219c",
+  "/root/autodl-tmp/s-flm/outputs/grpo-positive32-20261024-01/train/mask_plan.pt": "e2fae9a4ec44a7959fe9fbe8257cd1e59f8843ba33c5d8bc226d062178e1cd4d"
+}

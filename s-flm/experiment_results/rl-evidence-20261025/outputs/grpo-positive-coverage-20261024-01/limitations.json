@@ -1,0 +1,7 @@
+[
+  "No new training; one checkpoint per fit.",
+  "Same frozen128 validation, not an additional held-out dataset.",
+  "Fresh seed is independent of original seed; identical seed protocol across models.",
+  "Combined bootstrap clusters by question; do not treat repeats as independent questions.",
+  "Coverage and total successful-program training compute differ between fixed8 and fixed32."
+]

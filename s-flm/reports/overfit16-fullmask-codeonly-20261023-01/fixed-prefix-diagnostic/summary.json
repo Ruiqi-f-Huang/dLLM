@@ -1,0 +1,79 @@
+[
+  {
+    "step": 0,
+    "n": 16,
+    "precision": "FP32, TF32 off",
+    "seed": 1,
+    "nfe": 128,
+    "fixed_prefix": {
+      "correct": 1,
+      "parseable": 1,
+      "strict_parseable": 1,
+      "strict_execution_correct": 1,
+      "eos_correct": 1,
+      "eos_parseable": 1
+    },
+    "question_only": {
+      "correct": 3,
+      "parseable": 12,
+      "eos_correct": 3
+    },
+    "wrong_to_right": [
+      "gsm8k_train_6726"
+    ],
+    "right_to_wrong": [
+      "gsm8k_train_5649",
+      "gsm8k_train_1515",
+      "gsm8k_train_7383"
+    ]
+  },
+  {
+    "step": 1000,
+    "n": 16,
+    "precision": "FP32, TF32 off",
+    "seed": 1,
+    "nfe": 128,
+    "fixed_prefix": {
+      "correct": 1,
+      "parseable": 2,
+      "strict_parseable": 2,
+      "strict_execution_correct": 1,
+      "eos_correct": 1,
+      "eos_parseable": 2
+    },
+    "question_only": {
+      "correct": 3,
+      "parseable": 14,
+      "eos_correct": 3
+    },
+    "wrong_to_right": [],
+    "right_to_wrong": [
+      "gsm8k_train_1515",
+      "gsm8k_train_7383"
+    ]
+  },
+  {
+    "step": 3000,
+    "n": 16,
+    "precision": "FP32, TF32 off",
+    "seed": 1,
+    "nfe": 128,
+    "fixed_prefix": {
+      "correct": 1,
+      "parseable": 7,
+      "strict_parseable": 7,
+      "strict_execution_correct": 1,
+      "eos_correct": 1,
+      "eos_parseable": 7
+    },
+    "question_only": {
+      "correct": 0,
+      "parseable": 4,
+      "eos_correct": 1
+    },
+    "wrong_to_right": [
+      "gsm8k_train_2986"
+    ],
+    "right_to_wrong": []
+  }
+]

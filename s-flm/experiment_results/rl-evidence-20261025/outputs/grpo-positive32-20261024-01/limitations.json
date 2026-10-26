@@ -1,0 +1,6 @@
+[
+  "Single seed; positive rollout distillation, not online GRPO.",
+  "Four times the successful-program exposure of fixed8 at the same per-program update count.",
+  "Validation deduplicated against local training JSONL; this does not establish absence from model pretraining.",
+  "Validation only at preselected step200; T=.3 primary, T=.1 secondary."
+]

@@ -1,0 +1,11 @@
+{
+  "base": "checkpoints/tinygsm/mdlm.ckpt",
+  "questions": "/root/autodl-tmp/s-flm/outputs/grpo-fixed32-20261024-02/fixed/questions.jsonl",
+  "pairs": "/root/autodl-tmp/s-flm/outputs/grpo-fixed32-20261024-02/base/pairs.jsonl",
+  "output": "/root/autodl-tmp/s-flm/outputs/grpo-controlled-fp32-smoke-20261024",
+  "precision": "float32",
+  "lr": 3e-06,
+  "steps": 2,
+  "count": 2,
+  "microbatch": 2
+}

@@ -1,0 +1,41 @@
+{
+  "summary": {
+    "pool_questions": 512,
+    "candidates": 2048,
+    "candidate_temperature": 0.7,
+    "candidate_seeds": [
+      11,
+      22,
+      33,
+      44
+    ],
+    "lowtemp_correct": 145,
+    "raw_correct_candidates": 311,
+    "raw_correct_candidate_rate": 0.15185546875,
+    "raw_covered_questions": 201,
+    "accepted_candidates": 294,
+    "accepted_questions": 190,
+    "accepted_question_coverage": 0.37109375,
+    "selected_lowtemp_correct": 86,
+    "selected_lowtemp_wrong": 104,
+    "rejections": {
+      "wrong_execution": 1732,
+      "manual_exclusion": 8,
+      "docstring_not_exact_question": 14
+    },
+    "manual_exclusions": {
+      "gsm8k_train_1286": "Question says five fish colors but specifies counts for only three; total42 ignores two unspecified colors.",
+      "gsm8k_train_2433": "After cutting the100-foot rope into50/25/25, which remaining piece is cut into fifths is not uniquely specified; gold5 assumes a25-foot piece."
+    },
+    "training_eligible": true,
+    "selected_targets_exactly_original": 0,
+    "selected_targets_same_ast_excluding_docstrings": 0,
+    "original_mean_code_tokens": 117.88421052631578,
+    "generated_mean_code_tokens": 124.27368421052631
+  },
+  "files": {
+    "generation_pool.jsonl": "db10a4cf13c097ca8338ad73ccf1227a57c1e47428aadc6e55692c83db826a54",
+    "sft_train_original.jsonl": "e89ac7aad178170acf4a51131aca334f047d76c05fce3a1a6d52e6e0856d4a4b",
+    "sft_train_generated.jsonl": "b60bec5387744ee4ed2aece60fe0723f4e4dcf202c78a332f33cfbfb680de70a"
+  }
+}

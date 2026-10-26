@@ -1,0 +1,44 @@
+[
+  {
+    "before_update": 1,
+    "program_vs_reference": {
+      "policy_gradient_norm": 0.01687362790107727,
+      "reference_gradient_norm": 2.012386035588065e-09,
+      "reference_to_policy_norm": 1.1926220297056494e-07,
+      "cosine": 0.08982979076606759
+    },
+    "token_vs_reference": {
+      "policy_gradient_norm": 0.01687801256775856,
+      "reference_gradient_norm": 2.012386035588065e-09,
+      "reference_to_policy_norm": 1.1923122035305574e-07,
+      "cosine": 0.05416409629284752
+    },
+    "program_vs_token": {
+      "policy_gradient_norm": 0.01687362790107727,
+      "reference_gradient_norm": 0.01687801256775856,
+      "reference_to_policy_norm": 1.0002598532281852,
+      "cosine": 0.9815548700071893
+    }
+  },
+  {
+    "before_update": 2,
+    "program_vs_reference": {
+      "policy_gradient_norm": 0.01687183789908886,
+      "reference_gradient_norm": 7.681734928155493e-07,
+      "reference_to_policy_norm": 4.55299237350445e-05,
+      "cosine": -0.724280811438301
+    },
+    "token_vs_reference": {
+      "policy_gradient_norm": 0.016875512897968292,
+      "reference_gradient_norm": 7.681734928155493e-07,
+      "reference_to_policy_norm": 4.552000863381359e-05,
+      "cosine": -0.7902417120003236
+    },
+    "program_vs_token": {
+      "policy_gradient_norm": 0.01687183789908886,
+      "reference_gradient_norm": 0.016875512897968292,
+      "reference_to_policy_norm": 1.0002178185270278,
+      "cosine": 0.9815543873121463
+    }
+  }
+]

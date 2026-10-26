@@ -1,0 +1,95 @@
+[
+  {
+    "step": 0,
+    "weights": "Base EMA initialization",
+    "n": 16,
+    "seed": 1,
+    "nfe": 128,
+    "correct": 2,
+    "parseable": 13,
+    "code_eos_nll": 2.418682611476608,
+    "nll_seed": 17,
+    "wrong_to_right": [],
+    "right_to_wrong": []
+  },
+  {
+    "step": 200,
+    "weights": "raw",
+    "n": 16,
+    "seed": 1,
+    "nfe": 128,
+    "correct": 3,
+    "parseable": 13,
+    "code_eos_nll": 2.4137955158077484,
+    "nll_seed": 17,
+    "wrong_to_right": [
+      "gsm8k_train_7383"
+    ],
+    "right_to_wrong": []
+  },
+  {
+    "step": 500,
+    "weights": "raw",
+    "n": 16,
+    "seed": 1,
+    "nfe": 128,
+    "correct": 3,
+    "parseable": 11,
+    "code_eos_nll": 2.336641081871345,
+    "nll_seed": 17,
+    "wrong_to_right": [
+      "gsm8k_train_7383"
+    ],
+    "right_to_wrong": []
+  },
+  {
+    "step": 1000,
+    "weights": "raw",
+    "n": 16,
+    "seed": 1,
+    "nfe": 128,
+    "correct": 3,
+    "parseable": 13,
+    "code_eos_nll": 1.981131927311769,
+    "nll_seed": 17,
+    "wrong_to_right": [
+      "gsm8k_train_7383"
+    ],
+    "right_to_wrong": []
+  },
+  {
+    "step": 2000,
+    "weights": "raw",
+    "n": 16,
+    "seed": 1,
+    "nfe": 128,
+    "correct": 2,
+    "parseable": 11,
+    "code_eos_nll": 1.3493030570403874,
+    "nll_seed": 17,
+    "wrong_to_right": [
+      "gsm8k_train_7383"
+    ],
+    "right_to_wrong": [
+      "gsm8k_train_5649"
+    ]
+  },
+  {
+    "step": 3000,
+    "weights": "raw",
+    "n": 16,
+    "seed": 1,
+    "nfe": 128,
+    "correct": 3,
+    "parseable": 12,
+    "code_eos_nll": 0.9817855388797515,
+    "nll_seed": 17,
+    "wrong_to_right": [
+      "gsm8k_train_7383",
+      "gsm8k_train_6726"
+    ],
+    "right_to_wrong": [
+      "gsm8k_train_5649"
+    ]
+  }
+]

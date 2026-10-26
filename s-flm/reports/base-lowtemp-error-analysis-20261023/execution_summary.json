@@ -1,0 +1,49 @@
+{
+  "total": 632,
+  "status_counts": {
+    "no_numeric_answer": 75,
+    "correct": 179,
+    "runtime_error": 149,
+    "wrong_numeric_answer": 228,
+    "parse_error": 1
+  },
+  "raw_parseable": 552,
+  "recovered_parseable": 631,
+  "runtime_error_types": {
+    "NameError": 136,
+    "UnboundLocalError": 9,
+    "TypeError": 2,
+    "ZeroDivisionError": 1,
+    "_Timeout": 1
+  },
+  "strict_status_counts": {
+    "parse_error": 80,
+    "correct": 179,
+    "wrong_numeric_answer": 228,
+    "runtime_error": 143,
+    "no_numeric_answer": 2
+  },
+  "recovered_from_syntax_error": {
+    "no_numeric_answer": 73,
+    "runtime_error": 6,
+    "parse_error": 1
+  },
+  "strict_runtime_error_types": {
+    "UnboundLocalError": 8,
+    "NameError": 131,
+    "TypeError": 2,
+    "ZeroDivisionError": 1,
+    "_Timeout": 1
+  },
+  "input_sha256": "ac553eb39f1b9776424f0b57a917417a334c903ce803755ecc7339368fe3923d",
+  "protocol": {
+    "split": "validation",
+    "n": 632,
+    "model": "Base EMA",
+    "temperature": 0.1,
+    "nfe": 32,
+    "sampler": "ancestral",
+    "generation_seed": 1,
+    "execution_timeout_seconds": 5
+  }
+}

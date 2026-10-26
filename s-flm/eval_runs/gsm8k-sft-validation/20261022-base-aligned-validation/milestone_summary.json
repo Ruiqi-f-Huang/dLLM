@@ -1,0 +1,46 @@
+[
+  {
+    "step": 0,
+    "num_correct": 54,
+    "num_total": 632,
+    "accuracy": 0.08544303797468354,
+    "python_parseable": 614,
+    "python_parseable_rate": 0.9715189873417721,
+    "unpaired_triple_quotes": 8,
+    "unpaired_triple_quotes_rate": 0.012658227848101266,
+    "results_file": "/root/autodl-tmp/s-flm/outputs/eval/20261022-base-aligned-validation/step-0-ema-steps32-seed1/results.json"
+  },
+  {
+    "step": 100,
+    "num_correct": 51,
+    "num_total": 632,
+    "accuracy": 0.08069620253164557,
+    "python_parseable": 614,
+    "python_parseable_rate": 0.9715189873417721,
+    "unpaired_triple_quotes": 6,
+    "unpaired_triple_quotes_rate": 0.00949367088607595,
+    "results_file": "/root/autodl-tmp/s-flm/outputs/eval/20261022-base-aligned-validation/step-100-ema-steps32-seed1/results.json"
+  },
+  {
+    "step": 200,
+    "num_correct": 44,
+    "num_total": 632,
+    "accuracy": 0.06962025316455696,
+    "python_parseable": 605,
+    "python_parseable_rate": 0.9572784810126582,
+    "unpaired_triple_quotes": 7,
+    "unpaired_triple_quotes_rate": 0.011075949367088608,
+    "results_file": "/root/autodl-tmp/s-flm/outputs/eval/20261022-base-aligned-validation/step-200-ema-steps32-seed1/results.json"
+  },
+  {
+    "step": 711,
+    "num_correct": 14,
+    "num_total": 632,
+    "accuracy": 0.022151898734177215,
+    "python_parseable": 308,
+    "python_parseable_rate": 0.4873417721518987,
+    "unpaired_triple_quotes": 205,
+    "unpaired_triple_quotes_rate": 0.32436708860759494,
+    "results_file": "/root/autodl-tmp/s-flm/outputs/eval/20261022-base-aligned-validation/step-711-ema-steps32-seed1/results.json"
+  }
+]

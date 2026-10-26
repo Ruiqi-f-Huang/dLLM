@@ -1,0 +1,13 @@
+[
+  {
+    "step": 200,
+    "num_correct": 53,
+    "num_total": 632,
+    "accuracy": 0.08386075949367089,
+    "python_parseable": 612,
+    "python_parseable_rate": 0.9683544303797469,
+    "unpaired_triple_quotes": 8,
+    "unpaired_triple_quotes_rate": 0.012658227848101266,
+    "results_file": "/root/autodl-tmp/s-flm/outputs/semantic-weighted-20261023-01/retained-control/step-200-ema-steps32-seed1/results.json"
+  }
+]

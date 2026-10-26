@@ -1,0 +1,22 @@
+{
+  "fresh": {
+    "global_step": 2,
+    "ema_updates": 2,
+    "optimizer_steps": [
+      2
+    ],
+    "changed_parameters_vs_base_ema": 130,
+    "finite_weights_and_optimizer": true,
+    "checkpoint": "/root/autodl-tmp/s-flm/outputs/sft-smoke/checkpoints/last.ckpt"
+  },
+  "resumed": {
+    "global_step": 3,
+    "ema_updates": 3,
+    "optimizer_steps": [
+      3
+    ],
+    "changed_parameters_vs_base_ema": 130,
+    "finite_weights_and_optimizer": true,
+    "checkpoint": "/root/autodl-tmp/s-flm/outputs/sft-resume-smoke/checkpoints/last.ckpt"
+  }
+}

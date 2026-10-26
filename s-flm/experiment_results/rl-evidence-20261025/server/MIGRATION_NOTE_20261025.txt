@@ -1,0 +1,1 @@
+Partial migration from port18707: historical COMPLETE markers describe completed source runs; raw sample archives and most historical checkpoints remain at source. See grpo-migration-sha256.json for explicitly migrated primary artifacts.

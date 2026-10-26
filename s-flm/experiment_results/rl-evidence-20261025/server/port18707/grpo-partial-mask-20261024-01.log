@@ -1,0 +1,14 @@
+base
+Seed set to 42
+{"model": "base", "scored": 8, "total": 576}
+{"model": "base", "scored": 136, "total": 576}
+{"model": "base", "scored": 264, "total": 576}
+{"model": "base", "scored": 392, "total": 576}
+{"model": "base", "scored": 520, "total": 576}
+lr3e-05-step250
+Seed set to 42
+{"model": "lr3e-05-step250", "scored": 8, "total": 576}
+{"model": "lr3e-05-step250", "scored": 136, "total": 576}
+{"model": "lr3e-05-step250", "scored": 264, "total": 576}
+{"model": "lr3e-05-step250", "scored": 392, "total": 576}
+{"model": "lr3e-05-step250", "scored": 520, "total": 576}

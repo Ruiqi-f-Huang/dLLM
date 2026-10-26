@@ -1,0 +1,284 @@
+{
+  "protocol": {
+    "split": "validation",
+    "questions": 632,
+    "seeds": [
+      1,
+      2
+    ],
+    "temperature": 0.1,
+    "nfe": 32,
+    "sampler": "ancestral",
+    "weights": "EMA"
+  },
+  "data": {
+    "pool_questions": 512,
+    "candidates": 2048,
+    "candidate_temperature": 0.7,
+    "candidate_seeds": [
+      11,
+      22,
+      33,
+      44
+    ],
+    "lowtemp_correct": 145,
+    "raw_correct_candidates": 311,
+    "raw_correct_candidate_rate": 0.15185546875,
+    "raw_covered_questions": 201,
+    "accepted_candidates": 294,
+    "accepted_questions": 190,
+    "accepted_question_coverage": 0.37109375,
+    "selected_lowtemp_correct": 86,
+    "selected_lowtemp_wrong": 104,
+    "rejections": {
+      "wrong_execution": 1732,
+      "manual_exclusion": 8,
+      "docstring_not_exact_question": 14
+    },
+    "manual_exclusions": {
+      "gsm8k_train_1286": "Question says five fish colors but specifies counts for only three; total42 ignores two unspecified colors.",
+      "gsm8k_train_2433": "After cutting the100-foot rope into50/25/25, which remaining piece is cut into fifths is not uniquely specified; gold5 assumes a25-foot piece."
+    },
+    "training_eligible": true,
+    "selected_targets_exactly_original": 0,
+    "selected_targets_same_ast_excluding_docstrings": 0,
+    "original_mean_code_tokens": 117.88421052631578,
+    "generated_mean_code_tokens": 124.27368421052631
+  },
+  "training": {
+    "original": {
+      "initial_step": 0,
+      "final_step": 200,
+      "examples_seen_session": 1584,
+      "padded_tokens_seen_session": 811008,
+      "supervised_tokens_seen_session": 724802,
+      "code_eos_tokens_seen_session": 188113,
+      "nonfinite_gradient_updates_session": 0,
+      "amp_skipped_updates_session": 0,
+      "successful_updates_session": 200,
+      "train_batch_seconds": 13.255602937191725,
+      "wall_seconds_including_validation": 27.038062654435635
+    },
+    "generated": {
+      "initial_step": 0,
+      "final_step": 200,
+      "examples_seen_session": 1584,
+      "padded_tokens_seen_session": 811008,
+      "supervised_tokens_seen_session": 724802,
+      "code_eos_tokens_seen_session": 198503,
+      "nonfinite_gradient_updates_session": 0,
+      "amp_skipped_updates_session": 0,
+      "successful_updates_session": 200,
+      "train_batch_seconds": 13.113553881645203,
+      "wall_seconds_including_validation": 26.80745640769601
+    }
+  },
+  "means": {
+    "base": {
+      "correct_by_seed": [
+        179,
+        161
+      ],
+      "mean_correct": 170,
+      "mean_accuracy": 0.2689873417721519
+    },
+    "original": {
+      "correct_by_seed": [
+        180,
+        162
+      ],
+      "mean_correct": 171,
+      "mean_accuracy": 0.27056962025316456
+    },
+    "generated": {
+      "correct_by_seed": [
+        177,
+        161
+      ],
+      "mean_correct": 169,
+      "mean_accuracy": 0.2674050632911392
+    }
+  },
+  "rows": [
+    {
+      "model": "base",
+      "seed": 1,
+      "correct": 179,
+      "total": 632,
+      "accuracy": 0.28322784810126583,
+      "parseable": 631,
+      "unclosed_quotes": 0,
+      "vs_base": {
+        "reference_correct": 179,
+        "candidate_correct": 179,
+        "gained": 0,
+        "lost": 0,
+        "paired_exact_p": 1.0,
+        "changed_outputs": 0,
+        "changed_ast_excluding_docstrings": 0,
+        "both_parseable": 631
+      },
+      "vs_original": {
+        "reference_correct": 180,
+        "candidate_correct": 179,
+        "gained": 2,
+        "lost": 3,
+        "paired_exact_p": 1.0,
+        "changed_outputs": 48,
+        "changed_ast_excluding_docstrings": 41,
+        "both_parseable": 631
+      }
+    },
+    {
+      "model": "original",
+      "seed": 1,
+      "correct": 180,
+      "total": 632,
+      "accuracy": 0.2848101265822785,
+      "parseable": 632,
+      "unclosed_quotes": 0,
+      "vs_base": {
+        "reference_correct": 179,
+        "candidate_correct": 180,
+        "gained": 3,
+        "lost": 2,
+        "paired_exact_p": 1.0,
+        "changed_outputs": 48,
+        "changed_ast_excluding_docstrings": 41,
+        "both_parseable": 631
+      },
+      "vs_original": {
+        "reference_correct": 180,
+        "candidate_correct": 180,
+        "gained": 0,
+        "lost": 0,
+        "paired_exact_p": 1.0,
+        "changed_outputs": 0,
+        "changed_ast_excluding_docstrings": 0,
+        "both_parseable": 632
+      }
+    },
+    {
+      "model": "generated",
+      "seed": 1,
+      "correct": 177,
+      "total": 632,
+      "accuracy": 0.2800632911392405,
+      "parseable": 632,
+      "unclosed_quotes": 0,
+      "vs_base": {
+        "reference_correct": 179,
+        "candidate_correct": 177,
+        "gained": 2,
+        "lost": 4,
+        "paired_exact_p": 0.6875,
+        "changed_outputs": 56,
+        "changed_ast_excluding_docstrings": 47,
+        "both_parseable": 631
+      },
+      "vs_original": {
+        "reference_correct": 180,
+        "candidate_correct": 177,
+        "gained": 1,
+        "lost": 4,
+        "paired_exact_p": 0.375,
+        "changed_outputs": 57,
+        "changed_ast_excluding_docstrings": 45,
+        "both_parseable": 632
+      }
+    },
+    {
+      "model": "base",
+      "seed": 2,
+      "correct": 161,
+      "total": 632,
+      "accuracy": 0.254746835443038,
+      "parseable": 632,
+      "unclosed_quotes": 2,
+      "vs_base": {
+        "reference_correct": 161,
+        "candidate_correct": 161,
+        "gained": 0,
+        "lost": 0,
+        "paired_exact_p": 1.0,
+        "changed_outputs": 0,
+        "changed_ast_excluding_docstrings": 0,
+        "both_parseable": 632
+      },
+      "vs_original": {
+        "reference_correct": 162,
+        "candidate_correct": 161,
+        "gained": 1,
+        "lost": 2,
+        "paired_exact_p": 1.0,
+        "changed_outputs": 55,
+        "changed_ast_excluding_docstrings": 48,
+        "both_parseable": 632
+      }
+    },
+    {
+      "model": "original",
+      "seed": 2,
+      "correct": 162,
+      "total": 632,
+      "accuracy": 0.2563291139240506,
+      "parseable": 632,
+      "unclosed_quotes": 1,
+      "vs_base": {
+        "reference_correct": 161,
+        "candidate_correct": 162,
+        "gained": 2,
+        "lost": 1,
+        "paired_exact_p": 1.0,
+        "changed_outputs": 55,
+        "changed_ast_excluding_docstrings": 48,
+        "both_parseable": 632
+      },
+      "vs_original": {
+        "reference_correct": 162,
+        "candidate_correct": 162,
+        "gained": 0,
+        "lost": 0,
+        "paired_exact_p": 1.0,
+        "changed_outputs": 0,
+        "changed_ast_excluding_docstrings": 0,
+        "both_parseable": 632
+      }
+    },
+    {
+      "model": "generated",
+      "seed": 2,
+      "correct": 161,
+      "total": 632,
+      "accuracy": 0.254746835443038,
+      "parseable": 632,
+      "unclosed_quotes": 1,
+      "vs_base": {
+        "reference_correct": 161,
+        "candidate_correct": 161,
+        "gained": 4,
+        "lost": 4,
+        "paired_exact_p": 1.0,
+        "changed_outputs": 62,
+        "changed_ast_excluding_docstrings": 55,
+        "both_parseable": 632
+      },
+      "vs_original": {
+        "reference_correct": 162,
+        "candidate_correct": 161,
+        "gained": 3,
+        "lost": 4,
+        "paired_exact_p": 1.0,
+        "changed_outputs": 58,
+        "changed_ast_excluding_docstrings": 50,
+        "both_parseable": 632
+      }
+    }
+  ],
+  "base_seed1_reused_from": "lowtemp-sft-comparison-20261023-01/base",
+  "limitations": [
+    "Single training seed; two generation seeds.",
+    "Scores on repeated validation questions across seeds are not independent; significance reported separately per seed.",
+    "Self-training targets use model-generated programs filtered by correctness, exact question docstring and length; the contrast tests the resulting target-source package."
+  ]
+}

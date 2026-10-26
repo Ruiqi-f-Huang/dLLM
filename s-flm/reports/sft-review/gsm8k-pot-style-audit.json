@@ -1,0 +1,5752 @@
+{
+  "scope": {
+    "train": 5682,
+    "validation": 632,
+    "total": 6314
+  },
+  "definitions": {
+    "strict_result_return": "The final two non-docstring statements are exactly an assignment to result and return result.",
+    "unused_assignment": "A name assigned by Assign/AnnAssign/AugAssign is never loaded; loop iteration variables are excluded.",
+    "control_flow": "Contains if/for/while, a conditional expression, or a comprehension. This is a review flag, not an error.",
+    "tail_complexity": "Any of: total input+target tokens >384, function AST nodes >85, non-docstring body statements >11, or arithmetic/logic operators >9. These are approximately upper-tail cutoffs, not correctness failures."
+  },
+  "counts": {
+    "ast_nodes>85": 61,
+    "body_statements>11": 52,
+    "control_flow": 109,
+    "direct_return_expression": 1132,
+    "equivalent_final_named_return": 5047,
+    "operators>9": 57,
+    "strict_result_return": 4,
+    "tail_complexity": 135,
+    "total_tokens>384": 55,
+    "unused_assignment": 84
+  },
+  "counts_by_split": {
+    "ast_nodes>85": {
+      "train": 56,
+      "validation": 5
+    },
+    "body_statements>11": {
+      "train": 48,
+      "validation": 4
+    },
+    "control_flow": {
+      "train": 94,
+      "validation": 15
+    },
+    "direct_return_expression": {
+      "train": 1008,
+      "validation": 124
+    },
+    "equivalent_final_named_return": {
+      "train": 4550,
+      "validation": 497
+    },
+    "operators>9": {
+      "train": 53,
+      "validation": 4
+    },
+    "strict_result_return": {
+      "train": 4
+    },
+    "tail_complexity": {
+      "train": 123,
+      "validation": 12
+    },
+    "total_tokens>384": {
+      "train": 48,
+      "validation": 7
+    },
+    "unused_assignment": {
+      "train": 75,
+      "validation": 9
+    }
+  },
+  "derived": {
+    "strict_format_noncompliant": 6310,
+    "unused_or_tail_review": 213,
+    "control_or_tail_review": 235,
+    "unused_or_control_or_tail_review": 312
+  },
+  "distributions": {
+    "assignments": {
+      "min": 0,
+      "median": 4.0,
+      "p90": 7,
+      "p95": 8,
+      "p99": 10,
+      "max": 16,
+      "mean": 4.493823249920811
+    },
+    "ast_nodes": {
+      "min": 11,
+      "median": 41.0,
+      "p90": 62,
+      "p95": 69,
+      "p99": 85,
+      "max": 149,
+      "mean": 42.97893569844789
+    },
+    "body_statements": {
+      "min": 1,
+      "median": 5.0,
+      "p90": 8,
+      "p95": 9,
+      "p99": 11,
+      "max": 17,
+      "mean": 5.489230281913208
+    },
+    "code_chars": {
+      "min": 164,
+      "median": 441.0,
+      "p90": 663,
+      "p95": 737,
+      "p99": 892,
+      "max": 1249,
+      "mean": 465.4499524865378
+    },
+    "nonblank_lines": {
+      "min": 3,
+      "median": 7.0,
+      "p90": 10,
+      "p95": 11,
+      "p99": 13,
+      "max": 19,
+      "mean": 7.512353500158378
+    },
+    "operators": {
+      "min": 0,
+      "median": 3.0,
+      "p90": 6,
+      "p95": 7,
+      "p99": 9,
+      "max": 21,
+      "mean": 3.710643015521064
+    },
+    "total_tokens": {
+      "min": 71,
+      "median": 189.0,
+      "p90": 280,
+      "p95": 312,
+      "p99": 379,
+      "max": 504,
+      "mean": 199.89277795375355
+    }
+  },
+  "threshold_sensitivity": {
+    "total_tokens": {
+      ">256": 1005,
+      ">320": 264,
+      ">384": 55,
+      ">448": 12
+    },
+    "ast_nodes": {
+      ">75": 170,
+      ">85": 61,
+      ">100": 15
+    },
+    "body_statements": {
+      ">10": 100,
+      ">11": 52,
+      ">12": 21
+    },
+    "operators": {
+      ">8": 120,
+      ">9": 57,
+      ">12": 9
+    }
+  },
+  "review_records": [
+    {
+      "sample_id": "gsm8k_train_0043",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 175,
+        "code_chars": 569,
+        "nonblank_lines": 8,
+        "body_statements": 4,
+        "ast_nodes": 36,
+        "assignments": 4,
+        "operators": 0
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0067",
+      "split": "train",
+      "flags": [
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 295,
+        "code_chars": 606,
+        "nonblank_lines": 8,
+        "body_statements": 6,
+        "ast_nodes": 63,
+        "assignments": 5,
+        "operators": 10
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0073",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 208,
+        "code_chars": 481,
+        "nonblank_lines": 7,
+        "body_statements": 4,
+        "ast_nodes": 41,
+        "assignments": 3,
+        "operators": 5
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0082",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 177,
+        "code_chars": 428,
+        "nonblank_lines": 8,
+        "body_statements": 6,
+        "ast_nodes": 49,
+        "assignments": 5,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0117",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "clownfish"
+      ],
+      "metrics": {
+        "total_tokens": 284,
+        "code_chars": 678,
+        "nonblank_lines": 8,
+        "body_statements": 6,
+        "ast_nodes": 48,
+        "assignments": 5,
+        "operators": 3
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0122",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "total_capacity"
+      ],
+      "metrics": {
+        "total_tokens": 210,
+        "code_chars": 518,
+        "nonblank_lines": 6,
+        "body_statements": 4,
+        "ast_nodes": 34,
+        "assignments": 3,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0137",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 239,
+        "code_chars": 623,
+        "nonblank_lines": 12,
+        "body_statements": 9,
+        "ast_nodes": 70,
+        "assignments": 8,
+        "operators": 6
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0138",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "milk_price"
+      ],
+      "metrics": {
+        "total_tokens": 173,
+        "code_chars": 400,
+        "nonblank_lines": 7,
+        "body_statements": 5,
+        "ast_nodes": 36,
+        "assignments": 4,
+        "operators": 3
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0182",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 332,
+        "code_chars": 742,
+        "nonblank_lines": 12,
+        "body_statements": 10,
+        "ast_nodes": 88,
+        "assignments": 9,
+        "operators": 10
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0187",
+      "split": "train",
+      "flags": [
+        "operators>9",
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "total_crayons"
+      ],
+      "metrics": {
+        "total_tokens": 274,
+        "code_chars": 553,
+        "nonblank_lines": 8,
+        "body_statements": 6,
+        "ast_nodes": 65,
+        "assignments": 5,
+        "operators": 11
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0210",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 116,
+        "code_chars": 254,
+        "nonblank_lines": 6,
+        "body_statements": 3,
+        "ast_nodes": 28,
+        "assignments": 2,
+        "operators": 0
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0212",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "days_off_per_year"
+      ],
+      "metrics": {
+        "total_tokens": 340,
+        "code_chars": 749,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 60,
+        "assignments": 7,
+        "operators": 6
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0224",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 144,
+        "code_chars": 326,
+        "nonblank_lines": 6,
+        "body_statements": 3,
+        "ast_nodes": 33,
+        "assignments": 2,
+        "operators": 2
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0237",
+      "split": "train",
+      "flags": [
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 395,
+        "code_chars": 948,
+        "nonblank_lines": 12,
+        "body_statements": 10,
+        "ast_nodes": 74,
+        "assignments": 9,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0239",
+      "split": "train",
+      "flags": [
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 247,
+        "code_chars": 514,
+        "nonblank_lines": 7,
+        "body_statements": 5,
+        "ast_nodes": 58,
+        "assignments": 4,
+        "operators": 10
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0304",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11",
+        "operators>9",
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 475,
+        "code_chars": 1112,
+        "nonblank_lines": 19,
+        "body_statements": 17,
+        "ast_nodes": 149,
+        "assignments": 16,
+        "operators": 18
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0331",
+      "split": "train",
+      "flags": [
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 402,
+        "code_chars": 955,
+        "nonblank_lines": 11,
+        "body_statements": 9,
+        "ast_nodes": 73,
+        "assignments": 8,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0352",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 181,
+        "code_chars": 417,
+        "nonblank_lines": 7,
+        "body_statements": 4,
+        "ast_nodes": 38,
+        "assignments": 3,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0371",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 241,
+        "code_chars": 589,
+        "nonblank_lines": 10,
+        "body_statements": 7,
+        "ast_nodes": 54,
+        "assignments": 6,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0378",
+      "split": "train",
+      "flags": [
+        "body_statements>11"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 376,
+        "code_chars": 902,
+        "nonblank_lines": 14,
+        "body_statements": 12,
+        "ast_nodes": 81,
+        "assignments": 11,
+        "operators": 6
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0502",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "sticker_cost"
+      ],
+      "metrics": {
+        "total_tokens": 240,
+        "code_chars": 582,
+        "nonblank_lines": 7,
+        "body_statements": 5,
+        "ast_nodes": 37,
+        "assignments": 4,
+        "operators": 3
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0523",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 161,
+        "code_chars": 372,
+        "nonblank_lines": 7,
+        "body_statements": 4,
+        "ast_nodes": 38,
+        "assignments": 3,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0537",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "monthly_earning_inexperienced"
+      ],
+      "metrics": {
+        "total_tokens": 305,
+        "code_chars": 873,
+        "nonblank_lines": 11,
+        "body_statements": 9,
+        "ast_nodes": 75,
+        "assignments": 8,
+        "operators": 8
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0549",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "initial_legs"
+      ],
+      "metrics": {
+        "total_tokens": 249,
+        "code_chars": 652,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 70,
+        "assignments": 7,
+        "operators": 8
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0563",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 184,
+        "code_chars": 447,
+        "nonblank_lines": 8,
+        "body_statements": 5,
+        "ast_nodes": 44,
+        "assignments": 4,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0578",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 326,
+        "code_chars": 778,
+        "nonblank_lines": 14,
+        "body_statements": 12,
+        "ast_nodes": 86,
+        "assignments": 11,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0636",
+      "split": "train",
+      "flags": [
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 427,
+        "code_chars": 958,
+        "nonblank_lines": 7,
+        "body_statements": 5,
+        "ast_nodes": 34,
+        "assignments": 4,
+        "operators": 2
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0638",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11",
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 369,
+        "code_chars": 887,
+        "nonblank_lines": 15,
+        "body_statements": 13,
+        "ast_nodes": 105,
+        "assignments": 12,
+        "operators": 11
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0669",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 247,
+        "code_chars": 576,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 87,
+        "assignments": 7,
+        "operators": 13
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0746",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "total_ratio"
+      ],
+      "metrics": {
+        "total_tokens": 182,
+        "code_chars": 440,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 56,
+        "assignments": 7,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0760",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 367,
+        "code_chars": 968,
+        "nonblank_lines": 16,
+        "body_statements": 14,
+        "ast_nodes": 95,
+        "assignments": 13,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0771",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 191,
+        "code_chars": 475,
+        "nonblank_lines": 7,
+        "body_statements": 4,
+        "ast_nodes": 45,
+        "assignments": 3,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0774",
+      "split": "train",
+      "flags": [
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 366,
+        "code_chars": 868,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 85,
+        "assignments": 7,
+        "operators": 11
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0799",
+      "split": "train",
+      "flags": [
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 240,
+        "code_chars": 452,
+        "nonblank_lines": 8,
+        "body_statements": 6,
+        "ast_nodes": 66,
+        "assignments": 5,
+        "operators": 11
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0803",
+      "split": "train",
+      "flags": [
+        "operators>9",
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 402,
+        "code_chars": 970,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 76,
+        "assignments": 7,
+        "operators": 11
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0817",
+      "split": "train",
+      "flags": [
+        "body_statements>11",
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 402,
+        "code_chars": 906,
+        "nonblank_lines": 14,
+        "body_statements": 12,
+        "ast_nodes": 81,
+        "assignments": 11,
+        "operators": 6
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0832",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 207,
+        "code_chars": 486,
+        "nonblank_lines": 10,
+        "body_statements": 7,
+        "ast_nodes": 60,
+        "assignments": 6,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0852",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 107,
+        "code_chars": 239,
+        "nonblank_lines": 6,
+        "body_statements": 3,
+        "ast_nodes": 25,
+        "assignments": 2,
+        "operators": 0
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0864",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "weekend_days",
+        "weekend_hours"
+      ],
+      "metrics": {
+        "total_tokens": 213,
+        "code_chars": 519,
+        "nonblank_lines": 11,
+        "body_statements": 9,
+        "ast_nodes": 55,
+        "assignments": 8,
+        "operators": 3
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0921",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "plastic_bottles",
+        "soda_cans"
+      ],
+      "metrics": {
+        "total_tokens": 295,
+        "code_chars": 712,
+        "nonblank_lines": 11,
+        "body_statements": 9,
+        "ast_nodes": 68,
+        "assignments": 8,
+        "operators": 6
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1071",
+      "split": "train",
+      "flags": [
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 397,
+        "code_chars": 806,
+        "nonblank_lines": 8,
+        "body_statements": 6,
+        "ast_nodes": 54,
+        "assignments": 5,
+        "operators": 6
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1119",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 239,
+        "code_chars": 568,
+        "nonblank_lines": 8,
+        "body_statements": 4,
+        "ast_nodes": 35,
+        "assignments": 4,
+        "operators": 0
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1133",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 300,
+        "code_chars": 712,
+        "nonblank_lines": 14,
+        "body_statements": 11,
+        "ast_nodes": 83,
+        "assignments": 10,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1149",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "initial_age"
+      ],
+      "metrics": {
+        "total_tokens": 241,
+        "code_chars": 575,
+        "nonblank_lines": 8,
+        "body_statements": 6,
+        "ast_nodes": 41,
+        "assignments": 5,
+        "operators": 3
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1152",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "initial_students"
+      ],
+      "metrics": {
+        "total_tokens": 143,
+        "code_chars": 410,
+        "nonblank_lines": 8,
+        "body_statements": 6,
+        "ast_nodes": 43,
+        "assignments": 5,
+        "operators": 3
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1205",
+      "split": "train",
+      "flags": [
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 283,
+        "code_chars": 744,
+        "nonblank_lines": 11,
+        "body_statements": 9,
+        "ast_nodes": 82,
+        "assignments": 8,
+        "operators": 10
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1227",
+      "split": "train",
+      "flags": [
+        "control_flow",
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "loose_crayons"
+      ],
+      "metrics": {
+        "total_tokens": 255,
+        "code_chars": 591,
+        "nonblank_lines": 12,
+        "body_statements": 9,
+        "ast_nodes": 68,
+        "assignments": 8,
+        "operators": 6
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1242",
+      "split": "train",
+      "flags": [
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 385,
+        "code_chars": 967,
+        "nonblank_lines": 11,
+        "body_statements": 9,
+        "ast_nodes": 75,
+        "assignments": 8,
+        "operators": 8
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1279",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "control_flow",
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 467,
+        "code_chars": 992,
+        "nonblank_lines": 17,
+        "body_statements": 10,
+        "ast_nodes": 99,
+        "assignments": 11,
+        "operators": 9
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1375",
+      "split": "train",
+      "flags": [
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 400,
+        "code_chars": 882,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 65,
+        "assignments": 7,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1380",
+      "split": "train",
+      "flags": [
+        "operators>9",
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 394,
+        "code_chars": 800,
+        "nonblank_lines": 5,
+        "body_statements": 3,
+        "ast_nodes": 58,
+        "assignments": 2,
+        "operators": 12
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1392",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 207,
+        "code_chars": 485,
+        "nonblank_lines": 9,
+        "body_statements": 6,
+        "ast_nodes": 54,
+        "assignments": 5,
+        "operators": 6
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1511",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 172,
+        "code_chars": 461,
+        "nonblank_lines": 7,
+        "body_statements": 5,
+        "ast_nodes": 46,
+        "assignments": 4,
+        "operators": 2
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1518",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "non_vegan"
+      ],
+      "metrics": {
+        "total_tokens": 240,
+        "code_chars": 565,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 63,
+        "assignments": 7,
+        "operators": 5
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1538",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 243,
+        "code_chars": 637,
+        "nonblank_lines": 8,
+        "body_statements": 4,
+        "ast_nodes": 36,
+        "assignments": 4,
+        "operators": 0
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1546",
+      "split": "train",
+      "flags": [
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 391,
+        "code_chars": 918,
+        "nonblank_lines": 6,
+        "body_statements": 4,
+        "ast_nodes": 48,
+        "assignments": 3,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1549",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 307,
+        "code_chars": 715,
+        "nonblank_lines": 12,
+        "body_statements": 10,
+        "ast_nodes": 86,
+        "assignments": 9,
+        "operators": 11
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1554",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 304,
+        "code_chars": 712,
+        "nonblank_lines": 12,
+        "body_statements": 9,
+        "ast_nodes": 75,
+        "assignments": 8,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1557",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "weeks_per_month"
+      ],
+      "metrics": {
+        "total_tokens": 238,
+        "code_chars": 556,
+        "nonblank_lines": 9,
+        "body_statements": 7,
+        "ast_nodes": 46,
+        "assignments": 6,
+        "operators": 3
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1567",
+      "split": "train",
+      "flags": [
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 390,
+        "code_chars": 855,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 67,
+        "assignments": 7,
+        "operators": 8
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1644",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 197,
+        "code_chars": 454,
+        "nonblank_lines": 8,
+        "body_statements": 5,
+        "ast_nodes": 49,
+        "assignments": 4,
+        "operators": 6
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1647",
+      "split": "train",
+      "flags": [
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 501,
+        "code_chars": 1249,
+        "nonblank_lines": 12,
+        "body_statements": 10,
+        "ast_nodes": 76,
+        "assignments": 9,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1708",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11",
+        "operators>9",
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "free_throws"
+      ],
+      "metrics": {
+        "total_tokens": 343,
+        "code_chars": 899,
+        "nonblank_lines": 15,
+        "body_statements": 13,
+        "ast_nodes": 108,
+        "assignments": 12,
+        "operators": 12
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1732",
+      "split": "train",
+      "flags": [
+        "body_statements>11"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 288,
+        "code_chars": 691,
+        "nonblank_lines": 14,
+        "body_statements": 12,
+        "ast_nodes": 72,
+        "assignments": 11,
+        "operators": 3
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1744",
+      "split": "train",
+      "flags": [
+        "body_statements>11"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 304,
+        "code_chars": 773,
+        "nonblank_lines": 14,
+        "body_statements": 12,
+        "ast_nodes": 78,
+        "assignments": 11,
+        "operators": 5
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1752",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "total_marks"
+      ],
+      "metrics": {
+        "total_tokens": 246,
+        "code_chars": 632,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 67,
+        "assignments": 7,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1764",
+      "split": "train",
+      "flags": [
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 413,
+        "code_chars": 910,
+        "nonblank_lines": 7,
+        "body_statements": 5,
+        "ast_nodes": 63,
+        "assignments": 4,
+        "operators": 8
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1777",
+      "split": "train",
+      "flags": [
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 404,
+        "code_chars": 1029,
+        "nonblank_lines": 12,
+        "body_statements": 10,
+        "ast_nodes": 82,
+        "assignments": 9,
+        "operators": 8
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1789",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "padma_cards",
+        "robert_cards"
+      ],
+      "metrics": {
+        "total_tokens": 236,
+        "code_chars": 493,
+        "nonblank_lines": 8,
+        "body_statements": 6,
+        "ast_nodes": 40,
+        "assignments": 5,
+        "operators": 3
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1795",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "anie_red"
+      ],
+      "metrics": {
+        "total_tokens": 307,
+        "code_chars": 743,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 65,
+        "assignments": 7,
+        "operators": 6
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1802",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 225,
+        "code_chars": 534,
+        "nonblank_lines": 13,
+        "body_statements": 8,
+        "ast_nodes": 75,
+        "assignments": 7,
+        "operators": 2
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1815",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 189,
+        "code_chars": 404,
+        "nonblank_lines": 7,
+        "body_statements": 4,
+        "ast_nodes": 37,
+        "assignments": 3,
+        "operators": 2
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1819",
+      "split": "train",
+      "flags": [
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 372,
+        "code_chars": 722,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 77,
+        "assignments": 7,
+        "operators": 11
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1836",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "billy_candies"
+      ],
+      "metrics": {
+        "total_tokens": 283,
+        "code_chars": 589,
+        "nonblank_lines": 11,
+        "body_statements": 9,
+        "ast_nodes": 56,
+        "assignments": 8,
+        "operators": 3
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1878",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "emma_age"
+      ],
+      "metrics": {
+        "total_tokens": 137,
+        "code_chars": 278,
+        "nonblank_lines": 6,
+        "body_statements": 4,
+        "ast_nodes": 25,
+        "assignments": 3,
+        "operators": 1
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1894",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11",
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 480,
+        "code_chars": 1086,
+        "nonblank_lines": 14,
+        "body_statements": 12,
+        "ast_nodes": 95,
+        "assignments": 11,
+        "operators": 9
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1937",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 298,
+        "code_chars": 670,
+        "nonblank_lines": 9,
+        "body_statements": 5,
+        "ast_nodes": 56,
+        "assignments": 5,
+        "operators": 0
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1951",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 250,
+        "code_chars": 541,
+        "nonblank_lines": 10,
+        "body_statements": 7,
+        "ast_nodes": 57,
+        "assignments": 6,
+        "operators": 5
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1952",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 223,
+        "code_chars": 534,
+        "nonblank_lines": 8,
+        "body_statements": 5,
+        "ast_nodes": 47,
+        "assignments": 4,
+        "operators": 3
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1971",
+      "split": "train",
+      "flags": [
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 342,
+        "code_chars": 791,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 74,
+        "assignments": 7,
+        "operators": 10
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1983",
+      "split": "train",
+      "flags": [
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 270,
+        "code_chars": 637,
+        "nonblank_lines": 11,
+        "body_statements": 9,
+        "ast_nodes": 83,
+        "assignments": 8,
+        "operators": 10
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2003",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 250,
+        "code_chars": 605,
+        "nonblank_lines": 9,
+        "body_statements": 6,
+        "ast_nodes": 49,
+        "assignments": 5,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2067",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11",
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 448,
+        "code_chars": 1011,
+        "nonblank_lines": 15,
+        "body_statements": 13,
+        "ast_nodes": 94,
+        "assignments": 12,
+        "operators": 8
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2084",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 306,
+        "code_chars": 752,
+        "nonblank_lines": 14,
+        "body_statements": 12,
+        "ast_nodes": 90,
+        "assignments": 11,
+        "operators": 9
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2086",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11",
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 406,
+        "code_chars": 974,
+        "nonblank_lines": 16,
+        "body_statements": 14,
+        "ast_nodes": 97,
+        "assignments": 13,
+        "operators": 8
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2101",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 190,
+        "code_chars": 472,
+        "nonblank_lines": 10,
+        "body_statements": 7,
+        "ast_nodes": 54,
+        "assignments": 6,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2161",
+      "split": "train",
+      "flags": [
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 440,
+        "code_chars": 972,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 67,
+        "assignments": 7,
+        "operators": 8
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2177",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11",
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 442,
+        "code_chars": 1013,
+        "nonblank_lines": 14,
+        "body_statements": 12,
+        "ast_nodes": 86,
+        "assignments": 11,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2179",
+      "split": "train",
+      "flags": [
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 337,
+        "code_chars": 779,
+        "nonblank_lines": 11,
+        "body_statements": 9,
+        "ast_nodes": 79,
+        "assignments": 8,
+        "operators": 10
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2192",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 169,
+        "code_chars": 452,
+        "nonblank_lines": 8,
+        "body_statements": 4,
+        "ast_nodes": 35,
+        "assignments": 4,
+        "operators": 0
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2210",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 165,
+        "code_chars": 419,
+        "nonblank_lines": 8,
+        "body_statements": 5,
+        "ast_nodes": 44,
+        "assignments": 4,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2216",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 237,
+        "code_chars": 498,
+        "nonblank_lines": 11,
+        "body_statements": 8,
+        "ast_nodes": 62,
+        "assignments": 7,
+        "operators": 5
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2226",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 161,
+        "code_chars": 375,
+        "nonblank_lines": 6,
+        "body_statements": 3,
+        "ast_nodes": 25,
+        "assignments": 2,
+        "operators": 0
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2288",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "jamy_marbles"
+      ],
+      "metrics": {
+        "total_tokens": 245,
+        "code_chars": 575,
+        "nonblank_lines": 11,
+        "body_statements": 9,
+        "ast_nodes": 94,
+        "assignments": 8,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2298",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "total_pots"
+      ],
+      "metrics": {
+        "total_tokens": 159,
+        "code_chars": 367,
+        "nonblank_lines": 8,
+        "body_statements": 6,
+        "ast_nodes": 38,
+        "assignments": 5,
+        "operators": 2
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2345",
+      "split": "train",
+      "flags": [
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 451,
+        "code_chars": 1061,
+        "nonblank_lines": 6,
+        "body_statements": 4,
+        "ast_nodes": 50,
+        "assignments": 3,
+        "operators": 9
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2362",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "videos_per_day"
+      ],
+      "metrics": {
+        "total_tokens": 219,
+        "code_chars": 543,
+        "nonblank_lines": 9,
+        "body_statements": 7,
+        "ast_nodes": 50,
+        "assignments": 6,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2508",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 180,
+        "code_chars": 436,
+        "nonblank_lines": 9,
+        "body_statements": 4,
+        "ast_nodes": 47,
+        "assignments": 5,
+        "operators": 1
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2520",
+      "split": "train",
+      "flags": [
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 364,
+        "code_chars": 895,
+        "nonblank_lines": 11,
+        "body_statements": 9,
+        "ast_nodes": 80,
+        "assignments": 8,
+        "operators": 10
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2533",
+      "split": "train",
+      "flags": [
+        "control_flow",
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 286,
+        "code_chars": 650,
+        "nonblank_lines": 9,
+        "body_statements": 6,
+        "ast_nodes": 69,
+        "assignments": 5,
+        "operators": 11
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2538",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "initial_nickels"
+      ],
+      "metrics": {
+        "total_tokens": 198,
+        "code_chars": 445,
+        "nonblank_lines": 9,
+        "body_statements": 7,
+        "ast_nodes": 53,
+        "assignments": 6,
+        "operators": 5
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2541",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "speed_peregrine_falcon"
+      ],
+      "metrics": {
+        "total_tokens": 256,
+        "code_chars": 544,
+        "nonblank_lines": 7,
+        "body_statements": 5,
+        "ast_nodes": 33,
+        "assignments": 4,
+        "operators": 2
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2627",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 163,
+        "code_chars": 386,
+        "nonblank_lines": 8,
+        "body_statements": 4,
+        "ast_nodes": 35,
+        "assignments": 4,
+        "operators": 0
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2645",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 331,
+        "code_chars": 734,
+        "nonblank_lines": 14,
+        "body_statements": 12,
+        "ast_nodes": 88,
+        "assignments": 11,
+        "operators": 8
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2684",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 298,
+        "code_chars": 688,
+        "nonblank_lines": 12,
+        "body_statements": 10,
+        "ast_nodes": 94,
+        "assignments": 9,
+        "operators": 13
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2718",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 369,
+        "code_chars": 835,
+        "nonblank_lines": 14,
+        "body_statements": 12,
+        "ast_nodes": 90,
+        "assignments": 11,
+        "operators": 9
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2733",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 214,
+        "code_chars": 487,
+        "nonblank_lines": 10,
+        "body_statements": 7,
+        "ast_nodes": 54,
+        "assignments": 6,
+        "operators": 3
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2796",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "julian_boys"
+      ],
+      "metrics": {
+        "total_tokens": 209,
+        "code_chars": 427,
+        "nonblank_lines": 8,
+        "body_statements": 6,
+        "ast_nodes": 50,
+        "assignments": 5,
+        "operators": 6
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2858",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "children"
+      ],
+      "metrics": {
+        "total_tokens": 223,
+        "code_chars": 546,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 66,
+        "assignments": 7,
+        "operators": 6
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2912",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 188,
+        "code_chars": 459,
+        "nonblank_lines": 8,
+        "body_statements": 4,
+        "ast_nodes": 39,
+        "assignments": 4,
+        "operators": 0
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2919",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "days_per_week"
+      ],
+      "metrics": {
+        "total_tokens": 203,
+        "code_chars": 558,
+        "nonblank_lines": 12,
+        "body_statements": 10,
+        "ast_nodes": 67,
+        "assignments": 9,
+        "operators": 5
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2965",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 271,
+        "code_chars": 740,
+        "nonblank_lines": 14,
+        "body_statements": 12,
+        "ast_nodes": 89,
+        "assignments": 11,
+        "operators": 8
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2993",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 191,
+        "code_chars": 428,
+        "nonblank_lines": 9,
+        "body_statements": 5,
+        "ast_nodes": 52,
+        "assignments": 5,
+        "operators": 5
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3002",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 293,
+        "code_chars": 672,
+        "nonblank_lines": 12,
+        "body_statements": 9,
+        "ast_nodes": 67,
+        "assignments": 8,
+        "operators": 5
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3009",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "lanes"
+      ],
+      "metrics": {
+        "total_tokens": 301,
+        "code_chars": 791,
+        "nonblank_lines": 11,
+        "body_statements": 9,
+        "ast_nodes": 64,
+        "assignments": 8,
+        "operators": 5
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3055",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 134,
+        "code_chars": 336,
+        "nonblank_lines": 6,
+        "body_statements": 3,
+        "ast_nodes": 32,
+        "assignments": 2,
+        "operators": 2
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3080",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 112,
+        "code_chars": 267,
+        "nonblank_lines": 7,
+        "body_statements": 4,
+        "ast_nodes": 36,
+        "assignments": 3,
+        "operators": 2
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3085",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11",
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 346,
+        "code_chars": 834,
+        "nonblank_lines": 17,
+        "body_statements": 15,
+        "ast_nodes": 114,
+        "assignments": 14,
+        "operators": 11
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3089",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "total_weeks"
+      ],
+      "metrics": {
+        "total_tokens": 197,
+        "code_chars": 470,
+        "nonblank_lines": 6,
+        "body_statements": 4,
+        "ast_nodes": 31,
+        "assignments": 3,
+        "operators": 2
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3113",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "ripe_mangoes"
+      ],
+      "metrics": {
+        "total_tokens": 244,
+        "code_chars": 522,
+        "nonblank_lines": 7,
+        "body_statements": 5,
+        "ast_nodes": 45,
+        "assignments": 4,
+        "operators": 5
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3125",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "vampires",
+        "werewolves"
+      ],
+      "metrics": {
+        "total_tokens": 329,
+        "code_chars": 799,
+        "nonblank_lines": 13,
+        "body_statements": 11,
+        "ast_nodes": 78,
+        "assignments": 10,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3136",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "medium_bag_balloons",
+        "medium_bag_cost",
+        "small_bag_balloons",
+        "small_bag_cost"
+      ],
+      "metrics": {
+        "total_tokens": 331,
+        "code_chars": 746,
+        "nonblank_lines": 11,
+        "body_statements": 9,
+        "ast_nodes": 50,
+        "assignments": 8,
+        "operators": 2
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3146",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 190,
+        "code_chars": 492,
+        "nonblank_lines": 10,
+        "body_statements": 5,
+        "ast_nodes": 58,
+        "assignments": 5,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3152",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "cucumber_sandwiches",
+        "egg_sandwiches"
+      ],
+      "metrics": {
+        "total_tokens": 273,
+        "code_chars": 673,
+        "nonblank_lines": 12,
+        "body_statements": 10,
+        "ast_nodes": 66,
+        "assignments": 9,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3215",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 132,
+        "code_chars": 322,
+        "nonblank_lines": 6,
+        "body_statements": 3,
+        "ast_nodes": 32,
+        "assignments": 2,
+        "operators": 2
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3220",
+      "split": "train",
+      "flags": [
+        "body_statements>11"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 332,
+        "code_chars": 829,
+        "nonblank_lines": 14,
+        "body_statements": 12,
+        "ast_nodes": 82,
+        "assignments": 11,
+        "operators": 6
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3278",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "corey_books_tuesday"
+      ],
+      "metrics": {
+        "total_tokens": 210,
+        "code_chars": 469,
+        "nonblank_lines": 8,
+        "body_statements": 6,
+        "ast_nodes": 42,
+        "assignments": 5,
+        "operators": 3
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3321",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "total_questions"
+      ],
+      "metrics": {
+        "total_tokens": 188,
+        "code_chars": 408,
+        "nonblank_lines": 7,
+        "body_statements": 5,
+        "ast_nodes": 39,
+        "assignments": 4,
+        "operators": 3
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3334",
+      "split": "train",
+      "flags": [
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 293,
+        "code_chars": 626,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 79,
+        "assignments": 7,
+        "operators": 11
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3337",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "ted_green"
+      ],
+      "metrics": {
+        "total_tokens": 236,
+        "code_chars": 550,
+        "nonblank_lines": 8,
+        "body_statements": 6,
+        "ast_nodes": 50,
+        "assignments": 5,
+        "operators": 5
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3344",
+      "split": "train",
+      "flags": [
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 254,
+        "code_chars": 522,
+        "nonblank_lines": 6,
+        "body_statements": 4,
+        "ast_nodes": 53,
+        "assignments": 3,
+        "operators": 10
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3388",
+      "split": "train",
+      "flags": [
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 276,
+        "code_chars": 600,
+        "nonblank_lines": 9,
+        "body_statements": 7,
+        "ast_nodes": 68,
+        "assignments": 6,
+        "operators": 10
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3426",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "total_bills"
+      ],
+      "metrics": {
+        "total_tokens": 262,
+        "code_chars": 554,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 67,
+        "assignments": 7,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3431",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "lap_distance"
+      ],
+      "metrics": {
+        "total_tokens": 276,
+        "code_chars": 644,
+        "nonblank_lines": 9,
+        "body_statements": 7,
+        "ast_nodes": 43,
+        "assignments": 6,
+        "operators": 2
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3438",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 165,
+        "code_chars": 400,
+        "nonblank_lines": 8,
+        "body_statements": 5,
+        "ast_nodes": 42,
+        "assignments": 4,
+        "operators": 2
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3506",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 224,
+        "code_chars": 607,
+        "nonblank_lines": 17,
+        "body_statements": 15,
+        "ast_nodes": 109,
+        "assignments": 14,
+        "operators": 8
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3538",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 233,
+        "code_chars": 448,
+        "nonblank_lines": 7,
+        "body_statements": 4,
+        "ast_nodes": 47,
+        "assignments": 3,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3556",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 207,
+        "code_chars": 435,
+        "nonblank_lines": 8,
+        "body_statements": 5,
+        "ast_nodes": 46,
+        "assignments": 4,
+        "operators": 5
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3631",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 250,
+        "code_chars": 600,
+        "nonblank_lines": 11,
+        "body_statements": 8,
+        "ast_nodes": 62,
+        "assignments": 7,
+        "operators": 5
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3634",
+      "split": "train",
+      "flags": [
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 416,
+        "code_chars": 773,
+        "nonblank_lines": 7,
+        "body_statements": 5,
+        "ast_nodes": 51,
+        "assignments": 4,
+        "operators": 6
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3639",
+      "split": "train",
+      "flags": [
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 290,
+        "code_chars": 654,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 84,
+        "assignments": 7,
+        "operators": 11
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3714",
+      "split": "train",
+      "flags": [
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 396,
+        "code_chars": 871,
+        "nonblank_lines": 13,
+        "body_statements": 11,
+        "ast_nodes": 82,
+        "assignments": 10,
+        "operators": 8
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3736",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 360,
+        "code_chars": 856,
+        "nonblank_lines": 12,
+        "body_statements": 10,
+        "ast_nodes": 91,
+        "assignments": 9,
+        "operators": 12
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3750",
+      "split": "train",
+      "flags": [
+        "body_statements>11"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 316,
+        "code_chars": 796,
+        "nonblank_lines": 14,
+        "body_statements": 12,
+        "ast_nodes": 85,
+        "assignments": 11,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3768",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "machines_per_box"
+      ],
+      "metrics": {
+        "total_tokens": 189,
+        "code_chars": 463,
+        "nonblank_lines": 7,
+        "body_statements": 5,
+        "ast_nodes": 33,
+        "assignments": 4,
+        "operators": 2
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3817",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 136,
+        "code_chars": 318,
+        "nonblank_lines": 6,
+        "body_statements": 3,
+        "ast_nodes": 30,
+        "assignments": 2,
+        "operators": 1
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3822",
+      "split": "train",
+      "flags": [
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 420,
+        "code_chars": 1103,
+        "nonblank_lines": 11,
+        "body_statements": 9,
+        "ast_nodes": 82,
+        "assignments": 8,
+        "operators": 9
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3823",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "days_in_week"
+      ],
+      "metrics": {
+        "total_tokens": 359,
+        "code_chars": 951,
+        "nonblank_lines": 9,
+        "body_statements": 7,
+        "ast_nodes": 47,
+        "assignments": 6,
+        "operators": 3
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3828",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "children"
+      ],
+      "metrics": {
+        "total_tokens": 214,
+        "code_chars": 504,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 66,
+        "assignments": 7,
+        "operators": 6
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3829",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "apples"
+      ],
+      "metrics": {
+        "total_tokens": 155,
+        "code_chars": 361,
+        "nonblank_lines": 9,
+        "body_statements": 7,
+        "ast_nodes": 40,
+        "assignments": 6,
+        "operators": 1
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3881",
+      "split": "train",
+      "flags": [
+        "control_flow",
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 422,
+        "code_chars": 1053,
+        "nonblank_lines": 14,
+        "body_statements": 9,
+        "ast_nodes": 68,
+        "assignments": 9,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3889",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 347,
+        "code_chars": 811,
+        "nonblank_lines": 12,
+        "body_statements": 10,
+        "ast_nodes": 123,
+        "assignments": 9,
+        "operators": 21
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3893",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11",
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 293,
+        "code_chars": 705,
+        "nonblank_lines": 17,
+        "body_statements": 15,
+        "ast_nodes": 114,
+        "assignments": 14,
+        "operators": 12
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3902",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "baking_mix_per_recipe"
+      ],
+      "metrics": {
+        "total_tokens": 352,
+        "code_chars": 891,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 52,
+        "assignments": 7,
+        "operators": 3
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3920",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 125,
+        "code_chars": 323,
+        "nonblank_lines": 7,
+        "body_statements": 4,
+        "ast_nodes": 30,
+        "assignments": 3,
+        "operators": 0
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3921",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 493,
+        "code_chars": 1094,
+        "nonblank_lines": 12,
+        "body_statements": 10,
+        "ast_nodes": 109,
+        "assignments": 9,
+        "operators": 8
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3930",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 296,
+        "code_chars": 657,
+        "nonblank_lines": 11,
+        "body_statements": 9,
+        "ast_nodes": 87,
+        "assignments": 8,
+        "operators": 12
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3935",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 303,
+        "code_chars": 674,
+        "nonblank_lines": 14,
+        "body_statements": 12,
+        "ast_nodes": 96,
+        "assignments": 11,
+        "operators": 9
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3945",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 209,
+        "code_chars": 464,
+        "nonblank_lines": 11,
+        "body_statements": 7,
+        "ast_nodes": 71,
+        "assignments": 6,
+        "operators": 8
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3969",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 351,
+        "code_chars": 761,
+        "nonblank_lines": 14,
+        "body_statements": 12,
+        "ast_nodes": 89,
+        "assignments": 11,
+        "operators": 9
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4024",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 249,
+        "code_chars": 492,
+        "nonblank_lines": 8,
+        "body_statements": 5,
+        "ast_nodes": 43,
+        "assignments": 4,
+        "operators": 2
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4101",
+      "split": "train",
+      "flags": [
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 464,
+        "code_chars": 1099,
+        "nonblank_lines": 13,
+        "body_statements": 11,
+        "ast_nodes": 74,
+        "assignments": 10,
+        "operators": 5
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4154",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 148,
+        "code_chars": 395,
+        "nonblank_lines": 8,
+        "body_statements": 5,
+        "ast_nodes": 42,
+        "assignments": 4,
+        "operators": 2
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4163",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 288,
+        "code_chars": 770,
+        "nonblank_lines": 14,
+        "body_statements": 12,
+        "ast_nodes": 87,
+        "assignments": 11,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4179",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "free_space"
+      ],
+      "metrics": {
+        "total_tokens": 254,
+        "code_chars": 566,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 45,
+        "assignments": 7,
+        "operators": 1
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4186",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "total_value"
+      ],
+      "metrics": {
+        "total_tokens": 206,
+        "code_chars": 480,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 57,
+        "assignments": 7,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4210",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 300,
+        "code_chars": 742,
+        "nonblank_lines": 12,
+        "body_statements": 9,
+        "ast_nodes": 67,
+        "assignments": 8,
+        "operators": 5
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4239",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 259,
+        "code_chars": 571,
+        "nonblank_lines": 8,
+        "body_statements": 5,
+        "ast_nodes": 49,
+        "assignments": 4,
+        "operators": 6
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4262",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 349,
+        "code_chars": 850,
+        "nonblank_lines": 16,
+        "body_statements": 14,
+        "ast_nodes": 98,
+        "assignments": 13,
+        "operators": 8
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4269",
+      "split": "train",
+      "flags": [
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 390,
+        "code_chars": 800,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 70,
+        "assignments": 7,
+        "operators": 9
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4286",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "new_blonde"
+      ],
+      "metrics": {
+        "total_tokens": 211,
+        "code_chars": 476,
+        "nonblank_lines": 8,
+        "body_statements": 6,
+        "ast_nodes": 35,
+        "assignments": 5,
+        "operators": 1
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4299",
+      "split": "train",
+      "flags": [
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 278,
+        "code_chars": 588,
+        "nonblank_lines": 8,
+        "body_statements": 6,
+        "ast_nodes": 68,
+        "assignments": 5,
+        "operators": 10
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4374",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 189,
+        "code_chars": 438,
+        "nonblank_lines": 7,
+        "body_statements": 4,
+        "ast_nodes": 45,
+        "assignments": 3,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4377",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "calen_pencils"
+      ],
+      "metrics": {
+        "total_tokens": 218,
+        "code_chars": 430,
+        "nonblank_lines": 8,
+        "body_statements": 6,
+        "ast_nodes": 45,
+        "assignments": 5,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4423",
+      "split": "train",
+      "flags": [
+        "body_statements>11"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 308,
+        "code_chars": 768,
+        "nonblank_lines": 14,
+        "body_statements": 12,
+        "ast_nodes": 78,
+        "assignments": 11,
+        "operators": 5
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4442",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 308,
+        "code_chars": 702,
+        "nonblank_lines": 12,
+        "body_statements": 7,
+        "ast_nodes": 64,
+        "assignments": 7,
+        "operators": 6
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4504",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 232,
+        "code_chars": 657,
+        "nonblank_lines": 14,
+        "body_statements": 9,
+        "ast_nodes": 91,
+        "assignments": 9,
+        "operators": 9
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4517",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11",
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 272,
+        "code_chars": 672,
+        "nonblank_lines": 14,
+        "body_statements": 12,
+        "ast_nodes": 96,
+        "assignments": 11,
+        "operators": 11
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4575",
+      "split": "train",
+      "flags": [
+        "body_statements>11"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 379,
+        "code_chars": 958,
+        "nonblank_lines": 14,
+        "body_statements": 12,
+        "ast_nodes": 85,
+        "assignments": 11,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4624",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "total_days"
+      ],
+      "metrics": {
+        "total_tokens": 273,
+        "code_chars": 631,
+        "nonblank_lines": 11,
+        "body_statements": 9,
+        "ast_nodes": 59,
+        "assignments": 8,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4657",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 169,
+        "code_chars": 399,
+        "nonblank_lines": 7,
+        "body_statements": 4,
+        "ast_nodes": 33,
+        "assignments": 3,
+        "operators": 1
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4670",
+      "split": "train",
+      "flags": [
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 386,
+        "code_chars": 805,
+        "nonblank_lines": 4,
+        "body_statements": 2,
+        "ast_nodes": 22,
+        "assignments": 1,
+        "operators": 3
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4747",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 300,
+        "code_chars": 719,
+        "nonblank_lines": 12,
+        "body_statements": 10,
+        "ast_nodes": 94,
+        "assignments": 9,
+        "operators": 6
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4777",
+      "split": "train",
+      "flags": [
+        "control_flow",
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 284,
+        "code_chars": 737,
+        "nonblank_lines": 13,
+        "body_statements": 6,
+        "ast_nodes": 83,
+        "assignments": 8,
+        "operators": 10
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4780",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "last_week_days"
+      ],
+      "metrics": {
+        "total_tokens": 272,
+        "code_chars": 615,
+        "nonblank_lines": 11,
+        "body_statements": 9,
+        "ast_nodes": 60,
+        "assignments": 8,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4802",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 217,
+        "code_chars": 585,
+        "nonblank_lines": 10,
+        "body_statements": 7,
+        "ast_nodes": 54,
+        "assignments": 6,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4842",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 253,
+        "code_chars": 596,
+        "nonblank_lines": 13,
+        "body_statements": 11,
+        "ast_nodes": 88,
+        "assignments": 10,
+        "operators": 9
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4851",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11",
+        "operators>9",
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 461,
+        "code_chars": 1161,
+        "nonblank_lines": 14,
+        "body_statements": 12,
+        "ast_nodes": 102,
+        "assignments": 11,
+        "operators": 11
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4893",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 147,
+        "code_chars": 372,
+        "nonblank_lines": 8,
+        "body_statements": 5,
+        "ast_nodes": 46,
+        "assignments": 4,
+        "operators": 5
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4899",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 184,
+        "code_chars": 434,
+        "nonblank_lines": 5,
+        "body_statements": 3,
+        "ast_nodes": 38,
+        "assignments": 2,
+        "operators": 1
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4928",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 139,
+        "code_chars": 311,
+        "nonblank_lines": 7,
+        "body_statements": 4,
+        "ast_nodes": 33,
+        "assignments": 3,
+        "operators": 1
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4932",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11",
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 355,
+        "code_chars": 952,
+        "nonblank_lines": 14,
+        "body_statements": 12,
+        "ast_nodes": 96,
+        "assignments": 11,
+        "operators": 10
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4967",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11",
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 457,
+        "code_chars": 1056,
+        "nonblank_lines": 17,
+        "body_statements": 15,
+        "ast_nodes": 100,
+        "assignments": 14,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4986",
+      "split": "train",
+      "flags": [
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 387,
+        "code_chars": 850,
+        "nonblank_lines": 12,
+        "body_statements": 10,
+        "ast_nodes": 72,
+        "assignments": 9,
+        "operators": 6
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5035",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 159,
+        "code_chars": 425,
+        "nonblank_lines": 9,
+        "body_statements": 6,
+        "ast_nodes": 44,
+        "assignments": 5,
+        "operators": 1
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5104",
+      "split": "train",
+      "flags": [
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 277,
+        "code_chars": 715,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 78,
+        "assignments": 7,
+        "operators": 10
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5129",
+      "split": "train",
+      "flags": [
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 197,
+        "code_chars": 448,
+        "nonblank_lines": 7,
+        "body_statements": 5,
+        "ast_nodes": 64,
+        "assignments": 4,
+        "operators": 10
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5149",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 346,
+        "code_chars": 769,
+        "nonblank_lines": 16,
+        "body_statements": 14,
+        "ast_nodes": 94,
+        "assignments": 13,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5192",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 297,
+        "code_chars": 642,
+        "nonblank_lines": 11,
+        "body_statements": 8,
+        "ast_nodes": 73,
+        "assignments": 7,
+        "operators": 9
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5220",
+      "split": "train",
+      "flags": [
+        "operators>9",
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 419,
+        "code_chars": 892,
+        "nonblank_lines": 8,
+        "body_statements": 6,
+        "ast_nodes": 72,
+        "assignments": 5,
+        "operators": 10
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5246",
+      "split": "train",
+      "flags": [
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 258,
+        "code_chars": 598,
+        "nonblank_lines": 9,
+        "body_statements": 7,
+        "ast_nodes": 75,
+        "assignments": 6,
+        "operators": 11
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5289",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11",
+        "operators>9",
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 408,
+        "code_chars": 993,
+        "nonblank_lines": 14,
+        "body_statements": 12,
+        "ast_nodes": 106,
+        "assignments": 11,
+        "operators": 13
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5294",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "total_flowers"
+      ],
+      "metrics": {
+        "total_tokens": 188,
+        "code_chars": 493,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 52,
+        "assignments": 7,
+        "operators": 3
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5377",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 113,
+        "code_chars": 278,
+        "nonblank_lines": 7,
+        "body_statements": 4,
+        "ast_nodes": 33,
+        "assignments": 3,
+        "operators": 1
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5415",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 258,
+        "code_chars": 611,
+        "nonblank_lines": 10,
+        "body_statements": 5,
+        "ast_nodes": 51,
+        "assignments": 5,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5420",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "blue_marbles"
+      ],
+      "metrics": {
+        "total_tokens": 185,
+        "code_chars": 454,
+        "nonblank_lines": 8,
+        "body_statements": 6,
+        "ast_nodes": 51,
+        "assignments": 5,
+        "operators": 5
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5446",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 209,
+        "code_chars": 501,
+        "nonblank_lines": 10,
+        "body_statements": 4,
+        "ast_nodes": 48,
+        "assignments": 4,
+        "operators": 3
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5459",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "days_per_week"
+      ],
+      "metrics": {
+        "total_tokens": 291,
+        "code_chars": 657,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 58,
+        "assignments": 7,
+        "operators": 5
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5464",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11",
+        "operators>9",
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 391,
+        "code_chars": 888,
+        "nonblank_lines": 14,
+        "body_statements": 12,
+        "ast_nodes": 109,
+        "assignments": 11,
+        "operators": 14
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5467",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 188,
+        "code_chars": 460,
+        "nonblank_lines": 10,
+        "body_statements": 7,
+        "ast_nodes": 54,
+        "assignments": 6,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5534",
+      "split": "train",
+      "flags": [
+        "body_statements>11",
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 408,
+        "code_chars": 914,
+        "nonblank_lines": 14,
+        "body_statements": 12,
+        "ast_nodes": 84,
+        "assignments": 11,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5537",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 265,
+        "code_chars": 574,
+        "nonblank_lines": 11,
+        "body_statements": 8,
+        "ast_nodes": 70,
+        "assignments": 7,
+        "operators": 6
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5571",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "burger_weight",
+        "pie_weight"
+      ],
+      "metrics": {
+        "total_tokens": 382,
+        "code_chars": 873,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 50,
+        "assignments": 7,
+        "operators": 3
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5593",
+      "split": "train",
+      "flags": [
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 405,
+        "code_chars": 956,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 70,
+        "assignments": 7,
+        "operators": 8
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5619",
+      "split": "train",
+      "flags": [
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 351,
+        "code_chars": 688,
+        "nonblank_lines": 11,
+        "body_statements": 9,
+        "ast_nodes": 84,
+        "assignments": 8,
+        "operators": 12
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5664",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "hours_per_day"
+      ],
+      "metrics": {
+        "total_tokens": 154,
+        "code_chars": 368,
+        "nonblank_lines": 7,
+        "body_statements": 5,
+        "ast_nodes": 30,
+        "assignments": 4,
+        "operators": 1
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5679",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 228,
+        "code_chars": 537,
+        "nonblank_lines": 8,
+        "body_statements": 5,
+        "ast_nodes": 49,
+        "assignments": 4,
+        "operators": 6
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5710",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 239,
+        "code_chars": 559,
+        "nonblank_lines": 9,
+        "body_statements": 6,
+        "ast_nodes": 55,
+        "assignments": 5,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5726",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 279,
+        "code_chars": 691,
+        "nonblank_lines": 13,
+        "body_statements": 11,
+        "ast_nodes": 90,
+        "assignments": 10,
+        "operators": 9
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5754",
+      "split": "train",
+      "flags": [
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 412,
+        "code_chars": 945,
+        "nonblank_lines": 8,
+        "body_statements": 6,
+        "ast_nodes": 51,
+        "assignments": 5,
+        "operators": 6
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5789",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 236,
+        "code_chars": 517,
+        "nonblank_lines": 6,
+        "body_statements": 4,
+        "ast_nodes": 39,
+        "assignments": 3,
+        "operators": 1
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5809",
+      "split": "train",
+      "flags": [
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 419,
+        "code_chars": 850,
+        "nonblank_lines": 9,
+        "body_statements": 7,
+        "ast_nodes": 59,
+        "assignments": 6,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5855",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 167,
+        "code_chars": 385,
+        "nonblank_lines": 6,
+        "body_statements": 3,
+        "ast_nodes": 25,
+        "assignments": 2,
+        "operators": 0
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5882",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 238,
+        "code_chars": 534,
+        "nonblank_lines": 8,
+        "body_statements": 5,
+        "ast_nodes": 52,
+        "assignments": 4,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5894",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "control_flow",
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 334,
+        "code_chars": 833,
+        "nonblank_lines": 14,
+        "body_statements": 8,
+        "ast_nodes": 94,
+        "assignments": 9,
+        "operators": 11
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5909",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 298,
+        "code_chars": 694,
+        "nonblank_lines": 14,
+        "body_statements": 12,
+        "ast_nodes": 90,
+        "assignments": 11,
+        "operators": 9
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5912",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "hotdog_price"
+      ],
+      "metrics": {
+        "total_tokens": 256,
+        "code_chars": 580,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 61,
+        "assignments": 7,
+        "operators": 6
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5937",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "marbles_per_color"
+      ],
+      "metrics": {
+        "total_tokens": 199,
+        "code_chars": 500,
+        "nonblank_lines": 9,
+        "body_statements": 7,
+        "ast_nodes": 58,
+        "assignments": 6,
+        "operators": 6
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5965",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 258,
+        "code_chars": 585,
+        "nonblank_lines": 14,
+        "body_statements": 12,
+        "ast_nodes": 90,
+        "assignments": 11,
+        "operators": 9
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6022",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 294,
+        "code_chars": 679,
+        "nonblank_lines": 11,
+        "body_statements": 8,
+        "ast_nodes": 59,
+        "assignments": 7,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6035",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "weight_large",
+        "weight_small"
+      ],
+      "metrics": {
+        "total_tokens": 211,
+        "code_chars": 481,
+        "nonblank_lines": 9,
+        "body_statements": 7,
+        "ast_nodes": 48,
+        "assignments": 6,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6041",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 231,
+        "code_chars": 476,
+        "nonblank_lines": 8,
+        "body_statements": 5,
+        "ast_nodes": 50,
+        "assignments": 4,
+        "operators": 6
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6054",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "total_fishermen"
+      ],
+      "metrics": {
+        "total_tokens": 207,
+        "code_chars": 450,
+        "nonblank_lines": 7,
+        "body_statements": 5,
+        "ast_nodes": 33,
+        "assignments": 4,
+        "operators": 2
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6080",
+      "split": "train",
+      "flags": [
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 332,
+        "code_chars": 683,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 85,
+        "assignments": 7,
+        "operators": 13
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6083",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "average"
+      ],
+      "metrics": {
+        "total_tokens": 262,
+        "code_chars": 456,
+        "nonblank_lines": 8,
+        "body_statements": 6,
+        "ast_nodes": 67,
+        "assignments": 5,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6131",
+      "split": "train",
+      "flags": [
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 317,
+        "code_chars": 675,
+        "nonblank_lines": 9,
+        "body_statements": 7,
+        "ast_nodes": 84,
+        "assignments": 6,
+        "operators": 14
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6154",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "E"
+      ],
+      "metrics": {
+        "total_tokens": 266,
+        "code_chars": 666,
+        "nonblank_lines": 9,
+        "body_statements": 7,
+        "ast_nodes": 64,
+        "assignments": 6,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6168",
+      "split": "train",
+      "flags": [
+        "body_statements>11"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 257,
+        "code_chars": 686,
+        "nonblank_lines": 14,
+        "body_statements": 12,
+        "ast_nodes": 78,
+        "assignments": 11,
+        "operators": 5
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6188",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 306,
+        "code_chars": 689,
+        "nonblank_lines": 15,
+        "body_statements": 13,
+        "ast_nodes": 86,
+        "assignments": 12,
+        "operators": 6
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6237",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 333,
+        "code_chars": 745,
+        "nonblank_lines": 13,
+        "body_statements": 11,
+        "ast_nodes": 86,
+        "assignments": 10,
+        "operators": 9
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6241",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "total_pieces"
+      ],
+      "metrics": {
+        "total_tokens": 186,
+        "code_chars": 509,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 52,
+        "assignments": 7,
+        "operators": 3
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6254",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "money_received"
+      ],
+      "metrics": {
+        "total_tokens": 228,
+        "code_chars": 492,
+        "nonblank_lines": 7,
+        "body_statements": 5,
+        "ast_nodes": 39,
+        "assignments": 4,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6274",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11",
+        "operators>9",
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 493,
+        "code_chars": 1141,
+        "nonblank_lines": 19,
+        "body_statements": 17,
+        "ast_nodes": 118,
+        "assignments": 16,
+        "operators": 10
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6275",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 257,
+        "code_chars": 534,
+        "nonblank_lines": 7,
+        "body_statements": 5,
+        "ast_nodes": 58,
+        "assignments": 4,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6291",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 251,
+        "code_chars": 566,
+        "nonblank_lines": 5,
+        "body_statements": 3,
+        "ast_nodes": 40,
+        "assignments": 2,
+        "operators": 3
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6311",
+      "split": "train",
+      "flags": [
+        "control_flow",
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 398,
+        "code_chars": 860,
+        "nonblank_lines": 15,
+        "body_statements": 10,
+        "ast_nodes": 85,
+        "assignments": 10,
+        "operators": 8
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6314",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 197,
+        "code_chars": 505,
+        "nonblank_lines": 11,
+        "body_statements": 5,
+        "ast_nodes": 59,
+        "assignments": 6,
+        "operators": 3
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6382",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11",
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 362,
+        "code_chars": 898,
+        "nonblank_lines": 15,
+        "body_statements": 13,
+        "ast_nodes": 101,
+        "assignments": 12,
+        "operators": 10
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6392",
+      "split": "train",
+      "flags": [
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 316,
+        "code_chars": 622,
+        "nonblank_lines": 7,
+        "body_statements": 5,
+        "ast_nodes": 58,
+        "assignments": 4,
+        "operators": 10
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6393",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 251,
+        "code_chars": 548,
+        "nonblank_lines": 9,
+        "body_statements": 6,
+        "ast_nodes": 60,
+        "assignments": 5,
+        "operators": 8
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6413",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 147,
+        "code_chars": 376,
+        "nonblank_lines": 6,
+        "body_statements": 3,
+        "ast_nodes": 32,
+        "assignments": 2,
+        "operators": 1
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6439",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 189,
+        "code_chars": 450,
+        "nonblank_lines": 8,
+        "body_statements": 5,
+        "ast_nodes": 42,
+        "assignments": 4,
+        "operators": 2
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6464",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 362,
+        "code_chars": 803,
+        "nonblank_lines": 13,
+        "body_statements": 11,
+        "ast_nodes": 89,
+        "assignments": 10,
+        "operators": 9
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6497",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 161,
+        "code_chars": 382,
+        "nonblank_lines": 8,
+        "body_statements": 6,
+        "ast_nodes": 58,
+        "assignments": 5,
+        "operators": 2
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6531",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 154,
+        "code_chars": 382,
+        "nonblank_lines": 9,
+        "body_statements": 6,
+        "ast_nodes": 46,
+        "assignments": 5,
+        "operators": 2
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6542",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 333,
+        "code_chars": 838,
+        "nonblank_lines": 13,
+        "body_statements": 10,
+        "ast_nodes": 82,
+        "assignments": 9,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6615",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "pete_received"
+      ],
+      "metrics": {
+        "total_tokens": 282,
+        "code_chars": 624,
+        "nonblank_lines": 11,
+        "body_statements": 9,
+        "ast_nodes": 71,
+        "assignments": 8,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6622",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "louis_apples",
+        "samantha_oranges"
+      ],
+      "metrics": {
+        "total_tokens": 199,
+        "code_chars": 492,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 50,
+        "assignments": 7,
+        "operators": 3
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6625",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "full_size_pie_apples"
+      ],
+      "metrics": {
+        "total_tokens": 226,
+        "code_chars": 509,
+        "nonblank_lines": 8,
+        "body_statements": 6,
+        "ast_nodes": 38,
+        "assignments": 5,
+        "operators": 2
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6629",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 360,
+        "code_chars": 953,
+        "nonblank_lines": 13,
+        "body_statements": 11,
+        "ast_nodes": 92,
+        "assignments": 10,
+        "operators": 10
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6684",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 206,
+        "code_chars": 513,
+        "nonblank_lines": 10,
+        "body_statements": 7,
+        "ast_nodes": 54,
+        "assignments": 6,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6688",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "computers"
+      ],
+      "metrics": {
+        "total_tokens": 138,
+        "code_chars": 369,
+        "nonblank_lines": 8,
+        "body_statements": 6,
+        "ast_nodes": 43,
+        "assignments": 5,
+        "operators": 2
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6715",
+      "split": "train",
+      "flags": [
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 434,
+        "code_chars": 1049,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 71,
+        "assignments": 7,
+        "operators": 5
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6778",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 149,
+        "code_chars": 363,
+        "nonblank_lines": 8,
+        "body_statements": 4,
+        "ast_nodes": 35,
+        "assignments": 4,
+        "operators": 0
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6938",
+      "split": "train",
+      "flags": [
+        "body_statements>11"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 312,
+        "code_chars": 770,
+        "nonblank_lines": 14,
+        "body_statements": 12,
+        "ast_nodes": 80,
+        "assignments": 11,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6992",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11",
+        "total_tokens>384",
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "play_cost"
+      ],
+      "metrics": {
+        "total_tokens": 388,
+        "code_chars": 975,
+        "nonblank_lines": 15,
+        "body_statements": 13,
+        "ast_nodes": 89,
+        "assignments": 12,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_7006",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 293,
+        "code_chars": 769,
+        "nonblank_lines": 11,
+        "body_statements": 8,
+        "ast_nodes": 67,
+        "assignments": 7,
+        "operators": 6
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_7043",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11",
+        "operators>9",
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 421,
+        "code_chars": 1111,
+        "nonblank_lines": 15,
+        "body_statements": 13,
+        "ast_nodes": 110,
+        "assignments": 12,
+        "operators": 13
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_7080",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 331,
+        "code_chars": 807,
+        "nonblank_lines": 14,
+        "body_statements": 12,
+        "ast_nodes": 89,
+        "assignments": 11,
+        "operators": 8
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_7152",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "blanche_green"
+      ],
+      "metrics": {
+        "total_tokens": 285,
+        "code_chars": 637,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 54,
+        "assignments": 7,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_7155",
+      "split": "train",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 310,
+        "code_chars": 749,
+        "nonblank_lines": 12,
+        "body_statements": 9,
+        "ast_nodes": 79,
+        "assignments": 8,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_7164",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "total_vowels"
+      ],
+      "metrics": {
+        "total_tokens": 164,
+        "code_chars": 412,
+        "nonblank_lines": 8,
+        "body_statements": 6,
+        "ast_nodes": 41,
+        "assignments": 5,
+        "operators": 2
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_7196",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 355,
+        "code_chars": 798,
+        "nonblank_lines": 12,
+        "body_statements": 10,
+        "ast_nodes": 89,
+        "assignments": 9,
+        "operators": 12
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_7219",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11",
+        "operators>9",
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 504,
+        "code_chars": 1081,
+        "nonblank_lines": 16,
+        "body_statements": 14,
+        "ast_nodes": 108,
+        "assignments": 13,
+        "operators": 11
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_7302",
+      "split": "train",
+      "flags": [
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 374,
+        "code_chars": 800,
+        "nonblank_lines": 12,
+        "body_statements": 10,
+        "ast_nodes": 84,
+        "assignments": 9,
+        "operators": 10
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_7406",
+      "split": "train",
+      "flags": [
+        "ast_nodes>85",
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 389,
+        "code_chars": 685,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 96,
+        "assignments": 7,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_7415",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "total_time"
+      ],
+      "metrics": {
+        "total_tokens": 178,
+        "code_chars": 434,
+        "nonblank_lines": 8,
+        "body_statements": 6,
+        "ast_nodes": 57,
+        "assignments": 5,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_7427",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "beth_now"
+      ],
+      "metrics": {
+        "total_tokens": 151,
+        "code_chars": 290,
+        "nonblank_lines": 7,
+        "body_statements": 5,
+        "ast_nodes": 34,
+        "assignments": 4,
+        "operators": 2
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_7435",
+      "split": "train",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "first_eaten",
+        "second_eaten"
+      ],
+      "metrics": {
+        "total_tokens": 214,
+        "code_chars": 473,
+        "nonblank_lines": 8,
+        "body_statements": 6,
+        "ast_nodes": 34,
+        "assignments": 5,
+        "operators": 1
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_7455",
+      "split": "train",
+      "flags": [
+        "body_statements>11",
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 437,
+        "code_chars": 1012,
+        "nonblank_lines": 14,
+        "body_statements": 12,
+        "ast_nodes": 84,
+        "assignments": 11,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0216",
+      "split": "validation",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "multiplier"
+      ],
+      "metrics": {
+        "total_tokens": 248,
+        "code_chars": 549,
+        "nonblank_lines": 6,
+        "body_statements": 4,
+        "ast_nodes": 25,
+        "assignments": 3,
+        "operators": 1
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0589",
+      "split": "validation",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 236,
+        "code_chars": 693,
+        "nonblank_lines": 11,
+        "body_statements": 8,
+        "ast_nodes": 62,
+        "assignments": 7,
+        "operators": 5
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0822",
+      "split": "validation",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 244,
+        "code_chars": 489,
+        "nonblank_lines": 9,
+        "body_statements": 6,
+        "ast_nodes": 51,
+        "assignments": 5,
+        "operators": 5
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_0989",
+      "split": "validation",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 271,
+        "code_chars": 628,
+        "nonblank_lines": 8,
+        "body_statements": 5,
+        "ast_nodes": 44,
+        "assignments": 4,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_1918",
+      "split": "validation",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 125,
+        "code_chars": 295,
+        "nonblank_lines": 6,
+        "body_statements": 3,
+        "ast_nodes": 25,
+        "assignments": 2,
+        "operators": 0
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2191",
+      "split": "validation",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 252,
+        "code_chars": 624,
+        "nonblank_lines": 13,
+        "body_statements": 10,
+        "ast_nodes": 79,
+        "assignments": 9,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2360",
+      "split": "validation",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 233,
+        "code_chars": 530,
+        "nonblank_lines": 12,
+        "body_statements": 7,
+        "ast_nodes": 67,
+        "assignments": 7,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2512",
+      "split": "validation",
+      "flags": [
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 359,
+        "code_chars": 720,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 73,
+        "assignments": 7,
+        "operators": 10
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2551",
+      "split": "validation",
+      "flags": [
+        "total_tokens>384",
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "old_record"
+      ],
+      "metrics": {
+        "total_tokens": 449,
+        "code_chars": 1042,
+        "nonblank_lines": 12,
+        "body_statements": 10,
+        "ast_nodes": 70,
+        "assignments": 9,
+        "operators": 6
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2623",
+      "split": "validation",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11",
+        "total_tokens>384",
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "verses_to_blue"
+      ],
+      "metrics": {
+        "total_tokens": 418,
+        "code_chars": 1006,
+        "nonblank_lines": 15,
+        "body_statements": 13,
+        "ast_nodes": 94,
+        "assignments": 12,
+        "operators": 8
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_2732",
+      "split": "validation",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 288,
+        "code_chars": 681,
+        "nonblank_lines": 14,
+        "body_statements": 12,
+        "ast_nodes": 89,
+        "assignments": 11,
+        "operators": 8
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3140",
+      "split": "validation",
+      "flags": [
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 283,
+        "code_chars": 709,
+        "nonblank_lines": 8,
+        "body_statements": 6,
+        "ast_nodes": 67,
+        "assignments": 5,
+        "operators": 10
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3442",
+      "split": "validation",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "total_flour"
+      ],
+      "metrics": {
+        "total_tokens": 349,
+        "code_chars": 749,
+        "nonblank_lines": 13,
+        "body_statements": 11,
+        "ast_nodes": 75,
+        "assignments": 10,
+        "operators": 6
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3645",
+      "split": "validation",
+      "flags": [
+        "ast_nodes>85",
+        "operators>9",
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 394,
+        "code_chars": 897,
+        "nonblank_lines": 13,
+        "body_statements": 11,
+        "ast_nodes": 93,
+        "assignments": 10,
+        "operators": 11
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_3871",
+      "split": "validation",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11",
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 427,
+        "code_chars": 1135,
+        "nonblank_lines": 15,
+        "body_statements": 13,
+        "ast_nodes": 94,
+        "assignments": 12,
+        "operators": 8
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4115",
+      "split": "validation",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 351,
+        "code_chars": 941,
+        "nonblank_lines": 13,
+        "body_statements": 10,
+        "ast_nodes": 82,
+        "assignments": 9,
+        "operators": 8
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4181",
+      "split": "validation",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 194,
+        "code_chars": 496,
+        "nonblank_lines": 10,
+        "body_statements": 6,
+        "ast_nodes": 50,
+        "assignments": 6,
+        "operators": 1
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4184",
+      "split": "validation",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "blue_hat_gnomes"
+      ],
+      "metrics": {
+        "total_tokens": 293,
+        "code_chars": 679,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 66,
+        "assignments": 7,
+        "operators": 6
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4415",
+      "split": "validation",
+      "flags": [
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 385,
+        "code_chars": 714,
+        "nonblank_lines": 11,
+        "body_statements": 9,
+        "ast_nodes": 66,
+        "assignments": 8,
+        "operators": 6
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4419",
+      "split": "validation",
+      "flags": [
+        "control_flow",
+        "operators>9"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 297,
+        "code_chars": 603,
+        "nonblank_lines": 11,
+        "body_statements": 8,
+        "ast_nodes": 76,
+        "assignments": 7,
+        "operators": 10
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_4940",
+      "split": "validation",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "total_pens"
+      ],
+      "metrics": {
+        "total_tokens": 214,
+        "code_chars": 467,
+        "nonblank_lines": 8,
+        "body_statements": 6,
+        "ast_nodes": 41,
+        "assignments": 5,
+        "operators": 3
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5130",
+      "split": "validation",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 200,
+        "code_chars": 397,
+        "nonblank_lines": 5,
+        "body_statements": 3,
+        "ast_nodes": 36,
+        "assignments": 2,
+        "operators": 1
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5315",
+      "split": "validation",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "afternoon_walk"
+      ],
+      "metrics": {
+        "total_tokens": 229,
+        "code_chars": 538,
+        "nonblank_lines": 8,
+        "body_statements": 6,
+        "ast_nodes": 41,
+        "assignments": 5,
+        "operators": 3
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5351",
+      "split": "validation",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 255,
+        "code_chars": 584,
+        "nonblank_lines": 7,
+        "body_statements": 4,
+        "ast_nodes": 38,
+        "assignments": 3,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_5364",
+      "split": "validation",
+      "flags": [
+        "ast_nodes>85",
+        "body_statements>11"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 337,
+        "code_chars": 772,
+        "nonblank_lines": 15,
+        "body_statements": 13,
+        "ast_nodes": 94,
+        "assignments": 12,
+        "operators": 8
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6194",
+      "split": "validation",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 180,
+        "code_chars": 461,
+        "nonblank_lines": 8,
+        "body_statements": 5,
+        "ast_nodes": 44,
+        "assignments": 4,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6492",
+      "split": "validation",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "hours"
+      ],
+      "metrics": {
+        "total_tokens": 124,
+        "code_chars": 285,
+        "nonblank_lines": 8,
+        "body_statements": 6,
+        "ast_nodes": 41,
+        "assignments": 5,
+        "operators": 3
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6495",
+      "split": "validation",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 193,
+        "code_chars": 462,
+        "nonblank_lines": 10,
+        "body_statements": 7,
+        "ast_nodes": 63,
+        "assignments": 6,
+        "operators": 7
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6791",
+      "split": "validation",
+      "flags": [
+        "control_flow"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 205,
+        "code_chars": 479,
+        "nonblank_lines": 8,
+        "body_statements": 6,
+        "ast_nodes": 72,
+        "assignments": 5,
+        "operators": 4
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6795",
+      "split": "validation",
+      "flags": [
+        "control_flow",
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 390,
+        "code_chars": 976,
+        "nonblank_lines": 12,
+        "body_statements": 9,
+        "ast_nodes": 70,
+        "assignments": 8,
+        "operators": 6
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_6952",
+      "split": "validation",
+      "flags": [
+        "total_tokens>384"
+      ],
+      "unused_names": [],
+      "metrics": {
+        "total_tokens": 412,
+        "code_chars": 803,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 67,
+        "assignments": 7,
+        "operators": 8
+      }
+    },
+    {
+      "sample_id": "gsm8k_train_7181",
+      "split": "validation",
+      "flags": [
+        "unused_assignment"
+      ],
+      "unused_names": [
+        "first_class_seats"
+      ],
+      "metrics": {
+        "total_tokens": 275,
+        "code_chars": 748,
+        "nonblank_lines": 10,
+        "body_statements": 8,
+        "ast_nodes": 51,
+        "assignments": 7,
+        "operators": 3
+      }
+    }
+  ]
+}

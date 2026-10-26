@@ -1,0 +1,7 @@
+- checkpointing.save_dir=/root/autodl-tmp/s-flm/outputs/overfit16-fullmask-codeonly-20261023-01/resume-to3000
+- checkpointing.resume_from_ckpt=true
+- checkpointing.resume_ckpt_path=/root/autodl-tmp/s-flm/outputs/overfit16-fullmask-codeonly-20261023-01/checkpoints/step-000200.ckpt
+- trainer.max_steps=3000
+- wandb.name=mdlm-overfit16-fullmask-codeonly-fp32-lr3e-6-3000
+- +wandb.id=x4989caj
+- +wandb.entity=ruiqi-f-huang-nus

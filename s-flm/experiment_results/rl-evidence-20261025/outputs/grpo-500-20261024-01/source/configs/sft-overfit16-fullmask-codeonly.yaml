@@ -1,0 +1,22 @@
+defaults:
+  - sft-overfit16
+  - _self_
+
+allow_tf32: false
+trainer:
+  max_steps: 200
+  precision: 32-true
+
+data:
+  train_file: ${hydra:runtime.cwd}/data/gsm8k_pot_overfit16/sft_train.jsonl
+
+wandb:
+  project: s-flm
+  group: mdlm-gsm8k-pot
+  job_type: overfit-fullmask-codeonly
+  name: mdlm-overfit16-fullmask-codeonly-fp32-lr3e-6-200
+  offline: false
+
+hydra:
+  run:
+    dir: ${hydra:runtime.cwd}/outputs/overfit16-fullmask-codeonly-200

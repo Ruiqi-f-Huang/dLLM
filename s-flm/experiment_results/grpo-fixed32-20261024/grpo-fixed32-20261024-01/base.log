@@ -1,0 +1,9 @@
+Seed set to 42
+Traceback (most recent call last):
+  File "/root/s-flm/scripts/grpo_fixed32.py", line 220, in <module>
+    main()
+  File "/root/s-flm/scripts/grpo_fixed32.py", line 216, in main
+    (prepare if args.mode == 'prepare' else measure)(args)
+  File "/root/s-flm/scripts/grpo_fixed32.py", line 124, in measure
+    raise RuntimeError(f"No independent success/failure pair for {row['sample_id']}; do not silently reselect.")
+RuntimeError: No independent success/failure pair for gsm8k_train_1172; do not silently reselect.

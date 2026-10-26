@@ -1,0 +1,20 @@
+{
+  "python": "3.12.3",
+  "torch": "2.7.0+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "capability": [
+    12,
+    0
+  ],
+  "bf16": true,
+  "packages": {
+    "numpy": "1.26.4",
+    "lightning": "2.5.1",
+    "pytorch-lightning": "2.5.1",
+    "transformers": "4.45.0",
+    "datasets": "3.5.0",
+    "pyarrow": "19.0.1",
+    "flash-attn": "2.7.4.post1"
+  }
+}

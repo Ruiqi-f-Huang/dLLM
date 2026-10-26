@@ -1,0 +1,420 @@
+{
+  "comparisons": [
+    {
+      "model": "lr3e-05-step250",
+      "rate": 1.0,
+      "reward": 1,
+      "region": "all_answer",
+      "questions": 32,
+      "base_ce": 1.1758252698928118,
+      "current_ce": 1.1580074802041054,
+      "mean_logp_delta": 0.017817789688706398,
+      "mean_logp_ci95": [
+        0.004454027861356735,
+        0.039467232301831245
+      ],
+      "mean_logp_improved_questions": 25,
+      "top1_delta": 0.004972551949322224,
+      "top1_ci95": [
+        0.0009451191872358322,
+        0.010286722332239151
+      ],
+      "top1_improved_questions": 8,
+      "ce_delta": -0.017817789688706398
+    },
+    {
+      "model": "lr3e-05-step250",
+      "rate": 1.0,
+      "reward": 1,
+      "region": "code_eos",
+      "questions": 28,
+      "base_ce": 2.1326235234737396,
+      "current_ce": 2.1138312412159785,
+      "mean_logp_delta": 0.018792282257761275,
+      "mean_logp_ci95": [
+        0.01174628734588623,
+        0.025927752256393433
+      ],
+      "mean_logp_improved_questions": 24,
+      "top1_delta": 0.005955232041222709,
+      "top1_ci95": [
+        0.0003853227410997663,
+        0.012458777853420802
+      ],
+      "top1_improved_questions": 7,
+      "ce_delta": -0.018792282257761275
+    },
+    {
+      "model": "lr3e-05-step250",
+      "rate": 1.0,
+      "reward": 1,
+      "region": "docstring_comment",
+      "questions": 28,
+      "base_ce": 0.11196116870814876,
+      "current_ce": 0.11433011246195487,
+      "mean_logp_delta": -0.002368943753806109,
+      "mean_logp_ci95": [
+        -0.007626134043675847,
+        0.0005732298060528203
+      ],
+      "mean_logp_improved_questions": 23,
+      "top1_delta": 0.0,
+      "top1_ci95": [
+        0.0,
+        0.0
+      ],
+      "top1_improved_questions": 0,
+      "ce_delta": 0.002368943753806109
+    },
+    {
+      "model": "lr3e-05-step250",
+      "rate": 1.0,
+      "reward": 0,
+      "region": "all_answer",
+      "questions": 32,
+      "base_ce": 1.2388711646199226,
+      "current_ce": 1.24053998850286,
+      "mean_logp_delta": -0.0016688238829374313,
+      "mean_logp_ci95": [
+        -0.015858842059969902,
+        0.008255980908870697
+      ],
+      "mean_logp_improved_questions": 19,
+      "top1_delta": -0.0019187703728675842,
+      "top1_ci95": [
+        -0.0077162981033325195,
+        0.0015379562973976135
+      ],
+      "top1_improved_questions": 3,
+      "ce_delta": 0.0016688238829374313
+    },
+    {
+      "model": "lr3e-05-step250",
+      "rate": 1.0,
+      "reward": 0,
+      "region": "code_eos",
+      "questions": 25,
+      "base_ce": 2.3360159730911256,
+      "current_ce": 2.330129041671753,
+      "mean_logp_delta": 0.005886931419372559,
+      "mean_logp_ci95": [
+        0.0008290672302246094,
+        0.011554312705993653
+      ],
+      "mean_logp_improved_questions": 17,
+      "top1_delta": 0.0020633554458618164,
+      "top1_ci95": [
+        -0.00039215683937072755,
+        0.005284237861633301
+      ],
+      "top1_improved_questions": 3,
+      "ce_delta": -0.005886931419372559
+    },
+    {
+      "model": "lr3e-05-step250",
+      "rate": 1.0,
+      "reward": 0,
+      "region": "docstring_comment",
+      "questions": 25,
+      "base_ce": 0.013703325433889404,
+      "current_ce": 0.013675736173754558,
+      "mean_logp_delta": 2.7589260134845972e-05,
+      "mean_logp_ci95": [
+        -0.0002701965009327978,
+        0.0003343478078022599
+      ],
+      "mean_logp_improved_questions": 18,
+      "top1_delta": 0.0,
+      "top1_ci95": [
+        0.0,
+        0.0
+      ],
+      "top1_improved_questions": 0,
+      "ce_delta": -2.7589260134845972e-05
+    },
+    {
+      "model": "lr3e-05-step250",
+      "rate": 0.75,
+      "reward": 1,
+      "region": "all_answer",
+      "questions": 32,
+      "base_ce": 0.12357207462662245,
+      "current_ce": 0.12355976262779222,
+      "mean_logp_delta": 1.2311998830227822e-05,
+      "mean_logp_ci95": [
+        -0.0005039521847720607,
+        0.0004104576463532794
+      ],
+      "mean_logp_improved_questions": 20,
+      "top1_delta": 0.00016545969992876053,
+      "top1_ci95": [
+        0.0,
+        0.0004158378578722477
+      ],
+      "top1_improved_questions": 2,
+      "ce_delta": -1.2311998830227822e-05
+    },
+    {
+      "model": "lr3e-05-step250",
+      "rate": 0.75,
+      "reward": 1,
+      "region": "code_eos",
+      "questions": 28,
+      "base_ce": 0.182111329977358,
+      "current_ce": 0.1818370934723654,
+      "mean_logp_delta": 0.00027423650499258656,
+      "mean_logp_ci95": [
+        -0.0001700588945823256,
+        0.0006953743302022174
+      ],
+      "mean_logp_improved_questions": 19,
+      "top1_delta": 0.0003380094255719866,
+      "top1_ci95": [
+        0.0,
+        0.0008545901094164167
+      ],
+      "top1_improved_questions": 2,
+      "ce_delta": -0.00027423650499258656
+    },
+    {
+      "model": "lr3e-05-step250",
+      "rate": 0.75,
+      "reward": 1,
+      "region": "docstring_comment",
+      "questions": 28,
+      "base_ce": 0.021926705128415897,
+      "current_ce": 0.021681493666114653,
+      "mean_logp_delta": 0.00024521146230124406,
+      "mean_logp_ci95": [
+        -3.5081124447547806e-05,
+        0.0007065677171946204
+      ],
+      "mean_logp_improved_questions": 25,
+      "top1_delta": 0.0,
+      "top1_ci95": [
+        0.0,
+        0.0
+      ],
+      "top1_improved_questions": 0,
+      "ce_delta": -0.00024521146230124406
+    },
+    {
+      "model": "lr3e-05-step250",
+      "rate": 0.75,
+      "reward": 0,
+      "region": "all_answer",
+      "questions": 32,
+      "base_ce": 0.25887394962592225,
+      "current_ce": 0.25934133655027836,
+      "mean_logp_delta": -0.00046738692435610574,
+      "mean_logp_ci95": [
+        -0.0008823195603326894,
+        -6.114472671470139e-05
+      ],
+      "mean_logp_improved_questions": 11,
+      "top1_delta": -0.0002302108332514763,
+      "top1_ci95": [
+        -0.000597833190113306,
+        0.00010834820568561554
+      ],
+      "top1_improved_questions": 1,
+      "ce_delta": 0.00046738692435610574
+    },
+    {
+      "model": "lr3e-05-step250",
+      "rate": 0.75,
+      "reward": 0,
+      "region": "code_eos",
+      "questions": 25,
+      "base_ce": 0.4685765035450459,
+      "current_ce": 0.4693201258638874,
+      "mean_logp_delta": -0.000743622318841517,
+      "mean_logp_ci95": [
+        -0.00169984326697886,
+        0.00018821779638528825
+      ],
+      "mean_logp_improved_questions": 10,
+      "top1_delta": -0.00031085848808288575,
+      "top1_ci95": [
+        -0.0010236799716949463,
+        0.00039999961853027344
+      ],
+      "top1_improved_questions": 1,
+      "ce_delta": 0.000743622318841517
+    },
+    {
+      "model": "lr3e-05-step250",
+      "rate": 0.75,
+      "reward": 0,
+      "region": "docstring_comment",
+      "questions": 25,
+      "base_ce": 0.00583235700341671,
+      "current_ce": 0.005935313751560294,
+      "mean_logp_delta": -0.00010295674814358335,
+      "mean_logp_ci95": [
+        -0.00027352948344628203,
+        1.8520312665941673e-05
+      ],
+      "mean_logp_improved_questions": 17,
+      "top1_delta": 0.0,
+      "top1_ci95": [
+        0.0,
+        0.0
+      ],
+      "top1_improved_questions": 0,
+      "ce_delta": 0.00010295674814358335
+    },
+    {
+      "model": "lr3e-05-step250",
+      "rate": 0.25,
+      "reward": 1,
+      "region": "all_answer",
+      "questions": 32,
+      "base_ce": 0.01630999565619473,
+      "current_ce": 0.016371044524294165,
+      "mean_logp_delta": -6.104886809943366e-05,
+      "mean_logp_ci95": [
+        -0.0002202987223665076,
+        7.019891288706503e-05
+      ],
+      "mean_logp_improved_questions": 20,
+      "top1_delta": 0.0,
+      "top1_ci95": [
+        0.0,
+        0.0
+      ],
+      "top1_improved_questions": 0,
+      "ce_delta": 6.104886809943366e-05
+    },
+    {
+      "model": "lr3e-05-step250",
+      "rate": 0.25,
+      "reward": 1,
+      "region": "code_eos",
+      "questions": 28,
+      "base_ce": 0.019785220803433794,
+      "current_ce": 0.019724605529818615,
+      "mean_logp_delta": 6.061527361518009e-05,
+      "mean_logp_ci95": [
+        -6.333674856965185e-06,
+        0.0001350603911914407
+      ],
+      "mean_logp_improved_questions": 17,
+      "top1_delta": 0.0,
+      "top1_ci95": [
+        0.0,
+        0.0
+      ],
+      "top1_improved_questions": 0,
+      "ce_delta": -6.061527361518009e-05
+    },
+    {
+      "model": "lr3e-05-step250",
+      "rate": 0.25,
+      "reward": 1,
+      "region": "docstring_comment",
+      "questions": 28,
+      "base_ce": 0.007410312033656575,
+      "current_ce": 0.00743214829470532,
+      "mean_logp_delta": -2.1836261048743415e-05,
+      "mean_logp_ci95": [
+        -0.0002441466384723867,
+        0.0001607231957824037
+      ],
+      "mean_logp_improved_questions": 19,
+      "top1_delta": 0.0,
+      "top1_ci95": [
+        0.0,
+        0.0
+      ],
+      "top1_improved_questions": 0,
+      "ce_delta": 2.1836261048743415e-05
+    },
+    {
+      "model": "lr3e-05-step250",
+      "rate": 0.25,
+      "reward": 0,
+      "region": "all_answer",
+      "questions": 32,
+      "base_ce": 0.06902106013988174,
+      "current_ce": 0.06920918207685389,
+      "mean_logp_delta": -0.00018812193697215207,
+      "mean_logp_ci95": [
+        -0.0002981139714890446,
+        -8.917875518221763e-05
+      ],
+      "mean_logp_improved_questions": 10,
+      "top1_delta": 0.00021114852279424667,
+      "top1_ci95": [
+        0.0,
+        0.00063344556838274
+      ],
+      "top1_improved_questions": 1,
+      "ce_delta": 0.00018812193697215207
+    },
+    {
+      "model": "lr3e-05-step250",
+      "rate": 0.25,
+      "reward": 0,
+      "region": "code_eos",
+      "questions": 25,
+      "base_ce": 0.10808414792845725,
+      "current_ce": 0.10826327741738169,
+      "mean_logp_delta": -0.00017912948892444546,
+      "mean_logp_ci95": [
+        -0.0003603364627997507,
+        -1.3248204868432367e-06
+      ],
+      "mean_logp_improved_questions": 11,
+      "top1_delta": 0.0004924237728118896,
+      "top1_ci95": [
+        0.0,
+        0.0014393925666809082
+      ],
+      "top1_improved_questions": 2,
+      "ce_delta": 0.00017912948892444546
+    },
+    {
+      "model": "lr3e-05-step250",
+      "rate": 0.25,
+      "reward": 0,
+      "region": "docstring_comment",
+      "questions": 25,
+      "base_ce": 0.004153155544444118,
+      "current_ce": 0.004316756858992505,
+      "mean_logp_delta": -0.0001636013145483872,
+      "mean_logp_ci95": [
+        -0.0004624473957844089,
+        4.044510559566561e-06
+      ],
+      "mean_logp_improved_questions": 17,
+      "top1_delta": 0.0,
+      "top1_ci95": [
+        0.0,
+        0.0
+      ],
+      "top1_improved_questions": 0,
+      "ce_delta": 0.0001636013145483872
+    }
+  ],
+  "protocol": {
+    "rates": [
+      1.0,
+      0.75,
+      0.25
+    ],
+    "partial_mask_replicates": 4,
+    "full_mask_replicates": 1,
+    "precision": "float32",
+    "answer_definition": "prefix excluded, first EOS included, PAD/MASK excluded",
+    "context": "Only unmasked eligible target tokens restored. All other suffix tokens always MASK.",
+    "uncertainty": "Question-cluster paired bootstrap after averaging mask replicates."
+  },
+  "limitations": [
+    "Teacher-forced visible target tokens, not actual sampler trajectories.",
+    "Failed program means reconstruction of that failed program, not a correct gold answer.",
+    "Code regions unavailable on invalid source or token alignment mismatch; coverage reported.",
+    "No ELBO weighting; only masked tokens scored. No model updates.",
+    "Same selected 32 training questions; not generalization or a causal proof of objective mismatch."
+  ]
+}

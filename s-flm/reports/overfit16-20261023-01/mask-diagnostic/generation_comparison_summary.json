@@ -1,0 +1,10 @@
+{
+  "1000": {
+    "identical_full_response_to_base": 9,
+    "identical_parseable_ast_without_docstring_to_base": 8
+  },
+  "3000": {
+    "identical_full_response_to_base": 3,
+    "identical_parseable_ast_without_docstring_to_base": 5
+  }
+}

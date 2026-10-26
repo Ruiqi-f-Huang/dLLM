@@ -1,0 +1,5216 @@
+{
+  "initial": {
+    "step": 0,
+    "parameter_delta_norm": 0.0,
+    "mask_scores": [
+      {
+        "mask": 0,
+        "mean_logp": -0.12061154733896728,
+        "original32_mean_logp": -0.11030343043239554,
+        "added96_mean_logp": -0.12404758630782453,
+        "per_program": [
+          {
+            "sample_id": "gsm8k_train_4824",
+            "mean_logp": -0.023242084309458733
+          },
+          {
+            "sample_id": "gsm8k_train_1869",
+            "mean_logp": -0.10163252055644989
+          },
+          {
+            "sample_id": "gsm8k_train_7310",
+            "mean_logp": -0.011753140017390251
+          },
+          {
+            "sample_id": "gsm8k_train_2237",
+            "mean_logp": -0.012721397913992405
+          },
+          {
+            "sample_id": "gsm8k_train_6478",
+            "mean_logp": -0.004439443815499544
+          },
+          {
+            "sample_id": "gsm8k_train_5778",
+            "mean_logp": -0.3549746572971344
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "mean_logp": -0.07505783438682556
+          },
+          {
+            "sample_id": "gsm8k_train_0112",
+            "mean_logp": -0.09470907598733902
+          },
+          {
+            "sample_id": "gsm8k_train_2214",
+            "mean_logp": -0.35897016525268555
+          },
+          {
+            "sample_id": "gsm8k_train_6976",
+            "mean_logp": -0.016317011788487434
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "mean_logp": -0.14232681691646576
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "mean_logp": -0.04068424180150032
+          },
+          {
+            "sample_id": "gsm8k_train_5854",
+            "mean_logp": -0.002659196499735117
+          },
+          {
+            "sample_id": "gsm8k_train_4402",
+            "mean_logp": -0.009374037384986877
+          },
+          {
+            "sample_id": "gsm8k_train_1172",
+            "mean_logp": -0.1866350620985031
+          },
+          {
+            "sample_id": "gsm8k_train_0186",
+            "mean_logp": -0.20522327721118927
+          },
+          {
+            "sample_id": "gsm8k_train_3525",
+            "mean_logp": -0.028559494763612747
+          },
+          {
+            "sample_id": "gsm8k_train_6583",
+            "mean_logp": -0.1342524141073227
+          },
+          {
+            "sample_id": "gsm8k_train_5468",
+            "mean_logp": -0.3563184142112732
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "mean_logp": -0.035321224480867386
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "mean_logp": -0.01004175003618002
+          },
+          {
+            "sample_id": "gsm8k_train_7271",
+            "mean_logp": -0.03866443410515785
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "mean_logp": -0.3157312273979187
+          },
+          {
+            "sample_id": "gsm8k_train_4566",
+            "mean_logp": -0.007113418076187372
+          },
+          {
+            "sample_id": "gsm8k_train_0280",
+            "mean_logp": -0.008813135325908661
+          },
+          {
+            "sample_id": "gsm8k_train_0499",
+            "mean_logp": -0.0032812582794576883
+          },
+          {
+            "sample_id": "gsm8k_train_1370",
+            "mean_logp": -0.008727043867111206
+          },
+          {
+            "sample_id": "gsm8k_train_4248",
+            "mean_logp": -0.014699357561767101
+          },
+          {
+            "sample_id": "gsm8k_train_0358",
+            "mean_logp": -0.06530743092298508
+          },
+          {
+            "sample_id": "gsm8k_train_4888",
+            "mean_logp": -0.08090917021036148
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "mean_logp": -0.06515238434076309
+          },
+          {
+            "sample_id": "gsm8k_train_5190",
+            "mean_logp": -0.7160976529121399
+          },
+          {
+            "sample_id": "gsm8k_train_5821",
+            "mean_logp": -0.08298012614250183
+          },
+          {
+            "sample_id": "gsm8k_train_7306",
+            "mean_logp": -0.07938335090875626
+          },
+          {
+            "sample_id": "gsm8k_train_5841",
+            "mean_logp": -0.007163196336477995
+          },
+          {
+            "sample_id": "gsm8k_train_5223",
+            "mean_logp": -0.04521652311086655
+          },
+          {
+            "sample_id": "gsm8k_train_4997",
+            "mean_logp": -0.36550670862197876
+          },
+          {
+            "sample_id": "gsm8k_train_0610",
+            "mean_logp": -0.3557136356830597
+          },
+          {
+            "sample_id": "gsm8k_train_4005",
+            "mean_logp": -0.06129974126815796
+          },
+          {
+            "sample_id": "gsm8k_train_6766",
+            "mean_logp": -0.015313217416405678
+          },
+          {
+            "sample_id": "gsm8k_train_3229",
+            "mean_logp": -0.6128478646278381
+          },
+          {
+            "sample_id": "gsm8k_train_2286",
+            "mean_logp": -0.10227036476135254
+          },
+          {
+            "sample_id": "gsm8k_train_3967",
+            "mean_logp": -0.33896583318710327
+          },
+          {
+            "sample_id": "gsm8k_train_3441",
+            "mean_logp": -0.1922527253627777
+          },
+          {
+            "sample_id": "gsm8k_train_6055",
+            "mean_logp": -0.013993850909173489
+          },
+          {
+            "sample_id": "gsm8k_train_4689",
+            "mean_logp": -0.1410021036863327
+          },
+          {
+            "sample_id": "gsm8k_train_4106",
+            "mean_logp": -0.036722999066114426
+          },
+          {
+            "sample_id": "gsm8k_train_0662",
+            "mean_logp": -0.3883281350135803
+          },
+          {
+            "sample_id": "gsm8k_train_7048",
+            "mean_logp": -0.0209336057305336
+          },
+          {
+            "sample_id": "gsm8k_train_6183",
+            "mean_logp": -0.3178713023662567
+          },
+          {
+            "sample_id": "gsm8k_train_7144",
+            "mean_logp": -0.4767068028450012
+          },
+          {
+            "sample_id": "gsm8k_train_3654",
+            "mean_logp": -0.009439715184271336
+          },
+          {
+            "sample_id": "gsm8k_train_6099",
+            "mean_logp": -0.013435589149594307
+          },
+          {
+            "sample_id": "gsm8k_train_3356",
+            "mean_logp": -0.08194953948259354
+          },
+          {
+            "sample_id": "gsm8k_train_1610",
+            "mean_logp": -0.7419895529747009
+          },
+          {
+            "sample_id": "gsm8k_train_4605",
+            "mean_logp": -0.0530761182308197
+          },
+          {
+            "sample_id": "gsm8k_train_1307",
+            "mean_logp": -0.15678361058235168
+          },
+          {
+            "sample_id": "gsm8k_train_3701",
+            "mean_logp": -0.6937075257301331
+          },
+          {
+            "sample_id": "gsm8k_train_5665",
+            "mean_logp": -0.09284193813800812
+          },
+          {
+            "sample_id": "gsm8k_train_5227",
+            "mean_logp": -0.11248289048671722
+          },
+          {
+            "sample_id": "gsm8k_train_0330",
+            "mean_logp": -0.2273099422454834
+          },
+          {
+            "sample_id": "gsm8k_train_0654",
+            "mean_logp": -0.19482402503490448
+          },
+          {
+            "sample_id": "gsm8k_train_6189",
+            "mean_logp": -0.01814248412847519
+          },
+          {
+            "sample_id": "gsm8k_train_7257",
+            "mean_logp": -0.4926809072494507
+          },
+          {
+            "sample_id": "gsm8k_train_1037",
+            "mean_logp": -0.24065493047237396
+          },
+          {
+            "sample_id": "gsm8k_train_7007",
+            "mean_logp": -0.16823233664035797
+          },
+          {
+            "sample_id": "gsm8k_train_0842",
+            "mean_logp": -0.015987800434231758
+          },
+          {
+            "sample_id": "gsm8k_train_6740",
+            "mean_logp": -0.004668422043323517
+          },
+          {
+            "sample_id": "gsm8k_train_3023",
+            "mean_logp": -0.18193325400352478
+          },
+          {
+            "sample_id": "gsm8k_train_6227",
+            "mean_logp": -0.027679624035954475
+          },
+          {
+            "sample_id": "gsm8k_train_0344",
+            "mean_logp": -0.03960134834051132
+          },
+          {
+            "sample_id": "gsm8k_train_4766",
+            "mean_logp": -0.023636817932128906
+          },
+          {
+            "sample_id": "gsm8k_train_2328",
+            "mean_logp": -0.00984908640384674
+          },
+          {
+            "sample_id": "gsm8k_train_2812",
+            "mean_logp": -0.07479837536811829
+          },
+          {
+            "sample_id": "gsm8k_train_7134",
+            "mean_logp": -0.018501024693250656
+          },
+          {
+            "sample_id": "gsm8k_train_7355",
+            "mean_logp": -0.21700763702392578
+          },
+          {
+            "sample_id": "gsm8k_train_1020",
+            "mean_logp": -0.07773859053850174
+          },
+          {
+            "sample_id": "gsm8k_train_2804",
+            "mean_logp": -0.0003688335418701172
+          },
+          {
+            "sample_id": "gsm8k_train_3774",
+            "mean_logp": -0.003012331435456872
+          },
+          {
+            "sample_id": "gsm8k_train_1415",
+            "mean_logp": -0.8534197807312012
+          },
+          {
+            "sample_id": "gsm8k_train_2737",
+            "mean_logp": -0.1894097477197647
+          },
+          {
+            "sample_id": "gsm8k_train_5773",
+            "mean_logp": -0.09073769301176071
+          },
+          {
+            "sample_id": "gsm8k_train_6139",
+            "mean_logp": -0.017611976712942123
+          },
+          {
+            "sample_id": "gsm8k_train_5737",
+            "mean_logp": -0.0020712092518806458
+          },
+          {
+            "sample_id": "gsm8k_train_4810",
+            "mean_logp": -0.03392099216580391
+          },
+          {
+            "sample_id": "gsm8k_train_6017",
+            "mean_logp": -0.07464447617530823
+          },
+          {
+            "sample_id": "gsm8k_train_2632",
+            "mean_logp": -0.18659524619579315
+          },
+          {
+            "sample_id": "gsm8k_train_2254",
+            "mean_logp": -0.028437769040465355
+          },
+          {
+            "sample_id": "gsm8k_train_3569",
+            "mean_logp": -0.04735720157623291
+          },
+          {
+            "sample_id": "gsm8k_train_2707",
+            "mean_logp": -0.2580721378326416
+          },
+          {
+            "sample_id": "gsm8k_train_7168",
+            "mean_logp": -0.11476127058267593
+          },
+          {
+            "sample_id": "gsm8k_train_2629",
+            "mean_logp": -0.0443289652466774
+          },
+          {
+            "sample_id": "gsm8k_train_3618",
+            "mean_logp": -0.17464737594127655
+          },
+          {
+            "sample_id": "gsm8k_train_1449",
+            "mean_logp": -0.026212142780423164
+          },
+          {
+            "sample_id": "gsm8k_train_4261",
+            "mean_logp": -0.027080608531832695
+          },
+          {
+            "sample_id": "gsm8k_train_6305",
+            "mean_logp": -0.27649495005607605
+          },
+          {
+            "sample_id": "gsm8k_train_5365",
+            "mean_logp": -0.0047528925351798534
+          },
+          {
+            "sample_id": "gsm8k_train_4330",
+            "mean_logp": -0.00047388076200149953
+          },
+          {
+            "sample_id": "gsm8k_train_2651",
+            "mean_logp": -0.012373637408018112
+          },
+          {
+            "sample_id": "gsm8k_train_5099",
+            "mean_logp": -0.005090190563350916
+          },
+          {
+            "sample_id": "gsm8k_train_0747",
+            "mean_logp": -0.006488776300102472
+          },
+          {
+            "sample_id": "gsm8k_train_2305",
+            "mean_logp": -0.4217897951602936
+          },
+          {
+            "sample_id": "gsm8k_train_3183",
+            "mean_logp": -0.0012475616531446576
+          },
+          {
+            "sample_id": "gsm8k_train_6876",
+            "mean_logp": -0.00048119918210431933
+          },
+          {
+            "sample_id": "gsm8k_train_4144",
+            "mean_logp": -0.007194793317466974
+          },
+          {
+            "sample_id": "gsm8k_train_4487",
+            "mean_logp": -0.04921583831310272
+          },
+          {
+            "sample_id": "gsm8k_train_6299",
+            "mean_logp": -0.021610552445054054
+          },
+          {
+            "sample_id": "gsm8k_train_7201",
+            "mean_logp": -0.07165549695491791
+          },
+          {
+            "sample_id": "gsm8k_train_6446",
+            "mean_logp": -0.246196448802948
+          },
+          {
+            "sample_id": "gsm8k_train_5388",
+            "mean_logp": -0.012721635401248932
+          },
+          {
+            "sample_id": "gsm8k_train_5943",
+            "mean_logp": -0.0027074050158262253
+          },
+          {
+            "sample_id": "gsm8k_train_3777",
+            "mean_logp": -0.0014845915138721466
+          },
+          {
+            "sample_id": "gsm8k_train_7434",
+            "mean_logp": -0.002596057252958417
+          },
+          {
+            "sample_id": "gsm8k_train_3753",
+            "mean_logp": -0.041673123836517334
+          },
+          {
+            "sample_id": "gsm8k_train_3128",
+            "mean_logp": -0.020223919302225113
+          },
+          {
+            "sample_id": "gsm8k_train_1378",
+            "mean_logp": -0.003561466932296753
+          },
+          {
+            "sample_id": "gsm8k_train_5402",
+            "mean_logp": -0.00708548491820693
+          },
+          {
+            "sample_id": "gsm8k_train_1083",
+            "mean_logp": -0.00354221579618752
+          },
+          {
+            "sample_id": "gsm8k_train_1697",
+            "mean_logp": -0.4806663990020752
+          },
+          {
+            "sample_id": "gsm8k_train_2138",
+            "mean_logp": -0.003548738081008196
+          },
+          {
+            "sample_id": "gsm8k_train_4439",
+            "mean_logp": -0.058618027716875076
+          },
+          {
+            "sample_id": "gsm8k_train_5495",
+            "mean_logp": -0.05204206332564354
+          },
+          {
+            "sample_id": "gsm8k_train_1360",
+            "mean_logp": -0.002257919404655695
+          },
+          {
+            "sample_id": "gsm8k_train_3061",
+            "mean_logp": -0.021308597177267075
+          },
+          {
+            "sample_id": "gsm8k_train_5839",
+            "mean_logp": -0.027622327208518982
+          },
+          {
+            "sample_id": "gsm8k_train_4835",
+            "mean_logp": -0.01666395738720894
+          },
+          {
+            "sample_id": "gsm8k_train_3139",
+            "mean_logp": -0.1260279268026352
+          },
+          {
+            "sample_id": "gsm8k_train_1132",
+            "mean_logp": -0.08303548395633698
+          }
+        ]
+      },
+      {
+        "mask": 1,
+        "mean_logp": -0.13874995955586655,
+        "original32_mean_logp": -0.14850413842668786,
+        "added96_mean_logp": -0.13549856659892612,
+        "per_program": [
+          {
+            "sample_id": "gsm8k_train_4824",
+            "mean_logp": -0.06524749100208282
+          },
+          {
+            "sample_id": "gsm8k_train_1869",
+            "mean_logp": -0.18442372977733612
+          },
+          {
+            "sample_id": "gsm8k_train_7310",
+            "mean_logp": -0.00028067899984307587
+          },
+          {
+            "sample_id": "gsm8k_train_2237",
+            "mean_logp": -0.014849056489765644
+          },
+          {
+            "sample_id": "gsm8k_train_6478",
+            "mean_logp": -0.004975131247192621
+          },
+          {
+            "sample_id": "gsm8k_train_5778",
+            "mean_logp": -0.19154517352581024
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "mean_logp": -0.05085108056664467
+          },
+          {
+            "sample_id": "gsm8k_train_0112",
+            "mean_logp": -0.11335708945989609
+          },
+          {
+            "sample_id": "gsm8k_train_2214",
+            "mean_logp": -0.5197014808654785
+          },
+          {
+            "sample_id": "gsm8k_train_6976",
+            "mean_logp": -0.14658869802951813
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "mean_logp": -0.048234716057777405
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "mean_logp": -0.08202759921550751
+          },
+          {
+            "sample_id": "gsm8k_train_5854",
+            "mean_logp": -0.02121288888156414
+          },
+          {
+            "sample_id": "gsm8k_train_4402",
+            "mean_logp": -0.04111160337924957
+          },
+          {
+            "sample_id": "gsm8k_train_1172",
+            "mean_logp": -0.39476004242897034
+          },
+          {
+            "sample_id": "gsm8k_train_0186",
+            "mean_logp": -0.2056833654642105
+          },
+          {
+            "sample_id": "gsm8k_train_3525",
+            "mean_logp": -0.05561491474509239
+          },
+          {
+            "sample_id": "gsm8k_train_6583",
+            "mean_logp": -0.03179585188627243
+          },
+          {
+            "sample_id": "gsm8k_train_5468",
+            "mean_logp": -0.427345871925354
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "mean_logp": -0.03254209831357002
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "mean_logp": -0.019219765439629555
+          },
+          {
+            "sample_id": "gsm8k_train_7271",
+            "mean_logp": -0.017803199589252472
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "mean_logp": -0.11470087617635727
+          },
+          {
+            "sample_id": "gsm8k_train_4566",
+            "mean_logp": -0.0019026059890165925
+          },
+          {
+            "sample_id": "gsm8k_train_0280",
+            "mean_logp": -0.07479759305715561
+          },
+          {
+            "sample_id": "gsm8k_train_0499",
+            "mean_logp": -0.02558416873216629
+          },
+          {
+            "sample_id": "gsm8k_train_1370",
+            "mean_logp": -0.01038083340972662
+          },
+          {
+            "sample_id": "gsm8k_train_4248",
+            "mean_logp": -0.04481349512934685
+          },
+          {
+            "sample_id": "gsm8k_train_0358",
+            "mean_logp": -0.04328268766403198
+          },
+          {
+            "sample_id": "gsm8k_train_4888",
+            "mean_logp": -0.022163882851600647
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "mean_logp": -0.14395667612552643
+          },
+          {
+            "sample_id": "gsm8k_train_5190",
+            "mean_logp": -1.601378083229065
+          },
+          {
+            "sample_id": "gsm8k_train_5821",
+            "mean_logp": -0.014958632178604603
+          },
+          {
+            "sample_id": "gsm8k_train_7306",
+            "mean_logp": -0.07404543459415436
+          },
+          {
+            "sample_id": "gsm8k_train_5841",
+            "mean_logp": -0.02405235543847084
+          },
+          {
+            "sample_id": "gsm8k_train_5223",
+            "mean_logp": -0.002733783796429634
+          },
+          {
+            "sample_id": "gsm8k_train_4997",
+            "mean_logp": -0.0054567474871873856
+          },
+          {
+            "sample_id": "gsm8k_train_0610",
+            "mean_logp": -0.10354036092758179
+          },
+          {
+            "sample_id": "gsm8k_train_4005",
+            "mean_logp": -0.031842879951000214
+          },
+          {
+            "sample_id": "gsm8k_train_6766",
+            "mean_logp": -0.011970367282629013
+          },
+          {
+            "sample_id": "gsm8k_train_3229",
+            "mean_logp": -0.0008584099705331028
+          },
+          {
+            "sample_id": "gsm8k_train_2286",
+            "mean_logp": -0.016063416376709938
+          },
+          {
+            "sample_id": "gsm8k_train_3967",
+            "mean_logp": -0.3137083351612091
+          },
+          {
+            "sample_id": "gsm8k_train_3441",
+            "mean_logp": -0.027175122871994972
+          },
+          {
+            "sample_id": "gsm8k_train_6055",
+            "mean_logp": -0.005574291571974754
+          },
+          {
+            "sample_id": "gsm8k_train_4689",
+            "mean_logp": -0.8863279223442078
+          },
+          {
+            "sample_id": "gsm8k_train_4106",
+            "mean_logp": -0.040307238698005676
+          },
+          {
+            "sample_id": "gsm8k_train_0662",
+            "mean_logp": -1.6634995937347412
+          },
+          {
+            "sample_id": "gsm8k_train_7048",
+            "mean_logp": -0.014285382814705372
+          },
+          {
+            "sample_id": "gsm8k_train_6183",
+            "mean_logp": -0.14915767312049866
+          },
+          {
+            "sample_id": "gsm8k_train_7144",
+            "mean_logp": -0.37808868288993835
+          },
+          {
+            "sample_id": "gsm8k_train_3654",
+            "mean_logp": -0.03011292777955532
+          },
+          {
+            "sample_id": "gsm8k_train_6099",
+            "mean_logp": -0.001059439848177135
+          },
+          {
+            "sample_id": "gsm8k_train_3356",
+            "mean_logp": -0.24061182141304016
+          },
+          {
+            "sample_id": "gsm8k_train_1610",
+            "mean_logp": -0.16309987008571625
+          },
+          {
+            "sample_id": "gsm8k_train_4605",
+            "mean_logp": -0.0741947814822197
+          },
+          {
+            "sample_id": "gsm8k_train_1307",
+            "mean_logp": -0.3709562122821808
+          },
+          {
+            "sample_id": "gsm8k_train_3701",
+            "mean_logp": -1.1947165727615356
+          },
+          {
+            "sample_id": "gsm8k_train_5665",
+            "mean_logp": -0.0004952009185217321
+          },
+          {
+            "sample_id": "gsm8k_train_5227",
+            "mean_logp": -0.15711604058742523
+          },
+          {
+            "sample_id": "gsm8k_train_0330",
+            "mean_logp": -0.9187256693840027
+          },
+          {
+            "sample_id": "gsm8k_train_0654",
+            "mean_logp": -0.0797128677368164
+          },
+          {
+            "sample_id": "gsm8k_train_6189",
+            "mean_logp": -0.006473521701991558
+          },
+          {
+            "sample_id": "gsm8k_train_7257",
+            "mean_logp": -0.05654946342110634
+          },
+          {
+            "sample_id": "gsm8k_train_1037",
+            "mean_logp": -0.024218475446105003
+          },
+          {
+            "sample_id": "gsm8k_train_7007",
+            "mean_logp": -0.20025955140590668
+          },
+          {
+            "sample_id": "gsm8k_train_0842",
+            "mean_logp": -0.16780774295330048
+          },
+          {
+            "sample_id": "gsm8k_train_6740",
+            "mean_logp": -0.008155636489391327
+          },
+          {
+            "sample_id": "gsm8k_train_3023",
+            "mean_logp": -0.0660058930516243
+          },
+          {
+            "sample_id": "gsm8k_train_6227",
+            "mean_logp": -0.04580671340227127
+          },
+          {
+            "sample_id": "gsm8k_train_0344",
+            "mean_logp": -0.9388799667358398
+          },
+          {
+            "sample_id": "gsm8k_train_4766",
+            "mean_logp": -0.06312601268291473
+          },
+          {
+            "sample_id": "gsm8k_train_2328",
+            "mean_logp": -0.009883057326078415
+          },
+          {
+            "sample_id": "gsm8k_train_2812",
+            "mean_logp": -0.10106360912322998
+          },
+          {
+            "sample_id": "gsm8k_train_7134",
+            "mean_logp": -0.0003730928583536297
+          },
+          {
+            "sample_id": "gsm8k_train_7355",
+            "mean_logp": -0.12080184370279312
+          },
+          {
+            "sample_id": "gsm8k_train_1020",
+            "mean_logp": -0.46000927686691284
+          },
+          {
+            "sample_id": "gsm8k_train_2804",
+            "mean_logp": -0.0005064606666564941
+          },
+          {
+            "sample_id": "gsm8k_train_3774",
+            "mean_logp": -0.0009183650836348534
+          },
+          {
+            "sample_id": "gsm8k_train_1415",
+            "mean_logp": -0.0883588120341301
+          },
+          {
+            "sample_id": "gsm8k_train_2737",
+            "mean_logp": -0.13811035454273224
+          },
+          {
+            "sample_id": "gsm8k_train_5773",
+            "mean_logp": -0.24899297952651978
+          },
+          {
+            "sample_id": "gsm8k_train_6139",
+            "mean_logp": -0.019144207239151
+          },
+          {
+            "sample_id": "gsm8k_train_5737",
+            "mean_logp": -0.028799496591091156
+          },
+          {
+            "sample_id": "gsm8k_train_4810",
+            "mean_logp": -0.03562319651246071
+          },
+          {
+            "sample_id": "gsm8k_train_6017",
+            "mean_logp": -0.23174333572387695
+          },
+          {
+            "sample_id": "gsm8k_train_2632",
+            "mean_logp": -0.13704419136047363
+          },
+          {
+            "sample_id": "gsm8k_train_2254",
+            "mean_logp": -0.05626605823636055
+          },
+          {
+            "sample_id": "gsm8k_train_3569",
+            "mean_logp": -0.028835663571953773
+          },
+          {
+            "sample_id": "gsm8k_train_2707",
+            "mean_logp": -0.0424552820622921
+          },
+          {
+            "sample_id": "gsm8k_train_7168",
+            "mean_logp": -0.3041788935661316
+          },
+          {
+            "sample_id": "gsm8k_train_2629",
+            "mean_logp": -0.09765782207250595
+          },
+          {
+            "sample_id": "gsm8k_train_3618",
+            "mean_logp": -0.09124810248613358
+          },
+          {
+            "sample_id": "gsm8k_train_1449",
+            "mean_logp": -0.02746795304119587
+          },
+          {
+            "sample_id": "gsm8k_train_4261",
+            "mean_logp": -0.14467717707157135
+          },
+          {
+            "sample_id": "gsm8k_train_6305",
+            "mean_logp": -0.003453564364463091
+          },
+          {
+            "sample_id": "gsm8k_train_5365",
+            "mean_logp": -0.004252971615642309
+          },
+          {
+            "sample_id": "gsm8k_train_4330",
+            "mean_logp": -0.011545658111572266
+          },
+          {
+            "sample_id": "gsm8k_train_2651",
+            "mean_logp": -0.043008964508771896
+          },
+          {
+            "sample_id": "gsm8k_train_5099",
+            "mean_logp": -0.019323626533150673
+          },
+          {
+            "sample_id": "gsm8k_train_0747",
+            "mean_logp": -0.023408489301800728
+          },
+          {
+            "sample_id": "gsm8k_train_2305",
+            "mean_logp": -0.23876971006393433
+          },
+          {
+            "sample_id": "gsm8k_train_3183",
+            "mean_logp": -0.08008106052875519
+          },
+          {
+            "sample_id": "gsm8k_train_6876",
+            "mean_logp": -0.018271636217832565
+          },
+          {
+            "sample_id": "gsm8k_train_4144",
+            "mean_logp": -0.027386832982301712
+          },
+          {
+            "sample_id": "gsm8k_train_4487",
+            "mean_logp": -0.01778440736234188
+          },
+          {
+            "sample_id": "gsm8k_train_6299",
+            "mean_logp": -0.01729612983763218
+          },
+          {
+            "sample_id": "gsm8k_train_7201",
+            "mean_logp": -0.4938037097454071
+          },
+          {
+            "sample_id": "gsm8k_train_6446",
+            "mean_logp": -0.24226966500282288
+          },
+          {
+            "sample_id": "gsm8k_train_5388",
+            "mean_logp": -0.008586455136537552
+          },
+          {
+            "sample_id": "gsm8k_train_5943",
+            "mean_logp": -0.002648258116096258
+          },
+          {
+            "sample_id": "gsm8k_train_3777",
+            "mean_logp": -0.009333967231214046
+          },
+          {
+            "sample_id": "gsm8k_train_7434",
+            "mean_logp": -0.007788794580847025
+          },
+          {
+            "sample_id": "gsm8k_train_3753",
+            "mean_logp": -0.002797618042677641
+          },
+          {
+            "sample_id": "gsm8k_train_3128",
+            "mean_logp": -0.03850264474749565
+          },
+          {
+            "sample_id": "gsm8k_train_1378",
+            "mean_logp": -0.00032573938369750977
+          },
+          {
+            "sample_id": "gsm8k_train_5402",
+            "mean_logp": -0.04092967137694359
+          },
+          {
+            "sample_id": "gsm8k_train_1083",
+            "mean_logp": -0.0019800523295998573
+          },
+          {
+            "sample_id": "gsm8k_train_1697",
+            "mean_logp": -0.026487387716770172
+          },
+          {
+            "sample_id": "gsm8k_train_2138",
+            "mean_logp": -0.0001127655414165929
+          },
+          {
+            "sample_id": "gsm8k_train_4439",
+            "mean_logp": -0.10009346157312393
+          },
+          {
+            "sample_id": "gsm8k_train_5495",
+            "mean_logp": -0.015400922857224941
+          },
+          {
+            "sample_id": "gsm8k_train_1360",
+            "mean_logp": -0.002925920533016324
+          },
+          {
+            "sample_id": "gsm8k_train_3061",
+            "mean_logp": -0.016424071043729782
+          },
+          {
+            "sample_id": "gsm8k_train_5839",
+            "mean_logp": -0.011947388760745525
+          },
+          {
+            "sample_id": "gsm8k_train_4835",
+            "mean_logp": -0.05532940477132797
+          },
+          {
+            "sample_id": "gsm8k_train_3139",
+            "mean_logp": -0.32223889231681824
+          },
+          {
+            "sample_id": "gsm8k_train_1132",
+            "mean_logp": -0.11746230721473694
+          }
+        ]
+      },
+      {
+        "mask": 2,
+        "mean_logp": -0.11573175704006644,
+        "original32_mean_logp": -0.1299722794101399,
+        "added96_mean_logp": -0.11098491625004196,
+        "per_program": [
+          {
+            "sample_id": "gsm8k_train_4824",
+            "mean_logp": -0.02288418635725975
+          },
+          {
+            "sample_id": "gsm8k_train_1869",
+            "mean_logp": -0.1487250179052353
+          },
+          {
+            "sample_id": "gsm8k_train_7310",
+            "mean_logp": -0.018149157986044884
+          },
+          {
+            "sample_id": "gsm8k_train_2237",
+            "mean_logp": -0.6627759337425232
+          },
+          {
+            "sample_id": "gsm8k_train_6478",
+            "mean_logp": -0.011077668517827988
+          },
+          {
+            "sample_id": "gsm8k_train_5778",
+            "mean_logp": -0.10374286770820618
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "mean_logp": -0.12479451298713684
+          },
+          {
+            "sample_id": "gsm8k_train_0112",
+            "mean_logp": -0.02471207082271576
+          },
+          {
+            "sample_id": "gsm8k_train_2214",
+            "mean_logp": -0.001170522184111178
+          },
+          {
+            "sample_id": "gsm8k_train_6976",
+            "mean_logp": -0.0008517198730260134
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "mean_logp": -0.3813702166080475
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "mean_logp": -0.3438109755516052
+          },
+          {
+            "sample_id": "gsm8k_train_5854",
+            "mean_logp": -0.0028286187443882227
+          },
+          {
+            "sample_id": "gsm8k_train_4402",
+            "mean_logp": -0.033934302628040314
+          },
+          {
+            "sample_id": "gsm8k_train_1172",
+            "mean_logp": -0.1739269644021988
+          },
+          {
+            "sample_id": "gsm8k_train_0186",
+            "mean_logp": -0.1734071671962738
+          },
+          {
+            "sample_id": "gsm8k_train_3525",
+            "mean_logp": -0.1892334520816803
+          },
+          {
+            "sample_id": "gsm8k_train_6583",
+            "mean_logp": -0.044187162071466446
+          },
+          {
+            "sample_id": "gsm8k_train_5468",
+            "mean_logp": -0.16555972397327423
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "mean_logp": -0.05118425190448761
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "mean_logp": -0.02401316538453102
+          },
+          {
+            "sample_id": "gsm8k_train_7271",
+            "mean_logp": -0.016487114131450653
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "mean_logp": -0.15201909840106964
+          },
+          {
+            "sample_id": "gsm8k_train_4566",
+            "mean_logp": -0.015523124486207962
+          },
+          {
+            "sample_id": "gsm8k_train_0280",
+            "mean_logp": -0.07609353214502335
+          },
+          {
+            "sample_id": "gsm8k_train_0499",
+            "mean_logp": -0.025962326675653458
+          },
+          {
+            "sample_id": "gsm8k_train_1370",
+            "mean_logp": -0.31650689244270325
+          },
+          {
+            "sample_id": "gsm8k_train_4248",
+            "mean_logp": -0.0053571066819131374
+          },
+          {
+            "sample_id": "gsm8k_train_0358",
+            "mean_logp": -0.09201612323522568
+          },
+          {
+            "sample_id": "gsm8k_train_4888",
+            "mean_logp": -0.05293945595622063
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "mean_logp": -0.0681958794593811
+          },
+          {
+            "sample_id": "gsm8k_train_5190",
+            "mean_logp": -0.6356726288795471
+          },
+          {
+            "sample_id": "gsm8k_train_5821",
+            "mean_logp": -0.07404099404811859
+          },
+          {
+            "sample_id": "gsm8k_train_7306",
+            "mean_logp": -0.0010601161047816277
+          },
+          {
+            "sample_id": "gsm8k_train_5841",
+            "mean_logp": -0.006318177096545696
+          },
+          {
+            "sample_id": "gsm8k_train_5223",
+            "mean_logp": -0.002447471721097827
+          },
+          {
+            "sample_id": "gsm8k_train_4997",
+            "mean_logp": -0.016373788937926292
+          },
+          {
+            "sample_id": "gsm8k_train_0610",
+            "mean_logp": -0.04986659437417984
+          },
+          {
+            "sample_id": "gsm8k_train_4005",
+            "mean_logp": -0.0449967235326767
+          },
+          {
+            "sample_id": "gsm8k_train_6766",
+            "mean_logp": -0.011765411123633385
+          },
+          {
+            "sample_id": "gsm8k_train_3229",
+            "mean_logp": -0.6335111856460571
+          },
+          {
+            "sample_id": "gsm8k_train_2286",
+            "mean_logp": -0.008860950358211994
+          },
+          {
+            "sample_id": "gsm8k_train_3967",
+            "mean_logp": -0.23774439096450806
+          },
+          {
+            "sample_id": "gsm8k_train_3441",
+            "mean_logp": -0.1301528960466385
+          },
+          {
+            "sample_id": "gsm8k_train_6055",
+            "mean_logp": -0.0006890231743454933
+          },
+          {
+            "sample_id": "gsm8k_train_4689",
+            "mean_logp": -0.12137427181005478
+          },
+          {
+            "sample_id": "gsm8k_train_4106",
+            "mean_logp": -0.01698734052479267
+          },
+          {
+            "sample_id": "gsm8k_train_0662",
+            "mean_logp": -0.33980226516723633
+          },
+          {
+            "sample_id": "gsm8k_train_7048",
+            "mean_logp": -0.011289085261523724
+          },
+          {
+            "sample_id": "gsm8k_train_6183",
+            "mean_logp": -0.03416280820965767
+          },
+          {
+            "sample_id": "gsm8k_train_7144",
+            "mean_logp": -1.284069538116455
+          },
+          {
+            "sample_id": "gsm8k_train_3654",
+            "mean_logp": -0.0017979341791942716
+          },
+          {
+            "sample_id": "gsm8k_train_6099",
+            "mean_logp": -0.002420486882328987
+          },
+          {
+            "sample_id": "gsm8k_train_3356",
+            "mean_logp": -0.018271202221512794
+          },
+          {
+            "sample_id": "gsm8k_train_1610",
+            "mean_logp": -1.1093077659606934
+          },
+          {
+            "sample_id": "gsm8k_train_4605",
+            "mean_logp": -0.13076674938201904
+          },
+          {
+            "sample_id": "gsm8k_train_1307",
+            "mean_logp": -0.06499025225639343
+          },
+          {
+            "sample_id": "gsm8k_train_3701",
+            "mean_logp": -0.029067810624837875
+          },
+          {
+            "sample_id": "gsm8k_train_5665",
+            "mean_logp": -0.024610530585050583
+          },
+          {
+            "sample_id": "gsm8k_train_5227",
+            "mean_logp": -0.34922829270362854
+          },
+          {
+            "sample_id": "gsm8k_train_0330",
+            "mean_logp": -0.03363858163356781
+          },
+          {
+            "sample_id": "gsm8k_train_0654",
+            "mean_logp": -0.01850758120417595
+          },
+          {
+            "sample_id": "gsm8k_train_6189",
+            "mean_logp": -0.15869072079658508
+          },
+          {
+            "sample_id": "gsm8k_train_7257",
+            "mean_logp": -0.027497421950101852
+          },
+          {
+            "sample_id": "gsm8k_train_1037",
+            "mean_logp": -0.02635042928159237
+          },
+          {
+            "sample_id": "gsm8k_train_7007",
+            "mean_logp": -0.11109423637390137
+          },
+          {
+            "sample_id": "gsm8k_train_0842",
+            "mean_logp": -0.06304774433374405
+          },
+          {
+            "sample_id": "gsm8k_train_6740",
+            "mean_logp": -0.0011306855594739318
+          },
+          {
+            "sample_id": "gsm8k_train_3023",
+            "mean_logp": -0.23821750283241272
+          },
+          {
+            "sample_id": "gsm8k_train_6227",
+            "mean_logp": -0.04253728687763214
+          },
+          {
+            "sample_id": "gsm8k_train_0344",
+            "mean_logp": -0.15714265406131744
+          },
+          {
+            "sample_id": "gsm8k_train_4766",
+            "mean_logp": -0.006689369212836027
+          },
+          {
+            "sample_id": "gsm8k_train_2328",
+            "mean_logp": -0.0011572404764592648
+          },
+          {
+            "sample_id": "gsm8k_train_2812",
+            "mean_logp": -0.03171450272202492
+          },
+          {
+            "sample_id": "gsm8k_train_7134",
+            "mean_logp": -0.0341675728559494
+          },
+          {
+            "sample_id": "gsm8k_train_7355",
+            "mean_logp": -0.12100695818662643
+          },
+          {
+            "sample_id": "gsm8k_train_1020",
+            "mean_logp": -0.7683324217796326
+          },
+          {
+            "sample_id": "gsm8k_train_2804",
+            "mean_logp": -0.003482818603515625
+          },
+          {
+            "sample_id": "gsm8k_train_3774",
+            "mean_logp": -0.002575920894742012
+          },
+          {
+            "sample_id": "gsm8k_train_1415",
+            "mean_logp": -0.21059668064117432
+          },
+          {
+            "sample_id": "gsm8k_train_2737",
+            "mean_logp": -0.15102677047252655
+          },
+          {
+            "sample_id": "gsm8k_train_5773",
+            "mean_logp": -0.4302738606929779
+          },
+          {
+            "sample_id": "gsm8k_train_6139",
+            "mean_logp": -0.017891177907586098
+          },
+          {
+            "sample_id": "gsm8k_train_5737",
+            "mean_logp": -0.018370768055319786
+          },
+          {
+            "sample_id": "gsm8k_train_4810",
+            "mean_logp": -0.0959438905119896
+          },
+          {
+            "sample_id": "gsm8k_train_6017",
+            "mean_logp": -0.04487689211964607
+          },
+          {
+            "sample_id": "gsm8k_train_2632",
+            "mean_logp": -0.6528688073158264
+          },
+          {
+            "sample_id": "gsm8k_train_2254",
+            "mean_logp": -0.010509729385375977
+          },
+          {
+            "sample_id": "gsm8k_train_3569",
+            "mean_logp": -0.07380517572164536
+          },
+          {
+            "sample_id": "gsm8k_train_2707",
+            "mean_logp": -0.0031528703402727842
+          },
+          {
+            "sample_id": "gsm8k_train_7168",
+            "mean_logp": -0.23240257799625397
+          },
+          {
+            "sample_id": "gsm8k_train_2629",
+            "mean_logp": -0.20283128321170807
+          },
+          {
+            "sample_id": "gsm8k_train_3618",
+            "mean_logp": -0.15347495675086975
+          },
+          {
+            "sample_id": "gsm8k_train_1449",
+            "mean_logp": -0.08546721935272217
+          },
+          {
+            "sample_id": "gsm8k_train_4261",
+            "mean_logp": -0.06824352592229843
+          },
+          {
+            "sample_id": "gsm8k_train_6305",
+            "mean_logp": -0.2760429084300995
+          },
+          {
+            "sample_id": "gsm8k_train_5365",
+            "mean_logp": -0.0028084975201636553
+          },
+          {
+            "sample_id": "gsm8k_train_4330",
+            "mean_logp": -0.018135428428649902
+          },
+          {
+            "sample_id": "gsm8k_train_2651",
+            "mean_logp": -0.051488153636455536
+          },
+          {
+            "sample_id": "gsm8k_train_5099",
+            "mean_logp": -0.027509566396474838
+          },
+          {
+            "sample_id": "gsm8k_train_0747",
+            "mean_logp": -0.028659136965870857
+          },
+          {
+            "sample_id": "gsm8k_train_2305",
+            "mean_logp": -0.09990350902080536
+          },
+          {
+            "sample_id": "gsm8k_train_3183",
+            "mean_logp": -0.0006899736472405493
+          },
+          {
+            "sample_id": "gsm8k_train_6876",
+            "mean_logp": -0.001106593874283135
+          },
+          {
+            "sample_id": "gsm8k_train_4144",
+            "mean_logp": -0.018107175827026367
+          },
+          {
+            "sample_id": "gsm8k_train_4487",
+            "mean_logp": -0.08653109520673752
+          },
+          {
+            "sample_id": "gsm8k_train_6299",
+            "mean_logp": -0.013330908492207527
+          },
+          {
+            "sample_id": "gsm8k_train_7201",
+            "mean_logp": -0.14215973019599915
+          },
+          {
+            "sample_id": "gsm8k_train_6446",
+            "mean_logp": -0.06074272468686104
+          },
+          {
+            "sample_id": "gsm8k_train_5388",
+            "mean_logp": -0.005901083815842867
+          },
+          {
+            "sample_id": "gsm8k_train_5943",
+            "mean_logp": -0.00023853301536291838
+          },
+          {
+            "sample_id": "gsm8k_train_3777",
+            "mean_logp": -0.15206846594810486
+          },
+          {
+            "sample_id": "gsm8k_train_7434",
+            "mean_logp": -0.002625368069857359
+          },
+          {
+            "sample_id": "gsm8k_train_3753",
+            "mean_logp": -0.05821381136775017
+          },
+          {
+            "sample_id": "gsm8k_train_3128",
+            "mean_logp": -0.034828465431928635
+          },
+          {
+            "sample_id": "gsm8k_train_1378",
+            "mean_logp": -0.0030468106269836426
+          },
+          {
+            "sample_id": "gsm8k_train_5402",
+            "mean_logp": -0.024682559072971344
+          },
+          {
+            "sample_id": "gsm8k_train_1083",
+            "mean_logp": -0.0013512331061065197
+          },
+          {
+            "sample_id": "gsm8k_train_1697",
+            "mean_logp": -0.0014449420850723982
+          },
+          {
+            "sample_id": "gsm8k_train_2138",
+            "mean_logp": -0.0024658795446157455
+          },
+          {
+            "sample_id": "gsm8k_train_4439",
+            "mean_logp": -0.012214649468660355
+          },
+          {
+            "sample_id": "gsm8k_train_5495",
+            "mean_logp": -0.08251984417438507
+          },
+          {
+            "sample_id": "gsm8k_train_1360",
+            "mean_logp": -0.0006751775508746505
+          },
+          {
+            "sample_id": "gsm8k_train_3061",
+            "mean_logp": -0.025605807080864906
+          },
+          {
+            "sample_id": "gsm8k_train_5839",
+            "mean_logp": -0.04430048540234566
+          },
+          {
+            "sample_id": "gsm8k_train_4835",
+            "mean_logp": -0.018968284130096436
+          },
+          {
+            "sample_id": "gsm8k_train_3139",
+            "mean_logp": -0.17908787727355957
+          },
+          {
+            "sample_id": "gsm8k_train_1132",
+            "mean_logp": -0.12240538746118546
+          }
+        ]
+      },
+      {
+        "mask": 3,
+        "mean_logp": -0.10536416984541574,
+        "original32_mean_logp": -0.11688731730828295,
+        "added96_mean_logp": -0.10152312069112668,
+        "per_program": [
+          {
+            "sample_id": "gsm8k_train_4824",
+            "mean_logp": -0.029058611020445824
+          },
+          {
+            "sample_id": "gsm8k_train_1869",
+            "mean_logp": -0.37347105145454407
+          },
+          {
+            "sample_id": "gsm8k_train_7310",
+            "mean_logp": -0.0061103408224880695
+          },
+          {
+            "sample_id": "gsm8k_train_2237",
+            "mean_logp": -0.0973144993185997
+          },
+          {
+            "sample_id": "gsm8k_train_6478",
+            "mean_logp": -0.00302026211284101
+          },
+          {
+            "sample_id": "gsm8k_train_5778",
+            "mean_logp": -0.005828790832310915
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "mean_logp": -0.061291683465242386
+          },
+          {
+            "sample_id": "gsm8k_train_0112",
+            "mean_logp": -0.11626097559928894
+          },
+          {
+            "sample_id": "gsm8k_train_2214",
+            "mean_logp": -0.2788381576538086
+          },
+          {
+            "sample_id": "gsm8k_train_6976",
+            "mean_logp": -0.03001127764582634
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "mean_logp": -0.19479845464229584
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "mean_logp": -0.03094829060137272
+          },
+          {
+            "sample_id": "gsm8k_train_5854",
+            "mean_logp": -0.01591326855123043
+          },
+          {
+            "sample_id": "gsm8k_train_4402",
+            "mean_logp": -0.00392422080039978
+          },
+          {
+            "sample_id": "gsm8k_train_1172",
+            "mean_logp": -0.06472577899694443
+          },
+          {
+            "sample_id": "gsm8k_train_0186",
+            "mean_logp": -0.4204328954219818
+          },
+          {
+            "sample_id": "gsm8k_train_3525",
+            "mean_logp": -0.10833661258220673
+          },
+          {
+            "sample_id": "gsm8k_train_6583",
+            "mean_logp": -0.018192803487181664
+          },
+          {
+            "sample_id": "gsm8k_train_5468",
+            "mean_logp": -0.03315800055861473
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "mean_logp": -0.031064223498106003
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "mean_logp": -0.0020576624665409327
+          },
+          {
+            "sample_id": "gsm8k_train_7271",
+            "mean_logp": -0.0037839452270418406
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "mean_logp": -0.05890202522277832
+          },
+          {
+            "sample_id": "gsm8k_train_4566",
+            "mean_logp": -0.04631327465176582
+          },
+          {
+            "sample_id": "gsm8k_train_0280",
+            "mean_logp": -0.09002915769815445
+          },
+          {
+            "sample_id": "gsm8k_train_0499",
+            "mean_logp": -0.5241227149963379
+          },
+          {
+            "sample_id": "gsm8k_train_1370",
+            "mean_logp": -0.07077983766794205
+          },
+          {
+            "sample_id": "gsm8k_train_4248",
+            "mean_logp": -0.06574080884456635
+          },
+          {
+            "sample_id": "gsm8k_train_0358",
+            "mean_logp": -0.05076580494642258
+          },
+          {
+            "sample_id": "gsm8k_train_4888",
+            "mean_logp": -0.1805446594953537
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "mean_logp": -0.17712806165218353
+          },
+          {
+            "sample_id": "gsm8k_train_5190",
+            "mean_logp": -0.5475260019302368
+          },
+          {
+            "sample_id": "gsm8k_train_5821",
+            "mean_logp": -0.005431396886706352
+          },
+          {
+            "sample_id": "gsm8k_train_7306",
+            "mean_logp": -0.10033419728279114
+          },
+          {
+            "sample_id": "gsm8k_train_5841",
+            "mean_logp": -0.031413301825523376
+          },
+          {
+            "sample_id": "gsm8k_train_5223",
+            "mean_logp": -0.0035330771934241056
+          },
+          {
+            "sample_id": "gsm8k_train_4997",
+            "mean_logp": -0.10356564819812775
+          },
+          {
+            "sample_id": "gsm8k_train_0610",
+            "mean_logp": -0.09060896933078766
+          },
+          {
+            "sample_id": "gsm8k_train_4005",
+            "mean_logp": -0.06886991858482361
+          },
+          {
+            "sample_id": "gsm8k_train_6766",
+            "mean_logp": -0.015391448512673378
+          },
+          {
+            "sample_id": "gsm8k_train_3229",
+            "mean_logp": -0.09622395038604736
+          },
+          {
+            "sample_id": "gsm8k_train_2286",
+            "mean_logp": -0.03466377407312393
+          },
+          {
+            "sample_id": "gsm8k_train_3967",
+            "mean_logp": -0.0632900595664978
+          },
+          {
+            "sample_id": "gsm8k_train_3441",
+            "mean_logp": -0.03503333032131195
+          },
+          {
+            "sample_id": "gsm8k_train_6055",
+            "mean_logp": -0.02324315905570984
+          },
+          {
+            "sample_id": "gsm8k_train_4689",
+            "mean_logp": -0.18149125576019287
+          },
+          {
+            "sample_id": "gsm8k_train_4106",
+            "mean_logp": -0.00880663562566042
+          },
+          {
+            "sample_id": "gsm8k_train_0662",
+            "mean_logp": -0.5283586382865906
+          },
+          {
+            "sample_id": "gsm8k_train_7048",
+            "mean_logp": -0.022142931818962097
+          },
+          {
+            "sample_id": "gsm8k_train_6183",
+            "mean_logp": -0.21395759284496307
+          },
+          {
+            "sample_id": "gsm8k_train_7144",
+            "mean_logp": -0.17575384676456451
+          },
+          {
+            "sample_id": "gsm8k_train_3654",
+            "mean_logp": -0.0034238926600664854
+          },
+          {
+            "sample_id": "gsm8k_train_6099",
+            "mean_logp": -0.009062941186130047
+          },
+          {
+            "sample_id": "gsm8k_train_3356",
+            "mean_logp": -0.5977381467819214
+          },
+          {
+            "sample_id": "gsm8k_train_1610",
+            "mean_logp": -0.15447285771369934
+          },
+          {
+            "sample_id": "gsm8k_train_4605",
+            "mean_logp": -0.0840902179479599
+          },
+          {
+            "sample_id": "gsm8k_train_1307",
+            "mean_logp": -0.10734272748231888
+          },
+          {
+            "sample_id": "gsm8k_train_3701",
+            "mean_logp": -0.09859754145145416
+          },
+          {
+            "sample_id": "gsm8k_train_5665",
+            "mean_logp": -0.001466396264731884
+          },
+          {
+            "sample_id": "gsm8k_train_5227",
+            "mean_logp": -0.45199742913246155
+          },
+          {
+            "sample_id": "gsm8k_train_0330",
+            "mean_logp": -0.1494194120168686
+          },
+          {
+            "sample_id": "gsm8k_train_0654",
+            "mean_logp": -0.0032285640481859446
+          },
+          {
+            "sample_id": "gsm8k_train_6189",
+            "mean_logp": -0.026445064693689346
+          },
+          {
+            "sample_id": "gsm8k_train_7257",
+            "mean_logp": -0.09567372500896454
+          },
+          {
+            "sample_id": "gsm8k_train_1037",
+            "mean_logp": -0.4824569821357727
+          },
+          {
+            "sample_id": "gsm8k_train_7007",
+            "mean_logp": -0.2642993628978729
+          },
+          {
+            "sample_id": "gsm8k_train_0842",
+            "mean_logp": -0.26967889070510864
+          },
+          {
+            "sample_id": "gsm8k_train_6740",
+            "mean_logp": -0.004256818443536758
+          },
+          {
+            "sample_id": "gsm8k_train_3023",
+            "mean_logp": -0.28434088826179504
+          },
+          {
+            "sample_id": "gsm8k_train_6227",
+            "mean_logp": -0.04150383174419403
+          },
+          {
+            "sample_id": "gsm8k_train_0344",
+            "mean_logp": -0.1529931277036667
+          },
+          {
+            "sample_id": "gsm8k_train_4766",
+            "mean_logp": -0.09885060042142868
+          },
+          {
+            "sample_id": "gsm8k_train_2328",
+            "mean_logp": -0.031027447432279587
+          },
+          {
+            "sample_id": "gsm8k_train_2812",
+            "mean_logp": -0.025733916088938713
+          },
+          {
+            "sample_id": "gsm8k_train_7134",
+            "mean_logp": -0.027490191161632538
+          },
+          {
+            "sample_id": "gsm8k_train_7355",
+            "mean_logp": -0.12018145620822906
+          },
+          {
+            "sample_id": "gsm8k_train_1020",
+            "mean_logp": -0.14258907735347748
+          },
+          {
+            "sample_id": "gsm8k_train_2804",
+            "mean_logp": -0.3230956494808197
+          },
+          {
+            "sample_id": "gsm8k_train_3774",
+            "mean_logp": -0.001226890366524458
+          },
+          {
+            "sample_id": "gsm8k_train_1415",
+            "mean_logp": -0.162209615111351
+          },
+          {
+            "sample_id": "gsm8k_train_2737",
+            "mean_logp": -0.015218616463243961
+          },
+          {
+            "sample_id": "gsm8k_train_5773",
+            "mean_logp": -0.19176435470581055
+          },
+          {
+            "sample_id": "gsm8k_train_6139",
+            "mean_logp": -0.001514123985543847
+          },
+          {
+            "sample_id": "gsm8k_train_5737",
+            "mean_logp": -0.0261714905500412
+          },
+          {
+            "sample_id": "gsm8k_train_4810",
+            "mean_logp": -0.2750910818576813
+          },
+          {
+            "sample_id": "gsm8k_train_6017",
+            "mean_logp": -0.04290490224957466
+          },
+          {
+            "sample_id": "gsm8k_train_2632",
+            "mean_logp": -0.3358292877674103
+          },
+          {
+            "sample_id": "gsm8k_train_2254",
+            "mean_logp": -0.05526269972324371
+          },
+          {
+            "sample_id": "gsm8k_train_3569",
+            "mean_logp": -0.0050415461882948875
+          },
+          {
+            "sample_id": "gsm8k_train_2707",
+            "mean_logp": -0.024462182074785233
+          },
+          {
+            "sample_id": "gsm8k_train_7168",
+            "mean_logp": -0.15599395334720612
+          },
+          {
+            "sample_id": "gsm8k_train_2629",
+            "mean_logp": -0.1652013212442398
+          },
+          {
+            "sample_id": "gsm8k_train_3618",
+            "mean_logp": -0.045469656586647034
+          },
+          {
+            "sample_id": "gsm8k_train_1449",
+            "mean_logp": -0.04566723480820656
+          },
+          {
+            "sample_id": "gsm8k_train_4261",
+            "mean_logp": -0.11515813320875168
+          },
+          {
+            "sample_id": "gsm8k_train_6305",
+            "mean_logp": -0.37336060404777527
+          },
+          {
+            "sample_id": "gsm8k_train_5365",
+            "mean_logp": -0.0021161544136703014
+          },
+          {
+            "sample_id": "gsm8k_train_4330",
+            "mean_logp": -0.01660284958779812
+          },
+          {
+            "sample_id": "gsm8k_train_2651",
+            "mean_logp": -0.019078059121966362
+          },
+          {
+            "sample_id": "gsm8k_train_5099",
+            "mean_logp": -0.00918231438845396
+          },
+          {
+            "sample_id": "gsm8k_train_0747",
+            "mean_logp": -0.008987898007035255
+          },
+          {
+            "sample_id": "gsm8k_train_2305",
+            "mean_logp": -0.6088396906852722
+          },
+          {
+            "sample_id": "gsm8k_train_3183",
+            "mean_logp": -0.002102355472743511
+          },
+          {
+            "sample_id": "gsm8k_train_6876",
+            "mean_logp": -0.0007782314205542207
+          },
+          {
+            "sample_id": "gsm8k_train_4144",
+            "mean_logp": -0.02544647455215454
+          },
+          {
+            "sample_id": "gsm8k_train_4487",
+            "mean_logp": -0.25088074803352356
+          },
+          {
+            "sample_id": "gsm8k_train_6299",
+            "mean_logp": -0.01049791183322668
+          },
+          {
+            "sample_id": "gsm8k_train_7201",
+            "mean_logp": -0.05810030177235603
+          },
+          {
+            "sample_id": "gsm8k_train_6446",
+            "mean_logp": -0.04160052165389061
+          },
+          {
+            "sample_id": "gsm8k_train_5388",
+            "mean_logp": -0.010920349508523941
+          },
+          {
+            "sample_id": "gsm8k_train_5943",
+            "mean_logp": -0.007686309982091188
+          },
+          {
+            "sample_id": "gsm8k_train_3777",
+            "mean_logp": -0.07241442799568176
+          },
+          {
+            "sample_id": "gsm8k_train_7434",
+            "mean_logp": -0.025122525170445442
+          },
+          {
+            "sample_id": "gsm8k_train_3753",
+            "mean_logp": -0.04522288963198662
+          },
+          {
+            "sample_id": "gsm8k_train_3128",
+            "mean_logp": -0.12054059654474258
+          },
+          {
+            "sample_id": "gsm8k_train_1378",
+            "mean_logp": -0.00264933705329895
+          },
+          {
+            "sample_id": "gsm8k_train_5402",
+            "mean_logp": -0.09264235943555832
+          },
+          {
+            "sample_id": "gsm8k_train_1083",
+            "mean_logp": -0.007181953173130751
+          },
+          {
+            "sample_id": "gsm8k_train_1697",
+            "mean_logp": -0.0015401087002828717
+          },
+          {
+            "sample_id": "gsm8k_train_2138",
+            "mean_logp": -0.001933716470375657
+          },
+          {
+            "sample_id": "gsm8k_train_4439",
+            "mean_logp": -0.027342749759554863
+          },
+          {
+            "sample_id": "gsm8k_train_5495",
+            "mean_logp": -0.03556934744119644
+          },
+          {
+            "sample_id": "gsm8k_train_1360",
+            "mean_logp": -0.0010798692237585783
+          },
+          {
+            "sample_id": "gsm8k_train_3061",
+            "mean_logp": -0.011951574124395847
+          },
+          {
+            "sample_id": "gsm8k_train_5839",
+            "mean_logp": -0.03966803103685379
+          },
+          {
+            "sample_id": "gsm8k_train_4835",
+            "mean_logp": -0.03685048222541809
+          },
+          {
+            "sample_id": "gsm8k_train_3139",
+            "mean_logp": -0.16957584023475647
+          },
+          {
+            "sample_id": "gsm8k_train_1132",
+            "mean_logp": -0.09099562466144562
+          }
+        ]
+      },
+      {
+        "mask": 4,
+        "mean_logp": -0.11646646591498211,
+        "original32_mean_logp": -0.14157958777286694,
+        "added96_mean_logp": -0.10809542529568716,
+        "per_program": [
+          {
+            "sample_id": "gsm8k_train_4824",
+            "mean_logp": -0.07342562079429626
+          },
+          {
+            "sample_id": "gsm8k_train_1869",
+            "mean_logp": -0.4239850342273712
+          },
+          {
+            "sample_id": "gsm8k_train_7310",
+            "mean_logp": -0.022707514464855194
+          },
+          {
+            "sample_id": "gsm8k_train_2237",
+            "mean_logp": -0.0013696333626285195
+          },
+          {
+            "sample_id": "gsm8k_train_6478",
+            "mean_logp": -0.006276220548897982
+          },
+          {
+            "sample_id": "gsm8k_train_5778",
+            "mean_logp": -0.06889297813177109
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "mean_logp": -0.1500125378370285
+          },
+          {
+            "sample_id": "gsm8k_train_0112",
+            "mean_logp": -0.1493353396654129
+          },
+          {
+            "sample_id": "gsm8k_train_2214",
+            "mean_logp": -0.03244572877883911
+          },
+          {
+            "sample_id": "gsm8k_train_6976",
+            "mean_logp": -0.009055913425981998
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "mean_logp": -0.7714272141456604
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "mean_logp": -0.04520789533853531
+          },
+          {
+            "sample_id": "gsm8k_train_5854",
+            "mean_logp": -0.010283656418323517
+          },
+          {
+            "sample_id": "gsm8k_train_4402",
+            "mean_logp": -0.00936657190322876
+          },
+          {
+            "sample_id": "gsm8k_train_1172",
+            "mean_logp": -0.14327627420425415
+          },
+          {
+            "sample_id": "gsm8k_train_0186",
+            "mean_logp": -0.13450802862644196
+          },
+          {
+            "sample_id": "gsm8k_train_3525",
+            "mean_logp": -0.2457115650177002
+          },
+          {
+            "sample_id": "gsm8k_train_6583",
+            "mean_logp": -0.4029042422771454
+          },
+          {
+            "sample_id": "gsm8k_train_5468",
+            "mean_logp": -0.10690926015377045
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "mean_logp": -0.2676713168621063
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "mean_logp": -0.019972287118434906
+          },
+          {
+            "sample_id": "gsm8k_train_7271",
+            "mean_logp": -0.014082744717597961
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "mean_logp": -0.34795278310775757
+          },
+          {
+            "sample_id": "gsm8k_train_4566",
+            "mean_logp": -0.025709783658385277
+          },
+          {
+            "sample_id": "gsm8k_train_0280",
+            "mean_logp": -0.08758088946342468
+          },
+          {
+            "sample_id": "gsm8k_train_0499",
+            "mean_logp": -0.28824949264526367
+          },
+          {
+            "sample_id": "gsm8k_train_1370",
+            "mean_logp": -0.4584498703479767
+          },
+          {
+            "sample_id": "gsm8k_train_4248",
+            "mean_logp": -0.022847531363368034
+          },
+          {
+            "sample_id": "gsm8k_train_0358",
+            "mean_logp": -0.04627017676830292
+          },
+          {
+            "sample_id": "gsm8k_train_4888",
+            "mean_logp": -0.0367228128015995
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "mean_logp": -0.04158162325620651
+          },
+          {
+            "sample_id": "gsm8k_train_5190",
+            "mean_logp": -0.06635426729917526
+          },
+          {
+            "sample_id": "gsm8k_train_5821",
+            "mean_logp": -0.03454671800136566
+          },
+          {
+            "sample_id": "gsm8k_train_7306",
+            "mean_logp": -0.08202613890171051
+          },
+          {
+            "sample_id": "gsm8k_train_5841",
+            "mean_logp": -0.0017745441291481256
+          },
+          {
+            "sample_id": "gsm8k_train_5223",
+            "mean_logp": -0.0049173166044056416
+          },
+          {
+            "sample_id": "gsm8k_train_4997",
+            "mean_logp": -0.030559739097952843
+          },
+          {
+            "sample_id": "gsm8k_train_0610",
+            "mean_logp": -0.26632681488990784
+          },
+          {
+            "sample_id": "gsm8k_train_4005",
+            "mean_logp": -0.49223223328590393
+          },
+          {
+            "sample_id": "gsm8k_train_6766",
+            "mean_logp": -0.016997788101434708
+          },
+          {
+            "sample_id": "gsm8k_train_3229",
+            "mean_logp": -0.06159263104200363
+          },
+          {
+            "sample_id": "gsm8k_train_2286",
+            "mean_logp": -0.11233115196228027
+          },
+          {
+            "sample_id": "gsm8k_train_3967",
+            "mean_logp": -0.07760772854089737
+          },
+          {
+            "sample_id": "gsm8k_train_3441",
+            "mean_logp": -0.17064331471920013
+          },
+          {
+            "sample_id": "gsm8k_train_6055",
+            "mean_logp": -0.012212309055030346
+          },
+          {
+            "sample_id": "gsm8k_train_4689",
+            "mean_logp": -0.3189530670642853
+          },
+          {
+            "sample_id": "gsm8k_train_4106",
+            "mean_logp": -0.04360509663820267
+          },
+          {
+            "sample_id": "gsm8k_train_0662",
+            "mean_logp": -0.345344215631485
+          },
+          {
+            "sample_id": "gsm8k_train_7048",
+            "mean_logp": -0.030588410794734955
+          },
+          {
+            "sample_id": "gsm8k_train_6183",
+            "mean_logp": -0.14027249813079834
+          },
+          {
+            "sample_id": "gsm8k_train_7144",
+            "mean_logp": -0.7192342877388
+          },
+          {
+            "sample_id": "gsm8k_train_3654",
+            "mean_logp": -0.009596982039511204
+          },
+          {
+            "sample_id": "gsm8k_train_6099",
+            "mean_logp": -0.01028501894325018
+          },
+          {
+            "sample_id": "gsm8k_train_3356",
+            "mean_logp": -0.23351122438907623
+          },
+          {
+            "sample_id": "gsm8k_train_1610",
+            "mean_logp": -0.0011690458049997687
+          },
+          {
+            "sample_id": "gsm8k_train_4605",
+            "mean_logp": -0.11258439719676971
+          },
+          {
+            "sample_id": "gsm8k_train_1307",
+            "mean_logp": -0.01431446336209774
+          },
+          {
+            "sample_id": "gsm8k_train_3701",
+            "mean_logp": -0.04325366020202637
+          },
+          {
+            "sample_id": "gsm8k_train_5665",
+            "mean_logp": -0.0034651202149689198
+          },
+          {
+            "sample_id": "gsm8k_train_5227",
+            "mean_logp": -0.027732456102967262
+          },
+          {
+            "sample_id": "gsm8k_train_0330",
+            "mean_logp": -0.6617329120635986
+          },
+          {
+            "sample_id": "gsm8k_train_0654",
+            "mean_logp": -1.3972643613815308
+          },
+          {
+            "sample_id": "gsm8k_train_6189",
+            "mean_logp": -0.1084526851773262
+          },
+          {
+            "sample_id": "gsm8k_train_7257",
+            "mean_logp": -0.006608659401535988
+          },
+          {
+            "sample_id": "gsm8k_train_1037",
+            "mean_logp": -0.14905811846256256
+          },
+          {
+            "sample_id": "gsm8k_train_7007",
+            "mean_logp": -0.07783177495002747
+          },
+          {
+            "sample_id": "gsm8k_train_0842",
+            "mean_logp": -0.045162383466959
+          },
+          {
+            "sample_id": "gsm8k_train_6740",
+            "mean_logp": -0.006632328033447266
+          },
+          {
+            "sample_id": "gsm8k_train_3023",
+            "mean_logp": -0.1963232159614563
+          },
+          {
+            "sample_id": "gsm8k_train_6227",
+            "mean_logp": -0.015655644237995148
+          },
+          {
+            "sample_id": "gsm8k_train_0344",
+            "mean_logp": -0.10384920984506607
+          },
+          {
+            "sample_id": "gsm8k_train_4766",
+            "mean_logp": -0.026751212775707245
+          },
+          {
+            "sample_id": "gsm8k_train_2328",
+            "mean_logp": -0.014157310128211975
+          },
+          {
+            "sample_id": "gsm8k_train_2812",
+            "mean_logp": -0.013141844421625137
+          },
+          {
+            "sample_id": "gsm8k_train_7134",
+            "mean_logp": -0.01676866225898266
+          },
+          {
+            "sample_id": "gsm8k_train_7355",
+            "mean_logp": -0.1567857563495636
+          },
+          {
+            "sample_id": "gsm8k_train_1020",
+            "mean_logp": -0.03400386497378349
+          },
+          {
+            "sample_id": "gsm8k_train_2804",
+            "mean_logp": -3.769993782043457e-05
+          },
+          {
+            "sample_id": "gsm8k_train_3774",
+            "mean_logp": -0.0946778655052185
+          },
+          {
+            "sample_id": "gsm8k_train_1415",
+            "mean_logp": -0.13338445127010345
+          },
+          {
+            "sample_id": "gsm8k_train_2737",
+            "mean_logp": -0.028109341859817505
+          },
+          {
+            "sample_id": "gsm8k_train_5773",
+            "mean_logp": -0.12011004239320755
+          },
+          {
+            "sample_id": "gsm8k_train_6139",
+            "mean_logp": -0.020067837089300156
+          },
+          {
+            "sample_id": "gsm8k_train_5737",
+            "mean_logp": -0.032811228185892105
+          },
+          {
+            "sample_id": "gsm8k_train_4810",
+            "mean_logp": -0.03488342463970184
+          },
+          {
+            "sample_id": "gsm8k_train_6017",
+            "mean_logp": -0.1494816690683365
+          },
+          {
+            "sample_id": "gsm8k_train_2632",
+            "mean_logp": -0.09781299531459808
+          },
+          {
+            "sample_id": "gsm8k_train_2254",
+            "mean_logp": -0.05141538009047508
+          },
+          {
+            "sample_id": "gsm8k_train_3569",
+            "mean_logp": -0.21537454426288605
+          },
+          {
+            "sample_id": "gsm8k_train_2707",
+            "mean_logp": -0.08570780605077744
+          },
+          {
+            "sample_id": "gsm8k_train_7168",
+            "mean_logp": -0.09339587390422821
+          },
+          {
+            "sample_id": "gsm8k_train_2629",
+            "mean_logp": -0.18952490389347076
+          },
+          {
+            "sample_id": "gsm8k_train_3618",
+            "mean_logp": -0.11278251558542252
+          },
+          {
+            "sample_id": "gsm8k_train_1449",
+            "mean_logp": -0.024282122030854225
+          },
+          {
+            "sample_id": "gsm8k_train_4261",
+            "mean_logp": -0.15729033946990967
+          },
+          {
+            "sample_id": "gsm8k_train_6305",
+            "mean_logp": -0.0066042072139680386
+          },
+          {
+            "sample_id": "gsm8k_train_5365",
+            "mean_logp": -0.003966955002397299
+          },
+          {
+            "sample_id": "gsm8k_train_4330",
+            "mean_logp": -0.023115849122405052
+          },
+          {
+            "sample_id": "gsm8k_train_2651",
+            "mean_logp": -0.12641935050487518
+          },
+          {
+            "sample_id": "gsm8k_train_5099",
+            "mean_logp": -0.03052656166255474
+          },
+          {
+            "sample_id": "gsm8k_train_0747",
+            "mean_logp": -0.02004840038716793
+          },
+          {
+            "sample_id": "gsm8k_train_2305",
+            "mean_logp": -0.5891712307929993
+          },
+          {
+            "sample_id": "gsm8k_train_3183",
+            "mean_logp": -0.0016739513957872987
+          },
+          {
+            "sample_id": "gsm8k_train_6876",
+            "mean_logp": -0.0006297899526543915
+          },
+          {
+            "sample_id": "gsm8k_train_4144",
+            "mean_logp": -0.019551683217287064
+          },
+          {
+            "sample_id": "gsm8k_train_4487",
+            "mean_logp": -0.14889103174209595
+          },
+          {
+            "sample_id": "gsm8k_train_6299",
+            "mean_logp": -0.0069669499062001705
+          },
+          {
+            "sample_id": "gsm8k_train_7201",
+            "mean_logp": -0.05786540359258652
+          },
+          {
+            "sample_id": "gsm8k_train_6446",
+            "mean_logp": -0.4908478856086731
+          },
+          {
+            "sample_id": "gsm8k_train_5388",
+            "mean_logp": -0.004407026339322329
+          },
+          {
+            "sample_id": "gsm8k_train_5943",
+            "mean_logp": -0.007986297830939293
+          },
+          {
+            "sample_id": "gsm8k_train_3777",
+            "mean_logp": -0.14772236347198486
+          },
+          {
+            "sample_id": "gsm8k_train_7434",
+            "mean_logp": -0.008107565343379974
+          },
+          {
+            "sample_id": "gsm8k_train_3753",
+            "mean_logp": -0.012798324227333069
+          },
+          {
+            "sample_id": "gsm8k_train_3128",
+            "mean_logp": -0.059171706438064575
+          },
+          {
+            "sample_id": "gsm8k_train_1378",
+            "mean_logp": -0.00041180849075317383
+          },
+          {
+            "sample_id": "gsm8k_train_5402",
+            "mean_logp": -0.014186942018568516
+          },
+          {
+            "sample_id": "gsm8k_train_1083",
+            "mean_logp": -0.005423512309789658
+          },
+          {
+            "sample_id": "gsm8k_train_1697",
+            "mean_logp": -0.10322900861501694
+          },
+          {
+            "sample_id": "gsm8k_train_2138",
+            "mean_logp": -0.001311843516305089
+          },
+          {
+            "sample_id": "gsm8k_train_4439",
+            "mean_logp": -0.004664777312427759
+          },
+          {
+            "sample_id": "gsm8k_train_5495",
+            "mean_logp": -0.03831634297966957
+          },
+          {
+            "sample_id": "gsm8k_train_1360",
+            "mean_logp": -0.0017355680465698242
+          },
+          {
+            "sample_id": "gsm8k_train_3061",
+            "mean_logp": -0.006603778339922428
+          },
+          {
+            "sample_id": "gsm8k_train_5839",
+            "mean_logp": -0.010859905742108822
+          },
+          {
+            "sample_id": "gsm8k_train_4835",
+            "mean_logp": -0.060272108763456345
+          },
+          {
+            "sample_id": "gsm8k_train_3139",
+            "mean_logp": -0.2711324691772461
+          },
+          {
+            "sample_id": "gsm8k_train_1132",
+            "mean_logp": -0.003531872294843197
+          }
+        ]
+      }
+    ]
+  },
+  "final": {
+    "step": 200,
+    "parameter_delta_norm": 6.014341841741764,
+    "mask_scores": [
+      {
+        "mask": 0,
+        "mean_logp": -0.05454734610771084,
+        "original32_mean_logp": -0.058203001601214055,
+        "added96_mean_logp": -0.0533287942765431,
+        "per_program": [
+          {
+            "sample_id": "gsm8k_train_4824",
+            "mean_logp": -0.01915590651333332
+          },
+          {
+            "sample_id": "gsm8k_train_1869",
+            "mean_logp": -0.07203265279531479
+          },
+          {
+            "sample_id": "gsm8k_train_7310",
+            "mean_logp": -0.009363197721540928
+          },
+          {
+            "sample_id": "gsm8k_train_2237",
+            "mean_logp": -0.011124487034976482
+          },
+          {
+            "sample_id": "gsm8k_train_6478",
+            "mean_logp": -0.0020557306706905365
+          },
+          {
+            "sample_id": "gsm8k_train_5778",
+            "mean_logp": -0.22781094908714294
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "mean_logp": -0.05896248668432236
+          },
+          {
+            "sample_id": "gsm8k_train_0112",
+            "mean_logp": -0.06015486270189285
+          },
+          {
+            "sample_id": "gsm8k_train_2214",
+            "mean_logp": -0.2935117483139038
+          },
+          {
+            "sample_id": "gsm8k_train_6976",
+            "mean_logp": -0.011183716356754303
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "mean_logp": -0.05409421771764755
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "mean_logp": -0.026753444224596024
+          },
+          {
+            "sample_id": "gsm8k_train_5854",
+            "mean_logp": -0.0023541036061942577
+          },
+          {
+            "sample_id": "gsm8k_train_4402",
+            "mean_logp": -0.006251610815525055
+          },
+          {
+            "sample_id": "gsm8k_train_1172",
+            "mean_logp": -0.04472135379910469
+          },
+          {
+            "sample_id": "gsm8k_train_0186",
+            "mean_logp": -0.13626016676425934
+          },
+          {
+            "sample_id": "gsm8k_train_3525",
+            "mean_logp": -0.01828227937221527
+          },
+          {
+            "sample_id": "gsm8k_train_6583",
+            "mean_logp": -0.0052453018724918365
+          },
+          {
+            "sample_id": "gsm8k_train_5468",
+            "mean_logp": -0.22985932230949402
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "mean_logp": -0.030901597812771797
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "mean_logp": -0.007187818642705679
+          },
+          {
+            "sample_id": "gsm8k_train_7271",
+            "mean_logp": -0.022177984938025475
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "mean_logp": -0.15882594883441925
+          },
+          {
+            "sample_id": "gsm8k_train_4566",
+            "mean_logp": -0.006384785287082195
+          },
+          {
+            "sample_id": "gsm8k_train_0280",
+            "mean_logp": -0.007273702882230282
+          },
+          {
+            "sample_id": "gsm8k_train_0499",
+            "mean_logp": -0.0026163540314882994
+          },
+          {
+            "sample_id": "gsm8k_train_1370",
+            "mean_logp": -0.006762671750038862
+          },
+          {
+            "sample_id": "gsm8k_train_4248",
+            "mean_logp": -0.012169713154435158
+          },
+          {
+            "sample_id": "gsm8k_train_0358",
+            "mean_logp": -0.05451345443725586
+          },
+          {
+            "sample_id": "gsm8k_train_4888",
+            "mean_logp": -0.0657607689499855
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "mean_logp": -0.038503821939229965
+          },
+          {
+            "sample_id": "gsm8k_train_5190",
+            "mean_logp": -0.16023989021778107
+          },
+          {
+            "sample_id": "gsm8k_train_5821",
+            "mean_logp": -0.03331572562456131
+          },
+          {
+            "sample_id": "gsm8k_train_7306",
+            "mean_logp": -0.06065160408616066
+          },
+          {
+            "sample_id": "gsm8k_train_5841",
+            "mean_logp": -0.006847551092505455
+          },
+          {
+            "sample_id": "gsm8k_train_5223",
+            "mean_logp": -0.03814876452088356
+          },
+          {
+            "sample_id": "gsm8k_train_4997",
+            "mean_logp": -0.17112261056900024
+          },
+          {
+            "sample_id": "gsm8k_train_0610",
+            "mean_logp": -0.11619306355714798
+          },
+          {
+            "sample_id": "gsm8k_train_4005",
+            "mean_logp": -0.047622013837099075
+          },
+          {
+            "sample_id": "gsm8k_train_6766",
+            "mean_logp": -0.01068989560008049
+          },
+          {
+            "sample_id": "gsm8k_train_3229",
+            "mean_logp": -0.3965127766132355
+          },
+          {
+            "sample_id": "gsm8k_train_2286",
+            "mean_logp": -0.08531759679317474
+          },
+          {
+            "sample_id": "gsm8k_train_3967",
+            "mean_logp": -0.09965341538190842
+          },
+          {
+            "sample_id": "gsm8k_train_3441",
+            "mean_logp": -0.12632285058498383
+          },
+          {
+            "sample_id": "gsm8k_train_6055",
+            "mean_logp": -0.011154409497976303
+          },
+          {
+            "sample_id": "gsm8k_train_4689",
+            "mean_logp": -0.0855536088347435
+          },
+          {
+            "sample_id": "gsm8k_train_4106",
+            "mean_logp": -0.03738415241241455
+          },
+          {
+            "sample_id": "gsm8k_train_0662",
+            "mean_logp": -0.30607664585113525
+          },
+          {
+            "sample_id": "gsm8k_train_7048",
+            "mean_logp": -0.021968070417642593
+          },
+          {
+            "sample_id": "gsm8k_train_6183",
+            "mean_logp": -0.21756777167320251
+          },
+          {
+            "sample_id": "gsm8k_train_7144",
+            "mean_logp": -0.2895493805408478
+          },
+          {
+            "sample_id": "gsm8k_train_3654",
+            "mean_logp": -0.00641129445284605
+          },
+          {
+            "sample_id": "gsm8k_train_6099",
+            "mean_logp": -0.007382649462670088
+          },
+          {
+            "sample_id": "gsm8k_train_3356",
+            "mean_logp": -0.06910861283540726
+          },
+          {
+            "sample_id": "gsm8k_train_1610",
+            "mean_logp": -0.07729853689670563
+          },
+          {
+            "sample_id": "gsm8k_train_4605",
+            "mean_logp": -0.03288089483976364
+          },
+          {
+            "sample_id": "gsm8k_train_1307",
+            "mean_logp": -0.1359836459159851
+          },
+          {
+            "sample_id": "gsm8k_train_3701",
+            "mean_logp": -0.016928715631365776
+          },
+          {
+            "sample_id": "gsm8k_train_5665",
+            "mean_logp": -0.07785260677337646
+          },
+          {
+            "sample_id": "gsm8k_train_5227",
+            "mean_logp": -0.01646227389574051
+          },
+          {
+            "sample_id": "gsm8k_train_0330",
+            "mean_logp": -0.09224317967891693
+          },
+          {
+            "sample_id": "gsm8k_train_0654",
+            "mean_logp": -0.048806238919496536
+          },
+          {
+            "sample_id": "gsm8k_train_6189",
+            "mean_logp": -0.006045783869922161
+          },
+          {
+            "sample_id": "gsm8k_train_7257",
+            "mean_logp": -0.007037162780761719
+          },
+          {
+            "sample_id": "gsm8k_train_1037",
+            "mean_logp": -0.04536651819944382
+          },
+          {
+            "sample_id": "gsm8k_train_7007",
+            "mean_logp": -0.10067567229270935
+          },
+          {
+            "sample_id": "gsm8k_train_0842",
+            "mean_logp": -0.010285301133990288
+          },
+          {
+            "sample_id": "gsm8k_train_6740",
+            "mean_logp": -0.0041983299888670444
+          },
+          {
+            "sample_id": "gsm8k_train_3023",
+            "mean_logp": -0.10759221017360687
+          },
+          {
+            "sample_id": "gsm8k_train_6227",
+            "mean_logp": -0.014451895840466022
+          },
+          {
+            "sample_id": "gsm8k_train_0344",
+            "mean_logp": -0.02874002233147621
+          },
+          {
+            "sample_id": "gsm8k_train_4766",
+            "mean_logp": -0.027360977604985237
+          },
+          {
+            "sample_id": "gsm8k_train_2328",
+            "mean_logp": -0.006388635374605656
+          },
+          {
+            "sample_id": "gsm8k_train_2812",
+            "mean_logp": -0.011728499084711075
+          },
+          {
+            "sample_id": "gsm8k_train_7134",
+            "mean_logp": -0.01578468829393387
+          },
+          {
+            "sample_id": "gsm8k_train_7355",
+            "mean_logp": -0.02851034328341484
+          },
+          {
+            "sample_id": "gsm8k_train_1020",
+            "mean_logp": -0.05841488763689995
+          },
+          {
+            "sample_id": "gsm8k_train_2804",
+            "mean_logp": -0.0003247857093811035
+          },
+          {
+            "sample_id": "gsm8k_train_3774",
+            "mean_logp": -0.0025497993919998407
+          },
+          {
+            "sample_id": "gsm8k_train_1415",
+            "mean_logp": -0.16382348537445068
+          },
+          {
+            "sample_id": "gsm8k_train_2737",
+            "mean_logp": -0.10858559608459473
+          },
+          {
+            "sample_id": "gsm8k_train_5773",
+            "mean_logp": -0.06797436624765396
+          },
+          {
+            "sample_id": "gsm8k_train_6139",
+            "mean_logp": -0.01628757081925869
+          },
+          {
+            "sample_id": "gsm8k_train_5737",
+            "mean_logp": -0.0013681905111297965
+          },
+          {
+            "sample_id": "gsm8k_train_4810",
+            "mean_logp": -0.03463297709822655
+          },
+          {
+            "sample_id": "gsm8k_train_6017",
+            "mean_logp": -0.04225235432386398
+          },
+          {
+            "sample_id": "gsm8k_train_2632",
+            "mean_logp": -0.13205848634243011
+          },
+          {
+            "sample_id": "gsm8k_train_2254",
+            "mean_logp": -0.024214506149291992
+          },
+          {
+            "sample_id": "gsm8k_train_3569",
+            "mean_logp": -0.030945604667067528
+          },
+          {
+            "sample_id": "gsm8k_train_2707",
+            "mean_logp": -0.07243167608976364
+          },
+          {
+            "sample_id": "gsm8k_train_7168",
+            "mean_logp": -0.05285224691033363
+          },
+          {
+            "sample_id": "gsm8k_train_2629",
+            "mean_logp": -0.007525777909904718
+          },
+          {
+            "sample_id": "gsm8k_train_3618",
+            "mean_logp": -0.11656508594751358
+          },
+          {
+            "sample_id": "gsm8k_train_1449",
+            "mean_logp": -0.01217654999345541
+          },
+          {
+            "sample_id": "gsm8k_train_4261",
+            "mean_logp": -0.0222907867282629
+          },
+          {
+            "sample_id": "gsm8k_train_6305",
+            "mean_logp": -0.043880563229322433
+          },
+          {
+            "sample_id": "gsm8k_train_5365",
+            "mean_logp": -0.0035438048653304577
+          },
+          {
+            "sample_id": "gsm8k_train_4330",
+            "mean_logp": -0.0003635406610555947
+          },
+          {
+            "sample_id": "gsm8k_train_2651",
+            "mean_logp": -0.010722171515226364
+          },
+          {
+            "sample_id": "gsm8k_train_5099",
+            "mean_logp": -0.004210656508803368
+          },
+          {
+            "sample_id": "gsm8k_train_0747",
+            "mean_logp": -0.0016998008359223604
+          },
+          {
+            "sample_id": "gsm8k_train_2305",
+            "mean_logp": -0.30611667037010193
+          },
+          {
+            "sample_id": "gsm8k_train_3183",
+            "mean_logp": -0.0009841530118137598
+          },
+          {
+            "sample_id": "gsm8k_train_6876",
+            "mean_logp": -0.00032549319439567626
+          },
+          {
+            "sample_id": "gsm8k_train_4144",
+            "mean_logp": -0.0023037672508507967
+          },
+          {
+            "sample_id": "gsm8k_train_4487",
+            "mean_logp": -0.030644837766885757
+          },
+          {
+            "sample_id": "gsm8k_train_6299",
+            "mean_logp": -0.014634693041443825
+          },
+          {
+            "sample_id": "gsm8k_train_7201",
+            "mean_logp": -0.042609862983226776
+          },
+          {
+            "sample_id": "gsm8k_train_6446",
+            "mean_logp": -0.12268903851509094
+          },
+          {
+            "sample_id": "gsm8k_train_5388",
+            "mean_logp": -0.011385781690478325
+          },
+          {
+            "sample_id": "gsm8k_train_5943",
+            "mean_logp": -0.002442684257403016
+          },
+          {
+            "sample_id": "gsm8k_train_3777",
+            "mean_logp": -0.0013633304042741656
+          },
+          {
+            "sample_id": "gsm8k_train_7434",
+            "mean_logp": -0.0023704743944108486
+          },
+          {
+            "sample_id": "gsm8k_train_3753",
+            "mean_logp": -0.0390545092523098
+          },
+          {
+            "sample_id": "gsm8k_train_3128",
+            "mean_logp": -0.019252335652709007
+          },
+          {
+            "sample_id": "gsm8k_train_1378",
+            "mean_logp": -0.002687215805053711
+          },
+          {
+            "sample_id": "gsm8k_train_5402",
+            "mean_logp": -0.004977831616997719
+          },
+          {
+            "sample_id": "gsm8k_train_1083",
+            "mean_logp": -0.00216080155223608
+          },
+          {
+            "sample_id": "gsm8k_train_1697",
+            "mean_logp": -0.06293808668851852
+          },
+          {
+            "sample_id": "gsm8k_train_2138",
+            "mean_logp": -0.002399521879851818
+          },
+          {
+            "sample_id": "gsm8k_train_4439",
+            "mean_logp": -0.041256584227085114
+          },
+          {
+            "sample_id": "gsm8k_train_5495",
+            "mean_logp": -0.030541162937879562
+          },
+          {
+            "sample_id": "gsm8k_train_1360",
+            "mean_logp": -0.0015332698822021484
+          },
+          {
+            "sample_id": "gsm8k_train_3061",
+            "mean_logp": -0.01533549278974533
+          },
+          {
+            "sample_id": "gsm8k_train_5839",
+            "mean_logp": -0.02463195100426674
+          },
+          {
+            "sample_id": "gsm8k_train_4835",
+            "mean_logp": -0.012956636026501656
+          },
+          {
+            "sample_id": "gsm8k_train_3139",
+            "mean_logp": -0.06734824925661087
+          },
+          {
+            "sample_id": "gsm8k_train_1132",
+            "mean_logp": -0.0657479465007782
+          }
+        ]
+      },
+      {
+        "mask": 1,
+        "mean_logp": -0.12406103652119782,
+        "original32_mean_logp": -0.13559757900520708,
+        "added96_mean_logp": -0.1202155223598614,
+        "per_program": [
+          {
+            "sample_id": "gsm8k_train_4824",
+            "mean_logp": -0.0662294253706932
+          },
+          {
+            "sample_id": "gsm8k_train_1869",
+            "mean_logp": -0.18894299864768982
+          },
+          {
+            "sample_id": "gsm8k_train_7310",
+            "mean_logp": -0.00023412129667121917
+          },
+          {
+            "sample_id": "gsm8k_train_2237",
+            "mean_logp": -0.008695759810507298
+          },
+          {
+            "sample_id": "gsm8k_train_6478",
+            "mean_logp": -0.0037294698413461447
+          },
+          {
+            "sample_id": "gsm8k_train_5778",
+            "mean_logp": -0.10459788888692856
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "mean_logp": -0.048315104097127914
+          },
+          {
+            "sample_id": "gsm8k_train_0112",
+            "mean_logp": -0.10263410955667496
+          },
+          {
+            "sample_id": "gsm8k_train_2214",
+            "mean_logp": -0.4714469909667969
+          },
+          {
+            "sample_id": "gsm8k_train_6976",
+            "mean_logp": -0.12968841195106506
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "mean_logp": -0.038305167108774185
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "mean_logp": -0.05878649279475212
+          },
+          {
+            "sample_id": "gsm8k_train_5854",
+            "mean_logp": -0.019821353256702423
+          },
+          {
+            "sample_id": "gsm8k_train_4402",
+            "mean_logp": -0.03586558997631073
+          },
+          {
+            "sample_id": "gsm8k_train_1172",
+            "mean_logp": -0.32180818915367126
+          },
+          {
+            "sample_id": "gsm8k_train_0186",
+            "mean_logp": -0.20216713845729828
+          },
+          {
+            "sample_id": "gsm8k_train_3525",
+            "mean_logp": -0.048810385167598724
+          },
+          {
+            "sample_id": "gsm8k_train_6583",
+            "mean_logp": -0.06136196479201317
+          },
+          {
+            "sample_id": "gsm8k_train_5468",
+            "mean_logp": -0.3331961929798126
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "mean_logp": -0.02952849678695202
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "mean_logp": -0.018564395606517792
+          },
+          {
+            "sample_id": "gsm8k_train_7271",
+            "mean_logp": -0.016166679561138153
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "mean_logp": -0.10867062956094742
+          },
+          {
+            "sample_id": "gsm8k_train_4566",
+            "mean_logp": -0.0017834225436672568
+          },
+          {
+            "sample_id": "gsm8k_train_0280",
+            "mean_logp": -0.09437879174947739
+          },
+          {
+            "sample_id": "gsm8k_train_0499",
+            "mean_logp": -0.012296908535063267
+          },
+          {
+            "sample_id": "gsm8k_train_1370",
+            "mean_logp": -0.00910933967679739
+          },
+          {
+            "sample_id": "gsm8k_train_4248",
+            "mean_logp": -0.05063210055232048
+          },
+          {
+            "sample_id": "gsm8k_train_0358",
+            "mean_logp": -0.04207782447338104
+          },
+          {
+            "sample_id": "gsm8k_train_4888",
+            "mean_logp": -0.023275895044207573
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "mean_logp": -0.13115812838077545
+          },
+          {
+            "sample_id": "gsm8k_train_5190",
+            "mean_logp": -1.5568431615829468
+          },
+          {
+            "sample_id": "gsm8k_train_5821",
+            "mean_logp": -0.006408749148249626
+          },
+          {
+            "sample_id": "gsm8k_train_7306",
+            "mean_logp": -0.08039551973342896
+          },
+          {
+            "sample_id": "gsm8k_train_5841",
+            "mean_logp": -0.025013064965605736
+          },
+          {
+            "sample_id": "gsm8k_train_5223",
+            "mean_logp": -0.002655029296875
+          },
+          {
+            "sample_id": "gsm8k_train_4997",
+            "mean_logp": -0.004679587669670582
+          },
+          {
+            "sample_id": "gsm8k_train_0610",
+            "mean_logp": -0.08900745958089828
+          },
+          {
+            "sample_id": "gsm8k_train_4005",
+            "mean_logp": -0.029162593185901642
+          },
+          {
+            "sample_id": "gsm8k_train_6766",
+            "mean_logp": -0.008598724380135536
+          },
+          {
+            "sample_id": "gsm8k_train_3229",
+            "mean_logp": -0.0004853686841670424
+          },
+          {
+            "sample_id": "gsm8k_train_2286",
+            "mean_logp": -0.013043862767517567
+          },
+          {
+            "sample_id": "gsm8k_train_3967",
+            "mean_logp": -0.26796889305114746
+          },
+          {
+            "sample_id": "gsm8k_train_3441",
+            "mean_logp": -0.028850175440311432
+          },
+          {
+            "sample_id": "gsm8k_train_6055",
+            "mean_logp": -0.004595639184117317
+          },
+          {
+            "sample_id": "gsm8k_train_4689",
+            "mean_logp": -0.9025958776473999
+          },
+          {
+            "sample_id": "gsm8k_train_4106",
+            "mean_logp": -0.042712822556495667
+          },
+          {
+            "sample_id": "gsm8k_train_0662",
+            "mean_logp": -1.6076831817626953
+          },
+          {
+            "sample_id": "gsm8k_train_7048",
+            "mean_logp": -0.01542462594807148
+          },
+          {
+            "sample_id": "gsm8k_train_6183",
+            "mean_logp": -0.13425873219966888
+          },
+          {
+            "sample_id": "gsm8k_train_7144",
+            "mean_logp": -0.393679678440094
+          },
+          {
+            "sample_id": "gsm8k_train_3654",
+            "mean_logp": -0.031135177239775658
+          },
+          {
+            "sample_id": "gsm8k_train_6099",
+            "mean_logp": -0.0006981716142036021
+          },
+          {
+            "sample_id": "gsm8k_train_3356",
+            "mean_logp": -0.2366434931755066
+          },
+          {
+            "sample_id": "gsm8k_train_1610",
+            "mean_logp": -0.18476861715316772
+          },
+          {
+            "sample_id": "gsm8k_train_4605",
+            "mean_logp": -0.0740223377943039
+          },
+          {
+            "sample_id": "gsm8k_train_1307",
+            "mean_logp": -0.36879679560661316
+          },
+          {
+            "sample_id": "gsm8k_train_3701",
+            "mean_logp": -0.25913748145103455
+          },
+          {
+            "sample_id": "gsm8k_train_5665",
+            "mean_logp": -0.00042615935672074556
+          },
+          {
+            "sample_id": "gsm8k_train_5227",
+            "mean_logp": -0.1707371026277542
+          },
+          {
+            "sample_id": "gsm8k_train_0330",
+            "mean_logp": -0.8655592799186707
+          },
+          {
+            "sample_id": "gsm8k_train_0654",
+            "mean_logp": -0.06139363721013069
+          },
+          {
+            "sample_id": "gsm8k_train_6189",
+            "mean_logp": -0.007956357672810555
+          },
+          {
+            "sample_id": "gsm8k_train_7257",
+            "mean_logp": -0.0497252382338047
+          },
+          {
+            "sample_id": "gsm8k_train_1037",
+            "mean_logp": -0.023644400760531425
+          },
+          {
+            "sample_id": "gsm8k_train_7007",
+            "mean_logp": -0.14063909649848938
+          },
+          {
+            "sample_id": "gsm8k_train_0842",
+            "mean_logp": -0.17698825895786285
+          },
+          {
+            "sample_id": "gsm8k_train_6740",
+            "mean_logp": -0.006787369959056377
+          },
+          {
+            "sample_id": "gsm8k_train_3023",
+            "mean_logp": -0.06243292614817619
+          },
+          {
+            "sample_id": "gsm8k_train_6227",
+            "mean_logp": -0.03907010704278946
+          },
+          {
+            "sample_id": "gsm8k_train_0344",
+            "mean_logp": -0.8888319134712219
+          },
+          {
+            "sample_id": "gsm8k_train_4766",
+            "mean_logp": -0.06256028264760971
+          },
+          {
+            "sample_id": "gsm8k_train_2328",
+            "mean_logp": -0.007854519411921501
+          },
+          {
+            "sample_id": "gsm8k_train_2812",
+            "mean_logp": -0.10958009213209152
+          },
+          {
+            "sample_id": "gsm8k_train_7134",
+            "mean_logp": -0.00023617615806870162
+          },
+          {
+            "sample_id": "gsm8k_train_7355",
+            "mean_logp": -0.09687084704637527
+          },
+          {
+            "sample_id": "gsm8k_train_1020",
+            "mean_logp": -0.43072250485420227
+          },
+          {
+            "sample_id": "gsm8k_train_2804",
+            "mean_logp": -0.00042945146560668945
+          },
+          {
+            "sample_id": "gsm8k_train_3774",
+            "mean_logp": -0.0005664825439453125
+          },
+          {
+            "sample_id": "gsm8k_train_1415",
+            "mean_logp": -0.07843776792287827
+          },
+          {
+            "sample_id": "gsm8k_train_2737",
+            "mean_logp": -0.08265554159879684
+          },
+          {
+            "sample_id": "gsm8k_train_5773",
+            "mean_logp": -0.25964438915252686
+          },
+          {
+            "sample_id": "gsm8k_train_6139",
+            "mean_logp": -0.017238829284906387
+          },
+          {
+            "sample_id": "gsm8k_train_5737",
+            "mean_logp": -0.023757334798574448
+          },
+          {
+            "sample_id": "gsm8k_train_4810",
+            "mean_logp": -0.031821660697460175
+          },
+          {
+            "sample_id": "gsm8k_train_6017",
+            "mean_logp": -0.23845632374286652
+          },
+          {
+            "sample_id": "gsm8k_train_2632",
+            "mean_logp": -0.1069164052605629
+          },
+          {
+            "sample_id": "gsm8k_train_2254",
+            "mean_logp": -0.04987639933824539
+          },
+          {
+            "sample_id": "gsm8k_train_3569",
+            "mean_logp": -0.019533032551407814
+          },
+          {
+            "sample_id": "gsm8k_train_2707",
+            "mean_logp": -0.03490310162305832
+          },
+          {
+            "sample_id": "gsm8k_train_7168",
+            "mean_logp": -0.2598837912082672
+          },
+          {
+            "sample_id": "gsm8k_train_2629",
+            "mean_logp": -0.09692573547363281
+          },
+          {
+            "sample_id": "gsm8k_train_3618",
+            "mean_logp": -0.10055725276470184
+          },
+          {
+            "sample_id": "gsm8k_train_1449",
+            "mean_logp": -0.01911127381026745
+          },
+          {
+            "sample_id": "gsm8k_train_4261",
+            "mean_logp": -0.13598720729351044
+          },
+          {
+            "sample_id": "gsm8k_train_6305",
+            "mean_logp": -0.0025376654230058193
+          },
+          {
+            "sample_id": "gsm8k_train_5365",
+            "mean_logp": -0.004320609383285046
+          },
+          {
+            "sample_id": "gsm8k_train_4330",
+            "mean_logp": -0.026320481672883034
+          },
+          {
+            "sample_id": "gsm8k_train_2651",
+            "mean_logp": -0.03947839513421059
+          },
+          {
+            "sample_id": "gsm8k_train_5099",
+            "mean_logp": -0.016154997050762177
+          },
+          {
+            "sample_id": "gsm8k_train_0747",
+            "mean_logp": -0.03391550853848457
+          },
+          {
+            "sample_id": "gsm8k_train_2305",
+            "mean_logp": -0.21542754769325256
+          },
+          {
+            "sample_id": "gsm8k_train_3183",
+            "mean_logp": -0.08660329133272171
+          },
+          {
+            "sample_id": "gsm8k_train_6876",
+            "mean_logp": -0.017753692343831062
+          },
+          {
+            "sample_id": "gsm8k_train_4144",
+            "mean_logp": -0.01079337578266859
+          },
+          {
+            "sample_id": "gsm8k_train_4487",
+            "mean_logp": -0.01578640379011631
+          },
+          {
+            "sample_id": "gsm8k_train_6299",
+            "mean_logp": -0.014171824790537357
+          },
+          {
+            "sample_id": "gsm8k_train_7201",
+            "mean_logp": -0.5037273168563843
+          },
+          {
+            "sample_id": "gsm8k_train_6446",
+            "mean_logp": -0.22748669981956482
+          },
+          {
+            "sample_id": "gsm8k_train_5388",
+            "mean_logp": -0.007554813288152218
+          },
+          {
+            "sample_id": "gsm8k_train_5943",
+            "mean_logp": -0.002361240331083536
+          },
+          {
+            "sample_id": "gsm8k_train_3777",
+            "mean_logp": -0.010594666935503483
+          },
+          {
+            "sample_id": "gsm8k_train_7434",
+            "mean_logp": -0.006092324387282133
+          },
+          {
+            "sample_id": "gsm8k_train_3753",
+            "mean_logp": -0.0020929393358528614
+          },
+          {
+            "sample_id": "gsm8k_train_3128",
+            "mean_logp": -0.044337864965200424
+          },
+          {
+            "sample_id": "gsm8k_train_1378",
+            "mean_logp": -0.0002523958683013916
+          },
+          {
+            "sample_id": "gsm8k_train_5402",
+            "mean_logp": -0.0431261882185936
+          },
+          {
+            "sample_id": "gsm8k_train_1083",
+            "mean_logp": -0.002217416185885668
+          },
+          {
+            "sample_id": "gsm8k_train_1697",
+            "mean_logp": -0.021255167201161385
+          },
+          {
+            "sample_id": "gsm8k_train_2138",
+            "mean_logp": -8.900101238396019e-05
+          },
+          {
+            "sample_id": "gsm8k_train_4439",
+            "mean_logp": -0.0799160823225975
+          },
+          {
+            "sample_id": "gsm8k_train_5495",
+            "mean_logp": -0.015548779629170895
+          },
+          {
+            "sample_id": "gsm8k_train_1360",
+            "mean_logp": -0.00201914319768548
+          },
+          {
+            "sample_id": "gsm8k_train_3061",
+            "mean_logp": -0.01098896749317646
+          },
+          {
+            "sample_id": "gsm8k_train_5839",
+            "mean_logp": -0.011570081114768982
+          },
+          {
+            "sample_id": "gsm8k_train_4835",
+            "mean_logp": -0.04541199654340744
+          },
+          {
+            "sample_id": "gsm8k_train_3139",
+            "mean_logp": -0.3208219110965729
+          },
+          {
+            "sample_id": "gsm8k_train_1132",
+            "mean_logp": -0.1288214474916458
+          }
+        ]
+      },
+      {
+        "mask": 2,
+        "mean_logp": -0.10331042069446994,
+        "original32_mean_logp": -0.12020859239601123,
+        "added96_mean_logp": -0.09767769679395617,
+        "per_program": [
+          {
+            "sample_id": "gsm8k_train_4824",
+            "mean_logp": -0.020448386669158936
+          },
+          {
+            "sample_id": "gsm8k_train_1869",
+            "mean_logp": -0.14324329793453217
+          },
+          {
+            "sample_id": "gsm8k_train_7310",
+            "mean_logp": -0.0214336346834898
+          },
+          {
+            "sample_id": "gsm8k_train_2237",
+            "mean_logp": -0.7002787590026855
+          },
+          {
+            "sample_id": "gsm8k_train_6478",
+            "mean_logp": -0.005865537095814943
+          },
+          {
+            "sample_id": "gsm8k_train_5778",
+            "mean_logp": -0.08780649304389954
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "mean_logp": -0.09974541515111923
+          },
+          {
+            "sample_id": "gsm8k_train_0112",
+            "mean_logp": -0.017516832798719406
+          },
+          {
+            "sample_id": "gsm8k_train_2214",
+            "mean_logp": -0.0007943615200929344
+          },
+          {
+            "sample_id": "gsm8k_train_6976",
+            "mean_logp": -0.0005602060118690133
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "mean_logp": -0.30099719762802124
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "mean_logp": -0.31738778948783875
+          },
+          {
+            "sample_id": "gsm8k_train_5854",
+            "mean_logp": -0.0025574848987162113
+          },
+          {
+            "sample_id": "gsm8k_train_4402",
+            "mean_logp": -0.028930634260177612
+          },
+          {
+            "sample_id": "gsm8k_train_1172",
+            "mean_logp": -0.1558067500591278
+          },
+          {
+            "sample_id": "gsm8k_train_0186",
+            "mean_logp": -0.175057515501976
+          },
+          {
+            "sample_id": "gsm8k_train_3525",
+            "mean_logp": -0.168091282248497
+          },
+          {
+            "sample_id": "gsm8k_train_6583",
+            "mean_logp": -0.03517052158713341
+          },
+          {
+            "sample_id": "gsm8k_train_5468",
+            "mean_logp": -0.1272873878479004
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "mean_logp": -0.04822094738483429
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "mean_logp": -0.02324756048619747
+          },
+          {
+            "sample_id": "gsm8k_train_7271",
+            "mean_logp": -0.00819794088602066
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "mean_logp": -0.14937008917331696
+          },
+          {
+            "sample_id": "gsm8k_train_4566",
+            "mean_logp": -0.013871682807803154
+          },
+          {
+            "sample_id": "gsm8k_train_0280",
+            "mean_logp": -0.09395405650138855
+          },
+          {
+            "sample_id": "gsm8k_train_0499",
+            "mean_logp": -0.019451230764389038
+          },
+          {
+            "sample_id": "gsm8k_train_1370",
+            "mean_logp": -0.30942028760910034
+          },
+          {
+            "sample_id": "gsm8k_train_4248",
+            "mean_logp": -0.005181360524147749
+          },
+          {
+            "sample_id": "gsm8k_train_0358",
+            "mean_logp": -0.07829338312149048
+          },
+          {
+            "sample_id": "gsm8k_train_4888",
+            "mean_logp": -0.04607057571411133
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "mean_logp": -0.059335049241781235
+          },
+          {
+            "sample_id": "gsm8k_train_5190",
+            "mean_logp": -0.5830813050270081
+          },
+          {
+            "sample_id": "gsm8k_train_5821",
+            "mean_logp": -0.06731121242046356
+          },
+          {
+            "sample_id": "gsm8k_train_7306",
+            "mean_logp": -0.0007524295942857862
+          },
+          {
+            "sample_id": "gsm8k_train_5841",
+            "mean_logp": -0.004846763797104359
+          },
+          {
+            "sample_id": "gsm8k_train_5223",
+            "mean_logp": -0.002269477816298604
+          },
+          {
+            "sample_id": "gsm8k_train_4997",
+            "mean_logp": -0.012924440205097198
+          },
+          {
+            "sample_id": "gsm8k_train_0610",
+            "mean_logp": -0.033757034689188004
+          },
+          {
+            "sample_id": "gsm8k_train_4005",
+            "mean_logp": -0.04207335785031319
+          },
+          {
+            "sample_id": "gsm8k_train_6766",
+            "mean_logp": -0.008352081291377544
+          },
+          {
+            "sample_id": "gsm8k_train_3229",
+            "mean_logp": -0.633497416973114
+          },
+          {
+            "sample_id": "gsm8k_train_2286",
+            "mean_logp": -0.006183871533721685
+          },
+          {
+            "sample_id": "gsm8k_train_3967",
+            "mean_logp": -0.14220879971981049
+          },
+          {
+            "sample_id": "gsm8k_train_3441",
+            "mean_logp": -0.1309920847415924
+          },
+          {
+            "sample_id": "gsm8k_train_6055",
+            "mean_logp": -0.0005752876750193536
+          },
+          {
+            "sample_id": "gsm8k_train_4689",
+            "mean_logp": -0.11854471266269684
+          },
+          {
+            "sample_id": "gsm8k_train_4106",
+            "mean_logp": -0.014617995359003544
+          },
+          {
+            "sample_id": "gsm8k_train_0662",
+            "mean_logp": -0.3117207884788513
+          },
+          {
+            "sample_id": "gsm8k_train_7048",
+            "mean_logp": -0.012646084651350975
+          },
+          {
+            "sample_id": "gsm8k_train_6183",
+            "mean_logp": -0.030014581978321075
+          },
+          {
+            "sample_id": "gsm8k_train_7144",
+            "mean_logp": -1.3018234968185425
+          },
+          {
+            "sample_id": "gsm8k_train_3654",
+            "mean_logp": -0.0015266642440110445
+          },
+          {
+            "sample_id": "gsm8k_train_6099",
+            "mean_logp": -0.0019052361603826284
+          },
+          {
+            "sample_id": "gsm8k_train_3356",
+            "mean_logp": -0.016217650845646858
+          },
+          {
+            "sample_id": "gsm8k_train_1610",
+            "mean_logp": -0.3628169000148773
+          },
+          {
+            "sample_id": "gsm8k_train_4605",
+            "mean_logp": -0.13532806932926178
+          },
+          {
+            "sample_id": "gsm8k_train_1307",
+            "mean_logp": -0.05784205347299576
+          },
+          {
+            "sample_id": "gsm8k_train_3701",
+            "mean_logp": -0.024705156683921814
+          },
+          {
+            "sample_id": "gsm8k_train_5665",
+            "mean_logp": -0.024505216628313065
+          },
+          {
+            "sample_id": "gsm8k_train_5227",
+            "mean_logp": -0.3611736297607422
+          },
+          {
+            "sample_id": "gsm8k_train_0330",
+            "mean_logp": -0.028403200209140778
+          },
+          {
+            "sample_id": "gsm8k_train_0654",
+            "mean_logp": -0.013012446463108063
+          },
+          {
+            "sample_id": "gsm8k_train_6189",
+            "mean_logp": -0.12941645085811615
+          },
+          {
+            "sample_id": "gsm8k_train_7257",
+            "mean_logp": -0.017733367159962654
+          },
+          {
+            "sample_id": "gsm8k_train_1037",
+            "mean_logp": -0.02354792319238186
+          },
+          {
+            "sample_id": "gsm8k_train_7007",
+            "mean_logp": -0.07977878302335739
+          },
+          {
+            "sample_id": "gsm8k_train_0842",
+            "mean_logp": -0.0658731758594513
+          },
+          {
+            "sample_id": "gsm8k_train_6740",
+            "mean_logp": -0.000899826583918184
+          },
+          {
+            "sample_id": "gsm8k_train_3023",
+            "mean_logp": -0.22756366431713104
+          },
+          {
+            "sample_id": "gsm8k_train_6227",
+            "mean_logp": -0.033367983996868134
+          },
+          {
+            "sample_id": "gsm8k_train_0344",
+            "mean_logp": -0.13892066478729248
+          },
+          {
+            "sample_id": "gsm8k_train_4766",
+            "mean_logp": -0.006794693414121866
+          },
+          {
+            "sample_id": "gsm8k_train_2328",
+            "mean_logp": -0.0008989392081275582
+          },
+          {
+            "sample_id": "gsm8k_train_2812",
+            "mean_logp": -0.028360769152641296
+          },
+          {
+            "sample_id": "gsm8k_train_7134",
+            "mean_logp": -0.026178810745477676
+          },
+          {
+            "sample_id": "gsm8k_train_7355",
+            "mean_logp": -0.12235800176858902
+          },
+          {
+            "sample_id": "gsm8k_train_1020",
+            "mean_logp": -0.8048132061958313
+          },
+          {
+            "sample_id": "gsm8k_train_2804",
+            "mean_logp": -0.0032117068767547607
+          },
+          {
+            "sample_id": "gsm8k_train_3774",
+            "mean_logp": -0.0016988428542390466
+          },
+          {
+            "sample_id": "gsm8k_train_1415",
+            "mean_logp": -0.16239838302135468
+          },
+          {
+            "sample_id": "gsm8k_train_2737",
+            "mean_logp": -0.13846921920776367
+          },
+          {
+            "sample_id": "gsm8k_train_5773",
+            "mean_logp": -0.4339773952960968
+          },
+          {
+            "sample_id": "gsm8k_train_6139",
+            "mean_logp": -0.01677253097295761
+          },
+          {
+            "sample_id": "gsm8k_train_5737",
+            "mean_logp": -0.014671668410301208
+          },
+          {
+            "sample_id": "gsm8k_train_4810",
+            "mean_logp": -0.07407333701848984
+          },
+          {
+            "sample_id": "gsm8k_train_6017",
+            "mean_logp": -0.036388806998729706
+          },
+          {
+            "sample_id": "gsm8k_train_2632",
+            "mean_logp": -0.5991586446762085
+          },
+          {
+            "sample_id": "gsm8k_train_2254",
+            "mean_logp": -0.009603292681276798
+          },
+          {
+            "sample_id": "gsm8k_train_3569",
+            "mean_logp": -0.06208783760666847
+          },
+          {
+            "sample_id": "gsm8k_train_2707",
+            "mean_logp": -0.002455079462379217
+          },
+          {
+            "sample_id": "gsm8k_train_7168",
+            "mean_logp": -0.16443167626857758
+          },
+          {
+            "sample_id": "gsm8k_train_2629",
+            "mean_logp": -0.1986818164587021
+          },
+          {
+            "sample_id": "gsm8k_train_3618",
+            "mean_logp": -0.1484137624502182
+          },
+          {
+            "sample_id": "gsm8k_train_1449",
+            "mean_logp": -0.06610500812530518
+          },
+          {
+            "sample_id": "gsm8k_train_4261",
+            "mean_logp": -0.05853511393070221
+          },
+          {
+            "sample_id": "gsm8k_train_6305",
+            "mean_logp": -0.2802334427833557
+          },
+          {
+            "sample_id": "gsm8k_train_5365",
+            "mean_logp": -0.002008413663133979
+          },
+          {
+            "sample_id": "gsm8k_train_4330",
+            "mean_logp": -0.03606893867254257
+          },
+          {
+            "sample_id": "gsm8k_train_2651",
+            "mean_logp": -0.044879041612148285
+          },
+          {
+            "sample_id": "gsm8k_train_5099",
+            "mean_logp": -0.025245698168873787
+          },
+          {
+            "sample_id": "gsm8k_train_0747",
+            "mean_logp": -0.042476583272218704
+          },
+          {
+            "sample_id": "gsm8k_train_2305",
+            "mean_logp": -0.08779529482126236
+          },
+          {
+            "sample_id": "gsm8k_train_3183",
+            "mean_logp": -0.0004018277395516634
+          },
+          {
+            "sample_id": "gsm8k_train_6876",
+            "mean_logp": -0.0007730732904747128
+          },
+          {
+            "sample_id": "gsm8k_train_4144",
+            "mean_logp": -0.01157523412257433
+          },
+          {
+            "sample_id": "gsm8k_train_4487",
+            "mean_logp": -0.08173990994691849
+          },
+          {
+            "sample_id": "gsm8k_train_6299",
+            "mean_logp": -0.01334885973483324
+          },
+          {
+            "sample_id": "gsm8k_train_7201",
+            "mean_logp": -0.13186708092689514
+          },
+          {
+            "sample_id": "gsm8k_train_6446",
+            "mean_logp": -0.055653516203165054
+          },
+          {
+            "sample_id": "gsm8k_train_5388",
+            "mean_logp": -0.005616791546344757
+          },
+          {
+            "sample_id": "gsm8k_train_5943",
+            "mean_logp": -0.00015651702415198088
+          },
+          {
+            "sample_id": "gsm8k_train_3777",
+            "mean_logp": -0.12199967354536057
+          },
+          {
+            "sample_id": "gsm8k_train_7434",
+            "mean_logp": -0.0024679144844412804
+          },
+          {
+            "sample_id": "gsm8k_train_3753",
+            "mean_logp": -0.046473097056150436
+          },
+          {
+            "sample_id": "gsm8k_train_3128",
+            "mean_logp": -0.043780818581581116
+          },
+          {
+            "sample_id": "gsm8k_train_1378",
+            "mean_logp": -0.0023315846920013428
+          },
+          {
+            "sample_id": "gsm8k_train_5402",
+            "mean_logp": -0.02490989863872528
+          },
+          {
+            "sample_id": "gsm8k_train_1083",
+            "mean_logp": -0.0016810697270557284
+          },
+          {
+            "sample_id": "gsm8k_train_1697",
+            "mean_logp": -0.0011066386941820383
+          },
+          {
+            "sample_id": "gsm8k_train_2138",
+            "mean_logp": -0.0016625378048047423
+          },
+          {
+            "sample_id": "gsm8k_train_4439",
+            "mean_logp": -0.011003367602825165
+          },
+          {
+            "sample_id": "gsm8k_train_5495",
+            "mean_logp": -0.07909558713436127
+          },
+          {
+            "sample_id": "gsm8k_train_1360",
+            "mean_logp": -0.0004839181783609092
+          },
+          {
+            "sample_id": "gsm8k_train_3061",
+            "mean_logp": -0.026137854903936386
+          },
+          {
+            "sample_id": "gsm8k_train_5839",
+            "mean_logp": -0.043095000088214874
+          },
+          {
+            "sample_id": "gsm8k_train_4835",
+            "mean_logp": -0.017086444422602654
+          },
+          {
+            "sample_id": "gsm8k_train_3139",
+            "mean_logp": -0.1876438856124878
+          },
+          {
+            "sample_id": "gsm8k_train_1132",
+            "mean_logp": -0.14607085287570953
+          }
+        ]
+      },
+      {
+        "mask": 3,
+        "mean_logp": -0.09425795884180843,
+        "original32_mean_logp": -0.10579012773450813,
+        "added96_mean_logp": -0.09041390254424186,
+        "per_program": [
+          {
+            "sample_id": "gsm8k_train_4824",
+            "mean_logp": -0.024755727499723434
+          },
+          {
+            "sample_id": "gsm8k_train_1869",
+            "mean_logp": -0.3327207863330841
+          },
+          {
+            "sample_id": "gsm8k_train_7310",
+            "mean_logp": -0.005227215122431517
+          },
+          {
+            "sample_id": "gsm8k_train_2237",
+            "mean_logp": -0.10007389634847641
+          },
+          {
+            "sample_id": "gsm8k_train_6478",
+            "mean_logp": -0.0019584232941269875
+          },
+          {
+            "sample_id": "gsm8k_train_5778",
+            "mean_logp": -0.004607488866895437
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "mean_logp": -0.06675058603286743
+          },
+          {
+            "sample_id": "gsm8k_train_0112",
+            "mean_logp": -0.10361295193433762
+          },
+          {
+            "sample_id": "gsm8k_train_2214",
+            "mean_logp": -0.2302737832069397
+          },
+          {
+            "sample_id": "gsm8k_train_6976",
+            "mean_logp": -0.026509108021855354
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "mean_logp": -0.1156499981880188
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "mean_logp": -0.02207930199801922
+          },
+          {
+            "sample_id": "gsm8k_train_5854",
+            "mean_logp": -0.014955894090235233
+          },
+          {
+            "sample_id": "gsm8k_train_4402",
+            "mean_logp": -0.0032607465982437134
+          },
+          {
+            "sample_id": "gsm8k_train_1172",
+            "mean_logp": -0.05454672500491142
+          },
+          {
+            "sample_id": "gsm8k_train_0186",
+            "mean_logp": -0.4159434735774994
+          },
+          {
+            "sample_id": "gsm8k_train_3525",
+            "mean_logp": -0.09477059543132782
+          },
+          {
+            "sample_id": "gsm8k_train_6583",
+            "mean_logp": -0.03646127134561539
+          },
+          {
+            "sample_id": "gsm8k_train_5468",
+            "mean_logp": -0.02281121164560318
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "mean_logp": -0.03722930699586868
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "mean_logp": -0.0014355244347825646
+          },
+          {
+            "sample_id": "gsm8k_train_7271",
+            "mean_logp": -0.003222887637093663
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "mean_logp": -0.05531720072031021
+          },
+          {
+            "sample_id": "gsm8k_train_4566",
+            "mean_logp": -0.035555195063352585
+          },
+          {
+            "sample_id": "gsm8k_train_0280",
+            "mean_logp": -0.10448383539915085
+          },
+          {
+            "sample_id": "gsm8k_train_0499",
+            "mean_logp": -0.5478573441505432
+          },
+          {
+            "sample_id": "gsm8k_train_1370",
+            "mean_logp": -0.06734377890825272
+          },
+          {
+            "sample_id": "gsm8k_train_4248",
+            "mean_logp": -0.06675052642822266
+          },
+          {
+            "sample_id": "gsm8k_train_0358",
+            "mean_logp": -0.04447397589683533
+          },
+          {
+            "sample_id": "gsm8k_train_4888",
+            "mean_logp": -0.160932257771492
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "mean_logp": -0.15670658648014069
+          },
+          {
+            "sample_id": "gsm8k_train_5190",
+            "mean_logp": -0.42700648307800293
+          },
+          {
+            "sample_id": "gsm8k_train_5821",
+            "mean_logp": -0.014523111283779144
+          },
+          {
+            "sample_id": "gsm8k_train_7306",
+            "mean_logp": -0.10384359955787659
+          },
+          {
+            "sample_id": "gsm8k_train_5841",
+            "mean_logp": -0.03291638568043709
+          },
+          {
+            "sample_id": "gsm8k_train_5223",
+            "mean_logp": -0.0035427475813776255
+          },
+          {
+            "sample_id": "gsm8k_train_4997",
+            "mean_logp": -0.08630180358886719
+          },
+          {
+            "sample_id": "gsm8k_train_0610",
+            "mean_logp": -0.08562995493412018
+          },
+          {
+            "sample_id": "gsm8k_train_4005",
+            "mean_logp": -0.06860195845365524
+          },
+          {
+            "sample_id": "gsm8k_train_6766",
+            "mean_logp": -0.010206435807049274
+          },
+          {
+            "sample_id": "gsm8k_train_3229",
+            "mean_logp": -0.07584889978170395
+          },
+          {
+            "sample_id": "gsm8k_train_2286",
+            "mean_logp": -0.029024653136730194
+          },
+          {
+            "sample_id": "gsm8k_train_3967",
+            "mean_logp": -0.04377393424510956
+          },
+          {
+            "sample_id": "gsm8k_train_3441",
+            "mean_logp": -0.030802221968770027
+          },
+          {
+            "sample_id": "gsm8k_train_6055",
+            "mean_logp": -0.019710475578904152
+          },
+          {
+            "sample_id": "gsm8k_train_4689",
+            "mean_logp": -0.1704694926738739
+          },
+          {
+            "sample_id": "gsm8k_train_4106",
+            "mean_logp": -0.0071776206605136395
+          },
+          {
+            "sample_id": "gsm8k_train_0662",
+            "mean_logp": -0.4706343710422516
+          },
+          {
+            "sample_id": "gsm8k_train_7048",
+            "mean_logp": -0.024061884731054306
+          },
+          {
+            "sample_id": "gsm8k_train_6183",
+            "mean_logp": -0.2308276742696762
+          },
+          {
+            "sample_id": "gsm8k_train_7144",
+            "mean_logp": -0.16999061405658722
+          },
+          {
+            "sample_id": "gsm8k_train_3654",
+            "mean_logp": -0.002843452850356698
+          },
+          {
+            "sample_id": "gsm8k_train_6099",
+            "mean_logp": -0.005242439918220043
+          },
+          {
+            "sample_id": "gsm8k_train_3356",
+            "mean_logp": -0.6292768120765686
+          },
+          {
+            "sample_id": "gsm8k_train_1610",
+            "mean_logp": -0.14720295369625092
+          },
+          {
+            "sample_id": "gsm8k_train_4605",
+            "mean_logp": -0.06870217621326447
+          },
+          {
+            "sample_id": "gsm8k_train_1307",
+            "mean_logp": -0.09535577893257141
+          },
+          {
+            "sample_id": "gsm8k_train_3701",
+            "mean_logp": -0.0862969234585762
+          },
+          {
+            "sample_id": "gsm8k_train_5665",
+            "mean_logp": -0.0009152168640866876
+          },
+          {
+            "sample_id": "gsm8k_train_5227",
+            "mean_logp": -0.471775084733963
+          },
+          {
+            "sample_id": "gsm8k_train_0330",
+            "mean_logp": -0.06807013601064682
+          },
+          {
+            "sample_id": "gsm8k_train_0654",
+            "mean_logp": -0.0006598171312361956
+          },
+          {
+            "sample_id": "gsm8k_train_6189",
+            "mean_logp": -0.03060017339885235
+          },
+          {
+            "sample_id": "gsm8k_train_7257",
+            "mean_logp": -0.020511692389845848
+          },
+          {
+            "sample_id": "gsm8k_train_1037",
+            "mean_logp": -0.27390173077583313
+          },
+          {
+            "sample_id": "gsm8k_train_7007",
+            "mean_logp": -0.21331745386123657
+          },
+          {
+            "sample_id": "gsm8k_train_0842",
+            "mean_logp": -0.20455151796340942
+          },
+          {
+            "sample_id": "gsm8k_train_6740",
+            "mean_logp": -0.0038715223781764507
+          },
+          {
+            "sample_id": "gsm8k_train_3023",
+            "mean_logp": -0.30984941124916077
+          },
+          {
+            "sample_id": "gsm8k_train_6227",
+            "mean_logp": -0.03761787340044975
+          },
+          {
+            "sample_id": "gsm8k_train_0344",
+            "mean_logp": -0.1425430327653885
+          },
+          {
+            "sample_id": "gsm8k_train_4766",
+            "mean_logp": -0.07365293800830841
+          },
+          {
+            "sample_id": "gsm8k_train_2328",
+            "mean_logp": -0.028123782947659492
+          },
+          {
+            "sample_id": "gsm8k_train_2812",
+            "mean_logp": -0.02047913894057274
+          },
+          {
+            "sample_id": "gsm8k_train_7134",
+            "mean_logp": -0.02289680577814579
+          },
+          {
+            "sample_id": "gsm8k_train_7355",
+            "mean_logp": -0.09325843304395676
+          },
+          {
+            "sample_id": "gsm8k_train_1020",
+            "mean_logp": -0.14044836163520813
+          },
+          {
+            "sample_id": "gsm8k_train_2804",
+            "mean_logp": -0.29314565658569336
+          },
+          {
+            "sample_id": "gsm8k_train_3774",
+            "mean_logp": -0.0007316077826544642
+          },
+          {
+            "sample_id": "gsm8k_train_1415",
+            "mean_logp": -0.12847845256328583
+          },
+          {
+            "sample_id": "gsm8k_train_2737",
+            "mean_logp": -0.01204652339220047
+          },
+          {
+            "sample_id": "gsm8k_train_5773",
+            "mean_logp": -0.1885989010334015
+          },
+          {
+            "sample_id": "gsm8k_train_6139",
+            "mean_logp": -0.0012086232891306281
+          },
+          {
+            "sample_id": "gsm8k_train_5737",
+            "mean_logp": -0.020880185067653656
+          },
+          {
+            "sample_id": "gsm8k_train_4810",
+            "mean_logp": -0.1756734848022461
+          },
+          {
+            "sample_id": "gsm8k_train_6017",
+            "mean_logp": -0.03345920518040657
+          },
+          {
+            "sample_id": "gsm8k_train_2632",
+            "mean_logp": -0.3094238340854645
+          },
+          {
+            "sample_id": "gsm8k_train_2254",
+            "mean_logp": -0.05013158917427063
+          },
+          {
+            "sample_id": "gsm8k_train_3569",
+            "mean_logp": -0.003776762168854475
+          },
+          {
+            "sample_id": "gsm8k_train_2707",
+            "mean_logp": -0.015158228576183319
+          },
+          {
+            "sample_id": "gsm8k_train_7168",
+            "mean_logp": -0.11933834850788116
+          },
+          {
+            "sample_id": "gsm8k_train_2629",
+            "mean_logp": -0.1688869148492813
+          },
+          {
+            "sample_id": "gsm8k_train_3618",
+            "mean_logp": -0.03676976263523102
+          },
+          {
+            "sample_id": "gsm8k_train_1449",
+            "mean_logp": -0.04484989866614342
+          },
+          {
+            "sample_id": "gsm8k_train_4261",
+            "mean_logp": -0.10922196507453918
+          },
+          {
+            "sample_id": "gsm8k_train_6305",
+            "mean_logp": -0.361446738243103
+          },
+          {
+            "sample_id": "gsm8k_train_5365",
+            "mean_logp": -0.0019788253121078014
+          },
+          {
+            "sample_id": "gsm8k_train_4330",
+            "mean_logp": -0.034026481211185455
+          },
+          {
+            "sample_id": "gsm8k_train_2651",
+            "mean_logp": -0.017260080203413963
+          },
+          {
+            "sample_id": "gsm8k_train_5099",
+            "mean_logp": -0.0067693800665438175
+          },
+          {
+            "sample_id": "gsm8k_train_0747",
+            "mean_logp": -0.01563924551010132
+          },
+          {
+            "sample_id": "gsm8k_train_2305",
+            "mean_logp": -0.5801562666893005
+          },
+          {
+            "sample_id": "gsm8k_train_3183",
+            "mean_logp": -0.001704546855762601
+          },
+          {
+            "sample_id": "gsm8k_train_6876",
+            "mean_logp": -0.000488712452352047
+          },
+          {
+            "sample_id": "gsm8k_train_4144",
+            "mean_logp": -0.014921700581908226
+          },
+          {
+            "sample_id": "gsm8k_train_4487",
+            "mean_logp": -0.2547847628593445
+          },
+          {
+            "sample_id": "gsm8k_train_6299",
+            "mean_logp": -0.012004751712083817
+          },
+          {
+            "sample_id": "gsm8k_train_7201",
+            "mean_logp": -0.05108651891350746
+          },
+          {
+            "sample_id": "gsm8k_train_6446",
+            "mean_logp": -0.043069515377283096
+          },
+          {
+            "sample_id": "gsm8k_train_5388",
+            "mean_logp": -0.008583788760006428
+          },
+          {
+            "sample_id": "gsm8k_train_5943",
+            "mean_logp": -0.0051461029797792435
+          },
+          {
+            "sample_id": "gsm8k_train_3777",
+            "mean_logp": -0.10168923437595367
+          },
+          {
+            "sample_id": "gsm8k_train_7434",
+            "mean_logp": -0.023429976776242256
+          },
+          {
+            "sample_id": "gsm8k_train_3753",
+            "mean_logp": -0.03417061269283295
+          },
+          {
+            "sample_id": "gsm8k_train_3128",
+            "mean_logp": -0.07077240943908691
+          },
+          {
+            "sample_id": "gsm8k_train_1378",
+            "mean_logp": -0.0019504725933074951
+          },
+          {
+            "sample_id": "gsm8k_train_5402",
+            "mean_logp": -0.09375446289777756
+          },
+          {
+            "sample_id": "gsm8k_train_1083",
+            "mean_logp": -0.004798788111656904
+          },
+          {
+            "sample_id": "gsm8k_train_1697",
+            "mean_logp": -0.0011693552369251847
+          },
+          {
+            "sample_id": "gsm8k_train_2138",
+            "mean_logp": -0.0017182118026539683
+          },
+          {
+            "sample_id": "gsm8k_train_4439",
+            "mean_logp": -0.024910099804401398
+          },
+          {
+            "sample_id": "gsm8k_train_5495",
+            "mean_logp": -0.028486672788858414
+          },
+          {
+            "sample_id": "gsm8k_train_1360",
+            "mean_logp": -0.0009699821239337325
+          },
+          {
+            "sample_id": "gsm8k_train_3061",
+            "mean_logp": -0.012493999674916267
+          },
+          {
+            "sample_id": "gsm8k_train_5839",
+            "mean_logp": -0.04196234792470932
+          },
+          {
+            "sample_id": "gsm8k_train_4835",
+            "mean_logp": -0.029799776151776314
+          },
+          {
+            "sample_id": "gsm8k_train_3139",
+            "mean_logp": -0.13056643307209015
+          },
+          {
+            "sample_id": "gsm8k_train_1132",
+            "mean_logp": -0.08639194816350937
+          }
+        ]
+      },
+      {
+        "mask": 4,
+        "mean_logp": -0.10557693682903846,
+        "original32_mean_logp": -0.12291953852763982,
+        "added96_mean_logp": -0.09979606959617134,
+        "per_program": [
+          {
+            "sample_id": "gsm8k_train_4824",
+            "mean_logp": -0.07633521407842636
+          },
+          {
+            "sample_id": "gsm8k_train_1869",
+            "mean_logp": -0.39817437529563904
+          },
+          {
+            "sample_id": "gsm8k_train_7310",
+            "mean_logp": -0.024977948516607285
+          },
+          {
+            "sample_id": "gsm8k_train_2237",
+            "mean_logp": -0.0010348825016990304
+          },
+          {
+            "sample_id": "gsm8k_train_6478",
+            "mean_logp": -0.0034674457274377346
+          },
+          {
+            "sample_id": "gsm8k_train_5778",
+            "mean_logp": -0.04679032415151596
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "mean_logp": -0.1174698919057846
+          },
+          {
+            "sample_id": "gsm8k_train_0112",
+            "mean_logp": -0.13148446381092072
+          },
+          {
+            "sample_id": "gsm8k_train_2214",
+            "mean_logp": -0.0436115562915802
+          },
+          {
+            "sample_id": "gsm8k_train_6976",
+            "mean_logp": -0.00759663712233305
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "mean_logp": -0.612963080406189
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "mean_logp": -0.034010108560323715
+          },
+          {
+            "sample_id": "gsm8k_train_5854",
+            "mean_logp": -0.009219584055244923
+          },
+          {
+            "sample_id": "gsm8k_train_4402",
+            "mean_logp": -0.00532984733581543
+          },
+          {
+            "sample_id": "gsm8k_train_1172",
+            "mean_logp": -0.13440881669521332
+          },
+          {
+            "sample_id": "gsm8k_train_0186",
+            "mean_logp": -0.11860313266515732
+          },
+          {
+            "sample_id": "gsm8k_train_3525",
+            "mean_logp": -0.26107507944107056
+          },
+          {
+            "sample_id": "gsm8k_train_6583",
+            "mean_logp": -0.1488194316625595
+          },
+          {
+            "sample_id": "gsm8k_train_5468",
+            "mean_logp": -0.0805661529302597
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "mean_logp": -0.17068186402320862
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "mean_logp": -0.019139094278216362
+          },
+          {
+            "sample_id": "gsm8k_train_7271",
+            "mean_logp": -0.014505824074149132
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "mean_logp": -0.3851609528064728
+          },
+          {
+            "sample_id": "gsm8k_train_4566",
+            "mean_logp": -0.02255645953118801
+          },
+          {
+            "sample_id": "gsm8k_train_0280",
+            "mean_logp": -0.10821427404880524
+          },
+          {
+            "sample_id": "gsm8k_train_0499",
+            "mean_logp": -0.29838645458221436
+          },
+          {
+            "sample_id": "gsm8k_train_1370",
+            "mean_logp": -0.45269760489463806
+          },
+          {
+            "sample_id": "gsm8k_train_4248",
+            "mean_logp": -0.025188609957695007
+          },
+          {
+            "sample_id": "gsm8k_train_0358",
+            "mean_logp": -0.04504285752773285
+          },
+          {
+            "sample_id": "gsm8k_train_4888",
+            "mean_logp": -0.029534466564655304
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "mean_logp": -0.039132844656705856
+          },
+          {
+            "sample_id": "gsm8k_train_5190",
+            "mean_logp": -0.0672459527850151
+          },
+          {
+            "sample_id": "gsm8k_train_5821",
+            "mean_logp": -0.018716590479016304
+          },
+          {
+            "sample_id": "gsm8k_train_7306",
+            "mean_logp": -0.09166288375854492
+          },
+          {
+            "sample_id": "gsm8k_train_5841",
+            "mean_logp": -0.0009532928233966231
+          },
+          {
+            "sample_id": "gsm8k_train_5223",
+            "mean_logp": -0.0045384978875517845
+          },
+          {
+            "sample_id": "gsm8k_train_4997",
+            "mean_logp": -0.02530384063720703
+          },
+          {
+            "sample_id": "gsm8k_train_0610",
+            "mean_logp": -0.2475007176399231
+          },
+          {
+            "sample_id": "gsm8k_train_4005",
+            "mean_logp": -0.48152223229408264
+          },
+          {
+            "sample_id": "gsm8k_train_6766",
+            "mean_logp": -0.012018188834190369
+          },
+          {
+            "sample_id": "gsm8k_train_3229",
+            "mean_logp": -0.050322920083999634
+          },
+          {
+            "sample_id": "gsm8k_train_2286",
+            "mean_logp": -0.09833850711584091
+          },
+          {
+            "sample_id": "gsm8k_train_3967",
+            "mean_logp": -0.01682855188846588
+          },
+          {
+            "sample_id": "gsm8k_train_3441",
+            "mean_logp": -0.13608528673648834
+          },
+          {
+            "sample_id": "gsm8k_train_6055",
+            "mean_logp": -0.010526108555495739
+          },
+          {
+            "sample_id": "gsm8k_train_4689",
+            "mean_logp": -0.3160126805305481
+          },
+          {
+            "sample_id": "gsm8k_train_4106",
+            "mean_logp": -0.04622069373726845
+          },
+          {
+            "sample_id": "gsm8k_train_0662",
+            "mean_logp": -0.30181920528411865
+          },
+          {
+            "sample_id": "gsm8k_train_7048",
+            "mean_logp": -0.029747793450951576
+          },
+          {
+            "sample_id": "gsm8k_train_6183",
+            "mean_logp": -0.13964875042438507
+          },
+          {
+            "sample_id": "gsm8k_train_7144",
+            "mean_logp": -0.7055424451828003
+          },
+          {
+            "sample_id": "gsm8k_train_3654",
+            "mean_logp": -0.006487700622528791
+          },
+          {
+            "sample_id": "gsm8k_train_6099",
+            "mean_logp": -0.005908863618969917
+          },
+          {
+            "sample_id": "gsm8k_train_3356",
+            "mean_logp": -0.2358366996049881
+          },
+          {
+            "sample_id": "gsm8k_train_1610",
+            "mean_logp": -0.0009709994192235172
+          },
+          {
+            "sample_id": "gsm8k_train_4605",
+            "mean_logp": -0.08444636315107346
+          },
+          {
+            "sample_id": "gsm8k_train_1307",
+            "mean_logp": -0.014814232476055622
+          },
+          {
+            "sample_id": "gsm8k_train_3701",
+            "mean_logp": -0.04482302814722061
+          },
+          {
+            "sample_id": "gsm8k_train_5665",
+            "mean_logp": -0.003098377026617527
+          },
+          {
+            "sample_id": "gsm8k_train_5227",
+            "mean_logp": -0.029007507488131523
+          },
+          {
+            "sample_id": "gsm8k_train_0330",
+            "mean_logp": -0.6423583626747131
+          },
+          {
+            "sample_id": "gsm8k_train_0654",
+            "mean_logp": -1.4439350366592407
+          },
+          {
+            "sample_id": "gsm8k_train_6189",
+            "mean_logp": -0.10380634665489197
+          },
+          {
+            "sample_id": "gsm8k_train_7257",
+            "mean_logp": -0.004194736480712891
+          },
+          {
+            "sample_id": "gsm8k_train_1037",
+            "mean_logp": -0.04083340987563133
+          },
+          {
+            "sample_id": "gsm8k_train_7007",
+            "mean_logp": -0.06088975444436073
+          },
+          {
+            "sample_id": "gsm8k_train_0842",
+            "mean_logp": -0.05467640608549118
+          },
+          {
+            "sample_id": "gsm8k_train_6740",
+            "mean_logp": -0.005889369174838066
+          },
+          {
+            "sample_id": "gsm8k_train_3023",
+            "mean_logp": -0.15890778601169586
+          },
+          {
+            "sample_id": "gsm8k_train_6227",
+            "mean_logp": -0.014877764508128166
+          },
+          {
+            "sample_id": "gsm8k_train_0344",
+            "mean_logp": -0.09545457363128662
+          },
+          {
+            "sample_id": "gsm8k_train_4766",
+            "mean_logp": -0.02804536558687687
+          },
+          {
+            "sample_id": "gsm8k_train_2328",
+            "mean_logp": -0.009533130563795567
+          },
+          {
+            "sample_id": "gsm8k_train_2812",
+            "mean_logp": -0.012161741964519024
+          },
+          {
+            "sample_id": "gsm8k_train_7134",
+            "mean_logp": -0.014632238075137138
+          },
+          {
+            "sample_id": "gsm8k_train_7355",
+            "mean_logp": -0.15055283904075623
+          },
+          {
+            "sample_id": "gsm8k_train_1020",
+            "mean_logp": -0.027039527893066406
+          },
+          {
+            "sample_id": "gsm8k_train_2804",
+            "mean_logp": -2.917647361755371e-05
+          },
+          {
+            "sample_id": "gsm8k_train_3774",
+            "mean_logp": -0.07475662231445312
+          },
+          {
+            "sample_id": "gsm8k_train_1415",
+            "mean_logp": -0.08462392538785934
+          },
+          {
+            "sample_id": "gsm8k_train_2737",
+            "mean_logp": -0.021590804681181908
+          },
+          {
+            "sample_id": "gsm8k_train_5773",
+            "mean_logp": -0.12919612228870392
+          },
+          {
+            "sample_id": "gsm8k_train_6139",
+            "mean_logp": -0.017625844106078148
+          },
+          {
+            "sample_id": "gsm8k_train_5737",
+            "mean_logp": -0.025371208786964417
+          },
+          {
+            "sample_id": "gsm8k_train_4810",
+            "mean_logp": -0.031406696885824203
+          },
+          {
+            "sample_id": "gsm8k_train_6017",
+            "mean_logp": -0.11349046230316162
+          },
+          {
+            "sample_id": "gsm8k_train_2632",
+            "mean_logp": -0.08796211332082748
+          },
+          {
+            "sample_id": "gsm8k_train_2254",
+            "mean_logp": -0.046962447464466095
+          },
+          {
+            "sample_id": "gsm8k_train_3569",
+            "mean_logp": -0.19950039684772491
+          },
+          {
+            "sample_id": "gsm8k_train_2707",
+            "mean_logp": -0.057882159948349
+          },
+          {
+            "sample_id": "gsm8k_train_7168",
+            "mean_logp": -0.1029268205165863
+          },
+          {
+            "sample_id": "gsm8k_train_2629",
+            "mean_logp": -0.18557904660701752
+          },
+          {
+            "sample_id": "gsm8k_train_3618",
+            "mean_logp": -0.11260535567998886
+          },
+          {
+            "sample_id": "gsm8k_train_1449",
+            "mean_logp": -0.014134065248072147
+          },
+          {
+            "sample_id": "gsm8k_train_4261",
+            "mean_logp": -0.14749875664710999
+          },
+          {
+            "sample_id": "gsm8k_train_6305",
+            "mean_logp": -0.0042650047689676285
+          },
+          {
+            "sample_id": "gsm8k_train_5365",
+            "mean_logp": -0.0041318307630717754
+          },
+          {
+            "sample_id": "gsm8k_train_4330",
+            "mean_logp": -0.04266180843114853
+          },
+          {
+            "sample_id": "gsm8k_train_2651",
+            "mean_logp": -0.13458915054798126
+          },
+          {
+            "sample_id": "gsm8k_train_5099",
+            "mean_logp": -0.026122385635972023
+          },
+          {
+            "sample_id": "gsm8k_train_0747",
+            "mean_logp": -0.005044277757406235
+          },
+          {
+            "sample_id": "gsm8k_train_2305",
+            "mean_logp": -0.50877845287323
+          },
+          {
+            "sample_id": "gsm8k_train_3183",
+            "mean_logp": -0.0011460635578259826
+          },
+          {
+            "sample_id": "gsm8k_train_6876",
+            "mean_logp": -0.00033295672619715333
+          },
+          {
+            "sample_id": "gsm8k_train_4144",
+            "mean_logp": -0.013478386215865612
+          },
+          {
+            "sample_id": "gsm8k_train_4487",
+            "mean_logp": -0.14298026263713837
+          },
+          {
+            "sample_id": "gsm8k_train_6299",
+            "mean_logp": -0.005452604964375496
+          },
+          {
+            "sample_id": "gsm8k_train_7201",
+            "mean_logp": -0.06895454227924347
+          },
+          {
+            "sample_id": "gsm8k_train_6446",
+            "mean_logp": -0.40450283885002136
+          },
+          {
+            "sample_id": "gsm8k_train_5388",
+            "mean_logp": -0.003231690963730216
+          },
+          {
+            "sample_id": "gsm8k_train_5943",
+            "mean_logp": -0.005341739859431982
+          },
+          {
+            "sample_id": "gsm8k_train_3777",
+            "mean_logp": -0.1874465048313141
+          },
+          {
+            "sample_id": "gsm8k_train_7434",
+            "mean_logp": -0.006697693839669228
+          },
+          {
+            "sample_id": "gsm8k_train_3753",
+            "mean_logp": -0.010459697805345058
+          },
+          {
+            "sample_id": "gsm8k_train_3128",
+            "mean_logp": -0.06366900354623795
+          },
+          {
+            "sample_id": "gsm8k_train_1378",
+            "mean_logp": -0.0003342628479003906
+          },
+          {
+            "sample_id": "gsm8k_train_5402",
+            "mean_logp": -0.011658460833132267
+          },
+          {
+            "sample_id": "gsm8k_train_1083",
+            "mean_logp": -0.003846684703603387
+          },
+          {
+            "sample_id": "gsm8k_train_1697",
+            "mean_logp": -0.09859013557434082
+          },
+          {
+            "sample_id": "gsm8k_train_2138",
+            "mean_logp": -0.0009222288499586284
+          },
+          {
+            "sample_id": "gsm8k_train_4439",
+            "mean_logp": -0.0033539922442287207
+          },
+          {
+            "sample_id": "gsm8k_train_5495",
+            "mean_logp": -0.03534648194909096
+          },
+          {
+            "sample_id": "gsm8k_train_1360",
+            "mean_logp": -0.0013024210929870605
+          },
+          {
+            "sample_id": "gsm8k_train_3061",
+            "mean_logp": -0.005552869290113449
+          },
+          {
+            "sample_id": "gsm8k_train_5839",
+            "mean_logp": -0.00989529862999916
+          },
+          {
+            "sample_id": "gsm8k_train_4835",
+            "mean_logp": -0.052909038960933685
+          },
+          {
+            "sample_id": "gsm8k_train_3139",
+            "mean_logp": -0.23503901064395905
+          },
+          {
+            "sample_id": "gsm8k_train_1132",
+            "mean_logp": -0.0027515250258147717
+          }
+        ]
+      }
+    ]
+  },
+  "frozen_changed": [],
+  "objective": "-.25 times mean successful-program masked-token logp; no KL/clipping"
+}

@@ -1,0 +1,185 @@
+{
+  "validation_file": "/root/s-flm/data/gsm8k_pot_result_cot_comments_512/sft_validation.jsonl",
+  "validation_rows": 632,
+  "generation_subset_size": 64,
+  "generation_subset_seed": 20261022,
+  "generation_sample_ids": [
+    "gsm8k_train_0016",
+    "gsm8k_train_0033",
+    "gsm8k_train_0572",
+    "gsm8k_train_0593",
+    "gsm8k_train_0674",
+    "gsm8k_train_0675",
+    "gsm8k_train_0681",
+    "gsm8k_train_0695",
+    "gsm8k_train_0713",
+    "gsm8k_train_0822",
+    "gsm8k_train_0880",
+    "gsm8k_train_0992",
+    "gsm8k_train_1053",
+    "gsm8k_train_1057",
+    "gsm8k_train_1108",
+    "gsm8k_train_1199",
+    "gsm8k_train_1210",
+    "gsm8k_train_1280",
+    "gsm8k_train_1298",
+    "gsm8k_train_1503",
+    "gsm8k_train_1544",
+    "gsm8k_train_1643",
+    "gsm8k_train_1736",
+    "gsm8k_train_1775",
+    "gsm8k_train_1838",
+    "gsm8k_train_2054",
+    "gsm8k_train_2078",
+    "gsm8k_train_2215",
+    "gsm8k_train_2241",
+    "gsm8k_train_2294",
+    "gsm8k_train_2378",
+    "gsm8k_train_2457",
+    "gsm8k_train_2549",
+    "gsm8k_train_2572",
+    "gsm8k_train_2664",
+    "gsm8k_train_2712",
+    "gsm8k_train_3250",
+    "gsm8k_train_3477",
+    "gsm8k_train_3645",
+    "gsm8k_train_3913",
+    "gsm8k_train_4115",
+    "gsm8k_train_4150",
+    "gsm8k_train_4381",
+    "gsm8k_train_4415",
+    "gsm8k_train_4647",
+    "gsm8k_train_4703",
+    "gsm8k_train_5148",
+    "gsm8k_train_5225",
+    "gsm8k_train_5345",
+    "gsm8k_train_5490",
+    "gsm8k_train_5580",
+    "gsm8k_train_5588",
+    "gsm8k_train_5777",
+    "gsm8k_train_6199",
+    "gsm8k_train_6233",
+    "gsm8k_train_6322",
+    "gsm8k_train_6432",
+    "gsm8k_train_6602",
+    "gsm8k_train_6814",
+    "gsm8k_train_6999",
+    "gsm8k_train_7062",
+    "gsm8k_train_7130",
+    "gsm8k_train_7131",
+    "gsm8k_train_7448"
+  ],
+  "mask_rates": [
+    0.25,
+    0.5,
+    0.75,
+    0.9,
+    1.0
+  ],
+  "generation_steps": [
+    128
+  ],
+  "generation_seeds": [
+    1,
+    2
+  ],
+  "mask_sweep_skipped": true,
+  "models": {
+    "base": {
+      "checkpoint": "/root/s-flm/checkpoints/tinygsm/mdlm.ckpt",
+      "weights": "EMA",
+      "mask_sweep": [],
+      "generation": {
+        "128/seed1": {
+          "n": 64,
+          "eos_observed": 63,
+          "eos_rate": 0.984375,
+          "full_parseable": 50,
+          "eos_parseable": 52,
+          "full_correct": 11,
+          "eos_correct": 11,
+          "eos_to_correct_changes": 0,
+          "eos_to_wrong_changes": 0,
+          "median_eos_position": 147
+        },
+        "128/seed2": {
+          "n": 64,
+          "eos_observed": 63,
+          "eos_rate": 0.984375,
+          "full_parseable": 45,
+          "eos_parseable": 46,
+          "full_correct": 6,
+          "eos_correct": 6,
+          "eos_to_correct_changes": 0,
+          "eos_to_wrong_changes": 0,
+          "median_eos_position": 151
+        }
+      },
+      "elapsed_seconds": 55.01439996436238
+    },
+    "step200": {
+      "checkpoint": "/root/autodl-tmp/s-flm/outputs/sft/20261022-lora-result-lr1e5-01/checkpoints/step-000200.ckpt",
+      "weights": "EMA",
+      "mask_sweep": [],
+      "generation": {
+        "128/seed1": {
+          "n": 64,
+          "eos_observed": 63,
+          "eos_rate": 0.984375,
+          "full_parseable": 50,
+          "eos_parseable": 52,
+          "full_correct": 10,
+          "eos_correct": 10,
+          "eos_to_correct_changes": 0,
+          "eos_to_wrong_changes": 0,
+          "median_eos_position": 147
+        },
+        "128/seed2": {
+          "n": 64,
+          "eos_observed": 63,
+          "eos_rate": 0.984375,
+          "full_parseable": 44,
+          "eos_parseable": 45,
+          "full_correct": 6,
+          "eos_correct": 6,
+          "eos_to_correct_changes": 0,
+          "eos_to_wrong_changes": 0,
+          "median_eos_position": 151
+        }
+      },
+      "elapsed_seconds": 59.097183572128415
+    },
+    "cotcomments200": {
+      "checkpoint": "/root/autodl-tmp/s-flm/outputs/sft/20261022-lora-result-cot-comments-pilot-01/checkpoints/step-000200.ckpt",
+      "weights": "EMA",
+      "mask_sweep": [],
+      "generation": {
+        "128/seed1": {
+          "n": 64,
+          "eos_observed": 63,
+          "eos_rate": 0.984375,
+          "full_parseable": 50,
+          "eos_parseable": 52,
+          "full_correct": 11,
+          "eos_correct": 11,
+          "eos_to_correct_changes": 0,
+          "eos_to_wrong_changes": 0,
+          "median_eos_position": 147
+        },
+        "128/seed2": {
+          "n": 64,
+          "eos_observed": 63,
+          "eos_rate": 0.984375,
+          "full_parseable": 43,
+          "eos_parseable": 44,
+          "full_correct": 6,
+          "eos_correct": 6,
+          "eos_to_correct_changes": 0,
+          "eos_to_wrong_changes": 0,
+          "median_eos_position": 151
+        }
+      },
+      "elapsed_seconds": 59.12185822054744
+    }
+  }
+}

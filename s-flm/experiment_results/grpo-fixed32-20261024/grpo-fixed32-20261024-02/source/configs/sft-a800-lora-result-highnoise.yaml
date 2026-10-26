@@ -1,0 +1,25 @@
+# Controlled high-noise SFT ablation: preserve the result-normalized PoT
+# setup and LoRA hyperparameters, but sample half of training timesteps from
+# t in [0.5, 1.0]. Validation retains the original uniform t schedule.
+defaults:
+  - sft-a800-lora-result-lr1e5
+  - _self_
+
+training:
+  high_noise_sampling_mix: 0.5
+  high_noise_sampling_min_t: 0.5
+
+trainer:
+  max_steps: 200
+
+callbacks:
+  milestone_checkpoint:
+    milestones: [100, 200]
+
+wandb:
+  name: mdlm-sft-lora-result-highnoise-mix50-${now:%Y%m%d-%H%M%S}
+  tags: [mdlm, gsm8k-pot, sft, lora, result-normalized, high-noise-mix50]
+
+hydra:
+  run:
+    dir: ${hydra:runtime.cwd}/outputs/sft/20261022-lora-result-highnoise-mix50-01

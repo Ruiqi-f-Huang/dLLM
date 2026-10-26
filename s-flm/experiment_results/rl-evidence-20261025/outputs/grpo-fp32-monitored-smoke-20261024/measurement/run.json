@@ -1,0 +1,19 @@
+{
+  "mode": "measure",
+  "base": "checkpoints/tinygsm/mdlm.ckpt",
+  "precision": "float32",
+  "execution_details": true,
+  "checkpoint": "/root/autodl-tmp/s-flm/outputs/grpo-fp32-monitored-smoke-20261024/train/step-000002.ckpt",
+  "data": "/root/autodl-tmp/s-flm/outputs/grpo-fixed32-20261024-02/fixed/questions.jsonl",
+  "output": "/root/autodl-tmp/s-flm/outputs/grpo-fp32-monitored-smoke-20261024/measurement",
+  "pairs": "/root/autodl-tmp/s-flm/outputs/grpo-fixed32-20261024-02/base/pairs.jsonl",
+  "make_pairs": false,
+  "repeats": 2,
+  "temperatures": [
+    0.3
+  ],
+  "batch_size": 8,
+  "max_pair_draws": 64,
+  "eval_seed": 20261024,
+  "timeout": 2.0
+}

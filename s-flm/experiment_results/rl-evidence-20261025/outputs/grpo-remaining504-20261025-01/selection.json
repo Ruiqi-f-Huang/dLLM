@@ -1,0 +1,17 @@
+{
+  "count": 504,
+  "excluded_previous": 128,
+  "train_overlap": 0,
+  "source_sha256": "a852fc227d3b02b5716975a37e83096d15299833c00077043d4a7297e3b4bfdd",
+  "base_evaluation": false,
+  "models": [
+    "positive8",
+    "positive32"
+  ],
+  "temperatures": [
+    0.3,
+    0.1
+  ],
+  "repeats": 16,
+  "limitations": "Unused by this experiment sequence; not proof of no prior project/pretraining exposure."
+}

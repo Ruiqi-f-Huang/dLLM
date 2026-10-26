@@ -1,0 +1,37 @@
+{
+  "TIGER-Lab/MathInstruct": {
+    "revision": "b4fdc323a7be1379c9c7c0b67b1de72dfee2111a",
+    "files": {
+      "MathInstruct.json": {
+        "path": "/root/autodl-tmp/s-flm/cache/huggingface/hub/datasets--TIGER-Lab--MathInstruct/snapshots/b4fdc323a7be1379c9c7c0b67b1de72dfee2111a/MathInstruct.json",
+        "sha256": "15b8be9824c31d619078f43baf67f7243c53f475ae4de5f8346b6d3ea9c269dd",
+        "size": 212488891
+      }
+    }
+  },
+  "openai/gsm8k": {
+    "revision": "740312add88f781978c0658806c59bc2815b9866",
+    "files": {
+      "main/train-00000-of-00001.parquet": {
+        "path": "/root/autodl-tmp/s-flm/cache/huggingface/hub/datasets--openai--gsm8k/snapshots/740312add88f781978c0658806c59bc2815b9866/main/train-00000-of-00001.parquet",
+        "sha256": "ea82612ea9582142387730c793eb67d3b12849002bc0b7fa6f8efafa7351419d",
+        "size": 2306545
+      },
+      "main/test-00000-of-00001.parquet": {
+        "path": "/root/autodl-tmp/s-flm/cache/huggingface/hub/datasets--openai--gsm8k/snapshots/740312add88f781978c0658806c59bc2815b9866/main/test-00000-of-00001.parquet",
+        "sha256": "ee7b8da9e381df27b9e3f7758a159ab2bdaa4dbaa910546cbbc47e0cb44e4f59",
+        "size": 419088
+      }
+    }
+  },
+  "TinyGSM/TinyGSM": {
+    "revision": "5049a7840fa546985eaae4c698d5daf6fdf7b47d",
+    "files": {
+      "data/train-00000-of-00017.parquet": {
+        "path": "/root/autodl-tmp/s-flm/cache/huggingface/hub/datasets--TinyGSM--TinyGSM/snapshots/5049a7840fa546985eaae4c698d5daf6fdf7b47d/data/train-00000-of-00017.parquet",
+        "sha256": "d389393b96571894c1ace3510c0767334db04bb367cd8864506349158dbaf96e",
+        "size": 211307555
+      }
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "validation": {
+    "base_ema_vs_step200_ema": {
+      "left_correct_to_right_correct": 53,
+      "left_correct_to_right_wrong": 1,
+      "left_wrong_to_right_correct": 2,
+      "both_wrong": 576,
+      "same_response": 498
+    },
+    "base_ema_vs_step200_raw": {
+      "left_correct_to_right_correct": 52,
+      "left_correct_to_right_wrong": 2,
+      "left_wrong_to_right_correct": 1,
+      "both_wrong": 577,
+      "same_response": 474
+    },
+    "base_ema_vs_step711_ema": {
+      "left_correct_to_right_correct": 43,
+      "left_correct_to_right_wrong": 11,
+      "left_wrong_to_right_correct": 3,
+      "both_wrong": 575,
+      "same_response": 159
+    },
+    "base_ema_vs_step711_raw": {
+      "left_correct_to_right_correct": 41,
+      "left_correct_to_right_wrong": 13,
+      "left_wrong_to_right_correct": 4,
+      "both_wrong": 574,
+      "same_response": 126
+    },
+    "step200_ema_vs_step200_raw": {
+      "left_correct_to_right_correct": 53,
+      "left_correct_to_right_wrong": 2,
+      "left_wrong_to_right_correct": 0,
+      "both_wrong": 577,
+      "same_response": 516
+    },
+    "step200_ema_vs_step711_ema": {
+      "left_correct_to_right_correct": 43,
+      "left_correct_to_right_wrong": 12,
+      "left_wrong_to_right_correct": 3,
+      "both_wrong": 574,
+      "same_response": 171
+    },
+    "step200_ema_vs_step711_raw": {
+      "left_correct_to_right_correct": 41,
+      "left_correct_to_right_wrong": 14,
+      "left_wrong_to_right_correct": 4,
+      "both_wrong": 573,
+      "same_response": 134
+    },
+    "step200_raw_vs_step711_ema": {
+      "left_correct_to_right_correct": 43,
+      "left_correct_to_right_wrong": 10,
+      "left_wrong_to_right_correct": 3,
+      "both_wrong": 576,
+      "same_response": 177
+    },
+    "step200_raw_vs_step711_raw": {
+      "left_correct_to_right_correct": 41,
+      "left_correct_to_right_wrong": 12,
+      "left_wrong_to_right_correct": 4,
+      "both_wrong": 575,
+      "same_response": 138
+    },
+    "step711_ema_vs_step711_raw": {
+      "left_correct_to_right_correct": 44,
+      "left_correct_to_right_wrong": 2,
+      "left_wrong_to_right_correct": 1,
+      "both_wrong": 585,
+      "same_response": 366
+    }
+  },
+  "train_subset": {
+    "base_ema_vs_step200_ema": {
+      "left_correct_to_right_correct": 21,
+      "left_correct_to_right_wrong": 2,
+      "left_wrong_to_right_correct": 0,
+      "both_wrong": 233,
+      "same_response": 203
+    },
+    "base_ema_vs_step200_raw": {
+      "left_correct_to_right_correct": 21,
+      "left_correct_to_right_wrong": 2,
+      "left_wrong_to_right_correct": 2,
+      "both_wrong": 231,
+      "same_response": 202
+    },
+    "base_ema_vs_step711_ema": {
+      "left_correct_to_right_correct": 18,
+      "left_correct_to_right_wrong": 5,
+      "left_wrong_to_right_correct": 0,
+      "both_wrong": 233,
+      "same_response": 65
+    },
+    "base_ema_vs_step711_raw": {
+      "left_correct_to_right_correct": 16,
+      "left_correct_to_right_wrong": 7,
+      "left_wrong_to_right_correct": 2,
+      "both_wrong": 231,
+      "same_response": 51
+    },
+    "step200_ema_vs_step200_raw": {
+      "left_correct_to_right_correct": 20,
+      "left_correct_to_right_wrong": 1,
+      "left_wrong_to_right_correct": 3,
+      "both_wrong": 232,
+      "same_response": 213
+    },
+    "step200_ema_vs_step711_ema": {
+      "left_correct_to_right_correct": 17,
+      "left_correct_to_right_wrong": 4,
+      "left_wrong_to_right_correct": 1,
+      "both_wrong": 234,
+      "same_response": 72
+    },
+    "step200_ema_vs_step711_raw": {
+      "left_correct_to_right_correct": 16,
+      "left_correct_to_right_wrong": 5,
+      "left_wrong_to_right_correct": 2,
+      "both_wrong": 233,
+      "same_response": 57
+    },
+    "step200_raw_vs_step711_ema": {
+      "left_correct_to_right_correct": 17,
+      "left_correct_to_right_wrong": 6,
+      "left_wrong_to_right_correct": 1,
+      "both_wrong": 232,
+      "same_response": 74
+    },
+    "step200_raw_vs_step711_raw": {
+      "left_correct_to_right_correct": 16,
+      "left_correct_to_right_wrong": 7,
+      "left_wrong_to_right_correct": 2,
+      "both_wrong": 231,
+      "same_response": 58
+    },
+    "step711_ema_vs_step711_raw": {
+      "left_correct_to_right_correct": 16,
+      "left_correct_to_right_wrong": 2,
+      "left_wrong_to_right_correct": 2,
+      "both_wrong": 236,
+      "same_response": 137
+    }
+  }
+}

@@ -1,0 +1,276 @@
+nohup: ignoring input
+Seed set to 1
+CONFIG
+├── mode
+│   └── train                                                                   
+├── sudoku
+│   └── output_dir: /root/autodl-tmp/s-flm/outputs/overfit16-20261023-01/sudoku_
+│       batch_size: 64                                                          
+│                                                                               
+├── gsm8k
+│   └── input_file: null                                                        
+│       output_dir: /root/autodl-tmp/s-flm/outputs/overfit16-20261023-01/gsm8k_e
+│       timeout: 5.0                                                            
+│       bootstrap_size: 1                                                       
+│                                                                               
+├── seed
+│   └── 1                                                                       
+├── allow_tf32
+│   └── True                                                                    
+├── cudnn_benchmark
+│   └── True                                                                    
+├── compile_backbone
+│   └── False                                                                   
+├── backbone_compute_dtype
+│   └── bfloat16                                                                
+├── neg_infinity_mode
+│   └── large-finite                                                            
+├── loader
+│   └── global_batch_size: 8                                                    
+│       eval_global_batch_size: 8                                               
+│       batch_size: 8                                                           
+│       eval_batch_size: 8                                                      
+│       num_workers: 0                                                          
+│       pin_memory: true                                                        
+│                                                                               
+├── confidence_denoiser
+│   └── confidence_score: entropy                                               
+│       gamma: 0                                                                
+│                                                                               
+├── training
+│   └── ema: 0.9999                                                             
+│       antithetic_sampling: true                                               
+│       importance_sampling: false                                              
+│       sampling_eps: 0.001                                                     
+│       change_of_variables: false                                              
+│       loss_precision: bf16                                                    
+│       finetune_path: /root/s-flm/checkpoints/tinygsm/mdlm.ckpt                
+│       finetune_weights: ema                                                   
+│       sampling_eps_min: 0.001                                                 
+│       sampling_eps_max: 1.0                                                   
+│       resample: false                                                         
+│                                                                               
+├── lora
+│   └── enabled: true                                                           
+│       rank: 8                                                                 
+│       alpha: 16                                                               
+│       dropout: 0.05                                                           
+│       target_modules:                                                         
+│       - blocks.*.attn_qkv                                                     
+│       - blocks.*.attn_out                                                     
+│       - blocks.*.mlp.0                                                        
+│       - blocks.*.mlp.2                                                        
+│                                                                               
+├── eval
+│   └── checkpoint_path: ''                                                     
+│       strict_loading: true                                                    
+│       disable_ema: false                                                      
+│       compute_generative_perplexity: false                                    
+│       perplexity_batch_size: 8                                                
+│       compute_perplexity_on_sanity: false                                     
+│       gen_ppl_eval_model_name_or_path: gpt2-large                             
+│       generate_samples: false                                                 
+│       generated_samples_path: /root/autodl-tmp/s-flm/outputs/overfit16-2026102
+│       results_json_path: null                                                 
+│                                                                               
+├── optim
+│   └── weight_decay: 0                                                         
+│       lr: 3.0e-06                                                             
+│       beta1: 0.9                                                              
+│       beta2: 0.999                                                            
+│       eps: 1.0e-08                                                            
+│                                                                               
+├── trainer
+│   └── _target_: lightning.Trainer                                             
+│       accelerator: cuda                                                       
+│       num_nodes: 1                                                            
+│       devices: 1                                                              
+│       accumulate_grad_batches: 1                                              
+│       gradient_clip_val: 1.0                                                  
+│       precision: bf16-mixed                                                   
+│       num_sanity_val_steps: 0                                                 
+│       max_steps: 1000                                                         
+│       log_every_n_steps: 10                                                   
+│       limit_train_batches: 1.0                                                
+│       limit_val_batches: 0                                                    
+│       val_check_interval: 1.0                                                 
+│       check_val_every_n_epoch: 1                                              
+│       max_epochs: 1000                                                        
+│       enable_progress_bar: false                                              
+│                                                                               
+├── wandb
+│   └── None                                                                    
+├── checkpointing
+│   └── save_dir: /root/autodl-tmp/s-flm/outputs/overfit16-20261023-01          
+│       resume_from_ckpt: false                                                 
+│       resume_ckpt_path: /root/autodl-tmp/s-flm/outputs/overfit16-20261023-01/c
+│                                                                               
+├── callbacks
+│   └── checkpoint_every_n_steps:                                               
+│         _target_: lightning.pytorch.callbacks.ModelCheckpoint                 
+│         save_top_k: 0                                                         
+│         save_last: false                                                      
+│         dirpath: /root/autodl-tmp/s-flm/outputs/overfit16-20261023-01/checkpoi
+│         verbose: true                                                         
+│         auto_insert_metric_name: false                                        
+│         every_n_train_steps: 0                                                
+│       checkpoint_monitor:                                                     
+│         _target_: lightning.pytorch.callbacks.ModelCheckpoint                 
+│         monitor: val/nll                                                      
+│         mode: min                                                             
+│         save_top_k: 0                                                         
+│         save_last: false                                                      
+│         dirpath: /root/autodl-tmp/s-flm/outputs/overfit16-20261023-01/checkpoi
+│         filename: best                                                        
+│         auto_insert_metric_name: false                                        
+│         verbose: true                                                         
+│       milestone_checkpoint:                                                   
+│         _target_: callbacks.overfit_probe.OverfitProbe                        
+│         milestones:                                                           
+│         - 200                                                                 
+│         - 500                                                                 
+│         - 1000                                                                
+│         dirpath: /root/autodl-tmp/s-flm/outputs/overfit16-20261023-01/checkpoi
+│         filename: step-{step:06d}.ckpt                                        
+│                                                                               
+├── data
+│   └── train: gsm8k_pot                                                        
+│       valid: gsm8k_pot                                                        
+│       train_file: /root/s-flm/data/gsm8k_pot_overfit16/sft_train.jsonl        
+│       validation_file: /root/s-flm/data/gsm8k_pot/sft_validation.jsonl        
+│       cache_dir: /root/autodl-tmp/s-flm/data_cache/overfit16                  
+│       tokenizer_name_or_path: HuggingFaceTB/SmolLM-135M                       
+│       tokenizer_revision: 1d461723eec654e65efdc40cf49301c89c0c92f4            
+│       separator: \n                                                           
+│       wrap: false                                                             
+│       streaming: false                                                        
+│       insert_train_eos: true                                                  
+│       insert_valid_eos: true                                                  
+│       train_on_prompt: false                                                  
+│       train_on_pad: true                                                      
+│                                                                               
+├── model
+│   └── name: small                                                             
+│       type: dit                                                               
+│       hidden_size: 768                                                        
+│       cond_dim: 128                                                           
+│       length: 512                                                             
+│       n_blocks: 12                                                            
+│       n_heads: 12                                                             
+│       dropout: 0.1                                                            
+│                                                                               
+├── strategy
+│   └── _target_: lightning.pytorch.strategies.SingleDeviceStrategy             
+│       device: cuda:0                                                          
+│                                                                               
+├── noise
+│   └── type: log-linear                                                        
+│       eps: 0.001                                                              
+│       alpha_min: null                                                         
+│       alpha_max: null                                                         
+│       adaptive: false                                                         
+│                                                                               
+├── lr_scheduler
+│   └── _target_: transformers.get_constant_schedule_with_warmup                
+│       num_warmup_steps: 20                                                    
+│                                                                               
+├── prior
+│   └── type: none                                                              
+│       latent_width: 0                                                         
+│       latent_height: 0                                                        
+│                                                                               
+├── algo
+│   └── name: mdlm                                                              
+│       diffusion_type: absorbing                                               
+│       backbone: dit                                                           
+│       parameterization: subs                                                  
+│       time_conditioning: false                                                
+│       T: 0                                                                    
+│       causal_attention: false                                                 
+│       loss_type: elbo                                                         
+│       post_process_mode: log_probs                                            
+│       adaLN: true                                                             
+│                                                                               
+├── sampler
+│   └── predictor: ancestral                                                    
+│       steps: 1024                                                             
+│       steps_policy: full                                                      
+│       noise_removal: ancestral                                                
+│       use_float64: true                                                       
+│       p_nucleus: 1.0                                                          
+│       temperature: 1.0                                                        
+│       num_sample_batches: 2                                                   
+│       num_sample_log: 2                                                       
+│                                                                               
+└── sft_monitoring
+    └── True                                                                    
+[2026-10-23 11:04:02,502][__main__][INFO] - Starting Training.
+Saving the dataset (0/1 shards):   0%|          | 0/16 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|██████████| 16/16 [00:00<00:00, 4176.55 examples/s]Saving the dataset (1/1 shards): 100%|██████████| 16/16 [00:00<00:00, 4040.27 examples/s]
+Saving the dataset (0/1 shards):   0%|          | 0/632 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|██████████| 632/632 [00:00<00:00, 166038.22 examples/s]Saving the dataset (1/1 shards): 100%|██████████| 632/632 [00:00<00:00, 160742.23 examples/s]
+Printing train dataloader batch.
+Batch input_ids.shape torch.Size([8, 512])
+First 64 tokens: <|endoftext|>The epic poem currently contains 24 lines. If a person adds 3 lines to the poem every month, in how many months will the poem contain 90 lines?\ndef simple_math_problem() -> int:
+    """The epic poem currently contains 24 lines. If a person
+ids: tensor([    0,   504, 14035,  8216,  4112,  3593,   216,    34,    36,  3204,
+           30,  1094,   253,  1055,  7845,   216,    35,  3204,   288,   260,
+         8216,   897,  3531,    28,   281,   638,   800,  2704,   523,   260,
+         8216,  2127,   216,    41,    32,  3204,    47,    76,    94,  1604,
+         2232,    79,  8898,    79, 25076,  1000,  4722,   464,    42,   472,
+         1620,   504, 14035,  8216,  4112,  3593,   216,    34,    36,  3204,
+           30,  1094,   253,  1055])
+Last 64 tokens: [PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD]
+ids: tensor([49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152])
+Printing valid dataloader batch.
+Batch input_ids.shape torch.Size([8, 512])
+First 64 tokens: <|endoftext|>Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\ndef simple_math_
+ids: tensor([    0, 28813,   519,   314,  2539,   253,   216,    33,    34,    32,
+           29,  6853,  1863,    30,   718, 15955,    28,  1041,   436,  1730,
+          288,  1012,   216,    33,    34,  5158,   284,  1834,    28,  1041,
+         1012,  6757,   347,   800,  5158,   347, 18400,    30,  1094,  1041,
+         5988,   288,  1012,  2745,   282,   260,  6219,  5158, 13759,    28,
+          638,   800,  5158,   868,  1041,  1012,    47,    76,    94,  1604,
+         2232,    79,  8898,    79])
+Last 64 tokens: [PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD]
+ids: tensor([49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152, 49152,
+        49152, 49152, 49152, 49152])
+[2026-10-23 11:04:05,666][__main__][INFO] - Fresh finetune from ema weights; optimizer, scheduler and EMA history start fresh.
+[2026-10-23 11:04:05,667][__main__][INFO] - LoRA enabled for 48 modules: 1,179,648/169,110,018 backbone parameters are trainable.
+Using bfloat16 Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+`Trainer(limit_train_batches=1.0)` was configured so 100% of the batches per epoch will be used..
+`Trainer(val_check_interval=1.0)` was configured so validation will run at the end of the training epoch..
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name     | Type      | Params | Mode 
+-----------------------------------------------
+0 | backbone | DIT       | 169 M  | train
+1 | softplus | Softplus  | 0      | train
+2 | noise    | LogLinear | 0      | train
+-----------------------------------------------
+1.2 M     Trainable params
+167 M     Non-trainable params
+169 M     Total params
+676.440   Total estimated model params size (MB)
+207       Modules in train mode
+0         Modules in eval mode
+/root/venvs/s-flm/lib/python3.12/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:425: The 'train_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=207` in the `DataLoader` to improve performance.
+/root/venvs/s-flm/lib/python3.12/site-packages/lightning/pytorch/loops/fit_loop.py:310: The number of training batches (2) is smaller than the logging interval Trainer(log_every_n_steps=10). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+OVERFIT_PROBE {"step": 0, "weights": "Base EMA initialization", "n": 16, "seed": 1, "nfe": 128, "correct": 2, "parseable": 13, "code_eos_nll": 2.418682611476608, "nll_seed": 17}
+OVERFIT_PROBE {"step": 200, "weights": "raw", "n": 16, "seed": 1, "nfe": 128, "correct": 3, "parseable": 13, "code_eos_nll": 2.4137955158077484, "nll_seed": 17}
+OVERFIT_PROBE {"step": 500, "weights": "raw", "n": 16, "seed": 1, "nfe": 128, "correct": 3, "parseable": 11, "code_eos_nll": 2.336641081871345, "nll_seed": 17}
+OVERFIT_PROBE {"step": 1000, "weights": "raw", "n": 16, "seed": 1, "nfe": 128, "correct": 3, "parseable": 13, "code_eos_nll": 1.981131927311769, "nll_seed": 17}
+`Trainer.fit` stopped: `max_steps=1000` reached.
+[2026-10-23 11:05:54,906][__main__][INFO] - Training finished at optimizer step 1000; peak allocated GPU memory: 7993.4 MiB.

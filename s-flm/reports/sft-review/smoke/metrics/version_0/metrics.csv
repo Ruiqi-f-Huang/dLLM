@@ -1,0 +1,7 @@
+epoch,monitor/allocated_mib,monitor/amp_scale,monitor/amp_skipped_updates_session,monitor/code_eos_tokens_seen_session,monitor/examples_per_second,monitor/examples_seen_session,monitor/grad_norm_pre_clip,monitor/lr,monitor/nonfinite_gradient_updates_session,monitor/optimizer_step,monitor/padded_tokens_per_second,monitor/peak_allocated_mib,monitor/reserved_mib,monitor/successful_updates_session,monitor/supervised_tokens_seen_session,monitor/train_seconds_per_update,step,train/bpd,train/code_eos_nll,train/nll,train/pad_nll,train/ppl,trainer/loss,val/bpd,val/code_eos_nll,val/nll,val/pad_nll,val/ppl
+0,3872.90966796875,65536.0,0,1031,11.297420946188172,8,1.1143417358398438,0.0,0,1,5784.279524448344,4513.5146484375,4752.0,1,3655,0.7081262208521366,0,,,,,,,,,,,
+0,,,,,,,,,,,,,,,,,0,,,,,,1.2567561864852905,,,,,
+0,3869.53466796875,65536.0,0,2157,15.097019833325664,16,1.4178470373153687,5.000000000000001e-07,0,2,7729.67415466274,4927.533203125,5048.0,2,7246,0.5299059078097343,1,,,,,,,,,,,
+0,,,,,,,,,,,,,,,,,1,,,,,,0.37444138526916504,,,,,
+0,,,,,,,,,,,,,,,,,1,,,,,,,0.9243250415422392,2.1265804767608643,0.6406932964659574,0.00088781415252015,1.897796158682918
+0,,,,,,,,,,,,,,,,,1,0.607748585186374,1.3497775793075562,0.42125921831123087,0.027701763436198235,1.5238792446196152,,,,,,

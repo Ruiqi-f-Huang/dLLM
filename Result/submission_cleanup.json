@@ -1,0 +1,725 @@
+{
+  "backup_directory": "/private/tmp/dllm-before-submission-20261026-134009",
+  "moved_files": 116,
+  "moved_bytes": 2758311889,
+  "records": [
+    {
+      "path": "LIFT/dataset/4x4_sudoku_unique_puzzles.csv",
+      "bytes": 34000016,
+      "sha256": "45b893ba16b10b310fb1c0835653a53b518d1831d0a0d1bccc92860cceed45f0",
+      "reason": "Unrelated upstream Sudoku/Countdown/AIME task data; MDLM project datasets retained"
+    },
+    {
+      "path": "LIFT/dataset/4x4_test_sudoku.csv",
+      "bytes": 17016,
+      "sha256": "ef86c7c28ebef88484d85fda59b3909a7b621241aa1abf36343437dbc4a3ffb6",
+      "reason": "Unrelated upstream Sudoku/Countdown/AIME task data; MDLM project datasets retained"
+    },
+    {
+      "path": "LIFT/dataset/aime24.json",
+      "bytes": 147399,
+      "sha256": "bc0dfbd6ce1f71318ab7d5fb0ef5c4d2bccd62446d2aa9cd07a4f12fd3e770a0",
+      "reason": "Unrelated upstream Sudoku/Countdown/AIME task data; MDLM project datasets retained"
+    },
+    {
+      "path": "LIFT/dataset/aime25.json",
+      "bytes": 14841,
+      "sha256": "6ba9c743f1eea5c179e057c124cb29af9deddf2ed0459370faafc6e60e01734b",
+      "reason": "Unrelated upstream Sudoku/Countdown/AIME task data; MDLM project datasets retained"
+    },
+    {
+      "path": "LIFT/dataset/countdown_cd3_test.jsonl",
+      "bytes": 9636,
+      "sha256": "9916f614621e26fb2b035ed4ea641e35e4fff0d533bb9b9c7bcaaa61017d88c6",
+      "reason": "Unrelated upstream Sudoku/Countdown/AIME task data; MDLM project datasets retained"
+    },
+    {
+      "path": "Plan.md",
+      "bytes": 29800,
+      "sha256": "84e3d3d2ed90daff40431657a63cf47a125d1556203bd685f92cbdf031c72cf2",
+      "reason": "Superseded planning/draft; final report retained"
+    },
+    {
+      "path": "Result/__pycache__/generate_figures.cpython-314.pyc",
+      "bytes": 53670,
+      "sha256": "a73d541de2dc0e16dda83456b4ed8d09ff3f293737d5241440c764ff085371fc",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "Result/report/TinyGSM_MDLM_SFT_RL_实验报告大纲.md",
+      "bytes": 15271,
+      "sha256": "9a1e2b29fe1f11d4df9ba503e1aada943c68ccbf70759dd8ff45be48f6ac8e21",
+      "reason": "Superseded planning/draft; final report retained"
+    },
+    {
+      "path": "d1/dataset/4x4_sudoku_unique_puzzles.csv",
+      "bytes": 34000016,
+      "sha256": "45b893ba16b10b310fb1c0835653a53b518d1831d0a0d1bccc92860cceed45f0",
+      "reason": "Unrelated upstream Sudoku/Countdown/AIME task data; MDLM project datasets retained"
+    },
+    {
+      "path": "d1/dataset/4x4_test_sudoku.csv",
+      "bytes": 17016,
+      "sha256": "ef86c7c28ebef88484d85fda59b3909a7b621241aa1abf36343437dbc4a3ffb6",
+      "reason": "Unrelated upstream Sudoku/Countdown/AIME task data; MDLM project datasets retained"
+    },
+    {
+      "path": "d1/dataset/countdown_cd3_test.jsonl",
+      "bytes": 9636,
+      "sha256": "9916f614621e26fb2b035ed4ea641e35e4fff0d533bb9b9c7bcaaa61017d88c6",
+      "reason": "Unrelated upstream Sudoku/Countdown/AIME task data; MDLM project datasets retained"
+    },
+    {
+      "path": "s-flm/.DS_Store",
+      "bytes": 6148,
+      "sha256": "d701714d894f4d707e801537521956776aae23744f15a575544b92cc85c1003b",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/__pycache__/algo.cpython-314.pyc",
+      "bytes": 51598,
+      "sha256": "893f5c8369efba9b157176e00b78dc3847c282aa59386cf6adf55317e92e8f83",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/__pycache__/candi_utils.cpython-314.pyc",
+      "bytes": 4221,
+      "sha256": "ed996da1bed7fc42e50acaf5558648caafef15ca080f1a3466425da0ae2ee2c9",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/__pycache__/dataclass_patch.cpython-314.pyc",
+      "bytes": 1231,
+      "sha256": "f15e1a3c67abaf007a4090b61d3f9c8c0e7b705645e45d8f425d9a168b24c570",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/__pycache__/dataloader.cpython-314.pyc",
+      "bytes": 65777,
+      "sha256": "8d0be8b60f41951308cf9e41976bb7ee4f1316ba44174e9397d0c49c9757be1e",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/__pycache__/diffu_grpo.cpython-314.pyc",
+      "bytes": 8422,
+      "sha256": "f7e2c0dabc77e33900b0ccd26f460fc83c984f7e21a1d033809e038a5bf5a800",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/__pycache__/flm_utils.cpython-314.pyc",
+      "bytes": 5385,
+      "sha256": "557ccf0f49eb521e534442b61c3ccd4d8ce0a68a98d913015ccaa776391118c4",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/__pycache__/grpo_controlled.cpython-314.pyc",
+      "bytes": 2364,
+      "sha256": "36cf24184b08d9692cf1c02dc6720ffa3f1ee567e1b89e893f8b5e9bf397d765",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/__pycache__/grpo_monitor.cpython-314.pyc",
+      "bytes": 11094,
+      "sha256": "d5a26aa876f739cea291ada20b88d9e498eaa1a54bfab51904b88053fe5770db",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/__pycache__/grpo_overfit.cpython-314.pyc",
+      "bytes": 7894,
+      "sha256": "eee27c8de58ff626bfd3fc1d7e683c7a324fa9db0a7fb4b78ba514e3971174e8",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/__pycache__/grpo_partial_mask.cpython-314.pyc",
+      "bytes": 7165,
+      "sha256": "1014b9c359f53a7b5dbdb144b98a4b95b64662898c7793efdedf7f855ef1311e",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/__pycache__/grpo_trajectory.cpython-314.pyc",
+      "bytes": 2235,
+      "sha256": "3b7f0b6252471acb9c1424cdcab9a33a2f4876bd63fa0d1fea8c98dbd6e1d78a",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/__pycache__/lift_masking.cpython-314.pyc",
+      "bytes": 13888,
+      "sha256": "8a593a17813a7d47f5505a52da319dcc940349e87702b55458d52ad317f606e8",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/__pycache__/main.cpython-314.pyc",
+      "bytes": 41264,
+      "sha256": "d372919b5105c14471b9bd538e3e98f588f4d1a6d9ced7aeb3d5a258a063f5f6",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/__pycache__/metrics.cpython-314.pyc",
+      "bytes": 19308,
+      "sha256": "56b19817f3de440ce897702fb3f2dbc0d8e77c14ab35eae4e810cf540b34d510",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/__pycache__/noise_schedules.cpython-314.pyc",
+      "bytes": 19075,
+      "sha256": "91885066b98ec2f3427aba08f7c2418d72451c0f173e892803d74f6aa7ce6db9",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/__pycache__/samplers.cpython-314.pyc",
+      "bytes": 52333,
+      "sha256": "0e2d7fe55016042126bfe9fc602f6255c751bdf1a844c14a9b5afc1aaeb21d50",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/__pycache__/sandbox_gsm8k.cpython-314.pyc",
+      "bytes": 10109,
+      "sha256": "ae4aaf68a0603670a96b0ab7c71d6e5e8f3df9ef9eeaeee11663e08aa19441c4",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/__pycache__/semantic_weights.cpython-314.pyc",
+      "bytes": 5123,
+      "sha256": "e72e811a6458fbd42f646bf636bb7e9e02cf46bc05105fa0725ba7bad21dd4de",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/__pycache__/sudoku_generator.cpython-314.pyc",
+      "bytes": 9674,
+      "sha256": "b5a532b7ad73f1ab4ca017888520aedab52fb4f70cc1d5a514f9d85b1ea97c1b",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/__pycache__/trainer_base.cpython-314.pyc",
+      "bytes": 45482,
+      "sha256": "287fa9bf9218efe039c3769509676e39065d14dce9ea57370b1fad83b2c6aa9f",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/__pycache__/utils.cpython-314.pyc",
+      "bytes": 16839,
+      "sha256": "a1575074576e6d17de168c2edadf8902b628c6c7279d2bda7eaa53ce9339b189",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/callbacks/__pycache__/sft_monitor.cpython-314.pyc",
+      "bytes": 10986,
+      "sha256": "06f343d6b0dd7622bdb260de1fe070b7543cbb0a63c1a1bace32a8a1a58d3a03",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/callbacks/__pycache__/throughput.cpython-314.pyc",
+      "bytes": 4846,
+      "sha256": "446d9cc49eebaa3d91c1fb13fa86743a8bd95326dd79463327c429a6ec8801b9",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/checkpoints/sft/20261021-a800-formal-01/best.ckpt",
+      "bytes": 2688835235,
+      "sha256": "53e4754ce1937e9c97b5e519d1a2d90785004961aadd4d51e6ea846148c4b066",
+      "reason": "Historical full-parameter checkpoint, not a final comparison model; all metadata retained"
+    },
+    {
+      "path": "s-flm/models/__pycache__/__init__.cpython-314.pyc",
+      "bytes": 304,
+      "sha256": "b930ff63689754caf297533d3cdfb5a47d97fe4c2ad9330f4fd70f24c77e9091",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/models/__pycache__/candi_dit.cpython-314.pyc",
+      "bytes": 12180,
+      "sha256": "3964ba904ae7218b9f9d1a6188bc29ca34b5cf7144a2c6c8ed7d9d7c1e60e75f",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/models/__pycache__/dit.cpython-314.pyc",
+      "bytes": 38320,
+      "sha256": "4247ff5aaab7091572d3ab79951b6421bef8fe30d8c511b116d443df256f6999",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/models/__pycache__/ema.cpython-314.pyc",
+      "bytes": 5652,
+      "sha256": "a21f514d6f476a9450571bf82e73398ef56018bb72be39ceae74e369d2eca95c",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/models/__pycache__/flm_dit.cpython-314.pyc",
+      "bytes": 8910,
+      "sha256": "3e1ded81d7cdfe6c09f2b9b676c5df142f5275f046e4f6be57c3d43593ac261d",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/models/__pycache__/lora.cpython-314.pyc",
+      "bytes": 7675,
+      "sha256": "df553b759ffdacd7660f901008c38220aa178e0e19d833ec6c45082ece9ba274",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/models/__pycache__/sphere_arch.cpython-314.pyc",
+      "bytes": 25538,
+      "sha256": "ff7d35b8b14a96990e50eecaf824accf0773b9626e7dd868586a547516538627",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/models/__pycache__/sphere_dit.cpython-314.pyc",
+      "bytes": 12712,
+      "sha256": "f3cedfa407af5fd208975d2f8407293c1d4c4f6f1fcfacef18a8485ea1ebd183",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/scripts/__pycache__/analyze_lift_fixed_masks.cpython-314.pyc",
+      "bytes": 7295,
+      "sha256": "87ce274d63c6a5a9fca8808fbeaed042df49e8003af6c4863e463e9cb79f2d16",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/scripts/__pycache__/analyze_lift_pilot.cpython-314.pyc",
+      "bytes": 15274,
+      "sha256": "43d714cb3b36f28bd6c493a0039c5701a97dbf0e1de6cd5c7ab75016131447e3",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/scripts/__pycache__/compare_grpo_positive_coverage.cpython-314.pyc",
+      "bytes": 11629,
+      "sha256": "643d3595d88d60b6dc3db6cc69f0ee17bb4f7098046d266b67be5c44140ebe6b",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/scripts/__pycache__/diagnose_grpo_fixed.cpython-314.pyc",
+      "bytes": 18743,
+      "sha256": "5f71832ae0a21cdeb4b32466326caf9ae1b7d49371a019852d3ec253e302becb",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/scripts/__pycache__/diagnose_grpo_partial75_objective.cpython-314.pyc",
+      "bytes": 16058,
+      "sha256": "d294d0eae19247fdc5044f149874ef98cfba0dfe6cc6d0ad5238f500701cd5ab",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/scripts/__pycache__/diagnose_grpo_partial75_overfit.cpython-314.pyc",
+      "bytes": 21662,
+      "sha256": "5a2c0161237842bed763fa622d26295b9587f3f7f7cb251783faf13453b6eecd",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/scripts/__pycache__/diagnose_grpo_partial75_positive.cpython-314.pyc",
+      "bytes": 21745,
+      "sha256": "e5b9eb7e6c0ad7c352ce868c46c8fd8dfd264cd05d5ceb112a6d92af3521e7c4",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/scripts/__pycache__/diagnose_grpo_partial_mask.cpython-314.pyc",
+      "bytes": 20473,
+      "sha256": "c6fb2d8ebfa8e0cbac960aa3f5e0afadd56d87361759bac307629c8f3e2a3a02",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/scripts/__pycache__/diagnose_grpo_trajectory.cpython-314.pyc",
+      "bytes": 22209,
+      "sha256": "7e0296f352b35d0a4f69816cc7c8dc0906da81dbb9aa455d5a2a046567557a3e",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/scripts/__pycache__/diagnose_lift_fixed_masks.cpython-314.pyc",
+      "bytes": 20825,
+      "sha256": "7c644f62d69b61a35bf9aa45a0586b3a09c1af0f67078954e5c50e3629ca611a",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/scripts/__pycache__/eval_grpo_pilot.cpython-314.pyc",
+      "bytes": 12359,
+      "sha256": "e66b65c2be54b985903a928e1536904659b40669bc3e59c10213528e970f7d8b",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/scripts/__pycache__/evaluate_final_gsm8k_test.cpython-314.pyc",
+      "bytes": 29512,
+      "sha256": "09b4121f66846c15aa808accea901ff988c8b6cfcdfad2a43a971a4d303358e9",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/scripts/__pycache__/evaluate_grpo_partial75_positive.cpython-314.pyc",
+      "bytes": 12709,
+      "sha256": "994598160888469395dc655138573fd073f4d9030af2963dad02408e6149dc53",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/scripts/__pycache__/evaluate_grpo_positive128.cpython-314.pyc",
+      "bytes": 7833,
+      "sha256": "5c52534780af12c740822ca50346a7fec519ebe313db9582a1ab33a7e1c0962c",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/scripts/__pycache__/evaluate_grpo_positive_validation.cpython-314.pyc",
+      "bytes": 7382,
+      "sha256": "77e988f17f0cfe176726d678ae009ad881571698009218f337e20301aa330c16",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/scripts/__pycache__/evaluate_grpo_remaining_validation.cpython-314.pyc",
+      "bytes": 7840,
+      "sha256": "6fa766d17d39f422255558e9a6e14f9b6709fac647348ad73ee85587ab6c7c7d",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/scripts/__pycache__/grpo_fixed32.cpython-314.pyc",
+      "bytes": 28231,
+      "sha256": "2364c5543b869e43d38f525d53c8a80b96c207dc071d3facb97a3e309536238f",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/scripts/__pycache__/log_lift_c_evaluation.cpython-314.pyc",
+      "bytes": 7484,
+      "sha256": "9813578b301c8d5751f825e79fdc0adf1343a7f64b03fd84b45cef859631adaf",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/scripts/__pycache__/run_grpo_500.cpython-314.pyc",
+      "bytes": 13004,
+      "sha256": "5de16ed06b9850723591435ecced80e027b15bf1e42630df5a022afca217e5a1",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/scripts/__pycache__/run_grpo_controlled.cpython-314.pyc",
+      "bytes": 4156,
+      "sha256": "0d450e9c7df6b898fc99c0077fdffdac519d2df2b454935c611abd6e7306dd07",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/scripts/__pycache__/run_grpo_fixed32.cpython-314.pyc",
+      "bytes": 13021,
+      "sha256": "c9f919ebbd47ce2d7ca9ebf1af4377fd2a11863fadcdd484d77c350b4b96ec02",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/scripts/__pycache__/run_grpo_fp32_online.cpython-314.pyc",
+      "bytes": 11707,
+      "sha256": "7a6a6cc149621b0dca9abfc83c5d433153741bb6b7bcc1ec192356aff75ee513",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/scripts/__pycache__/run_grpo_partial75.cpython-314.pyc",
+      "bytes": 6074,
+      "sha256": "33fe5829acdda339851abba9c1fc30a1aefc620eeb678bae5ca08e4915542ad6",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/scripts/__pycache__/run_grpo_positive128.cpython-314.pyc",
+      "bytes": 16854,
+      "sha256": "d0832254199bda353dc0c4085e478a9efe5996a68b5a85d5bf3c984b10c9aaaf",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/scripts/__pycache__/run_grpo_positive32.cpython-314.pyc",
+      "bytes": 14073,
+      "sha256": "81af5a00503ec03c9aec68d4f618793248bb53485a034d100f4594494575c088",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/scripts/__pycache__/run_grpo_resample.cpython-314.pyc",
+      "bytes": 6881,
+      "sha256": "e57e3922011d4d64ba2df815b11009b161ffbb8f30918ff20fc5d82cdba6c52a",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/scripts/__pycache__/run_lift_pilot.cpython-314.pyc",
+      "bytes": 13631,
+      "sha256": "bf2081685732fa3513eb63c5f5492b97231079151193419696139aa2bc5ce571",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/scripts/__pycache__/train_grpo_partial75_positive32.cpython-314.pyc",
+      "bytes": 22369,
+      "sha256": "091606b4909ee09c6f6dc7ed5347454836b8d27a61abab684b7210533b9b8159",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/scripts/__pycache__/train_grpo_positive128.cpython-314.pyc",
+      "bytes": 17246,
+      "sha256": "cffbf91c830a2b5465bba6296d272300b8d1b94a1d1ac89a825a2d58687e2dbb",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/scripts/__pycache__/train_mdlm_grpo.cpython-314.pyc",
+      "bytes": 39134,
+      "sha256": "fa505243f3adc987c524989a1a6e1c8fb3ac73d4f6b1bd8008616c9419979b51",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/scripts/__pycache__/verify_grpo_positive128_data.cpython-314.pyc",
+      "bytes": 12534,
+      "sha256": "ae7637474c974a0f7f6a9742df37f909abd1599f8d150ec3947cdb86b2717fb0",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/tests/__pycache__/test_diffu_grpo.cpython-314.pyc",
+      "bytes": 8654,
+      "sha256": "1dad400004bd3510795156777534e2c3016746d0ec2c67e3aeb65a5f35369124",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/tests/__pycache__/test_execution_reward_timeout.cpython-314.pyc",
+      "bytes": 2050,
+      "sha256": "2a39a32ff08aed968a5df7c9c9006d5db66a42b326f3dbad807ca64d587791d9",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/tests/__pycache__/test_final_test_resume.cpython-314.pyc",
+      "bytes": 4220,
+      "sha256": "e92fe78c57cd9284e705ad4479f713ca64a7efe0d5176ccb98883139327bce50",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/tests/__pycache__/test_grpo_controlled.cpython-314.pyc",
+      "bytes": 4212,
+      "sha256": "37ae8ab8559187524a9d6d4180016c3f4d0e91261baca29eab968a28fb67d417",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/tests/__pycache__/test_grpo_monitor.cpython-314.pyc",
+      "bytes": 7374,
+      "sha256": "1f93dc08abb5a8b5b272abee5085b16bf3afe743e59b9f533ed6de051aa2d81d",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/tests/__pycache__/test_grpo_overfit.cpython-314.pyc",
+      "bytes": 9626,
+      "sha256": "4b43e6dfacec33e055438a02cafdfe670135a4fc1c22e1090af496d3d7218ad1",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/tests/__pycache__/test_grpo_partial_mask.cpython-314.pyc",
+      "bytes": 5587,
+      "sha256": "15e9d0d53fae93065e9c1edcbc23945f64bde7e3b6e5bf1767b50b2647ecb4d3",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/tests/__pycache__/test_grpo_partial_training.cpython-314.pyc",
+      "bytes": 4452,
+      "sha256": "d0648a77a607916ba509c4245344b5f00ecdf96c7e592c26a8a21e99c04f32f3",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/tests/__pycache__/test_grpo_trajectory.cpython-314.pyc",
+      "bytes": 3729,
+      "sha256": "94537e791227040923c451785817df01af37d75104ac5cf1d23b72136fa754f1",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/tests/__pycache__/test_lift.cpython-314.pyc",
+      "bytes": 26740,
+      "sha256": "0445d09e1b12d2afee93df0636de9e3ef8f2cc3c75a79dbaaf9ec5189efe2947",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/tests/__pycache__/test_lift_fixed_masks.cpython-314.pyc",
+      "bytes": 4585,
+      "sha256": "26979cbcc460bdc286adc8e3d646ffd6f0c19c9feae6491aadbe6d9d62bf18f9",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/tests/__pycache__/test_lora.cpython-314.pyc",
+      "bytes": 6143,
+      "sha256": "42d0c9f5b0ae1ef1c318e1ce7549e501b6e697d8315fbcbb2912f8089859410c",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/tests/__pycache__/test_semantic_weights.cpython-314.pyc",
+      "bytes": 6702,
+      "sha256": "e7330e82b783ed73b5d3093fa1ae698be1fde64d7947c627d1fc368c6cd0c79a",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/tests/__pycache__/test_sft.cpython-314.pyc",
+      "bytes": 16873,
+      "sha256": "5cfbacacde7fe396e3f0a6381b5cb8146d415533bfc5e3de38c003f603f02b1a",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/tests/__pycache__/test_sft_algorithm.cpython-314.pyc",
+      "bytes": 15925,
+      "sha256": "686b7396be40beb2ed293ad6bdef1f47147eed00510714f8e185ae272da0b96f",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/tests/__pycache__/test_sft_monitor.cpython-314.pyc",
+      "bytes": 11657,
+      "sha256": "d4da1f7668bd692cc110b7145a341ea55a64eb217cf16ddbdb97d3eee20f3de9",
+      "reason": "Regenerable Python/macOS cache or untracked metadata"
+    },
+    {
+      "path": "s-flm/__pycache__/sandbox_gsm8k.cpython-314.pyc",
+      "bytes": 10109,
+      "sha256": "ae4aaf68a0603670a96b0ab7c71d6e5e8f3df9ef9eeaeee11663e08aa19441c4",
+      "reason": "Regenerated verification cache"
+    },
+    {
+      "path": "s-flm/checkpoints/sft/20261022-maskfix-01/metadata/wandb/debug-internal.log",
+      "bytes": 0,
+      "symlink_target": "run-20261022_134811-a4kvda3r/logs/debug-internal.log",
+      "reason": "WandB convenience/debug symlink; actual run records retained"
+    },
+    {
+      "path": "s-flm/checkpoints/sft/20261022-maskfix-01/metadata/wandb/debug.log",
+      "bytes": 0,
+      "symlink_target": "run-20261022_134811-a4kvda3r/logs/debug.log",
+      "reason": "WandB convenience/debug symlink; actual run records retained"
+    },
+    {
+      "path": "s-flm/checkpoints/sft/20261022-maskfix-01/metadata/wandb/latest-run",
+      "bytes": 0,
+      "symlink_target": "run-20261022_134811-a4kvda3r",
+      "reason": "WandB convenience/debug symlink; actual run records retained"
+    },
+    {
+      "path": "s-flm/checkpoints/sft/20261022-maskfix-01/metadata/wandb/run-20261022_134811-a4kvda3r/logs/debug-core.log",
+      "bytes": 0,
+      "symlink_target": "/root/.cache/wandb/logs/core-debug-20261022_134809.log",
+      "reason": "WandB convenience/debug symlink; actual run records retained"
+    },
+    {
+      "path": "s-flm/checkpoints/sft/20261022-lora-result-lr1e5-01/metadata/wandb/debug-internal.log",
+      "bytes": 0,
+      "symlink_target": "run-20261022_174802-co4m5xvi/logs/debug-internal.log",
+      "reason": "WandB convenience/debug symlink; actual run records retained"
+    },
+    {
+      "path": "s-flm/checkpoints/sft/20261022-lora-result-lr1e5-01/metadata/wandb/debug.log",
+      "bytes": 0,
+      "symlink_target": "run-20261022_174802-co4m5xvi/logs/debug.log",
+      "reason": "WandB convenience/debug symlink; actual run records retained"
+    },
+    {
+      "path": "s-flm/checkpoints/sft/20261022-lora-result-lr1e5-01/metadata/wandb/latest-run",
+      "bytes": 0,
+      "symlink_target": "run-20261022_174802-co4m5xvi",
+      "reason": "WandB convenience/debug symlink; actual run records retained"
+    },
+    {
+      "path": "s-flm/checkpoints/sft/20261022-lora-result-lr1e5-01/metadata/wandb/run-20261022_174802-co4m5xvi/logs/debug-core.log",
+      "bytes": 0,
+      "symlink_target": "/root/.cache/wandb/logs/core-debug-20261022_174801.log",
+      "reason": "WandB convenience/debug symlink; actual run records retained"
+    },
+    {
+      "path": "s-flm/checkpoints/sft/20261022-base-aligned-01/metadata/wandb/debug-internal.log",
+      "bytes": 0,
+      "symlink_target": "run-20261022_151448-iyndxyvc/logs/debug-internal.log",
+      "reason": "WandB convenience/debug symlink; actual run records retained"
+    },
+    {
+      "path": "s-flm/checkpoints/sft/20261022-base-aligned-01/metadata/wandb/debug.log",
+      "bytes": 0,
+      "symlink_target": "run-20261022_151448-iyndxyvc/logs/debug.log",
+      "reason": "WandB convenience/debug symlink; actual run records retained"
+    },
+    {
+      "path": "s-flm/checkpoints/sft/20261022-base-aligned-01/metadata/wandb/latest-run",
+      "bytes": 0,
+      "symlink_target": "run-20261022_151448-iyndxyvc",
+      "reason": "WandB convenience/debug symlink; actual run records retained"
+    },
+    {
+      "path": "s-flm/checkpoints/sft/20261022-base-aligned-01/metadata/wandb/run-20261022_151448-iyndxyvc/logs/debug-core.log",
+      "bytes": 0,
+      "symlink_target": "/root/.cache/wandb/logs/core-debug-20261022_151447.log",
+      "reason": "WandB convenience/debug symlink; actual run records retained"
+    },
+    {
+      "path": "s-flm/checkpoints/sft/20261022-lora-result-lr3e5-01/metadata/wandb/debug-internal.log",
+      "bytes": 0,
+      "symlink_target": "run-20261022_164337-uqg18hop/logs/debug-internal.log",
+      "reason": "WandB convenience/debug symlink; actual run records retained"
+    },
+    {
+      "path": "s-flm/checkpoints/sft/20261022-lora-result-lr3e5-01/metadata/wandb/debug.log",
+      "bytes": 0,
+      "symlink_target": "run-20261022_164337-uqg18hop/logs/debug.log",
+      "reason": "WandB convenience/debug symlink; actual run records retained"
+    },
+    {
+      "path": "s-flm/checkpoints/sft/20261022-lora-result-lr3e5-01/metadata/wandb/latest-run",
+      "bytes": 0,
+      "symlink_target": "run-20261022_164337-uqg18hop",
+      "reason": "WandB convenience/debug symlink; actual run records retained"
+    },
+    {
+      "path": "s-flm/checkpoints/sft/20261022-lora-result-lr3e5-01/metadata/wandb/run-20261022_164337-uqg18hop/logs/debug-core.log",
+      "bytes": 0,
+      "symlink_target": "/root/.cache/wandb/logs/core-debug-20261022_164336.log",
+      "reason": "WandB convenience/debug symlink; actual run records retained"
+    },
+    {
+      "path": "s-flm/checkpoints/sft/20261022-lora-control-01/metadata/wandb/debug-internal.log",
+      "bytes": 0,
+      "symlink_target": "run-20261022_155648-nff37lil/logs/debug-internal.log",
+      "reason": "WandB convenience/debug symlink; actual run records retained"
+    },
+    {
+      "path": "s-flm/checkpoints/sft/20261022-lora-control-01/metadata/wandb/debug.log",
+      "bytes": 0,
+      "symlink_target": "run-20261022_155648-nff37lil/logs/debug.log",
+      "reason": "WandB convenience/debug symlink; actual run records retained"
+    },
+    {
+      "path": "s-flm/checkpoints/sft/20261022-lora-control-01/metadata/wandb/latest-run",
+      "bytes": 0,
+      "symlink_target": "run-20261022_155648-nff37lil",
+      "reason": "WandB convenience/debug symlink; actual run records retained"
+    },
+    {
+      "path": "s-flm/checkpoints/sft/20261022-lora-control-01/metadata/wandb/run-20261022_155648-nff37lil/logs/debug-core.log",
+      "bytes": 0,
+      "symlink_target": "/root/.cache/wandb/logs/core-debug-20261022_155647.log",
+      "reason": "WandB convenience/debug symlink; actual run records retained"
+    },
+    {
+      "path": "s-flm/checkpoints/sft/20261021-a800-formal-01/metadata/wandb/debug-internal.log",
+      "bytes": 0,
+      "symlink_target": "offline-run-20261021_150628-tuu72yfy/logs/debug-internal.log",
+      "reason": "WandB convenience/debug symlink; actual run records retained"
+    },
+    {
+      "path": "s-flm/checkpoints/sft/20261021-a800-formal-01/metadata/wandb/debug.log",
+      "bytes": 0,
+      "symlink_target": "offline-run-20261021_150628-tuu72yfy/logs/debug.log",
+      "reason": "WandB convenience/debug symlink; actual run records retained"
+    },
+    {
+      "path": "s-flm/checkpoints/sft/20261021-a800-formal-01/metadata/wandb/latest-run",
+      "bytes": 0,
+      "symlink_target": "offline-run-20261021_150628-tuu72yfy",
+      "reason": "WandB convenience/debug symlink; actual run records retained"
+    },
+    {
+      "path": "s-flm/checkpoints/sft/20261021-a800-formal-01/metadata/wandb/offline-run-20261021_150628-tuu72yfy/logs/debug-core.log",
+      "bytes": 0,
+      "symlink_target": "/root/.cache/wandb/logs/core-debug-20261021_150628.log",
+      "reason": "WandB convenience/debug symlink; actual run records retained"
+    }
+  ],
+  "protected_archive_metadata_files_retained": 20,
+  "upstream_repositories": [
+    {
+      "directory": "s-flm",
+      "upstream": "https://github.com/jdeschena/s-flm.git",
+      "upstream_head": "da30eb842404756efbfdb85b4c56f2c03a7e4cb3",
+      "working_tree_modifications_preserved": true
+    },
+    {
+      "directory": "d1",
+      "upstream": "https://github.com/dllm-reasoning/d1.git",
+      "upstream_head": "faf85d6dcea40477c722c467023c73b08a46cb82",
+      "working_tree_modifications_preserved": true
+    },
+    {
+      "directory": "LIFT",
+      "upstream": "https://github.com/divelab/LIFT.git",
+      "upstream_head": "a95b85823bed4189ac22dad6c15cbe6ea5ceffaf",
+      "working_tree_modifications_preserved": true
+    }
+  ],
+  "git_metadata_policy": "Kept locally, excluded from submission ZIP"
+}

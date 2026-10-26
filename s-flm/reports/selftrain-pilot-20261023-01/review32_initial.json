@@ -1,0 +1,514 @@
+[
+  {
+    "metadata": {
+      "sample_id": "gsm8k_train_2383",
+      "pool_index": 158,
+      "lowtemp_correct": false,
+      "selected_seed": 22,
+      "accepted_candidates": 2,
+      "raw_correct_candidates": 2,
+      "sequence_length": 181,
+      "extracted_changed": false
+    },
+    "question": "Tom has a quarter as much money as Nataly. Nataly has three times as much money as Raquel. How much money do Tom, Raquel, and Nataly have combined if Raquel has $40?",
+    "answer": "190",
+    "code": "def simple_math_problem() -> int:\n    '''\n    Tom has a quarter as much money as Nataly.\n    Nataly has three times as much money as Raquel.\n    How much money do Tom, Raquel, and Nataly have combined if Raquel has $40?\n    '''\n    raquel_money = 40\n    nataly_money = raquel_money * 3\n    tom_money = nataly_money / 4\n    combined_money = raquel_money + nataly_money + tom_money\n    result = combined_money\n    return result",
+    "original_code": "def simple_math_problem() -> int:\n    \"\"\"Tom has a quarter as much money as Nataly. Nataly has three times as much money as Raquel. How much money do Tom, Raquel, and Nataly have combined if Raquel has $40?\"\"\"\n    raquel = 40\n    nataly = 3 * raquel\n    tom = 0.25 * nataly\n    total = tom + nataly + raquel\n    return total\n"
+  },
+  {
+    "metadata": {
+      "sample_id": "gsm8k_train_2459",
+      "pool_index": 164,
+      "lowtemp_correct": false,
+      "selected_seed": 44,
+      "accepted_candidates": 1,
+      "raw_correct_candidates": 1,
+      "sequence_length": 192,
+      "extracted_changed": false
+    },
+    "question": "There are 3 workers producing chairs in a furniture factory. Each of them produces 4 chairs an hour. As a group, they produce an additional chair every 6 hours. In total, how many chairs have been produced after 6 hours?",
+    "answer": "73",
+    "code": "def simple_math_problem() -> int:\n    '''\n    There are 3 workers producing chairs in a furniture factory.\n    Each of them produces 4 chairs an hour.\n    As a group, they produce an additional chair every 6 hours.\n    In total, how many chairs have been produced after 6 hours?\n    '''\n    workers = 3\n    worker_chairs_per_hour = 4\n    additional_chairs_per_group = 1\n    hours = 6\n    additional_chairs = hours // 6\n    total_chairs = workers * worker_chairs_per_hour * hours + additional_chairs\n    result = total_chairs\n    return result",
+    "original_code": "def simple_math_problem() -> int:\n    \"\"\"There are 3 workers producing chairs in a furniture factory. Each of them produces 4 chairs an hour. As a group, they produce an additional chair every 6 hours. In total, how many chairs have been produced after 6 hours?\"\"\"\n    workers = 3\n    chairs_per_worker_per_hour = 4\n    additional_chairs_every_six_hours = 1\n    total_chairs = workers * chairs_per_worker_per_hour * 6 + additional_chairs_every_six_hours\n    return total_chairs\n"
+  },
+  {
+    "metadata": {
+      "sample_id": "gsm8k_train_6984",
+      "pool_index": 489,
+      "lowtemp_correct": false,
+      "selected_seed": 22,
+      "accepted_candidates": 1,
+      "raw_correct_candidates": 1,
+      "sequence_length": 272,
+      "extracted_changed": false
+    },
+    "question": "Yvonne and Janna were writing their 1000-word pair research paper. Yvonne was able to write 400 words while Janna wrote 150 more words than Yvonne. When they edited their paper, they removed 20 words and added twice as many words as they removed. How many more words should they add to reach the research paper requirement?",
+    "answer": "30",
+    "code": "def simple_math_problem() -> int:\n    '''\n    Yvonne and Janna were writing their 1000-word pair research paper.\n    Yvonne was able to write 400 words while Janna wrote 150 more words than Yvonne.\n    When they edited their paper, they removed 20 words and added twice as many words as they removed.\n    How many more words should they add to reach the research paper requirement?\n    '''\n    yvonne_words = 400\n    janna_words = yvonne_words + 150\n    total_words = yvonne_words + janna_words\n    edited_words = total_words - 20 + 20 * 2\n    remaining_words = 1000 - edited_words\n    result = remaining_words\n    \n    return result",
+    "original_code": "def simple_math_problem() -> int:\n    \"\"\"Yvonne and Janna were writing their 1000-word pair research paper. Yvonne was able to write 400 words while Janna wrote 150 more words than Yvonne. When they edited their paper, they removed 20 words and added twice as many words as they removed. How many more words should they add to reach the research paper requirement?\"\"\"\n    yvonne_words = 400\n    janna_words = yvonne_words + 150\n    total_words = yvonne_words + janna_words\n    words_removed = 20\n    words_added = 2 * words_removed\n    total_words = total_words - words_removed + words_added\n    words_needed = 1000 - total_words\n    return words_needed\n"
+  },
+  {
+    "metadata": {
+      "sample_id": "gsm8k_train_1947",
+      "pool_index": 128,
+      "lowtemp_correct": false,
+      "selected_seed": 11,
+      "accepted_candidates": 3,
+      "raw_correct_candidates": 3,
+      "sequence_length": 149,
+      "extracted_changed": false
+    },
+    "question": "Caleb has 3 dozen jellybeans.  Sophie has half as many jellybeans as Caleb.  How many jellybeans do they have in total?",
+    "answer": "54",
+    "code": "def simple_math_problem() -> int:\n    '''\n    Caleb has 3 dozen jellybeans.\n     Sophie has half as many jellybeans as Caleb.\n     How many jellybeans do they have in total?\n    '''\n    num_jellybeans_caleb = 3 * 12\n    num_jellybeans_sophie = num_jellybeans_caleb / 2\n    result = num_jellybeans_caleb + num_jellybeans_sophie\n    return result",
+    "original_code": "def simple_math_problem() -> int:\n    \"\"\"Caleb has 3 dozen jellybeans.  Sophie has half as many jellybeans as Caleb.  How many jellybeans do they have in total?\"\"\"\n    caleb_jellybeans = 3 * 12\n    sophie_jellybeans = caleb_jellybeans / 2\n    total_jellybeans = caleb_jellybeans + sophie_jellybeans\n    return total_jellybeans\n"
+  },
+  {
+    "metadata": {
+      "sample_id": "gsm8k_train_4812",
+      "pool_index": 335,
+      "lowtemp_correct": false,
+      "selected_seed": 33,
+      "accepted_candidates": 1,
+      "raw_correct_candidates": 1,
+      "sequence_length": 268,
+      "extracted_changed": false
+    },
+    "question": "On Monday, a restaurant sells forty dinners. On Tuesday, it sells 40 more dinners than it did Monday. On Wednesday, it sells half the amount of dinners it sold on Tuesday. On Thursday they changed their recipe, and then sold 3 more dinners than they did on Wednesday. How many dinners were sold in those 4 days?",
+    "answer": "203",
+    "code": "def simple_math_problem() -> int:\n    '''\n    On Monday, a restaurant sells forty dinners.\n    On Tuesday, it sells 40 more dinners than it did Monday.\n    On Wednesday, it sells half the amount of dinners it sold on Tuesday.\n    On Thursday they changed their recipe, and then sold 3 more dinners than they did on Wednesday.\n    How many dinners were sold in those 4 days?\n    '''\n    monday_dinners = 40\n    tuesday_dinners = monday_dinners + 40\n    wednesday_dinners = tuesday_dinners / 2\n    thursday_dinners = wednesday_dinners + 3\n    total_dinners = monday_dinners + tuesday_dinners + wednesday_dinners + thursday_dinners\n    result = total_dinners\n    return result",
+    "original_code": "def simple_math_problem() -> int:\n    \"\"\"On Monday, a restaurant sells forty dinners. On Tuesday, it sells 40 more dinners than it did Monday. On Wednesday, it sells half the amount of dinners it sold on Tuesday. On Thursday they changed their recipe, and then sold 3 more dinners than they did on Wednesday. How many dinners were sold in those 4 days?\"\"\"\n    monday = 40\n    tuesday = monday + 40\n    wednesday = tuesday / 2\n    thursday = wednesday + 3\n    total_dinners = monday + tuesday + wednesday + thursday\n    return int(total_dinners)\n"
+  },
+  {
+    "metadata": {
+      "sample_id": "gsm8k_train_3242",
+      "pool_index": 235,
+      "lowtemp_correct": false,
+      "selected_seed": 22,
+      "accepted_candidates": 2,
+      "raw_correct_candidates": 2,
+      "sequence_length": 184,
+      "extracted_changed": false
+    },
+    "question": "Jane purchased 15 ice cream cones and 5 cups of pudding. Each ice cream cone cost $5 and each cup of pudding cost $2. How much more did Jane spend on ice cream than on pudding, in dollars?",
+    "answer": "65",
+    "code": "def simple_math_problem() -> int:\n    '''\n    Jane purchased 15 ice cream cones and 5 cups of pudding.\n    Each ice cream cone cost $5 and each cup of pudding cost $2.\n    How much more did Jane spend on ice cream than on pudding, in dollars?\n    '''\n    # Solution to Question 5\n    ice_cream_cost = 5\n    total_cone = 15\n    pudding_cost = 2\n    total_cost = (total_cone * ice_cream_cost) - (5 * pudding_cost)\n    result = abs(total_cost)\n    return result",
+    "original_code": "def simple_math_problem() -> int:\n    \"\"\"Jane purchased 15 ice cream cones and 5 cups of pudding. Each ice cream cone cost $5 and each cup of pudding cost $2. How much more did Jane spend on ice cream than on pudding, in dollars?\"\"\"\n    ice_cream_cones = 15\n    pudding_cups = 5\n    ice_cream_price = 5\n    pudding_price = 2\n    total_ice_cream_cost = ice_cream_cones * ice_cream_price\n    total_pudding_cost = pudding_cups * pudding_price\n    difference = total_ice_cream_cost - total_pudding_cost\n    return difference\n"
+  },
+  {
+    "metadata": {
+      "sample_id": "gsm8k_train_2171",
+      "pool_index": 145,
+      "lowtemp_correct": false,
+      "selected_seed": 11,
+      "accepted_candidates": 1,
+      "raw_correct_candidates": 1,
+      "sequence_length": 165,
+      "extracted_changed": false
+    },
+    "question": "In the first team, Beth scored 12 while Jan scored 10. In the second team, Judy scored 8 while Angel scored 11. How many more points did the first team get than the second team?",
+    "answer": "3",
+    "code": "def simple_math_problem() -> int:\n    '''\n    In the first team, Beth scored 12 while Jan scored 10.\n    In the second team, Judy scored 8 while Angel scored 11.\n    How many more points did the first team get than the second team?\n    '''\n    team1_score = 12 + 10\n    team2_judy_score = 8 + 11\n    difference = team1_score - team2_judy_score\n    result = difference\n    return result",
+    "original_code": "def simple_math_problem() -> int:\n    \"\"\"In the first team, Beth scored 12 while Jan scored 10. In the second team, Judy scored 8 while Angel scored 11. How many more points did the first team get than the second team?\"\"\"\n    beth_score = 12\n    jan_score = 10\n    judy_score = 8\n    angel_score = 11\n    first_team_score = beth_score + jan_score\n    second_team_score = judy_score + angel_score\n    difference = first_team_score - second_team_score\n    return difference\n"
+  },
+  {
+    "metadata": {
+      "sample_id": "gsm8k_train_5232",
+      "pool_index": 366,
+      "lowtemp_correct": false,
+      "selected_seed": 11,
+      "accepted_candidates": 2,
+      "raw_correct_candidates": 2,
+      "sequence_length": 282,
+      "extracted_changed": false
+    },
+    "question": "Jill makes scented candles as a hobby. Her favorite scents are lavender, coconut, and almond, and she uses the same amount of each scent for every candle. This time, she made twice as many lavender candles as coconut candles, along with a batch of almond candles. She ran out of almond scent after making ten candles. If she had one and a half times as much coconut scent as almond scent and used all her coconut scent up too, how many lavender candles did she make?",
+    "answer": "30",
+    "code": "def simple_math_problem() -> int:\n    '''\n    Jill makes scented candles as a hobby.\n    Her favorite scents are lavender, coconut, and almond, and she uses the same amount of each scent for every candle.\n    This time, she made twice as many lavender candles as coconut candles, along with a batch of almond candles.\n    She ran out of almond scent after making ten candles.\n    If she had one and a half times as much coconut scent as almond scent and used all her coconut scent up too, how many lavender candles did she make?\n    '''\n    almond_candles = 10\n    coconut_scent = (1.5) * almond_candles\n    coconut_candles_used = coconut_scent\n    lavender_candles = coconut_candles_used * 2\n    \n    result = lavender_candles\n    return result",
+    "original_code": "def simple_math_problem() -> int:\n    \"\"\"Jill makes scented candles as a hobby. Her favorite scents are lavender, coconut, and almond, and she uses the same amount of each scent for every candle. This time, she made twice as many lavender candles as coconut candles, along with a batch of almond candles. She ran out of almond scent after making ten candles. If she had one and a half times as much coconut scent as almond scent and used all her coconut scent up too, how many lavender candles did she make?\"\"\"\n    coconut_candles = 1.5 * 10\n    lavender_candles = 2 * coconut_candles\n    return int(lavender_candles)\n"
+  },
+  {
+    "metadata": {
+      "sample_id": "gsm8k_train_3256",
+      "pool_index": 238,
+      "lowtemp_correct": false,
+      "selected_seed": 33,
+      "accepted_candidates": 1,
+      "raw_correct_candidates": 1,
+      "sequence_length": 167,
+      "extracted_changed": false
+    },
+    "question": "Bert made 12 sandwiches for his trip. On the first day, he ate half of the sandwiches he made. The next day he ate 2 sandwiches less. How many sandwiches does Bert have left after these two days?",
+    "answer": "2",
+    "code": "def simple_math_problem() -> int:\n    '''\n    Bert made 12 sandwiches for his trip.\n    On the first day, he ate half of the sandwiches he made.\n    The next day he ate 2 sandwiches less.\n    How many sandwiches does Bert have left after these two days?\n    '''\n    sandwiches = 12\n    first_day_eat = sandwiches/2\n    sandwiches_day2 = first_day_eat - 2\n    sandwiches = sandwiches - first_day_eat - sandwiches_day2\n    result = sandwiches\n    return result",
+    "original_code": "def simple_math_problem() -> int:\n    \"\"\"Bert made 12 sandwiches for his trip. On the first day, he ate half of the sandwiches he made. The next day he ate 2 sandwiches less. How many sandwiches does Bert have left after these two days?\"\"\"\n    total_sandwiches = 12\n    first_day = total_sandwiches / 2\n    second_day = first_day - 2\n    remaining_sandwiches = total_sandwiches - first_day - second_day\n    return int(remaining_sandwiches)\n"
+  },
+  {
+    "metadata": {
+      "sample_id": "gsm8k_train_0208",
+      "pool_index": 7,
+      "lowtemp_correct": false,
+      "selected_seed": 22,
+      "accepted_candidates": 1,
+      "raw_correct_candidates": 1,
+      "sequence_length": 175,
+      "extracted_changed": false
+    },
+    "question": "John puts $25 in his piggy bank every month for 2 years to save up for a vacation. He had to spend $400 from his piggy bank savings last week to repair his car. How many dollars are left in his piggy bank?",
+    "answer": "200",
+    "code": "def simple_math_problem() -> int:\n    '''\n    John puts $25 in his piggy bank every month for 2 years to save up for a vacation.\n    He had to spend $400 from his piggy bank savings last week to repair his car.\n    How many dollars are left in his piggy bank?\n    '''\n    total_savings = 25 * 24\n    repair_cost = 400\n    savings_left = total_savings - repair_cost\n    result = savings_left\n    return result",
+    "original_code": "def simple_math_problem() -> int:\n    \"\"\"John puts $25 in his piggy bank every month for 2 years to save up for a vacation. He had to spend $400 from his piggy bank savings last week to repair his car. How many dollars are left in his piggy bank?\"\"\"\n    monthly_savings = 25\n    months = 2 * 12\n    car_repair = 400\n    total_savings = monthly_savings * months\n    remaining_savings = total_savings - car_repair\n    return remaining_savings\n"
+  },
+  {
+    "metadata": {
+      "sample_id": "gsm8k_train_3778",
+      "pool_index": 268,
+      "lowtemp_correct": false,
+      "selected_seed": 44,
+      "accepted_candidates": 1,
+      "raw_correct_candidates": 1,
+      "sequence_length": 249,
+      "extracted_changed": false
+    },
+    "question": "A highway is being extended from its current length of 200 miles up to 650 miles. 50 miles are built on the first day, and three times this amount are built on the second day.  How many miles still need to be added to the highway to finish extending it?",
+    "answer": "250",
+    "code": "def simple_math_problem() -> int:\n    '''\n    A highway is being extended from its current length of 200 miles up to 650 miles.\n    50 miles are built on the first day, and three times this amount are built on the second day.\n     How many miles still need to be added to the highway to finish extending it?\n    '''\n    to_extension = 650\n    current_length = 200\n    length_built_first_day = 50\n    length_built_second_day = 3 * length_built_first_day\n    length_left_to_be_added = (to_extension - current_length) - (length_built_first_day + int(length_built_second_day))\n    result = length_left_to_be_added\n    return result",
+    "original_code": "def simple_math_problem() -> int:\n    \"\"\"A highway is being extended from its current length of 200 miles up to 650 miles. 50 miles are built on the first day, and three times this amount are built on the second day.  How many miles still need to be added to the highway to finish extending it?\"\"\"\n    initial_length = 200\n    target_length = 650\n    first_day_construction = 50\n    second_day_construction = 3 * first_day_construction\n    remaining_length = target_length - (initial_length + first_day_construction + second_day_construction)\n    return remaining_length\n"
+  },
+  {
+    "metadata": {
+      "sample_id": "gsm8k_train_0606",
+      "pool_index": 44,
+      "lowtemp_correct": false,
+      "selected_seed": 11,
+      "accepted_candidates": 1,
+      "raw_correct_candidates": 1,
+      "sequence_length": 261,
+      "extracted_changed": false
+    },
+    "question": "In a big box, there are marbles in 4 colors. Inside, there are 20 red marbles.  There are three times more green marbles than red.  Yellow marbles make up 20% of the green marbles. How many marbles are of a different color if the total of all marbles in the box is three times more than the number of green marbles?",
+    "answer": "88",
+    "code": "def simple_math_problem() -> int:\n    '''\n    In a big box, there are marbles in 4 colors.\n    Inside, there are 20 red marbles.\n     There are three times more green marbles than red.\n     Yellow marbles make up 20% of the green marbles.\n    How many marbles are of a different color if the total of all marbles in the box is three times more than the number of green marbles?\n    '''\n    red_marbles = 20\n    green_marbles = red_marbles * 3\n    yellow_marbles = green_marbles * 0.20\n    box_total = green_marbles * 3\n    different_colormarbles = box_total - red_marbles - green_marbles - yellow_marbles\n    result = different_colormarbles\n    return result",
+    "original_code": "def simple_math_problem() -> int:\n    \"\"\"In a big box, there are marbles in 4 colors. Inside, there are 20 red marbles.  There are three times more green marbles than red.  Yellow marbles make up 20% of the green marbles. How many marbles are of a different color if the total of all marbles in the box is three times more than the number of green marbles?\"\"\"\n    red_marbles = 20\n    green_marbles = 3 * red_marbles\n    yellow_marbles = 0.2 * green_marbles\n    total_marbles = 3 * green_marbles\n    different_color_marbles = total_marbles - red_marbles - green_marbles - yellow_marbles\n    return different_color_marbles\n"
+  },
+  {
+    "metadata": {
+      "sample_id": "gsm8k_train_3774",
+      "pool_index": 267,
+      "lowtemp_correct": false,
+      "selected_seed": 44,
+      "accepted_candidates": 1,
+      "raw_correct_candidates": 1,
+      "sequence_length": 159,
+      "extracted_changed": false
+    },
+    "question": "Oliver has two bags of vegetables. Each bag weighs 1/6 as much as James’s bag, which weighs 18kg. What is the combined weight of both Oliver’s bags?",
+    "answer": "6",
+    "code": "def simple_math_problem() -> int:\n    '''\n    Oliver has two bags of vegetables.\n    Each bag weighs 1/6 as much as James’s bag, which weighs 18kg.\n    What is the combined weight of both Oliver’s bags?\n    '''\n    james_bag_weight = 18\n    oliver_bag_weight = james_bag_weight / 6\n    combined_bags_weight = oliver_bag_weight * 2\n    result = combined_bags_weight\n    return result",
+    "original_code": "def simple_math_problem() -> int:\n    \"\"\"Oliver has two bags of vegetables. Each bag weighs 1/6 as much as James’s bag, which weighs 18kg. What is the combined weight of both Oliver’s bags?\"\"\"\n    james_bag = 18\n    oliver_bag = james_bag / 6\n    total_weight = 2 * oliver_bag\n    return total_weight\n"
+  },
+  {
+    "metadata": {
+      "sample_id": "gsm8k_train_7041",
+      "pool_index": 492,
+      "lowtemp_correct": false,
+      "selected_seed": 33,
+      "accepted_candidates": 1,
+      "raw_correct_candidates": 1,
+      "sequence_length": 159,
+      "extracted_changed": false
+    },
+    "question": "Elida has 5 letters while Adrianna has 2 less than twice the number of letters Elida has. What's 10 times the average number of letters in both names?",
+    "answer": "65",
+    "code": "def simple_math_problem() -> int:\n    '''\n    Elida has 5 letters while Adrianna has 2 less than twice the number of letters Elida has.\n    What's 10 times the average number of letters in both names?\n    '''\n    elida_letters = 5\n    adrianna_letters = 2*elida_letters-2\n    total_letters = elida_letters + adrianna_letters\n    average_letters = total_letters / 2\n    result = 10 * average_letters\n    return result",
+    "original_code": "def simple_math_problem() -> int:\n    \"\"\"Elida has 5 letters while Adrianna has 2 less than twice the number of letters Elida has. What's 10 times the average number of letters in both names?\"\"\"\n    elida_letters = 5\n    adrianna_letters = 2 * elida_letters - 2\n    average_letters = (elida_letters + adrianna_letters) / 2\n    result = 10 * average_letters\n    return result\n"
+  },
+  {
+    "metadata": {
+      "sample_id": "gsm8k_train_1967",
+      "pool_index": 131,
+      "lowtemp_correct": false,
+      "selected_seed": 11,
+      "accepted_candidates": 1,
+      "raw_correct_candidates": 1,
+      "sequence_length": 175,
+      "extracted_changed": false
+    },
+    "question": "Guise went to a restaurant and ate ten hot dogs on a Monday. That week, he ate two more dogs each day than the previous day. How many hot dogs had Guise eaten by Wednesday that week?",
+    "answer": "36",
+    "code": "def simple_math_problem() -> int:\n    \"\"\"\n    Guise went to a restaurant and ate ten hot dogs on a Monday.\n    That week, he ate two more dogs each day than the previous day.\n    How many hot dogs had Guise eaten by Wednesday that week?\n    \"\"\"\n    monday = 10  # number of hot dogs on monday\n    wednesday = tuesday = monday + 2\n    wednesday = tuesday + 2  # number of hot dogs on wednesday\n    result = monday + tuesday + wednesday  # total number of hotdogs eaten\n\n    return result",
+    "original_code": "def simple_math_problem() -> int:\n    \"\"\"Guise went to a restaurant and ate ten hot dogs on a Monday. That week, he ate two more dogs each day than the previous day. How many hot dogs had Guise eaten by Wednesday that week?\"\"\"\n    initial_hot_dogs = 10\n    total_hot_dogs = initial_hot_dogs + (initial_hot_dogs + 2) + (initial_hot_dogs + 4)\n    return total_hot_dogs\n"
+  },
+  {
+    "metadata": {
+      "sample_id": "gsm8k_train_2959",
+      "pool_index": 211,
+      "lowtemp_correct": false,
+      "selected_seed": 33,
+      "accepted_candidates": 1,
+      "raw_correct_candidates": 1,
+      "sequence_length": 116,
+      "extracted_changed": false
+    },
+    "question": "Janice gave all three dozens of pebbles from her trip to her friends. Each of her friends got 4 pebbles. How many friends received pebbles?",
+    "answer": "9",
+    "code": "def simple_math_problem() -> int:\n    \"\"\"\n    Janice gave all three dozens of pebbles from her trip to her friends.\n    Each of her friends got 4 pebbles.\n    How many friends received pebbles?\n    \"\"\"\n    num_pebbles = 3 * 12\n    num_friends = num_pebbles / 4\n    result = num_friends\n\n    return result",
+    "original_code": "def simple_math_problem() -> int:\n    \"\"\"Janice gave all three dozens of pebbles from her trip to her friends. Each of her friends got 4 pebbles. How many friends received pebbles?\"\"\"\n    total_pebbles = 3 * 12\n    pebbles_per_friend = 4\n    total_friends = total_pebbles / pebbles_per_friend\n    return int(total_friends)\n"
+  },
+  {
+    "metadata": {
+      "sample_id": "gsm8k_train_2928",
+      "pool_index": 207,
+      "lowtemp_correct": true,
+      "selected_seed": 11,
+      "accepted_candidates": 1,
+      "raw_correct_candidates": 1,
+      "sequence_length": 148,
+      "extracted_changed": false
+    },
+    "question": "Oxford High School has 48 teachers, 1 principal and 15 classes with each having 20 students. How many people are there in total in Oxford High School?",
+    "answer": "349",
+    "code": "def simple_math_problem() -> int:\n    '''\n    Oxford High School has 48 teachers, 1 principal and 15 classes with each having 20 students.\n    How many people are there in total in Oxford High School?\n    '''\n    teachers = 48\n    principal = 1\n    classes = 15\n    students_per_class = 20\n    total_people = teachers + principal + (classes * students_per_class)\n    result = total_people\n    return result",
+    "original_code": "def simple_math_problem() -> int:\n    \"\"\"Oxford High School has 48 teachers, 1 principal and 15 classes with each having 20 students. How many people are there in total in Oxford High School?\"\"\"\n    teachers = 48\n    principal = 1\n    classes = 15\n    students_per_class = 20\n    total_people = teachers + principal + classes * students_per_class\n    return total_people\n"
+  },
+  {
+    "metadata": {
+      "sample_id": "gsm8k_train_2478",
+      "pool_index": 165,
+      "lowtemp_correct": true,
+      "selected_seed": 22,
+      "accepted_candidates": 2,
+      "raw_correct_candidates": 2,
+      "sequence_length": 181,
+      "extracted_changed": false
+    },
+    "question": "In a game, Samanta has 8 more points than Mark, and Mark has 50% more points than Eric. Eric has 6 points. How many points do Samanta, Mark, and Eric have in total?",
+    "answer": "32",
+    "code": "def simple_math_problem() -> int:\n    '''\n    In a game, Samanta has 8 more points than Mark, and Mark has 50% more points than Eric.\n    Eric has 6 points.\n    How many points do Samanta, Mark, and Eric have in total?\n    '''\n    i_pointseric = 6\n    i_pointsmark = i_pointseric * 1.5\n    i_samanta = i_pointsmark +8\n    total_points = i_pointseric + i_pointsmark + i_samanta\n    result = total_points\n    return result",
+    "original_code": "def simple_math_problem() -> int:\n    \"\"\"In a game, Samanta has 8 more points than Mark, and Mark has 50% more points than Eric. Eric has 6 points. How many points do Samanta, Mark, and Eric have in total?\"\"\"\n    Eric_points = 6\n    Mark_points = 1.5 * Eric_points\n    Samanta_points = Mark_points + 8\n    total_points = Samanta_points + Mark_points + Eric_points\n    return total_points\n"
+  },
+  {
+    "metadata": {
+      "sample_id": "gsm8k_train_5821",
+      "pool_index": 402,
+      "lowtemp_correct": true,
+      "selected_seed": 44,
+      "accepted_candidates": 1,
+      "raw_correct_candidates": 4,
+      "sequence_length": 183,
+      "extracted_changed": false
+    },
+    "question": "James hurts himself and decides to go to his primary care doctor.  His primary care doctor charges $300 for the visit and James's insurance covers 80%.  What is James's out-of-pocket cost?",
+    "answer": "60",
+    "code": "def simple_math_problem() -> int:\n    '''\n    James hurts himself and decides to go to his primary care doctor.\n    His primary care doctor charges $300 for the visit and James's insurance covers 80%.\n   \n     What is James's out-of-pocket cost?\n    '''\n    visit_cost = 300\n    insurance_coverage = 0.8\n    out_of_pocket_cost = visit_cost * (1 - insurance_coverage)\n    result = out_of_pocket_cost\n    print(f'<<<{result}>>>')\n    # \n    return result",
+    "original_code": "def simple_math_problem() -> int:\n    \"\"\"James hurts himself and decides to go to his primary care doctor.  His primary care doctor charges $300 for the visit and James's insurance covers 80%.  What is James's out-of-pocket cost?\"\"\"\n    initial_cost = 300\n    insurance_coverage = 0.8\n    out_of_pocket_cost = initial_cost * (1 - insurance_coverage)\n    return out_of_pocket_cost\n"
+  },
+  {
+    "metadata": {
+      "sample_id": "gsm8k_train_2310",
+      "pool_index": 150,
+      "lowtemp_correct": true,
+      "selected_seed": 11,
+      "accepted_candidates": 2,
+      "raw_correct_candidates": 2,
+      "sequence_length": 146,
+      "extracted_changed": false
+    },
+    "question": "Selena reads a book with 400 pages. Harry reads a book with 20 fewer than half the number of pages Selena's book has. How many pages are in the book of Harry?",
+    "answer": "180",
+    "code": "def simple_math_problem() -> int:\n    '''\n    Selena reads a book with 400 pages.\n    Harry reads a book with 20 fewer than half the number of pages Selena's book has.\n    How many pages are in the book of Harry?\n    '''\n    pages_selena = 400\n    pages_harry = (pages_selena / 2) - 20\n    result = pages_harry\n    return result",
+    "original_code": "def simple_math_problem() -> int:\n    \"\"\"Selena reads a book with 400 pages. Harry reads a book with 20 fewer than half the number of pages Selena's book has. How many pages are in the book of Harry?\"\"\"\n    selena_pages = 400\n    harry_pages = selena_pages / 2 - 20\n    return int(harry_pages)\n"
+  },
+  {
+    "metadata": {
+      "sample_id": "gsm8k_train_5623",
+      "pool_index": 390,
+      "lowtemp_correct": true,
+      "selected_seed": 44,
+      "accepted_candidates": 1,
+      "raw_correct_candidates": 1,
+      "sequence_length": 245,
+      "extracted_changed": false
+    },
+    "question": "In a class of 30 students, the teacher polls the students on their favorite subject. 1/5 of the students like Math, and 1/3 like English. 1/7 of the remaining students like Science. The rest don’t have a favorite subject. How many students don’t have a favorite subject?",
+    "answer": "12",
+    "code": "def simple_math_problem() -> int:\n    '''\n    In a class of 30 students, the teacher polls the students on their favorite subject.\n    1/5 of the students like Math, and 1/3 like English.\n    1/7 of the remaining students like Science.\n    The rest don’t have a favorite subject.\n    How many students don’t have a favorite subject?\n    '''\n    total_students = 30\n    math_students = total_students * 1/5\n    english_students = total_students // 3\n    remaining_students = total_students - math_students - english_students\n    science_students = remaining_students * 1/7\n    students_without_subject = remaining_students - science_students\n    result = students_without_subject\n    return result",
+    "original_code": "def simple_math_problem() -> int:\n    \"\"\"In a class of 30 students, the teacher polls the students on their favorite subject. 1/5 of the students like Math, and 1/3 like English. 1/7 of the remaining students like Science. The rest don’t have a favorite subject. How many students don’t have a favorite subject?\"\"\"\n    total_students = 30\n    math_students = total_students / 5\n    english_students = total_students / 3\n    remaining_students = total_students - math_students - english_students\n    science_students = remaining_students / 7\n    no_pref_students = remaining_students - science_students\n    return int(no_pref_students)\n"
+  },
+  {
+    "metadata": {
+      "sample_id": "gsm8k_train_2947",
+      "pool_index": 209,
+      "lowtemp_correct": true,
+      "selected_seed": 22,
+      "accepted_candidates": 2,
+      "raw_correct_candidates": 2,
+      "sequence_length": 152,
+      "extracted_changed": false
+    },
+    "question": "The white rabbit can hop 15 meters in one minute. The brown rabbit hops 12 meters per minute. What is the total distance the two rabbits will hop in 5 minutes?",
+    "answer": "135",
+    "code": "def simple_math_problem() -> int:\n    '''\n    The white rabbit can hop 15 meters in one minute.\n    The brown rabbit hops 12 meters per minute.\n    What is the total distance the two rabbits will hop in 5 minutes?\n    '''\n    distance_bit1 = 15 * 5\n    distance_bit2 = 12 * 5\n    total_distance_hopped = distance_bit1 + distance_bit2\n    result = total_distance_hopped\n    return result",
+    "original_code": "def simple_math_problem() -> int:\n    \"\"\"The white rabbit can hop 15 meters in one minute. The brown rabbit hops 12 meters per minute. What is the total distance the two rabbits will hop in 5 minutes?\"\"\"\n    white_rabbit_hop = 15\n    brown_rabbit_hop = 12\n    time = 5\n    total_white_rabbit_hop = white_rabbit_hop * time\n    total_brown_rabbit_hop = brown_rabbit_hop * time\n    total_hop = total_white_rabbit_hop + total_brown_rabbit_hop\n    return total_hop\n"
+  },
+  {
+    "metadata": {
+      "sample_id": "gsm8k_train_0478",
+      "pool_index": 31,
+      "lowtemp_correct": true,
+      "selected_seed": 11,
+      "accepted_candidates": 2,
+      "raw_correct_candidates": 2,
+      "sequence_length": 175,
+      "extracted_changed": false
+    },
+    "question": "Stan weighs 5 more pounds than Steve. Steve is eight pounds lighter than Jim. If Jim weighs 110 pounds and the three of them crowd onto a scale at the same time, what is their total weight?",
+    "answer": "319",
+    "code": "def simple_math_problem() -> int:\n    '''\n    Stan weighs 5 more pounds than Steve.\n    Steve is eight pounds lighter than Jim.\n    If Jim weighs 110 pounds and the three of them crowd onto a scale at the same time, what is their total weight?\n    '''\n    jim_weight = 110\n    steve_weight = jim_weight - 8\n    stan_weight = steve_weight + 5\n    \n    total_weight = jim_weight + steve_weight + stan_weight\n    \n    result = total_weight\n    return result",
+    "original_code": "def simple_math_problem() -> int:\n    \"\"\"Stan weighs 5 more pounds than Steve. Steve is eight pounds lighter than Jim. If Jim weighs 110 pounds and the three of them crowd onto a scale at the same time, what is their total weight?\"\"\"\n    Jim_weight = 110\n    Steve_weight = Jim_weight - 8\n    Stan_weight = Steve_weight + 5\n    total_weight = Jim_weight + Steve_weight + Stan_weight\n    return total_weight\n"
+  },
+  {
+    "metadata": {
+      "sample_id": "gsm8k_train_5553",
+      "pool_index": 385,
+      "lowtemp_correct": true,
+      "selected_seed": 11,
+      "accepted_candidates": 2,
+      "raw_correct_candidates": 2,
+      "sequence_length": 119,
+      "extracted_changed": false
+    },
+    "question": "During 5 hours, a spider can catch 9 flies. How many flies would this spider catch in 30 hours if he would keep his efficiency?",
+    "answer": "54",
+    "code": "def simple_math_problem() -> int:\n    '''\n    During 5 hours, a spider can catch 9 flies.\n    How many flies would this spider catch in 30 hours if he would keep his efficiency?\n    '''\n    flies_per_hour = 9 / 5\n    total_flies = flies_per_hour * 30\n    result = total_flies\n    return result",
+    "original_code": "def simple_math_problem() -> int:\n    \"\"\"During 5 hours, a spider can catch 9 flies. How many flies would this spider catch in 30 hours if he would keep his efficiency?\"\"\"\n    hours_known = 5\n    flies_known = 9\n    hours_unknown = 30\n    flies_unknown = flies_known / hours_known * hours_unknown\n    return int(flies_unknown)\n"
+  },
+  {
+    "metadata": {
+      "sample_id": "gsm8k_train_3748",
+      "pool_index": 266,
+      "lowtemp_correct": true,
+      "selected_seed": 11,
+      "accepted_candidates": 2,
+      "raw_correct_candidates": 2,
+      "sequence_length": 145,
+      "extracted_changed": false
+    },
+    "question": "Lucy works in a pet shop. She can clean 2 aquariums in 3 hours. If Lucy is working 24 hours this week, how many aquariums could she clean?",
+    "answer": "16",
+    "code": "def simple_math_problem() -> int:\n    '''\n    Lucy works in a pet shop.\n    She can clean 2 aquariums in 3 hours.\n    If Lucy is working 24 hours this week, how many aquariums could she clean?\n    '''\n    hours_worked = 24\n    aquariums_per_hour = 2\n    number_of_aquariums = aquariums_per_hour * (24/3)\n    result = number_of_aquariums\n    return result",
+    "original_code": "def simple_math_problem() -> int:\n    \"\"\"Lucy works in a pet shop. She can clean 2 aquariums in 3 hours. If Lucy is working 24 hours this week, how many aquariums could she clean?\"\"\"\n    aquariums_per_hour = 2 / 3\n    working_hours = 24\n    aquariums = aquariums_per_hour * working_hours\n    return int(aquariums)\n"
+  },
+  {
+    "metadata": {
+      "sample_id": "gsm8k_train_0325",
+      "pool_index": 18,
+      "lowtemp_correct": true,
+      "selected_seed": 11,
+      "accepted_candidates": 2,
+      "raw_correct_candidates": 2,
+      "sequence_length": 195,
+      "extracted_changed": false
+    },
+    "question": "Bob was creating a math test for an online platform.  He created 13 questions in the first hour.  Bob then doubled his rate for the second hour, and doubled his second hour rate for the third hour.  How many questions did Bob create in the three hours?",
+    "answer": "91",
+    "code": "def simple_math_problem() -> int:\n    \"\"\"\n    Bob was creating a math test for an online platform.\n     He created 13 questions in the first hour.\n   \n     Bob then doubled his rate for the second hour, and doubled his second hour rate for the third hour.\n    How many questions did Bob create in the three hours?\n    \"\"\"\n    hour_1_questions = 13\n    hour_2_questions = hour_1_questions*2\n    hour_3_questions = hour_2_questions*2\n    result = hour_1_questions + hour_2_questions + hour_3_questions\n\n    return result",
+    "original_code": "def simple_math_problem() -> int:\n    \"\"\"Bob was creating a math test for an online platform.  He created 13 questions in the first hour.  Bob then doubled his rate for the second hour, and doubled his second hour rate for the third hour.  How many questions did Bob create in the three hours?\"\"\"\n    initial_rate = 13\n    total_questions = initial_rate + 2 * initial_rate + 4 * initial_rate\n    return total_questions\n"
+  },
+  {
+    "metadata": {
+      "sample_id": "gsm8k_train_1286",
+      "pool_index": 85,
+      "lowtemp_correct": true,
+      "selected_seed": 11,
+      "accepted_candidates": 1,
+      "raw_correct_candidates": 1,
+      "sequence_length": 172,
+      "extracted_changed": false
+    },
+    "question": "Olga has an aquarium with fish in 5 different colors. There are 12 yellow ones, half as many blue ones, and twice as many green ones as yellow ones. How many fish does Olga have in her aquarium?",
+    "answer": "42",
+    "code": "def simple_math_problem() -> int:\n    '''\n    Olga has an aquarium with fish in 5 different colors.\n    There are 12 yellow ones, half as many blue ones, and twice as many green ones as yellow ones.\n    How many fish does Olga have in her aquarium?\n    '''\n    yellow_fish = 12\n    blue_fish = yellow_fish / 2\n    green_fish = yellow_fish * 2\n    total_fish = yellow_fish + blue_fish + green_fish\n    result = total_fish\n    return result",
+    "original_code": "def simple_math_problem() -> int:\n    \"\"\"Olga has an aquarium with fish in 5 different colors. There are 12 yellow ones, half as many blue ones, and twice as many green ones as yellow ones. How many fish does Olga have in her aquarium?\"\"\"\n    yellow = 12\n    blue = yellow // 2\n    green = yellow * 2\n    total = yellow + blue + green\n    return total\n"
+  },
+  {
+    "metadata": {
+      "sample_id": "gsm8k_train_4369",
+      "pool_index": 314,
+      "lowtemp_correct": true,
+      "selected_seed": 22,
+      "accepted_candidates": 2,
+      "raw_correct_candidates": 2,
+      "sequence_length": 131,
+      "extracted_changed": false
+    },
+    "question": "Rose bought a plant with a 10% discount. If the price is $10, how much did Rose pay after the discount?",
+    "answer": "9",
+    "code": "def simple_math_problem() -> int:\n    '''\n    Rose bought a plant with a 10% discount.\n    If the price is $10, how much did Rose pay after the discount?\n    '''\n    discount = 0.10\n    original_price = 10\n    discount_amount = original_price * discount\n    price_after_discount = original_price - discount_amount\n    result = price_after_discount\n    return result",
+    "original_code": "def simple_math_problem() -> int:\n    \"\"\"Rose bought a plant with a 10% discount. If the price is $10, how much did Rose pay after the discount?\"\"\"\n    discount = 10 / 100 * 10\n    price_after_discount = 10 - discount\n    return price_after_discount\n"
+  },
+  {
+    "metadata": {
+      "sample_id": "gsm8k_train_6143",
+      "pool_index": 426,
+      "lowtemp_correct": true,
+      "selected_seed": 44,
+      "accepted_candidates": 1,
+      "raw_correct_candidates": 1,
+      "sequence_length": 194,
+      "extracted_changed": false
+    },
+    "question": "Steve has 400 new emails in his inbox.  He moves half of them to the trash, and 40 percent of the remaining emails to his work folder.  How many emails are left in the inbox?",
+    "answer": "120",
+    "code": "def simple_math_problem() -> int:\n    '''\n    Steve has 400 new emails in his inbox.\n     He moves half of them to the trash, and 40 percent of the remaining emails to his work folder.\n     How many emails are left in the inbox?\n    '''\n    email_count = 400\n    # new email count\n    moved_to_trash = email_count / 2\n    remaining_email = email_count - moved_to_trash\n    remaining_to_folder = remaining_email * 0.40\n    email_left = remaining_email - remaining_to_folder\n    result = email_left\n    return result",
+    "original_code": "def simple_math_problem() -> int:\n    \"\"\"Steve has 400 new emails in his inbox.  He moves half of them to the trash, and 40 percent of the remaining emails to his work folder.  How many emails are left in the inbox?\"\"\"\n    emails = 400\n    emails = emails / 2\n    emails = emails * 0.6\n    return int(emails)\n"
+  },
+  {
+    "metadata": {
+      "sample_id": "gsm8k_train_3353",
+      "pool_index": 244,
+      "lowtemp_correct": true,
+      "selected_seed": 22,
+      "accepted_candidates": 1,
+      "raw_correct_candidates": 1,
+      "sequence_length": 125,
+      "extracted_changed": false
+    },
+    "question": "Joseph gave 23 cards to each of his 15 students and had 12 cards left. How many cards did Joseph have at first?",
+    "answer": "357",
+    "code": "def simple_math_problem() -> int:\n    '''\n    Joseph gave 23 cards to each of his 15 students and had 12 cards left.\n    How many cards did Joseph have at first?\n    '''\n    cards_given = 23\n    cards_left = 12\n    total_cards = (cards_given * 15) + cards_left\n    result = total_cards\n    return result",
+    "original_code": "def simple_math_problem() -> int:\n    \"\"\"Joseph gave 23 cards to each of his 15 students and had 12 cards left. How many cards did Joseph have at first?\"\"\"\n    students = 15\n    cards_each = 23\n    cards_left = 12\n    total_cards = students * cards_each + cards_left\n    return total_cards\n"
+  },
+  {
+    "metadata": {
+      "sample_id": "gsm8k_train_0509",
+      "pool_index": 35,
+      "lowtemp_correct": true,
+      "selected_seed": 22,
+      "accepted_candidates": 2,
+      "raw_correct_candidates": 2,
+      "sequence_length": 220,
+      "extracted_changed": false
+    },
+    "question": "The electricity price in Coco's town is $0.10 per kW. Coco's new oven has a consumption rate of 2.4 kWh (kilowatt-hours). How much will Coco pay for using his oven only if he used it for a total of 25 hours last month?",
+    "answer": "6",
+    "code": "def simple_math_problem() -> int:\n    '''\n    The electricity price in Coco's town is $0.10 per kW.\n    Coco's new oven has a consumption rate of 2.4 kWh (kilowatt-hours).\n    How much will Coco pay for using his oven only if he used it for a total of 25 hours last month?\n    '''\n    price_per_kWh = 0.10\n    electricity_per = 2.40\n    electricity_hours = 25\n    electricity_used = electricity_per * electricity_hours #consumption\n    total_cost = electricity_used * price_per_kWh\n    result = total_cost\n    return result",
+    "original_code": "def simple_math_problem() -> int:\n    \"\"\"The electricity price in Coco's town is $0.10 per kW. Coco's new oven has a consumption rate of 2.4 kWh (kilowatt-hours). How much will Coco pay for using his oven only if he used it for a total of 25 hours last month?\"\"\"\n    price_per_kw = 0.1\n    oven_consumption_rate = 2.4\n    total_cost = price_per_kw * oven_consumption_rate * 25\n    return total_cost\n"
+  },
+  {
+    "metadata": {
+      "sample_id": "gsm8k_train_2433",
+      "pool_index": 162,
+      "lowtemp_correct": true,
+      "selected_seed": 11,
+      "accepted_candidates": 1,
+      "raw_correct_candidates": 2,
+      "sequence_length": 210,
+      "extracted_changed": false
+    },
+    "question": "Josh has 100 feet of rope.  He cuts the rope in half, and then takes one of the halves and cuts it in half again.  He grabs one of the remaining pieces and cuts it into fifths.  He's stuck holding one length of the rope he's most recently cut.  How long is it?",
+    "answer": "5",
+    "code": "def simple_math_problem() -> int:\n    '''\n    Josh has 100 feet of rope.\n     He cuts the rope in half, and then takes one of the halves and cuts it in half again.\n     He grabs one of the remaining pieces and cuts it into fifths.\n    \n     He's stuck holding one length of the rope he's most recently cut.\n     How long is it?\n    '''\n    rope_length = 100\n    half_length = rope_length / 2\n    remaining_length = half_length / 2\n    fifths_length = remaining_length / 5\n    \n    result = fifths_length\n    return result",
+    "original_code": "def simple_math_problem() -> int:\n    \"\"\"Josh has 100 feet of rope.  He cuts the rope in half, and then takes one of the halves and cuts it in half again.  He grabs one of the remaining pieces and cuts it into fifths.  He's stuck holding one length of the rope he's most recently cut.  How long is it?\"\"\"\n    rope_length = 100\n    rope_length /= 2\n    rope_length /= 2\n    rope_length /= 5\n    return rope_length\n"
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "source_port": 18707,
+  "source_status": "connected_and_downloaded",
+  "unavailable_full_runs": [],
+  "partially_available_runs": [],
+  "already_local_full_nonweight": "experiment_results/grpo-fixed32-20261024/",
+  "next_action": "All listed nonweight evidence retrieved; checkpoints/adapter and optimizer states intentionally excluded.",
+  "resolved_on": "2026-10-26",
+  "previously_missing_full_runs": [
+    "grpo-pilot-20261024-01",
+    "grpo-500-20261024-01",
+    "grpo-controlled-20261024-01",
+    "grpo-fp32-resample-20261024-01",
+    "grpo-partial-mask-20261024-01",
+    "grpo-trajectory-20261024-01",
+    "grpo-partial75-20261024-01",
+    "grpo-partial75-objective-20261024-01",
+    "grpo-partial75-overfit-20261024-01"
+  ],
+  "previously_partial_runs": [
+    "grpo-fp32-online-20261024-01",
+    "grpo-partial75-positive-20261024-01",
+    "grpo-partial75-positive-eval-20261024-02",
+    "grpo-positive32-20261024-01",
+    "grpo-positive-coverage-20261024-01"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "scope": "Full-data SFT checkpoints still available on inspected current server and A800; excludes 16-example diagnostics. Local checkpoint directory additionally retains an early full-parameter best.ckpt, not a LoRA candidate.",
+  "protocol": "Blackwell, 632 validation questions, EMA, ancestral32, temperature1, seed1, batch32",
+  "base_correct": 55,
+  "comparison": "Exact response equality; AST from original evaluator extractor with leading docstrings removed recursively, ast.dump excludes attributes. AST differences are not proof of mathematical or semantic improvement.",
+  "rows": [
+    {
+      "checkpoint": "Base-aligned uniform LoRA step200 EMA",
+      "validation_correct": 53,
+      "total": 632,
+      "changed_outputs": 99,
+      "changed_ast_excluding_docstrings": 80,
+      "both_parseable": 610,
+      "remote_path": "/root/autodl-tmp/s-flm/checkpoints/lora-control-step200.ckpt"
+    },
+    {
+      "checkpoint": "Semantic weighted LoRA step200 EMA",
+      "validation_correct": 54,
+      "total": 632,
+      "changed_outputs": 107,
+      "changed_ast_excluding_docstrings": 87,
+      "both_parseable": 612,
+      "remote_path": "/root/autodl-tmp/s-flm/outputs/semantic-weighted-20261023-01/train/checkpoints/step-000200.ckpt"
+    },
+    {
+      "checkpoint": "Semantic weighted LoRA step711 EMA",
+      "validation_correct": 53,
+      "total": 632,
+      "changed_outputs": 171,
+      "changed_ast_excluding_docstrings": 129,
+      "both_parseable": 609,
+      "remote_path": "/root/autodl-tmp/s-flm/outputs/semantic-weighted-20261023-01/train/checkpoints/step-000711.ckpt"
+    }
+  ],
+  "limitations": [
+    "A one-question advantage is insufficient to establish superiority.",
+    "Historical lr1e-5 result-format step200 EMA also scored55/632 on A800, with134 output changes and98 docstring-excluded AST changes, but its checkpoint was not found on either inspected server or local checkpoint directory."
+  ],
+  "historical_temperature1_provisional_candidate": "Semantic weighted LoRA step200 EMA",
+  "latest_low_temperature_comparison": "reports/lowtemp-sft-comparison-20261023-01/comparison.json",
+  "latest_behavior_and_accuracy_candidate": "Semantic weighted LoRA step711 EMA; tied highest SFT accuracy with uniform200 at177/632, below Base179/632, single seed."
+}

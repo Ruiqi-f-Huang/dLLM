@@ -1,0 +1,18 @@
+test_boundary_crossing_bpe_excluded (test_lift.LiftTests.test_boundary_crossing_bpe_excluded) ... ok
+test_dataset_regions_and_cache_do_not_change_original_masks (test_lift.LiftTests.test_dataset_regions_and_cache_do_not_change_original_masks) ... Saving the dataset (0/1 shards):   0%|          | 0/1 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1/1 [00:00<00:00, 322.96 examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1/1 [00:00<00:00, 309.57 examples/s]
+Saving the dataset (0/1 shards):   0%|          | 0/1 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1/1 [00:00<00:00, 452.66 examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1/1 [00:00<00:00, 429.88 examples/s]
+ok
+test_directions_and_per_example_policy (test_lift.LiftTests.test_directions_and_per_example_policy) ... ok
+test_empty_zero_and_heterogeneous_k (test_lift.LiftTests.test_empty_zero_and_heterogeneous_k) ... ok
+test_invalid_python_falls_back (test_lift.LiftTests.test_invalid_python_falls_back) ... ok
+test_missing_offsets_fall_back (test_lift.LiftTests.test_missing_offsets_fall_back) ... ok
+test_outside_regions_and_probability_endpoints (test_lift.LiftTests.test_outside_regions_and_probability_endpoints) ... ok
+test_real_mdlm_lora_update_freezes_base (test_lift.LiftTests.test_real_mdlm_lora_update_freezes_base) ... ok
+test_two_forwards_restoration_rng_and_gradient (test_lift.LiftTests.test_two_forwards_restoration_rng_and_gradient) ... ok
+test_unicode_docstrings_and_ordinary_strings (test_lift.LiftTests.test_unicode_docstrings_and_ordinary_strings) ... ok
+test_validation_and_baseline_keep_original_path (test_lift.LiftTests.test_validation_and_baseline_keep_original_path) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 6.527s
+
+OK

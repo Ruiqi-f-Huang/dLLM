@@ -1,0 +1,17 @@
+# Matched questions and update budget; only target-program source differs.
+defaults:
+  - sft-a800-lora-control
+  - _self_
+trainer:
+  max_steps: 200
+  max_epochs: -1
+callbacks:
+  milestone_checkpoint:
+    milestones: [200]
+wandb:
+  group: mdlm-selftrain-pilot
+  name: mdlm-selftrain-pilot
+  tags: [mdlm, gsm8k-pot, sft, lora, self-training, matched-pilot]
+
+loader:
+  num_workers: 0

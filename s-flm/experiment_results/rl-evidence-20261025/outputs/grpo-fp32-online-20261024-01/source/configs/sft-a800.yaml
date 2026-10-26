@@ -1,0 +1,14 @@
+# A800 profile: original BF16 computation, same SFT objective and global batch.
+defaults:
+  - sft
+  - _self_
+
+backbone_compute_dtype: bfloat16
+loader:
+  global_batch_size: 8
+  batch_size: 8
+  eval_global_batch_size: 8
+  eval_batch_size: 8
+  num_workers: 4
+trainer:
+  precision: bf16-mixed

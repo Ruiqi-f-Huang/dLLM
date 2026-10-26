@@ -1,0 +1,35 @@
+{
+  "method": "Project sandbox_gsm8k.evaluate_samples and _extract_code, paired by fixed GSM8K Test order.",
+  "sampling": {
+    "split": "GSM8K Test",
+    "num_samples": 1319,
+    "seed": 1,
+    "steps": 32,
+    "weights": "EMA"
+  },
+  "metrics": {
+    "base": {
+      "correct": 76,
+      "total": 1319,
+      "accuracy": 0.0576194086429113,
+      "python_parseable": 1281,
+      "unpaired_triple_quotes": 6,
+      "median_response_chars": 523
+    },
+    "lora_step200": {
+      "correct": 76,
+      "total": 1319,
+      "accuracy": 0.0576194086429113,
+      "python_parseable": 1284,
+      "unpaired_triple_quotes": 6,
+      "median_response_chars": 523
+    }
+  },
+  "paired": {
+    "same_response": 1079,
+    "both_correct": 75,
+    "base_only_correct": 1,
+    "lora_only_correct": 1,
+    "both_wrong": 1242
+  }
+}

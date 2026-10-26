@@ -1,0 +1,21 @@
+# SFT run with separate PAD corruption and supervised-token masks.
+defaults:
+  - sft-a800
+  - _self_
+
+noise:
+  eps: 1e-3
+optim:
+  lr: 3e-6
+data:
+  train_on_pad: false
+callbacks:
+  checkpoint_every_n_steps:
+    # One epoch is 711 optimizer steps; avoid retaining large intermediate
+    # optimizer checkpoints on the rented instance.
+    every_n_train_steps: 711
+wandb:
+  name: mdlm-sft-maskfix-${now:%Y%m%d-%H%M%S}
+hydra:
+  run:
+    dir: ${hydra:runtime.cwd}/outputs/sft/${now:%Y%m%d}-maskfix-01

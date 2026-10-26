@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/root/s-flm/scripts/evaluate_final_gsm8k_test.py", line 83, in main
+    if details.get('infrastructure_failure'):raise RuntimeError('Evaluator infrastructure failed after3 retries; preserve output and report.')
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Evaluator infrastructure failed after3 retries; preserve output and report.

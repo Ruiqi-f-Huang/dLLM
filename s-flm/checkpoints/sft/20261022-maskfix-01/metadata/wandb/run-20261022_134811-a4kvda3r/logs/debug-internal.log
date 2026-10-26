@@ -1,0 +1,15 @@
+{"time":"2026-10-22T13:48:11.220736437+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/root/autodl-tmp/s-flm/outputs/sft/20261022-maskfix-01/wandb/run-20261022_134811-a4kvda3r/logs/debug-core.log"}
+{"time":"2026-10-22T13:48:11.908743747+08:00","level":"INFO","msg":"created new stream","id":"a4kvda3r"}
+{"time":"2026-10-22T13:48:11.908804896+08:00","level":"INFO","msg":"stream: started","id":"a4kvda3r"}
+{"time":"2026-10-22T13:48:11.908840934+08:00","level":"INFO","msg":"handler: started","stream_id":"a4kvda3r"}
+{"time":"2026-10-22T13:48:11.908846978+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"a4kvda3r"}
+{"time":"2026-10-22T13:48:11.908874282+08:00","level":"INFO","msg":"sender: started","stream_id":"a4kvda3r"}
+{"time":"2026-10-22T13:48:12.81333604+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2026-10-22T13:49:42.159585776+08:00","level":"INFO","msg":"stream: closing","id":"a4kvda3r"}
+{"time":"2026-10-22T13:49:42.159634983+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2026-10-22T13:49:42.159745901+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2026-10-22T13:49:43.562013097+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-10-22T13:49:44.387630097+08:00","level":"INFO","msg":"handler: closed","stream_id":"a4kvda3r"}
+{"time":"2026-10-22T13:49:44.387706901+08:00","level":"INFO","msg":"sender: closed","stream_id":"a4kvda3r"}
+{"time":"2026-10-22T13:49:44.387694117+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"a4kvda3r"}
+{"time":"2026-10-22T13:49:44.387788826+08:00","level":"INFO","msg":"stream: closed","id":"a4kvda3r"}

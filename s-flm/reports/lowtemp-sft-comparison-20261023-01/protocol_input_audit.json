@@ -1,0 +1,36 @@
+{
+  "common_protocol_identical": true,
+  "question_only_prefix_verified": true,
+  "rows": 632,
+  "validation_sha256": "560b9ddf9c42c9deb4a37f3c1296f39fed8adb45574c9906c6aafd08237267b7",
+  "common_protocol": {
+    "sampler": {
+      "predictor": "ancestral",
+      "steps": 32,
+      "steps_policy": "full",
+      "noise_removal": "ancestral",
+      "use_float64": true,
+      "p_nucleus": 1.0,
+      "temperature": 0.1,
+      "num_sample_batches": 2,
+      "num_sample_log": 2
+    },
+    "seed": 1,
+    "length": 512,
+    "batch": 32,
+    "disable_ema": false,
+    "precision": "bf16",
+    "backbone_compute_dtype": "auto",
+    "allow_tf32": true,
+    "validation_file": "/root/s-flm/data/gsm8k_pot/sft_validation.jsonl",
+    "tokenizer_revision": "1d461723eec654e65efdc40cf49301c89c0c92f4",
+    "separator": "\\n",
+    "noise": {
+      "type": "log-linear",
+      "eps": 0.001,
+      "alpha_min": null,
+      "alpha_max": null,
+      "adaptive": false
+    }
+  }
+}

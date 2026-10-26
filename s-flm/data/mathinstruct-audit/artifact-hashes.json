@@ -1,0 +1,10 @@
+{
+  "sources.json": "061abde478d8280c94e720b79be8b7452b5f7c6fbf70be6cb49b1d346e5963ea",
+  "static-audit.json": "0f8c72019e4d13a5c324cd2860f311ddab7f9527b3af87c0a674d3a1869c6912",
+  "execution-summary.json": "de1d9312382459f68c498a6948fc9707a338d5c00387a7bb19fcd90276737fcc",
+  "selection-feasibility.json": "fd82a6469efcd8648fabf6ebec437b87870e9511ab4b17cff810abf02ef63af7",
+  "verified-audit-candidates.jsonl": "f553b18188270f3779939c14f2cd62dbb80f3d3131b0c0e620f8bc050eb7e1de",
+  "audit_sft_static.py": "81190233dd9bd99f9faaa96db5b8af3a6eaecc5a75a9ef5642f2206b2c2c3517",
+  "audit_sft_execution.py": "0a15d507d230299645f867194671f7346ea0d1aa230262deb7b450ebc159b41f",
+  "audit_sft_selection.py": "a41018b0622b8f9ec16afe8200c0c3c87f7fc1991f2107176dc68614bc7bc9f6"
+}

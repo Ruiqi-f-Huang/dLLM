@@ -1,0 +1,20 @@
+{
+  "checkpoint": "checkpoints/tinygsm/mdlm.ckpt",
+  "data": "/root/s-flm/data/gsm8k_pot_result/sft_train.jsonl",
+  "output": "/root/autodl-tmp/s-flm/outputs/grpo-pilot-20261024-01/train",
+  "audit_only": false,
+  "limit": 256,
+  "updates": 100,
+  "group_size": 8,
+  "microbatch": 8,
+  "iterations": 2,
+  "nfe": 32,
+  "temperature": 0.3,
+  "prompt_mask": 0.0,
+  "lr": 3e-06,
+  "beta": 0.04,
+  "epsilon": 0.2,
+  "timeout": 2,
+  "seed": 42,
+  "save_every": 50
+}

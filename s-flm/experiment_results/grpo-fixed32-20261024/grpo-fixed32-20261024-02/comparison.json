@@ -1,0 +1,2253 @@
+{
+  "base": {
+    "0.3": {
+      "questions": 32,
+      "draws": 512,
+      "repeats": 16,
+      "success_at_1": 0.314453125,
+      "mean_reward": 0.314453125,
+      "empirical_pass_at_k": 0.9375,
+      "per_question": [
+        {
+          "sample_id": "gsm8k_train_4824",
+          "correct": 3.0,
+          "draws": 16,
+          "success_probability": 0.1875
+        },
+        {
+          "sample_id": "gsm8k_train_1869",
+          "correct": 6.0,
+          "draws": 16,
+          "success_probability": 0.375
+        },
+        {
+          "sample_id": "gsm8k_train_7310",
+          "correct": 13.0,
+          "draws": 16,
+          "success_probability": 0.8125
+        },
+        {
+          "sample_id": "gsm8k_train_2237",
+          "correct": 8.0,
+          "draws": 16,
+          "success_probability": 0.5
+        },
+        {
+          "sample_id": "gsm8k_train_6478",
+          "correct": 4.0,
+          "draws": 16,
+          "success_probability": 0.25
+        },
+        {
+          "sample_id": "gsm8k_train_5778",
+          "correct": 2.0,
+          "draws": 16,
+          "success_probability": 0.125
+        },
+        {
+          "sample_id": "gsm8k_train_4699",
+          "correct": 12.0,
+          "draws": 16,
+          "success_probability": 0.75
+        },
+        {
+          "sample_id": "gsm8k_train_0112",
+          "correct": 2.0,
+          "draws": 16,
+          "success_probability": 0.125
+        },
+        {
+          "sample_id": "gsm8k_train_2214",
+          "correct": 9.0,
+          "draws": 16,
+          "success_probability": 0.5625
+        },
+        {
+          "sample_id": "gsm8k_train_6976",
+          "correct": 5.0,
+          "draws": 16,
+          "success_probability": 0.3125
+        },
+        {
+          "sample_id": "gsm8k_train_7385",
+          "correct": 4.0,
+          "draws": 16,
+          "success_probability": 0.25
+        },
+        {
+          "sample_id": "gsm8k_train_0924",
+          "correct": 1.0,
+          "draws": 16,
+          "success_probability": 0.0625
+        },
+        {
+          "sample_id": "gsm8k_train_5854",
+          "correct": 6.0,
+          "draws": 16,
+          "success_probability": 0.375
+        },
+        {
+          "sample_id": "gsm8k_train_4402",
+          "correct": 2.0,
+          "draws": 16,
+          "success_probability": 0.125
+        },
+        {
+          "sample_id": "gsm8k_train_1172",
+          "correct": 0.0,
+          "draws": 16,
+          "success_probability": 0.0
+        },
+        {
+          "sample_id": "gsm8k_train_0186",
+          "correct": 5.0,
+          "draws": 16,
+          "success_probability": 0.3125
+        },
+        {
+          "sample_id": "gsm8k_train_3525",
+          "correct": 3.0,
+          "draws": 16,
+          "success_probability": 0.1875
+        },
+        {
+          "sample_id": "gsm8k_train_6583",
+          "correct": 16.0,
+          "draws": 16,
+          "success_probability": 1.0
+        },
+        {
+          "sample_id": "gsm8k_train_5468",
+          "correct": 4.0,
+          "draws": 16,
+          "success_probability": 0.25
+        },
+        {
+          "sample_id": "gsm8k_train_3329",
+          "correct": 5.0,
+          "draws": 16,
+          "success_probability": 0.3125
+        },
+        {
+          "sample_id": "gsm8k_train_4786",
+          "correct": 4.0,
+          "draws": 16,
+          "success_probability": 0.25
+        },
+        {
+          "sample_id": "gsm8k_train_7271",
+          "correct": 4.0,
+          "draws": 16,
+          "success_probability": 0.25
+        },
+        {
+          "sample_id": "gsm8k_train_3931",
+          "correct": 0.0,
+          "draws": 16,
+          "success_probability": 0.0
+        },
+        {
+          "sample_id": "gsm8k_train_4566",
+          "correct": 3.0,
+          "draws": 16,
+          "success_probability": 0.1875
+        },
+        {
+          "sample_id": "gsm8k_train_0280",
+          "correct": 4.0,
+          "draws": 16,
+          "success_probability": 0.25
+        },
+        {
+          "sample_id": "gsm8k_train_0499",
+          "correct": 6.0,
+          "draws": 16,
+          "success_probability": 0.375
+        },
+        {
+          "sample_id": "gsm8k_train_1370",
+          "correct": 4.0,
+          "draws": 16,
+          "success_probability": 0.25
+        },
+        {
+          "sample_id": "gsm8k_train_4248",
+          "correct": 6.0,
+          "draws": 16,
+          "success_probability": 0.375
+        },
+        {
+          "sample_id": "gsm8k_train_0358",
+          "correct": 1.0,
+          "draws": 16,
+          "success_probability": 0.0625
+        },
+        {
+          "sample_id": "gsm8k_train_4888",
+          "correct": 9.0,
+          "draws": 16,
+          "success_probability": 0.5625
+        },
+        {
+          "sample_id": "gsm8k_train_5164",
+          "correct": 4.0,
+          "draws": 16,
+          "success_probability": 0.25
+        },
+        {
+          "sample_id": "gsm8k_train_5190",
+          "correct": 6.0,
+          "draws": 16,
+          "success_probability": 0.375
+        }
+      ],
+      "mean_completion_length": 142.439453125,
+      "eos_fraction": 0.966796875
+    },
+    "0.1": {
+      "questions": 32,
+      "draws": 512,
+      "repeats": 16,
+      "success_at_1": 0.357421875,
+      "mean_reward": 0.357421875,
+      "empirical_pass_at_k": 1.0,
+      "per_question": [
+        {
+          "sample_id": "gsm8k_train_4824",
+          "correct": 6.0,
+          "draws": 16,
+          "success_probability": 0.375
+        },
+        {
+          "sample_id": "gsm8k_train_1869",
+          "correct": 5.0,
+          "draws": 16,
+          "success_probability": 0.3125
+        },
+        {
+          "sample_id": "gsm8k_train_7310",
+          "correct": 14.0,
+          "draws": 16,
+          "success_probability": 0.875
+        },
+        {
+          "sample_id": "gsm8k_train_2237",
+          "correct": 7.0,
+          "draws": 16,
+          "success_probability": 0.4375
+        },
+        {
+          "sample_id": "gsm8k_train_6478",
+          "correct": 2.0,
+          "draws": 16,
+          "success_probability": 0.125
+        },
+        {
+          "sample_id": "gsm8k_train_5778",
+          "correct": 5.0,
+          "draws": 16,
+          "success_probability": 0.3125
+        },
+        {
+          "sample_id": "gsm8k_train_4699",
+          "correct": 12.0,
+          "draws": 16,
+          "success_probability": 0.75
+        },
+        {
+          "sample_id": "gsm8k_train_0112",
+          "correct": 1.0,
+          "draws": 16,
+          "success_probability": 0.0625
+        },
+        {
+          "sample_id": "gsm8k_train_2214",
+          "correct": 10.0,
+          "draws": 16,
+          "success_probability": 0.625
+        },
+        {
+          "sample_id": "gsm8k_train_6976",
+          "correct": 8.0,
+          "draws": 16,
+          "success_probability": 0.5
+        },
+        {
+          "sample_id": "gsm8k_train_7385",
+          "correct": 2.0,
+          "draws": 16,
+          "success_probability": 0.125
+        },
+        {
+          "sample_id": "gsm8k_train_0924",
+          "correct": 1.0,
+          "draws": 16,
+          "success_probability": 0.0625
+        },
+        {
+          "sample_id": "gsm8k_train_5854",
+          "correct": 2.0,
+          "draws": 16,
+          "success_probability": 0.125
+        },
+        {
+          "sample_id": "gsm8k_train_4402",
+          "correct": 2.0,
+          "draws": 16,
+          "success_probability": 0.125
+        },
+        {
+          "sample_id": "gsm8k_train_1172",
+          "correct": 2.0,
+          "draws": 16,
+          "success_probability": 0.125
+        },
+        {
+          "sample_id": "gsm8k_train_0186",
+          "correct": 7.0,
+          "draws": 16,
+          "success_probability": 0.4375
+        },
+        {
+          "sample_id": "gsm8k_train_3525",
+          "correct": 2.0,
+          "draws": 16,
+          "success_probability": 0.125
+        },
+        {
+          "sample_id": "gsm8k_train_6583",
+          "correct": 16.0,
+          "draws": 16,
+          "success_probability": 1.0
+        },
+        {
+          "sample_id": "gsm8k_train_5468",
+          "correct": 2.0,
+          "draws": 16,
+          "success_probability": 0.125
+        },
+        {
+          "sample_id": "gsm8k_train_3329",
+          "correct": 3.0,
+          "draws": 16,
+          "success_probability": 0.1875
+        },
+        {
+          "sample_id": "gsm8k_train_4786",
+          "correct": 4.0,
+          "draws": 16,
+          "success_probability": 0.25
+        },
+        {
+          "sample_id": "gsm8k_train_7271",
+          "correct": 6.0,
+          "draws": 16,
+          "success_probability": 0.375
+        },
+        {
+          "sample_id": "gsm8k_train_3931",
+          "correct": 1.0,
+          "draws": 16,
+          "success_probability": 0.0625
+        },
+        {
+          "sample_id": "gsm8k_train_4566",
+          "correct": 6.0,
+          "draws": 16,
+          "success_probability": 0.375
+        },
+        {
+          "sample_id": "gsm8k_train_0280",
+          "correct": 8.0,
+          "draws": 16,
+          "success_probability": 0.5
+        },
+        {
+          "sample_id": "gsm8k_train_0499",
+          "correct": 9.0,
+          "draws": 16,
+          "success_probability": 0.5625
+        },
+        {
+          "sample_id": "gsm8k_train_1370",
+          "correct": 6.0,
+          "draws": 16,
+          "success_probability": 0.375
+        },
+        {
+          "sample_id": "gsm8k_train_4248",
+          "correct": 3.0,
+          "draws": 16,
+          "success_probability": 0.1875
+        },
+        {
+          "sample_id": "gsm8k_train_0358",
+          "correct": 3.0,
+          "draws": 16,
+          "success_probability": 0.1875
+        },
+        {
+          "sample_id": "gsm8k_train_4888",
+          "correct": 12.0,
+          "draws": 16,
+          "success_probability": 0.75
+        },
+        {
+          "sample_id": "gsm8k_train_5164",
+          "correct": 10.0,
+          "draws": 16,
+          "success_probability": 0.625
+        },
+        {
+          "sample_id": "gsm8k_train_5190",
+          "correct": 6.0,
+          "draws": 16,
+          "success_probability": 0.375
+        }
+      ],
+      "mean_completion_length": 134.50390625,
+      "eos_fraction": 0.986328125
+    }
+  },
+  "stages": [
+    {
+      "step": 100,
+      "sampling": {
+        "0.3": {
+          "questions": 32,
+          "draws": 512,
+          "repeats": 16,
+          "success_at_1": 0.314453125,
+          "mean_reward": 0.314453125,
+          "empirical_pass_at_k": 0.9375,
+          "per_question": [
+            {
+              "sample_id": "gsm8k_train_4824",
+              "correct": 3.0,
+              "draws": 16,
+              "success_probability": 0.1875
+            },
+            {
+              "sample_id": "gsm8k_train_1869",
+              "correct": 6.0,
+              "draws": 16,
+              "success_probability": 0.375
+            },
+            {
+              "sample_id": "gsm8k_train_7310",
+              "correct": 13.0,
+              "draws": 16,
+              "success_probability": 0.8125
+            },
+            {
+              "sample_id": "gsm8k_train_2237",
+              "correct": 8.0,
+              "draws": 16,
+              "success_probability": 0.5
+            },
+            {
+              "sample_id": "gsm8k_train_6478",
+              "correct": 4.0,
+              "draws": 16,
+              "success_probability": 0.25
+            },
+            {
+              "sample_id": "gsm8k_train_5778",
+              "correct": 2.0,
+              "draws": 16,
+              "success_probability": 0.125
+            },
+            {
+              "sample_id": "gsm8k_train_4699",
+              "correct": 12.0,
+              "draws": 16,
+              "success_probability": 0.75
+            },
+            {
+              "sample_id": "gsm8k_train_0112",
+              "correct": 2.0,
+              "draws": 16,
+              "success_probability": 0.125
+            },
+            {
+              "sample_id": "gsm8k_train_2214",
+              "correct": 9.0,
+              "draws": 16,
+              "success_probability": 0.5625
+            },
+            {
+              "sample_id": "gsm8k_train_6976",
+              "correct": 6.0,
+              "draws": 16,
+              "success_probability": 0.375
+            },
+            {
+              "sample_id": "gsm8k_train_7385",
+              "correct": 3.0,
+              "draws": 16,
+              "success_probability": 0.1875
+            },
+            {
+              "sample_id": "gsm8k_train_0924",
+              "correct": 1.0,
+              "draws": 16,
+              "success_probability": 0.0625
+            },
+            {
+              "sample_id": "gsm8k_train_5854",
+              "correct": 6.0,
+              "draws": 16,
+              "success_probability": 0.375
+            },
+            {
+              "sample_id": "gsm8k_train_4402",
+              "correct": 2.0,
+              "draws": 16,
+              "success_probability": 0.125
+            },
+            {
+              "sample_id": "gsm8k_train_1172",
+              "correct": 0.0,
+              "draws": 16,
+              "success_probability": 0.0
+            },
+            {
+              "sample_id": "gsm8k_train_0186",
+              "correct": 5.0,
+              "draws": 16,
+              "success_probability": 0.3125
+            },
+            {
+              "sample_id": "gsm8k_train_3525",
+              "correct": 3.0,
+              "draws": 16,
+              "success_probability": 0.1875
+            },
+            {
+              "sample_id": "gsm8k_train_6583",
+              "correct": 16.0,
+              "draws": 16,
+              "success_probability": 1.0
+            },
+            {
+              "sample_id": "gsm8k_train_5468",
+              "correct": 4.0,
+              "draws": 16,
+              "success_probability": 0.25
+            },
+            {
+              "sample_id": "gsm8k_train_3329",
+              "correct": 5.0,
+              "draws": 16,
+              "success_probability": 0.3125
+            },
+            {
+              "sample_id": "gsm8k_train_4786",
+              "correct": 4.0,
+              "draws": 16,
+              "success_probability": 0.25
+            },
+            {
+              "sample_id": "gsm8k_train_7271",
+              "correct": 4.0,
+              "draws": 16,
+              "success_probability": 0.25
+            },
+            {
+              "sample_id": "gsm8k_train_3931",
+              "correct": 0.0,
+              "draws": 16,
+              "success_probability": 0.0
+            },
+            {
+              "sample_id": "gsm8k_train_4566",
+              "correct": 4.0,
+              "draws": 16,
+              "success_probability": 0.25
+            },
+            {
+              "sample_id": "gsm8k_train_0280",
+              "correct": 4.0,
+              "draws": 16,
+              "success_probability": 0.25
+            },
+            {
+              "sample_id": "gsm8k_train_0499",
+              "correct": 6.0,
+              "draws": 16,
+              "success_probability": 0.375
+            },
+            {
+              "sample_id": "gsm8k_train_1370",
+              "correct": 4.0,
+              "draws": 16,
+              "success_probability": 0.25
+            },
+            {
+              "sample_id": "gsm8k_train_4248",
+              "correct": 6.0,
+              "draws": 16,
+              "success_probability": 0.375
+            },
+            {
+              "sample_id": "gsm8k_train_0358",
+              "correct": 1.0,
+              "draws": 16,
+              "success_probability": 0.0625
+            },
+            {
+              "sample_id": "gsm8k_train_4888",
+              "correct": 9.0,
+              "draws": 16,
+              "success_probability": 0.5625
+            },
+            {
+              "sample_id": "gsm8k_train_5164",
+              "correct": 4.0,
+              "draws": 16,
+              "success_probability": 0.25
+            },
+            {
+              "sample_id": "gsm8k_train_5190",
+              "correct": 5.0,
+              "draws": 16,
+              "success_probability": 0.3125
+            }
+          ],
+          "mean_completion_length": 142.603515625,
+          "eos_fraction": 0.966796875
+        },
+        "0.1": {
+          "questions": 32,
+          "draws": 512,
+          "repeats": 16,
+          "success_at_1": 0.361328125,
+          "mean_reward": 0.361328125,
+          "empirical_pass_at_k": 1.0,
+          "per_question": [
+            {
+              "sample_id": "gsm8k_train_4824",
+              "correct": 6.0,
+              "draws": 16,
+              "success_probability": 0.375
+            },
+            {
+              "sample_id": "gsm8k_train_1869",
+              "correct": 5.0,
+              "draws": 16,
+              "success_probability": 0.3125
+            },
+            {
+              "sample_id": "gsm8k_train_7310",
+              "correct": 14.0,
+              "draws": 16,
+              "success_probability": 0.875
+            },
+            {
+              "sample_id": "gsm8k_train_2237",
+              "correct": 7.0,
+              "draws": 16,
+              "success_probability": 0.4375
+            },
+            {
+              "sample_id": "gsm8k_train_6478",
+              "correct": 2.0,
+              "draws": 16,
+              "success_probability": 0.125
+            },
+            {
+              "sample_id": "gsm8k_train_5778",
+              "correct": 5.0,
+              "draws": 16,
+              "success_probability": 0.3125
+            },
+            {
+              "sample_id": "gsm8k_train_4699",
+              "correct": 12.0,
+              "draws": 16,
+              "success_probability": 0.75
+            },
+            {
+              "sample_id": "gsm8k_train_0112",
+              "correct": 1.0,
+              "draws": 16,
+              "success_probability": 0.0625
+            },
+            {
+              "sample_id": "gsm8k_train_2214",
+              "correct": 11.0,
+              "draws": 16,
+              "success_probability": 0.6875
+            },
+            {
+              "sample_id": "gsm8k_train_6976",
+              "correct": 8.0,
+              "draws": 16,
+              "success_probability": 0.5
+            },
+            {
+              "sample_id": "gsm8k_train_7385",
+              "correct": 2.0,
+              "draws": 16,
+              "success_probability": 0.125
+            },
+            {
+              "sample_id": "gsm8k_train_0924",
+              "correct": 1.0,
+              "draws": 16,
+              "success_probability": 0.0625
+            },
+            {
+              "sample_id": "gsm8k_train_5854",
+              "correct": 2.0,
+              "draws": 16,
+              "success_probability": 0.125
+            },
+            {
+              "sample_id": "gsm8k_train_4402",
+              "correct": 2.0,
+              "draws": 16,
+              "success_probability": 0.125
+            },
+            {
+              "sample_id": "gsm8k_train_1172",
+              "correct": 2.0,
+              "draws": 16,
+              "success_probability": 0.125
+            },
+            {
+              "sample_id": "gsm8k_train_0186",
+              "correct": 7.0,
+              "draws": 16,
+              "success_probability": 0.4375
+            },
+            {
+              "sample_id": "gsm8k_train_3525",
+              "correct": 2.0,
+              "draws": 16,
+              "success_probability": 0.125
+            },
+            {
+              "sample_id": "gsm8k_train_6583",
+              "correct": 16.0,
+              "draws": 16,
+              "success_probability": 1.0
+            },
+            {
+              "sample_id": "gsm8k_train_5468",
+              "correct": 2.0,
+              "draws": 16,
+              "success_probability": 0.125
+            },
+            {
+              "sample_id": "gsm8k_train_3329",
+              "correct": 3.0,
+              "draws": 16,
+              "success_probability": 0.1875
+            },
+            {
+              "sample_id": "gsm8k_train_4786",
+              "correct": 4.0,
+              "draws": 16,
+              "success_probability": 0.25
+            },
+            {
+              "sample_id": "gsm8k_train_7271",
+              "correct": 7.0,
+              "draws": 16,
+              "success_probability": 0.4375
+            },
+            {
+              "sample_id": "gsm8k_train_3931",
+              "correct": 1.0,
+              "draws": 16,
+              "success_probability": 0.0625
+            },
+            {
+              "sample_id": "gsm8k_train_4566",
+              "correct": 5.0,
+              "draws": 16,
+              "success_probability": 0.3125
+            },
+            {
+              "sample_id": "gsm8k_train_0280",
+              "correct": 8.0,
+              "draws": 16,
+              "success_probability": 0.5
+            },
+            {
+              "sample_id": "gsm8k_train_0499",
+              "correct": 9.0,
+              "draws": 16,
+              "success_probability": 0.5625
+            },
+            {
+              "sample_id": "gsm8k_train_1370",
+              "correct": 6.0,
+              "draws": 16,
+              "success_probability": 0.375
+            },
+            {
+              "sample_id": "gsm8k_train_4248",
+              "correct": 4.0,
+              "draws": 16,
+              "success_probability": 0.25
+            },
+            {
+              "sample_id": "gsm8k_train_0358",
+              "correct": 3.0,
+              "draws": 16,
+              "success_probability": 0.1875
+            },
+            {
+              "sample_id": "gsm8k_train_4888",
+              "correct": 12.0,
+              "draws": 16,
+              "success_probability": 0.75
+            },
+            {
+              "sample_id": "gsm8k_train_5164",
+              "correct": 10.0,
+              "draws": 16,
+              "success_probability": 0.625
+            },
+            {
+              "sample_id": "gsm8k_train_5190",
+              "correct": 6.0,
+              "draws": 16,
+              "success_probability": 0.375
+            }
+          ],
+          "mean_completion_length": 134.62890625,
+          "eos_fraction": 0.986328125
+        }
+      },
+      "paired_sampling": {
+        "0.3": {
+          "mean_delta": 0.0,
+          "question_bootstrap_ci95": [
+            -0.0078125,
+            0.0078125
+          ],
+          "improved_questions": 2,
+          "worsened_questions": 2
+        },
+        "0.1": {
+          "mean_delta": 0.00390625,
+          "question_bootstrap_ci95": [
+            -0.00390625,
+            0.01171875
+          ],
+          "improved_questions": 3,
+          "worsened_questions": 1
+        }
+      },
+      "proxy_gap_deltas": [
+        {
+          "sample_id": "gsm8k_train_4824",
+          "mean_logp_gap_delta": 0.0013344287872314453,
+          "sum_logp_gap_delta": 0.1757659912109375
+        },
+        {
+          "sample_id": "gsm8k_train_1869",
+          "mean_logp_gap_delta": -0.0005682706832885742,
+          "sum_logp_gap_delta": -0.09375
+        },
+        {
+          "sample_id": "gsm8k_train_7310",
+          "mean_logp_gap_delta": -0.0007988810539245605,
+          "sum_logp_gap_delta": -0.08867645263671875
+        },
+        {
+          "sample_id": "gsm8k_train_2237",
+          "mean_logp_gap_delta": 0.00012624263763427734,
+          "sum_logp_gap_delta": 0.010711669921875
+        },
+        {
+          "sample_id": "gsm8k_train_6478",
+          "mean_logp_gap_delta": -5.447864532470703e-05,
+          "sum_logp_gap_delta": -0.0109710693359375
+        },
+        {
+          "sample_id": "gsm8k_train_5778",
+          "mean_logp_gap_delta": -0.0010912418365478516,
+          "sum_logp_gap_delta": -0.1270751953125
+        },
+        {
+          "sample_id": "gsm8k_train_4699",
+          "mean_logp_gap_delta": 7.295608520507812e-05,
+          "sum_logp_gap_delta": 0.00112152099609375
+        },
+        {
+          "sample_id": "gsm8k_train_0112",
+          "mean_logp_gap_delta": 0.00018388032913208008,
+          "sum_logp_gap_delta": 0.0331268310546875
+        },
+        {
+          "sample_id": "gsm8k_train_2214",
+          "mean_logp_gap_delta": 0.0004597902297973633,
+          "sum_logp_gap_delta": 0.063873291015625
+        },
+        {
+          "sample_id": "gsm8k_train_6976",
+          "mean_logp_gap_delta": -0.0003781318664550781,
+          "sum_logp_gap_delta": -0.0420989990234375
+        },
+        {
+          "sample_id": "gsm8k_train_7385",
+          "mean_logp_gap_delta": -0.0058373212814331055,
+          "sum_logp_gap_delta": -0.69647216796875
+        },
+        {
+          "sample_id": "gsm8k_train_0924",
+          "mean_logp_gap_delta": 0.00019729137420654297,
+          "sum_logp_gap_delta": 0.029205322265625
+        },
+        {
+          "sample_id": "gsm8k_train_5854",
+          "mean_logp_gap_delta": 0.0004496574401855469,
+          "sum_logp_gap_delta": 0.0597686767578125
+        },
+        {
+          "sample_id": "gsm8k_train_4402",
+          "mean_logp_gap_delta": 0.0008794069290161133,
+          "sum_logp_gap_delta": 0.1501007080078125
+        },
+        {
+          "sample_id": "gsm8k_train_1172",
+          "mean_logp_gap_delta": -0.002131223678588867,
+          "sum_logp_gap_delta": -0.35528564453125
+        },
+        {
+          "sample_id": "gsm8k_train_0186",
+          "mean_logp_gap_delta": 9.441375732421875e-05,
+          "sum_logp_gap_delta": 0.007720947265625
+        },
+        {
+          "sample_id": "gsm8k_train_3525",
+          "mean_logp_gap_delta": -0.00020420551300048828,
+          "sum_logp_gap_delta": -0.0187530517578125
+        },
+        {
+          "sample_id": "gsm8k_train_6583",
+          "mean_logp_gap_delta": -6.133317947387695e-05,
+          "sum_logp_gap_delta": 0.000244140625
+        },
+        {
+          "sample_id": "gsm8k_train_5468",
+          "mean_logp_gap_delta": -0.0006147623062133789,
+          "sum_logp_gap_delta": -0.077178955078125
+        },
+        {
+          "sample_id": "gsm8k_train_3329",
+          "mean_logp_gap_delta": 0.00018835067749023438,
+          "sum_logp_gap_delta": 0.0241241455078125
+        },
+        {
+          "sample_id": "gsm8k_train_4786",
+          "mean_logp_gap_delta": -0.00011861324310302734,
+          "sum_logp_gap_delta": -0.01361083984375
+        },
+        {
+          "sample_id": "gsm8k_train_7271",
+          "mean_logp_gap_delta": 0.005163431167602539,
+          "sum_logp_gap_delta": 0.750732421875
+        },
+        {
+          "sample_id": "gsm8k_train_3931",
+          "mean_logp_gap_delta": 0.0013575553894042969,
+          "sum_logp_gap_delta": 0.1876983642578125
+        },
+        {
+          "sample_id": "gsm8k_train_4566",
+          "mean_logp_gap_delta": 0.00120466947555542,
+          "sum_logp_gap_delta": 0.1216278076171875
+        },
+        {
+          "sample_id": "gsm8k_train_0280",
+          "mean_logp_gap_delta": 0.0006773471832275391,
+          "sum_logp_gap_delta": 0.0960235595703125
+        },
+        {
+          "sample_id": "gsm8k_train_0499",
+          "mean_logp_gap_delta": -0.015528678894042969,
+          "sum_logp_gap_delta": -1.5897979736328125
+        },
+        {
+          "sample_id": "gsm8k_train_1370",
+          "mean_logp_gap_delta": -0.0014978647232055664,
+          "sum_logp_gap_delta": -0.1894989013671875
+        },
+        {
+          "sample_id": "gsm8k_train_4248",
+          "mean_logp_gap_delta": 0.002366185188293457,
+          "sum_logp_gap_delta": 0.3151092529296875
+        },
+        {
+          "sample_id": "gsm8k_train_0358",
+          "mean_logp_gap_delta": 0.0015864372253417969,
+          "sum_logp_gap_delta": 0.28563690185546875
+        },
+        {
+          "sample_id": "gsm8k_train_4888",
+          "mean_logp_gap_delta": 0.0008505582809448242,
+          "sum_logp_gap_delta": 0.0810546875
+        },
+        {
+          "sample_id": "gsm8k_train_5164",
+          "mean_logp_gap_delta": 0.0014853477478027344,
+          "sum_logp_gap_delta": 0.132232666015625
+        },
+        {
+          "sample_id": "gsm8k_train_5190",
+          "mean_logp_gap_delta": 0.001685500144958496,
+          "sum_logp_gap_delta": 0.269134521484375
+        }
+      ],
+      "mean_proxy_gap_delta": -0.00026629865169525146,
+      "gradient_clipped_fraction": 0.0,
+      "mean_policy_loss": 0.0012135894998209552,
+      "mean_kl_penalty": 2.7071338219684548e-06
+    },
+    {
+      "step": 250,
+      "sampling": {
+        "0.3": {
+          "questions": 32,
+          "draws": 512,
+          "repeats": 16,
+          "success_at_1": 0.31640625,
+          "mean_reward": 0.31640625,
+          "empirical_pass_at_k": 0.9375,
+          "per_question": [
+            {
+              "sample_id": "gsm8k_train_4824",
+              "correct": 3.0,
+              "draws": 16,
+              "success_probability": 0.1875
+            },
+            {
+              "sample_id": "gsm8k_train_1869",
+              "correct": 6.0,
+              "draws": 16,
+              "success_probability": 0.375
+            },
+            {
+              "sample_id": "gsm8k_train_7310",
+              "correct": 13.0,
+              "draws": 16,
+              "success_probability": 0.8125
+            },
+            {
+              "sample_id": "gsm8k_train_2237",
+              "correct": 8.0,
+              "draws": 16,
+              "success_probability": 0.5
+            },
+            {
+              "sample_id": "gsm8k_train_6478",
+              "correct": 4.0,
+              "draws": 16,
+              "success_probability": 0.25
+            },
+            {
+              "sample_id": "gsm8k_train_5778",
+              "correct": 2.0,
+              "draws": 16,
+              "success_probability": 0.125
+            },
+            {
+              "sample_id": "gsm8k_train_4699",
+              "correct": 12.0,
+              "draws": 16,
+              "success_probability": 0.75
+            },
+            {
+              "sample_id": "gsm8k_train_0112",
+              "correct": 2.0,
+              "draws": 16,
+              "success_probability": 0.125
+            },
+            {
+              "sample_id": "gsm8k_train_2214",
+              "correct": 9.0,
+              "draws": 16,
+              "success_probability": 0.5625
+            },
+            {
+              "sample_id": "gsm8k_train_6976",
+              "correct": 6.0,
+              "draws": 16,
+              "success_probability": 0.375
+            },
+            {
+              "sample_id": "gsm8k_train_7385",
+              "correct": 3.0,
+              "draws": 16,
+              "success_probability": 0.1875
+            },
+            {
+              "sample_id": "gsm8k_train_0924",
+              "correct": 1.0,
+              "draws": 16,
+              "success_probability": 0.0625
+            },
+            {
+              "sample_id": "gsm8k_train_5854",
+              "correct": 6.0,
+              "draws": 16,
+              "success_probability": 0.375
+            },
+            {
+              "sample_id": "gsm8k_train_4402",
+              "correct": 2.0,
+              "draws": 16,
+              "success_probability": 0.125
+            },
+            {
+              "sample_id": "gsm8k_train_1172",
+              "correct": 0.0,
+              "draws": 16,
+              "success_probability": 0.0
+            },
+            {
+              "sample_id": "gsm8k_train_0186",
+              "correct": 5.0,
+              "draws": 16,
+              "success_probability": 0.3125
+            },
+            {
+              "sample_id": "gsm8k_train_3525",
+              "correct": 3.0,
+              "draws": 16,
+              "success_probability": 0.1875
+            },
+            {
+              "sample_id": "gsm8k_train_6583",
+              "correct": 16.0,
+              "draws": 16,
+              "success_probability": 1.0
+            },
+            {
+              "sample_id": "gsm8k_train_5468",
+              "correct": 4.0,
+              "draws": 16,
+              "success_probability": 0.25
+            },
+            {
+              "sample_id": "gsm8k_train_3329",
+              "correct": 5.0,
+              "draws": 16,
+              "success_probability": 0.3125
+            },
+            {
+              "sample_id": "gsm8k_train_4786",
+              "correct": 4.0,
+              "draws": 16,
+              "success_probability": 0.25
+            },
+            {
+              "sample_id": "gsm8k_train_7271",
+              "correct": 4.0,
+              "draws": 16,
+              "success_probability": 0.25
+            },
+            {
+              "sample_id": "gsm8k_train_3931",
+              "correct": 0.0,
+              "draws": 16,
+              "success_probability": 0.0
+            },
+            {
+              "sample_id": "gsm8k_train_4566",
+              "correct": 4.0,
+              "draws": 16,
+              "success_probability": 0.25
+            },
+            {
+              "sample_id": "gsm8k_train_0280",
+              "correct": 4.0,
+              "draws": 16,
+              "success_probability": 0.25
+            },
+            {
+              "sample_id": "gsm8k_train_0499",
+              "correct": 6.0,
+              "draws": 16,
+              "success_probability": 0.375
+            },
+            {
+              "sample_id": "gsm8k_train_1370",
+              "correct": 4.0,
+              "draws": 16,
+              "success_probability": 0.25
+            },
+            {
+              "sample_id": "gsm8k_train_4248",
+              "correct": 6.0,
+              "draws": 16,
+              "success_probability": 0.375
+            },
+            {
+              "sample_id": "gsm8k_train_0358",
+              "correct": 1.0,
+              "draws": 16,
+              "success_probability": 0.0625
+            },
+            {
+              "sample_id": "gsm8k_train_4888",
+              "correct": 9.0,
+              "draws": 16,
+              "success_probability": 0.5625
+            },
+            {
+              "sample_id": "gsm8k_train_5164",
+              "correct": 4.0,
+              "draws": 16,
+              "success_probability": 0.25
+            },
+            {
+              "sample_id": "gsm8k_train_5190",
+              "correct": 6.0,
+              "draws": 16,
+              "success_probability": 0.375
+            }
+          ],
+          "mean_completion_length": 143.166015625,
+          "eos_fraction": 0.96484375
+        },
+        "0.1": {
+          "questions": 32,
+          "draws": 512,
+          "repeats": 16,
+          "success_at_1": 0.357421875,
+          "mean_reward": 0.357421875,
+          "empirical_pass_at_k": 1.0,
+          "per_question": [
+            {
+              "sample_id": "gsm8k_train_4824",
+              "correct": 6.0,
+              "draws": 16,
+              "success_probability": 0.375
+            },
+            {
+              "sample_id": "gsm8k_train_1869",
+              "correct": 5.0,
+              "draws": 16,
+              "success_probability": 0.3125
+            },
+            {
+              "sample_id": "gsm8k_train_7310",
+              "correct": 14.0,
+              "draws": 16,
+              "success_probability": 0.875
+            },
+            {
+              "sample_id": "gsm8k_train_2237",
+              "correct": 7.0,
+              "draws": 16,
+              "success_probability": 0.4375
+            },
+            {
+              "sample_id": "gsm8k_train_6478",
+              "correct": 2.0,
+              "draws": 16,
+              "success_probability": 0.125
+            },
+            {
+              "sample_id": "gsm8k_train_5778",
+              "correct": 5.0,
+              "draws": 16,
+              "success_probability": 0.3125
+            },
+            {
+              "sample_id": "gsm8k_train_4699",
+              "correct": 12.0,
+              "draws": 16,
+              "success_probability": 0.75
+            },
+            {
+              "sample_id": "gsm8k_train_0112",
+              "correct": 1.0,
+              "draws": 16,
+              "success_probability": 0.0625
+            },
+            {
+              "sample_id": "gsm8k_train_2214",
+              "correct": 10.0,
+              "draws": 16,
+              "success_probability": 0.625
+            },
+            {
+              "sample_id": "gsm8k_train_6976",
+              "correct": 8.0,
+              "draws": 16,
+              "success_probability": 0.5
+            },
+            {
+              "sample_id": "gsm8k_train_7385",
+              "correct": 2.0,
+              "draws": 16,
+              "success_probability": 0.125
+            },
+            {
+              "sample_id": "gsm8k_train_0924",
+              "correct": 1.0,
+              "draws": 16,
+              "success_probability": 0.0625
+            },
+            {
+              "sample_id": "gsm8k_train_5854",
+              "correct": 2.0,
+              "draws": 16,
+              "success_probability": 0.125
+            },
+            {
+              "sample_id": "gsm8k_train_4402",
+              "correct": 2.0,
+              "draws": 16,
+              "success_probability": 0.125
+            },
+            {
+              "sample_id": "gsm8k_train_1172",
+              "correct": 2.0,
+              "draws": 16,
+              "success_probability": 0.125
+            },
+            {
+              "sample_id": "gsm8k_train_0186",
+              "correct": 8.0,
+              "draws": 16,
+              "success_probability": 0.5
+            },
+            {
+              "sample_id": "gsm8k_train_3525",
+              "correct": 2.0,
+              "draws": 16,
+              "success_probability": 0.125
+            },
+            {
+              "sample_id": "gsm8k_train_6583",
+              "correct": 16.0,
+              "draws": 16,
+              "success_probability": 1.0
+            },
+            {
+              "sample_id": "gsm8k_train_5468",
+              "correct": 2.0,
+              "draws": 16,
+              "success_probability": 0.125
+            },
+            {
+              "sample_id": "gsm8k_train_3329",
+              "correct": 3.0,
+              "draws": 16,
+              "success_probability": 0.1875
+            },
+            {
+              "sample_id": "gsm8k_train_4786",
+              "correct": 4.0,
+              "draws": 16,
+              "success_probability": 0.25
+            },
+            {
+              "sample_id": "gsm8k_train_7271",
+              "correct": 6.0,
+              "draws": 16,
+              "success_probability": 0.375
+            },
+            {
+              "sample_id": "gsm8k_train_3931",
+              "correct": 1.0,
+              "draws": 16,
+              "success_probability": 0.0625
+            },
+            {
+              "sample_id": "gsm8k_train_4566",
+              "correct": 5.0,
+              "draws": 16,
+              "success_probability": 0.3125
+            },
+            {
+              "sample_id": "gsm8k_train_0280",
+              "correct": 8.0,
+              "draws": 16,
+              "success_probability": 0.5
+            },
+            {
+              "sample_id": "gsm8k_train_0499",
+              "correct": 9.0,
+              "draws": 16,
+              "success_probability": 0.5625
+            },
+            {
+              "sample_id": "gsm8k_train_1370",
+              "correct": 5.0,
+              "draws": 16,
+              "success_probability": 0.3125
+            },
+            {
+              "sample_id": "gsm8k_train_4248",
+              "correct": 4.0,
+              "draws": 16,
+              "success_probability": 0.25
+            },
+            {
+              "sample_id": "gsm8k_train_0358",
+              "correct": 3.0,
+              "draws": 16,
+              "success_probability": 0.1875
+            },
+            {
+              "sample_id": "gsm8k_train_4888",
+              "correct": 12.0,
+              "draws": 16,
+              "success_probability": 0.75
+            },
+            {
+              "sample_id": "gsm8k_train_5164",
+              "correct": 10.0,
+              "draws": 16,
+              "success_probability": 0.625
+            },
+            {
+              "sample_id": "gsm8k_train_5190",
+              "correct": 6.0,
+              "draws": 16,
+              "success_probability": 0.375
+            }
+          ],
+          "mean_completion_length": 135.3671875,
+          "eos_fraction": 0.984375
+        }
+      },
+      "paired_sampling": {
+        "0.3": {
+          "mean_delta": 0.001953125,
+          "question_bootstrap_ci95": [
+            -0.00390625,
+            0.009765625
+          ],
+          "improved_questions": 2,
+          "worsened_questions": 1
+        },
+        "0.1": {
+          "mean_delta": 0.0,
+          "question_bootstrap_ci95": [
+            -0.0078125,
+            0.0078125
+          ],
+          "improved_questions": 2,
+          "worsened_questions": 2
+        }
+      },
+      "proxy_gap_deltas": [
+        {
+          "sample_id": "gsm8k_train_4824",
+          "mean_logp_gap_delta": -3.337860107421875e-06,
+          "sum_logp_gap_delta": 0.0193023681640625
+        },
+        {
+          "sample_id": "gsm8k_train_1869",
+          "mean_logp_gap_delta": -0.00037872791290283203,
+          "sum_logp_gap_delta": -0.0625
+        },
+        {
+          "sample_id": "gsm8k_train_7310",
+          "mean_logp_gap_delta": 0.0002467632293701172,
+          "sum_logp_gap_delta": 0.02931976318359375
+        },
+        {
+          "sample_id": "gsm8k_train_2237",
+          "mean_logp_gap_delta": -0.0008909702301025391,
+          "sum_logp_gap_delta": -0.092315673828125
+        },
+        {
+          "sample_id": "gsm8k_train_6478",
+          "mean_logp_gap_delta": -0.0004957914352416992,
+          "sum_logp_gap_delta": -0.068634033203125
+        },
+        {
+          "sample_id": "gsm8k_train_5778",
+          "mean_logp_gap_delta": 0.00013375282287597656,
+          "sum_logp_gap_delta": 0.0094451904296875
+        },
+        {
+          "sample_id": "gsm8k_train_4699",
+          "mean_logp_gap_delta": -0.0008299350738525391,
+          "sum_logp_gap_delta": -0.090179443359375
+        },
+        {
+          "sample_id": "gsm8k_train_0112",
+          "mean_logp_gap_delta": -0.0011263489723205566,
+          "sum_logp_gap_delta": -0.1865234375
+        },
+        {
+          "sample_id": "gsm8k_train_2214",
+          "mean_logp_gap_delta": 0.0018219947814941406,
+          "sum_logp_gap_delta": 0.2271728515625
+        },
+        {
+          "sample_id": "gsm8k_train_6976",
+          "mean_logp_gap_delta": -0.0010361671447753906,
+          "sum_logp_gap_delta": -0.1181793212890625
+        },
+        {
+          "sample_id": "gsm8k_train_7385",
+          "mean_logp_gap_delta": -0.0015287399291992188,
+          "sum_logp_gap_delta": -0.1790313720703125
+        },
+        {
+          "sample_id": "gsm8k_train_0924",
+          "mean_logp_gap_delta": 0.00022339820861816406,
+          "sum_logp_gap_delta": 0.0315399169921875
+        },
+        {
+          "sample_id": "gsm8k_train_5854",
+          "mean_logp_gap_delta": 0.0003186464309692383,
+          "sum_logp_gap_delta": 0.0410614013671875
+        },
+        {
+          "sample_id": "gsm8k_train_4402",
+          "mean_logp_gap_delta": -0.0004419088363647461,
+          "sum_logp_gap_delta": -0.0746917724609375
+        },
+        {
+          "sample_id": "gsm8k_train_1172",
+          "mean_logp_gap_delta": -6.67572021484375e-06,
+          "sum_logp_gap_delta": 0.0043487548828125
+        },
+        {
+          "sample_id": "gsm8k_train_0186",
+          "mean_logp_gap_delta": 0.00018739700317382812,
+          "sum_logp_gap_delta": 0.01434326171875
+        },
+        {
+          "sample_id": "gsm8k_train_3525",
+          "mean_logp_gap_delta": 0.0011954307556152344,
+          "sum_logp_gap_delta": 0.12469482421875
+        },
+        {
+          "sample_id": "gsm8k_train_6583",
+          "mean_logp_gap_delta": 0.0052408576011657715,
+          "sum_logp_gap_delta": 0.4781761169433594
+        },
+        {
+          "sample_id": "gsm8k_train_5468",
+          "mean_logp_gap_delta": 0.0005514621734619141,
+          "sum_logp_gap_delta": 0.0881500244140625
+        },
+        {
+          "sample_id": "gsm8k_train_3329",
+          "mean_logp_gap_delta": 0.0003037452697753906,
+          "sum_logp_gap_delta": 0.04381561279296875
+        },
+        {
+          "sample_id": "gsm8k_train_4786",
+          "mean_logp_gap_delta": 0.000858306884765625,
+          "sum_logp_gap_delta": 0.0975341796875
+        },
+        {
+          "sample_id": "gsm8k_train_7271",
+          "mean_logp_gap_delta": 0.003741323947906494,
+          "sum_logp_gap_delta": 0.5617828369140625
+        },
+        {
+          "sample_id": "gsm8k_train_3931",
+          "mean_logp_gap_delta": 0.0017822980880737305,
+          "sum_logp_gap_delta": 0.247100830078125
+        },
+        {
+          "sample_id": "gsm8k_train_4566",
+          "mean_logp_gap_delta": 0.0015996694564819336,
+          "sum_logp_gap_delta": 0.16080474853515625
+        },
+        {
+          "sample_id": "gsm8k_train_0280",
+          "mean_logp_gap_delta": 0.0003001689910888672,
+          "sum_logp_gap_delta": 0.03802490234375
+        },
+        {
+          "sample_id": "gsm8k_train_0499",
+          "mean_logp_gap_delta": 0.003446221351623535,
+          "sum_logp_gap_delta": 0.3555908203125
+        },
+        {
+          "sample_id": "gsm8k_train_1370",
+          "mean_logp_gap_delta": -0.0003039836883544922,
+          "sum_logp_gap_delta": -0.0365447998046875
+        },
+        {
+          "sample_id": "gsm8k_train_4248",
+          "mean_logp_gap_delta": 0.0018687248229980469,
+          "sum_logp_gap_delta": 0.250946044921875
+        },
+        {
+          "sample_id": "gsm8k_train_0358",
+          "mean_logp_gap_delta": 0.0006658434867858887,
+          "sum_logp_gap_delta": 0.094818115234375
+        },
+        {
+          "sample_id": "gsm8k_train_4888",
+          "mean_logp_gap_delta": 0.0034399032592773438,
+          "sum_logp_gap_delta": 0.31516265869140625
+        },
+        {
+          "sample_id": "gsm8k_train_5164",
+          "mean_logp_gap_delta": 0.0011992454528808594,
+          "sum_logp_gap_delta": 0.10828399658203125
+        },
+        {
+          "sample_id": "gsm8k_train_5190",
+          "mean_logp_gap_delta": 0.001880049705505371,
+          "sum_logp_gap_delta": 0.300018310546875
+        }
+      ],
+      "mean_proxy_gap_delta": 0.0007488317787647247,
+      "gradient_clipped_fraction": 0.0,
+      "mean_policy_loss": 0.0009141768508416135,
+      "mean_kl_penalty": 2.771374404546805e-06
+    },
+    {
+      "step": 500,
+      "sampling": {
+        "0.3": {
+          "questions": 32,
+          "draws": 512,
+          "repeats": 16,
+          "success_at_1": 0.31640625,
+          "mean_reward": 0.31640625,
+          "empirical_pass_at_k": 0.9375,
+          "per_question": [
+            {
+              "sample_id": "gsm8k_train_4824",
+              "correct": 3.0,
+              "draws": 16,
+              "success_probability": 0.1875
+            },
+            {
+              "sample_id": "gsm8k_train_1869",
+              "correct": 5.0,
+              "draws": 16,
+              "success_probability": 0.3125
+            },
+            {
+              "sample_id": "gsm8k_train_7310",
+              "correct": 13.0,
+              "draws": 16,
+              "success_probability": 0.8125
+            },
+            {
+              "sample_id": "gsm8k_train_2237",
+              "correct": 9.0,
+              "draws": 16,
+              "success_probability": 0.5625
+            },
+            {
+              "sample_id": "gsm8k_train_6478",
+              "correct": 4.0,
+              "draws": 16,
+              "success_probability": 0.25
+            },
+            {
+              "sample_id": "gsm8k_train_5778",
+              "correct": 2.0,
+              "draws": 16,
+              "success_probability": 0.125
+            },
+            {
+              "sample_id": "gsm8k_train_4699",
+              "correct": 12.0,
+              "draws": 16,
+              "success_probability": 0.75
+            },
+            {
+              "sample_id": "gsm8k_train_0112",
+              "correct": 2.0,
+              "draws": 16,
+              "success_probability": 0.125
+            },
+            {
+              "sample_id": "gsm8k_train_2214",
+              "correct": 9.0,
+              "draws": 16,
+              "success_probability": 0.5625
+            },
+            {
+              "sample_id": "gsm8k_train_6976",
+              "correct": 6.0,
+              "draws": 16,
+              "success_probability": 0.375
+            },
+            {
+              "sample_id": "gsm8k_train_7385",
+              "correct": 4.0,
+              "draws": 16,
+              "success_probability": 0.25
+            },
+            {
+              "sample_id": "gsm8k_train_0924",
+              "correct": 1.0,
+              "draws": 16,
+              "success_probability": 0.0625
+            },
+            {
+              "sample_id": "gsm8k_train_5854",
+              "correct": 6.0,
+              "draws": 16,
+              "success_probability": 0.375
+            },
+            {
+              "sample_id": "gsm8k_train_4402",
+              "correct": 2.0,
+              "draws": 16,
+              "success_probability": 0.125
+            },
+            {
+              "sample_id": "gsm8k_train_1172",
+              "correct": 0.0,
+              "draws": 16,
+              "success_probability": 0.0
+            },
+            {
+              "sample_id": "gsm8k_train_0186",
+              "correct": 5.0,
+              "draws": 16,
+              "success_probability": 0.3125
+            },
+            {
+              "sample_id": "gsm8k_train_3525",
+              "correct": 3.0,
+              "draws": 16,
+              "success_probability": 0.1875
+            },
+            {
+              "sample_id": "gsm8k_train_6583",
+              "correct": 16.0,
+              "draws": 16,
+              "success_probability": 1.0
+            },
+            {
+              "sample_id": "gsm8k_train_5468",
+              "correct": 4.0,
+              "draws": 16,
+              "success_probability": 0.25
+            },
+            {
+              "sample_id": "gsm8k_train_3329",
+              "correct": 5.0,
+              "draws": 16,
+              "success_probability": 0.3125
+            },
+            {
+              "sample_id": "gsm8k_train_4786",
+              "correct": 4.0,
+              "draws": 16,
+              "success_probability": 0.25
+            },
+            {
+              "sample_id": "gsm8k_train_7271",
+              "correct": 4.0,
+              "draws": 16,
+              "success_probability": 0.25
+            },
+            {
+              "sample_id": "gsm8k_train_3931",
+              "correct": 0.0,
+              "draws": 16,
+              "success_probability": 0.0
+            },
+            {
+              "sample_id": "gsm8k_train_4566",
+              "correct": 3.0,
+              "draws": 16,
+              "success_probability": 0.1875
+            },
+            {
+              "sample_id": "gsm8k_train_0280",
+              "correct": 4.0,
+              "draws": 16,
+              "success_probability": 0.25
+            },
+            {
+              "sample_id": "gsm8k_train_0499",
+              "correct": 5.0,
+              "draws": 16,
+              "success_probability": 0.3125
+            },
+            {
+              "sample_id": "gsm8k_train_1370",
+              "correct": 5.0,
+              "draws": 16,
+              "success_probability": 0.3125
+            },
+            {
+              "sample_id": "gsm8k_train_4248",
+              "correct": 6.0,
+              "draws": 16,
+              "success_probability": 0.375
+            },
+            {
+              "sample_id": "gsm8k_train_0358",
+              "correct": 1.0,
+              "draws": 16,
+              "success_probability": 0.0625
+            },
+            {
+              "sample_id": "gsm8k_train_4888",
+              "correct": 9.0,
+              "draws": 16,
+              "success_probability": 0.5625
+            },
+            {
+              "sample_id": "gsm8k_train_5164",
+              "correct": 4.0,
+              "draws": 16,
+              "success_probability": 0.25
+            },
+            {
+              "sample_id": "gsm8k_train_5190",
+              "correct": 6.0,
+              "draws": 16,
+              "success_probability": 0.375
+            }
+          ],
+          "mean_completion_length": 143.302734375,
+          "eos_fraction": 0.96484375
+        },
+        "0.1": {
+          "questions": 32,
+          "draws": 512,
+          "repeats": 16,
+          "success_at_1": 0.357421875,
+          "mean_reward": 0.357421875,
+          "empirical_pass_at_k": 1.0,
+          "per_question": [
+            {
+              "sample_id": "gsm8k_train_4824",
+              "correct": 6.0,
+              "draws": 16,
+              "success_probability": 0.375
+            },
+            {
+              "sample_id": "gsm8k_train_1869",
+              "correct": 5.0,
+              "draws": 16,
+              "success_probability": 0.3125
+            },
+            {
+              "sample_id": "gsm8k_train_7310",
+              "correct": 14.0,
+              "draws": 16,
+              "success_probability": 0.875
+            },
+            {
+              "sample_id": "gsm8k_train_2237",
+              "correct": 7.0,
+              "draws": 16,
+              "success_probability": 0.4375
+            },
+            {
+              "sample_id": "gsm8k_train_6478",
+              "correct": 2.0,
+              "draws": 16,
+              "success_probability": 0.125
+            },
+            {
+              "sample_id": "gsm8k_train_5778",
+              "correct": 6.0,
+              "draws": 16,
+              "success_probability": 0.375
+            },
+            {
+              "sample_id": "gsm8k_train_4699",
+              "correct": 12.0,
+              "draws": 16,
+              "success_probability": 0.75
+            },
+            {
+              "sample_id": "gsm8k_train_0112",
+              "correct": 1.0,
+              "draws": 16,
+              "success_probability": 0.0625
+            },
+            {
+              "sample_id": "gsm8k_train_2214",
+              "correct": 11.0,
+              "draws": 16,
+              "success_probability": 0.6875
+            },
+            {
+              "sample_id": "gsm8k_train_6976",
+              "correct": 8.0,
+              "draws": 16,
+              "success_probability": 0.5
+            },
+            {
+              "sample_id": "gsm8k_train_7385",
+              "correct": 2.0,
+              "draws": 16,
+              "success_probability": 0.125
+            },
+            {
+              "sample_id": "gsm8k_train_0924",
+              "correct": 1.0,
+              "draws": 16,
+              "success_probability": 0.0625
+            },
+            {
+              "sample_id": "gsm8k_train_5854",
+              "correct": 2.0,
+              "draws": 16,
+              "success_probability": 0.125
+            },
+            {
+              "sample_id": "gsm8k_train_4402",
+              "correct": 2.0,
+              "draws": 16,
+              "success_probability": 0.125
+            },
+            {
+              "sample_id": "gsm8k_train_1172",
+              "correct": 2.0,
+              "draws": 16,
+              "success_probability": 0.125
+            },
+            {
+              "sample_id": "gsm8k_train_0186",
+              "correct": 8.0,
+              "draws": 16,
+              "success_probability": 0.5
+            },
+            {
+              "sample_id": "gsm8k_train_3525",
+              "correct": 2.0,
+              "draws": 16,
+              "success_probability": 0.125
+            },
+            {
+              "sample_id": "gsm8k_train_6583",
+              "correct": 16.0,
+              "draws": 16,
+              "success_probability": 1.0
+            },
+            {
+              "sample_id": "gsm8k_train_5468",
+              "correct": 2.0,
+              "draws": 16,
+              "success_probability": 0.125
+            },
+            {
+              "sample_id": "gsm8k_train_3329",
+              "correct": 3.0,
+              "draws": 16,
+              "success_probability": 0.1875
+            },
+            {
+              "sample_id": "gsm8k_train_4786",
+              "correct": 5.0,
+              "draws": 16,
+              "success_probability": 0.3125
+            },
+            {
+              "sample_id": "gsm8k_train_7271",
+              "correct": 6.0,
+              "draws": 16,
+              "success_probability": 0.375
+            },
+            {
+              "sample_id": "gsm8k_train_3931",
+              "correct": 1.0,
+              "draws": 16,
+              "success_probability": 0.0625
+            },
+            {
+              "sample_id": "gsm8k_train_4566",
+              "correct": 5.0,
+              "draws": 16,
+              "success_probability": 0.3125
+            },
+            {
+              "sample_id": "gsm8k_train_0280",
+              "correct": 8.0,
+              "draws": 16,
+              "success_probability": 0.5
+            },
+            {
+              "sample_id": "gsm8k_train_0499",
+              "correct": 7.0,
+              "draws": 16,
+              "success_probability": 0.4375
+            },
+            {
+              "sample_id": "gsm8k_train_1370",
+              "correct": 5.0,
+              "draws": 16,
+              "success_probability": 0.3125
+            },
+            {
+              "sample_id": "gsm8k_train_4248",
+              "correct": 4.0,
+              "draws": 16,
+              "success_probability": 0.25
+            },
+            {
+              "sample_id": "gsm8k_train_0358",
+              "correct": 3.0,
+              "draws": 16,
+              "success_probability": 0.1875
+            },
+            {
+              "sample_id": "gsm8k_train_4888",
+              "correct": 12.0,
+              "draws": 16,
+              "success_probability": 0.75
+            },
+            {
+              "sample_id": "gsm8k_train_5164",
+              "correct": 10.0,
+              "draws": 16,
+              "success_probability": 0.625
+            },
+            {
+              "sample_id": "gsm8k_train_5190",
+              "correct": 5.0,
+              "draws": 16,
+              "success_probability": 0.3125
+            }
+          ],
+          "mean_completion_length": 135.314453125,
+          "eos_fraction": 0.984375
+        }
+      },
+      "paired_sampling": {
+        "0.3": {
+          "mean_delta": 0.001953125,
+          "question_bootstrap_ci95": [
+            -0.005859375,
+            0.009765625
+          ],
+          "improved_questions": 3,
+          "worsened_questions": 2
+        },
+        "0.1": {
+          "mean_delta": 0.0,
+          "question_bootstrap_ci95": [
+            -0.013671875,
+            0.013671875
+          ],
+          "improved_questions": 5,
+          "worsened_questions": 4
+        }
+      },
+      "proxy_gap_deltas": [
+        {
+          "sample_id": "gsm8k_train_4824",
+          "mean_logp_gap_delta": 0.004439353942871094,
+          "sum_logp_gap_delta": 0.6171722412109375
+        },
+        {
+          "sample_id": "gsm8k_train_1869",
+          "mean_logp_gap_delta": -9.47713851928711e-05,
+          "sum_logp_gap_delta": -0.015625
+        },
+        {
+          "sample_id": "gsm8k_train_7310",
+          "mean_logp_gap_delta": 0.0018764138221740723,
+          "sum_logp_gap_delta": 0.20848846435546875
+        },
+        {
+          "sample_id": "gsm8k_train_2237",
+          "mean_logp_gap_delta": -1.0609626770019531e-05,
+          "sum_logp_gap_delta": 0.013641357421875
+        },
+        {
+          "sample_id": "gsm8k_train_6478",
+          "mean_logp_gap_delta": -9.632110595703125e-05,
+          "sum_logp_gap_delta": -0.030364990234375
+        },
+        {
+          "sample_id": "gsm8k_train_5778",
+          "mean_logp_gap_delta": -0.0013766288757324219,
+          "sum_logp_gap_delta": -0.1617889404296875
+        },
+        {
+          "sample_id": "gsm8k_train_4699",
+          "mean_logp_gap_delta": -0.0010694265365600586,
+          "sum_logp_gap_delta": -0.118499755859375
+        },
+        {
+          "sample_id": "gsm8k_train_0112",
+          "mean_logp_gap_delta": -0.0011446475982666016,
+          "sum_logp_gap_delta": -0.1854095458984375
+        },
+        {
+          "sample_id": "gsm8k_train_2214",
+          "mean_logp_gap_delta": 0.0013649463653564453,
+          "sum_logp_gap_delta": 0.1806793212890625
+        },
+        {
+          "sample_id": "gsm8k_train_6976",
+          "mean_logp_gap_delta": 0.000705718994140625,
+          "sum_logp_gap_delta": 0.0839385986328125
+        },
+        {
+          "sample_id": "gsm8k_train_7385",
+          "mean_logp_gap_delta": -0.0032494068145751953,
+          "sum_logp_gap_delta": -0.388824462890625
+        },
+        {
+          "sample_id": "gsm8k_train_0924",
+          "mean_logp_gap_delta": 0.0002224445343017578,
+          "sum_logp_gap_delta": 0.03106689453125
+        },
+        {
+          "sample_id": "gsm8k_train_5854",
+          "mean_logp_gap_delta": -0.0005762577056884766,
+          "sum_logp_gap_delta": -0.063812255859375
+        },
+        {
+          "sample_id": "gsm8k_train_4402",
+          "mean_logp_gap_delta": -0.0023328065872192383,
+          "sum_logp_gap_delta": -0.397125244140625
+        },
+        {
+          "sample_id": "gsm8k_train_1172",
+          "mean_logp_gap_delta": -0.0017154216766357422,
+          "sum_logp_gap_delta": -0.287994384765625
+        },
+        {
+          "sample_id": "gsm8k_train_0186",
+          "mean_logp_gap_delta": 0.0023529529571533203,
+          "sum_logp_gap_delta": 0.2894287109375
+        },
+        {
+          "sample_id": "gsm8k_train_3525",
+          "mean_logp_gap_delta": 0.002466440200805664,
+          "sum_logp_gap_delta": 0.25508880615234375
+        },
+        {
+          "sample_id": "gsm8k_train_6583",
+          "mean_logp_gap_delta": -0.0011083483695983887,
+          "sum_logp_gap_delta": -0.038700103759765625
+        },
+        {
+          "sample_id": "gsm8k_train_5468",
+          "mean_logp_gap_delta": -0.002172112464904785,
+          "sum_logp_gap_delta": -0.2488861083984375
+        },
+        {
+          "sample_id": "gsm8k_train_3329",
+          "mean_logp_gap_delta": 0.0008036494255065918,
+          "sum_logp_gap_delta": 0.1003875732421875
+        },
+        {
+          "sample_id": "gsm8k_train_4786",
+          "mean_logp_gap_delta": -0.001387953758239746,
+          "sum_logp_gap_delta": -0.1478424072265625
+        },
+        {
+          "sample_id": "gsm8k_train_7271",
+          "mean_logp_gap_delta": 0.00135117769241333,
+          "sum_logp_gap_delta": 0.210174560546875
+        },
+        {
+          "sample_id": "gsm8k_train_3931",
+          "mean_logp_gap_delta": 0.0011093616485595703,
+          "sum_logp_gap_delta": 0.1527557373046875
+        },
+        {
+          "sample_id": "gsm8k_train_4566",
+          "mean_logp_gap_delta": 0.0004107952117919922,
+          "sum_logp_gap_delta": 0.04193878173828125
+        },
+        {
+          "sample_id": "gsm8k_train_0280",
+          "mean_logp_gap_delta": 0.0010818243026733398,
+          "sum_logp_gap_delta": 0.1393585205078125
+        },
+        {
+          "sample_id": "gsm8k_train_0499",
+          "mean_logp_gap_delta": -0.0026394128799438477,
+          "sum_logp_gap_delta": -0.2743988037109375
+        },
+        {
+          "sample_id": "gsm8k_train_1370",
+          "mean_logp_gap_delta": -0.0021486282348632812,
+          "sum_logp_gap_delta": -0.2772216796875
+        },
+        {
+          "sample_id": "gsm8k_train_4248",
+          "mean_logp_gap_delta": 0.003266453742980957,
+          "sum_logp_gap_delta": 0.4373321533203125
+        },
+        {
+          "sample_id": "gsm8k_train_0358",
+          "mean_logp_gap_delta": 0.0007082819938659668,
+          "sum_logp_gap_delta": 0.1274261474609375
+        },
+        {
+          "sample_id": "gsm8k_train_4888",
+          "mean_logp_gap_delta": 0.0012350082397460938,
+          "sum_logp_gap_delta": 0.11284637451171875
+        },
+        {
+          "sample_id": "gsm8k_train_5164",
+          "mean_logp_gap_delta": 0.0010747909545898438,
+          "sum_logp_gap_delta": 0.0969696044921875
+        },
+        {
+          "sample_id": "gsm8k_train_5190",
+          "mean_logp_gap_delta": 0.0001850128173828125,
+          "sum_logp_gap_delta": 0.0294647216796875
+        }
+      ],
+      "mean_proxy_gap_delta": 0.00011037103831768036,
+      "gradient_clipped_fraction": 0.004,
+      "mean_policy_loss": 0.0007917335724936265,
+      "mean_kl_penalty": 2.785094784485409e-06
+    }
+  ],
+  "training_group_counts": {
+    "gsm8k_train_4699": 8,
+    "gsm8k_train_5164": 8,
+    "gsm8k_train_4402": 7,
+    "gsm8k_train_2237": 8,
+    "gsm8k_train_4824": 7,
+    "gsm8k_train_1172": 8,
+    "gsm8k_train_4566": 8,
+    "gsm8k_train_7385": 8,
+    "gsm8k_train_4888": 8,
+    "gsm8k_train_0112": 8,
+    "gsm8k_train_3329": 8,
+    "gsm8k_train_6583": 7,
+    "gsm8k_train_7271": 8,
+    "gsm8k_train_6976": 8,
+    "gsm8k_train_6478": 8,
+    "gsm8k_train_1869": 8,
+    "gsm8k_train_1370": 8,
+    "gsm8k_train_5190": 8,
+    "gsm8k_train_0186": 8,
+    "gsm8k_train_5468": 8,
+    "gsm8k_train_0358": 8,
+    "gsm8k_train_3525": 8,
+    "gsm8k_train_5778": 8,
+    "gsm8k_train_7310": 7,
+    "gsm8k_train_3931": 8,
+    "gsm8k_train_0924": 8,
+    "gsm8k_train_4786": 8,
+    "gsm8k_train_0499": 7,
+    "gsm8k_train_5854": 7,
+    "gsm8k_train_0280": 8,
+    "gsm8k_train_4248": 8,
+    "gsm8k_train_2214": 8
+  },
+  "limitations": [
+    "Selected mixed-reward training questions, not generalization.",
+    "One training seed; repeated samples are clustered by question.",
+    "Binary mean reward and success@1 estimate are the same statistic.",
+    "Empirical pass@16 may saturate; fixed-pair gaps are proxy diagnostics.",
+    "Full-mask proxy scores are untempered; rollout uses T=.3.",
+    "No validation, Test, LR or KL sweep is run by this pipeline."
+  ]
+}

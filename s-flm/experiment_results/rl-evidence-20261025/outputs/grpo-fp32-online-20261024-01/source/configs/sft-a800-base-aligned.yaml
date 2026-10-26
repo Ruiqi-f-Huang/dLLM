@@ -1,0 +1,43 @@
+# GSM8K PoT continuation with the Base MDLM token/noise/loss treatment.
+# Batch size and learning rate remain SFT-specific so one epoch is 711 updates.
+defaults:
+  - sft-a800-maskfix
+  - _self_
+
+data:
+  # With the V5 two-mask loader, this makes code/EOS/PAD both noised and
+  # supervised, exactly matching the Base TinyGSM objective.
+  train_on_pad: true
+
+noise:
+  eps: 1e-3
+
+optim:
+  # Conservative full-parameter SFT rate; V1-V4 used 1e-5.
+  lr: 3e-6
+
+lr_scheduler:
+  num_warmup_steps: 20
+
+callbacks:
+  # Disable duplicate periodic/final files inherited from the SFT config.
+  checkpoint_every_n_steps:
+    save_top_k: 0
+    save_last: false
+    every_n_train_steps: 0
+  checkpoint_monitor:
+    save_top_k: 0
+  milestone_checkpoint:
+    _target_: callbacks.milestone_checkpoint.MilestoneCheckpoint
+    milestones: [100, 200, 711]
+    dirpath: ${checkpointing.save_dir}/checkpoints
+    filename: step-{step:06d}.ckpt
+
+wandb:
+  name: mdlm-sft-base-aligned-${now:%Y%m%d-%H%M%S}
+  tags: [mdlm, gsm8k-pot, sft, base-aligned, milestone-eval]
+
+hydra:
+  run:
+    dir: ${hydra:runtime.cwd}/outputs/sft/${now:%Y%m%d}-base-aligned-01
+

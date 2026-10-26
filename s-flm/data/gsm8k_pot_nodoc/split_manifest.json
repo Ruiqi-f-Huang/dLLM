@@ -1,0 +1,21 @@
+{
+  "source_manifest_sha256": "35e7bc58c84e774d0394b4124a58f06695cc845bf2119c57de9c6e236dddba93",
+  "source_files": {
+    "sft_train.jsonl": "a35c64f0c0f47baa84e2517059e11b939b16c5d0dbb0d76b021b2c2144092c68",
+    "sft_validation.jsonl": "560b9ddf9c42c9deb4a37f3c1296f39fed8adb45574c9906c6aafd08237267b7"
+  },
+  "transformation": "Remove the leading function docstring from simple_math_problem; leave the remaining program unchanged.",
+  "verification": "Every source and transformed program parses, executes with restricted builtins, returns the same numeric answer, and matches the stored gold.",
+  "split_method": "sample ceil(10% of sorted eligible GSM8K Train IDs) with random.Random(42)",
+  "test": "Original GSM8K Test, excluded from all training files.",
+  "files": {
+    "sft_train.jsonl": {
+      "rows": 5682,
+      "sha256": "7027be04cfa500dc004135fed124d4fe9635164cb2ac0c4db5c53fd45697acde"
+    },
+    "sft_validation.jsonl": {
+      "rows": 632,
+      "sha256": "83df7592c8c3a8ec1a02d7b6a89ab5890ba4e8547e1585a4bc376ccfb743114b"
+    }
+  }
+}

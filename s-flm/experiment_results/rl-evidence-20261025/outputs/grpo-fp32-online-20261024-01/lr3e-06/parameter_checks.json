@@ -1,0 +1,12 @@
+[
+  {
+    "step": 100,
+    "frozen_changed": [],
+    "nonzero_lora_b": 48
+  },
+  {
+    "step": 250,
+    "frozen_changed": [],
+    "nonzero_lora_b": 48
+  }
+]

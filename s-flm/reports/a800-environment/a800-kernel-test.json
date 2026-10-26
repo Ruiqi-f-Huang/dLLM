@@ -1,0 +1,9 @@
+{
+  "gpu": "NVIDIA A800-SXM4-80GB",
+  "torch": "2.7.0+cu128",
+  "cuda": "12.8",
+  "flash_attn": "2.7.4.post1",
+  "dtype": "torch.bfloat16",
+  "max_abs_error": 0.00048828125,
+  "finite_gradients": true
+}

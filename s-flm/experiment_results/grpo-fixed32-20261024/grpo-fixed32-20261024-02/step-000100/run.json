@@ -1,0 +1,18 @@
+{
+  "mode": "measure",
+  "base": "/root/s-flm/checkpoints/tinygsm/mdlm.ckpt",
+  "checkpoint": "/root/autodl-tmp/s-flm/outputs/grpo-fixed32-20261024-02/train/step-000100.ckpt",
+  "data": "/root/autodl-tmp/s-flm/outputs/grpo-fixed32-20261024-02/fixed/questions.jsonl",
+  "output": "/root/autodl-tmp/s-flm/outputs/grpo-fixed32-20261024-02/step-000100",
+  "pairs": "/root/autodl-tmp/s-flm/outputs/grpo-fixed32-20261024-02/base/pairs.jsonl",
+  "make_pairs": false,
+  "repeats": 16,
+  "temperatures": [
+    0.3,
+    0.1
+  ],
+  "batch_size": 8,
+  "max_pair_draws": 256,
+  "eval_seed": 20261024,
+  "timeout": 2.0
+}

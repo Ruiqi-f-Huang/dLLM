@@ -1,0 +1,930 @@
+{
+  "objective": "positive-only fixed 75% mask; success A=.5, failure A=0; original denominator; no KL/clipping; diagnostic only",
+  "frozen_changed": [],
+  "initial": {
+    "step": 0,
+    "program_loss": 0.023913290351629257,
+    "token_loss": 0.025115035474300385,
+    "success_mean_logp": -0.09565316140651703,
+    "failure_mean_logp": -0.4186779260635376,
+    "mean_gap": 0.32302480936050415,
+    "parameter_delta_norm": 0.0,
+    "raw_output_dtype": "torch.float32",
+    "per_program": [
+      {
+        "sample_id": "gsm8k_train_4888",
+        "reward": 1.0,
+        "mean_logp": -0.08090919256210327
+      },
+      {
+        "sample_id": "gsm8k_train_4888",
+        "reward": 0.0,
+        "mean_logp": -0.10080371797084808
+      },
+      {
+        "sample_id": "gsm8k_train_3329",
+        "reward": 1.0,
+        "mean_logp": -0.0353211872279644
+      },
+      {
+        "sample_id": "gsm8k_train_3329",
+        "reward": 0.0,
+        "mean_logp": -0.19106431305408478
+      },
+      {
+        "sample_id": "gsm8k_train_3931",
+        "reward": 1.0,
+        "mean_logp": -0.3157317042350769
+      },
+      {
+        "sample_id": "gsm8k_train_3931",
+        "reward": 0.0,
+        "mean_logp": -0.24065729975700378
+      },
+      {
+        "sample_id": "gsm8k_train_4786",
+        "reward": 1.0,
+        "mean_logp": -0.010041799396276474
+      },
+      {
+        "sample_id": "gsm8k_train_4786",
+        "reward": 0.0,
+        "mean_logp": -0.11428962647914886
+      },
+      {
+        "sample_id": "gsm8k_train_0924",
+        "reward": 1.0,
+        "mean_logp": -0.040684279054403305
+      },
+      {
+        "sample_id": "gsm8k_train_0924",
+        "reward": 0.0,
+        "mean_logp": -1.9663853645324707
+      },
+      {
+        "sample_id": "gsm8k_train_7385",
+        "reward": 1.0,
+        "mean_logp": -0.14232690632343292
+      },
+      {
+        "sample_id": "gsm8k_train_7385",
+        "reward": 0.0,
+        "mean_logp": -0.2529546916484833
+      },
+      {
+        "sample_id": "gsm8k_train_4699",
+        "reward": 1.0,
+        "mean_logp": -0.07505789399147034
+      },
+      {
+        "sample_id": "gsm8k_train_4699",
+        "reward": 0.0,
+        "mean_logp": -0.28859737515449524
+      },
+      {
+        "sample_id": "gsm8k_train_5164",
+        "reward": 1.0,
+        "mean_logp": -0.06515231728553772
+      },
+      {
+        "sample_id": "gsm8k_train_5164",
+        "reward": 0.0,
+        "mean_logp": -0.19467119872570038
+      }
+    ],
+    "heldout": [
+      {
+        "step": 0,
+        "program_loss": 0.016053032130002975,
+        "token_loss": 0.0161830335855484,
+        "success_mean_logp": -0.0642121285200119,
+        "failure_mean_logp": -0.3877212405204773,
+        "mean_gap": 0.3235090672969818,
+        "parameter_delta_norm": 0.0,
+        "raw_output_dtype": "torch.float32",
+        "per_program": [
+          {
+            "sample_id": "gsm8k_train_4888",
+            "reward": 1.0,
+            "mean_logp": -0.022163979709148407
+          },
+          {
+            "sample_id": "gsm8k_train_4888",
+            "reward": 0.0,
+            "mean_logp": -0.583294689655304
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "reward": 1.0,
+            "mean_logp": -0.032542046159505844
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "reward": 0.0,
+            "mean_logp": -0.17904634773731232
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "reward": 1.0,
+            "mean_logp": -0.11470071226358414
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "reward": 0.0,
+            "mean_logp": -0.15154483914375305
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "reward": 1.0,
+            "mean_logp": -0.019219862297177315
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "reward": 0.0,
+            "mean_logp": -0.20731371641159058
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "reward": 1.0,
+            "mean_logp": -0.08202755451202393
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "reward": 0.0,
+            "mean_logp": -1.695767879486084
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "reward": 1.0,
+            "mean_logp": -0.04823493957519531
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "reward": 0.0,
+            "mean_logp": -0.10507339239120483
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "reward": 1.0,
+            "mean_logp": -0.05085119232535362
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "reward": 0.0,
+            "mean_logp": -0.08017854392528534
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "reward": 1.0,
+            "mean_logp": -0.1439567506313324
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "reward": 0.0,
+            "mean_logp": -0.0995502918958664
+          }
+        ]
+      },
+      {
+        "step": 0,
+        "program_loss": 0.037447668612003326,
+        "token_loss": 0.03977005183696747,
+        "success_mean_logp": -0.1497906744480133,
+        "failure_mean_logp": -0.3831161856651306,
+        "mean_gap": 0.23332548141479492,
+        "parameter_delta_norm": 0.0,
+        "raw_output_dtype": "torch.float32",
+        "per_program": [
+          {
+            "sample_id": "gsm8k_train_4888",
+            "reward": 1.0,
+            "mean_logp": -0.05293950065970421
+          },
+          {
+            "sample_id": "gsm8k_train_4888",
+            "reward": 0.0,
+            "mean_logp": -0.0348067432641983
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "reward": 1.0,
+            "mean_logp": -0.051184363663196564
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "reward": 0.0,
+            "mean_logp": -0.024126024916768074
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "reward": 1.0,
+            "mean_logp": -0.15201939642429352
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "reward": 0.0,
+            "mean_logp": -0.08587171137332916
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "reward": 1.0,
+            "mean_logp": -0.024013176560401917
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "reward": 0.0,
+            "mean_logp": -0.18867453932762146
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "reward": 1.0,
+            "mean_logp": -0.34381103515625
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "reward": 0.0,
+            "mean_logp": -1.3981853723526
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "reward": 1.0,
+            "mean_logp": -0.38136765360832214
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "reward": 0.0,
+            "mean_logp": -0.3652888238430023
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "reward": 1.0,
+            "mean_logp": -0.12479422986507416
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "reward": 0.0,
+            "mean_logp": -0.8957694172859192
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "reward": 1.0,
+            "mean_logp": -0.06819593161344528
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "reward": 0.0,
+            "mean_logp": -0.07220660150051117
+          }
+        ]
+      },
+      {
+        "step": 0,
+        "program_loss": 0.02302296832203865,
+        "token_loss": 0.021385615691542625,
+        "success_mean_logp": -0.0920918732881546,
+        "failure_mean_logp": -0.22375404834747314,
+        "mean_gap": 0.13166218996047974,
+        "parameter_delta_norm": 0.0,
+        "raw_output_dtype": "torch.float32",
+        "per_program": [
+          {
+            "sample_id": "gsm8k_train_4888",
+            "reward": 1.0,
+            "mean_logp": -0.18054473400115967
+          },
+          {
+            "sample_id": "gsm8k_train_4888",
+            "reward": 0.0,
+            "mean_logp": -0.04393971338868141
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "reward": 1.0,
+            "mean_logp": -0.03106413409113884
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "reward": 0.0,
+            "mean_logp": -0.19009223580360413
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "reward": 1.0,
+            "mean_logp": -0.05890198051929474
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "reward": 0.0,
+            "mean_logp": -0.6234604716300964
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "reward": 1.0,
+            "mean_logp": -0.0020576624665409327
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "reward": 0.0,
+            "mean_logp": -0.19175390899181366
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "reward": 1.0,
+            "mean_logp": -0.030948372557759285
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "reward": 0.0,
+            "mean_logp": -0.19662177562713623
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "reward": 1.0,
+            "mean_logp": -0.1947983354330063
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "reward": 0.0,
+            "mean_logp": -0.046455204486846924
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "reward": 1.0,
+            "mean_logp": -0.06129173934459686
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "reward": 0.0,
+            "mean_logp": -0.08538947254419327
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "reward": 1.0,
+            "mean_logp": -0.17712801694869995
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "reward": 0.0,
+            "mean_logp": -0.4123196601867676
+          }
+        ]
+      },
+      {
+        "step": 0,
+        "program_loss": 0.0525171272456646,
+        "token_loss": 0.05537901446223259,
+        "success_mean_logp": -0.2100685089826584,
+        "failure_mean_logp": -0.20505645871162415,
+        "mean_gap": -0.005012053996324539,
+        "parameter_delta_norm": 0.0,
+        "raw_output_dtype": "torch.float32",
+        "per_program": [
+          {
+            "sample_id": "gsm8k_train_4888",
+            "reward": 1.0,
+            "mean_logp": -0.03672271594405174
+          },
+          {
+            "sample_id": "gsm8k_train_4888",
+            "reward": 0.0,
+            "mean_logp": -0.058289241045713425
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "reward": 1.0,
+            "mean_logp": -0.2676709294319153
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "reward": 0.0,
+            "mean_logp": -0.034934259951114655
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "reward": 1.0,
+            "mean_logp": -0.34795284271240234
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "reward": 0.0,
+            "mean_logp": -0.26192712783813477
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "reward": 1.0,
+            "mean_logp": -0.019972238689661026
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "reward": 0.0,
+            "mean_logp": -0.15860708057880402
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "reward": 1.0,
+            "mean_logp": -0.04520794004201889
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "reward": 0.0,
+            "mean_logp": -0.5295475125312805
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "reward": 1.0,
+            "mean_logp": -0.7714273929595947
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "reward": 0.0,
+            "mean_logp": -0.12045340985059738
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "reward": 1.0,
+            "mean_logp": -0.15001246333122253
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "reward": 0.0,
+            "mean_logp": -0.37108945846557617
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "reward": 1.0,
+            "mean_logp": -0.04158159717917442
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "reward": 0.0,
+            "mean_logp": -0.10560360550880432
+          }
+        ]
+      }
+    ]
+  },
+  "final": {
+    "step": 200,
+    "program_loss": 0.0036752440501004457,
+    "token_loss": 0.003744055051356554,
+    "success_mean_logp": -0.014700976200401783,
+    "failure_mean_logp": -0.43204689025878906,
+    "mean_gap": 0.41734591126441956,
+    "parameter_delta_norm": 5.231605574328723,
+    "raw_output_dtype": "torch.float32",
+    "per_program": [
+      {
+        "sample_id": "gsm8k_train_4888",
+        "reward": 1.0,
+        "mean_logp": -0.010799099691212177
+      },
+      {
+        "sample_id": "gsm8k_train_4888",
+        "reward": 0.0,
+        "mean_logp": -0.10045561194419861
+      },
+      {
+        "sample_id": "gsm8k_train_3329",
+        "reward": 1.0,
+        "mean_logp": -0.018935656175017357
+      },
+      {
+        "sample_id": "gsm8k_train_3329",
+        "reward": 0.0,
+        "mean_logp": -0.1798657327890396
+      },
+      {
+        "sample_id": "gsm8k_train_3931",
+        "reward": 1.0,
+        "mean_logp": -0.032735880464315414
+      },
+      {
+        "sample_id": "gsm8k_train_3931",
+        "reward": 0.0,
+        "mean_logp": -0.2592144310474396
+      },
+      {
+        "sample_id": "gsm8k_train_4786",
+        "reward": 1.0,
+        "mean_logp": -0.002829062519595027
+      },
+      {
+        "sample_id": "gsm8k_train_4786",
+        "reward": 0.0,
+        "mean_logp": -0.10826339572668076
+      },
+      {
+        "sample_id": "gsm8k_train_0924",
+        "reward": 1.0,
+        "mean_logp": -0.008539163507521152
+      },
+      {
+        "sample_id": "gsm8k_train_0924",
+        "reward": 0.0,
+        "mean_logp": -1.9962165355682373
+      },
+      {
+        "sample_id": "gsm8k_train_7385",
+        "reward": 1.0,
+        "mean_logp": -0.007501591462641954
+      },
+      {
+        "sample_id": "gsm8k_train_7385",
+        "reward": 0.0,
+        "mean_logp": -0.3139689862728119
+      },
+      {
+        "sample_id": "gsm8k_train_4699",
+        "reward": 1.0,
+        "mean_logp": -0.01547746080905199
+      },
+      {
+        "sample_id": "gsm8k_train_4699",
+        "reward": 0.0,
+        "mean_logp": -0.32865580916404724
+      },
+      {
+        "sample_id": "gsm8k_train_5164",
+        "reward": 1.0,
+        "mean_logp": -0.02078988589346409
+      },
+      {
+        "sample_id": "gsm8k_train_5164",
+        "reward": 0.0,
+        "mean_logp": -0.1697346270084381
+      }
+    ],
+    "heldout": [
+      {
+        "step": 200,
+        "program_loss": 0.014340736903250217,
+        "token_loss": 0.014381938613951206,
+        "success_mean_logp": -0.05736294761300087,
+        "failure_mean_logp": -0.39894405007362366,
+        "mean_gap": 0.3415811061859131,
+        "parameter_delta_norm": 5.231605574328723,
+        "raw_output_dtype": "torch.float32",
+        "per_program": [
+          {
+            "sample_id": "gsm8k_train_4888",
+            "reward": 1.0,
+            "mean_logp": -0.018909819424152374
+          },
+          {
+            "sample_id": "gsm8k_train_4888",
+            "reward": 0.0,
+            "mean_logp": -0.607014000415802
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "reward": 1.0,
+            "mean_logp": -0.027659818530082703
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "reward": 0.0,
+            "mean_logp": -0.17293556034564972
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "reward": 1.0,
+            "mean_logp": -0.11619038879871368
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "reward": 0.0,
+            "mean_logp": -0.151057630777359
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "reward": 1.0,
+            "mean_logp": -0.01703154668211937
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "reward": 0.0,
+            "mean_logp": -0.20417442917823792
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "reward": 1.0,
+            "mean_logp": -0.05502087250351906
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "reward": 0.0,
+            "mean_logp": -1.7690649032592773
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "reward": 1.0,
+            "mean_logp": -0.042811159044504166
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "reward": 0.0,
+            "mean_logp": -0.1181536316871643
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "reward": 1.0,
+            "mean_logp": -0.04375844821333885
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "reward": 0.0,
+            "mean_logp": -0.08305048942565918
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "reward": 1.0,
+            "mean_logp": -0.13752153515815735
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "reward": 0.0,
+            "mean_logp": -0.08610180765390396
+          }
+        ]
+      },
+      {
+        "step": 200,
+        "program_loss": 0.0307096466422081,
+        "token_loss": 0.03330908343195915,
+        "success_mean_logp": -0.1228385865688324,
+        "failure_mean_logp": -0.393322616815567,
+        "mean_gap": 0.2704840302467346,
+        "parameter_delta_norm": 5.231605574328723,
+        "raw_output_dtype": "torch.float32",
+        "per_program": [
+          {
+            "sample_id": "gsm8k_train_4888",
+            "reward": 1.0,
+            "mean_logp": -0.010603483766317368
+          },
+          {
+            "sample_id": "gsm8k_train_4888",
+            "reward": 0.0,
+            "mean_logp": -0.034587275236845016
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "reward": 1.0,
+            "mean_logp": -0.03891594707965851
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "reward": 0.0,
+            "mean_logp": -0.021760515868663788
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "reward": 1.0,
+            "mean_logp": -0.16162259876728058
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "reward": 0.0,
+            "mean_logp": -0.07848615199327469
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "reward": 1.0,
+            "mean_logp": -0.027562398463487625
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "reward": 0.0,
+            "mean_logp": -0.19609101116657257
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "reward": 1.0,
+            "mean_logp": -0.343838632106781
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "reward": 0.0,
+            "mean_logp": -1.4298570156097412
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "reward": 1.0,
+            "mean_logp": -0.2321789264678955
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "reward": 0.0,
+            "mean_logp": -0.3701905310153961
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "reward": 1.0,
+            "mean_logp": -0.11234782636165619
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "reward": 0.0,
+            "mean_logp": -0.936444878578186
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "reward": 1.0,
+            "mean_logp": -0.055638864636421204
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "reward": 0.0,
+            "mean_logp": -0.0791635811328888
+          }
+        ]
+      },
+      {
+        "step": 200,
+        "program_loss": 0.016020208597183228,
+        "token_loss": 0.014761229045689106,
+        "success_mean_logp": -0.06408083438873291,
+        "failure_mean_logp": -0.2253868728876114,
+        "mean_gap": 0.16130603849887848,
+        "parameter_delta_norm": 5.231605574328723,
+        "raw_output_dtype": "torch.float32",
+        "per_program": [
+          {
+            "sample_id": "gsm8k_train_4888",
+            "reward": 1.0,
+            "mean_logp": -0.12214498221874237
+          },
+          {
+            "sample_id": "gsm8k_train_4888",
+            "reward": 0.0,
+            "mean_logp": -0.035635266453027725
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "reward": 1.0,
+            "mean_logp": -0.02917322888970375
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "reward": 0.0,
+            "mean_logp": -0.18324562907218933
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "reward": 1.0,
+            "mean_logp": -0.047699470072984695
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "reward": 0.0,
+            "mean_logp": -0.6450330018997192
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "reward": 1.0,
+            "mean_logp": -0.0014433005126193166
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "reward": 0.0,
+            "mean_logp": -0.19395758211612701
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "reward": 1.0,
+            "mean_logp": -0.017393168061971664
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "reward": 0.0,
+            "mean_logp": -0.20353835821151733
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "reward": 1.0,
+            "mean_logp": -0.09067802131175995
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "reward": 0.0,
+            "mean_logp": -0.0506996214389801
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "reward": 1.0,
+            "mean_logp": -0.05977495014667511
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "reward": 0.0,
+            "mean_logp": -0.08647873997688293
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "reward": 1.0,
+            "mean_logp": -0.14433957636356354
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "reward": 0.0,
+            "mean_logp": -0.40450677275657654
+          }
+        ]
+      },
+      {
+        "step": 200,
+        "program_loss": 0.04758443683385849,
+        "token_loss": 0.050614066421985626,
+        "success_mean_logp": -0.19033774733543396,
+        "failure_mean_logp": -0.19963708519935608,
+        "mean_gap": 0.009299326688051224,
+        "parameter_delta_norm": 5.231605574328723,
+        "raw_output_dtype": "torch.float32",
+        "per_program": [
+          {
+            "sample_id": "gsm8k_train_4888",
+            "reward": 1.0,
+            "mean_logp": -0.004854931496083736
+          },
+          {
+            "sample_id": "gsm8k_train_4888",
+            "reward": 0.0,
+            "mean_logp": -0.05734891816973686
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "reward": 1.0,
+            "mean_logp": -0.2335769385099411
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "reward": 0.0,
+            "mean_logp": -0.03665996715426445
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "reward": 1.0,
+            "mean_logp": -0.37249234318733215
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "reward": 0.0,
+            "mean_logp": -0.25636231899261475
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "reward": 1.0,
+            "mean_logp": -0.018599949777126312
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "reward": 0.0,
+            "mean_logp": -0.15645669400691986
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "reward": 1.0,
+            "mean_logp": -0.029305649921298027
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "reward": 0.0,
+            "mean_logp": -0.5261709094047546
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "reward": 1.0,
+            "mean_logp": -0.6920344829559326
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "reward": 0.0,
+            "mean_logp": -0.11938115209341049
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "reward": 1.0,
+            "mean_logp": -0.13449910283088684
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "reward": 0.0,
+            "mean_logp": -0.35864725708961487
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "reward": 1.0,
+            "mean_logp": -0.03733867406845093
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "reward": 0.0,
+            "mean_logp": -0.08606947958469391
+          }
+        ]
+      }
+    ]
+  },
+  "gap_delta": 0.0943211019039154,
+  "program_loss_delta": -0.02023804630152881
+}

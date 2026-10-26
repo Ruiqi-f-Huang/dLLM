@@ -1,0 +1,24 @@
+Seed set to 1
+Saving the dataset (0/1 shards):   0%|          | 0/5682 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|██████████| 5682/5682 [00:00<00:00, 249717.46 examples/s]Saving the dataset (1/1 shards): 100%|██████████| 5682/5682 [00:00<00:00, 247641.58 examples/s]
+Saving the dataset (0/1 shards):   0%|          | 0/632 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|██████████| 632/632 [00:00<00:00, 118944.63 examples/s]Saving the dataset (1/1 shards): 100%|██████████| 632/632 [00:00<00:00, 115760.52 examples/s]
+Seed set to 1
+Traceback (most recent call last):
+  File "/root/autodl-tmp/s-flm/lift-pilot-20261023-01/source/scripts/run_lift_pilot.py", line 136, in <module>
+    main()
+  File "/root/autodl-tmp/s-flm/lift-pilot-20261023-01/source/scripts/run_lift_pilot.py", line 105, in main
+    command(run, f'train-{arm}', ['main.py', '--config-name', f'sft-lift-{arm}',
+  File "/root/autodl-tmp/s-flm/lift-pilot-20261023-01/source/scripts/run_lift_pilot.py", line 80, in command
+    subprocess.run([sys.executable, '-u', *args], cwd=ROOT, stdout=log,
+  File "/root/miniconda3/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/root/venvs/s-flm/bin/python', '-u', 'main.py', '--config-name', 'sft-lift-b', 'training.finetune_path=/root/autodl-tmp/s-flm/lift-pilot-20261023-01/source/checkpoints/tinygsm/mdlm.ckpt', 'data.train_file=/root/autodl-tmp/s-flm/lift-pilot-20261023-01/source/data/gsm8k_pot/sft_train.jsonl', 'data.validation_file=/root/autodl-tmp/s-flm/lift-pilot-20261023-01/source/data/gsm8k_pot/sft_validation.jsonl', 'data.cache_dir=/root/autodl-tmp/s-flm/lift-pilot-20261023-01/data_cache', 'hydra.run.dir=/root/autodl-tmp/s-flm/lift-pilot-20261023-01/train-b', 'wandb.offline=true', 'wandb.name=lift-b-200', '+trainer.enable_progress_bar=false']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/root/autodl-tmp/s-flm/lift-pilot-20261023-01/source/scripts/run_lift_pilot.py", line 136, in <module>
+    main()
+  File "/root/autodl-tmp/s-flm/lift-pilot-20261023-01/source/scripts/run_lift_pilot.py", line 105, in main
+    command(run, f'train-{arm}', ['main.py', '--config-name', f'sft-lift-{arm}',
+  File "/root/autodl-tmp/s-flm/lift-pilot-20261023-01/source/scripts/run_lift_pilot.py", line 80, in command
+    subprocess.run([sys.executable, '-u', *args], cwd=ROOT, stdout=log,
+  File "/root/miniconda3/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/root/venvs/s-flm/bin/python', '-u', 'main.py', '--config-name', 'sft-lift-b', 'training.finetune_path=/root/autodl-tmp/s-flm/lift-pilot-20261023-01/source/checkpoints/tinygsm/mdlm.ckpt', 'data.train_file=/root/autodl-tmp/s-flm/lift-pilot-20261023-01/source/data/gsm8k_pot/sft_train.jsonl', 'data.validation_file=/root/autodl-tmp/s-flm/lift-pilot-20261023-01/source/data/gsm8k_pot/sft_validation.jsonl', 'data.cache_dir=/root/autodl-tmp/s-flm/lift-pilot-20261023-01/data_cache', 'hydra.run.dir=/root/autodl-tmp/s-flm/lift-pilot-20261023-01/train-b', 'wandb.offline=true', 'wandb.name=lift-b-200', '+trainer.enable_progress_bar=false']' returned non-zero exit status 1.

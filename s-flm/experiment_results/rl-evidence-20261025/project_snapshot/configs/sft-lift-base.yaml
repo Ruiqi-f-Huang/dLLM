@@ -1,0 +1,26 @@
+# MDLM adaptation of LIFT; A/B/C share data, optimizer and validation.
+defaults:
+  - sft-a800-lora-control
+  - _self_
+
+lift:
+  enabled: true
+  policy: baseline
+
+loader:
+  num_workers: 0
+trainer:
+  max_steps: 200
+  max_epochs: -1
+  val_check_interval: 100
+  num_sanity_val_steps: 0
+callbacks:
+  milestone_checkpoint:
+    milestones: [100, 200]
+
+wandb:
+  name: mdlm-lift-${lift.policy}-${now:%Y%m%d-%H%M%S}
+  tags: [mdlm, gsm8k-pot, sft, lora, lift-pilot]
+hydra:
+  run:
+    dir: ${hydra:runtime.cwd}/outputs/sft/${now:%Y%m%d-%H%M%S}-lift-${lift.policy}

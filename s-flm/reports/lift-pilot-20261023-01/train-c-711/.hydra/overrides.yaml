@@ -1,0 +1,11 @@
+- training.finetune_path=/root/autodl-tmp/s-flm/lift-pilot-20261023-01/source/checkpoints/tinygsm/mdlm.ckpt
+- data.train_file=/root/autodl-tmp/s-flm/lift-pilot-20261023-01/source/data/gsm8k_pot/sft_train.jsonl
+- data.validation_file=/root/autodl-tmp/s-flm/lift-pilot-20261023-01/source/data/gsm8k_pot/sft_validation.jsonl
+- data.cache_dir=/root/autodl-tmp/s-flm/lift-pilot-20261023-01/data_cache
+- checkpointing.resume_from_ckpt=true
+- checkpointing.resume_ckpt_path=/root/autodl-tmp/s-flm/lift-pilot-20261023-01/train-c/checkpoints/step-000200.ckpt
+- trainer.max_steps=711
+- callbacks.milestone_checkpoint.milestones=[300,500,711]
+- wandb.offline=true
+- wandb.name=lift-c-continue-200-to-711
+- +trainer.enable_progress_bar=false

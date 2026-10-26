@@ -1,0 +1,6 @@
+{
+  "evaluation_seconds": 1157.0185198150575,
+  "peak_allocated_bytes": 3823916032,
+  "peak_reserved_bytes": 7400849408,
+  "gpu": "NVIDIA A800-SXM4-80GB"
+}

@@ -1,0 +1,15 @@
+{"time":"2026-10-22T17:48:02.380516258+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/root/autodl-tmp/s-flm/outputs/sft/20261022-lora-result-lr1e5-01/wandb/run-20261022_174802-co4m5xvi/logs/debug-core.log"}
+{"time":"2026-10-22T17:48:03.056851311+08:00","level":"INFO","msg":"created new stream","id":"co4m5xvi"}
+{"time":"2026-10-22T17:48:03.056893169+08:00","level":"INFO","msg":"stream: started","id":"co4m5xvi"}
+{"time":"2026-10-22T17:48:03.056906562+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"co4m5xvi"}
+{"time":"2026-10-22T17:48:03.05693628+08:00","level":"INFO","msg":"handler: started","stream_id":"co4m5xvi"}
+{"time":"2026-10-22T17:48:03.056911721+08:00","level":"INFO","msg":"sender: started","stream_id":"co4m5xvi"}
+{"time":"2026-10-22T17:48:04.037184651+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2026-10-22T17:49:13.556466508+08:00","level":"INFO","msg":"stream: closing","id":"co4m5xvi"}
+{"time":"2026-10-22T17:49:13.556518182+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2026-10-22T17:49:13.556598885+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2026-10-22T17:49:14.877137321+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-10-22T17:49:15.843111859+08:00","level":"INFO","msg":"handler: closed","stream_id":"co4m5xvi"}
+{"time":"2026-10-22T17:49:15.843180053+08:00","level":"INFO","msg":"sender: closed","stream_id":"co4m5xvi"}
+{"time":"2026-10-22T17:49:15.843171537+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"co4m5xvi"}
+{"time":"2026-10-22T17:49:15.843278177+08:00","level":"INFO","msg":"stream: closed","id":"co4m5xvi"}

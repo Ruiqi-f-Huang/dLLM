@@ -1,0 +1,23 @@
+{
+  "sampler": "AncestralSampler",
+  "steps_policy": "full",
+  "noise_removal": "ancestral",
+  "use_float64": true,
+  "temperature": 0.1,
+  "eps": 1e-05,
+  "nfe": 32,
+  "num_tokens": 512,
+  "diffusion_type": "absorbing",
+  "tokenizer_vocab_sha256": "d8de81e9d39ad322c5b584b62d056300d31834cabb5d536104b1ac4bece42801",
+  "special_ids": [
+    0,
+    0,
+    49152,
+    49153
+  ],
+  "separator_ids": [
+    76,
+    94
+  ],
+  "prefix_sha256": "93944550d5af18acf2dc6a2987d200fdf4ad767f0fc6f125fdb5d0da12bd1ee8"
+}

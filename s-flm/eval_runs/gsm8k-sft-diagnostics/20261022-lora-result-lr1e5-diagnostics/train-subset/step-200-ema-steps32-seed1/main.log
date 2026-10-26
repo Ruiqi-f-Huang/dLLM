@@ -1,0 +1,6 @@
+[2026-10-22 18:14:58,849][__main__][INFO] - Starting GSM8K eval.
+[2026-10-22 18:15:34,634][__main__][INFO] - Rank 0: average NFE per batch: 32.0
+[2026-10-22 18:15:34,636][__main__][INFO] - Rank 0: saved 256 records to /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e5-diagnostics/train-subset/step-200-ema-steps32-seed1/rank_0000.json
+[2026-10-22 18:15:34,648][__main__][INFO] - Total records evaluated: 256
+[2026-10-22 18:15:34,689][__main__][INFO] - GSM8K accuracy: 8.20% (21/256)
+[2026-10-22 18:15:34,691][__main__][INFO] - Results saved to /root/autodl-tmp/s-flm/outputs/eval/20261022-lora-result-lr1e5-diagnostics/train-subset/step-200-ema-steps32-seed1/results.json

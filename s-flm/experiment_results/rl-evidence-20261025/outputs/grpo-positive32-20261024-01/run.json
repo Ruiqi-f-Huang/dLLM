@@ -1,0 +1,8 @@
+{
+  "base": "/root/s-flm/checkpoints/tinygsm/mdlm.ckpt",
+  "online_run": "/root/autodl-tmp/s-flm/outputs/grpo-fp32-online-20261024-01",
+  "positive8_evaluation": "/root/autodl-tmp/s-flm/outputs/grpo-partial75-positive-eval-20261024-02",
+  "validation": "/root/s-flm/data/gsm8k_pot_result/sft_validation.jsonl",
+  "train_data": "/root/s-flm/data/gsm8k_pot_result/sft_train.jsonl",
+  "output": "/root/autodl-tmp/s-flm/outputs/grpo-positive32-20261024-01"
+}

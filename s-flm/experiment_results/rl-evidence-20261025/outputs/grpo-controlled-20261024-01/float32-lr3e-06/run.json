@@ -1,0 +1,11 @@
+{
+  "base": "/root/s-flm/checkpoints/tinygsm/mdlm.ckpt",
+  "questions": "/root/autodl-tmp/s-flm/outputs/grpo-controlled-20261024-01/questions.jsonl",
+  "pairs": "/root/autodl-tmp/s-flm/outputs/grpo-controlled-20261024-01/pairs.jsonl",
+  "output": "/root/autodl-tmp/s-flm/outputs/grpo-controlled-20261024-01/float32-lr3e-06",
+  "precision": "float32",
+  "lr": 3e-06,
+  "steps": 200,
+  "count": 8,
+  "microbatch": 2
+}

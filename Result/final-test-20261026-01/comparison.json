@@ -1,0 +1,95 @@
+{
+  "base_ema-to-sft711_ema": {
+    "seeds": {
+      "1": {
+        "mean_delta": -0.001516300227445034,
+        "question_bootstrap_ci95": [
+          -0.006823351023502654,
+          0.0037907505686125853
+        ],
+        "improved_questions": 5,
+        "worsened_questions": 7
+      },
+      "2": {
+        "mean_delta": 0.000758150113722517,
+        "question_bootstrap_ci95": [
+          -0.004548900682335102,
+          0.006065200909780136
+        ],
+        "improved_questions": 7,
+        "worsened_questions": 6
+      }
+    },
+    "combined": {
+      "mean_delta": -0.0003790750568612585,
+      "question_bootstrap_ci95": [
+        -0.004169825625473844,
+        0.003411675511751327
+      ],
+      "improved_questions": 12,
+      "worsened_questions": 13
+    }
+  },
+  "base_ema-to-positive32_raw": {
+    "seeds": {
+      "1": {
+        "mean_delta": -0.004548900682335102,
+        "question_bootstrap_ci95": [
+          -0.018953752843062926,
+          0.009855951478392721
+        ],
+        "improved_questions": 45,
+        "worsened_questions": 51
+      },
+      "2": {
+        "mean_delta": 0.014404852160727824,
+        "question_bootstrap_ci95": [
+          0.000758150113722517,
+          0.02880970432145565
+        ],
+        "improved_questions": 60,
+        "worsened_questions": 41
+      }
+    },
+    "combined": {
+      "mean_delta": 0.004927975739196361,
+      "question_bootstrap_ci95": [
+        -0.004927975739196361,
+        0.015163002274450341
+      ],
+      "improved_questions": 95,
+      "worsened_questions": 85
+    }
+  },
+  "sft711_ema-to-positive32_raw": {
+    "seeds": {
+      "1": {
+        "mean_delta": -0.003032600454890068,
+        "question_bootstrap_ci95": [
+          -0.01819560272934041,
+          0.011372251705837756
+        ],
+        "improved_questions": 47,
+        "worsened_questions": 51
+      },
+      "2": {
+        "mean_delta": 0.013646702047005308,
+        "question_bootstrap_ci95": [
+          -0.000758150113722517,
+          0.02880970432145565
+        ],
+        "improved_questions": 64,
+        "worsened_questions": 46
+      }
+    },
+    "combined": {
+      "mean_delta": 0.00530705079605762,
+      "question_bootstrap_ci95": [
+        -0.00530705079605762,
+        0.016300227445034118
+      ],
+      "improved_questions": 101,
+      "worsened_questions": 90
+    }
+  }
+}

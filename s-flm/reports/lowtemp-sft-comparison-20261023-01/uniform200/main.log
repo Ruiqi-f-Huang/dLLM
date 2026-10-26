@@ -1,0 +1,6 @@
+[2026-10-23 14:57:01,923][__main__][INFO] - Starting GSM8K eval.
+[2026-10-23 14:58:44,917][__main__][INFO] - Rank 0: average NFE per batch: 32.0
+[2026-10-23 14:58:44,920][__main__][INFO] - Rank 0: saved 632 records to /root/autodl-tmp/s-flm/outputs/lowtemp-sft-comparison-20261023-01/uniform200/rank_0000.json
+[2026-10-23 14:58:44,932][__main__][INFO] - Total records evaluated: 632
+[2026-10-23 14:58:49,996][__main__][INFO] - GSM8K accuracy: 28.01% (177/632)
+[2026-10-23 14:58:49,999][__main__][INFO] - Results saved to /root/autodl-tmp/s-flm/outputs/lowtemp-sft-comparison-20261023-01/uniform200/results.json

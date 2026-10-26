@@ -1,0 +1,14 @@
+{
+  "records": 1319,
+  "question_only_prefix_verified": true,
+  "test_sha256": "c93390d9990e8232ef01ec74153f8164f8a277ceffec30523b08a843861b001c",
+  "tokenizer_revision": "1d461723eec654e65efdc40cf49301c89c0c92f4",
+  "temperature": 0.1,
+  "nfe": 32,
+  "sampler": "ancestral",
+  "disable_ema": false,
+  "lora_enabled": false,
+  "length": 512,
+  "seed": 1,
+  "eval_batch_size": 32
+}

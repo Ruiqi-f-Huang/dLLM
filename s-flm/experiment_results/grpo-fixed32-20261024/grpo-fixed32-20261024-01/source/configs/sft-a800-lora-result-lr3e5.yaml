@@ -1,0 +1,21 @@
+# LoRA SFT on the result-normalized GSM8K PoT data.
+# This changes only the dataset and learning rate relative to the LoRA control.
+defaults:
+  - sft-a800-lora-control
+  - override /data: gsm8k-pot-result
+  - _self_
+
+optim:
+  lr: 3e-5
+
+callbacks:
+  milestone_checkpoint:
+    milestones: [100, 200, 711]
+
+wandb:
+  name: mdlm-sft-lora-result-lr3e5-${now:%Y%m%d-%H%M%S}
+  tags: [mdlm, gsm8k-pot, sft, lora, result-normalized, lr3e-5]
+
+hydra:
+  run:
+    dir: ${hydra:runtime.cwd}/outputs/sft/${now:%Y%m%d}-lora-result-lr3e5-01

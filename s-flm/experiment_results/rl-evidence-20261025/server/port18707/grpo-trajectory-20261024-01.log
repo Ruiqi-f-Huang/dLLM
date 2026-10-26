@@ -1,0 +1,45 @@
+Seed set to 42
+{"collected_questions": 1, "total_questions": 32}
+{"collected_questions": 2, "total_questions": 32}
+{"collected_questions": 3, "total_questions": 32}
+{"collected_questions": 4, "total_questions": 32}
+{"collected_questions": 5, "total_questions": 32}
+{"collected_questions": 6, "total_questions": 32}
+{"collected_questions": 7, "total_questions": 32}
+{"collected_questions": 8, "total_questions": 32}
+{"collected_questions": 9, "total_questions": 32}
+{"collected_questions": 10, "total_questions": 32}
+{"collected_questions": 11, "total_questions": 32}
+{"collected_questions": 12, "total_questions": 32}
+{"collected_questions": 13, "total_questions": 32}
+{"collected_questions": 14, "total_questions": 32}
+{"collected_questions": 15, "total_questions": 32}
+{"collected_questions": 16, "total_questions": 32}
+{"collected_questions": 17, "total_questions": 32}
+{"collected_questions": 18, "total_questions": 32}
+{"collected_questions": 19, "total_questions": 32}
+{"collected_questions": 20, "total_questions": 32}
+{"collected_questions": 21, "total_questions": 32}
+{"collected_questions": 22, "total_questions": 32}
+{"collected_questions": 23, "total_questions": 32}
+{"collected_questions": 24, "total_questions": 32}
+{"collected_questions": 25, "total_questions": 32}
+{"collected_questions": 26, "total_questions": 32}
+{"collected_questions": 27, "total_questions": 32}
+{"collected_questions": 28, "total_questions": 32}
+{"collected_questions": 29, "total_questions": 32}
+{"collected_questions": 30, "total_questions": 32}
+{"collected_questions": 31, "total_questions": 32}
+{"collected_questions": 32, "total_questions": 32}
+Seed set to 42
+{"model": "base", "scored": 8, "total": 320}
+{"model": "base", "scored": 72, "total": 320}
+{"model": "base", "scored": 136, "total": 320}
+{"model": "base", "scored": 200, "total": 320}
+{"model": "base", "scored": 264, "total": 320}
+Seed set to 42
+{"model": "rl250", "scored": 8, "total": 320}
+{"model": "rl250", "scored": 72, "total": 320}
+{"model": "rl250", "scored": 136, "total": 320}
+{"model": "rl250", "scored": 200, "total": 320}
+{"model": "rl250", "scored": 264, "total": 320}

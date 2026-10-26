@@ -1,0 +1,9 @@
+[2026-10-21 16:08:36,411][__main__][INFO] - Starting GSM8K eval.
+[2026-10-21 16:08:40,549][dataloader][INFO] - Preparing GSM8K test dataset from /claire-rcp-scratch/home/deschena/icml2026_project/data/gsm8k_test.json
+[2026-10-21 16:09:25,877][__main__][INFO] - Starting GSM8K eval.
+[2026-10-21 16:09:29,841][dataloader][INFO] - Preparing GSM8K test dataset from /root/s-flm/data/gsm8k_test.json
+[2026-10-21 17:15:06,324][__main__][INFO] - Rank 0: average NFE per batch: 1024.0
+[2026-10-21 17:15:06,334][__main__][INFO] - Rank 0: saved 1319 records to /root/autodl-tmp/s-flm/eval_runs/gsm8k-test/sft-ema-steps1024-seed1/rank_0000.json
+[2026-10-21 17:15:06,359][__main__][INFO] - Total records evaluated: 1319
+[2026-10-21 17:15:06,515][__main__][INFO] - GSM8K accuracy: 3.71% (49/1319)
+[2026-10-21 17:15:06,524][__main__][INFO] - Results saved to /root/autodl-tmp/s-flm/eval_runs/gsm8k-test/sft-ema-steps1024-seed1/results.json

@@ -1,0 +1,45 @@
+{
+  "os": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+  "python": "CPython 3.12.3",
+  "startedAt": "2026-10-21T07:06:28.241366Z",
+  "args": [
+    "--config-name",
+    "sft-a800",
+    "training.finetune_path=/root/s-flm/checkpoints/tinygsm/mdlm.ckpt",
+    "data.train_file=/root/s-flm/data/gsm8k_pot/sft_train.jsonl",
+    "data.validation_file=/root/s-flm/data/gsm8k_pot/sft_validation.jsonl",
+    "data.cache_dir=/root/s-flm/data_cache/gsm8k_pot",
+    "hydra.run.dir=/root/autodl-tmp/s-flm/outputs/sft/20261021-a800-formal-01",
+    "wandb.offline=true"
+  ],
+  "program": "-m main",
+  "root": "/root/autodl-tmp/s-flm/outputs/sft/20261021-a800-formal-01",
+  "host": "autodl-container-sxau8v9xxd-0bcb976a",
+  "executable": "/root/venvs/s-flm/bin/python",
+  "cpu_count": 64,
+  "cpu_count_logical": 128,
+  "gpu": "NVIDIA A800-SXM4-80GB",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "32212254720",
+      "used": "13420978176"
+    }
+  },
+  "memory": {
+    "total": "1081812889600"
+  },
+  "cpu": {
+    "count": 64,
+    "countLogical": 128
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA A800-SXM4-80GB",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    }
+  ],
+  "cudaVersion": "13.0"
+}

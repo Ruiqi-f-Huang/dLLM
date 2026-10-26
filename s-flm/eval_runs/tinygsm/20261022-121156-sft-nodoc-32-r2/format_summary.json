@@ -1,0 +1,104 @@
+{
+  "num_total": 1319,
+  "reported_accuracy": 0.008339651250947688,
+  "counts": {
+    "empty": 0,
+    "has_triple_quotes": 91,
+    "unbalanced_triple_quotes": 91,
+    "has_any_def": 1314,
+    "has_expected_def_text": 1312,
+    "extracted_syntax_valid": 639,
+    "module_exec_success": 639,
+    "expected_function_exists": 638,
+    "function_call_success": 342,
+    "numeric_output": 49,
+    "correct": 11
+  },
+  "rates_percent": {
+    "empty": 0.0,
+    "has_triple_quotes": 6.9,
+    "unbalanced_triple_quotes": 6.9,
+    "has_any_def": 99.62,
+    "has_expected_def_text": 99.47,
+    "extracted_syntax_valid": 48.45,
+    "module_exec_success": 48.45,
+    "expected_function_exists": 48.37,
+    "function_call_success": 25.93,
+    "numeric_output": 3.71,
+    "correct": 0.83
+  },
+  "response_chars": {
+    "min": 33,
+    "median": 194,
+    "mean": 206.3,
+    "max": 556
+  },
+  "top_syntax_errors": [
+    [
+      "SyntaxError: expected ':' (<sample>, line 1)",
+      299
+    ],
+    [
+      "SyntaxError: invalid syntax (<sample>, line 2)",
+      69
+    ],
+    [
+      "SyntaxError: invalid syntax (<sample>, line 1)",
+      52
+    ],
+    [
+      "SyntaxError: unterminated triple-quoted string literal (detected at line 6) (<sample>, line 2)",
+      17
+    ],
+    [
+      "SyntaxError: invalid decimal literal (<sample>, line 2)",
+      17
+    ],
+    [
+      "SyntaxError: unterminated triple-quoted string literal (detected at line 8) (<sample>, line 2)",
+      17
+    ],
+    [
+      "SyntaxError: unterminated triple-quoted string literal (detected at line 7) (<sample>, line 2)",
+      16
+    ],
+    [
+      "SyntaxError: unterminated string literal (detected at line 2) (<sample>, line 2)",
+      11
+    ]
+  ],
+  "top_exec_errors": [
+    [
+      "NameError: name 'total' is not defined",
+      5
+    ],
+    [
+      "NameError: name 'result' is not defined",
+      5
+    ],
+    [
+      "TypeError: cannot unpack non-iterable int object",
+      4
+    ],
+    [
+      "ZeroDivisionError: division by zero",
+      4
+    ],
+    [
+      "NameError: name 'result_' is not defined",
+      3
+    ],
+    [
+      "NameError: name 'miles' is not defined",
+      2
+    ],
+    [
+      "TypeError: cannot unpack non-iterable float object",
+      2
+    ],
+    [
+      "NameError: name 'initial_' is not defined",
+      2
+    ]
+  ]
+}

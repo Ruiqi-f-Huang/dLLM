@@ -1,0 +1,273 @@
+{
+  "host": "RuiqideMacBook-Pro-10.local",
+  "workspace": "/Users/ruiqi/Project/dLLM/s-flm",
+  "removed_bytes": 56120971,
+  "removed": [
+    {
+      "path": "/Users/ruiqi/Project/dLLM/s-flm/__pycache__",
+      "bytes": 165742,
+      "reason": "rebuildable Python bytecode"
+    },
+    {
+      "path": "/Users/ruiqi/Project/dLLM/s-flm/callbacks/__pycache__",
+      "bytes": 11195,
+      "reason": "rebuildable Python bytecode"
+    },
+    {
+      "path": "/Users/ruiqi/Project/dLLM/s-flm/tests/__pycache__",
+      "bytes": 49872,
+      "reason": "rebuildable Python bytecode"
+    },
+    {
+      "path": "/Users/ruiqi/Project/dLLM/s-flm/models/__pycache__",
+      "bytes": 7915,
+      "reason": "rebuildable Python bytecode"
+    },
+    {
+      "path": "/Users/ruiqi/Project/dLLM/s-flm/scripts/__pycache__",
+      "bytes": 240714,
+      "reason": "rebuildable Python bytecode"
+    },
+    {
+      "path": "/Users/ruiqi/Project/dLLM/s-flm/scripts/data/__pycache__",
+      "bytes": 86573,
+      "reason": "rebuildable Python bytecode"
+    },
+    {
+      "path": "/Users/ruiqi/Project/dLLM/s-flm/scripts/sample/tinygsm/__pycache__",
+      "bytes": 3934,
+      "reason": "rebuildable Python bytecode"
+    },
+    {
+      "path": "/tmp/codeonly-eos-audit.tgz",
+      "bytes": 4940,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/blackwell-evidence.tgz",
+      "bytes": 6920,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/overfit16-mask-diagnostic.tgz",
+      "bytes": 11894,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/overfit16-fullmask-codeonly-results.tgz",
+      "bytes": 33461,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/overfit16-results.tgz",
+      "bytes": 851570,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/overfit16-fullmask-codeonly-resume3000.tgz",
+      "bytes": 116010,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/s-flm-wandb.tar.gz",
+      "bytes": 8006,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/overfit16-resume3000-results.tgz",
+      "bytes": 907684,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/lowtemp-sft-comparison-20261023-01-evidence.tgz",
+      "bytes": 1372108,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/gsm8k_pot_result_bundle.tgz",
+      "bytes": 1707270,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/selftrain-pilot-start.tgz",
+      "bytes": 145467,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/s-flm-workspace-runtime.tgz",
+      "bytes": 22164808,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/sflm-target-learning-diagnostics.tar.gz",
+      "bytes": 1780796,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/s-flm-a800-docs.tar.gz",
+      "bytes": 7178,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/s-flm-sft-validation.tar.gz",
+      "bytes": 15856,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/lowtemp-comparison-code.tgz",
+      "bytes": 2979,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/s-flm-overfit16.tgz",
+      "bytes": 6594,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/sft-target-learning-results.tar.gz",
+      "bytes": 963802,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/s-flm-sft-review.tar.gz",
+      "bytes": 10101,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/s-flm-monitor-final.tar.gz",
+      "bytes": 6705,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/overfit16-question-conditioning.tgz",
+      "bytes": 19100,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/s-flm-sft-review-final.tar.gz",
+      "bytes": 15589,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/selftrain-pilot-workflow.tgz",
+      "bytes": 5942,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/selftrain-pilot-20261023-01-evidence.tgz",
+      "bytes": 6077691,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/overfit16-gradient-diagnostic.tgz",
+      "bytes": 6774,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/selftrain-pilot-fixed-pool.tgz",
+      "bytes": 143671,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/s-flm-monitor.tar.gz",
+      "bytes": 15125,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/sflm-cot-comments-pilot-20261022.tar.gz",
+      "bytes": 1902383,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/s-flm-nodoc-sync.tar.gz",
+      "bytes": 1634763,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/sflm-cot-trim-code-20261022.tar.gz",
+      "bytes": 4270,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/overfit16-fixed-prefix-results.tgz",
+      "bytes": 64170,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/overfit16-fullmask-codeonly.tgz",
+      "bytes": 4009,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/base-test-temp01-32nfe-20261023-01-evidence.tgz",
+      "bytes": 699938,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/sflm-cot-pilot-runner-20261022.tar.gz",
+      "bytes": 6625,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/s-flm-a800-project.tar.gz",
+      "bytes": 3290459,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/semantic-weighted-20261023-01-evidence.tgz",
+      "bytes": 2636564,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/s-flm-sft-final.tar.gz",
+      "bytes": 18791,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/tmp/s-flm-sft-adaptation.tar.gz",
+      "bytes": 2985763,
+      "reason": "completed project transfer archive; extracted evidence retained"
+    },
+    {
+      "path": "/Users/ruiqi/Project/dLLM/s-flm/reports/sft-review/sft-review-evidence.tar.gz",
+      "bytes": 781358,
+      "reason": "all archive members verified byte-identical to extracted files"
+    },
+    {
+      "path": "/Users/ruiqi/Project/dLLM/s-flm/reports/sft-validation/sft-validation-records.tar.gz",
+      "bytes": 6753,
+      "reason": "all archive members verified byte-identical to extracted files"
+    },
+    {
+      "path": "/Users/ruiqi/Project/dLLM/s-flm/reports/a800-environment/a800-environment-evidence.tar.gz",
+      "bytes": 784399,
+      "reason": "all archive members verified byte-identical to extracted files"
+    },
+    {
+      "path": "/Users/ruiqi/Project/dLLM/s-flm/reports/sft-monitor-validation/sft-monitor-evidence.tar.gz",
+      "bytes": 769069,
+      "reason": "all archive members verified byte-identical to extracted files"
+    },
+    {
+      "path": "/Users/ruiqi/Project/dLLM/s-flm/eval_runs/gsm8k-sft-highnoise-mix50-200/highnoise-mix50-results.tar.gz",
+      "bytes": 1937206,
+      "reason": "all archive members verified byte-identical to extracted files"
+    },
+    {
+      "path": "/Users/ruiqi/Project/dLLM/s-flm/eval_runs/gsm8k-test/sft-ema-steps32-seed1/results.tar.gz",
+      "bytes": 370751,
+      "reason": "all archive members verified byte-identical to extracted files"
+    },
+    {
+      "path": "/Users/ruiqi/Project/dLLM/s-flm/eval_runs/gsm8k-test/base-ema-steps32-seed1/results.tar.gz",
+      "bytes": 383180,
+      "reason": "all archive members verified byte-identical to extracted files"
+    },
+    {
+      "path": "/Users/ruiqi/Project/dLLM/s-flm/checkpoints/sft/20261021-a800-formal-01/metadata.tar.gz",
+      "bytes": 866534,
+      "reason": "all archive members verified byte-identical to extracted files"
+    }
+  ],
+  "preserved": "All checkpoints, datasets, source, experiment logs, evaluation records, W&B files, virtual environments and Hugging Face cache"
+}

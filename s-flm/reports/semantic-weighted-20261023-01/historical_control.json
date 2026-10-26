@@ -1,0 +1,102 @@
+{
+  "source": "eval_runs/gsm8k-sft-validation/20261022-lora-control-validation",
+  "hardware": "A800",
+  "protocol": "632 validation, EMA, ancestral, 32 NFE, seed 1, length 512, batch 32",
+  "checkpoint_retained_steps": [
+    200
+  ],
+  "milestones": [
+    {
+      "step": 0,
+      "num_correct": 54,
+      "num_total": 632,
+      "accuracy": 0.08544303797468354,
+      "python_parseable": 614,
+      "python_parseable_rate": 0.9715189873417721,
+      "unpaired_triple_quotes": 8,
+      "unpaired_triple_quotes_rate": 0.012658227848101266,
+      "results_file": "/root/autodl-tmp/s-flm/outputs/eval/20261022-lora-control-validation/step-0-ema-steps32-seed1/results.json"
+    },
+    {
+      "step": 100,
+      "num_correct": 54,
+      "num_total": 632,
+      "accuracy": 0.08544303797468354,
+      "python_parseable": 611,
+      "python_parseable_rate": 0.9667721518987342,
+      "unpaired_triple_quotes": 8,
+      "unpaired_triple_quotes_rate": 0.012658227848101266,
+      "results_file": "/root/autodl-tmp/s-flm/outputs/eval/20261022-lora-control-validation/step-100-ema-steps32-seed1/results.json"
+    },
+    {
+      "step": 200,
+      "num_correct": 55,
+      "num_total": 632,
+      "accuracy": 0.08702531645569621,
+      "python_parseable": 610,
+      "python_parseable_rate": 0.9651898734177216,
+      "unpaired_triple_quotes": 7,
+      "unpaired_triple_quotes_rate": 0.011075949367088608,
+      "results_file": "/root/autodl-tmp/s-flm/outputs/eval/20261022-lora-control-validation/step-200-ema-steps32-seed1/results.json"
+    },
+    {
+      "step": 711,
+      "num_correct": 53,
+      "num_total": 632,
+      "accuracy": 0.08386075949367089,
+      "python_parseable": 612,
+      "python_parseable_rate": 0.9683544303797469,
+      "unpaired_triple_quotes": 7,
+      "unpaired_triple_quotes_rate": 0.011075949367088608,
+      "results_file": "/root/autodl-tmp/s-flm/outputs/eval/20261022-lora-control-validation/step-711-ema-steps32-seed1/results.json"
+    }
+  ],
+  "paired": {
+    "method": "Per-record project sandbox_gsm8k.evaluate_samples, paired by fixed validation order; exact response equality uses raw generated strings.",
+    "sampling": {
+      "split": "sft_validation",
+      "num_samples": 632,
+      "seed": 1,
+      "steps": 32,
+      "weights": "EMA"
+    },
+    "rows": [
+      {
+        "step": 0,
+        "correct": 54,
+        "same_response_as_base": 632,
+        "base_correct_kept": 54,
+        "base_correct_lost": 0,
+        "base_wrong_became_correct": 0,
+        "both_wrong": 578
+      },
+      {
+        "step": 100,
+        "correct": 54,
+        "same_response_as_base": 521,
+        "base_correct_kept": 54,
+        "base_correct_lost": 0,
+        "base_wrong_became_correct": 0,
+        "both_wrong": 578
+      },
+      {
+        "step": 200,
+        "correct": 55,
+        "same_response_as_base": 535,
+        "base_correct_kept": 54,
+        "base_correct_lost": 0,
+        "base_wrong_became_correct": 1,
+        "both_wrong": 577
+      },
+      {
+        "step": 711,
+        "correct": 53,
+        "same_response_as_base": 458,
+        "base_correct_kept": 51,
+        "base_correct_lost": 3,
+        "base_wrong_became_correct": 2,
+        "both_wrong": 576
+      }
+    ]
+  }
+}

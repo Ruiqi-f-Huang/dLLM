@@ -1,0 +1,9 @@
+{
+  "base": "/root/s-flm/checkpoints/tinygsm/mdlm.ckpt",
+  "online_run": "/root/autodl-tmp/s-flm/outputs/grpo-fp32-online-20261024-01",
+  "output": "/root/autodl-tmp/s-flm/outputs/grpo-partial75-20261024-01/trajectory",
+  "trajectory_run": "/root/autodl-tmp/s-flm/outputs/grpo-trajectory-20261024-01",
+  "candidate_checkpoint": "/root/autodl-tmp/s-flm/outputs/grpo-partial75-20261024-01/train/step-000250.ckpt",
+  "trajectories": 2,
+  "batch_size": 8
+}

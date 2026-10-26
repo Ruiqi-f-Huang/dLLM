@@ -1,0 +1,81 @@
+[
+  {
+    "index": 134,
+    "sample_id": "gsm8k_test_0134",
+    "seed": 1,
+    "kind": "wrong-to-right",
+    "models": {
+      "base_ema": {
+        "text": "def simple_math_problem() -> int:\n    '''\n    Tom gets 4 car washes a month.\n    If each car wash costs $15 how much does he pay in a year?\n    '''\n    cost_per_month = 4 * 5\n    total_cost = cost_per_month * 12\n    result = total_cost\n    return result",
+        "archived_reward": 0.0,
+        "raw_reexecution": {
+          "status": "returned",
+          "value": 240
+        }
+      },
+      "positive32_raw": {
+        "text": "def simple_math_problem() -> int:\n    '''\n    Tom gets 4 car washes a month.\n    If each car wash costs $15 how much does he pay in a year?\n    '''\n    car_washes_per_month = 4\n    cost_per_wash = 15\n    months_per_year = 12\n    total =  car_washes_per_month * cost_per_wash * months_per_year\n    result = total\n    return result",
+        "archived_reward": 1.0,
+        "raw_reexecution": {
+          "status": "returned",
+          "value": 720
+        }
+      }
+    },
+    "question": "Tom gets 4 car washes a month.  If each car wash costs $15 how much does he pay in a year?",
+    "gold_answer": "He gets 4*12=<<4*12=48>>48 car washes a year\nThat means it cost 48*15=$<<48*15=720>>720\n#### 720"
+  },
+  {
+    "index": 190,
+    "sample_id": "gsm8k_test_0190",
+    "seed": 1,
+    "kind": "sft-failure",
+    "models": {
+      "base_ema": {
+        "text": "def simple_math_problem() -> int:\n    \"\"\"\n    John collects peaches for 3 hours.\n     He can collect 2 peaches a minute.\n    How many peaches does he collect?\n    \"\"\"\n    peaches = 2\n    minutes = 3\n    peaches_per_hour = 60\n    total = minutes * peaches_per_hour\n    result = total*peaches\n\n    return result",
+        "archived_reward": 1.0,
+        "raw_reexecution": {
+          "status": "returned",
+          "value": 360
+        }
+      },
+      "sft711_ema": {
+        "text": "def simple_math_problem() -> int:\n    \"\"\"\n    John collects peaches for 3 hours.\n     He can collect 2 peaches a minute.\n    How many peaches does he collect?\n    \"\"\"\n    peaches = 0\n    hours = 3\n    peaches_per_minute = 2\n    total_peaches = peaches_per_minute * result = total_peaches\n\n    return result",
+        "archived_reward": 0.0,
+        "raw_reexecution": {
+          "status": "error",
+          "error": "SyntaxError",
+          "message": "cannot assign to expression (<unknown>, line 10)"
+        }
+      }
+    },
+    "question": "John collects peaches for 3 hours.  He can collect 2 peaches a minute.  How many peaches does he collect?",
+    "gold_answer": "He is collecting peaches for 3*60=<<3*60=180>>180 minutes\nSo he can collect 180 * 2 = <<180*2=360>>360 peaches\n#### 360"
+  },
+  {
+    "index": 1143,
+    "sample_id": "gsm8k_test_1143",
+    "seed": 1,
+    "kind": "right-to-wrong",
+    "models": {
+      "base_ema": {
+        "text": "def simple_math_problem() -> int:\n    '''\n    Tim grows 5 trees.\n     Each year he collects 6 lemons from each tree.\n     How many lemons does he get in a decade?\n    '''\n    trees = 5\n    lemons_per_tree = 6\n    years = 10\n    lemons = trees * lemons_per_tree * years\n    result = lemons\n    return result",
+        "archived_reward": 1.0,
+        "raw_reexecution": {
+          "status": "returned",
+          "value": 300
+        }
+      },
+      "positive32_raw": {
+        "text": "def simple_math_problem() -> int:\n    \"\"\"\n    Tim grows 5 trees.\n     Each year he collects 6 lemons from each tree.\n     How many lemons does he get in a decade?\n    \"\"\"\n    total = 0\n    for year in range(10):\n      total = total + 6\n      total = total\n    result = total\n\n    return result",
+        "archived_reward": 0.0,
+        "raw_reexecution": {
+          "status": "returned",
+          "value": 60
+        }
+      }
+    },
+    "question": "Tim grows 5 trees.  Each year he collects 6 lemons from each tree.  How many lemons does he get in a decade?",
+    "gold_answer": "He gets 5*6=<<5*6=30>>30 lemons per year\nSo he gets 30*10=<<30*10=300>>300 lemons in a decade\n#### 300"
+  }
+]

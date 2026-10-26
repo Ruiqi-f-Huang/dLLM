@@ -1,0 +1,437 @@
+_wandb:
+    value:
+        cli_version: 0.19.9
+        m:
+            - "1": monitor/lr
+              "5": 2
+              "6":
+                - 1
+                - 3
+              "7": []
+            - "1": trainer/global_step
+              "6":
+                - 3
+              "7": []
+            - "1": monitor/code_eos_tokens_seen_session
+              "5": 2
+              "6":
+                - 1
+                - 3
+              "7": []
+            - "1": val/pad_nll
+              "5": 2
+              "6":
+                - 1
+                - 3
+              "7": []
+            - "1": train/nll
+              "5": 2
+              "6":
+                - 1
+                - 3
+              "7": []
+            - "1": trainer/loss
+              "5": 2
+              "6":
+                - 1
+                - 3
+              "7": []
+            - "1": train/code_eos_nll
+              "5": 2
+              "6":
+                - 1
+                - 3
+              "7": []
+            - "1": monitor/supervised_tokens_seen_session
+              "5": 2
+              "6":
+                - 1
+                - 3
+              "7": []
+            - "1": monitor/examples_per_second
+              "5": 2
+              "6":
+                - 1
+                - 3
+              "7": []
+            - "1": monitor/successful_updates_session
+              "5": 2
+              "6":
+                - 1
+                - 3
+              "7": []
+            - "1": monitor/peak_allocated_mib
+              "5": 2
+              "6":
+                - 1
+                - 3
+              "7": []
+            - "1": epoch
+              "5": 2
+              "6":
+                - 1
+                - 3
+              "7": []
+            - "1": monitor/padded_tokens_per_second
+              "5": 2
+              "6":
+                - 1
+                - 3
+              "7": []
+            - "1": monitor/grad_norm_pre_clip
+              "5": 2
+              "6":
+                - 1
+                - 3
+              "7": []
+            - "1": monitor/train_seconds_per_update
+              "5": 2
+              "6":
+                - 1
+                - 3
+              "7": []
+            - "1": train/bpd
+              "5": 2
+              "6":
+                - 1
+                - 3
+              "7": []
+            - "1": monitor/amp_skipped_updates_session
+              "5": 2
+              "6":
+                - 1
+                - 3
+              "7": []
+            - "1": val/nll
+              "5": 2
+              "6":
+                - 1
+                - 3
+              "7": []
+            - "1": val/bpd
+              "5": 2
+              "6":
+                - 1
+                - 3
+              "7": []
+            - "1": monitor/nonfinite_gradient_updates_session
+              "5": 2
+              "6":
+                - 1
+                - 3
+              "7": []
+            - "1": monitor/examples_seen_session
+              "5": 2
+              "6":
+                - 1
+                - 3
+              "7": []
+            - "1": monitor/reserved_mib
+              "5": 2
+              "6":
+                - 1
+                - 3
+              "7": []
+            - "1": val/code_eos_nll
+              "5": 2
+              "6":
+                - 1
+                - 3
+              "7": []
+            - "1": val/ppl
+              "5": 2
+              "6":
+                - 1
+                - 3
+              "7": []
+            - "1": monitor/optimizer_step
+              "5": 2
+              "6":
+                - 1
+                - 3
+              "7": []
+            - "1": monitor/allocated_mib
+              "5": 2
+              "6":
+                - 1
+                - 3
+              "7": []
+            - "1": train/pad_nll
+              "5": 2
+              "6":
+                - 1
+                - 3
+              "7": []
+            - "1": train/ppl
+              "5": 2
+              "6":
+                - 1
+                - 3
+              "7": []
+        python_version: 3.12.3
+        t:
+            "1":
+                - 1
+                - 5
+                - 11
+                - 41
+                - 49
+                - 50
+                - 51
+                - 53
+                - 55
+                - 63
+                - 71
+                - 106
+            "2":
+                - 1
+                - 5
+                - 11
+                - 41
+                - 49
+                - 50
+                - 51
+                - 53
+                - 55
+                - 63
+                - 71
+                - 106
+            "3":
+                - 7
+                - 13
+                - 15
+                - 16
+                - 23
+                - 55
+                - 66
+            "4": 3.12.3
+            "5": 0.19.9
+            "6": 4.45.0
+            "8":
+                - 5
+            "12": 0.19.9
+            "13": linux-x86_64
+algo:
+    value:
+        T: 0
+        adaLN: true
+        backbone: dit
+        causal_attention: false
+        diffusion_type: absorbing
+        loss_type: elbo
+        name: mdlm
+        parameterization: subs
+        post_process_mode: log_probs
+        time_conditioning: false
+allow_tf32:
+    value: true
+backbone_compute_dtype:
+    value: bfloat16
+callbacks:
+    value:
+        checkpoint_every_n_steps:
+            _target_: lightning.pytorch.callbacks.ModelCheckpoint
+            auto_insert_metric_name: false
+            dirpath: /root/autodl-tmp/s-flm/outputs/sft/20261022-lora-control-01/checkpoints
+            every_n_train_steps: 0
+            save_last: false
+            save_top_k: 0
+            verbose: true
+        checkpoint_monitor:
+            _target_: lightning.pytorch.callbacks.ModelCheckpoint
+            auto_insert_metric_name: false
+            dirpath: /root/autodl-tmp/s-flm/outputs/sft/20261022-lora-control-01/checkpoints
+            filename: best
+            mode: min
+            monitor: val/nll
+            save_last: false
+            save_top_k: 0
+            verbose: true
+        milestone_checkpoint:
+            _target_: callbacks.milestone_checkpoint.MilestoneCheckpoint
+            dirpath: /root/autodl-tmp/s-flm/outputs/sft/20261022-lora-control-01/checkpoints
+            filename: step-{step:06d}.ckpt
+            milestones:
+                - 100
+                - 200
+                - 711
+checkpointing:
+    value:
+        resume_ckpt_path: /root/autodl-tmp/s-flm/outputs/sft/20261022-lora-control-01/checkpoints/last.ckpt
+        resume_from_ckpt: false
+        save_dir: /root/autodl-tmp/s-flm/outputs/sft/20261022-lora-control-01
+compile_backbone:
+    value: false
+confidence_denoiser:
+    value:
+        confidence_score: entropy
+        gamma: 0
+config:
+    value: '{''mode'': ''train'', ''sudoku'': {''output_dir'': ''${cwd:}/sudoku_eval'', ''batch_size'': 64}, ''gsm8k'': {''input_file'': None, ''output_dir'': ''${cwd:}/gsm8k_eval'', ''timeout'': 5.0, ''bootstrap_size'': 1}, ''seed'': 1, ''allow_tf32'': True, ''cudnn_benchmark'': True, ''compile_backbone'': False, ''backbone_compute_dtype'': ''bfloat16'', ''neg_infinity_mode'': ''large-finite'', ''loader'': {''global_batch_size'': 8, ''eval_global_batch_size'': 8, ''batch_size'': 8, ''eval_batch_size'': 8, ''num_workers'': 4, ''pin_memory'': True}, ''confidence_denoiser'': {''confidence_score'': ''entropy'', ''gamma'': 0}, ''training'': {''ema'': 0.9999, ''antithetic_sampling'': True, ''importance_sampling'': False, ''sampling_eps'': 0.001, ''change_of_variables'': False, ''loss_precision'': ''bf16'', ''finetune_path'': ''/root/s-flm/checkpoints/tinygsm/mdlm.ckpt'', ''finetune_weights'': ''ema'', ''sampling_eps_min'': 0.001, ''sampling_eps_max'': 1.0, ''resample'': False}, ''lora'': {''enabled'': True, ''rank'': 8, ''alpha'': 16, ''dropout'': 0.05, ''target_modules'': [''blocks.*.attn_qkv'', ''blocks.*.attn_out'', ''blocks.*.mlp.0'', ''blocks.*.mlp.2'']}, ''eval'': {''checkpoint_path'': '''', ''strict_loading'': True, ''disable_ema'': False, ''compute_generative_perplexity'': False, ''perplexity_batch_size'': 8, ''compute_perplexity_on_sanity'': False, ''gen_ppl_eval_model_name_or_path'': ''gpt2-large'', ''generate_samples'': False, ''generated_samples_path'': ''${cwd:}/samples.json'', ''results_json_path'': None}, ''optim'': {''weight_decay'': 0, ''lr'': 3e-06, ''beta1'': 0.9, ''beta2'': 0.999, ''eps'': 1e-08}, ''trainer'': {''_target_'': ''lightning.Trainer'', ''accelerator'': ''cuda'', ''num_nodes'': 1, ''devices'': 1, ''accumulate_grad_batches'': ''${div_up:${loader.global_batch_size}, ${eval:${trainer.devices} * ${loader.batch_size} * ${trainer.num_nodes}}}'', ''gradient_clip_val'': 1.0, ''precision'': ''bf16-mixed'', ''num_sanity_val_steps'': 1, ''max_steps'': -1, ''log_every_n_steps'': 10, ''limit_train_batches'': 1.0, ''limit_val_batches'': 1.0, ''val_check_interval'': 1.0, ''check_val_every_n_epoch'': 1, ''max_epochs'': 1}, ''wandb'': {''project'': ''s-flm'', ''notes'': None, ''group'': ''mdlm-gsm8k-pot'', ''job_type'': ''sft'', ''tags'': [''mdlm'', ''gsm8k-pot'', ''sft'', ''lora'', ''base-aligned'', ''control''], ''name'': ''mdlm-sft-lora-control-${now:%Y%m%d-%H%M%S}'', ''save_dir'': ''${cwd:}'', ''offline'': False, ''log_model'': False, ''id'': None}, ''checkpointing'': {''save_dir'': ''${cwd:}'', ''resume_from_ckpt'': False, ''resume_ckpt_path'': ''${.save_dir}/checkpoints/last.ckpt''}, ''callbacks'': {''checkpoint_every_n_steps'': {''_target_'': ''lightning.pytorch.callbacks.ModelCheckpoint'', ''save_top_k'': 0, ''save_last'': False, ''dirpath'': ''${checkpointing.save_dir}/checkpoints'', ''verbose'': True, ''auto_insert_metric_name'': False, ''every_n_train_steps'': 0}, ''checkpoint_monitor'': {''_target_'': ''lightning.pytorch.callbacks.ModelCheckpoint'', ''monitor'': ''val/nll'', ''mode'': ''min'', ''save_top_k'': 0, ''save_last'': False, ''dirpath'': ''${checkpointing.save_dir}/checkpoints'', ''filename'': ''best'', ''auto_insert_metric_name'': False, ''verbose'': True}, ''milestone_checkpoint'': {''_target_'': ''callbacks.milestone_checkpoint.MilestoneCheckpoint'', ''milestones'': [100, 200, 711], ''dirpath'': ''${checkpointing.save_dir}/checkpoints'', ''filename'': ''step-{step:06d}.ckpt''}}, ''data'': {''train'': ''gsm8k_pot'', ''valid'': ''gsm8k_pot'', ''train_file'': ''/root/s-flm/data/gsm8k_pot/sft_train.jsonl'', ''validation_file'': ''/root/s-flm/data/gsm8k_pot/sft_validation.jsonl'', ''cache_dir'': ''/root/autodl-tmp/s-flm/data_cache/gsm8k_pot'', ''tokenizer_name_or_path'': ''/root/autodl-tmp/s-flm/cache/huggingface/hub/models--HuggingFaceTB--SmolLM-135M/snapshots/1d461723eec654e65efdc40cf49301c89c0c92f4'', ''tokenizer_revision'': ''1d461723eec654e65efdc40cf49301c89c0c92f4'', ''separator'': ''\\n'', ''wrap'': False, ''streaming'': False, ''insert_train_eos'': True, ''insert_valid_eos'': True, ''train_on_prompt'': False, ''train_on_pad'': True}, ''model'': {''name'': ''small'', ''type'': ''dit'', ''hidden_size'': 768, ''cond_dim'': 128, ''length'': 512, ''n_blocks'': 12, ''n_heads'': 12, ''dropout'': 0.1}, ''strategy'': {''_target_'': ''lightning.pytorch.strategies.SingleDeviceStrategy'', ''device'': ''cuda:0''}, ''noise'': {''type'': ''log-linear'', ''eps'': 0.001, ''alpha_min'': None, ''alpha_max'': None, ''adaptive'': False}, ''lr_scheduler'': {''_target_'': ''transformers.get_constant_schedule_with_warmup'', ''num_warmup_steps'': 20}, ''prior'': {''type'': ''none'', ''latent_width'': 0, ''latent_height'': 0}, ''algo'': {''name'': ''mdlm'', ''diffusion_type'': ''absorbing'', ''backbone'': ''dit'', ''parameterization'': ''subs'', ''time_conditioning'': False, ''T'': 0, ''causal_attention'': False, ''loss_type'': ''elbo'', ''post_process_mode'': ''log_probs'', ''adaLN'': True}, ''sampler'': {''predictor'': ''ancestral'', ''steps'': 1024, ''steps_policy'': ''full'', ''noise_removal'': ''ancestral'', ''use_float64'': True, ''p_nucleus'': 1.0, ''temperature'': 1.0, ''num_sample_batches'': 2, ''num_sample_log'': 2}, ''sft_monitoring'': True}'
+cudnn_benchmark:
+    value: true
+data:
+    value:
+        cache_dir: /root/autodl-tmp/s-flm/data_cache/gsm8k_pot
+        insert_train_eos: true
+        insert_valid_eos: true
+        separator: \n
+        streaming: false
+        tokenizer_name_or_path: /root/autodl-tmp/s-flm/cache/huggingface/hub/models--HuggingFaceTB--SmolLM-135M/snapshots/1d461723eec654e65efdc40cf49301c89c0c92f4
+        tokenizer_revision: 1d461723eec654e65efdc40cf49301c89c0c92f4
+        train: gsm8k_pot
+        train_file: /root/s-flm/data/gsm8k_pot/sft_train.jsonl
+        train_on_pad: true
+        train_on_prompt: false
+        valid: gsm8k_pot
+        validation_file: /root/s-flm/data/gsm8k_pot/sft_validation.jsonl
+        wrap: false
+eval:
+    value:
+        checkpoint_path: ""
+        compute_generative_perplexity: false
+        compute_perplexity_on_sanity: false
+        disable_ema: false
+        gen_ppl_eval_model_name_or_path: gpt2-large
+        generate_samples: false
+        generated_samples_path: /root/autodl-tmp/s-flm/outputs/sft/20261022-lora-control-01/samples.json
+        perplexity_batch_size: 8
+        results_json_path: null
+        strict_loading: true
+gsm8k:
+    value:
+        bootstrap_size: 1
+        input_file: null
+        output_dir: /root/autodl-tmp/s-flm/outputs/sft/20261022-lora-control-01/gsm8k_eval
+        timeout: 5
+loader:
+    value:
+        batch_size: 8
+        eval_batch_size: 8
+        eval_global_batch_size: 8
+        global_batch_size: 8
+        num_workers: 4
+        pin_memory: true
+lora:
+    value:
+        alpha: 16
+        dropout: 0.05
+        enabled: true
+        rank: 8
+        target_modules:
+            - blocks.*.attn_qkv
+            - blocks.*.attn_out
+            - blocks.*.mlp.0
+            - blocks.*.mlp.2
+lr_scheduler:
+    value:
+        _target_: transformers.get_constant_schedule_with_warmup
+        num_warmup_steps: 20
+mode:
+    value: train
+model:
+    value:
+        cond_dim: 128
+        dropout: 0.1
+        hidden_size: 768
+        length: 512
+        n_blocks: 12
+        n_heads: 12
+        name: small
+        type: dit
+neg_infinity_mode:
+    value: large-finite
+noise:
+    value:
+        adaptive: false
+        alpha_max: null
+        alpha_min: null
+        eps: 0.001
+        type: log-linear
+optim:
+    value:
+        beta1: 0.9
+        beta2: 0.999
+        eps: 1e-08
+        lr: 3e-06
+        weight_decay: 0
+prior:
+    value:
+        latent_height: 0
+        latent_width: 0
+        type: none
+sampler:
+    value:
+        noise_removal: ancestral
+        num_sample_batches: 2
+        num_sample_log: 2
+        p_nucleus: 1
+        predictor: ancestral
+        steps: 1024
+        steps_policy: full
+        temperature: 1
+        use_float64: true
+seed:
+    value: 1
+sft_monitoring:
+    value: true
+strategy:
+    value:
+        _target_: lightning.pytorch.strategies.SingleDeviceStrategy
+        device: cuda:0
+sudoku:
+    value:
+        batch_size: 64
+        output_dir: /root/autodl-tmp/s-flm/outputs/sft/20261022-lora-control-01/sudoku_eval
+tokenizer:
+    value: null
+trainer:
+    value:
+        _target_: lightning.Trainer
+        accelerator: cuda
+        accumulate_grad_batches: 1
+        check_val_every_n_epoch: 1
+        devices: 1
+        gradient_clip_val: 1
+        limit_train_batches: 1
+        limit_val_batches: 1
+        log_every_n_steps: 10
+        max_epochs: 1
+        max_steps: -1
+        num_nodes: 1
+        num_sanity_val_steps: 1
+        precision: bf16-mixed
+        val_check_interval: 1
+training:
+    value:
+        antithetic_sampling: true
+        change_of_variables: false
+        ema: 0.9999
+        finetune_path: /root/s-flm/checkpoints/tinygsm/mdlm.ckpt
+        finetune_weights: ema
+        importance_sampling: false
+        loss_precision: bf16
+        resample: false
+        sampling_eps: 0.001
+        sampling_eps_max: 1
+        sampling_eps_min: 0.001
+vocab_size:
+    value: 49154
+wandb:
+    value:
+        group: mdlm-gsm8k-pot
+        id: null
+        job_type: sft
+        log_model: false
+        name: mdlm-sft-lora-control-20261022-155643
+        notes: null
+        offline: false
+        project: s-flm
+        save_dir: /root/autodl-tmp/s-flm/outputs/sft/20261022-lora-control-01
+        tags:
+            - mdlm
+            - gsm8k-pot
+            - sft
+            - lora
+            - base-aligned
+            - control

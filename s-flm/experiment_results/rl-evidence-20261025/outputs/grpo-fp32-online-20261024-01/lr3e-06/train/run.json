@@ -1,0 +1,36 @@
+{
+  "checkpoint": "/root/s-flm/checkpoints/tinygsm/mdlm.ckpt",
+  "data": "/root/autodl-tmp/s-flm/outputs/grpo-fp32-online-20261024-01/questions.jsonl",
+  "output": "/root/autodl-tmp/s-flm/outputs/grpo-fp32-online-20261024-01/lr3e-06/train",
+  "audit_only": false,
+  "limit": 32,
+  "updates": 250,
+  "group_size": 8,
+  "microbatch": 8,
+  "iterations": 2,
+  "nfe": 32,
+  "temperature": 0.3,
+  "prompt_mask": 0.0,
+  "lr": 3e-06,
+  "beta": 0.04,
+  "epsilon": 0.2,
+  "timeout": 2,
+  "seed": 42,
+  "save_every": 250,
+  "save_at": [
+    100,
+    250
+  ],
+  "reshuffle_cycles": true,
+  "precision": "float32",
+  "monitor": true,
+  "diagnostic_pairs": "/root/autodl-tmp/s-flm/outputs/grpo-fp32-online-20261024-01/pairs.jsonl",
+  "gradient_at": [
+    0,
+    1,
+    10,
+    50,
+    100,
+    250
+  ]
+}

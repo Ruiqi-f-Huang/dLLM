@@ -1,0 +1,13 @@
+{
+  "initial_step": 0,
+  "final_step": 2,
+  "examples_seen_session": 16,
+  "padded_tokens_seen_session": 8192,
+  "supervised_tokens_seen_session": 6995,
+  "code_eos_tokens_seen_session": 2622,
+  "nonfinite_gradient_updates_session": 0,
+  "amp_skipped_updates_session": 0,
+  "successful_updates_session": 2,
+  "train_batch_seconds": 0.49794220365583897,
+  "wall_seconds_including_validation": 10.903349544852972
+}

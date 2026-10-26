@@ -1,0 +1,25 @@
+{
+  "checkpoint": "/root/s-flm/checkpoints/tinygsm/mdlm.ckpt",
+  "data": "/root/s-flm/data/gsm8k_pot_result/sft_train.jsonl",
+  "output": "/root/autodl-tmp/s-flm/outputs/grpo-500-20261024-01/train",
+  "audit_only": false,
+  "limit": 5682,
+  "updates": 500,
+  "group_size": 8,
+  "microbatch": 8,
+  "iterations": 2,
+  "nfe": 32,
+  "temperature": 0.3,
+  "prompt_mask": 0.0,
+  "lr": 3e-06,
+  "beta": 0.04,
+  "epsilon": 0.2,
+  "timeout": 2,
+  "seed": 42,
+  "save_every": 500,
+  "save_at": [
+    100,
+    250,
+    500
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "successful_updates": 200,
+  "presentations": 1600,
+  "frozen_parameters_unchanged": true,
+  "changed_lora_elements": 1179648,
+  "wall_seconds_including_evaluation": 86.51655646413565,
+  "peak_allocated_mib": 7296.1171875
+}

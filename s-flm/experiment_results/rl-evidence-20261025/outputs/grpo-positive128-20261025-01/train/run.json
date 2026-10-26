@@ -1,0 +1,9 @@
+{
+  "base": "/root/s-flm/checkpoints/tinygsm/mdlm.ckpt",
+  "programs": "/root/autodl-tmp/s-flm/outputs/grpo-positive128-20261025-01/programs128.jsonl",
+  "original_plan": "/root/autodl-tmp/s-flm/outputs/grpo-positive32-20261024-01/train/mask_plan.pt",
+  "output": "/root/autodl-tmp/s-flm/outputs/grpo-positive128-20261025-01/train",
+  "lr": 3e-05,
+  "steps": 200,
+  "loss_scale": 0.25
+}

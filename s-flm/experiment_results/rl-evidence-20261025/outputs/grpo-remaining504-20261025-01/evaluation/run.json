@@ -1,0 +1,7 @@
+{
+  "base": "/root/s-flm/checkpoints/tinygsm/mdlm.ckpt",
+  "checkpoint": "/root/autodl-tmp/s-flm/outputs/grpo-positive32-20261024-01/positive32-step200.ckpt",
+  "checkpoint8": "/root/autodl-tmp/s-flm/outputs/grpo-partial75-positive-eval-20261024-02/positive-step200.ckpt",
+  "data": "/root/autodl-tmp/s-flm/outputs/grpo-remaining504-20261025-01/questions.jsonl",
+  "output": "/root/autodl-tmp/s-flm/outputs/grpo-remaining504-20261025-01/evaluation"
+}

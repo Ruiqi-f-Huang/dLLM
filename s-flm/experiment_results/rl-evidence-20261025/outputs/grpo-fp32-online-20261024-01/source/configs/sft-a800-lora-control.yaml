@@ -1,0 +1,20 @@
+# Strict LoRA control for the Base-aligned full-parameter SFT run.
+defaults:
+  - sft-a800-base-aligned
+  - _self_
+
+lora:
+  enabled: true
+  rank: 8
+  alpha: 16
+  dropout: 0.05
+  target_modules: [blocks.*.attn_qkv, blocks.*.attn_out,
+                   blocks.*.mlp.0, blocks.*.mlp.2]
+
+wandb:
+  name: mdlm-sft-lora-control-${now:%Y%m%d-%H%M%S}
+  tags: [mdlm, gsm8k-pot, sft, lora, base-aligned, control]
+
+hydra:
+  run:
+    dir: ${hydra:runtime.cwd}/outputs/sft/${now:%Y%m%d}-lora-control-01

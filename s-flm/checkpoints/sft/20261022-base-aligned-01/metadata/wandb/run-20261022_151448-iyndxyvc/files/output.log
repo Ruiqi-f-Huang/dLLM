@@ -1,0 +1,17 @@
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name     | Type      | Params | Mode
+-----------------------------------------------
+0 | backbone | DIT       | 167 M  | train
+1 | softplus | Softplus  | 0      | train
+2 | noise    | LogLinear | 0      | train
+-----------------------------------------------
+167 M     Trainable params
+0         Non-trainable params
+167 M     Total params
+671.721   Total estimated model params size (MB)
+159       Modules in train mode
+0         Modules in eval mode
+Epoch 0: 100%|██████████| 711/711 [01:22<00:00,  8.59it/s, v_num=xyvc]     
+[2026-10-22 15:16:17,935][__main__][INFO] - Training finished at optimizer step 711; peak allocated GPU memory: 9633.2 MiB.
+`Trainer.fit` stopped: `max_epochs=1` reached.

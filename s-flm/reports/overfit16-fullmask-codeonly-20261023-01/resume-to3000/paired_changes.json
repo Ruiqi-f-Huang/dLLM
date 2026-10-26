@@ -1,0 +1,37 @@
+[
+  {
+    "step": 500,
+    "wrong_to_right": [],
+    "right_to_wrong": []
+  },
+  {
+    "step": 1000,
+    "wrong_to_right": [
+      "gsm8k_train_6726"
+    ],
+    "right_to_wrong": [
+      "gsm8k_train_5649"
+    ]
+  },
+  {
+    "step": 2000,
+    "wrong_to_right": [
+      "gsm8k_train_6820",
+      "gsm8k_train_6726"
+    ],
+    "right_to_wrong": [
+      "gsm8k_train_5649",
+      "gsm8k_train_1515",
+      "gsm8k_train_7383"
+    ]
+  },
+  {
+    "step": 3000,
+    "wrong_to_right": [],
+    "right_to_wrong": [
+      "gsm8k_train_5649",
+      "gsm8k_train_1515",
+      "gsm8k_train_7383"
+    ]
+  }
+]

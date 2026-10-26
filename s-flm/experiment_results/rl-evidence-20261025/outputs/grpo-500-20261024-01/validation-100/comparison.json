@@ -1,0 +1,73 @@
+{
+  "protocol": {
+    "n": 632,
+    "nfe": 32,
+    "temperature": 0.1,
+    "sampler": "ancestral",
+    "batch_size": 32,
+    "seeds": [
+      1,
+      2
+    ],
+    "base_weights": "imported EMA",
+    "rl_weights": "raw",
+    "rng_reset": "after model initialization",
+    "max_length": 512
+  },
+  "rl_label": "rl100",
+  "comparisons": [
+    {
+      "seed": 1,
+      "protocol": "legacy-full",
+      "base_correct": 178,
+      "rl_correct": 179,
+      "gained": 4,
+      "lost": 3,
+      "paired_exact_p": 1.0,
+      "base_raw_parses": 550,
+      "rl_raw_parses": 547,
+      "changed_outputs": 62
+    },
+    {
+      "seed": 1,
+      "protocol": "first-eos",
+      "base_correct": 178,
+      "rl_correct": 180,
+      "gained": 5,
+      "lost": 3,
+      "paired_exact_p": 0.7265625,
+      "base_raw_parses": 550,
+      "rl_raw_parses": 547,
+      "changed_outputs": 62
+    },
+    {
+      "seed": 2,
+      "protocol": "legacy-full",
+      "base_correct": 163,
+      "rl_correct": 163,
+      "gained": 2,
+      "lost": 2,
+      "paired_exact_p": 1.0,
+      "base_raw_parses": 551,
+      "rl_raw_parses": 553,
+      "changed_outputs": 51
+    },
+    {
+      "seed": 2,
+      "protocol": "first-eos",
+      "base_correct": 164,
+      "rl_correct": 164,
+      "gained": 2,
+      "lost": 2,
+      "paired_exact_p": 1.0,
+      "base_raw_parses": 551,
+      "rl_raw_parses": 553,
+      "changed_outputs": 51
+    }
+  ],
+  "limitations": [
+    "One training seed; exploratory pilot.",
+    "Generation seeds reuse the same questions, not independent datasets.",
+    "Legacy full output and EOS-truncated rewards are reported separately."
+  ]
+}

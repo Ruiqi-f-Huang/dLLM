@@ -1,0 +1,13 @@
+{
+  "/root/autodl-tmp/s-flm/outputs/semantic-weighted-20261023-01/source/semantic_weights.py": "420361c49655f4c09e330548ec0aa33400ca86c81d897730f9c8beca0d9bd85e",
+  "/root/autodl-tmp/s-flm/outputs/semantic-weighted-20261023-01/source/dataloader.py": "947b43b76e20dd626eed3e6f3280073713ad602e8138f6aa6ddf4221ab5a89b0",
+  "/root/autodl-tmp/s-flm/outputs/semantic-weighted-20261023-01/source/trainer_base.py": "587fe3f46393acada3a9a30002acf1fced61b1be3e1e75c44e316c5e6a897fc3",
+  "/root/autodl-tmp/s-flm/outputs/semantic-weighted-20261023-01/source/audit_semantic_weights.py": "1ab0aaf78f1fd63cc632657d90c435aaca902d251e3413ede614cd1a04ef2420",
+  "/root/autodl-tmp/s-flm/outputs/semantic-weighted-20261023-01/source/test_semantic_weights.py": "4911a10370acbc0756f936043c489c7308f3c80bf1f4420b203fe71fe2b10926",
+  "/root/autodl-tmp/s-flm/outputs/semantic-weighted-20261023-01/source/compare_semantic_weighted.py": "31424258b4f2371375a88171c55922fc39b2f96ab5d345248c8c38d388fcbe37",
+  "/root/autodl-tmp/s-flm/outputs/semantic-weighted-20261023-01/source/configs/sft-semantic-weighted.yaml": "2e933d12ff469f9f4a82aca41fa1ea723999981d2a351aa2f77f681094a33c85",
+  "/root/autodl-tmp/s-flm/outputs/semantic-weighted-20261023-01/source/configs/sft-a800-lora-control.yaml": "72cfa4ecfd2916b951078815f0d4fc08e24ec786f18bcda03ae66841fe061903",
+  "/root/autodl-tmp/s-flm/outputs/semantic-weighted-20261023-01/source/configs/sft-a800-base-aligned.yaml": "a278f9f8ac0e64e62d09f1e14d47170a8ed5b2238f395357815e167eb61712e1",
+  "data/gsm8k_pot/sft_train.jsonl": "a35c64f0c0f47baa84e2517059e11b939b16c5d0dbb0d76b021b2c2144092c68",
+  "data/gsm8k_pot/sft_validation.jsonl": "560b9ddf9c42c9deb4a37f3c1296f39fed8adb45574c9906c6aafd08237267b7"
+}

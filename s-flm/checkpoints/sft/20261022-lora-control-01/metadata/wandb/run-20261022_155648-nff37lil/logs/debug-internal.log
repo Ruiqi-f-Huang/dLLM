@@ -1,0 +1,15 @@
+{"time":"2026-10-22T15:56:48.694410011+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/root/autodl-tmp/s-flm/outputs/sft/20261022-lora-control-01/wandb/run-20261022_155648-nff37lil/logs/debug-core.log"}
+{"time":"2026-10-22T15:56:49.576299279+08:00","level":"INFO","msg":"created new stream","id":"nff37lil"}
+{"time":"2026-10-22T15:56:49.576380815+08:00","level":"INFO","msg":"stream: started","id":"nff37lil"}
+{"time":"2026-10-22T15:56:49.57640973+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"nff37lil"}
+{"time":"2026-10-22T15:56:49.57644308+08:00","level":"INFO","msg":"sender: started","stream_id":"nff37lil"}
+{"time":"2026-10-22T15:56:49.576539569+08:00","level":"INFO","msg":"handler: started","stream_id":"nff37lil"}
+{"time":"2026-10-22T15:56:50.917368272+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2026-10-22T15:57:59.537246703+08:00","level":"INFO","msg":"stream: closing","id":"nff37lil"}
+{"time":"2026-10-22T15:57:59.537296563+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2026-10-22T15:57:59.537393339+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2026-10-22T15:58:00.958367014+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-10-22T15:58:01.617559443+08:00","level":"INFO","msg":"handler: closed","stream_id":"nff37lil"}
+{"time":"2026-10-22T15:58:01.617659218+08:00","level":"INFO","msg":"sender: closed","stream_id":"nff37lil"}
+{"time":"2026-10-22T15:58:01.617650538+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"nff37lil"}
+{"time":"2026-10-22T15:58:01.617807707+08:00","level":"INFO","msg":"stream: closed","id":"nff37lil"}

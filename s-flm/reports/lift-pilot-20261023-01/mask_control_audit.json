@@ -1,0 +1,8 @@
+{
+  "logged_steps": 20,
+  "mismatches": {
+    "train/lift_candidate_tokens": 0,
+    "train/lift_selected_tokens": 0,
+    "train/lift_target_code_mask_rate": 0
+  }
+}

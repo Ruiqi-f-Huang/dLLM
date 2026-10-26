@@ -1,0 +1,10 @@
+{
+  "cause": "three 2-second executions exhausted process-wide CPU budget; reproduced SIGXCPU exit -24",
+  "fix": "account for startup CPU and add 2 seconds evaluator overhead; per-program timeout remains 2 seconds",
+  "regression": "correct/wrong/original infinite-loop cases passed; Linux timeout and resume-validation unit tests passed",
+  "resume_pid": 59422,
+  "preserved_records": 6853,
+  "preserved_manifest": "pre-resume-results-manifest.json",
+  "original_backup": "/root/autodl-tmp/final-test-20261026-01-before-fix.tar.gz",
+  "evaluator_sha256": "aa6da28c1478eabb31b34bd7a43176d93ecafb44cdf91fae3eecfa66bcf8ef23"
+}

@@ -1,0 +1,4 @@
+epoch,monitor/allocated_mib,monitor/amp_scale,monitor/code_eos_tokens_seen_session,monitor/examples_per_second,monitor/examples_seen_session,monitor/grad_norm_pre_clip,monitor/lr,monitor/nonfinite_gradient_updates_session,monitor/padded_tokens_per_second,monitor/peak_allocated_mib,monitor/reserved_mib,monitor/supervised_tokens_seen_session,monitor/train_seconds_per_update,step,train/bpd,train/nll,train/ppl,val/bpd,val/nll,val/ppl
+0,,,,,,,,,,,,,,1,,,,0.9243250415422392,0.6406932964659574,1.897796158682918
+0,,,,,,,,,,,,,,1,0.607748585186374,0.42125921831123087,1.5238792446196152,,,
+1,3223.9306640625,65536.0,2157,14.115913935028226,16,1.4178470373153687,5.000000000000001e-07,0,7227.347934734452,4927.525390625,5436.0,7246,0.5667362408712506,2,,,,,,

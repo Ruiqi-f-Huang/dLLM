@@ -1,0 +1,138 @@
+test_boundary_crossing_bpe_excluded (test_lift.LiftTests.test_boundary_crossing_bpe_excluded) ... ok
+test_dataset_regions_and_cache_do_not_change_original_masks (test_lift.LiftTests.test_dataset_regions_and_cache_do_not_change_original_masks) ... Saving the dataset (0/1 shards):   0%|          | 0/1 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1/1 [00:00<00:00, 317.89 examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1/1 [00:00<00:00, 304.11 examples/s]
+Saving the dataset (0/1 shards):   0%|          | 0/1 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1/1 [00:00<00:00, 447.49 examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1/1 [00:00<00:00, 424.31 examples/s]
+ok
+test_directions_and_per_example_policy (test_lift.LiftTests.test_directions_and_per_example_policy) ... ok
+test_empty_zero_and_heterogeneous_k (test_lift.LiftTests.test_empty_zero_and_heterogeneous_k) ... ok
+test_invalid_python_falls_back (test_lift.LiftTests.test_invalid_python_falls_back) ... ok
+test_missing_offsets_fall_back (test_lift.LiftTests.test_missing_offsets_fall_back) ... ok
+test_outside_regions_and_probability_endpoints (test_lift.LiftTests.test_outside_regions_and_probability_endpoints) ... ok
+test_real_mdlm_lora_update_freezes_base (test_lift.LiftTests.test_real_mdlm_lora_update_freezes_base) ... 
+  test_real_mdlm_lora_update_freezes_base (test_lift.LiftTests.test_real_mdlm_lora_update_freezes_base) (policy='random_restore') ... ERROR
+  test_real_mdlm_lora_update_freezes_base (test_lift.LiftTests.test_real_mdlm_lora_update_freezes_base) (policy='lift3') ... ERROR
+test_two_forwards_restoration_rng_and_gradient (test_lift.LiftTests.test_two_forwards_restoration_rng_and_gradient) ... ok
+test_unicode_docstrings_and_ordinary_strings (test_lift.LiftTests.test_unicode_docstrings_and_ordinary_strings) ... ok
+test_validation_and_baseline_keep_original_path (test_lift.LiftTests.test_validation_and_baseline_keep_original_path) ... ok
+
+======================================================================
+ERROR: test_real_mdlm_lora_update_freezes_base (test_lift.LiftTests.test_real_mdlm_lora_update_freezes_base) (policy='random_restore')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/s-flm/lift-pilot-20261023-01/source/tests/test_lift.py", line 233, in test_real_mdlm_lora_update_freezes_base
+    result = model._loss(x, valid, noise_tokens=valid,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/s-flm/lift-pilot-20261023-01/source/trainer_base.py", line 484, in _loss
+    loss, t = self.lift_nll(input_tokens, context,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/s-flm/lift-pilot-20261023-01/source/algo.py", line 119, in lift_nll
+    return mdlm_lift_nll(self, x0, context, accumulation_step, noise_valid, region)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/s-flm/lift-pilot-20261023-01/source/lift_masking.py", line 126, in mdlm_lift_nll
+    scored = self.forward(x0=x0, xt=proposal, sigma=sigma, context=context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/s-flm/lift-pilot-20261023-01/source/trainer_base.py", line 314, in forward
+    model_output = self.backbone(x0, xt, sigma, context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/venvs/s-flm/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/venvs/s-flm/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/s-flm/lift-pilot-20261023-01/source/models/dit.py", line 567, in forward
+    x = self.blocks[i](x, rotary_cos_sin, c=t_cond, kv_cache=kv_cache)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/venvs/s-flm/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/venvs/s-flm/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/s-flm/lift-pilot-20261023-01/source/models/dit.py", line 427, in forward
+    qkv = apply_rotary_pos_emb(qkv, cos.to(qkv.dtype), sin.to(qkv.dtype))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/s-flm/lift-pilot-20261023-01/source/models/dit.py", line 144, in apply_rotary_pos_emb
+    return flash_attn.layers.rotary.apply_rotary_emb_qkv_(qkv, cos, sin)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/venvs/s-flm/lib/python3.12/site-packages/flash_attn/layers/rotary.py", line 273, in apply_rotary_emb_qkv_
+    return ApplyRotaryEmbQKV_.apply(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/venvs/s-flm/lib/python3.12/site-packages/torch/autograd/function.py", line 575, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/venvs/s-flm/lib/python3.12/site-packages/flash_attn/layers/rotary.py", line 159, in forward
+    apply_rotary(
+  File "/root/venvs/s-flm/lib/python3.12/site-packages/flash_attn/ops/triton/rotary.py", line 202, in apply_rotary
+    rotary_kernel[grid](
+  File "/root/venvs/s-flm/lib/python3.12/site-packages/triton/runtime/jit.py", line 347, in <lambda>
+    return lambda *args, **kwargs: self.run(grid=grid, warmup=False, *args, **kwargs)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/venvs/s-flm/lib/python3.12/site-packages/triton/runtime/jit.py", line 591, in run
+    kernel.run(grid_0, grid_1, grid_2, stream, kernel.function, kernel.packed_metadata,
+  File "/root/venvs/s-flm/lib/python3.12/site-packages/triton/backends/nvidia/driver.py", line 529, in __call__
+    self.launch(gridX, gridY, gridZ, stream, function, self.launch_cooperative_grid, global_scratch, *args)
+ValueError: Pointer argument (at 0) cannot be accessed from Triton (cpu tensor?)
+
+======================================================================
+ERROR: test_real_mdlm_lora_update_freezes_base (test_lift.LiftTests.test_real_mdlm_lora_update_freezes_base) (policy='lift3')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/autodl-tmp/s-flm/lift-pilot-20261023-01/source/tests/test_lift.py", line 233, in test_real_mdlm_lora_update_freezes_base
+    result = model._loss(x, valid, noise_tokens=valid,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/s-flm/lift-pilot-20261023-01/source/trainer_base.py", line 484, in _loss
+    loss, t = self.lift_nll(input_tokens, context,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/s-flm/lift-pilot-20261023-01/source/algo.py", line 119, in lift_nll
+    return mdlm_lift_nll(self, x0, context, accumulation_step, noise_valid, region)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/s-flm/lift-pilot-20261023-01/source/lift_masking.py", line 126, in mdlm_lift_nll
+    scored = self.forward(x0=x0, xt=proposal, sigma=sigma, context=context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/s-flm/lift-pilot-20261023-01/source/trainer_base.py", line 314, in forward
+    model_output = self.backbone(x0, xt, sigma, context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/venvs/s-flm/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/venvs/s-flm/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/s-flm/lift-pilot-20261023-01/source/models/dit.py", line 567, in forward
+    x = self.blocks[i](x, rotary_cos_sin, c=t_cond, kv_cache=kv_cache)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/venvs/s-flm/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/venvs/s-flm/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/s-flm/lift-pilot-20261023-01/source/models/dit.py", line 427, in forward
+    qkv = apply_rotary_pos_emb(qkv, cos.to(qkv.dtype), sin.to(qkv.dtype))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/s-flm/lift-pilot-20261023-01/source/models/dit.py", line 144, in apply_rotary_pos_emb
+    return flash_attn.layers.rotary.apply_rotary_emb_qkv_(qkv, cos, sin)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/venvs/s-flm/lib/python3.12/site-packages/flash_attn/layers/rotary.py", line 273, in apply_rotary_emb_qkv_
+    return ApplyRotaryEmbQKV_.apply(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/venvs/s-flm/lib/python3.12/site-packages/torch/autograd/function.py", line 575, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/venvs/s-flm/lib/python3.12/site-packages/flash_attn/layers/rotary.py", line 159, in forward
+    apply_rotary(
+  File "/root/venvs/s-flm/lib/python3.12/site-packages/flash_attn/ops/triton/rotary.py", line 202, in apply_rotary
+    rotary_kernel[grid](
+  File "/root/venvs/s-flm/lib/python3.12/site-packages/triton/runtime/jit.py", line 347, in <lambda>
+    return lambda *args, **kwargs: self.run(grid=grid, warmup=False, *args, **kwargs)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/venvs/s-flm/lib/python3.12/site-packages/triton/runtime/jit.py", line 591, in run
+    kernel.run(grid_0, grid_1, grid_2, stream, kernel.function, kernel.packed_metadata,
+  File "/root/venvs/s-flm/lib/python3.12/site-packages/triton/backends/nvidia/driver.py", line 529, in __call__
+    self.launch(gridX, gridY, gridZ, stream, function, self.launch_cooperative_grid, global_scratch, *args)
+ValueError: Pointer argument (at 0) cannot be accessed from Triton (cpu tensor?)
+
+----------------------------------------------------------------------
+Ran 11 tests in 6.111s
+
+FAILED (errors=2)

@@ -1,0 +1,28 @@
+[
+  {
+    "arm": "b",
+    "batch_size": 8,
+    "loss": 0.5860339403152466,
+    "peak_allocated_mib": 6432.88916015625,
+    "seconds": 1.3194751478731632,
+    "changed_adapter_tensors": 96,
+    "frozen_parameters_unchanged": true,
+    "train": 5682,
+    "validation": 632,
+    "train_region_fallback": 0,
+    "validation_region_fallback": 0
+  },
+  {
+    "arm": "c",
+    "batch_size": 8,
+    "loss": 0.6170918345451355,
+    "peak_allocated_mib": 6439.64501953125,
+    "seconds": 0.2709253132343292,
+    "changed_adapter_tensors": 96,
+    "frozen_parameters_unchanged": true,
+    "train": 5682,
+    "validation": 632,
+    "train_region_fallback": 0,
+    "validation_region_fallback": 0
+  }
+]

@@ -1,0 +1,8 @@
+- data.validation_file=/root/s-flm/data/gsm8k_pot_result_cot_comments_512/sft_validation.jsonl
+- data.cache_dir=/root/autodl-tmp/s-flm/data_cache/gsm8k_pot_result_cot_comments_512
+- data.tokenizer_name_or_path=/root/autodl-tmp/s-flm/cache/huggingface/hub/models--HuggingFaceTB--SmolLM-135M/snapshots/1d461723eec654e65efdc40cf49301c89c0c92f4
+- data.tokenizer_revision=1d461723eec654e65efdc40cf49301c89c0c92f4
+- model.length=512
+- loader.eval_batch_size=8
+- trainer.devices=1
+- trainer.num_nodes=1

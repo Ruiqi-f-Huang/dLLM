@@ -1,0 +1,327 @@
+nohup: ignoring input
+RESUME {"step": 200, "lr": 3e-06, "scheduler_last_epoch": 200, "pending_order": [], "restored_full_mask_code": {"code_ce": 4.2361533307014625, "mean_gold_probability": 0.22684761209690824, "top1_correct_tokens": 250, "tokens": 940, "top1_accuracy": 0.26595744680851063}, "optimizer_steps": [200]}
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: ruiqi-f-huang (ruiqi-f-huang-nus) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.19.9
+wandb: Run data is saved locally in /root/autodl-tmp/s-flm/outputs/overfit16-fullmask-codeonly-20261023-01/resume-to3000/wandb/run-20261023_132039-x4989caj
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Resuming run mdlm-overfit16-fullmask-codeonly-fp32-lr3e-6-3000
+wandb: ⭐️ View project at https://wandb.ai/ruiqi-f-huang-nus/s-flm
+wandb: 🚀 View run at https://wandb.ai/ruiqi-f-huang-nus/s-flm/runs/x4989caj
+WANDB_RUN_URL https://wandb.ai/ruiqi-f-huang-nus/s-flm/runs/x4989caj
+TRAIN {"optimizer_step": 210, "train/code_ce": 4.342284202575684, "train/grad_norm_pre_clip": 0.20486289262771606, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 220, "train/code_ce": 3.948763608932495, "train/grad_norm_pre_clip": 0.17059054970741272, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 230, "train/code_ce": 4.062829494476318, "train/grad_norm_pre_clip": 0.250609815120697, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 240, "train/code_ce": 4.059478759765625, "train/grad_norm_pre_clip": 0.18479977548122406, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 250, "train/code_ce": 4.289853572845459, "train/grad_norm_pre_clip": 0.21738795936107635, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 260, "train/code_ce": 4.0192413330078125, "train/grad_norm_pre_clip": 0.2178468257188797, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 270, "train/code_ce": 4.147002696990967, "train/grad_norm_pre_clip": 0.20072415471076965, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 280, "train/code_ce": 4.1914963722229, "train/grad_norm_pre_clip": 0.21521154046058655, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 290, "train/code_ce": 4.239328384399414, "train/grad_norm_pre_clip": 0.23901508748531342, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 300, "train/code_ce": 4.252909183502197, "train/grad_norm_pre_clip": 0.23285169899463654, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 310, "train/code_ce": 4.244506359100342, "train/grad_norm_pre_clip": 0.24077491462230682, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 320, "train/code_ce": 4.102032661437988, "train/grad_norm_pre_clip": 0.23833942413330078, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 330, "train/code_ce": 4.3958282470703125, "train/grad_norm_pre_clip": 0.26678428053855896, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 340, "train/code_ce": 4.153440475463867, "train/grad_norm_pre_clip": 0.2488110512495041, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 350, "train/code_ce": 4.045724391937256, "train/grad_norm_pre_clip": 0.21449151635169983, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 360, "train/code_ce": 4.030655860900879, "train/grad_norm_pre_clip": 0.28025537729263306, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 370, "train/code_ce": 4.129233360290527, "train/grad_norm_pre_clip": 0.2371901273727417, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 380, "train/code_ce": 4.015310287475586, "train/grad_norm_pre_clip": 0.26274746656417847, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 390, "train/code_ce": 3.9392688274383545, "train/grad_norm_pre_clip": 0.25533828139305115, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 400, "train/code_ce": 4.1026082038879395, "train/grad_norm_pre_clip": 0.2552240788936615, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 410, "train/code_ce": 4.123772621154785, "train/grad_norm_pre_clip": 0.27037107944488525, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 420, "train/code_ce": 4.116294860839844, "train/grad_norm_pre_clip": 0.27170878648757935, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 430, "train/code_ce": 3.988467216491699, "train/grad_norm_pre_clip": 0.26039278507232666, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 440, "train/code_ce": 4.373293876647949, "train/grad_norm_pre_clip": 0.325764924287796, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 450, "train/code_ce": 3.978480100631714, "train/grad_norm_pre_clip": 0.2560946047306061, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 460, "train/code_ce": 3.9719531536102295, "train/grad_norm_pre_clip": 0.2619854211807251, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 470, "train/code_ce": 4.140048980712891, "train/grad_norm_pre_clip": 0.30836203694343567, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 480, "train/code_ce": 4.206564426422119, "train/grad_norm_pre_clip": 0.3311886787414551, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 490, "train/code_ce": 4.045842170715332, "train/grad_norm_pre_clip": 0.30050164461135864, "train/lr": 3e-06}
+CODEONLY_PROBE {"step": 500, "weights": "raw", "precision": "FP32; TF32 disabled", "nfe": 128, "seed": 1, "correct": 3, "parseable": 12, "n": 16, "full_mask_code": {"code_ce": 4.1160030283826465, "mean_gold_probability": 0.22772554843983753, "top1_correct_tokens": 254, "tokens": 940, "top1_accuracy": 0.2702127659574468}}
+TRAIN {"optimizer_step": 500, "train/code_ce": 3.804751396179199, "train/grad_norm_pre_clip": 0.24639296531677246, "train/lr": 3e-06, "memorization/correct": 3, "memorization/parseable": 12, "full_mask/code_ce": 4.1160030283826465, "full_mask/code_top1": 0.2702127659574468, "full_mask/gold_probability": 0.22772554843983753}
+TRAIN {"optimizer_step": 510, "train/code_ce": 3.9062395095825195, "train/grad_norm_pre_clip": 0.2852638065814972, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 520, "train/code_ce": 3.9189727306365967, "train/grad_norm_pre_clip": 0.2669838070869446, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 530, "train/code_ce": 3.953040599822998, "train/grad_norm_pre_clip": 0.3030182719230652, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 540, "train/code_ce": 4.120911121368408, "train/grad_norm_pre_clip": 0.32674673199653625, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 550, "train/code_ce": 4.007991790771484, "train/grad_norm_pre_clip": 0.31411582231521606, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 560, "train/code_ce": 3.9847776889801025, "train/grad_norm_pre_clip": 0.3284551501274109, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 570, "train/code_ce": 3.994138479232788, "train/grad_norm_pre_clip": 0.31618085503578186, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 580, "train/code_ce": 4.054409980773926, "train/grad_norm_pre_clip": 0.37332621216773987, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 590, "train/code_ce": 4.0868048667907715, "train/grad_norm_pre_clip": 0.35088905692100525, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 600, "train/code_ce": 3.9913861751556396, "train/grad_norm_pre_clip": 0.41464388370513916, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 610, "train/code_ce": 4.015567302703857, "train/grad_norm_pre_clip": 0.36762309074401855, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 620, "train/code_ce": 4.144368648529053, "train/grad_norm_pre_clip": 0.40106773376464844, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 630, "train/code_ce": 3.6982853412628174, "train/grad_norm_pre_clip": 0.3098789155483246, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 640, "train/code_ce": 3.8193254470825195, "train/grad_norm_pre_clip": 0.33239009976387024, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 650, "train/code_ce": 3.9225165843963623, "train/grad_norm_pre_clip": 0.3700668513774872, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 660, "train/code_ce": 3.999410390853882, "train/grad_norm_pre_clip": 0.3852526545524597, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 670, "train/code_ce": 3.997243881225586, "train/grad_norm_pre_clip": 0.36748039722442627, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 680, "train/code_ce": 3.956681251525879, "train/grad_norm_pre_clip": 0.3648933470249176, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 690, "train/code_ce": 3.9439914226531982, "train/grad_norm_pre_clip": 0.4245159924030304, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 700, "train/code_ce": 4.067737102508545, "train/grad_norm_pre_clip": 0.43741604685783386, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 710, "train/code_ce": 4.152592658996582, "train/grad_norm_pre_clip": 0.46067380905151367, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 720, "train/code_ce": 3.832916498184204, "train/grad_norm_pre_clip": 0.35612815618515015, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 730, "train/code_ce": 3.860825300216675, "train/grad_norm_pre_clip": 0.36518117785453796, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 740, "train/code_ce": 3.877173900604248, "train/grad_norm_pre_clip": 0.42282482981681824, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 750, "train/code_ce": 3.786527633666992, "train/grad_norm_pre_clip": 0.3726939857006073, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 760, "train/code_ce": 3.844960927963257, "train/grad_norm_pre_clip": 0.4047578275203705, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 770, "train/code_ce": 3.7911524772644043, "train/grad_norm_pre_clip": 0.40106868743896484, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 780, "train/code_ce": 4.070464134216309, "train/grad_norm_pre_clip": 0.47551265358924866, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 790, "train/code_ce": 3.7485058307647705, "train/grad_norm_pre_clip": 0.39302825927734375, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 800, "train/code_ce": 3.750990867614746, "train/grad_norm_pre_clip": 0.43427374958992004, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 810, "train/code_ce": 3.8966927528381348, "train/grad_norm_pre_clip": 0.42349690198898315, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 820, "train/code_ce": 3.895040512084961, "train/grad_norm_pre_clip": 0.45284420251846313, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 830, "train/code_ce": 3.629331111907959, "train/grad_norm_pre_clip": 0.4077473282814026, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 840, "train/code_ce": 3.6511411666870117, "train/grad_norm_pre_clip": 0.4058578908443451, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 850, "train/code_ce": 3.9876816272735596, "train/grad_norm_pre_clip": 0.49907568097114563, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 860, "train/code_ce": 3.9514899253845215, "train/grad_norm_pre_clip": 0.5451278686523438, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 870, "train/code_ce": 4.054156303405762, "train/grad_norm_pre_clip": 0.5802937746047974, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 880, "train/code_ce": 3.9683287143707275, "train/grad_norm_pre_clip": 0.527216374874115, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 890, "train/code_ce": 3.7655160427093506, "train/grad_norm_pre_clip": 0.49289003014564514, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 900, "train/code_ce": 3.8374524116516113, "train/grad_norm_pre_clip": 0.48235374689102173, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 910, "train/code_ce": 3.8630213737487793, "train/grad_norm_pre_clip": 0.5034371018409729, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 920, "train/code_ce": 3.772016763687134, "train/grad_norm_pre_clip": 0.49561581015586853, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 930, "train/code_ce": 3.6534552574157715, "train/grad_norm_pre_clip": 0.506996750831604, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 940, "train/code_ce": 3.716951608657837, "train/grad_norm_pre_clip": 0.4927275478839874, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 950, "train/code_ce": 3.779723644256592, "train/grad_norm_pre_clip": 0.5661502480506897, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 960, "train/code_ce": 3.6786324977874756, "train/grad_norm_pre_clip": 0.5306333303451538, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 970, "train/code_ce": 3.536064386367798, "train/grad_norm_pre_clip": 0.4555942118167877, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 980, "train/code_ce": 3.611133337020874, "train/grad_norm_pre_clip": 0.4948466718196869, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 990, "train/code_ce": 3.7237157821655273, "train/grad_norm_pre_clip": 0.5607572793960571, "train/lr": 3e-06}
+CODEONLY_PROBE {"step": 1000, "weights": "raw", "precision": "FP32; TF32 disabled", "nfe": 128, "seed": 1, "correct": 3, "parseable": 14, "n": 16, "full_mask_code": {"code_ce": 3.7020879217918883, "mean_gold_probability": 0.22897493889991274, "top1_correct_tokens": 258, "tokens": 940, "top1_accuracy": 0.274468085106383}}
+TRAIN {"optimizer_step": 1000, "train/code_ce": 3.5927536487579346, "train/grad_norm_pre_clip": 0.5207650661468506, "train/lr": 3e-06, "memorization/correct": 3, "memorization/parseable": 14, "full_mask/code_ce": 3.7020879217918883, "full_mask/code_top1": 0.274468085106383, "full_mask/gold_probability": 0.22897493889991274}
+TRAIN {"optimizer_step": 1010, "train/code_ce": 3.8681609630584717, "train/grad_norm_pre_clip": 0.6463116407394409, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1020, "train/code_ce": 3.5605759620666504, "train/grad_norm_pre_clip": 0.5150402188301086, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1030, "train/code_ce": 3.6011972427368164, "train/grad_norm_pre_clip": 0.5783685445785522, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1040, "train/code_ce": 3.6725804805755615, "train/grad_norm_pre_clip": 0.5605335235595703, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1050, "train/code_ce": 3.5788605213165283, "train/grad_norm_pre_clip": 0.557232141494751, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1060, "train/code_ce": 3.689976215362549, "train/grad_norm_pre_clip": 0.6467746496200562, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1070, "train/code_ce": 3.6237006187438965, "train/grad_norm_pre_clip": 0.5968809723854065, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1080, "train/code_ce": 3.4592537879943848, "train/grad_norm_pre_clip": 0.5342113375663757, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1090, "train/code_ce": 3.6825075149536133, "train/grad_norm_pre_clip": 0.6285213232040405, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1100, "train/code_ce": 3.4283077716827393, "train/grad_norm_pre_clip": 0.5567516088485718, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1110, "train/code_ce": 3.5165963172912598, "train/grad_norm_pre_clip": 0.5550509095191956, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1120, "train/code_ce": 3.3896121978759766, "train/grad_norm_pre_clip": 0.4852033853530884, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1130, "train/code_ce": 3.5449862480163574, "train/grad_norm_pre_clip": 0.5854570865631104, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1140, "train/code_ce": 3.5285518169403076, "train/grad_norm_pre_clip": 0.604858934879303, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1150, "train/code_ce": 3.4802627563476562, "train/grad_norm_pre_clip": 0.6460149884223938, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1160, "train/code_ce": 3.3890843391418457, "train/grad_norm_pre_clip": 0.6088828444480896, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1170, "train/code_ce": 3.504908561706543, "train/grad_norm_pre_clip": 0.6707336902618408, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1180, "train/code_ce": 3.4308245182037354, "train/grad_norm_pre_clip": 0.5866526961326599, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1190, "train/code_ce": 3.4089176654815674, "train/grad_norm_pre_clip": 0.6134535670280457, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1200, "train/code_ce": 3.4629876613616943, "train/grad_norm_pre_clip": 0.6121829152107239, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1210, "train/code_ce": 3.3306257724761963, "train/grad_norm_pre_clip": 0.6228273510932922, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1220, "train/code_ce": 3.273009777069092, "train/grad_norm_pre_clip": 0.5551827549934387, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1230, "train/code_ce": 3.297206163406372, "train/grad_norm_pre_clip": 0.6866317987442017, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1240, "train/code_ce": 3.3246030807495117, "train/grad_norm_pre_clip": 0.6919043064117432, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1250, "train/code_ce": 3.435452699661255, "train/grad_norm_pre_clip": 0.5862302780151367, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1260, "train/code_ce": 3.2990334033966064, "train/grad_norm_pre_clip": 0.6717231869697571, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1270, "train/code_ce": 3.4128589630126953, "train/grad_norm_pre_clip": 0.7962324619293213, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1280, "train/code_ce": 3.3158180713653564, "train/grad_norm_pre_clip": 0.6682961583137512, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1290, "train/code_ce": 3.2027032375335693, "train/grad_norm_pre_clip": 0.6392501592636108, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1300, "train/code_ce": 3.204463481903076, "train/grad_norm_pre_clip": 0.6784679293632507, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1310, "train/code_ce": 3.2775285243988037, "train/grad_norm_pre_clip": 0.756880521774292, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1320, "train/code_ce": 3.2729532718658447, "train/grad_norm_pre_clip": 0.6189736127853394, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1330, "train/code_ce": 3.1509039402008057, "train/grad_norm_pre_clip": 0.5710587501525879, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1340, "train/code_ce": 3.164917469024658, "train/grad_norm_pre_clip": 0.5731794834136963, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1350, "train/code_ce": 3.3066728115081787, "train/grad_norm_pre_clip": 0.5866186022758484, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1360, "train/code_ce": 3.179084300994873, "train/grad_norm_pre_clip": 0.5662646293640137, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1370, "train/code_ce": 3.0818397998809814, "train/grad_norm_pre_clip": 0.512498676776886, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1380, "train/code_ce": 3.2215914726257324, "train/grad_norm_pre_clip": 0.7933799624443054, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1390, "train/code_ce": 3.0847156047821045, "train/grad_norm_pre_clip": 0.6279566287994385, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1400, "train/code_ce": 3.2297966480255127, "train/grad_norm_pre_clip": 0.6240162253379822, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1410, "train/code_ce": 3.0952301025390625, "train/grad_norm_pre_clip": 0.6096354722976685, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1420, "train/code_ce": 3.035209894180298, "train/grad_norm_pre_clip": 0.465981662273407, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1430, "train/code_ce": 2.988800048828125, "train/grad_norm_pre_clip": 0.5004804730415344, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1440, "train/code_ce": 3.0904300212860107, "train/grad_norm_pre_clip": 0.5120781660079956, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1450, "train/code_ce": 3.0588505268096924, "train/grad_norm_pre_clip": 0.5495731830596924, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1460, "train/code_ce": 3.011798143386841, "train/grad_norm_pre_clip": 0.6758080720901489, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1470, "train/code_ce": 3.01916241645813, "train/grad_norm_pre_clip": 0.49495840072631836, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1480, "train/code_ce": 2.977896213531494, "train/grad_norm_pre_clip": 0.636368453502655, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1490, "train/code_ce": 3.127896547317505, "train/grad_norm_pre_clip": 0.5756731033325195, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1500, "train/code_ce": 3.06056547164917, "train/grad_norm_pre_clip": 0.5172264575958252, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1510, "train/code_ce": 3.0850589275360107, "train/grad_norm_pre_clip": 0.5075504779815674, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1520, "train/code_ce": 3.0185954570770264, "train/grad_norm_pre_clip": 0.45555171370506287, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1530, "train/code_ce": 2.9186224937438965, "train/grad_norm_pre_clip": 0.49290698766708374, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1540, "train/code_ce": 2.939779281616211, "train/grad_norm_pre_clip": 0.6557058691978455, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1550, "train/code_ce": 3.0149760246276855, "train/grad_norm_pre_clip": 0.6917035579681396, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1560, "train/code_ce": 3.0200977325439453, "train/grad_norm_pre_clip": 0.49807026982307434, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1570, "train/code_ce": 2.9287543296813965, "train/grad_norm_pre_clip": 0.4897182285785675, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1580, "train/code_ce": 2.9341259002685547, "train/grad_norm_pre_clip": 0.5179789066314697, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1590, "train/code_ce": 2.9098899364471436, "train/grad_norm_pre_clip": 0.45510411262512207, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1600, "train/code_ce": 2.944478988647461, "train/grad_norm_pre_clip": 0.4611818492412567, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1610, "train/code_ce": 2.9046366214752197, "train/grad_norm_pre_clip": 0.5517465472221375, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1620, "train/code_ce": 2.857614517211914, "train/grad_norm_pre_clip": 0.4376351237297058, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1630, "train/code_ce": 2.899289846420288, "train/grad_norm_pre_clip": 0.5363780856132507, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1640, "train/code_ce": 3.0057425498962402, "train/grad_norm_pre_clip": 0.5253045558929443, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1650, "train/code_ce": 2.930967092514038, "train/grad_norm_pre_clip": 0.5796409845352173, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1660, "train/code_ce": 2.8933334350585938, "train/grad_norm_pre_clip": 0.37566348910331726, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1670, "train/code_ce": 2.886186122894287, "train/grad_norm_pre_clip": 0.5121384859085083, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1680, "train/code_ce": 2.9789772033691406, "train/grad_norm_pre_clip": 0.40395525097846985, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1690, "train/code_ce": 2.932583808898926, "train/grad_norm_pre_clip": 0.39843666553497314, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1700, "train/code_ce": 2.792027711868286, "train/grad_norm_pre_clip": 0.4491777718067169, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1710, "train/code_ce": 2.9512410163879395, "train/grad_norm_pre_clip": 0.38312244415283203, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1720, "train/code_ce": 2.828026294708252, "train/grad_norm_pre_clip": 0.4211741089820862, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1730, "train/code_ce": 2.8423240184783936, "train/grad_norm_pre_clip": 0.5240570902824402, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1740, "train/code_ce": 2.896559715270996, "train/grad_norm_pre_clip": 0.43884024024009705, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1750, "train/code_ce": 2.9276628494262695, "train/grad_norm_pre_clip": 0.4363766014575958, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1760, "train/code_ce": 2.892543077468872, "train/grad_norm_pre_clip": 0.37946951389312744, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1770, "train/code_ce": 2.8606293201446533, "train/grad_norm_pre_clip": 0.3247668743133545, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1780, "train/code_ce": 2.8654587268829346, "train/grad_norm_pre_clip": 0.33203670382499695, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1790, "train/code_ce": 2.8827192783355713, "train/grad_norm_pre_clip": 0.31964585185050964, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1800, "train/code_ce": 2.770127773284912, "train/grad_norm_pre_clip": 0.36398255825042725, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1810, "train/code_ce": 2.9008994102478027, "train/grad_norm_pre_clip": 0.3044838309288025, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1820, "train/code_ce": 2.859884023666382, "train/grad_norm_pre_clip": 0.2763832211494446, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1830, "train/code_ce": 2.8314149379730225, "train/grad_norm_pre_clip": 0.32011353969573975, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1840, "train/code_ce": 2.747474193572998, "train/grad_norm_pre_clip": 0.40891924500465393, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1850, "train/code_ce": 2.7645883560180664, "train/grad_norm_pre_clip": 0.4410519003868103, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1860, "train/code_ce": 2.803659439086914, "train/grad_norm_pre_clip": 0.46401724219322205, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1870, "train/code_ce": 2.81547212600708, "train/grad_norm_pre_clip": 0.2838219404220581, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1880, "train/code_ce": 2.757368564605713, "train/grad_norm_pre_clip": 0.40036606788635254, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1890, "train/code_ce": 2.635225296020508, "train/grad_norm_pre_clip": 0.4631562829017639, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1900, "train/code_ce": 2.787287950515747, "train/grad_norm_pre_clip": 0.24122963845729828, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1910, "train/code_ce": 2.7182023525238037, "train/grad_norm_pre_clip": 0.4063667953014374, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1920, "train/code_ce": 2.7646851539611816, "train/grad_norm_pre_clip": 0.3497198522090912, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1930, "train/code_ce": 2.7778592109680176, "train/grad_norm_pre_clip": 0.3985046148300171, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1940, "train/code_ce": 2.8192381858825684, "train/grad_norm_pre_clip": 0.21254493296146393, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1950, "train/code_ce": 2.6867737770080566, "train/grad_norm_pre_clip": 0.4321698546409607, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1960, "train/code_ce": 2.62918758392334, "train/grad_norm_pre_clip": 0.3616165518760681, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1970, "train/code_ce": 2.7108676433563232, "train/grad_norm_pre_clip": 0.33639422059059143, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1980, "train/code_ce": 2.74871826171875, "train/grad_norm_pre_clip": 0.37429115176200867, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 1990, "train/code_ce": 2.71748948097229, "train/grad_norm_pre_clip": 0.3876824676990509, "train/lr": 3e-06}
+CODEONLY_PROBE {"step": 2000, "weights": "raw", "precision": "FP32; TF32 disabled", "nfe": 128, "seed": 1, "correct": 2, "parseable": 12, "n": 16, "full_mask_code": {"code_ce": 2.7605902489195477, "mean_gold_probability": 0.23682108534143326, "top1_correct_tokens": 273, "tokens": 940, "top1_accuracy": 0.2904255319148936}}
+TRAIN {"optimizer_step": 2000, "train/code_ce": 2.727388620376587, "train/grad_norm_pre_clip": 0.328008234500885, "train/lr": 3e-06, "memorization/correct": 2, "memorization/parseable": 12, "full_mask/code_ce": 2.7605902489195477, "full_mask/code_top1": 0.2904255319148936, "full_mask/gold_probability": 0.23682108534143326}
+TRAIN {"optimizer_step": 2010, "train/code_ce": 2.781813383102417, "train/grad_norm_pre_clip": 0.27196040749549866, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2020, "train/code_ce": 2.731482744216919, "train/grad_norm_pre_clip": 0.2961684763431549, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2030, "train/code_ce": 2.750649929046631, "train/grad_norm_pre_clip": 0.27036336064338684, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2040, "train/code_ce": 2.7435555458068848, "train/grad_norm_pre_clip": 0.3044634163379669, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2050, "train/code_ce": 2.70822811126709, "train/grad_norm_pre_clip": 0.2986335754394531, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2060, "train/code_ce": 2.7646563053131104, "train/grad_norm_pre_clip": 0.2833171784877777, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2070, "train/code_ce": 2.7197132110595703, "train/grad_norm_pre_clip": 0.33693984150886536, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2080, "train/code_ce": 2.6793038845062256, "train/grad_norm_pre_clip": 0.2581733167171478, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2090, "train/code_ce": 2.8082547187805176, "train/grad_norm_pre_clip": 0.3295002579689026, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2100, "train/code_ce": 2.7612831592559814, "train/grad_norm_pre_clip": 0.2887340784072876, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2110, "train/code_ce": 2.7121126651763916, "train/grad_norm_pre_clip": 0.25897687673568726, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2120, "train/code_ce": 2.7059478759765625, "train/grad_norm_pre_clip": 0.2390979528427124, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2130, "train/code_ce": 2.5935869216918945, "train/grad_norm_pre_clip": 0.37489861249923706, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2140, "train/code_ce": 2.759552001953125, "train/grad_norm_pre_clip": 0.26892292499542236, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2150, "train/code_ce": 2.866947889328003, "train/grad_norm_pre_clip": 0.2800655663013458, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2160, "train/code_ce": 2.8121745586395264, "train/grad_norm_pre_clip": 0.24776236712932587, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2170, "train/code_ce": 2.7437777519226074, "train/grad_norm_pre_clip": 0.2550552785396576, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2180, "train/code_ce": 2.7870090007781982, "train/grad_norm_pre_clip": 0.26048189401626587, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2190, "train/code_ce": 2.674880266189575, "train/grad_norm_pre_clip": 0.28050994873046875, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2200, "train/code_ce": 2.727670907974243, "train/grad_norm_pre_clip": 0.2874346077442169, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2210, "train/code_ce": 2.7562499046325684, "train/grad_norm_pre_clip": 0.28582802414894104, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2220, "train/code_ce": 2.6908459663391113, "train/grad_norm_pre_clip": 0.2644476890563965, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2230, "train/code_ce": 2.6798501014709473, "train/grad_norm_pre_clip": 0.3317391872406006, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2240, "train/code_ce": 2.6830334663391113, "train/grad_norm_pre_clip": 0.2504420876502991, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2250, "train/code_ce": 2.643509864807129, "train/grad_norm_pre_clip": 0.32895830273628235, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2260, "train/code_ce": 2.66768217086792, "train/grad_norm_pre_clip": 0.2992684841156006, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2270, "train/code_ce": 2.676440715789795, "train/grad_norm_pre_clip": 0.24313674867153168, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2280, "train/code_ce": 2.7193353176116943, "train/grad_norm_pre_clip": 0.30705371499061584, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2290, "train/code_ce": 2.663032054901123, "train/grad_norm_pre_clip": 0.2663002610206604, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2300, "train/code_ce": 2.721583366394043, "train/grad_norm_pre_clip": 0.22254465520381927, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2310, "train/code_ce": 2.7855522632598877, "train/grad_norm_pre_clip": 0.24175560474395752, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2320, "train/code_ce": 2.667192220687866, "train/grad_norm_pre_clip": 0.2516900897026062, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2330, "train/code_ce": 2.596945285797119, "train/grad_norm_pre_clip": 0.30695298314094543, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2340, "train/code_ce": 2.7049508094787598, "train/grad_norm_pre_clip": 0.2564077377319336, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2350, "train/code_ce": 2.716905355453491, "train/grad_norm_pre_clip": 0.30266115069389343, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2360, "train/code_ce": 2.599820375442505, "train/grad_norm_pre_clip": 0.3759802579879761, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2370, "train/code_ce": 2.6731600761413574, "train/grad_norm_pre_clip": 0.2475152313709259, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2380, "train/code_ce": 2.6579394340515137, "train/grad_norm_pre_clip": 0.23241516947746277, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2390, "train/code_ce": 2.7313525676727295, "train/grad_norm_pre_clip": 0.23331303894519806, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2400, "train/code_ce": 2.5707690715789795, "train/grad_norm_pre_clip": 0.3399118483066559, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2410, "train/code_ce": 2.720898151397705, "train/grad_norm_pre_clip": 0.2314194291830063, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2420, "train/code_ce": 2.681983232498169, "train/grad_norm_pre_clip": 0.2347351759672165, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2430, "train/code_ce": 2.590797185897827, "train/grad_norm_pre_clip": 0.25119397044181824, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2440, "train/code_ce": 2.5940656661987305, "train/grad_norm_pre_clip": 0.2323819249868393, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2450, "train/code_ce": 2.597784996032715, "train/grad_norm_pre_clip": 0.2389909029006958, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2460, "train/code_ce": 2.6570236682891846, "train/grad_norm_pre_clip": 0.21176838874816895, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2470, "train/code_ce": 2.689988136291504, "train/grad_norm_pre_clip": 0.2585296034812927, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2480, "train/code_ce": 2.749283790588379, "train/grad_norm_pre_clip": 0.22194980084896088, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2490, "train/code_ce": 2.7351016998291016, "train/grad_norm_pre_clip": 0.2838287949562073, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2500, "train/code_ce": 2.661809206008911, "train/grad_norm_pre_clip": 0.26535284519195557, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2510, "train/code_ce": 2.6409101486206055, "train/grad_norm_pre_clip": 0.2318737655878067, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2520, "train/code_ce": 2.654822587966919, "train/grad_norm_pre_clip": 0.23246479034423828, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2530, "train/code_ce": 2.7338197231292725, "train/grad_norm_pre_clip": 0.25727537274360657, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2540, "train/code_ce": 2.5582027435302734, "train/grad_norm_pre_clip": 0.24539348483085632, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2550, "train/code_ce": 2.562293767929077, "train/grad_norm_pre_clip": 0.23917272686958313, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2560, "train/code_ce": 2.600686550140381, "train/grad_norm_pre_clip": 0.2599939703941345, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2570, "train/code_ce": 2.599132776260376, "train/grad_norm_pre_clip": 0.24074286222457886, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2580, "train/code_ce": 2.699357271194458, "train/grad_norm_pre_clip": 0.224848672747612, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2590, "train/code_ce": 2.5435783863067627, "train/grad_norm_pre_clip": 0.23988476395606995, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2600, "train/code_ce": 2.707097291946411, "train/grad_norm_pre_clip": 0.2791232764720917, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2610, "train/code_ce": 2.545837640762329, "train/grad_norm_pre_clip": 0.3347109854221344, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2620, "train/code_ce": 2.6141865253448486, "train/grad_norm_pre_clip": 0.2862251102924347, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2630, "train/code_ce": 2.741983652114868, "train/grad_norm_pre_clip": 0.2219921499490738, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2640, "train/code_ce": 2.5996623039245605, "train/grad_norm_pre_clip": 0.23234115540981293, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2650, "train/code_ce": 2.675631046295166, "train/grad_norm_pre_clip": 0.25635963678359985, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2660, "train/code_ce": 2.5655038356781006, "train/grad_norm_pre_clip": 0.26532429456710815, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2670, "train/code_ce": 2.533848285675049, "train/grad_norm_pre_clip": 0.2435997873544693, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2680, "train/code_ce": 2.510725498199463, "train/grad_norm_pre_clip": 0.2507975101470947, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2690, "train/code_ce": 2.496894359588623, "train/grad_norm_pre_clip": 0.2617403566837311, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2700, "train/code_ce": 2.620633602142334, "train/grad_norm_pre_clip": 0.24487705528736115, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2710, "train/code_ce": 2.551954984664917, "train/grad_norm_pre_clip": 0.21804192662239075, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2720, "train/code_ce": 2.66947603225708, "train/grad_norm_pre_clip": 0.2739630341529846, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2730, "train/code_ce": 2.479409694671631, "train/grad_norm_pre_clip": 0.2320319265127182, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2740, "train/code_ce": 2.679457187652588, "train/grad_norm_pre_clip": 0.2375478595495224, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2750, "train/code_ce": 2.524871826171875, "train/grad_norm_pre_clip": 0.26523634791374207, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2760, "train/code_ce": 2.6365396976470947, "train/grad_norm_pre_clip": 0.21874289214611053, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2770, "train/code_ce": 2.6205315589904785, "train/grad_norm_pre_clip": 0.19894817471504211, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2780, "train/code_ce": 2.7217094898223877, "train/grad_norm_pre_clip": 0.21884283423423767, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2790, "train/code_ce": 2.602574586868286, "train/grad_norm_pre_clip": 0.22972093522548676, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2800, "train/code_ce": 2.7179372310638428, "train/grad_norm_pre_clip": 0.2241021990776062, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2810, "train/code_ce": 2.6312971115112305, "train/grad_norm_pre_clip": 0.21312113106250763, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2820, "train/code_ce": 2.6601126194000244, "train/grad_norm_pre_clip": 0.23261968791484833, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2830, "train/code_ce": 2.5936427116394043, "train/grad_norm_pre_clip": 0.2084706872701645, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2840, "train/code_ce": 2.5796091556549072, "train/grad_norm_pre_clip": 0.24440164864063263, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2850, "train/code_ce": 2.3579978942871094, "train/grad_norm_pre_clip": 0.2522957921028137, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2860, "train/code_ce": 2.4811298847198486, "train/grad_norm_pre_clip": 0.22785158455371857, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2870, "train/code_ce": 2.520200252532959, "train/grad_norm_pre_clip": 0.2303154021501541, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2880, "train/code_ce": 2.624399423599243, "train/grad_norm_pre_clip": 0.21236935257911682, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2890, "train/code_ce": 2.598768472671509, "train/grad_norm_pre_clip": 0.1956464648246765, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2900, "train/code_ce": 2.504554271697998, "train/grad_norm_pre_clip": 0.20948711037635803, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2910, "train/code_ce": 2.6409008502960205, "train/grad_norm_pre_clip": 0.21429063379764557, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2920, "train/code_ce": 2.4852542877197266, "train/grad_norm_pre_clip": 0.2227344810962677, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2930, "train/code_ce": 2.4602272510528564, "train/grad_norm_pre_clip": 0.2075173556804657, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2940, "train/code_ce": 2.509220838546753, "train/grad_norm_pre_clip": 0.21488603949546814, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2950, "train/code_ce": 2.525486946105957, "train/grad_norm_pre_clip": 0.21789875626564026, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2960, "train/code_ce": 2.5561978816986084, "train/grad_norm_pre_clip": 0.2065383642911911, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2970, "train/code_ce": 2.6326210498809814, "train/grad_norm_pre_clip": 0.19861391186714172, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2980, "train/code_ce": 2.412849187850952, "train/grad_norm_pre_clip": 0.2232421338558197, "train/lr": 3e-06}
+TRAIN {"optimizer_step": 2990, "train/code_ce": 2.5768234729766846, "train/grad_norm_pre_clip": 0.21303388476371765, "train/lr": 3e-06}
+CODEONLY_PROBE {"step": 3000, "weights": "raw", "precision": "FP32; TF32 disabled", "nfe": 128, "seed": 1, "correct": 0, "parseable": 4, "n": 16, "full_mask_code": {"code_ce": 2.53181798407372, "mean_gold_probability": 0.2459190328070458, "top1_correct_tokens": 295, "tokens": 940, "top1_accuracy": 0.31382978723404253}}
+TRAIN {"optimizer_step": 3000, "train/code_ce": 2.6183595657348633, "train/grad_norm_pre_clip": 0.18692561984062195, "train/lr": 3e-06, "memorization/correct": 0, "memorization/parseable": 4, "full_mask/code_ce": 2.53181798407372, "full_mask/code_top1": 0.31382978723404253, "full_mask/gold_probability": 0.2459190328070458}
+wandb: uploading artifact overfit16-fullmask-codeonly-logs; uploading output.log; uploading wandb-summary.json
+wandb: uploading artifact overfit16-fullmask-codeonly-logs
+wandb: uploading history steps 2999-3000, summary, console lines 307-308
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:          full_mask/code_ce █▆▂▁
+wandb:        full_mask/code_top1 ▁▂▄█
+wandb: full_mask/gold_probability ▁▁▄█
+wandb:       memorization/correct ██▆▁
+wandb:     memorization/parseable ▇█▇▁
+wandb:             optimizer_step ▁▁▁▁▁▂▂▂▂▂▂▃▃▃▃▄▄▄▄▄▄▄▄▄▅▆▆▆▆▇▇▇▇▇▇█████
+wandb:              train/code_ce █▇▇▆█▇▇▇▇▆▆▆▆▆▆▅▅▆▄▅▅▃▃▃▃▃▂▂▂▂▂▂▁▂▂▂▂▁▁▁
+wandb:   train/grad_norm_pre_clip ▁▂▂▂▂▄▃▄▄▃▆▆▅▆▆█▆▆▅▃▃▃▄▃▂▃▂▂▂▁▁▂▂▂▁▁▂▁▁▁
+wandb:                   train/lr ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb:          full_mask/code_ce 2.53182
+wandb:        full_mask/code_top1 0.31383
+wandb: full_mask/gold_probability 0.24592
+wandb:       memorization/correct 0
+wandb:     memorization/parseable 4
+wandb:             optimizer_step 3000
+wandb:              train/code_ce 2.61836
+wandb:   train/grad_norm_pre_clip 0.18693
+wandb:                   train/lr 0.0
+wandb: 
+wandb: 🚀 View run mdlm-overfit16-fullmask-codeonly-fp32-lr3e-6-3000 at: https://wandb.ai/ruiqi-f-huang-nus/s-flm/runs/x4989caj
+wandb: ⭐️ View project at: https://wandb.ai/ruiqi-f-huang-nus/s-flm
+wandb: Synced 5 W&B file(s), 0 media file(s), 5 artifact file(s) and 0 other file(s)
+wandb: Find logs at: /root/autodl-tmp/s-flm/outputs/overfit16-fullmask-codeonly-20261023-01/resume-to3000/wandb/run-20261023_132039-x4989caj/logs
+FULLMASK_CODEONLY_COMPLETE {"initial_step": 200, "final_step": 3000, "successful_updates": 2800, "presentations": 22400, "frozen_parameters_unchanged": true, "changed_lora_elements": 1179648, "wall_seconds_including_evaluation": 423.14836394041777, "peak_allocated_mib": 7296.9921875}

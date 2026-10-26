@@ -1,0 +1,354 @@
+{
+  "validation_file": "/root/s-flm/data/gsm8k_pot_result/sft_validation.jsonl",
+  "validation_rows": 632,
+  "generation_subset_size": 128,
+  "generation_subset_seed": 20261022,
+  "generation_sample_ids": [
+    "gsm8k_train_0016",
+    "gsm8k_train_0030",
+    "gsm8k_train_0033",
+    "gsm8k_train_0192",
+    "gsm8k_train_0245",
+    "gsm8k_train_0256",
+    "gsm8k_train_0380",
+    "gsm8k_train_0420",
+    "gsm8k_train_0491",
+    "gsm8k_train_0556",
+    "gsm8k_train_0559",
+    "gsm8k_train_0571",
+    "gsm8k_train_0572",
+    "gsm8k_train_0593",
+    "gsm8k_train_0622",
+    "gsm8k_train_0674",
+    "gsm8k_train_0675",
+    "gsm8k_train_0681",
+    "gsm8k_train_0689",
+    "gsm8k_train_0695",
+    "gsm8k_train_0713",
+    "gsm8k_train_0822",
+    "gsm8k_train_0880",
+    "gsm8k_train_0895",
+    "gsm8k_train_0992",
+    "gsm8k_train_1053",
+    "gsm8k_train_1057",
+    "gsm8k_train_1108",
+    "gsm8k_train_1199",
+    "gsm8k_train_1210",
+    "gsm8k_train_1280",
+    "gsm8k_train_1298",
+    "gsm8k_train_1379",
+    "gsm8k_train_1503",
+    "gsm8k_train_1544",
+    "gsm8k_train_1643",
+    "gsm8k_train_1736",
+    "gsm8k_train_1775",
+    "gsm8k_train_1838",
+    "gsm8k_train_1840",
+    "gsm8k_train_1841",
+    "gsm8k_train_1921",
+    "gsm8k_train_2054",
+    "gsm8k_train_2078",
+    "gsm8k_train_2102",
+    "gsm8k_train_2215",
+    "gsm8k_train_2241",
+    "gsm8k_train_2294",
+    "gsm8k_train_2306",
+    "gsm8k_train_2378",
+    "gsm8k_train_2457",
+    "gsm8k_train_2532",
+    "gsm8k_train_2549",
+    "gsm8k_train_2572",
+    "gsm8k_train_2664",
+    "gsm8k_train_2676",
+    "gsm8k_train_2712",
+    "gsm8k_train_2918",
+    "gsm8k_train_3210",
+    "gsm8k_train_3223",
+    "gsm8k_train_3250",
+    "gsm8k_train_3378",
+    "gsm8k_train_3404",
+    "gsm8k_train_3477",
+    "gsm8k_train_3561",
+    "gsm8k_train_3645",
+    "gsm8k_train_3698",
+    "gsm8k_train_3805",
+    "gsm8k_train_3839",
+    "gsm8k_train_3913",
+    "gsm8k_train_4032",
+    "gsm8k_train_4115",
+    "gsm8k_train_4150",
+    "gsm8k_train_4184",
+    "gsm8k_train_4217",
+    "gsm8k_train_4366",
+    "gsm8k_train_4381",
+    "gsm8k_train_4403",
+    "gsm8k_train_4415",
+    "gsm8k_train_4512",
+    "gsm8k_train_4647",
+    "gsm8k_train_4703",
+    "gsm8k_train_4837",
+    "gsm8k_train_4880",
+    "gsm8k_train_5110",
+    "gsm8k_train_5148",
+    "gsm8k_train_5225",
+    "gsm8k_train_5297",
+    "gsm8k_train_5345",
+    "gsm8k_train_5490",
+    "gsm8k_train_5509",
+    "gsm8k_train_5580",
+    "gsm8k_train_5588",
+    "gsm8k_train_5621",
+    "gsm8k_train_5662",
+    "gsm8k_train_5699",
+    "gsm8k_train_5777",
+    "gsm8k_train_5868",
+    "gsm8k_train_5922",
+    "gsm8k_train_5991",
+    "gsm8k_train_6159",
+    "gsm8k_train_6176",
+    "gsm8k_train_6199",
+    "gsm8k_train_6233",
+    "gsm8k_train_6283",
+    "gsm8k_train_6322",
+    "gsm8k_train_6333",
+    "gsm8k_train_6343",
+    "gsm8k_train_6349",
+    "gsm8k_train_6379",
+    "gsm8k_train_6432",
+    "gsm8k_train_6458",
+    "gsm8k_train_6485",
+    "gsm8k_train_6602",
+    "gsm8k_train_6656",
+    "gsm8k_train_6683",
+    "gsm8k_train_6746",
+    "gsm8k_train_6754",
+    "gsm8k_train_6814",
+    "gsm8k_train_6855",
+    "gsm8k_train_6977",
+    "gsm8k_train_6999",
+    "gsm8k_train_7062",
+    "gsm8k_train_7130",
+    "gsm8k_train_7131",
+    "gsm8k_train_7181",
+    "gsm8k_train_7278",
+    "gsm8k_train_7280"
+  ],
+  "mask_rates": [
+    0.25,
+    0.5,
+    0.75,
+    0.9,
+    1.0
+  ],
+  "generation_steps": [
+    32,
+    128
+  ],
+  "seed": 1,
+  "models": {
+    "base": {
+      "checkpoint": "/root/autodl-tmp/s-flm/checkpoints/tinygsm/mdlm.ckpt",
+      "weights": "EMA",
+      "mask_sweep": [
+        {
+          "requested_mask_rate": 0.25,
+          "actual_code_eos_mask_rate": 0.2500449802087082,
+          "masked_code_eos_tokens": 22236,
+          "masked_token_ce": 0.6065677362158265,
+          "masked_token_accuracy": 0.9396024464831805
+        },
+        {
+          "requested_mask_rate": 0.5,
+          "actual_code_eos_mask_rate": 0.5001236955739474,
+          "masked_code_eos_tokens": 44475,
+          "masked_token_ce": 0.9441371145350267,
+          "masked_token_accuracy": 0.8822934232715008
+        },
+        {
+          "requested_mask_rate": 0.75,
+          "actual_code_eos_mask_rate": 0.7499550197912919,
+          "masked_code_eos_tokens": 66692,
+          "masked_token_ce": 2.118990746956098,
+          "masked_token_accuracy": 0.7214208600731722
+        },
+        {
+          "requested_mask_rate": 0.9,
+          "actual_code_eos_mask_rate": 0.9000539762504498,
+          "masked_code_eos_tokens": 80040,
+          "masked_token_ce": 4.666506614856634,
+          "masked_token_accuracy": 0.4743253373313343
+        },
+        {
+          "requested_mask_rate": 1.0,
+          "actual_code_eos_mask_rate": 1.0,
+          "masked_code_eos_tokens": 88928,
+          "masked_token_ce": 10.922951620403234,
+          "masked_token_accuracy": 0.17146455559553797
+        }
+      ],
+      "generation": {
+        "32": {
+          "n": 128,
+          "eos_observed": 123,
+          "eos_rate": 0.9609375,
+          "full_parseable": 71,
+          "eos_parseable": 81,
+          "full_correct": 5,
+          "eos_correct": 6,
+          "eos_to_correct_changes": 1,
+          "eos_to_wrong_changes": 0,
+          "median_eos_position": 150
+        },
+        "128": {
+          "n": 128,
+          "eos_observed": 127,
+          "eos_rate": 0.9921875,
+          "full_parseable": 89,
+          "eos_parseable": 92,
+          "full_correct": 18,
+          "eos_correct": 18,
+          "eos_to_correct_changes": 0,
+          "eos_to_wrong_changes": 0,
+          "median_eos_position": 150
+        }
+      },
+      "elapsed_seconds": 78.75995516590774
+    },
+    "step200": {
+      "checkpoint": "/root/autodl-tmp/s-flm/outputs/sft/20261022-target-learning-lora-lr1e5/checkpoints/step-000200.ckpt",
+      "weights": "EMA",
+      "mask_sweep": [
+        {
+          "requested_mask_rate": 0.25,
+          "actual_code_eos_mask_rate": 0.2500449802087082,
+          "masked_code_eos_tokens": 22236,
+          "masked_token_ce": 0.5786615022761206,
+          "masked_token_accuracy": 0.941446303291959
+        },
+        {
+          "requested_mask_rate": 0.5,
+          "actual_code_eos_mask_rate": 0.5001236955739474,
+          "masked_code_eos_tokens": 44475,
+          "masked_token_ce": 0.8818407283652158,
+          "masked_token_accuracy": 0.8874198988195615
+        },
+        {
+          "requested_mask_rate": 0.75,
+          "actual_code_eos_mask_rate": 0.7499550197912919,
+          "masked_code_eos_tokens": 66692,
+          "masked_token_ce": 1.9764341716895626,
+          "masked_token_accuracy": 0.7287080909254483
+        },
+        {
+          "requested_mask_rate": 0.9,
+          "actual_code_eos_mask_rate": 0.9000539762504498,
+          "masked_code_eos_tokens": 80040,
+          "masked_token_ce": 4.395776714914027,
+          "masked_token_accuracy": 0.4784982508745627
+        },
+        {
+          "requested_mask_rate": 1.0,
+          "actual_code_eos_mask_rate": 1.0,
+          "masked_code_eos_tokens": 88928,
+          "masked_token_ce": 10.750012716572677,
+          "masked_token_accuracy": 0.1714982907520691
+        }
+      ],
+      "generation": {
+        "32": {
+          "n": 128,
+          "eos_observed": 124,
+          "eos_rate": 0.96875,
+          "full_parseable": 71,
+          "eos_parseable": 82,
+          "full_correct": 5,
+          "eos_correct": 6,
+          "eos_to_correct_changes": 1,
+          "eos_to_wrong_changes": 0,
+          "median_eos_position": 150
+        },
+        "128": {
+          "n": 128,
+          "eos_observed": 127,
+          "eos_rate": 0.9921875,
+          "full_parseable": 93,
+          "eos_parseable": 96,
+          "full_correct": 18,
+          "eos_correct": 18,
+          "eos_to_correct_changes": 0,
+          "eos_to_wrong_changes": 0,
+          "median_eos_position": 150
+        }
+      },
+      "elapsed_seconds": 85.40496622025967
+    },
+    "step711": {
+      "checkpoint": "/root/autodl-tmp/s-flm/outputs/sft/20261022-target-learning-lora-lr1e5/checkpoints/step-000711.ckpt",
+      "weights": "EMA",
+      "mask_sweep": [
+        {
+          "requested_mask_rate": 0.25,
+          "actual_code_eos_mask_rate": 0.2500449802087082,
+          "masked_code_eos_tokens": 22236,
+          "masked_token_ce": 0.3486435732881807,
+          "masked_token_accuracy": 0.9592102896204353
+        },
+        {
+          "requested_mask_rate": 0.5,
+          "actual_code_eos_mask_rate": 0.5001236955739474,
+          "masked_code_eos_tokens": 44475,
+          "masked_token_ce": 0.4368016792456041,
+          "masked_token_accuracy": 0.939584035975267
+        },
+        {
+          "requested_mask_rate": 0.75,
+          "actual_code_eos_mask_rate": 0.7499550197912919,
+          "masked_code_eos_tokens": 66692,
+          "masked_token_ce": 0.9524866709402868,
+          "masked_token_accuracy": 0.8225724224794578
+        },
+        {
+          "requested_mask_rate": 0.9,
+          "actual_code_eos_mask_rate": 0.9000539762504498,
+          "masked_code_eos_tokens": 80040,
+          "masked_token_ce": 2.2864684067268124,
+          "masked_token_accuracy": 0.561744127936032
+        },
+        {
+          "requested_mask_rate": 1.0,
+          "actual_code_eos_mask_rate": 1.0,
+          "masked_code_eos_tokens": 88928,
+          "masked_token_ce": 7.973840011371559,
+          "masked_token_accuracy": 0.17352240014393666
+        }
+      ],
+      "generation": {
+        "32": {
+          "n": 128,
+          "eos_observed": 124,
+          "eos_rate": 0.96875,
+          "full_parseable": 69,
+          "eos_parseable": 79,
+          "full_correct": 8,
+          "eos_correct": 9,
+          "eos_to_correct_changes": 1,
+          "eos_to_wrong_changes": 0,
+          "median_eos_position": 150
+        },
+        "128": {
+          "n": 128,
+          "eos_observed": 128,
+          "eos_rate": 1.0,
+          "full_parseable": 88,
+          "eos_parseable": 91,
+          "full_correct": 14,
+          "eos_correct": 14,
+          "eos_to_correct_changes": 0,
+          "eos_to_wrong_changes": 0,
+          "median_eos_position": 150
+        }
+      },
+      "elapsed_seconds": 85.71426767297089
+    }
+  }
+}

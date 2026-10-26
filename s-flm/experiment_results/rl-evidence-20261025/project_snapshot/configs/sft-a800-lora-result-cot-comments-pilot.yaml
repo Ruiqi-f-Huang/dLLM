@@ -1,0 +1,21 @@
+# 200-step pilot: GSM8K reference reasoning as Python comments, with the
+# existing result-normalized PoT code and LoRA training setup unchanged.
+defaults:
+  - sft-a800-lora-result-lr1e5
+  - override /data: gsm8k-pot-result-cot-comments
+  - _self_
+
+trainer:
+  max_steps: 200
+
+callbacks:
+  milestone_checkpoint:
+    milestones: [100, 200]
+
+wandb:
+  name: mdlm-sft-lora-result-cot-comments-pilot-${now:%Y%m%d-%H%M%S}
+  tags: [mdlm, gsm8k-pot, sft, lora, reference-reasoning-comments, pilot]
+
+hydra:
+  run:
+    dir: ${hydra:runtime.cwd}/outputs/sft/${now:%Y%m%d}-lora-result-cot-comments-pilot-01

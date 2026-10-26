@@ -1,0 +1,42 @@
+{
+  "base": {
+    "0.3": {
+      "mean_delta": 0.005859375,
+      "question_bootstrap_ci95": [
+        0.0,
+        0.01171875
+      ],
+      "improved_questions": 3,
+      "worsened_questions": 0
+    },
+    "0.1": {
+      "mean_delta": -0.005859375,
+      "question_bootstrap_ci95": [
+        -0.01953125,
+        0.0078125
+      ],
+      "improved_questions": 4,
+      "worsened_questions": 6
+    }
+  },
+  "fullmask250": {
+    "0.3": {
+      "mean_delta": -0.001953125,
+      "question_bootstrap_ci95": [
+        -0.017578125,
+        0.013671875
+      ],
+      "improved_questions": 6,
+      "worsened_questions": 5
+    },
+    "0.1": {
+      "mean_delta": -0.009765625,
+      "question_bootstrap_ci95": [
+        -0.029296875,
+        0.0078125
+      ],
+      "improved_questions": 4,
+      "worsened_questions": 6
+    }
+  }
+}

@@ -1,0 +1,25 @@
+test_ema_or_raw_initialization_resets_history (test_sft.FinetuneTests.test_ema_or_raw_initialization_resets_history) ... ok
+test_incompatible_ema_fails (test_sft.FinetuneTests.test_incompatible_ema_fails) ... ok
+test_cache_follows_contents_and_mask_settings (test_sft.SFTDataTests.test_cache_follows_contents_and_mask_settings) ... Saving the dataset (0/1 shards):   0%|          | 0/1 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1/1 [00:00<00:00, 405.76 examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1/1 [00:00<00:00, 384.76 examples/s]
+Saving the dataset (0/1 shards):   0%|          | 0/1 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1/1 [00:00<00:00, 484.11 examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1/1 [00:00<00:00, 460.36 examples/s]
+Saving the dataset (0/1 shards):   0%|          | 0/1 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1/1 [00:00<00:00, 517.82 examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1/1 [00:00<00:00, 492.17 examples/s]
+ok
+test_generation_validation_never_receives_reference_code (test_sft.SFTDataTests.test_generation_validation_never_receives_reference_code) ... ok
+test_oversize_program_is_rejected (test_sft.SFTDataTests.test_oversize_program_is_rejected) ... ok
+test_prefix_eos_padding_and_no_gold_leak (test_sft.SFTDataTests.test_prefix_eos_padding_and_no_gold_leak) ... Saving the dataset (0/1 shards):   0%|          | 0/1 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1/1 [00:00<00:00, 509.39 examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1/1 [00:00<00:00, 484.44 examples/s]
+ok
+test_same_question_cannot_cross_splits (test_sft.SFTDataTests.test_same_question_cannot_cross_splits) ... ok
+test_accumulation_csv_and_validation (test_sft_monitor.MonitorTests.test_accumulation_csv_and_validation) ... GPU available: True (cuda), used: False
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+/root/venvs/s-flm/lib/python3.12/site-packages/lightning/pytorch/trainer/setup.py:177: GPU available but not used. You can set it by doing `Trainer(accelerator='gpu')`.
+/root/venvs/s-flm/lib/python3.12/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:425: The 'train_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=95` in the `DataLoader` to improve performance.
+/root/venvs/s-flm/lib/python3.12/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:425: The 'val_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=95` in the `DataLoader` to improve performance.
+`Trainer.fit` stopped: `max_epochs=1` reached.
+ok
+test_nonfinite_gradient_is_reported_without_changing_amp_behavior (test_sft_monitor.MonitorTests.test_nonfinite_gradient_is_reported_without_changing_amp_behavior) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.236s
+
+OK

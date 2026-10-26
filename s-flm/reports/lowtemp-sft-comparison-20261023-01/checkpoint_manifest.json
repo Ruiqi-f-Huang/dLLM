@@ -1,0 +1,34 @@
+{
+  "base": {
+    "path": "/root/s-flm/checkpoints/tinygsm/mdlm.ckpt",
+    "sha256": "251b4c935424622c13d75712cfefef0cae6829ad7bab6b712e009fc372bf1583",
+    "global_step": 250000,
+    "ema_updates": 250000,
+    "ema_tensors": 130,
+    "lora_tensors": 0
+  },
+  "uniform200": {
+    "path": "/root/autodl-tmp/s-flm/checkpoints/lora-control-step200.ckpt",
+    "sha256": "ed8e54e38a63abb561324a85aea424851728935141e895ad9c562efcca4f331d",
+    "global_step": 200,
+    "ema_updates": 200,
+    "ema_tensors": 96,
+    "lora_tensors": 96
+  },
+  "weighted200": {
+    "path": "/root/autodl-tmp/s-flm/outputs/semantic-weighted-20261023-01/train/checkpoints/step-000200.ckpt",
+    "sha256": "7467210f26e577e43c8496e7c2ab48f493607114b594bc80dcb30257c1734d1b",
+    "global_step": 200,
+    "ema_updates": 200,
+    "ema_tensors": 96,
+    "lora_tensors": 96
+  },
+  "weighted711": {
+    "path": "/root/autodl-tmp/s-flm/outputs/semantic-weighted-20261023-01/train/checkpoints/step-000711.ckpt",
+    "sha256": "5b2f034c078a7557814cb9d243387ca525f9cb418568556740a569a23427029a",
+    "global_step": 711,
+    "ema_updates": 711,
+    "ema_tensors": 96,
+    "lora_tensors": 96
+  }
+}

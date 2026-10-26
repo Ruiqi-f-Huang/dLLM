@@ -1,0 +1,11 @@
+{
+  "reward": 0.268,
+  "pass_any": 0.7,
+  "mixed": 0.684,
+  "unique_fraction": 0.9745,
+  "groups": 250,
+  "updates": 500,
+  "policy": "raw",
+  "probability": "full-mask proxy",
+  "reward_protocol": "existing evaluator recovery; first-EOS truncation"
+}

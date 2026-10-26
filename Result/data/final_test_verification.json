@@ -1,0 +1,13 @@
+{
+  "records": 7914,
+  "unique_model_seed_question_keys": 7914,
+  "completed": true,
+  "previous_results_hashes_preserved": true,
+  "sampler_audits_equal": true,
+  "actual_backbone_dtype": "torch.float32",
+  "infrastructure_failures": 0,
+  "absolute_ci_bootstrap_replicates": 10000,
+  "absolute_ci_seed": 20261026,
+  "paired_ci_source": "archived comparison.json",
+  "resume_note": "original infinite-loop result handled with unchanged 2-second per-execution timeout"
+}

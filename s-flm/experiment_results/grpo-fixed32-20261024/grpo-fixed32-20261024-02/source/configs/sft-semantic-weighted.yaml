@@ -1,0 +1,12 @@
+# Only optimization weights differ from the historical strict LoRA control.
+defaults:
+  - sft-a800-lora-control
+  - _self_
+
+data:
+  semantic_weight: 2.0
+trainer:
+  max_steps: 711
+wandb:
+  name: mdlm-sft-semantic-w2-711
+  tags: [mdlm, gsm8k-pot, sft, lora, base-aligned, semantic-weighted]

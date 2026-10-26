@@ -1,0 +1,29 @@
+{
+  "source_dir": "data/gsm8k_pot_result_cot_comments",
+  "source_hashes": {
+    "sft_train.jsonl": "2229bdc49acb94ec9bcf45fb2fcb9190e229ce30a1d6919bd3ff683ecb435b9d",
+    "sft_validation.jsonl": "1fa4ae55ecc99a4221620fc0d50779898957424d21c2c49c6e8c45da1c972e0c"
+  },
+  "transformation": "Remove trailing GSM8K reference-solution comment lines only until each complete [BOS] question separator target [EOS] sequence fits max_length. Preserve the question, executable Python AST, answer, and split.",
+  "tokenizer": "/root/autodl-tmp/s-flm/cache/huggingface/hub/models--HuggingFaceTB--SmolLM-135M/snapshots/1d461723eec654e65efdc40cf49301c89c0c92f4",
+  "separator": "\\n",
+  "max_length": 512,
+  "splits": {
+    "train": {
+      "rows": 5682,
+      "max_tokens": 512,
+      "over_max": 0,
+      "rows_with_trimmed_comments": 131,
+      "comment_lines_removed": 298,
+      "sha256": "74b2d2925f316dab8f702958d986317576e474eee7b895150521bf896a607efd"
+    },
+    "validation": {
+      "rows": 632,
+      "max_tokens": 511,
+      "over_max": 0,
+      "rows_with_trimmed_comments": 21,
+      "comment_lines_removed": 45,
+      "sha256": "212ab48f8fd415c9c2f402dad99db29a74b11e0d7d3182f758463f0c8b4cec62"
+    }
+  }
+}

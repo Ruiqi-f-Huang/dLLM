@@ -1,0 +1,31 @@
+{
+  "arms": {
+    "original": {
+      "global_step": 200,
+      "ema_updates": 200,
+      "ema_tensors": 96,
+      "sha256": "f9886a0de2a29ddddb77f1a91b74cacdbfcadce8fef7818cef4a979b2645056e",
+      "all_lora_finite": true,
+      "nonzero_lora_B": 48,
+      "optimizer_steps": [
+        200
+      ]
+    },
+    "generated": {
+      "global_step": 200,
+      "ema_updates": 200,
+      "ema_tensors": 96,
+      "sha256": "a495da6989dc945ed73a5c2e11479b28a32f239418167864d9d08d9a4269e86c",
+      "all_lora_finite": true,
+      "nonzero_lora_B": 48,
+      "optimizer_steps": [
+        200
+      ]
+    }
+  },
+  "common_training_configuration_identical": true,
+  "num_frozen_tensors": 131,
+  "frozen_equal_across_arms": true,
+  "frozen_equal_pretrained_ema_foundation": true,
+  "different_lora_tensors_between_arms": 96
+}

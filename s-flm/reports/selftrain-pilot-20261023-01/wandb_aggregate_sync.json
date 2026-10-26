@@ -1,0 +1,12 @@
+{
+  "original": {
+    "url": "https://wandb.ai/ruiqi-f-huang-nus/s-flm/runs/stp23w0original",
+    "state": "finished",
+    "optimizer_step": 200
+  },
+  "generated": {
+    "url": "https://wandb.ai/ruiqi-f-huang-nus/s-flm/runs/stp23w0generated",
+    "state": "finished",
+    "optimizer_step": 200
+  }
+}

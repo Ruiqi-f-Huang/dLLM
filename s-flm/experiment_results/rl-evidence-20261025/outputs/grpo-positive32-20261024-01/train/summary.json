@@ -1,0 +1,3330 @@
+{
+  "objective": "positive-only fixed 75% mask; success A=.5, failure A=0; original denominator; no KL/clipping; diagnostic only",
+  "frozen_changed": [],
+  "initial": {
+    "step": 0,
+    "program_loss": 0.02757587470114231,
+    "token_loss": 0.028675751760601997,
+    "success_mean_logp": -0.11030349880456924,
+    "failure_mean_logp": -0.3016253709793091,
+    "mean_gap": 0.19132187962532043,
+    "parameter_delta_norm": 0.0,
+    "raw_output_dtype": "torch.float32",
+    "per_program": [
+      {
+        "sample_id": "gsm8k_train_4888",
+        "reward": 1.0,
+        "mean_logp": -0.08090919256210327
+      },
+      {
+        "sample_id": "gsm8k_train_4888",
+        "reward": 0.0,
+        "mean_logp": -0.10080371797084808
+      },
+      {
+        "sample_id": "gsm8k_train_3329",
+        "reward": 1.0,
+        "mean_logp": -0.0353211872279644
+      },
+      {
+        "sample_id": "gsm8k_train_3329",
+        "reward": 0.0,
+        "mean_logp": -0.19106431305408478
+      },
+      {
+        "sample_id": "gsm8k_train_3931",
+        "reward": 1.0,
+        "mean_logp": -0.3157317042350769
+      },
+      {
+        "sample_id": "gsm8k_train_3931",
+        "reward": 0.0,
+        "mean_logp": -0.24065729975700378
+      },
+      {
+        "sample_id": "gsm8k_train_4786",
+        "reward": 1.0,
+        "mean_logp": -0.010041799396276474
+      },
+      {
+        "sample_id": "gsm8k_train_4786",
+        "reward": 0.0,
+        "mean_logp": -0.11428962647914886
+      },
+      {
+        "sample_id": "gsm8k_train_0924",
+        "reward": 1.0,
+        "mean_logp": -0.040684279054403305
+      },
+      {
+        "sample_id": "gsm8k_train_0924",
+        "reward": 0.0,
+        "mean_logp": -1.9663853645324707
+      },
+      {
+        "sample_id": "gsm8k_train_7385",
+        "reward": 1.0,
+        "mean_logp": -0.14232690632343292
+      },
+      {
+        "sample_id": "gsm8k_train_7385",
+        "reward": 0.0,
+        "mean_logp": -0.2529546916484833
+      },
+      {
+        "sample_id": "gsm8k_train_4699",
+        "reward": 1.0,
+        "mean_logp": -0.07505789399147034
+      },
+      {
+        "sample_id": "gsm8k_train_4699",
+        "reward": 0.0,
+        "mean_logp": -0.28859737515449524
+      },
+      {
+        "sample_id": "gsm8k_train_5164",
+        "reward": 1.0,
+        "mean_logp": -0.06515231728553772
+      },
+      {
+        "sample_id": "gsm8k_train_5164",
+        "reward": 0.0,
+        "mean_logp": -0.19467119872570038
+      },
+      {
+        "sample_id": "gsm8k_train_2214",
+        "reward": 1.0,
+        "mean_logp": -0.35897013545036316
+      },
+      {
+        "sample_id": "gsm8k_train_2214",
+        "reward": 0.0,
+        "mean_logp": -0.24687425792217255
+      },
+      {
+        "sample_id": "gsm8k_train_4402",
+        "reward": 1.0,
+        "mean_logp": -0.009374022483825684
+      },
+      {
+        "sample_id": "gsm8k_train_4402",
+        "reward": 0.0,
+        "mean_logp": -0.3544970154762268
+      },
+      {
+        "sample_id": "gsm8k_train_5190",
+        "reward": 1.0,
+        "mean_logp": -0.7160974740982056
+      },
+      {
+        "sample_id": "gsm8k_train_5190",
+        "reward": 0.0,
+        "mean_logp": -0.12090888619422913
+      },
+      {
+        "sample_id": "gsm8k_train_6478",
+        "reward": 1.0,
+        "mean_logp": -0.004439443815499544
+      },
+      {
+        "sample_id": "gsm8k_train_6478",
+        "reward": 0.0,
+        "mean_logp": -0.10099596530199051
+      },
+      {
+        "sample_id": "gsm8k_train_0499",
+        "reward": 1.0,
+        "mean_logp": -0.003281309735029936
+      },
+      {
+        "sample_id": "gsm8k_train_0499",
+        "reward": 0.0,
+        "mean_logp": -0.04216621071100235
+      },
+      {
+        "sample_id": "gsm8k_train_4248",
+        "reward": 1.0,
+        "mean_logp": -0.014699377119541168
+      },
+      {
+        "sample_id": "gsm8k_train_4248",
+        "reward": 0.0,
+        "mean_logp": -0.04702161252498627
+      },
+      {
+        "sample_id": "gsm8k_train_7310",
+        "reward": 1.0,
+        "mean_logp": -0.011753140017390251
+      },
+      {
+        "sample_id": "gsm8k_train_7310",
+        "reward": 0.0,
+        "mean_logp": -0.17685498297214508
+      },
+      {
+        "sample_id": "gsm8k_train_0112",
+        "reward": 1.0,
+        "mean_logp": -0.094709113240242
+      },
+      {
+        "sample_id": "gsm8k_train_0112",
+        "reward": 0.0,
+        "mean_logp": -0.06879204511642456
+      },
+      {
+        "sample_id": "gsm8k_train_0358",
+        "reward": 1.0,
+        "mean_logp": -0.06530731916427612
+      },
+      {
+        "sample_id": "gsm8k_train_0358",
+        "reward": 0.0,
+        "mean_logp": -0.4518353343009949
+      },
+      {
+        "sample_id": "gsm8k_train_6976",
+        "reward": 1.0,
+        "mean_logp": -0.016316991299390793
+      },
+      {
+        "sample_id": "gsm8k_train_6976",
+        "reward": 0.0,
+        "mean_logp": -0.8830460906028748
+      },
+      {
+        "sample_id": "gsm8k_train_2237",
+        "reward": 1.0,
+        "mean_logp": -0.012721397913992405
+      },
+      {
+        "sample_id": "gsm8k_train_2237",
+        "reward": 0.0,
+        "mean_logp": -0.004041382111608982
+      },
+      {
+        "sample_id": "gsm8k_train_6583",
+        "reward": 1.0,
+        "mean_logp": -0.13425317406654358
+      },
+      {
+        "sample_id": "gsm8k_train_6583",
+        "reward": 0.0,
+        "mean_logp": -0.022011537104845047
+      },
+      {
+        "sample_id": "gsm8k_train_5778",
+        "reward": 1.0,
+        "mean_logp": -0.3549749255180359
+      },
+      {
+        "sample_id": "gsm8k_train_5778",
+        "reward": 0.0,
+        "mean_logp": -0.2378935068845749
+      },
+      {
+        "sample_id": "gsm8k_train_0186",
+        "reward": 1.0,
+        "mean_logp": -0.20522339642047882
+      },
+      {
+        "sample_id": "gsm8k_train_0186",
+        "reward": 0.0,
+        "mean_logp": -0.4544393718242645
+      },
+      {
+        "sample_id": "gsm8k_train_4824",
+        "reward": 1.0,
+        "mean_logp": -0.023242006078362465
+      },
+      {
+        "sample_id": "gsm8k_train_4824",
+        "reward": 0.0,
+        "mean_logp": -0.0952361673116684
+      },
+      {
+        "sample_id": "gsm8k_train_5854",
+        "reward": 1.0,
+        "mean_logp": -0.002659196499735117
+      },
+      {
+        "sample_id": "gsm8k_train_5854",
+        "reward": 0.0,
+        "mean_logp": -0.196739062666893
+      },
+      {
+        "sample_id": "gsm8k_train_1172",
+        "reward": 1.0,
+        "mean_logp": -0.18663525581359863
+      },
+      {
+        "sample_id": "gsm8k_train_1172",
+        "reward": 0.0,
+        "mean_logp": -0.14800384640693665
+      },
+      {
+        "sample_id": "gsm8k_train_0280",
+        "reward": 1.0,
+        "mean_logp": -0.008813203312456608
+      },
+      {
+        "sample_id": "gsm8k_train_0280",
+        "reward": 0.0,
+        "mean_logp": -0.9475797414779663
+      },
+      {
+        "sample_id": "gsm8k_train_5468",
+        "reward": 1.0,
+        "mean_logp": -0.3563189208507538
+      },
+      {
+        "sample_id": "gsm8k_train_5468",
+        "reward": 0.0,
+        "mean_logp": -0.08903168886899948
+      },
+      {
+        "sample_id": "gsm8k_train_7271",
+        "reward": 1.0,
+        "mean_logp": -0.038664355874061584
+      },
+      {
+        "sample_id": "gsm8k_train_7271",
+        "reward": 0.0,
+        "mean_logp": -0.3678841292858124
+      },
+      {
+        "sample_id": "gsm8k_train_1370",
+        "reward": 1.0,
+        "mean_logp": -0.008727043867111206
+      },
+      {
+        "sample_id": "gsm8k_train_1370",
+        "reward": 0.0,
+        "mean_logp": -0.373273640871048
+      },
+      {
+        "sample_id": "gsm8k_train_3525",
+        "reward": 1.0,
+        "mean_logp": -0.028559494763612747
+      },
+      {
+        "sample_id": "gsm8k_train_3525",
+        "reward": 0.0,
+        "mean_logp": -0.2122037261724472
+      },
+      {
+        "sample_id": "gsm8k_train_4566",
+        "reward": 1.0,
+        "mean_logp": -0.007113431114703417
+      },
+      {
+        "sample_id": "gsm8k_train_4566",
+        "reward": 0.0,
+        "mean_logp": -0.0054978434927761555
+      },
+      {
+        "sample_id": "gsm8k_train_1869",
+        "reward": 1.0,
+        "mean_logp": -0.1016324907541275
+      },
+      {
+        "sample_id": "gsm8k_train_1869",
+        "reward": 0.0,
+        "mean_logp": -0.6557604670524597
+      }
+    ],
+    "heldout": [
+      {
+        "step": 0,
+        "program_loss": 0.03712604194879532,
+        "token_loss": 0.040681399405002594,
+        "success_mean_logp": -0.14850416779518127,
+        "failure_mean_logp": -0.3063351511955261,
+        "mean_gap": 0.15783098340034485,
+        "parameter_delta_norm": 0.0,
+        "raw_output_dtype": "torch.float32",
+        "per_program": [
+          {
+            "sample_id": "gsm8k_train_4888",
+            "reward": 1.0,
+            "mean_logp": -0.022163979709148407
+          },
+          {
+            "sample_id": "gsm8k_train_4888",
+            "reward": 0.0,
+            "mean_logp": -0.583294689655304
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "reward": 1.0,
+            "mean_logp": -0.032542046159505844
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "reward": 0.0,
+            "mean_logp": -0.17904634773731232
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "reward": 1.0,
+            "mean_logp": -0.11470071226358414
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "reward": 0.0,
+            "mean_logp": -0.15154483914375305
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "reward": 1.0,
+            "mean_logp": -0.019219862297177315
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "reward": 0.0,
+            "mean_logp": -0.20731371641159058
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "reward": 1.0,
+            "mean_logp": -0.08202755451202393
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "reward": 0.0,
+            "mean_logp": -1.695767879486084
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "reward": 1.0,
+            "mean_logp": -0.04823493957519531
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "reward": 0.0,
+            "mean_logp": -0.10507339239120483
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "reward": 1.0,
+            "mean_logp": -0.05085119232535362
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "reward": 0.0,
+            "mean_logp": -0.08017854392528534
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "reward": 1.0,
+            "mean_logp": -0.1439567506313324
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "reward": 0.0,
+            "mean_logp": -0.0995502918958664
+          },
+          {
+            "sample_id": "gsm8k_train_2214",
+            "reward": 1.0,
+            "mean_logp": -0.5197014808654785
+          },
+          {
+            "sample_id": "gsm8k_train_2214",
+            "reward": 0.0,
+            "mean_logp": -0.1425687074661255
+          },
+          {
+            "sample_id": "gsm8k_train_4402",
+            "reward": 1.0,
+            "mean_logp": -0.04111170023679733
+          },
+          {
+            "sample_id": "gsm8k_train_4402",
+            "reward": 0.0,
+            "mean_logp": -0.28945037722587585
+          },
+          {
+            "sample_id": "gsm8k_train_5190",
+            "reward": 1.0,
+            "mean_logp": -1.6013784408569336
+          },
+          {
+            "sample_id": "gsm8k_train_5190",
+            "reward": 0.0,
+            "mean_logp": -0.255149245262146
+          },
+          {
+            "sample_id": "gsm8k_train_6478",
+            "reward": 1.0,
+            "mean_logp": -0.0049751801416277885
+          },
+          {
+            "sample_id": "gsm8k_train_6478",
+            "reward": 0.0,
+            "mean_logp": -0.01936947926878929
+          },
+          {
+            "sample_id": "gsm8k_train_0499",
+            "reward": 1.0,
+            "mean_logp": -0.025584079325199127
+          },
+          {
+            "sample_id": "gsm8k_train_0499",
+            "reward": 0.0,
+            "mean_logp": -0.09384270757436752
+          },
+          {
+            "sample_id": "gsm8k_train_4248",
+            "reward": 1.0,
+            "mean_logp": -0.04481342434883118
+          },
+          {
+            "sample_id": "gsm8k_train_4248",
+            "reward": 0.0,
+            "mean_logp": -0.07490444928407669
+          },
+          {
+            "sample_id": "gsm8k_train_7310",
+            "reward": 1.0,
+            "mean_logp": -0.00028067899984307587
+          },
+          {
+            "sample_id": "gsm8k_train_7310",
+            "reward": 0.0,
+            "mean_logp": -0.044029854238033295
+          },
+          {
+            "sample_id": "gsm8k_train_0112",
+            "reward": 1.0,
+            "mean_logp": -0.11335711926221848
+          },
+          {
+            "sample_id": "gsm8k_train_0112",
+            "reward": 0.0,
+            "mean_logp": -0.6775299310684204
+          },
+          {
+            "sample_id": "gsm8k_train_0358",
+            "reward": 1.0,
+            "mean_logp": -0.04328285902738571
+          },
+          {
+            "sample_id": "gsm8k_train_0358",
+            "reward": 0.0,
+            "mean_logp": -0.08801623433828354
+          },
+          {
+            "sample_id": "gsm8k_train_6976",
+            "reward": 1.0,
+            "mean_logp": -0.1465892195701599
+          },
+          {
+            "sample_id": "gsm8k_train_6976",
+            "reward": 0.0,
+            "mean_logp": -0.5377127528190613
+          },
+          {
+            "sample_id": "gsm8k_train_2237",
+            "reward": 1.0,
+            "mean_logp": -0.014849124476313591
+          },
+          {
+            "sample_id": "gsm8k_train_2237",
+            "reward": 0.0,
+            "mean_logp": -0.597707211971283
+          },
+          {
+            "sample_id": "gsm8k_train_6583",
+            "reward": 1.0,
+            "mean_logp": -0.031796153634786606
+          },
+          {
+            "sample_id": "gsm8k_train_6583",
+            "reward": 0.0,
+            "mean_logp": -0.09265007823705673
+          },
+          {
+            "sample_id": "gsm8k_train_5778",
+            "reward": 1.0,
+            "mean_logp": -0.1915448158979416
+          },
+          {
+            "sample_id": "gsm8k_train_5778",
+            "reward": 0.0,
+            "mean_logp": -0.16202107071876526
+          },
+          {
+            "sample_id": "gsm8k_train_0186",
+            "reward": 1.0,
+            "mean_logp": -0.20568329095840454
+          },
+          {
+            "sample_id": "gsm8k_train_0186",
+            "reward": 0.0,
+            "mean_logp": -0.3031306266784668
+          },
+          {
+            "sample_id": "gsm8k_train_4824",
+            "reward": 1.0,
+            "mean_logp": -0.06524761021137238
+          },
+          {
+            "sample_id": "gsm8k_train_4824",
+            "reward": 0.0,
+            "mean_logp": -0.2914499044418335
+          },
+          {
+            "sample_id": "gsm8k_train_5854",
+            "reward": 1.0,
+            "mean_logp": -0.021212857216596603
+          },
+          {
+            "sample_id": "gsm8k_train_5854",
+            "reward": 0.0,
+            "mean_logp": -0.4068824052810669
+          },
+          {
+            "sample_id": "gsm8k_train_1172",
+            "reward": 1.0,
+            "mean_logp": -0.3947599530220032
+          },
+          {
+            "sample_id": "gsm8k_train_1172",
+            "reward": 0.0,
+            "mean_logp": -0.17195259034633636
+          },
+          {
+            "sample_id": "gsm8k_train_0280",
+            "reward": 1.0,
+            "mean_logp": -0.07479766011238098
+          },
+          {
+            "sample_id": "gsm8k_train_0280",
+            "reward": 0.0,
+            "mean_logp": -0.2861997187137604
+          },
+          {
+            "sample_id": "gsm8k_train_5468",
+            "reward": 1.0,
+            "mean_logp": -0.42734551429748535
+          },
+          {
+            "sample_id": "gsm8k_train_5468",
+            "reward": 0.0,
+            "mean_logp": -0.26625609397888184
+          },
+          {
+            "sample_id": "gsm8k_train_7271",
+            "reward": 1.0,
+            "mean_logp": -0.017803192138671875
+          },
+          {
+            "sample_id": "gsm8k_train_7271",
+            "reward": 0.0,
+            "mean_logp": -1.089434027671814
+          },
+          {
+            "sample_id": "gsm8k_train_1370",
+            "reward": 1.0,
+            "mean_logp": -0.01038067601621151
+          },
+          {
+            "sample_id": "gsm8k_train_1370",
+            "reward": 0.0,
+            "mean_logp": -0.3277561068534851
+          },
+          {
+            "sample_id": "gsm8k_train_3525",
+            "reward": 1.0,
+            "mean_logp": -0.05561487749218941
+          },
+          {
+            "sample_id": "gsm8k_train_3525",
+            "reward": 0.0,
+            "mean_logp": -0.2662949860095978
+          },
+          {
+            "sample_id": "gsm8k_train_4566",
+            "reward": 1.0,
+            "mean_logp": -0.0019026059890165925
+          },
+          {
+            "sample_id": "gsm8k_train_4566",
+            "reward": 0.0,
+            "mean_logp": -0.0019457753514871001
+          },
+          {
+            "sample_id": "gsm8k_train_1869",
+            "reward": 1.0,
+            "mean_logp": -0.18442386388778687
+          },
+          {
+            "sample_id": "gsm8k_train_1869",
+            "reward": 0.0,
+            "mean_logp": -0.2147008776664734
+          }
+        ]
+      },
+      {
+        "step": 0,
+        "program_loss": 0.03249305114150047,
+        "token_loss": 0.0330432690680027,
+        "success_mean_logp": -0.1299722045660019,
+        "failure_mean_logp": -0.2972450852394104,
+        "mean_gap": 0.1672728806734085,
+        "parameter_delta_norm": 0.0,
+        "raw_output_dtype": "torch.float32",
+        "per_program": [
+          {
+            "sample_id": "gsm8k_train_4888",
+            "reward": 1.0,
+            "mean_logp": -0.05293950065970421
+          },
+          {
+            "sample_id": "gsm8k_train_4888",
+            "reward": 0.0,
+            "mean_logp": -0.0348067432641983
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "reward": 1.0,
+            "mean_logp": -0.051184363663196564
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "reward": 0.0,
+            "mean_logp": -0.024126024916768074
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "reward": 1.0,
+            "mean_logp": -0.15201939642429352
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "reward": 0.0,
+            "mean_logp": -0.08587171137332916
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "reward": 1.0,
+            "mean_logp": -0.024013176560401917
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "reward": 0.0,
+            "mean_logp": -0.18867453932762146
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "reward": 1.0,
+            "mean_logp": -0.34381103515625
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "reward": 0.0,
+            "mean_logp": -1.3981853723526
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "reward": 1.0,
+            "mean_logp": -0.38136765360832214
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "reward": 0.0,
+            "mean_logp": -0.3652888238430023
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "reward": 1.0,
+            "mean_logp": -0.12479422986507416
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "reward": 0.0,
+            "mean_logp": -0.8957694172859192
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "reward": 1.0,
+            "mean_logp": -0.06819593161344528
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "reward": 0.0,
+            "mean_logp": -0.07220660150051117
+          },
+          {
+            "sample_id": "gsm8k_train_2214",
+            "reward": 1.0,
+            "mean_logp": -0.001170522184111178
+          },
+          {
+            "sample_id": "gsm8k_train_2214",
+            "reward": 0.0,
+            "mean_logp": -0.7321368455886841
+          },
+          {
+            "sample_id": "gsm8k_train_4402",
+            "reward": 1.0,
+            "mean_logp": -0.03393445163965225
+          },
+          {
+            "sample_id": "gsm8k_train_4402",
+            "reward": 0.0,
+            "mean_logp": -0.31717774271965027
+          },
+          {
+            "sample_id": "gsm8k_train_5190",
+            "reward": 1.0,
+            "mean_logp": -0.6356722712516785
+          },
+          {
+            "sample_id": "gsm8k_train_5190",
+            "reward": 0.0,
+            "mean_logp": -0.23398488759994507
+          },
+          {
+            "sample_id": "gsm8k_train_6478",
+            "reward": 1.0,
+            "mean_logp": -0.01107766106724739
+          },
+          {
+            "sample_id": "gsm8k_train_6478",
+            "reward": 0.0,
+            "mean_logp": -0.02515951730310917
+          },
+          {
+            "sample_id": "gsm8k_train_0499",
+            "reward": 1.0,
+            "mean_logp": -0.025962339714169502
+          },
+          {
+            "sample_id": "gsm8k_train_0499",
+            "reward": 0.0,
+            "mean_logp": -0.03336489945650101
+          },
+          {
+            "sample_id": "gsm8k_train_4248",
+            "reward": 1.0,
+            "mean_logp": -0.0053570871241390705
+          },
+          {
+            "sample_id": "gsm8k_train_4248",
+            "reward": 0.0,
+            "mean_logp": -0.07846666872501373
+          },
+          {
+            "sample_id": "gsm8k_train_7310",
+            "reward": 1.0,
+            "mean_logp": -0.018149249255657196
+          },
+          {
+            "sample_id": "gsm8k_train_7310",
+            "reward": 0.0,
+            "mean_logp": -0.03108762763440609
+          },
+          {
+            "sample_id": "gsm8k_train_0112",
+            "reward": 1.0,
+            "mean_logp": -0.02471209317445755
+          },
+          {
+            "sample_id": "gsm8k_train_0112",
+            "reward": 0.0,
+            "mean_logp": -0.08068618178367615
+          },
+          {
+            "sample_id": "gsm8k_train_0358",
+            "reward": 1.0,
+            "mean_logp": -0.09201644361019135
+          },
+          {
+            "sample_id": "gsm8k_train_0358",
+            "reward": 0.0,
+            "mean_logp": -0.22959034144878387
+          },
+          {
+            "sample_id": "gsm8k_train_6976",
+            "reward": 1.0,
+            "mean_logp": -0.0008517198730260134
+          },
+          {
+            "sample_id": "gsm8k_train_6976",
+            "reward": 0.0,
+            "mean_logp": -0.41131913661956787
+          },
+          {
+            "sample_id": "gsm8k_train_2237",
+            "reward": 1.0,
+            "mean_logp": -0.662775456905365
+          },
+          {
+            "sample_id": "gsm8k_train_2237",
+            "reward": 0.0,
+            "mean_logp": -0.5262615084648132
+          },
+          {
+            "sample_id": "gsm8k_train_6583",
+            "reward": 1.0,
+            "mean_logp": -0.044187068939208984
+          },
+          {
+            "sample_id": "gsm8k_train_6583",
+            "reward": 0.0,
+            "mean_logp": -0.16802485287189484
+          },
+          {
+            "sample_id": "gsm8k_train_5778",
+            "reward": 1.0,
+            "mean_logp": -0.10374291241168976
+          },
+          {
+            "sample_id": "gsm8k_train_5778",
+            "reward": 0.0,
+            "mean_logp": -0.20302486419677734
+          },
+          {
+            "sample_id": "gsm8k_train_0186",
+            "reward": 1.0,
+            "mean_logp": -0.17340725660324097
+          },
+          {
+            "sample_id": "gsm8k_train_0186",
+            "reward": 0.0,
+            "mean_logp": -0.41729670763015747
+          },
+          {
+            "sample_id": "gsm8k_train_4824",
+            "reward": 1.0,
+            "mean_logp": -0.022884119302034378
+          },
+          {
+            "sample_id": "gsm8k_train_4824",
+            "reward": 0.0,
+            "mean_logp": -0.23076696693897247
+          },
+          {
+            "sample_id": "gsm8k_train_5854",
+            "reward": 1.0,
+            "mean_logp": -0.0028286187443882227
+          },
+          {
+            "sample_id": "gsm8k_train_5854",
+            "reward": 0.0,
+            "mean_logp": -0.31896349787712097
+          },
+          {
+            "sample_id": "gsm8k_train_1172",
+            "reward": 1.0,
+            "mean_logp": -0.17392674088478088
+          },
+          {
+            "sample_id": "gsm8k_train_1172",
+            "reward": 0.0,
+            "mean_logp": -0.1552778035402298
+          },
+          {
+            "sample_id": "gsm8k_train_0280",
+            "reward": 1.0,
+            "mean_logp": -0.07609336823225021
+          },
+          {
+            "sample_id": "gsm8k_train_0280",
+            "reward": 0.0,
+            "mean_logp": -0.33781203627586365
+          },
+          {
+            "sample_id": "gsm8k_train_5468",
+            "reward": 1.0,
+            "mean_logp": -0.16555997729301453
+          },
+          {
+            "sample_id": "gsm8k_train_5468",
+            "reward": 0.0,
+            "mean_logp": -0.6150466203689575
+          },
+          {
+            "sample_id": "gsm8k_train_7271",
+            "reward": 1.0,
+            "mean_logp": -0.016487153246998787
+          },
+          {
+            "sample_id": "gsm8k_train_7271",
+            "reward": 0.0,
+            "mean_logp": -0.26367321610450745
+          },
+          {
+            "sample_id": "gsm8k_train_1370",
+            "reward": 1.0,
+            "mean_logp": -0.3165071904659271
+          },
+          {
+            "sample_id": "gsm8k_train_1370",
+            "reward": 0.0,
+            "mean_logp": -0.07433749735355377
+          },
+          {
+            "sample_id": "gsm8k_train_3525",
+            "reward": 1.0,
+            "mean_logp": -0.18923360109329224
+          },
+          {
+            "sample_id": "gsm8k_train_3525",
+            "reward": 0.0,
+            "mean_logp": -0.17436593770980835
+          },
+          {
+            "sample_id": "gsm8k_train_4566",
+            "reward": 1.0,
+            "mean_logp": -0.015523060224950314
+          },
+          {
+            "sample_id": "gsm8k_train_4566",
+            "reward": 0.0,
+            "mean_logp": -0.01686626486480236
+          },
+          {
+            "sample_id": "gsm8k_train_1869",
+            "reward": 1.0,
+            "mean_logp": -0.14872503280639648
+          },
+          {
+            "sample_id": "gsm8k_train_1869",
+            "reward": 0.0,
+            "mean_logp": -0.772222101688385
+          }
+        ]
+      },
+      {
+        "step": 0,
+        "program_loss": 0.029221821576356888,
+        "token_loss": 0.029283586889505386,
+        "success_mean_logp": -0.11688728630542755,
+        "failure_mean_logp": -0.24265238642692566,
+        "mean_gap": 0.1257651150226593,
+        "parameter_delta_norm": 0.0,
+        "raw_output_dtype": "torch.float32",
+        "per_program": [
+          {
+            "sample_id": "gsm8k_train_4888",
+            "reward": 1.0,
+            "mean_logp": -0.18054473400115967
+          },
+          {
+            "sample_id": "gsm8k_train_4888",
+            "reward": 0.0,
+            "mean_logp": -0.04393971338868141
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "reward": 1.0,
+            "mean_logp": -0.03106413409113884
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "reward": 0.0,
+            "mean_logp": -0.19009223580360413
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "reward": 1.0,
+            "mean_logp": -0.05890198051929474
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "reward": 0.0,
+            "mean_logp": -0.6234604716300964
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "reward": 1.0,
+            "mean_logp": -0.0020576624665409327
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "reward": 0.0,
+            "mean_logp": -0.19175390899181366
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "reward": 1.0,
+            "mean_logp": -0.030948372557759285
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "reward": 0.0,
+            "mean_logp": -0.19662177562713623
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "reward": 1.0,
+            "mean_logp": -0.1947983354330063
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "reward": 0.0,
+            "mean_logp": -0.046455204486846924
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "reward": 1.0,
+            "mean_logp": -0.06129173934459686
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "reward": 0.0,
+            "mean_logp": -0.08538947254419327
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "reward": 1.0,
+            "mean_logp": -0.17712801694869995
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "reward": 0.0,
+            "mean_logp": -0.4123196601867676
+          },
+          {
+            "sample_id": "gsm8k_train_2214",
+            "reward": 1.0,
+            "mean_logp": -0.27883753180503845
+          },
+          {
+            "sample_id": "gsm8k_train_2214",
+            "reward": 0.0,
+            "mean_logp": -0.4518437087535858
+          },
+          {
+            "sample_id": "gsm8k_train_4402",
+            "reward": 1.0,
+            "mean_logp": -0.003924213349819183
+          },
+          {
+            "sample_id": "gsm8k_train_4402",
+            "reward": 0.0,
+            "mean_logp": -0.2592499256134033
+          },
+          {
+            "sample_id": "gsm8k_train_5190",
+            "reward": 1.0,
+            "mean_logp": -0.5475261211395264
+          },
+          {
+            "sample_id": "gsm8k_train_5190",
+            "reward": 0.0,
+            "mean_logp": -0.7625026702880859
+          },
+          {
+            "sample_id": "gsm8k_train_6478",
+            "reward": 1.0,
+            "mean_logp": -0.00302026211284101
+          },
+          {
+            "sample_id": "gsm8k_train_6478",
+            "reward": 0.0,
+            "mean_logp": -0.21059079468250275
+          },
+          {
+            "sample_id": "gsm8k_train_0499",
+            "reward": 1.0,
+            "mean_logp": -0.5241223573684692
+          },
+          {
+            "sample_id": "gsm8k_train_0499",
+            "reward": 0.0,
+            "mean_logp": -0.06441327929496765
+          },
+          {
+            "sample_id": "gsm8k_train_4248",
+            "reward": 1.0,
+            "mean_logp": -0.06574087589979172
+          },
+          {
+            "sample_id": "gsm8k_train_4248",
+            "reward": 0.0,
+            "mean_logp": -0.10160618275403976
+          },
+          {
+            "sample_id": "gsm8k_train_7310",
+            "reward": 1.0,
+            "mean_logp": -0.0061103408224880695
+          },
+          {
+            "sample_id": "gsm8k_train_7310",
+            "reward": 0.0,
+            "mean_logp": -0.03773675858974457
+          },
+          {
+            "sample_id": "gsm8k_train_0112",
+            "reward": 1.0,
+            "mean_logp": -0.116260826587677
+          },
+          {
+            "sample_id": "gsm8k_train_0112",
+            "reward": 0.0,
+            "mean_logp": -0.19746781885623932
+          },
+          {
+            "sample_id": "gsm8k_train_0358",
+            "reward": 1.0,
+            "mean_logp": -0.050765905529260635
+          },
+          {
+            "sample_id": "gsm8k_train_0358",
+            "reward": 0.0,
+            "mean_logp": -0.21032856404781342
+          },
+          {
+            "sample_id": "gsm8k_train_6976",
+            "reward": 1.0,
+            "mean_logp": -0.030011266469955444
+          },
+          {
+            "sample_id": "gsm8k_train_6976",
+            "reward": 0.0,
+            "mean_logp": -0.11068782210350037
+          },
+          {
+            "sample_id": "gsm8k_train_2237",
+            "reward": 1.0,
+            "mean_logp": -0.09731443226337433
+          },
+          {
+            "sample_id": "gsm8k_train_2237",
+            "reward": 0.0,
+            "mean_logp": -0.5090378522872925
+          },
+          {
+            "sample_id": "gsm8k_train_6583",
+            "reward": 1.0,
+            "mean_logp": -0.018192779272794724
+          },
+          {
+            "sample_id": "gsm8k_train_6583",
+            "reward": 0.0,
+            "mean_logp": -0.13267554342746735
+          },
+          {
+            "sample_id": "gsm8k_train_5778",
+            "reward": 1.0,
+            "mean_logp": -0.005828746594488621
+          },
+          {
+            "sample_id": "gsm8k_train_5778",
+            "reward": 0.0,
+            "mean_logp": -0.13549409806728363
+          },
+          {
+            "sample_id": "gsm8k_train_0186",
+            "reward": 1.0,
+            "mean_logp": -0.4204326570034027
+          },
+          {
+            "sample_id": "gsm8k_train_0186",
+            "reward": 0.0,
+            "mean_logp": -0.11752571165561676
+          },
+          {
+            "sample_id": "gsm8k_train_4824",
+            "reward": 1.0,
+            "mean_logp": -0.02905849553644657
+          },
+          {
+            "sample_id": "gsm8k_train_4824",
+            "reward": 0.0,
+            "mean_logp": -0.16080635786056519
+          },
+          {
+            "sample_id": "gsm8k_train_5854",
+            "reward": 1.0,
+            "mean_logp": -0.015913207083940506
+          },
+          {
+            "sample_id": "gsm8k_train_5854",
+            "reward": 0.0,
+            "mean_logp": -0.6362186670303345
+          },
+          {
+            "sample_id": "gsm8k_train_1172",
+            "reward": 1.0,
+            "mean_logp": -0.06472599506378174
+          },
+          {
+            "sample_id": "gsm8k_train_1172",
+            "reward": 0.0,
+            "mean_logp": -0.26951876282691956
+          },
+          {
+            "sample_id": "gsm8k_train_0280",
+            "reward": 1.0,
+            "mean_logp": -0.09002899378538132
+          },
+          {
+            "sample_id": "gsm8k_train_0280",
+            "reward": 0.0,
+            "mean_logp": -0.01084069348871708
+          },
+          {
+            "sample_id": "gsm8k_train_5468",
+            "reward": 1.0,
+            "mean_logp": -0.0331580750644207
+          },
+          {
+            "sample_id": "gsm8k_train_5468",
+            "reward": 0.0,
+            "mean_logp": -0.16856521368026733
+          },
+          {
+            "sample_id": "gsm8k_train_7271",
+            "reward": 1.0,
+            "mean_logp": -0.0037839608266949654
+          },
+          {
+            "sample_id": "gsm8k_train_7271",
+            "reward": 0.0,
+            "mean_logp": -0.2759549021720886
+          },
+          {
+            "sample_id": "gsm8k_train_1370",
+            "reward": 1.0,
+            "mean_logp": -0.0707799568772316
+          },
+          {
+            "sample_id": "gsm8k_train_1370",
+            "reward": 0.0,
+            "mean_logp": -0.08544326573610306
+          },
+          {
+            "sample_id": "gsm8k_train_3525",
+            "reward": 1.0,
+            "mean_logp": -0.10833711177110672
+          },
+          {
+            "sample_id": "gsm8k_train_3525",
+            "reward": 0.0,
+            "mean_logp": -0.1882752925157547
+          },
+          {
+            "sample_id": "gsm8k_train_4566",
+            "reward": 1.0,
+            "mean_logp": -0.04631298780441284
+          },
+          {
+            "sample_id": "gsm8k_train_4566",
+            "reward": 0.0,
+            "mean_logp": -0.5779855251312256
+          },
+          {
+            "sample_id": "gsm8k_train_1869",
+            "reward": 1.0,
+            "mean_logp": -0.37347111105918884
+          },
+          {
+            "sample_id": "gsm8k_train_1869",
+            "reward": 0.0,
+            "mean_logp": -0.30007466673851013
+          }
+        ]
+      },
+      {
+        "step": 0,
+        "program_loss": 0.035394877195358276,
+        "token_loss": 0.0349653996527195,
+        "success_mean_logp": -0.1415795087814331,
+        "failure_mean_logp": -0.2767758369445801,
+        "mean_gap": 0.13519635796546936,
+        "parameter_delta_norm": 0.0,
+        "raw_output_dtype": "torch.float32",
+        "per_program": [
+          {
+            "sample_id": "gsm8k_train_4888",
+            "reward": 1.0,
+            "mean_logp": -0.03672271594405174
+          },
+          {
+            "sample_id": "gsm8k_train_4888",
+            "reward": 0.0,
+            "mean_logp": -0.058289241045713425
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "reward": 1.0,
+            "mean_logp": -0.2676709294319153
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "reward": 0.0,
+            "mean_logp": -0.034934259951114655
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "reward": 1.0,
+            "mean_logp": -0.34795284271240234
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "reward": 0.0,
+            "mean_logp": -0.26192712783813477
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "reward": 1.0,
+            "mean_logp": -0.019972238689661026
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "reward": 0.0,
+            "mean_logp": -0.15860708057880402
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "reward": 1.0,
+            "mean_logp": -0.04520794004201889
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "reward": 0.0,
+            "mean_logp": -0.5295475125312805
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "reward": 1.0,
+            "mean_logp": -0.7714273929595947
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "reward": 0.0,
+            "mean_logp": -0.12045340985059738
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "reward": 1.0,
+            "mean_logp": -0.15001246333122253
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "reward": 0.0,
+            "mean_logp": -0.37108945846557617
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "reward": 1.0,
+            "mean_logp": -0.04158159717917442
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "reward": 0.0,
+            "mean_logp": -0.10560360550880432
+          },
+          {
+            "sample_id": "gsm8k_train_2214",
+            "reward": 1.0,
+            "mean_logp": -0.03244589641690254
+          },
+          {
+            "sample_id": "gsm8k_train_2214",
+            "reward": 0.0,
+            "mean_logp": -0.525640070438385
+          },
+          {
+            "sample_id": "gsm8k_train_4402",
+            "reward": 1.0,
+            "mean_logp": -0.009366631507873535
+          },
+          {
+            "sample_id": "gsm8k_train_4402",
+            "reward": 0.0,
+            "mean_logp": -0.35169804096221924
+          },
+          {
+            "sample_id": "gsm8k_train_5190",
+            "reward": 1.0,
+            "mean_logp": -0.06635395437479019
+          },
+          {
+            "sample_id": "gsm8k_train_5190",
+            "reward": 0.0,
+            "mean_logp": -0.47086650133132935
+          },
+          {
+            "sample_id": "gsm8k_train_6478",
+            "reward": 1.0,
+            "mean_logp": -0.006276253145188093
+          },
+          {
+            "sample_id": "gsm8k_train_6478",
+            "reward": 0.0,
+            "mean_logp": -0.018153199926018715
+          },
+          {
+            "sample_id": "gsm8k_train_0499",
+            "reward": 1.0,
+            "mean_logp": -0.2882494032382965
+          },
+          {
+            "sample_id": "gsm8k_train_0499",
+            "reward": 0.0,
+            "mean_logp": -0.6482036709785461
+          },
+          {
+            "sample_id": "gsm8k_train_4248",
+            "reward": 1.0,
+            "mean_logp": -0.022847482934594154
+          },
+          {
+            "sample_id": "gsm8k_train_4248",
+            "reward": 0.0,
+            "mean_logp": -0.10113684087991714
+          },
+          {
+            "sample_id": "gsm8k_train_7310",
+            "reward": 1.0,
+            "mean_logp": -0.022707490250468254
+          },
+          {
+            "sample_id": "gsm8k_train_7310",
+            "reward": 0.0,
+            "mean_logp": -0.0412583164870739
+          },
+          {
+            "sample_id": "gsm8k_train_0112",
+            "reward": 1.0,
+            "mean_logp": -0.14933530986309052
+          },
+          {
+            "sample_id": "gsm8k_train_0112",
+            "reward": 0.0,
+            "mean_logp": -0.15721628069877625
+          },
+          {
+            "sample_id": "gsm8k_train_0358",
+            "reward": 1.0,
+            "mean_logp": -0.0462702214717865
+          },
+          {
+            "sample_id": "gsm8k_train_0358",
+            "reward": 0.0,
+            "mean_logp": -0.13851431012153625
+          },
+          {
+            "sample_id": "gsm8k_train_6976",
+            "reward": 1.0,
+            "mean_logp": -0.009055892005562782
+          },
+          {
+            "sample_id": "gsm8k_train_6976",
+            "reward": 0.0,
+            "mean_logp": -0.6368396282196045
+          },
+          {
+            "sample_id": "gsm8k_train_2237",
+            "reward": 1.0,
+            "mean_logp": -0.0013696558307856321
+          },
+          {
+            "sample_id": "gsm8k_train_2237",
+            "reward": 0.0,
+            "mean_logp": -0.17948974668979645
+          },
+          {
+            "sample_id": "gsm8k_train_6583",
+            "reward": 1.0,
+            "mean_logp": -0.40290316939353943
+          },
+          {
+            "sample_id": "gsm8k_train_6583",
+            "reward": 0.0,
+            "mean_logp": -0.6393815875053406
+          },
+          {
+            "sample_id": "gsm8k_train_5778",
+            "reward": 1.0,
+            "mean_logp": -0.06889314204454422
+          },
+          {
+            "sample_id": "gsm8k_train_5778",
+            "reward": 0.0,
+            "mean_logp": -0.3459298014640808
+          },
+          {
+            "sample_id": "gsm8k_train_0186",
+            "reward": 1.0,
+            "mean_logp": -0.13450796902179718
+          },
+          {
+            "sample_id": "gsm8k_train_0186",
+            "reward": 0.0,
+            "mean_logp": -0.41761547327041626
+          },
+          {
+            "sample_id": "gsm8k_train_4824",
+            "reward": 1.0,
+            "mean_logp": -0.07342568039894104
+          },
+          {
+            "sample_id": "gsm8k_train_4824",
+            "reward": 0.0,
+            "mean_logp": -0.182769775390625
+          },
+          {
+            "sample_id": "gsm8k_train_5854",
+            "reward": 1.0,
+            "mean_logp": -0.010283635929226875
+          },
+          {
+            "sample_id": "gsm8k_train_5854",
+            "reward": 0.0,
+            "mean_logp": -0.006288761738687754
+          },
+          {
+            "sample_id": "gsm8k_train_1172",
+            "reward": 1.0,
+            "mean_logp": -0.1432761549949646
+          },
+          {
+            "sample_id": "gsm8k_train_1172",
+            "reward": 0.0,
+            "mean_logp": -0.2851298451423645
+          },
+          {
+            "sample_id": "gsm8k_train_0280",
+            "reward": 1.0,
+            "mean_logp": -0.08758097141981125
+          },
+          {
+            "sample_id": "gsm8k_train_0280",
+            "reward": 0.0,
+            "mean_logp": -0.11507297307252884
+          },
+          {
+            "sample_id": "gsm8k_train_5468",
+            "reward": 1.0,
+            "mean_logp": -0.10690916329622269
+          },
+          {
+            "sample_id": "gsm8k_train_5468",
+            "reward": 0.0,
+            "mean_logp": -0.13757553696632385
+          },
+          {
+            "sample_id": "gsm8k_train_7271",
+            "reward": 1.0,
+            "mean_logp": -0.014082682318985462
+          },
+          {
+            "sample_id": "gsm8k_train_7271",
+            "reward": 0.0,
+            "mean_logp": -0.13205605745315552
+          },
+          {
+            "sample_id": "gsm8k_train_1370",
+            "reward": 1.0,
+            "mean_logp": -0.45844918489456177
+          },
+          {
+            "sample_id": "gsm8k_train_1370",
+            "reward": 0.0,
+            "mean_logp": -0.7702341079711914
+          },
+          {
+            "sample_id": "gsm8k_train_3525",
+            "reward": 1.0,
+            "mean_logp": -0.2457115650177002
+          },
+          {
+            "sample_id": "gsm8k_train_3525",
+            "reward": 0.0,
+            "mean_logp": -0.0710362046957016
+          },
+          {
+            "sample_id": "gsm8k_train_4566",
+            "reward": 1.0,
+            "mean_logp": -0.02570965513586998
+          },
+          {
+            "sample_id": "gsm8k_train_4566",
+            "reward": 0.0,
+            "mean_logp": -0.49231359362602234
+          },
+          {
+            "sample_id": "gsm8k_train_1869",
+            "reward": 1.0,
+            "mean_logp": -0.4239847958087921
+          },
+          {
+            "sample_id": "gsm8k_train_1869",
+            "reward": 0.0,
+            "mean_logp": -0.3519556522369385
+          }
+        ]
+      }
+    ]
+  },
+  "final": {
+    "step": 200,
+    "program_loss": 0.006978993304073811,
+    "token_loss": 0.0069578574039042,
+    "success_mean_logp": -0.027915973216295242,
+    "failure_mean_logp": -0.31137675046920776,
+    "mean_gap": 0.283460795879364,
+    "parameter_delta_norm": 5.979753983514035,
+    "raw_output_dtype": "torch.float32",
+    "per_program": [
+      {
+        "sample_id": "gsm8k_train_4888",
+        "reward": 1.0,
+        "mean_logp": -0.03876233100891113
+      },
+      {
+        "sample_id": "gsm8k_train_4888",
+        "reward": 0.0,
+        "mean_logp": -0.11549007147550583
+      },
+      {
+        "sample_id": "gsm8k_train_3329",
+        "reward": 1.0,
+        "mean_logp": -0.025249280035495758
+      },
+      {
+        "sample_id": "gsm8k_train_3329",
+        "reward": 0.0,
+        "mean_logp": -0.17633797228336334
+      },
+      {
+        "sample_id": "gsm8k_train_3931",
+        "reward": 1.0,
+        "mean_logp": -0.08340028673410416
+      },
+      {
+        "sample_id": "gsm8k_train_3931",
+        "reward": 0.0,
+        "mean_logp": -0.2545156180858612
+      },
+      {
+        "sample_id": "gsm8k_train_4786",
+        "reward": 1.0,
+        "mean_logp": -0.005915030371397734
+      },
+      {
+        "sample_id": "gsm8k_train_4786",
+        "reward": 0.0,
+        "mean_logp": -0.11067472398281097
+      },
+      {
+        "sample_id": "gsm8k_train_0924",
+        "reward": 1.0,
+        "mean_logp": -0.019952774047851562
+      },
+      {
+        "sample_id": "gsm8k_train_0924",
+        "reward": 0.0,
+        "mean_logp": -2.0045456886291504
+      },
+      {
+        "sample_id": "gsm8k_train_7385",
+        "reward": 1.0,
+        "mean_logp": -0.02443745918571949
+      },
+      {
+        "sample_id": "gsm8k_train_7385",
+        "reward": 0.0,
+        "mean_logp": -0.28207796812057495
+      },
+      {
+        "sample_id": "gsm8k_train_4699",
+        "reward": 1.0,
+        "mean_logp": -0.03948105126619339
+      },
+      {
+        "sample_id": "gsm8k_train_4699",
+        "reward": 0.0,
+        "mean_logp": -0.3189479410648346
+      },
+      {
+        "sample_id": "gsm8k_train_5164",
+        "reward": 1.0,
+        "mean_logp": -0.027637172490358353
+      },
+      {
+        "sample_id": "gsm8k_train_5164",
+        "reward": 0.0,
+        "mean_logp": -0.17298468947410583
+      },
+      {
+        "sample_id": "gsm8k_train_2214",
+        "reward": 1.0,
+        "mean_logp": -0.11997808516025543
+      },
+      {
+        "sample_id": "gsm8k_train_2214",
+        "reward": 0.0,
+        "mean_logp": -0.2594630718231201
+      },
+      {
+        "sample_id": "gsm8k_train_4402",
+        "reward": 1.0,
+        "mean_logp": -0.004938259720802307
+      },
+      {
+        "sample_id": "gsm8k_train_4402",
+        "reward": 0.0,
+        "mean_logp": -0.38827475905418396
+      },
+      {
+        "sample_id": "gsm8k_train_5190",
+        "reward": 1.0,
+        "mean_logp": -0.02630068175494671
+      },
+      {
+        "sample_id": "gsm8k_train_5190",
+        "reward": 0.0,
+        "mean_logp": -0.12740175426006317
+      },
+      {
+        "sample_id": "gsm8k_train_6478",
+        "reward": 1.0,
+        "mean_logp": -0.0018803522689267993
+      },
+      {
+        "sample_id": "gsm8k_train_6478",
+        "reward": 0.0,
+        "mean_logp": -0.09515514224767685
+      },
+      {
+        "sample_id": "gsm8k_train_0499",
+        "reward": 1.0,
+        "mean_logp": -0.0020370224956423044
+      },
+      {
+        "sample_id": "gsm8k_train_0499",
+        "reward": 0.0,
+        "mean_logp": -0.0562601201236248
+      },
+      {
+        "sample_id": "gsm8k_train_4248",
+        "reward": 1.0,
+        "mean_logp": -0.01051604188978672
+      },
+      {
+        "sample_id": "gsm8k_train_4248",
+        "reward": 0.0,
+        "mean_logp": -0.04376128315925598
+      },
+      {
+        "sample_id": "gsm8k_train_7310",
+        "reward": 1.0,
+        "mean_logp": -0.00914828758686781
+      },
+      {
+        "sample_id": "gsm8k_train_7310",
+        "reward": 0.0,
+        "mean_logp": -0.17087207734584808
+      },
+      {
+        "sample_id": "gsm8k_train_0112",
+        "reward": 1.0,
+        "mean_logp": -0.03391190245747566
+      },
+      {
+        "sample_id": "gsm8k_train_0112",
+        "reward": 0.0,
+        "mean_logp": -0.06393058598041534
+      },
+      {
+        "sample_id": "gsm8k_train_0358",
+        "reward": 1.0,
+        "mean_logp": -0.04225397855043411
+      },
+      {
+        "sample_id": "gsm8k_train_0358",
+        "reward": 0.0,
+        "mean_logp": -0.5259538292884827
+      },
+      {
+        "sample_id": "gsm8k_train_6976",
+        "reward": 1.0,
+        "mean_logp": -0.009049415588378906
+      },
+      {
+        "sample_id": "gsm8k_train_6976",
+        "reward": 0.0,
+        "mean_logp": -0.892848551273346
+      },
+      {
+        "sample_id": "gsm8k_train_2237",
+        "reward": 1.0,
+        "mean_logp": -0.010657748207449913
+      },
+      {
+        "sample_id": "gsm8k_train_2237",
+        "reward": 0.0,
+        "mean_logp": -0.0032578480895608664
+      },
+      {
+        "sample_id": "gsm8k_train_6583",
+        "reward": 1.0,
+        "mean_logp": -0.0027064927853643894
+      },
+      {
+        "sample_id": "gsm8k_train_6583",
+        "reward": 0.0,
+        "mean_logp": -0.03509628400206566
+      },
+      {
+        "sample_id": "gsm8k_train_5778",
+        "reward": 1.0,
+        "mean_logp": -0.08343446254730225
+      },
+      {
+        "sample_id": "gsm8k_train_5778",
+        "reward": 0.0,
+        "mean_logp": -0.19650064408779144
+      },
+      {
+        "sample_id": "gsm8k_train_0186",
+        "reward": 1.0,
+        "mean_logp": -0.07223308831453323
+      },
+      {
+        "sample_id": "gsm8k_train_0186",
+        "reward": 0.0,
+        "mean_logp": -0.5603651404380798
+      },
+      {
+        "sample_id": "gsm8k_train_4824",
+        "reward": 1.0,
+        "mean_logp": -0.013273547403514385
+      },
+      {
+        "sample_id": "gsm8k_train_4824",
+        "reward": 0.0,
+        "mean_logp": -0.09726890921592712
+      },
+      {
+        "sample_id": "gsm8k_train_5854",
+        "reward": 1.0,
+        "mean_logp": -0.0020840479992330074
+      },
+      {
+        "sample_id": "gsm8k_train_5854",
+        "reward": 0.0,
+        "mean_logp": -0.17506147921085358
+      },
+      {
+        "sample_id": "gsm8k_train_1172",
+        "reward": 1.0,
+        "mean_logp": -0.026807449758052826
+      },
+      {
+        "sample_id": "gsm8k_train_1172",
+        "reward": 0.0,
+        "mean_logp": -0.1517723947763443
+      },
+      {
+        "sample_id": "gsm8k_train_0280",
+        "reward": 1.0,
+        "mean_logp": -0.006512921303510666
+      },
+      {
+        "sample_id": "gsm8k_train_0280",
+        "reward": 0.0,
+        "mean_logp": -0.9821208715438843
+      },
+      {
+        "sample_id": "gsm8k_train_5468",
+        "reward": 1.0,
+        "mean_logp": -0.08195871114730835
+      },
+      {
+        "sample_id": "gsm8k_train_5468",
+        "reward": 0.0,
+        "mean_logp": -0.0791797861456871
+      },
+      {
+        "sample_id": "gsm8k_train_7271",
+        "reward": 1.0,
+        "mean_logp": -0.0085753770545125
+      },
+      {
+        "sample_id": "gsm8k_train_7271",
+        "reward": 0.0,
+        "mean_logp": -0.3808477818965912
+      },
+      {
+        "sample_id": "gsm8k_train_1370",
+        "reward": 1.0,
+        "mean_logp": -0.00621325708925724
+      },
+      {
+        "sample_id": "gsm8k_train_1370",
+        "reward": 0.0,
+        "mean_logp": -0.3525620996952057
+      },
+      {
+        "sample_id": "gsm8k_train_3525",
+        "reward": 1.0,
+        "mean_logp": -0.008842850103974342
+      },
+      {
+        "sample_id": "gsm8k_train_3525",
+        "reward": 0.0,
+        "mean_logp": -0.20314571261405945
+      },
+      {
+        "sample_id": "gsm8k_train_4566",
+        "reward": 1.0,
+        "mean_logp": -0.005427180323749781
+      },
+      {
+        "sample_id": "gsm8k_train_4566",
+        "reward": 0.0,
+        "mean_logp": -0.0035481515806168318
+      },
+      {
+        "sample_id": "gsm8k_train_1869",
+        "reward": 1.0,
+        "mean_logp": -0.03973459452390671
+      },
+      {
+        "sample_id": "gsm8k_train_1869",
+        "reward": 0.0,
+        "mean_logp": -0.6838331818580627
+      }
+    ],
+    "heldout": [
+      {
+        "step": 200,
+        "program_loss": 0.033555448055267334,
+        "token_loss": 0.03711380809545517,
+        "success_mean_logp": -0.13422179222106934,
+        "failure_mean_logp": -0.3047226369380951,
+        "mean_gap": 0.17050084471702576,
+        "parameter_delta_norm": 5.979753983514035,
+        "raw_output_dtype": "torch.float32",
+        "per_program": [
+          {
+            "sample_id": "gsm8k_train_4888",
+            "reward": 1.0,
+            "mean_logp": -0.021009866148233414
+          },
+          {
+            "sample_id": "gsm8k_train_4888",
+            "reward": 0.0,
+            "mean_logp": -0.6227104663848877
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "reward": 1.0,
+            "mean_logp": -0.026382004842162132
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "reward": 0.0,
+            "mean_logp": -0.14337177574634552
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "reward": 1.0,
+            "mean_logp": -0.11493255198001862
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "reward": 0.0,
+            "mean_logp": -0.1487015038728714
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "reward": 1.0,
+            "mean_logp": -0.016626529395580292
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "reward": 0.0,
+            "mean_logp": -0.2083950936794281
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "reward": 1.0,
+            "mean_logp": -0.054041650146245956
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "reward": 0.0,
+            "mean_logp": -1.7651352882385254
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "reward": 1.0,
+            "mean_logp": -0.040395088493824005
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "reward": 0.0,
+            "mean_logp": -0.10861369222402573
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "reward": 1.0,
+            "mean_logp": -0.04789097607135773
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "reward": 0.0,
+            "mean_logp": -0.08376657962799072
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "reward": 1.0,
+            "mean_logp": -0.13599035143852234
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "reward": 0.0,
+            "mean_logp": -0.08359407633543015
+          },
+          {
+            "sample_id": "gsm8k_train_2214",
+            "reward": 1.0,
+            "mean_logp": -0.3614153563976288
+          },
+          {
+            "sample_id": "gsm8k_train_2214",
+            "reward": 0.0,
+            "mean_logp": -0.11932102590799332
+          },
+          {
+            "sample_id": "gsm8k_train_4402",
+            "reward": 1.0,
+            "mean_logp": -0.0384373739361763
+          },
+          {
+            "sample_id": "gsm8k_train_4402",
+            "reward": 0.0,
+            "mean_logp": -0.2779720425605774
+          },
+          {
+            "sample_id": "gsm8k_train_5190",
+            "reward": 1.0,
+            "mean_logp": -1.581498146057129
+          },
+          {
+            "sample_id": "gsm8k_train_5190",
+            "reward": 0.0,
+            "mean_logp": -0.23993422091007233
+          },
+          {
+            "sample_id": "gsm8k_train_6478",
+            "reward": 1.0,
+            "mean_logp": -0.003592483000829816
+          },
+          {
+            "sample_id": "gsm8k_train_6478",
+            "reward": 0.0,
+            "mean_logp": -0.01831662282347679
+          },
+          {
+            "sample_id": "gsm8k_train_0499",
+            "reward": 1.0,
+            "mean_logp": -0.011120924726128578
+          },
+          {
+            "sample_id": "gsm8k_train_0499",
+            "reward": 0.0,
+            "mean_logp": -0.1077730804681778
+          },
+          {
+            "sample_id": "gsm8k_train_4248",
+            "reward": 1.0,
+            "mean_logp": -0.047354042530059814
+          },
+          {
+            "sample_id": "gsm8k_train_4248",
+            "reward": 0.0,
+            "mean_logp": -0.06397192180156708
+          },
+          {
+            "sample_id": "gsm8k_train_7310",
+            "reward": 1.0,
+            "mean_logp": -0.0002067290188279003
+          },
+          {
+            "sample_id": "gsm8k_train_7310",
+            "reward": 0.0,
+            "mean_logp": -0.04751079902052879
+          },
+          {
+            "sample_id": "gsm8k_train_0112",
+            "reward": 1.0,
+            "mean_logp": -0.10360017418861389
+          },
+          {
+            "sample_id": "gsm8k_train_0112",
+            "reward": 0.0,
+            "mean_logp": -0.707321047782898
+          },
+          {
+            "sample_id": "gsm8k_train_0358",
+            "reward": 1.0,
+            "mean_logp": -0.038204122334718704
+          },
+          {
+            "sample_id": "gsm8k_train_0358",
+            "reward": 0.0,
+            "mean_logp": -0.09358146041631699
+          },
+          {
+            "sample_id": "gsm8k_train_6976",
+            "reward": 1.0,
+            "mean_logp": -0.14258846640586853
+          },
+          {
+            "sample_id": "gsm8k_train_6976",
+            "reward": 0.0,
+            "mean_logp": -0.5523645877838135
+          },
+          {
+            "sample_id": "gsm8k_train_2237",
+            "reward": 1.0,
+            "mean_logp": -0.01155975554138422
+          },
+          {
+            "sample_id": "gsm8k_train_2237",
+            "reward": 0.0,
+            "mean_logp": -0.4980260729789734
+          },
+          {
+            "sample_id": "gsm8k_train_6583",
+            "reward": 1.0,
+            "mean_logp": -0.16710537672042847
+          },
+          {
+            "sample_id": "gsm8k_train_6583",
+            "reward": 0.0,
+            "mean_logp": -0.10518591850996017
+          },
+          {
+            "sample_id": "gsm8k_train_5778",
+            "reward": 1.0,
+            "mean_logp": -0.08930893987417221
+          },
+          {
+            "sample_id": "gsm8k_train_5778",
+            "reward": 0.0,
+            "mean_logp": -0.14107683300971985
+          },
+          {
+            "sample_id": "gsm8k_train_0186",
+            "reward": 1.0,
+            "mean_logp": -0.2092919945716858
+          },
+          {
+            "sample_id": "gsm8k_train_0186",
+            "reward": 0.0,
+            "mean_logp": -0.3289142847061157
+          },
+          {
+            "sample_id": "gsm8k_train_4824",
+            "reward": 1.0,
+            "mean_logp": -0.05886821448802948
+          },
+          {
+            "sample_id": "gsm8k_train_4824",
+            "reward": 0.0,
+            "mean_logp": -0.2914024889469147
+          },
+          {
+            "sample_id": "gsm8k_train_5854",
+            "reward": 1.0,
+            "mean_logp": -0.018511688336730003
+          },
+          {
+            "sample_id": "gsm8k_train_5854",
+            "reward": 0.0,
+            "mean_logp": -0.401711106300354
+          },
+          {
+            "sample_id": "gsm8k_train_1172",
+            "reward": 1.0,
+            "mean_logp": -0.330361932516098
+          },
+          {
+            "sample_id": "gsm8k_train_1172",
+            "reward": 0.0,
+            "mean_logp": -0.16981951892375946
+          },
+          {
+            "sample_id": "gsm8k_train_0280",
+            "reward": 1.0,
+            "mean_logp": -0.07777126133441925
+          },
+          {
+            "sample_id": "gsm8k_train_0280",
+            "reward": 0.0,
+            "mean_logp": -0.29227322340011597
+          },
+          {
+            "sample_id": "gsm8k_train_5468",
+            "reward": 1.0,
+            "mean_logp": -0.28847160935401917
+          },
+          {
+            "sample_id": "gsm8k_train_5468",
+            "reward": 0.0,
+            "mean_logp": -0.2898399829864502
+          },
+          {
+            "sample_id": "gsm8k_train_7271",
+            "reward": 1.0,
+            "mean_logp": -0.01705963909626007
+          },
+          {
+            "sample_id": "gsm8k_train_7271",
+            "reward": 0.0,
+            "mean_logp": -1.0729987621307373
+          },
+          {
+            "sample_id": "gsm8k_train_1370",
+            "reward": 1.0,
+            "mean_logp": -0.008864176459610462
+          },
+          {
+            "sample_id": "gsm8k_train_1370",
+            "reward": 0.0,
+            "mean_logp": -0.31797248125076294
+          },
+          {
+            "sample_id": "gsm8k_train_3525",
+            "reward": 1.0,
+            "mean_logp": -0.035870932042598724
+          },
+          {
+            "sample_id": "gsm8k_train_3525",
+            "reward": 0.0,
+            "mean_logp": -0.23717950284481049
+          },
+          {
+            "sample_id": "gsm8k_train_4566",
+            "reward": 1.0,
+            "mean_logp": -0.0015578399179503322
+          },
+          {
+            "sample_id": "gsm8k_train_4566",
+            "reward": 0.0,
+            "mean_logp": -0.0013843536144122481
+          },
+          {
+            "sample_id": "gsm8k_train_1869",
+            "reward": 1.0,
+            "mean_logp": -0.19520679116249084
+          },
+          {
+            "sample_id": "gsm8k_train_1869",
+            "reward": 0.0,
+            "mean_logp": -0.21098406612873077
+          }
+        ]
+      },
+      {
+        "step": 200,
+        "program_loss": 0.029522940516471863,
+        "token_loss": 0.030135521665215492,
+        "success_mean_logp": -0.11809176206588745,
+        "failure_mean_logp": -0.3049963712692261,
+        "mean_gap": 0.18690462410449982,
+        "parameter_delta_norm": 5.979753983514035,
+        "raw_output_dtype": "torch.float32",
+        "per_program": [
+          {
+            "sample_id": "gsm8k_train_4888",
+            "reward": 1.0,
+            "mean_logp": -0.029050448909401894
+          },
+          {
+            "sample_id": "gsm8k_train_4888",
+            "reward": 0.0,
+            "mean_logp": -0.03429481014609337
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "reward": 1.0,
+            "mean_logp": -0.03886327147483826
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "reward": 0.0,
+            "mean_logp": -0.020153064280748367
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "reward": 1.0,
+            "mean_logp": -0.15390922129154205
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "reward": 0.0,
+            "mean_logp": -0.07950280606746674
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "reward": 1.0,
+            "mean_logp": -0.01931113377213478
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "reward": 0.0,
+            "mean_logp": -0.19690772891044617
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "reward": 1.0,
+            "mean_logp": -0.33137351274490356
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "reward": 0.0,
+            "mean_logp": -1.4330875873565674
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "reward": 1.0,
+            "mean_logp": -0.43240439891815186
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "reward": 0.0,
+            "mean_logp": -0.3589637577533722
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "reward": 1.0,
+            "mean_logp": -0.10261515527963638
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "reward": 0.0,
+            "mean_logp": -0.9506627917289734
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "reward": 1.0,
+            "mean_logp": -0.06022082641720772
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "reward": 0.0,
+            "mean_logp": -0.07666581869125366
+          },
+          {
+            "sample_id": "gsm8k_train_2214",
+            "reward": 1.0,
+            "mean_logp": -0.0005180712905712426
+          },
+          {
+            "sample_id": "gsm8k_train_2214",
+            "reward": 0.0,
+            "mean_logp": -0.7858333587646484
+          },
+          {
+            "sample_id": "gsm8k_train_4402",
+            "reward": 1.0,
+            "mean_logp": -0.03217869997024536
+          },
+          {
+            "sample_id": "gsm8k_train_4402",
+            "reward": 0.0,
+            "mean_logp": -0.3391978442668915
+          },
+          {
+            "sample_id": "gsm8k_train_5190",
+            "reward": 1.0,
+            "mean_logp": -0.5394291281700134
+          },
+          {
+            "sample_id": "gsm8k_train_5190",
+            "reward": 0.0,
+            "mean_logp": -0.25461718440055847
+          },
+          {
+            "sample_id": "gsm8k_train_6478",
+            "reward": 1.0,
+            "mean_logp": -0.005370140075683594
+          },
+          {
+            "sample_id": "gsm8k_train_6478",
+            "reward": 0.0,
+            "mean_logp": -0.026690909639000893
+          },
+          {
+            "sample_id": "gsm8k_train_0499",
+            "reward": 1.0,
+            "mean_logp": -0.01715671643614769
+          },
+          {
+            "sample_id": "gsm8k_train_0499",
+            "reward": 0.0,
+            "mean_logp": -0.030770882964134216
+          },
+          {
+            "sample_id": "gsm8k_train_4248",
+            "reward": 1.0,
+            "mean_logp": -0.0049238684587180614
+          },
+          {
+            "sample_id": "gsm8k_train_4248",
+            "reward": 0.0,
+            "mean_logp": -0.07531312108039856
+          },
+          {
+            "sample_id": "gsm8k_train_7310",
+            "reward": 1.0,
+            "mean_logp": -0.022213809192180634
+          },
+          {
+            "sample_id": "gsm8k_train_7310",
+            "reward": 0.0,
+            "mean_logp": -0.026044689118862152
+          },
+          {
+            "sample_id": "gsm8k_train_0112",
+            "reward": 1.0,
+            "mean_logp": -0.015576234087347984
+          },
+          {
+            "sample_id": "gsm8k_train_0112",
+            "reward": 0.0,
+            "mean_logp": -0.0890493243932724
+          },
+          {
+            "sample_id": "gsm8k_train_0358",
+            "reward": 1.0,
+            "mean_logp": -0.07186610996723175
+          },
+          {
+            "sample_id": "gsm8k_train_0358",
+            "reward": 0.0,
+            "mean_logp": -0.20440320670604706
+          },
+          {
+            "sample_id": "gsm8k_train_6976",
+            "reward": 1.0,
+            "mean_logp": -0.0004888135590590537
+          },
+          {
+            "sample_id": "gsm8k_train_6976",
+            "reward": 0.0,
+            "mean_logp": -0.43250054121017456
+          },
+          {
+            "sample_id": "gsm8k_train_2237",
+            "reward": 1.0,
+            "mean_logp": -0.6663384437561035
+          },
+          {
+            "sample_id": "gsm8k_train_2237",
+            "reward": 0.0,
+            "mean_logp": -0.5681912302970886
+          },
+          {
+            "sample_id": "gsm8k_train_6583",
+            "reward": 1.0,
+            "mean_logp": -0.016464699059724808
+          },
+          {
+            "sample_id": "gsm8k_train_6583",
+            "reward": 0.0,
+            "mean_logp": -0.1825777292251587
+          },
+          {
+            "sample_id": "gsm8k_train_5778",
+            "reward": 1.0,
+            "mean_logp": -0.06799545884132385
+          },
+          {
+            "sample_id": "gsm8k_train_5778",
+            "reward": 0.0,
+            "mean_logp": -0.21001023054122925
+          },
+          {
+            "sample_id": "gsm8k_train_0186",
+            "reward": 1.0,
+            "mean_logp": -0.15418149530887604
+          },
+          {
+            "sample_id": "gsm8k_train_0186",
+            "reward": 0.0,
+            "mean_logp": -0.4386052191257477
+          },
+          {
+            "sample_id": "gsm8k_train_4824",
+            "reward": 1.0,
+            "mean_logp": -0.014054558239877224
+          },
+          {
+            "sample_id": "gsm8k_train_4824",
+            "reward": 0.0,
+            "mean_logp": -0.2230055183172226
+          },
+          {
+            "sample_id": "gsm8k_train_5854",
+            "reward": 1.0,
+            "mean_logp": -0.0022439335007220507
+          },
+          {
+            "sample_id": "gsm8k_train_5854",
+            "reward": 0.0,
+            "mean_logp": -0.27956315875053406
+          },
+          {
+            "sample_id": "gsm8k_train_1172",
+            "reward": 1.0,
+            "mean_logp": -0.17935152351856232
+          },
+          {
+            "sample_id": "gsm8k_train_1172",
+            "reward": 0.0,
+            "mean_logp": -0.16726495325565338
+          },
+          {
+            "sample_id": "gsm8k_train_0280",
+            "reward": 1.0,
+            "mean_logp": -0.07848773151636124
+          },
+          {
+            "sample_id": "gsm8k_train_0280",
+            "reward": 0.0,
+            "mean_logp": -0.370557963848114
+          },
+          {
+            "sample_id": "gsm8k_train_5468",
+            "reward": 1.0,
+            "mean_logp": -0.08342898637056351
+          },
+          {
+            "sample_id": "gsm8k_train_5468",
+            "reward": 0.0,
+            "mean_logp": -0.6083362102508545
+          },
+          {
+            "sample_id": "gsm8k_train_7271",
+            "reward": 1.0,
+            "mean_logp": -0.004028523340821266
+          },
+          {
+            "sample_id": "gsm8k_train_7271",
+            "reward": 0.0,
+            "mean_logp": -0.2808195650577545
+          },
+          {
+            "sample_id": "gsm8k_train_1370",
+            "reward": 1.0,
+            "mean_logp": -0.3003445863723755
+          },
+          {
+            "sample_id": "gsm8k_train_1370",
+            "reward": 0.0,
+            "mean_logp": -0.07337351888418198
+          },
+          {
+            "sample_id": "gsm8k_train_3525",
+            "reward": 1.0,
+            "mean_logp": -0.16945470869541168
+          },
+          {
+            "sample_id": "gsm8k_train_3525",
+            "reward": 0.0,
+            "mean_logp": -0.1582123339176178
+          },
+          {
+            "sample_id": "gsm8k_train_4566",
+            "reward": 1.0,
+            "mean_logp": -0.012664485722780228
+          },
+          {
+            "sample_id": "gsm8k_train_4566",
+            "reward": 0.0,
+            "mean_logp": -0.013220380060374737
+          },
+          {
+            "sample_id": "gsm8k_train_1869",
+            "reward": 1.0,
+            "mean_logp": -0.1524277776479721
+          },
+          {
+            "sample_id": "gsm8k_train_1869",
+            "reward": 0.0,
+            "mean_logp": -0.7714870572090149
+          }
+        ]
+      },
+      {
+        "step": 200,
+        "program_loss": 0.023502599447965622,
+        "token_loss": 0.023275747895240784,
+        "success_mean_logp": -0.09401039779186249,
+        "failure_mean_logp": -0.24312269687652588,
+        "mean_gap": 0.1491122841835022,
+        "parameter_delta_norm": 5.979753983514035,
+        "raw_output_dtype": "torch.float32",
+        "per_program": [
+          {
+            "sample_id": "gsm8k_train_4888",
+            "reward": 1.0,
+            "mean_logp": -0.13765321671962738
+          },
+          {
+            "sample_id": "gsm8k_train_4888",
+            "reward": 0.0,
+            "mean_logp": -0.0471438392996788
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "reward": 1.0,
+            "mean_logp": -0.029685964807868004
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "reward": 0.0,
+            "mean_logp": -0.16089539229869843
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "reward": 1.0,
+            "mean_logp": -0.06384776532649994
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "reward": 0.0,
+            "mean_logp": -0.5959222316741943
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "reward": 1.0,
+            "mean_logp": -0.0015315520577132702
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "reward": 0.0,
+            "mean_logp": -0.19460012018680573
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "reward": 1.0,
+            "mean_logp": -0.01848004385828972
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "reward": 0.0,
+            "mean_logp": -0.20319968461990356
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "reward": 1.0,
+            "mean_logp": -0.11722664535045624
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "reward": 0.0,
+            "mean_logp": -0.04743540287017822
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "reward": 1.0,
+            "mean_logp": -0.06817815452814102
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "reward": 0.0,
+            "mean_logp": -0.08709453046321869
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "reward": 1.0,
+            "mean_logp": -0.14401526749134064
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "reward": 0.0,
+            "mean_logp": -0.4091157019138336
+          },
+          {
+            "sample_id": "gsm8k_train_2214",
+            "reward": 1.0,
+            "mean_logp": -0.12445316463708878
+          },
+          {
+            "sample_id": "gsm8k_train_2214",
+            "reward": 0.0,
+            "mean_logp": -0.43804246187210083
+          },
+          {
+            "sample_id": "gsm8k_train_4402",
+            "reward": 1.0,
+            "mean_logp": -0.003153584897518158
+          },
+          {
+            "sample_id": "gsm8k_train_4402",
+            "reward": 0.0,
+            "mean_logp": -0.2755107879638672
+          },
+          {
+            "sample_id": "gsm8k_train_5190",
+            "reward": 1.0,
+            "mean_logp": -0.3553466200828552
+          },
+          {
+            "sample_id": "gsm8k_train_5190",
+            "reward": 0.0,
+            "mean_logp": -0.8160532116889954
+          },
+          {
+            "sample_id": "gsm8k_train_6478",
+            "reward": 1.0,
+            "mean_logp": -0.002003074623644352
+          },
+          {
+            "sample_id": "gsm8k_train_6478",
+            "reward": 0.0,
+            "mean_logp": -0.19550973176956177
+          },
+          {
+            "sample_id": "gsm8k_train_0499",
+            "reward": 1.0,
+            "mean_logp": -0.5238454937934875
+          },
+          {
+            "sample_id": "gsm8k_train_0499",
+            "reward": 0.0,
+            "mean_logp": -0.0767098069190979
+          },
+          {
+            "sample_id": "gsm8k_train_4248",
+            "reward": 1.0,
+            "mean_logp": -0.06606240570545197
+          },
+          {
+            "sample_id": "gsm8k_train_4248",
+            "reward": 0.0,
+            "mean_logp": -0.09582025557756424
+          },
+          {
+            "sample_id": "gsm8k_train_7310",
+            "reward": 1.0,
+            "mean_logp": -0.00510519091039896
+          },
+          {
+            "sample_id": "gsm8k_train_7310",
+            "reward": 0.0,
+            "mean_logp": -0.03104586899280548
+          },
+          {
+            "sample_id": "gsm8k_train_0112",
+            "reward": 1.0,
+            "mean_logp": -0.0895090401172638
+          },
+          {
+            "sample_id": "gsm8k_train_0112",
+            "reward": 0.0,
+            "mean_logp": -0.21087566018104553
+          },
+          {
+            "sample_id": "gsm8k_train_0358",
+            "reward": 1.0,
+            "mean_logp": -0.03518091142177582
+          },
+          {
+            "sample_id": "gsm8k_train_0358",
+            "reward": 0.0,
+            "mean_logp": -0.22196952998638153
+          },
+          {
+            "sample_id": "gsm8k_train_6976",
+            "reward": 1.0,
+            "mean_logp": -0.023988645523786545
+          },
+          {
+            "sample_id": "gsm8k_train_6976",
+            "reward": 0.0,
+            "mean_logp": -0.11222944408655167
+          },
+          {
+            "sample_id": "gsm8k_train_2237",
+            "reward": 1.0,
+            "mean_logp": -0.08682242035865784
+          },
+          {
+            "sample_id": "gsm8k_train_2237",
+            "reward": 0.0,
+            "mean_logp": -0.473108172416687
+          },
+          {
+            "sample_id": "gsm8k_train_6583",
+            "reward": 1.0,
+            "mean_logp": -0.019939934834837914
+          },
+          {
+            "sample_id": "gsm8k_train_6583",
+            "reward": 0.0,
+            "mean_logp": -0.10858581215143204
+          },
+          {
+            "sample_id": "gsm8k_train_5778",
+            "reward": 1.0,
+            "mean_logp": -0.0038709419313818216
+          },
+          {
+            "sample_id": "gsm8k_train_5778",
+            "reward": 0.0,
+            "mean_logp": -0.1443169116973877
+          },
+          {
+            "sample_id": "gsm8k_train_0186",
+            "reward": 1.0,
+            "mean_logp": -0.3912876844406128
+          },
+          {
+            "sample_id": "gsm8k_train_0186",
+            "reward": 0.0,
+            "mean_logp": -0.1225314736366272
+          },
+          {
+            "sample_id": "gsm8k_train_4824",
+            "reward": 1.0,
+            "mean_logp": -0.017055530101060867
+          },
+          {
+            "sample_id": "gsm8k_train_4824",
+            "reward": 0.0,
+            "mean_logp": -0.14771561324596405
+          },
+          {
+            "sample_id": "gsm8k_train_5854",
+            "reward": 1.0,
+            "mean_logp": -0.015071309171617031
+          },
+          {
+            "sample_id": "gsm8k_train_5854",
+            "reward": 0.0,
+            "mean_logp": -0.7168928980827332
+          },
+          {
+            "sample_id": "gsm8k_train_1172",
+            "reward": 1.0,
+            "mean_logp": -0.0515054389834404
+          },
+          {
+            "sample_id": "gsm8k_train_1172",
+            "reward": 0.0,
+            "mean_logp": -0.28229957818984985
+          },
+          {
+            "sample_id": "gsm8k_train_0280",
+            "reward": 1.0,
+            "mean_logp": -0.09068707376718521
+          },
+          {
+            "sample_id": "gsm8k_train_0280",
+            "reward": 0.0,
+            "mean_logp": -0.012124381959438324
+          },
+          {
+            "sample_id": "gsm8k_train_5468",
+            "reward": 1.0,
+            "mean_logp": -0.015291991643607616
+          },
+          {
+            "sample_id": "gsm8k_train_5468",
+            "reward": 0.0,
+            "mean_logp": -0.1588524430990219
+          },
+          {
+            "sample_id": "gsm8k_train_7271",
+            "reward": 1.0,
+            "mean_logp": -0.0031319132540374994
+          },
+          {
+            "sample_id": "gsm8k_train_7271",
+            "reward": 0.0,
+            "mean_logp": -0.2924247086048126
+          },
+          {
+            "sample_id": "gsm8k_train_1370",
+            "reward": 1.0,
+            "mean_logp": -0.06986436247825623
+          },
+          {
+            "sample_id": "gsm8k_train_1370",
+            "reward": 0.0,
+            "mean_logp": -0.09109796583652496
+          },
+          {
+            "sample_id": "gsm8k_train_3525",
+            "reward": 1.0,
+            "mean_logp": -0.07325229793787003
+          },
+          {
+            "sample_id": "gsm8k_train_3525",
+            "reward": 0.0,
+            "mean_logp": -0.1856282353401184
+          },
+          {
+            "sample_id": "gsm8k_train_4566",
+            "reward": 1.0,
+            "mean_logp": -0.03925453498959541
+          },
+          {
+            "sample_id": "gsm8k_train_4566",
+            "reward": 0.0,
+            "mean_logp": -0.5208175182342529
+          },
+          {
+            "sample_id": "gsm8k_train_1869",
+            "reward": 1.0,
+            "mean_logp": -0.3220304548740387
+          },
+          {
+            "sample_id": "gsm8k_train_1869",
+            "reward": 0.0,
+            "mean_logp": -0.3043566048145294
+          }
+        ]
+      },
+      {
+        "step": 200,
+        "program_loss": 0.0317305326461792,
+        "token_loss": 0.031600676476955414,
+        "success_mean_logp": -0.126922145485878,
+        "failure_mean_logp": -0.2660319209098816,
+        "mean_gap": 0.1391097903251648,
+        "parameter_delta_norm": 5.979753983514035,
+        "raw_output_dtype": "torch.float32",
+        "per_program": [
+          {
+            "sample_id": "gsm8k_train_4888",
+            "reward": 1.0,
+            "mean_logp": -0.016112832352519035
+          },
+          {
+            "sample_id": "gsm8k_train_4888",
+            "reward": 0.0,
+            "mean_logp": -0.06949735432863235
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "reward": 1.0,
+            "mean_logp": -0.1591576784849167
+          },
+          {
+            "sample_id": "gsm8k_train_3329",
+            "reward": 0.0,
+            "mean_logp": -0.0369056761264801
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "reward": 1.0,
+            "mean_logp": -0.36326345801353455
+          },
+          {
+            "sample_id": "gsm8k_train_3931",
+            "reward": 0.0,
+            "mean_logp": -0.2593286633491516
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "reward": 1.0,
+            "mean_logp": -0.017869850620627403
+          },
+          {
+            "sample_id": "gsm8k_train_4786",
+            "reward": 0.0,
+            "mean_logp": -0.17697153985500336
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "reward": 1.0,
+            "mean_logp": -0.03246261551976204
+          },
+          {
+            "sample_id": "gsm8k_train_0924",
+            "reward": 0.0,
+            "mean_logp": -0.5402402877807617
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "reward": 1.0,
+            "mean_logp": -0.7892422080039978
+          },
+          {
+            "sample_id": "gsm8k_train_7385",
+            "reward": 0.0,
+            "mean_logp": -0.12850910425186157
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "reward": 1.0,
+            "mean_logp": -0.12437651306390762
+          },
+          {
+            "sample_id": "gsm8k_train_4699",
+            "reward": 0.0,
+            "mean_logp": -0.33127155900001526
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "reward": 1.0,
+            "mean_logp": -0.03982245922088623
+          },
+          {
+            "sample_id": "gsm8k_train_5164",
+            "reward": 0.0,
+            "mean_logp": -0.07909471541643143
+          },
+          {
+            "sample_id": "gsm8k_train_2214",
+            "reward": 1.0,
+            "mean_logp": -0.04550892487168312
+          },
+          {
+            "sample_id": "gsm8k_train_2214",
+            "reward": 0.0,
+            "mean_logp": -0.5949573516845703
+          },
+          {
+            "sample_id": "gsm8k_train_4402",
+            "reward": 1.0,
+            "mean_logp": -0.005200371146202087
+          },
+          {
+            "sample_id": "gsm8k_train_4402",
+            "reward": 0.0,
+            "mean_logp": -0.3569442927837372
+          },
+          {
+            "sample_id": "gsm8k_train_5190",
+            "reward": 1.0,
+            "mean_logp": -0.059831514954566956
+          },
+          {
+            "sample_id": "gsm8k_train_5190",
+            "reward": 0.0,
+            "mean_logp": -0.3620741367340088
+          },
+          {
+            "sample_id": "gsm8k_train_6478",
+            "reward": 1.0,
+            "mean_logp": -0.0031669812742620707
+          },
+          {
+            "sample_id": "gsm8k_train_6478",
+            "reward": 0.0,
+            "mean_logp": -0.01719818077981472
+          },
+          {
+            "sample_id": "gsm8k_train_0499",
+            "reward": 1.0,
+            "mean_logp": -0.2865825295448303
+          },
+          {
+            "sample_id": "gsm8k_train_0499",
+            "reward": 0.0,
+            "mean_logp": -0.7132566571235657
+          },
+          {
+            "sample_id": "gsm8k_train_4248",
+            "reward": 1.0,
+            "mean_logp": -0.02519533410668373
+          },
+          {
+            "sample_id": "gsm8k_train_4248",
+            "reward": 0.0,
+            "mean_logp": -0.09878730028867722
+          },
+          {
+            "sample_id": "gsm8k_train_7310",
+            "reward": 1.0,
+            "mean_logp": -0.025265589356422424
+          },
+          {
+            "sample_id": "gsm8k_train_7310",
+            "reward": 0.0,
+            "mean_logp": -0.03446529433131218
+          },
+          {
+            "sample_id": "gsm8k_train_0112",
+            "reward": 1.0,
+            "mean_logp": -0.1187182366847992
+          },
+          {
+            "sample_id": "gsm8k_train_0112",
+            "reward": 0.0,
+            "mean_logp": -0.1658792942762375
+          },
+          {
+            "sample_id": "gsm8k_train_0358",
+            "reward": 1.0,
+            "mean_logp": -0.03981293365359306
+          },
+          {
+            "sample_id": "gsm8k_train_0358",
+            "reward": 0.0,
+            "mean_logp": -0.1431659311056137
+          },
+          {
+            "sample_id": "gsm8k_train_6976",
+            "reward": 1.0,
+            "mean_logp": -0.005828191991895437
+          },
+          {
+            "sample_id": "gsm8k_train_6976",
+            "reward": 0.0,
+            "mean_logp": -0.6307992339134216
+          },
+          {
+            "sample_id": "gsm8k_train_2237",
+            "reward": 1.0,
+            "mean_logp": -0.0010223613353446126
+          },
+          {
+            "sample_id": "gsm8k_train_2237",
+            "reward": 0.0,
+            "mean_logp": -0.1682782769203186
+          },
+          {
+            "sample_id": "gsm8k_train_6583",
+            "reward": 1.0,
+            "mean_logp": -0.25066259503364563
+          },
+          {
+            "sample_id": "gsm8k_train_6583",
+            "reward": 0.0,
+            "mean_logp": -0.2656313180923462
+          },
+          {
+            "sample_id": "gsm8k_train_5778",
+            "reward": 1.0,
+            "mean_logp": -0.033895835280418396
+          },
+          {
+            "sample_id": "gsm8k_train_5778",
+            "reward": 0.0,
+            "mean_logp": -0.33711355924606323
+          },
+          {
+            "sample_id": "gsm8k_train_0186",
+            "reward": 1.0,
+            "mean_logp": -0.10362693667411804
+          },
+          {
+            "sample_id": "gsm8k_train_0186",
+            "reward": 0.0,
+            "mean_logp": -0.46163055300712585
+          },
+          {
+            "sample_id": "gsm8k_train_4824",
+            "reward": 1.0,
+            "mean_logp": -0.07036717981100082
+          },
+          {
+            "sample_id": "gsm8k_train_4824",
+            "reward": 0.0,
+            "mean_logp": -0.1785249263048172
+          },
+          {
+            "sample_id": "gsm8k_train_5854",
+            "reward": 1.0,
+            "mean_logp": -0.00928625836968422
+          },
+          {
+            "sample_id": "gsm8k_train_5854",
+            "reward": 0.0,
+            "mean_logp": -0.00511949323117733
+          },
+          {
+            "sample_id": "gsm8k_train_1172",
+            "reward": 1.0,
+            "mean_logp": -0.1435185670852661
+          },
+          {
+            "sample_id": "gsm8k_train_1172",
+            "reward": 0.0,
+            "mean_logp": -0.27545487880706787
+          },
+          {
+            "sample_id": "gsm8k_train_0280",
+            "reward": 1.0,
+            "mean_logp": -0.09213338047266006
+          },
+          {
+            "sample_id": "gsm8k_train_0280",
+            "reward": 0.0,
+            "mean_logp": -0.0937950536608696
+          },
+          {
+            "sample_id": "gsm8k_train_5468",
+            "reward": 1.0,
+            "mean_logp": -0.0510929636657238
+          },
+          {
+            "sample_id": "gsm8k_train_5468",
+            "reward": 0.0,
+            "mean_logp": -0.12559862434864044
+          },
+          {
+            "sample_id": "gsm8k_train_7271",
+            "reward": 1.0,
+            "mean_logp": -0.01493568904697895
+          },
+          {
+            "sample_id": "gsm8k_train_7271",
+            "reward": 0.0,
+            "mean_logp": -0.15148378908634186
+          },
+          {
+            "sample_id": "gsm8k_train_1370",
+            "reward": 1.0,
+            "mean_logp": -0.44082504510879517
+          },
+          {
+            "sample_id": "gsm8k_train_1370",
+            "reward": 0.0,
+            "mean_logp": -0.7626877427101135
+          },
+          {
+            "sample_id": "gsm8k_train_3525",
+            "reward": 1.0,
+            "mean_logp": -0.24540141224861145
+          },
+          {
+            "sample_id": "gsm8k_train_3525",
+            "reward": 0.0,
+            "mean_logp": -0.05737849697470665
+          },
+          {
+            "sample_id": "gsm8k_train_4566",
+            "reward": 1.0,
+            "mean_logp": -0.023974483832716942
+          },
+          {
+            "sample_id": "gsm8k_train_4566",
+            "reward": 0.0,
+            "mean_logp": -0.5047203898429871
+          },
+          {
+            "sample_id": "gsm8k_train_1869",
+            "reward": 1.0,
+            "mean_logp": -0.4233476221561432
+          },
+          {
+            "sample_id": "gsm8k_train_1869",
+            "reward": 0.0,
+            "mean_logp": -0.38625791668891907
+          }
+        ]
+      }
+    ]
+  },
+  "gap_delta": 0.09213891625404358,
+  "program_loss_delta": -0.0205968813970685
+}

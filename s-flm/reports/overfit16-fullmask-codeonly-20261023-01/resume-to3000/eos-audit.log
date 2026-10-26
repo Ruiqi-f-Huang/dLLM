@@ -1,0 +1,3 @@
+{'step': 0, 'full_correct': 3, 'eos_correct': 3, 'eos_parseable': 13, 'eos_found': 16}
+{'step': 2000, 'full_correct': 2, 'eos_correct': 2, 'eos_parseable': 12, 'eos_found': 16}
+{'step': 3000, 'full_correct': 0, 'eos_correct': 1, 'eos_parseable': 4, 'eos_found': 16}

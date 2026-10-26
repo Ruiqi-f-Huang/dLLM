@@ -1,0 +1,189 @@
+{
+  "note": "Post-hoc diagnostic edits only; original scores and generations unchanged. A local successful repair does not prove the latent reasoning cause or define an unbiased intervention.",
+  "checks": [
+    {
+      "index": 9,
+      "edits": [
+        [
+          "2 - 0.5 / 0.25",
+          "2 - 0.5"
+        ]
+      ],
+      "repaired_prediction": 6,
+      "gold": 6,
+      "matches_gold": true
+    },
+    {
+      "index": 40,
+      "edits": [
+        [
+          "(lions + rhinos) * rhinos * time_per_animal",
+          "(lions + rhinos) * time_per_animal"
+        ]
+      ],
+      "repaired_prediction": 10,
+      "gold": 10,
+      "matches_gold": true
+    },
+    {
+      "index": 119,
+      "edits": [
+        [
+          "yards * yards * 2",
+          "yards * 2"
+        ]
+      ],
+      "repaired_prediction": 8,
+      "gold": 8,
+      "matches_gold": true
+    },
+    {
+      "index": 125,
+      "edits": [
+        [
+          "range(3)",
+          "range(4)"
+        ],
+        [
+          "        soup_weight /= 2\n        soup_weight /= 2",
+          "        soup_weight /= 2"
+        ]
+      ],
+      "repaired_prediction": 5,
+      "gold": 5,
+      "matches_gold": true
+    },
+    {
+      "index": 231,
+      "edits": [
+        [
+          "20 / 2 / 3",
+          "20 / (2 / 3)"
+        ]
+      ],
+      "repaired_prediction": 60,
+      "gold": 60,
+      "matches_gold": true
+    },
+    {
+      "index": 252,
+      "edits": [
+        [
+          "total_cost - change - change - table_cost - plates_cost",
+          "total_cost - change - table_cost - plates_cost"
+        ]
+      ],
+      "repaired_prediction": 12,
+      "gold": 12,
+      "matches_gold": true
+    },
+    {
+      "index": 283,
+      "edits": [
+        [
+          "sheep_speed - sheepdog",
+          "sheepdog - sheep_speed"
+        ]
+      ],
+      "repaired_prediction": 20,
+      "gold": 20,
+      "matches_gold": true
+    },
+    {
+      "index": 357,
+      "edits": [
+        [
+          "hours = total_time / 60",
+          "hours = total_time"
+        ]
+      ],
+      "repaired_prediction": 32,
+      "gold": 32,
+      "matches_gold": true
+    },
+    {
+      "index": 367,
+      "edits": [
+        [
+          "beats_per_minute * 120 * hours_per_day",
+          "beats_per_minute * minutes_per_hour * hours_per_day"
+        ]
+      ],
+      "repaired_prediction": 168000,
+      "gold": 168000,
+      "matches_gold": true
+    },
+    {
+      "index": 375,
+      "edits": [
+        [
+          "2 * 2 * (width + length)",
+          "2 * (width + length)"
+        ]
+      ],
+      "repaired_prediction": 90,
+      "gold": 90,
+      "matches_gold": true
+    },
+    {
+      "index": 410,
+      "edits": [
+        [
+          "margo_donation - julie_donation",
+          "julie_donation - margo_donation"
+        ]
+      ],
+      "repaired_prediction": 200,
+      "gold": 200,
+      "matches_gold": true
+    },
+    {
+      "index": 430,
+      "edits": [
+        [
+          "time_mary * 2 + time_susan",
+          "time_mary + time_susan"
+        ]
+      ],
+      "repaired_prediction": 223,
+      "gold": 223,
+      "matches_gold": true
+    },
+    {
+      "index": 484,
+      "edits": [
+        [
+          "total_cost = shirt_cost + shirt_cost",
+          "total_cost = shirt_cost"
+        ]
+      ],
+      "repaired_prediction": 100,
+      "gold": 100,
+      "matches_gold": true
+    },
+    {
+      "index": 567,
+      "edits": [
+        [
+          "apples + oranges + oranges",
+          "apples + oranges"
+        ]
+      ],
+      "repaired_prediction": 50,
+      "gold": 50,
+      "matches_gold": true
+    },
+    {
+      "index": 627,
+      "edits": [
+        [
+          "amount_sold / 4 / 7",
+          "amount_sold / (4 / 7)"
+        ]
+      ],
+      "repaired_prediction": 49,
+      "gold": 49,
+      "matches_gold": true
+    }
+  ]
+}

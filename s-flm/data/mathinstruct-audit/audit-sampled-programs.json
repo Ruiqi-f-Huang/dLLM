@@ -1,0 +1,67 @@
+[
+  {
+    "row_id": 154851,
+    "gsm8k_train_id": 6199,
+    "question": "Building A has 4 floors, which is 9 less than Building B. Building C has six less than five times as many floors as Building B. How many floors does Building C have?",
+    "gold": "A = <<4=4>>4 floors\nB = 4 + 9 = <<4+9=13>>13 floors\nC = (13 * 5) - 6 = <<13*5-6=59>>59 floors\nBuilding C has 59 floors.\n#### 59",
+    "source": "data/PoT/gsm_gpt4.json",
+    "instruction_suffix": "Let's write a Python program.",
+    "original_code": "# define the number of floors in each building\nfloors_building_A = 4\nfloors_building_B = floors_building_A + 9\nfloors_building_C = 5*floors_building_B - 6\n\n# print the number of floors in Building C\nprint(floors_building_C)",
+    "code": "def simple_math_problem() -> int:\n    \"\"\"Building A has 4 floors, which is 9 less than Building B. Building C has six less than five times as many floors as Building B. How many floors does Building C have?\"\"\"\n    floors_building_A = 4\n    floors_building_B = floors_building_A + 9\n    floors_building_C = 5 * floors_building_B - 6\n    return floors_building_C\n",
+    "compact_code": "def simple_math_problem() -> int:\n    floors_building_A = 4\n    floors_building_B = floors_building_A + 9\n    floors_building_C = 5 * floors_building_B - 6\n    return floors_building_C\n",
+    "tokens": 144,
+    "compact_tokens": 102
+  },
+  {
+    "row_id": 22773,
+    "gsm8k_train_id": 1072,
+    "question": "The GooGoo brand of clothing manufactures two types of shirts, one with 3 buttons and the other with 5 buttons.  A large department store ordered GooGoo to manufacture 200 of each type of shirt.  How many buttons will the GooGoo brand use to manufacturer all of the shirts for this order?",
+    "gold": "To make 200 of the first type of shirt, they will need 200*3=<<200*3=600>>600 buttons.\nTo make 200 of the second type of shirt, they will need 200*5=<<200*5=1000>>1000 buttons.\nTo manufacture 200 each of both types of shirts, they will need to use 600+1000=1600 buttons.\n#### 1600",
+    "source": "data/PoT/gsm_gpt4.json",
+    "instruction_suffix": "Let's write a Python program.",
+    "original_code": "# define the number of shirts and buttons\nnum_shirts = 200\nbuttons_3 = 3\nbuttons_5 = 5\n\n# calculate the total number of buttons\ntotal_buttons = num_shirts * buttons_3 + num_shirts * buttons_5\n\n# print the result\nprint(total_buttons)",
+    "code": "def simple_math_problem() -> int:\n    \"\"\"The GooGoo brand of clothing manufactures two types of shirts, one with 3 buttons and the other with 5 buttons.  A large department store ordered GooGoo to manufacture 200 of each type of shirt.  How many buttons will the GooGoo brand use to manufacturer all of the shirts for this order?\"\"\"\n    num_shirts = 200\n    buttons_3 = 3\n    buttons_5 = 5\n    total_buttons = num_shirts * buttons_3 + num_shirts * buttons_5\n    return total_buttons\n",
+    "compact_code": "def simple_math_problem() -> int:\n    num_shirts = 200\n    buttons_3 = 3\n    buttons_5 = 5\n    total_buttons = num_shirts * buttons_3 + num_shirts * buttons_5\n    return total_buttons\n",
+    "tokens": 207,
+    "compact_tokens": 133
+  },
+  {
+    "row_id": 214298,
+    "gsm8k_train_id": 230,
+    "question": "Emery and Serena go to their school library, and each borrows a copy of The life of Jack Steve's book to read for their school project. If Emery can read five times as fast as Serena, and the book takes her 20 days to read, what's the average number of days the two take to read the book?",
+    "gold": "If Emery took twenty days to read the book, then it took Serena 5*20 = <<20*5=100>>100 days to read the whole book.\nThe total number of days taken by the two to read the book is 100+20 = <<100+20=120>>120 days.\nThe average number of days the two take to read the book is 120/2 = <<120/2=60>>60 days.\n#### 60",
+    "source": "data/PoT/gsm_gpt4.json",
+    "instruction_suffix": "Let's write a Python program.",
+    "original_code": "# define the time Emery takes to read\nemery_time = 20\n# Serena reads five times slower than Emery\nserena_time = 5 * emery_time\n# calculate the average time\naverage_time = (emery_time + serena_time) / 2\nprint(average_time)",
+    "code": "def simple_math_problem() -> int:\n    \"\"\"Emery and Serena go to their school library, and each borrows a copy of The life of Jack Steve's book to read for their school project. If Emery can read five times as fast as Serena, and the book takes her 20 days to read, what's the average number of days the two take to read the book?\"\"\"\n    emery_time = 20\n    serena_time = 5 * emery_time\n    average_time = (emery_time + serena_time) / 2\n    return average_time\n",
+    "compact_code": "def simple_math_problem() -> int:\n    emery_time = 20\n    serena_time = 5 * emery_time\n    average_time = (emery_time + serena_time) / 2\n    return average_time\n",
+    "tokens": 211,
+    "compact_tokens": 134
+  },
+  {
+    "row_id": 218195,
+    "gsm8k_train_id": 7184,
+    "question": "A vendor at the market is selling sunglasses for $30 each. He has to spend a certain amount to buy these sunglasses. He sells 10 pairs in a day. He then takes half his profits and uses it to buy a new sign, which costs $20. How much does each pair of sunglasses cost him to buy?",
+    "gold": "His profits were $40 because 20 / .5 = <<20/.5=40>>40\nHe made $300 selling sunglasses because 10 x 30 = <<10*30=300>>300\nHis costs for the sunglasses were $260 because 300 - 40 = <<300-40=260>>260\nThe sunglasses cost him $26 each because 260 / 10 = <<260/10=26>>26\n#### 26",
+    "source": "data/PoT/gsm_gpt4.json",
+    "instruction_suffix": "Let's write a Python program.",
+    "original_code": "total_sales = 10 * 30  # total sales in a day\nsign_cost = 20  # cost of the sign\n# since the vendor uses half of his profits to buy the sign\nprofit = 2 * sign_cost  \n# calculate the cost of each pair of sunglasses\ncost_per_sunglasses = (total_sales - profit) / 10  \nprint(cost_per_sunglasses)",
+    "code": "def simple_math_problem() -> int:\n    \"\"\"A vendor at the market is selling sunglasses for $30 each. He has to spend a certain amount to buy these sunglasses. He sells 10 pairs in a day. He then takes half his profits and uses it to buy a new sign, which costs $20. How much does each pair of sunglasses cost him to buy?\"\"\"\n    total_sales = 10 * 30\n    sign_cost = 20\n    profit = 2 * sign_cost\n    cost_per_sunglasses = (total_sales - profit) / 10\n    return cost_per_sunglasses\n",
+    "compact_code": "def simple_math_problem() -> int:\n    total_sales = 10 * 30\n    sign_cost = 20\n    profit = 2 * sign_cost\n    cost_per_sunglasses = (total_sales - profit) / 10\n    return cost_per_sunglasses\n",
+    "tokens": 215,
+    "compact_tokens": 143
+  },
+  {
+    "row_id": 198049,
+    "gsm8k_train_id": 2649,
+    "question": "In a store, an Uno Giant Family Card costs $12. When Ivan bought ten pieces, he was given a discount of $2 each. How much did Ivan pay in all?",
+    "gold": "Instead of $12 each, an Uno Giant Family Card costs $12 - $2 = $<<12-2=10>>10 each.\nIvan paid $10 x 10 = $<<10*10=100>>100 for the ten pieces Uno Giant Family Card.\n#### 100",
+    "source": "data/PoT/gsm_gpt4.json",
+    "instruction_suffix": "Let's write a Python program.",
+    "original_code": "# define the variables\nuno_card_cost = 12\nquantity = 10\ndiscount_per_card = 2\n\n# calculate the total cost\ntotal_cost = (uno_card_cost - discount_per_card) * quantity\n\n# print the result\nprint(total_cost)",
+    "code": "def simple_math_problem() -> int:\n    \"\"\"In a store, an Uno Giant Family Card costs $12. When Ivan bought ten pieces, he was given a discount of $2 each. How much did Ivan pay in all?\"\"\"\n    uno_card_cost = 12\n    quantity = 10\n    discount_per_card = 2\n    total_cost = (uno_card_cost - discount_per_card) * quantity\n    return total_cost\n",
+    "compact_code": "def simple_math_problem() -> int:\n    uno_card_cost = 12\n    quantity = 10\n    discount_per_card = 2\n    total_cost = (uno_card_cost - discount_per_card) * quantity\n    return total_cost\n",
+    "tokens": 147,
+    "compact_tokens": 105
+  }
+]

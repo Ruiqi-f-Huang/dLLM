@@ -1,0 +1,16 @@
+test_ema_or_raw_initialization_resets_history (test_sft.FinetuneTests.test_ema_or_raw_initialization_resets_history) ... ok
+test_incompatible_ema_fails (test_sft.FinetuneTests.test_incompatible_ema_fails) ... ok
+test_cache_follows_contents_and_mask_settings (test_sft.SFTDataTests.test_cache_follows_contents_and_mask_settings) ... Saving the dataset (0/1 shards):   0%|          | 0/1 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1/1 [00:00<00:00, 413.07 examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1/1 [00:00<00:00, 387.57 examples/s]
+Saving the dataset (0/1 shards):   0%|          | 0/1 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1/1 [00:00<00:00, 505.95 examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1/1 [00:00<00:00, 479.84 examples/s]
+Saving the dataset (0/1 shards):   0%|          | 0/1 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1/1 [00:00<00:00, 511.31 examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1/1 [00:00<00:00, 486.52 examples/s]
+ok
+test_generation_validation_never_receives_reference_code (test_sft.SFTDataTests.test_generation_validation_never_receives_reference_code) ... ok
+test_oversize_program_is_rejected (test_sft.SFTDataTests.test_oversize_program_is_rejected) ... ok
+test_prefix_eos_padding_and_no_gold_leak (test_sft.SFTDataTests.test_prefix_eos_padding_and_no_gold_leak) ... Saving the dataset (0/1 shards):   0%|          | 0/1 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1/1 [00:00<00:00, 565.80 examples/s]Saving the dataset (1/1 shards): 100%|██████████| 1/1 [00:00<00:00, 537.66 examples/s]
+ok
+test_same_question_cannot_cross_splits (test_sft.SFTDataTests.test_same_question_cannot_cross_splits) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.053s
+
+OK

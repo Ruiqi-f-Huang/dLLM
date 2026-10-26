@@ -1,0 +1,20 @@
+{
+  "run_path": "ruiqi-f-huang-nus/s-flm/zog10k73",
+  "url": "https://forge.coreweave.com/wandb/ruiqi-f-huang-nus/s-flm/runs/zog10k73",
+  "training_successful_updates": 200,
+  "validation_checkpoints": [
+    100,
+    200
+  ],
+  "generation_seeds": [
+    1,
+    2
+  ],
+  "aggregate_artifact": "ruiqi-f-huang-nus/s-flm/lift-c-validation-zog10k73",
+  "verification": {
+    "training_history_points": 20,
+    "summary_validation_seed1_correct": 180,
+    "summary_validation_seed2_correct": 163,
+    "sync_client_version": "0.31.0"
+  }
+}
